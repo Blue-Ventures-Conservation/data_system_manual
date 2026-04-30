@@ -1,0 +1,122 @@
+key,id
+title,Panduan Validasi Data Perikanan
+p1,"Semua data yang mengalir melalui sistem data perikanan divalidasi dalam Smartsheet. Data dikirim untuk validasi dalam tiga skenario; 1) nama baru atau informasi 'lainnya' ditambahkan secara manual di Kobo Collect, 2) nilai numerik melampaui ambang batas yang ditetapkan atau 3) nama dalam kumpulan data tidak memiliki kecocokan yang sesuai dalam file referensi. Setelah data divalidasi, kumpulan data dalam database dan tabel referensi diperbarui. Tabel referensi berfungsi sebagai input untuk daftar dropdown dalam formulir KoBoToolbox dan berisi data yang ditambahkan ke kumpulan data melalui proses penggabungan. Lihat pohon keputusan validasi data di bawah ini (Gambar 1)."
+p2,"Data yang dipicu untuk validasi dikirim ke salah satu dari empat tabel: 1) Nama dan Alat Tangkap, 2) Peringatan Nilai, 3) Spesies, atau 4) Lainnya. Petunjuk di bawah ini merinci proses validasi data dalam Tampilan Dinamis Smartsheet untuk empat tabel validasi. Setiap tabel validasi akan memerlukan pemilihan nilai bidang yang benar dari daftar dropdown atau memasukkan nilai yang benar secara manual. Proses akan ditambahkan untuk kebutuhan validasi data di masa mendatang, sesuai kebutuhan."
+p2.1,"Tabel validasi 'Nama dan Alat Tangkap' berisi data baru dari semua survei Kobo termasuk nama baru nelayan, pembeli, pengumpul data, tempat penangkapan ikan, lokasi pendaratan, dan alat tangkap. 'Peringatan Nilai' berisi informasi numerik yang dikumpulkan dari survei Pemantauan Pendaratan atau Profil Pendaratan yang menandai nilai harga, bobot, atau panjang berdasarkan ambang batas yang telah ditetapkan sebelumnya. Ambang batas yang telah ditetapkan sebelumnya untuk peringatan bobot dan panjang berasal dari lw_ref; dan peringatan harga berasal dari min_max_ref. Tabel validasi 'Spesies' berisi foto dan nama lokal baru dari semua survei untuk memvalidasi spesies baru menggunakan proses verifikasi ganda. Terakhir, tabel validasi data 'Lainnya' berisi informasi 'lainnya' yang dikumpulkan dari Profil Pendaratan, Profil Komunitas, atau Survei Rumah Tangga dan terutama divalidasi untuk tujuan translasi."
+p2.2,"Pesan email harian dikirim dengan informasi dan tautan tentang cara menyelesaikan validasi data (lihat petunjuk terperinci di bawah). Pemberitahuan tambahan dari Smartsheet dapat dikirim melalui email untuk menindaklanjuti pilihan validasi data yang tidak lengkap, jika diperlukan."
+step1,"Langkah 1: Berikan kontak person, nama dan alamat email bagi mereka yang bertanggung jawab atas validasi data."
+point1,Organisasi yang mengelola banyak mitra dapat memberikan semua informasi kontak person.
+point2,Mitra individu dapat memberikan informasi kontak.
+point3,Kontak person akan menerima pemberitahuan validasi data melalui email.
+step2,Langkah 2: Periksa email Anda untuk permintaan validasi data.
+point4,"Anda akan menerima email dari ""Smartsheet Automation"" (Gambar 2)"
+point5,"Email akan berisi pesan dengan tautan untuk melanjutkan validasi baik melalui ""Dynamic view""atau""Open request"". Tampilan Dinamis (Dynamic view) adalah format tabel dan permintaan terbuka (Open request) akan mengarahkan Anda ke formulir validasi secara langsung."
+point6,"Untuk membuka dengan ""Dynamic view"" (Langkah 3, Opsi A), klik tautan yang dimulai dengan ""https://dynamicview.smarthseet.com...."""
+point7,"Untuk membuka formulir permintaan pembaruan (Langkah 3, Opsi B), klik tombol biru ""Open request"""
+point8,"Pratinjau entri yang perlu divalidasi akan muncul di bawah pesan ini, tetapi Anda tidak akan dapat memvalidasi data apa pun secara langsung di email"
+point9,"Di bagian bawah email, ada tautan untuk ""Go to the sheet""; namun, lembar yang mendasarinya memiliki akses terbatas. Harap tinjau validasi data Anda melalui Dynamic view, Open request, atau laporan khusus mitra Anda (segera hadir)."
+caption1,Gambar 1: Pohon keputusan validasi data.
+caption2,Gambar 2: Contoh Pesan Email Validasi Smartsheet
+step3a,"Langkah 3, Opsi A: Selesaikan validasi data Anda melalui Dynamic View (disarankan)"
+point10,"Untuk opsi ini, Anda perlu membuat akun Smartsheet gratis. Anda akan diarahkan dari email untuk membuat akun."
+point11,Klik tautan Dynamic View dalam permintaan email.
+point12,"Jendela browser internet baru akan terbuka dengan pengaturan seperti tabel untuk semua entri. Di sini, Anda dapat dengan mudah menelusuri semua entri yang memerlukan validasi."
+point13,Klik satu baris untuk memulai validasi.
+point14,"Panel ""Details"" akan muncul di sebelah kanan."
+point15,Tinjau bidang konteks dan isi bidang validasi. Bidang validasi berisi data yang akan ditransfer ke kumpulan data akhir (Tabel 1).
+point16,"Tinggalkan komentar, HANYA JIKA ada sesuatu yang perlu kita perhatikan. Staf Blue Ventures (BV) akan meninjau komentar dan merespons dengan tepat."
+point17,"Klik tombol biru ""Save"" untuk menyimpan pilihan Anda."
+point18,"Setelah divalidasi, baris tersebut akan hilang dari Dynamic View Anda."
+point19,Klik pada baris berikutnya dan ulangi langkah-langkah untuk menyelesaikan validasi untuk semua entri.
+point20,Anda dapat keluar dan masuk kembali dengan mengeklik tautan tampilan dinamis dari email Anda atau masuk ke akun Anda kapan saja. Anda tidak perlu memvalidasi semua entri dalam sekali duduk.
+point21,Anda dapat menandai (bookmark) tautan ini dan kembali kapan saja.
+table1,"Tabel 1: Bidang atau kolom utama dalam tabel validasi. Bidang konteks memberikan informasi yang diperlukan untuk memvalidasi data. Bidang validasi diisi dengan data yang akan ditransfer ke kumpulan data master. Hanya bidang validasi yang dapat diedit. Beberapa bidang hanya terlihat di panel ""Details"" saat baris diklik di tabel Dynamic View."
+t1.1,Bidang tabel validasi
+t1.2,Deskripsi bidang
+t1.3,Jenis bidang
+t1.5,nama organisasi yang mengumpulkan data
+t1.6,konteks
+t1.7,validasi
+t1.8,otomatis
+t1.9,Desa atau dusun tempat hasil tangkapan didaratkan dan dicatat
+t1.10,Nama orang yang mengumpulkan data di Kobo (pencacah)
+t1.12,Bidang dari formulir KoboCollect yang perlu divalidasi atau nama yang tidak memiliki kecocokan dalam file referensi.
+t1.13,Nilai yang dimasukkan untuk kobo_ field yang sesuai
+t1.14,"Sangat cocok dengan nama yang sudah ada di database. Jika kosong, tidak ada nama yang cocok dengan nama di kolom ""new_data"""
+t1.15,"Sangat cocok dengan nama yang sudah ada di database. Jika kosong, tidak ada nama yang cocok dengan nama di kolom ""new_data"""
+t1.16,"Sangat cocok dengan nama yang sudah ada di database. Jika kosong, tidak ada nama yang cocok dengan nama di kolom ""new_data"""
+t1.17,"Pilih bidang dengan data yang benar (new_data, ref_match1, ref_match2, ref_match3), masukkan nilai lain (other), atau hapus (hapus baris dari analisis karena data tidak dapat divalidasi). Diperlukan. Hanya terlihat di panel Details. Entri akan hilang setelah data divalidasi."
+t1.18,"Masukkan nilai lain jika tidak ada opsi validasi yang benar. Diperlukan JIKA ""other"" dipilih dari validation_options. Hanya terlihat di panel Details."
+t1.19,"Daftar id pengiriman asal nilai data baru ini muncul, dari formulir Kobo pemantauan pendaratan (Landing monitoring)"
+t1.20,"Daftar id pengiriman asal nilai data baru ini muncul, dari formulir Kobo profil pendaratan (Landings profiling)"
+t1.20.1,"Daftar id pengiriman asal nilai data baru ini muncul, dari formulir Kobo survei rumah tangga (Household survey)."
+t1.20.2,"Kelompok spesies yang terkait dengan nama alat tangkap baru, seperti yang dikumpulkan dalam formulir Kobo. Ini hanya akan muncul jika ""kobo_field"" adalah kategori alat tangkap."
+t1.20.3,Diperlukan JIKA memvalidasi nama alat tangkap baru. Daftar dropdown list jenis alat tangkap yang akan dikaitkan dengan nama alat tangkap yang divalidasi.
+t1.20.4,"Jenis kelamin yang terkait dengan nelayan baru, seperti yang dikumpulkan dalam bentuk Kobo. Ini hanya akan muncul jika ""kobo_field"" adalah nama fisher."
+t1.20.5,"Jenis kelamin yang terkait dengan pembeli baru, seperti yang dikumpulkan dalam formulir Kobo. Ini hanya akan muncul jika ""kobo_field"" adalah nama pembeli."
+t1.22,Nama nelayan yang mendaratkan hasil tangkapan
+t1.23,Tangkapan tanggal telah mendarat
+t1.24,Nama lokal spesies
+t1.25,"Nilai satuan: berat/ individu, harga/berat, panjang/individu, lebar/individu"
+t1.26,Jenis peringatan
+t1.27,"Nilai pembilang peringatan: berat, harga, panjang"
+t1.28,"Unit of numerator: kg, g, lb, ons, USD, IDR, PHP, cm"
+t1.29,"Nilai penyebut: jumlah, berat"
+t1.30,"Satuan penyebut: bilangan, kg, g, lb, ons"
+t1.31,"Nilai Y = benar, nilai N=salah, Remove = hapus dari analisis karena nilai tidak dapat divalidasi. Diperlukan."
+t1.32,"Jika benar = Y, nilai diisi secara otomatis, Jika benar = N, masukkan nilai yang benar"
+t1.33,"Jika benar = Y, nilai diisi secara otomatis, Jika benar = N, masukkan nilai yang benar"
+t1.34,"Jika numerator_units salah, pilih opsi yang benar dari menu dropdown list"
+t1.35,Asal kumpulan data (Pemantauan pendaratan atau profil pendaratan).
+t1.36,"ID Pengiriman dari formulir Kobo. Gunakan ini untuk membandingkan dengan data mentah, jika perlu, untuk validasi."
+t1.37,"Asal atau sumber data: 'landings', 'profiling', 'community_profiling' atau 'hhs'"
+t1.37.1,Admin1 tempat tangkapan didaratkan dan dicatat.
+t1.37.2,Admin2 tempat tangkapan didaratkan dan dicatat.
+t1.37.3,Nama nelayan yang terkait dengan data spesies baru ini.
+t1.38,Tautan ke foto yang dikirimkan di Kobo Collect
+t1.39,Nilai yang dimasukkan sebagai nama lokal spesies baru di Kobo Collect ATAU nama lokal dan ID nama ilmiah (localname_scientificspecies) yang tidak lagi cocok dengan nama yang ditemukan di species_ref
+t1.40,"Sangat cocok dengan nama yang sudah ada di database. Jika kosong, tidak ada nama yang cocok dengan nama di kolom ""new_data"""
+t1.41,"Sangat cocok dengan nama yang sudah ada di database. Jika kosong, tidak ada nama yang cocok dengan nama di kolom ""new_data"""
+t1.42,"Sangat cocok dengan nama yang sudah ada di database. Jika kosong, tidak ada nama yang cocok dengan nama di kolom ""new_data"""
+t1.43,"Nama umum bahasa Inggris untuk spesies baru. Harap berikan jika diketahui, jika tidak, kosongkan. (Tidak wajib)"
+t1.44,"Nama ilimah famili spesies baru. Harap berikan jika diketahui, jika tidak, kosongkan. (Tidak wajib)"
+t1.45,"Nama ilmiah spesies dari spesies baru. Harap berikan jika diketahui, jika tidak, kosongkan. Wajib: Jika nama spesies tidak diketahui, harap cantumkan tingkat identifikasi taksonomi apa pun (mis. Nama famili, nama umum bahasa Inggris)"
+t1.46,"ID Pengiriman dari formulir Kobo. Gunakan ini untuk membandingkan dengan data mentah, jika perlu, untuk validasi."
+t1.48,"Pilih bidang dengan data yang benar (local_name_new, ref_match1, ref_match2, ref_match3), masukkan nilai other (lainnya), atau remove (hapus baris dari analisis karena data tidak dapat divalidasi). Diperlukan. Hanya terlihat di panel Details. Entri akan hilang setelah data divalidasi."
+t1.49,"Masukkan nilai lain jika tidak ada opsi validasi yang benar. Diperlukan JIKA ""other"" dipilih dari validation_options. Hanya terlihat di panel Details."
+t1.50,"Kolom ini menyimpan komentar terakhir yang dibuat untuk baris tersebut. Untuk melihat seluruh diskusi komentar untuk baris tersebut, cukup klik di mana saja pada baris tersebut. Panel details akan muncul dan klik tab ""Comments"" untuk melihat semua komentar untuk baris tersebut."
+t1.51,"Bidang dari formulir KoBoToolbox yang perlu divalidasi. Ini bisa dari pertanyaan di Profil Pendaratan, Profil Komunitas, atau Survei Rumah Tangga."
+t1.52,Nilai yang dimasukkan untuk kobo_field yang sesuai
+t1.53,"Dataset data tersebut berasal dari (Landings profiling, Community profiling atau survei rumah tangga)."
+t1.54,"ID Pengiriman dari formulir Kobo. Gunakan ini untuk membandingkan dengan data mentah, jika perlu, untuk validasi."
+t1.55,"Pilih bidang dengan data yang benar (new_data), masukkan nilai other (lainnya), atau remove (hapus baris dari analisis karena data tidak dapat divalidasi). Diperlukan. Hanya terlihat di panel Details. Entri akan hilang setelah data divalidasi."
+t1.56,"Masukkan nilai lain jika tidak ada opsi validasi yang benar. Diperlukan JIKA ""other"" dipilih dari validation_options. Hanya terlihat di panel Details."
+t1.57,Diperlukan. Masukkan terjemahan bahasa Inggris dari bidang new_data atau other jika 'other' dipilih sebagai opsi validasi. Hanya terlihat di panel Details.
+caption3,Gambar 3: Contoh Dynamic View - Peringatan Nilai
+caption4,Gambar 4: Contoh Dynamic View - Panel Details
+step3b,"Langkah 3, Opsi B: Selesaikan validasi data Anda melalui 'Open request'"
+point22,"Untuk opsi ini, Anda tidak perlu memiliki login akun Smartsheet."
+point23,"Klik tombol ""Open request"" di pesan email validasi."
+point24,Jendela browser internet baru akan terbuka dengan pengaturan seperti formulir untuk setiap entri
+point25,Tinjau bidang konteks dan isi bidang validasi. Bidang validasi berisi data yang akan ditransfer ke kumpulan data akhir (Tabel 1).
+point26,Klik berikutnya di bagian bawah layar untuk menelusuri setiap entri yang perlu divalidasi.
+point27,"Untuk melewati entri (mis. jika Anda belum yakin jawaban mana yang harus dipilih) klik ""Next"" tanpa membuat pilihan di kolom 'validation_options'. Entri validasi berikutnya akan muncul."
+point28,"Jika Anda perlu keluar dari halaman atau berhenti sebelum semua entri divalidasi, pilihan Anda akan disimpan saat berikutnya Anda membuka kembali permintaan. Saat membuka untuk melanjutkan, cukup klik ""Next"" hingga Anda menemukan entri yang memerlukan validasi."
+point29,"Saat Anda masuk ke entri terakhir, klik ""Done"". Pesan pop-up akan muncul menanyakan apakah Anda ' Siap mengirimkan pembaruan Anda?’:"
+point29.1,"Klik ""Go back"" jika Anda perlu meninjau"
+point29.2,"Klik ""Submit update"" untuk mengirimkan validasi"
+point29.3,"Centang kotak ""Kirimi saya salinan tanggapan saya"" jika Anda ingin salinan tanggapan Anda dikirim ke email Anda"
+point30,"Jika Anda mengklik ""Kirimi saya salinan tanggapan saya"", Anda akan menerima email berjudul ""Konfirmasi Pembaruan: Nama dan Alat Tangkap""."
+point30.1,Akan ada tabel yang merangkum entri mana yang diperbarui. Entri di mana tidak ada opsi yang dipilih di 'validation_options' tidak akan disertakan.
+point30.2,"Email ini mungkin berisi tautan ke nama lembar ""Data Validation - Names and Gears""; namun, akses ke lembar ini dikunci."
+point31,"Untuk melihat sisa validasi yang diperlukan, Anda harus menunggu email permintaan pembaruan berikutnya atau membuka Dynamic View."
+caption5,"Gambar 5: Contoh format ""Open request"""
+faq,Pertanyaan yang Sering Diajukan:
+q1,Bisakah banyak orang mengerjakan validasi data secara bersamaan?
+a1,"Ya, bagaimanapun, setelah entri (baris) divalidasi dalam Dynamic View, entri tersebut tidak akan terlihat lagi."
+q2,Apakah saya memerlukan akun Smartsheet?
+a2,"Hanya untuk menyelesaikan validasi data melalui Dynamic View (yaitu tampilan tabel). Anda tidak memerlukan akun berbayar, dengan uji coba gratis atau versi gratis (setelah uji coba selesai), Anda akan dapat melihat dan berinteraksi dengan semua file Smartsheet."
+q3,Apa yang terjadi setelah data divalidasi?
+a3,"Dalam beberapa kasus, data akan menjalani tinjauan tambahan oleh tim data Blue Ventures. Data yang divalidasi akan diperbarui dalam database, dan jika sesuai, menu dropdwon list akan diperbarui dalam file dan formulir referensi Kobo (Gambar 6). Data yang belum divalidasi tidak akan muncul di visualisasi atau statistik dasbor, tetapi akan tersedia di unduhan data mentah."
+p3,"Jika sewaktu-waktu Anda menemukan kesalahan, memiliki pertanyaan, atau memerlukan dukungan untuk menyelesaikan validasi data, silakan hubungi kami di mary.mccabe@blueventures.org."
+caption6,Gambar 6: Alur Kerja Validasi Data terhadap File Referensi

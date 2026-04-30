@@ -1,0 +1,207 @@
+key,sw
+subtitle1,Habari za jumla
+q1,Nchi
+q2,Shirika
+q3,Kaunti 1 Kutua
+q4,Kaunti Ndogo 2 Kutua
+q5,Kijiji/BMU 3 cha Kutua
+q6,Jina la anayechukuwa takwimu
+a1,*Jina la mchukuwa takwimu mpya*
+q7,Tarehe ya kuwasili bandarini
+subtitle2,Habari ya mapato kwa kila mvuvi
+q8,Jina la mvuvi
+a2,*Jina la mvuvi mpya*
+q9,*Jinsia ya mvuvi*
+q10,"Je, mvuvi anaishi humo ${admin3_label}?"
+q11,Msimamizi 1 ambapo mvuvi anatoka:
+q12,Msimamizi 2 ambapo mvuvi anatoka:
+q13,Msimamizi 3 ambapo mvuvi anatoka:
+q14,Ni saa ngapi kwa siku ulikuwa ukivua au kukusanya masalio? (bila kujumuisha wakati wa kusafiri)
+q15,Ulikuwa ukivua au kuvuna kwa siku ngapi? (bila kujumuisha wakati wa kusafiri)
+q16,Jina la bandari
+a8.9,
+q17,Eneo la msingi la uvuvi
+a9,*Jina la eneo la uvuvi jipya*
+q18,Jina la mnunuzi (ikiwa linajulikana)
+a10,*Jina la mnunuzi mpya*
+q19,*Jinsia ya mnunuzi*
+subtitle3,Habari za chombo
+q20,Aina ya chombo:
+q21,Nambari ya usajili ya boti/chombo (si lazima):
+q22,Idadi ya wavuvi kwenye mashua moja
+q23,"Je, ${fisher_id_label} ${fisher_name_new} ndiye nahodha?"
+q24,"Tafadhali chagua wavuvi wengine kwenye chombo, BILA kumjumuisha mvuvi mkuu ${fisher_id_label}: ${fisher_name_new}"
+q25,Tafadhali tambua jina la mvuvi mpya:
+q26,Tafadhali chagua nahodha:
+q27,"Je, samaki waliovuliwa wanarekodiwa kuwa ni samaki wote kutoka kwenye mashua au ${fisher_id_label} sehemu ya  samaki hao?"
+subtitle4,Aina ya samaki zilizotua bandarini ${fisher_id_label}
+q28,Aina ya mapato
+q29,"Jina la kiswahili la aina ya samaki (tumia kadi ya kumbukumbu ya spishi, ikiwa inahitajika)"
+a19,Tafadhali bainisha kila aina katika mchanganyiko (chagua nyingi)
+q30,*Aina Mpya ya samaki: Kundi la Aina*
+a18,*Jina la kiswahili ya Aina Mpya *
+q31,*Jina la Kawaida la kingereza ya Aina Mpya (kama linajulikana)*
+q32,*Jina la kisayansi la Familia ya aina mpya (ikiwa inajulikana)*
+q33,*Jina la kisayansi ya Aina Mpya (ikiwa linajulikana)*
+q34,*Ongeza picha ya aina mpya.*
+q35,Jina la kiswahili la zana ya kuvua
+q36,"Je, unatumia mkuki kwa njia gani?"
+q37,Uliweka mitego mingapi?
+q38,Aina ya maeneo ya makazi yaliyovuliwa
+q39,"Je, unavua wakati wa maji kujaa au maji kuondoka?"
+q40,"Tafadhali eleza samaki wasiolengwa waliovuliwa, au aina nyingine zilizokamatwa."
+q41,Kuweka wakati (saa)
+q42,"Je, unatumia chambo?"
+q43,Chambo kinachotumika (aina/aina):
+q44,Chambo/uzito wa lishe (kg)
+subtitle5,Taarifa za Aina ya samaki
+q45,Aina zote
+q46,Kitengo cha uzito wa mapato
+q48,Jumla ya idadi ya mapato/waliovuliwa
+q50,"Je, unachata mapato haya ya uvuvi?"
+q51,"Bei kwa jumla ya samaki waliouzwa, sarafu ya nchi  (iliyokadiriwa au halisi)"
+q52,Sababu ya jumla ya samaki kutonunuliwa/kuuzwa
+subtitle6,Sampuli (${calc_local_name})
+q53,Kitengo cha uzito wa mapato
+q54,Idadi ya jumla
+q56,"Je, unakusanya sampuli ngapi za aina hii?"
+q57,Kipimo cha Uzito kwa Sampuli Binafsi
+q58,**Sampuli 1:**
+q60,*Upana (cm)*
+q61,*Urefu wa vazi (cm)*
+q62,*Urefu wa carapace (cm)*
+q63,*Upana wa carapace (cm)*
+q64,*Urefu jumla binafsi (cm)*
+q67,**Sampuli 10:**
+subtitle7,Sampuli (${calc_local_name})
+q67.5,"Mbali na data/takwimu ya urefu, ni data gani nyingine unayokusanya?"
+q68,"Je, unakusanya sampuli ngapi?"
+q69,Kipimo cha Uzito kwa Sampuli Binafsi
+q70,**Sampuli 1:**
+q59,*Jinsia*
+q71,*Upana (cm)*
+q72,*Urefu wa vazi (cm)*
+q73,*Urefu wa carapace (cm)*
+q74,*Upana wa carapace/ng'amba (cm)*
+q75,*Urefu jumla binafsi (cm)*
+q76,*Uzito binafsi (${weight_unit_samples})*
+q77,*Hatua ya ukomavu ya kiungo cha kizazi*
+q78,Ubora wa mapato
+q79,"Je, barafu ilitumika kuhifadhi?"
+q79.5,
+q80,Tumia kadi ya rangi ili kubainisha thamani ya kiasi cha rangi ya pweza kwenye mizani ya 1-5.
+q81,Idadi ya tentacles
+q82,Michubuko ya kimwili?
+q83,Asilimia (%) ya uso wa pweza iliyo na mikwaruzo
+q84,Mdomo
+q85,Ngozi
+q86,Ubora wa mapato
+q87,Kaa bado yuko hai?
+q88,"Je, macho na mwili hujibu kwa kugusa?"
+q89,"Je, macho yako sawa?"
+q90,Makucha yako salama?
+q91,Ni miguu mingapi imevunjika?
+q92,"Je, kaa anatokwa na povu mdomoni?"
+q93,Kiungo cha kizazi
+q94,Uzito wa kiungo cha kizazi (g)
+q95,Rangi ya kiungo cha kizazi
+q96,Hatua ya kiungo cha kizazi
+q97,Urefu wa kiungo cha kizazi (cm)
+q98,Muonekano kwa spermatophore
+q99,Muonekano wa mistari kwenye tezi ya ovari
+q100,Stylet
+q101,Kitambulisho cha Stylet kwa sampuli hii ni:
+a35,kilo (kg)
+a36,gramu (g)
+a37,pauni (lbs)
+a38,wakia (oz)
+a24,Mwamba
+a25,Nyasi za baharini
+a26,Mikoko
+a27,Eneo la matope
+a28,Mchanga
+a29,Maji ya kina/ marefu
+a30,Nyingine
+a7,Ndiyo
+a8,Hapana
+a55,Hakuna barafu
+a56,Barafu inayotumika wakati wa kukamata
+a57,Barafu inayotumika wakati wa kutua bandarini
+a58,Barafu inayotumika wakati wa kukamata na kutua bandarini
+a59,"Mdomo mzima, haujavunjika"
+a60,"Mdomo umeharibiwa, umevunjika"
+a61,Haijachanika
+a62,"Imechanika, matumbo yakiwa wazi"
+a11,Kubwa yenye mashine/injini> 15 HP
+a12,Ndogo yenye mashine <15 HP
+a13,Isiyo na mashine/injini
+a14,Isiyo na mashine/injini
+a14.5,Yenye mashine na tanga
+a15,"Hakuna mashua, inaingia kutoka ufuoni au nchi kavu"
+a53,Mwanaume
+a54,Mwanamke
+a74,Opaque
+a75,Nyeupe
+a76,Nyeupe-nyeupe
+a77,Nyeupe
+a78,Hudhurungi
+a79,Chungwa/Njano
+a80,njano iliyokolea
+a81,I
+a82,II
+a83,III
+a84,IV
+a85,Hakuna
+a86,Wachache
+a87,Nyingi
+a88,Hakuna
+a89,Mistari isiyo wazi
+a90,Mistari iliyowazi
+a48,Ubora mbaya
+a49,Ndogo sana
+a50,Kubwa mno
+a51,Imehifadhiwa mwenyewe
+a52,Nyingine
+a63,Urefu
+a64,Ubora
+a65,Kiungo cha kizazi
+a66,Stylet
+a67,Hatua ya ukomavu wa kiungo cha uzazi
+a20,Compressor/Scuba Diving
+a21,Kupiga mbizi bure
+a22,Kutembea
+a23,Nyingine
+a16,Mapato yote
+a17,Sehemu ya mvuvi
+a3,Mwanaume
+a4,Mwanamke
+a5,Isiyo ya kawaida
+a6,Biashara inayojumuisha watu wengi (bila jinsia)
+a68,Ndiyo
+a69,"Hapana, kucha imevunjwa na haifikii chini"
+a70,"Hapana, makucha yamevunjwa chini"
+a71,Hakuna zilizovunjika
+a72,1-3 zimevunjwa
+a73,4-6 zimevunjwa
+a31,Maji kujaa
+a32,Maji kuondoka
+a33,Maji kujaa
+a34,Maji kuondoka
+a39,La
+a40,Kukausha
+a41,Weka chumvi
+a42,
+a43,Nzima
+a44,Usafi sokoni/baadhi kuchakatwa
+a45,Kutoa miba kwa samki
+a46,Mkia
+a47,Pezi
+sp2,Kaa
+sp1,Pweza
+star,Inatumika kwa washirika walioteuliwa au nchi pekee.
+question,Swali
+answer,Jibu Chaguo
+q47,Jumla ya uzito wa mapato
+q49,Jumla ya uzito wa kuuzwa
+q55,Jumla ya uzito wa aina za samaki
+q65,*Uzito binafsi*

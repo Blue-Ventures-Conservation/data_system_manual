@@ -1,0 +1,207 @@
+key,mg
+subtitle1,Mikasika ny seranana
+q1,Firenena
+q2,Fikambanana
+q3,Faritany
+q4,Kaominina
+q5,Tanàna
+q6,Mpangala antontan'isa
+a1,*Mpangala antontan'isa vaovao*
+q7,Daty
+subtitle2,Mikasika ny vokatra
+q8,Mpanjono
+a2,*Mpanjono vaovao*
+q9,*Lahy sa vavy (mpanjono)*
+q10,Mipetraka eto ${admin3_label}?
+q11,Avy aiza ny mpanjono: Faritany
+q12,Avy aiza ny mpanjono: Kaominina
+q13,Avy aiza ny mpanjono: Tanàna
+q14,Ora niasana (tsy ampidirina ao ny fotoana lany teny an-dakana)
+q15,Andro niasana (tsy ampidirina ao ny fotoana lany teny an-dakana)
+q16,Toerana ahatongavan'ny vokatra
+a8.9,*Toerana vaovao nahatongavan'ny vokatra*
+q17,Faritra fanjonoana
+a9,*Faritra fanjonoana vaovao*
+q18,Mpividy vokatra (raha fantatra)
+a10,*Mpividy vaovao*
+q19,*Lahy sa vavy (mpividy)*
+subtitle3,Mikasika ny lakana
+q20,Karazana lakana
+q21,Laharan'ny lakana (afaka tsy atao)
+q22,Isan'ny mpanjono ao anaty lakana iray
+q23,Iza no sefo ny laka ${fisher_id_label} ${fisher_name_new} ?
+q24,"Fidio izay mpanjono hafa anaty laka, TSY ao anatin'ireo mpanjono misy ${fisher_id_label}: ${fisher_name_new}"
+q25,Farito ny mpanjono vaovao
+q26,Fidio izay sefo ny laka eto
+q27,Vokatra rehetra ve nolanjaina ${fisher_id_label} sa ny anjaranao ?
+subtitle4,Karazana vokatra ${fisher_id_label}
+q28,Karazana vokatra
+q29,Karazana vokatra
+a19,Tanisao ny karazana vokatra (afaka misafidy maro)
+q30,*Karazana vokatra vaovao: fitambarana vokatra*
+a18,*Karazana vokatra vaovao*
+q31,*Karazana vokatra vaovao teny anglisy* (raha fantatra)
+q32,*Fianakaviamben'ny vokatra vaovao teny siantifika* (raha fantatra)
+q33,*Karazana vokatra vaovao teny siantifika* (raha fantatra)
+q34,*Asio sary ny karazana vokatra vaovao*
+q35,Fitaovana fanjonoana
+q36,Inona ny fomba fanjonoanao hampiasana tsoraby
+q37,Firy ny isan'ny treko napetraka?
+q38,Karazana tranon'ny laoko na habitat nanjonoana
+q39,Miasa amin'ny tehaky sa lemirano?
+q40,"Lazao raha misy karazana vokatra azo amin'ny jono tsy nahy, na karazana vokatra voajono"
+q41,
+q42,Mampiasa appât ve ianao?
+q43,"Appât ampiasaina (karazana, anarana):"
+q44,Lanjan'ny appât ampiasaina (kg)
+subtitle5,Mombamomba ny karazam-bokatra azo
+q45,Karazam-bokatra rehetra
+q46,Fandanjana (kilo sa grama)
+q48,Isany totaly
+q50,Mbola hamboarina ve ity vokatra ity?
+q51,Totaly vidiny lafo (Ariary)
+q52,Antony tsy namarotana/nahalafo
+subtitle6,Santionany (${calc_local_name})
+q53,Lanja isaky ny vokatra
+q54,Isan'izy rehetra
+q56,Firy ny santionany alaina?
+q57,Mari-pandanjana
+q58,**Santionany 1:**
+q60,*Habeany na sakany (cm)*
+q61,*Halavan'ny vatany na mantle (cm)*
+q62,*Halavan'ny harany (cm)*
+q63,*Sakan'ny harany (cm)*
+q64,*Halavany (cm)*
+q67,**Santionany 10:**
+subtitle7,Santionany (${calc_local_name})
+q67.5,"Ankoatra ireo antontan'isa, inona koa ireo antontan'isa hafa?"
+q68,Firy ny santionany alaina?
+q69,Mari-pandanjana
+q70,**Santionany 1:**
+q59,*Lahy sa vavy*
+q71,*Habeany na sakany (cm)*
+q72,*Halavan'ny vatany na mantle (cm)*
+q73,*Halavan'ny harany (cm)*
+q74,*Sakan'ny harany (cm)*
+q75,*Halavany (cm)*
+q76,*Lanjany (${weight_unit_samples})*
+q77,*kilasy misy ny atodin'ilay biby*
+q78,Kalitaon'ny vokatra
+q79,Gilasy ve no nampiasaina nitehirizana ny vokatra?
+q79.5,Maripànan'ny horita (Célsius)
+q80,Ampiasao ny karatra mba hamaritana ny sandan'ny kalitao ho any orinta izay mirefy 1 ka hatramin'ny 5
+q81,Isan'ireo tanany
+q82,Misy maratra ve?
+q83,Isanjaton'ny velaran'ny horita izay maratra
+q84,Vavany
+q85,Hoditrany
+q86,Kalitaon'ny vokatra
+q87,Mbola velona ve ny drakaka?
+q88,Mbola mihetsika ve ny masony sy vatany?
+q89,Mbola tsara ny masony?
+q90,Mbola tsara ny tànany?
+q91,Firy ny tongony simba?
+q92,Misy rora fotsy ve ny vavan'ny drakaka?
+q93,Tsirin'atody
+q94,Lanjan'ny tsirin'atody (g)
+q95,Lokon'ny tsirin'atody
+q96,Kilasy misy ny tsirin'atody
+q97,Halavan'ny tsirin'atody (cm)
+q98,Fisian'ny tsirinaina
+q99,Fisian'ireo tsipika ao amin'ny tsirin'atodin'ny vavy
+q100,Stylet
+q101,
+a35,Kilo (kg)
+a36,Grama (g)
+a37,
+a38,
+a24,Vatohara
+a25,Ahi-dranomasina (Oriagna)
+a26,Honko
+a27,Fotaka
+a28,Fasika
+a29,Rano lalina
+a30,Hafa
+a7,Eny
+a8,Tsia
+a55,Tsy misy gilasy
+a56,Gilasy ampiasaina mandritra ny fanjonoana
+a57,Gilasy ampiasaina mandritra ny fahatongavana eo amin'ny seranana
+a58,Gilasy ampiasaina mandritra ny fanjonoana sy eo amin'ny seranana
+a59,Vavany tsy misy simba na vaky
+a60,Vavany efa misy simba
+a61,Tsy miala
+a62,Efa miala
+a11,Motera lehibe > 15HP
+a12,Motera kely < 15HP
+a13,Tsy misy motera fa misy five
+a14,Tsy misy motera fa misy lay
+a14.5,Misy motera sy misy lay
+a15,Tsy misy lakana
+a53,Lahy
+a54,Vavy
+a74,Matroka
+a75,Fotsy
+a76,Fotsy matroka
+a77,Fotsy
+a78,Volon-tany
+a79,Volom-boasary/mavo
+a80,Volon-davenona
+a81,I
+a82,II
+a83,III
+a84,IV
+a85,Tsy misy
+a86,Vitsy
+a87,Maro
+a88,Tsy misy
+a89,Tsipika tsy dia hita
+a90,Tsipika mazava tsara
+a48,Ratsy kalitao
+a49,Kely loatra
+a50,Lehibe loatra
+a51,Najanona tsy namidy
+a52,Hafa
+a63,Refiny
+a64,Kalitao
+a65,Tsirin'atody
+a66,Stylet
+a67,Kilasy misy ny tsirin'atodin'ilay biby
+a20,Magniriky mampiasa bouteille
+a21,Magniriky tsy mampiasa bouteille
+a22,Mandeha tongotra
+a23,Hafa
+a16,Vokatra rehetra
+a17,Anjaran'ny mpanjono
+a3,Lahy
+a4,Vavy
+a5,NA
+a6,Orinasa ka tafiditra ao ny olona maromaro
+a68,Eny
+a69,"Tsia, tapaka ny tànany fa tsy hatramin'ny fotony"
+a70,"Tsia, tapaka hatramin'ny fotony"
+a71,Tsy misy tapaka
+a72,1-3 tapaka
+a73,4-6 tapaka
+a31,Tehaky/Samontabe (Rano soro)
+a32,Tehaky/Samontabe (Rano moly)
+a33,Lemirano/Ranogegy (Rano soro)
+a34,Lemirano/Ranogegy (Rano moly)
+a39,Tsia
+a40,Hatao maina
+a41,Hatao sira
+a42,Hasaly
+a43,Izy rehetra
+a44,Tsena/ampahany namboarina
+a45,Nofony
+a46,Rambony
+a47,Ohiny
+sp2,Drakaka
+sp1,Orita
+star,Mihatra amin'ireo mpiara-miombon'antoka na firenena voatendry ihany.
+question,Fanontaniana
+answer,Valiny Safidy
+q47,Lanjany totaly
+q49,Lanjany totaly lafo
+q55,Lanjany totaly isaky ny karazana
+q65,*Lanjany tsirairay*

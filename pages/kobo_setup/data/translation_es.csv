@@ -1,0 +1,23 @@
+key,es
+title,Guía de Configuración de KoboCollect
+step1,Descarga KoboCollect desde la tienda GooglePlay.
+step2,"Abra la aplicación y seleccione ""Ingresar manualmente los detalles del proyecto.""Las instrucciones sobre la configuración a través del código QR se pueden encontrar aquí."
+step3,Configure la conexión del servidor e ingrese las credenciales de inicio de sesión. Utilice el servidor general: https://kc.kobotoolbox.org
+step4,"Si ya has descargado Kobo y deseas agregar otra cuenta a la aplicación, selecciona el icono de usuario en la esquina superior derecha de la pantalla. Seleccione "" Agregar proyecto.""Desde allí, puede ingresar manualmente los detalles del proyecto o usar un código QR."
+step5,"Después de configurar el servidor, seleccione ""Descargar formulario"" en la pantalla de inicio. Debería aparecer una lista de todos los formularios de encuesta compartidos con su cuenta."
+step6,"Seleccione todos los formularios de encuesta compartidos con su cuenta, o seleccione los que desee tener seleccionándolos manualmente. Luego, haga clic en "" Seleccionar.""Kobo se conectará al servidor para buscar todos los formularios. Esto requiere una conexión a Internet."
+step7,"Configure la ""actualización automática"" para asegurarse de que las encuestas en la aplicación se mantengan actualizadas cuando se realicen cambios (pasos 8-13). Si no se está utilizando la versión más reciente de la encuesta, esto provocará problemas en la canalización de datos y la base de datos."
+step8,Haga clic en el icono de usuario en la esquina superior derecha.
+step9,Haga clic en configuración.
+step10,"Una vez allí, haga clic en "" Gestión de formularios."""
+step11,"Luego, haga clic en "" Modo de actualización de formulario en blanco."""
+step12,"Seleccione "" Coincidir exactamente con el servidor.""Esto asegurará que la encuesta se actualice a la versión más reciente."
+step13,"Por último, seleccione ""Frecuencia de actualización automática"" y luego elija una de las frecuencias."
+step14,"Navegue de regreso a la pantalla de inicio. Para recopilar datos, seleccione "" Iniciar nuevo formulario."""
+step15,"Luego, seleccione el formulario de encuesta que desea usar para comenzar a recopilar datos."
+step16,Revise todas las preguntas de la encuesta seleccionando la SIGUIENTE tecla.
+step17,"Al final de la encuesta, seleccione ""Finalizar.""Si desea editar el formulario antes de enviarlo, seleccione"" Guardar como borrador."""
+step18,"Si seleccionó ""Guardar como borrador"", su formulario se enviará a ""Borradores"".""Aquí, puede realizar ediciones en los formularios antes de enviarlos al conjunto de datos final .  Después de realizar los cambios, seleccione ""Finalizar"", como en el paso 17."
+step19,"Después de seleccionar ""Finalizar"", el formulario se almacena automáticamente en ""Listo para enviar"".""En la versión actual de Kobo, aún puedes editar formularios aquí. En el futuro, sin embargo, no podrá editarlos una vez finalizados, y ""Listo para enviar"" será solo un lugar de espera para almacenar los formularios finalizados hasta que tenga una conexión a Internet para enviarlos al servidor."
+step20,"Seleccione ""Enviar seleccionados"" para enviar todos los formularios al servidor."
+step21,"Para asegurarse de que los formularios se cargaron correctamente en el servidor, seleccione ""Enviado.""Estos formularios ahora forman parte del conjunto de datos final."

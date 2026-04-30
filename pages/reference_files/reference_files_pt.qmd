@@ -1,0 +1,310 @@
+---
+title: Arquivos de referência
+echo: false
+output: false
+---
+
+```{r}
+library(shiny.i18n)
+library(rmarkdown)
+library(knitr)
+i18n <- Translator$new(translation_csvs_path = "data")
+i18n$set_translation_language("pt")
+i18n
+
+
+```
+
+## `r i18n$t("title")`
+
+
+`r { i18n$t("p1") }`
+
+`r { i18n$t("step1") }`
+
+-   `r { i18n$t("point1") }`
+
+-   `r { i18n$t("point2") }`
+
+`r { i18n$t("step2") }`
+
+-   `r { i18n$t("point3") }`
+
+-   `r { i18n$t("point4") }`
+
+-   `r { i18n$t("point5") }`
+
+`r { i18n$t("fig1") }`
+
+![](images/fig1.jpg)
+
+`r { i18n$t("step3") }`
+
+-   `r { i18n$t("point6") }`
+
+-   `r { i18n$t("point7") }`
+
+-   `r { i18n$t("point8") }`
+
+`r { i18n$t("fig2") }`
+
+![](images/fig2.jpg){width="935"}
+
+`r { i18n$t("fig3") }`
+
+![](images/fig3.jpg){width="947"}
+
+`r { i18n$t("step4") }`
+
+-   `r { i18n$t("point9") }`
+
+-   `r { i18n$t("point10") }`
+
+    -   `r { i18n$t("point10.1") }`
+
+-   `r { i18n$t("point11") }`
+
+-   `r { i18n$t("point12") }`
+
+-   `r { i18n$t("point13") }`
+
+-   `r { i18n$t("point14") }`
+
+-   `r { i18n$t("point15") }`
+
+-   `r { i18n$t("point16") }`
+
+-   `r { i18n$t("point17") }`
+
+    -   `r { i18n$t("point17.1") }`
+
+    -   `r { i18n$t("point17.2") }`
+
+    -   `r { i18n$t("point17.3") }`
+
+
+`r { i18n$t("fig4") }`
+
+![](images/fig4.jpg){width="788"}
+
+`r { i18n$t("table1") }`
+
+| `r { i18n$t("t1.1") }`     | `r { i18n$t("t1.2") }`     | `r { i18n$t("t1.3")}`  |
+|-------------------------|-------------------------|----------------------|
+| **`r { i18n$t("t1.4") }`** |                            |                        |
+| latest_comment             | `r { i18n$t("t1.5") }`     | `r { i18n$t("t1.6") }` |
+| modified_date              | `r { i18n$t("t1.8") }`     | `r { i18n$t("t1.6") }` |
+| modified_by                | `r { i18n$t("t1.9") }`     | `r { i18n$t("t1.6") }` |
+| active                     | `r { i18n$t("t1.15") }`    | `r { i18n$t("t1.7") }` |
+| remove                     | `r { i18n$t("t1.16") }`    | `r { i18n$t("t1.7") }` |
+| **admin1_ref**             |                            |                        |
+| country                    | `r { i18n$t("t1.10") }`    | BV                    |
+| name                       | `r { i18n$t("t1.11") }`    | BV                    |
+| label                      | `r { i18n$t("t1.12") }`    | `r { i18n$t("t1.7") }` |
+| partner_flag               | `r { i18n$t("t1.13") }`    | BV                    |
+| partner                    | `r { i18n$t("t1.14") }`    | `r { i18n$t("t1.7") }` |
+| **admin2_ref**             |                            |                        |
+| country                    | `r { i18n$t("t1.10") }`    | BV                    |
+| name                       | `r { i18n$t("t1.18") }`    | BV                    |
+| label                      | `r { i18n$t("t1.19") }`    | `r { i18n$t("t1.7") }` |
+| admin1_flag                | `r { i18n$t("t1.20") }`    | BV                    |
+| admin1_ref_name            | `r { i18n$t("t1.21") }`    | `r { i18n$t("t1.7") }` |
+| **admin3_ref**             |                            |                        |
+| country                    | `r { i18n$t("t1.10") }`    | BV                    |
+| name                       | `r { i18n$t("t1.25") }`    | BV                    |
+| label                      | `r { i18n$t("t1.26") }`    | `r { i18n$t("t1.7") }` |
+| admin1                     | `r { i18n$t("t1.27") }`    | BV                    |
+| admin1_ref_name            | `r { i18n$t("t1.28") }`    | BV                    |
+| admin2_flag                | `r { i18n$t("t1.29") }`    | BV                    |
+| admin2                     | `r { i18n$t("t1.30") }`    | `r { i18n$t("t1.7") }` |
+| admin2_ref_name            | `r { i18n$t("t1.31") }`    | BV                    |
+| admin3_lat                 | `r { i18n$t("t1.34") }`    | `r { i18n$t("t1.7") }` |
+| admin3_long                | `r { i18n$t("t1.35") }`    | `r { i18n$t("t1.7") }` |
+| landings_mon               | `r { i18n$t("t1.38.1") }`  | `r { i18n$t("t1.7") }` |
+| landings_prof              | `r { i18n$t("t1.38.2") }`  | `r { i18n$t("t1.7") }` |
+| comm_prof                  | `r { i18n$t("t1.38.3") }`  | `r { i18n$t("t1.7") }` |
+| hhs                        | `r { i18n$t("t1.38.4") }`  | `r { i18n$t("t1.7") }` |
+| **buyer_ref**              |                            |                        |
+| country                    | `r { i18n$t("t1.10") }`    | BV                    |
+| name                       | `r { i18n$t("t1.40") }`    | BV                    |
+| label                      | `r { i18n$t("t1.41") }`    | `r { i18n$t("t1.7") }` |
+| buyer_gender               | `r { i18n$t("t1.42") }`    | `r { i18n$t("t1.7") }` |
+| gender_flag                | `r { i18n$t("t1.43") }`    | BV                    |
+| admin1                     | `r { i18n$t("t1.44") }`    | BV                    |
+| admin2                     | `r { i18n$t("t1.45") }`    | BV                    |
+| admin3                     | `r { i18n$t("t1.46") }`    | BV                    |
+| admin3_ref_name            | `r { i18n$t("t1.47") }`    | `r { i18n$t("t1.7") }` |
+| admin3_flag                | `r { i18n$t("t1.48") }`    | BV                    |
+| **fisher_ref**             |                            |                        |
+| country                    | `r { i18n$t("t1.10") }`    | BV                    |
+| name                       | `r { i18n$t("t1.52") }`    | BV                    |
+| label                      | `r { i18n$t("t1.53") }`    | `r { i18n$t("t1.7") }` |
+| fisher_gender              | `r { i18n$t("t1.54") }`    | `r { i18n$t("t1.7") }` |
+| gender_flag                | `r { i18n$t("t1.55") }`    | BV                    |
+| admin1                     | `r { i18n$t("t1.56") }`    | BV                    |
+| admin2                     | `r { i18n$t("t1.57") }`    | BV                    |
+| admin3                     | `r { i18n$t("t1.58") }`    | BV                    |
+| admin3_ref_name            | `r { i18n$t("t1.47") }`    | `r { i18n$t("t1.7") }` |
+| admin3_flag                | `r { i18n$t("t1.48") }`    | BV                    |
+| **data_collector_ref**     |                            |                        |
+| country                    | `r { i18n$t("t1.10") }`    | BV                    |
+| name                       | `r { i18n$t("t1.64") }`    | BV                    |
+| label                      | `r { i18n$t("t1.65") }`    | `r { i18n$t("t1.7") }` |
+| gender                     | `r { i18n$t("t1.66") }`    | `r { i18n$t("t1.7") }` |
+| admin3_flag                | `r { i18n$t("t1.48") }`    | BV                    |
+| admin3_ref_name            | `r { i18n$t("t1.47") }`    | `r { i18n$t("t1.7") }` |
+| landings_mon               | `r { i18n$t("t1.69") }`    | `r { i18n$t("t1.7") }` |
+| landings_prof              | `r { i18n$t("t1.70") }`    | `r { i18n$t("t1.7") }` |
+| hhs                        | `r { i18n$t("t1.71") }`    | `r { i18n$t("t1.7") }` |
+| comm_prof                  | `r { i18n$t("t1.72") }`    | `r { i18n$t("t1.7") }` |
+| **fishing_ground_ref**     |                            |                        |
+| country                    | `r { i18n$t("t1.10") }`    | BV                    |
+| name                       | `r { i18n$t("t1.75") }`    | BV                    |
+| label                      | `r { i18n$t("t1.76") }`    | `r { i18n$t("t1.7") }` |
+| admin3_flag                | `r { i18n$t("t1.48") }`    | BV                    |
+| admin3_ref_name            | `r { i18n$t("t1.47") }`    | `r { i18n$t("t1.7") }` |
+| partner_flag               | `r { i18n$t("t1.13") }`    | BV                    |
+| partner                    | `r { i18n$t("t1.14") }`    | `r { i18n$t("t1.7") }` |
+| latitude                   | `r { i18n$t("t1.81") }`    | `r { i18n$t("t1.7") }` |
+| longitude                  | `r { i18n$t("t1.82") }`    | `r { i18n$t("t1.7") }` |
+| **gear_ref**               |                            |                        |
+| country                    | `r { i18n$t("t1.10") }`    | BV                    |
+| name                       | `r { i18n$t("t1.85") }`    | BV                    |
+| label                      | `r { i18n$t("t1.86") }`    | `r { i18n$t("t1.7") }` |
+| gear_global                | `r { i18n$t("t1.87") }`    | `r { i18n$t("t1.7") }` |
+| gear_detail                | `r { i18n$t("t1.88") }`    | `r { i18n$t("t1.7") }` |
+| species_group              | `r { i18n$t("t1.89") }`    | `r { i18n$t("t1.7") }` |
+| species_flag               | `r { i18n$t("t1.90") }`    | BV                    |
+| partner                    | `r { i18n$t("t1.14") }`    | `r { i18n$t("t1.7") }` |
+| partner_flag               | `r { i18n$t("t1.13") }`    | BV                    |
+| **landing_site_ref**       |                            |                        |
+| country                    | `r { i18n$t("t1.10") }`    | BV                    |
+| name                       | `r { i18n$t("t1.95") }`    | BV                    |
+| label                      | `r { i18n$t("t1.96") }`    | `r { i18n$t("t1.7") }` |
+| admin3_flag                | `r { i18n$t("t1.48") }`    | BV                    |
+| admin3_ref_name            | `r { i18n$t("t1.47") }`    | `r { i18n$t("t1.7") }` |
+| **management_ref**         |                            |                        |
+| country                    | `r { i18n$t("t1.10") }`    | BV                    |
+| partner_ID                 | `r { i18n$t("t1.14") }`    | `r { i18n$t("t1.7") }` |
+| partner_flag               | `r { i18n$t("t1.13") }`    | BV                    |
+| management_id_unique       | `r { i18n$t("t1.104") }`   | BV                    |
+| management_id              | `r { i18n$t("t1.103") }`   | `r { i18n$t("t1.7") }` |
+| admin3_fish                | `r { i18n$t("t1.104.1") }` | `r { i18n$t("t1.7") }` |
+| admin3_fish_flag           | `r { i18n$t("t1.104.2") }` | BV                    |
+| admin3_govern              | `r { i18n$t("t1.104.3") }` | `r { i18n$t("t1.7") }` |
+| admin3_govern_flag         | `r { i18n$t("t1.104.4") }` | BV                    |
+| management_fishing_ground  | `r { i18n$t("t1.105") }`   | `r { i18n$t("t1.7") }` |
+| fishing_ground_flag        | `r { i18n$t("t1.105.5") }` | BV                    |
+| management_method          | `r { i18n$t("t1.106") }`   | `r { i18n$t("t1.7") }` |
+| regulation_type            | `r { i18n$t("t1.106.1") }` | `r { i18n$t("t1.7") }` |
+| target_group               | `r { i18n$t("t1.106.2") }` | `r { i18n$t("t1.7") }` |
+| target_species             | `r { i18n$t("t1.107") }`   | `r { i18n$t("t1.7") }` |
+| species_flag               | `r { i18n$t("t1.107.1") }` | BV                    |
+| target_habitat             | `r { i18n$t("t1.108") }`   | `r { i18n$t("t1.7") }` |
+| management_area_ha         | `r { i18n$t("t1.109") }`   | `r { i18n$t("t1.7") }` |
+| close_date                 | `r { i18n$t("t1.110") }`   | `r { i18n$t("t1.7") }` |
+| open_date                  | `r { i18n$t("t1.111") }`   | `r { i18n$t("t1.7") }` |
+| management_lat             | `r { i18n$t("t1.112") }`   | `r { i18n$t("t1.7") }` |
+| management_long            | `r { i18n$t("t1.113") }`   | `r { i18n$t("t1.7") }` |
+| **org_ref**                |                            |                        |
+| country                    | `r { i18n$t("t1.10") }`    | BV                    |
+| name                       | `r { i18n$t("t1.116") }`   | BV                    |
+| label                      | `r { i18n$t("t1.117") }`   | `r { i18n$t("t1.7") }` |
+| species_group              | `r { i18n$t("t1.118") }`   | `r { i18n$t("t1.7") }` |
+| **species_ref**            |                            |                        |
+| country                    | `r { i18n$t("t1.10") }`    | BV                    |
+| partner                    | `r { i18n$t("t1.122") }`   | BV                    |
+| habitat                    | `r { i18n$t("t1.123") }`   | BV                    |
+| name                       | `r { i18n$t("t1.124") }`   | BV                    |
+| label                      | `r { i18n$t("t1.125") }`   | BV                    |
+| species_group              | `r { i18n$t("t1.126") }`   | BV                    |
+| species_flag               | `r { i18n$t("t1.127") }`   | BV                   |
+| local_name                 | `r { i18n$t("t1.128") }`   | `r { i18n$t("t1.7") }` |
+| admin1-3                   | `r { i18n$t("t1.129") }`   | `r { i18n$t("t1.7") }` |
+| common_english             | `r { i18n$t("t1.130") }`   | BV                    |
+| scientific_family          | `r { i18n$t("t1.131") }`   | BV                    |
+| scientific_species         | `r { i18n$t("t1.132") }`   | `r { i18n$t("t1.7") }` |
+| length_limit_max           | `r { i18n$t("t1.133.1") }`   | BV                    |
+| length_limit_min           | `r { i18n$t("t1.133.2") }`   | BV                    |
+| weight_limit_max           | `r { i18n$t("t1.133.3") }`   | BV                    |
+| weight_limit_min           | `r { i18n$t("t1.133.4") }`   | BV                   |
+| avg_weight                 | `r { i18n$t("t1.133.5") }`   | BV                   |
+| **translations_ref**       |                            |                        |
+| english                    | `r { i18n$t("t1.134") }`   | BV                    |
+| country language           | `r { i18n$t("t1.135") }`   | `r { i18n$t("t1.7") }` |
+| ref_sheet                  | `r { i18n$t("t1.136") }`   | BV                    |
+| **min_max_ref**            |                            |                        |
+| country                    | `r { i18n$t("t1.10") }`    | BV                    |
+| partner                    | `r { i18n$t("t1.138") }`   | BV                    |
+| min                        | `r { i18n$t("t1.139") }`   | `r { i18n$t("t1.7") }` |
+| max                        | `r { i18n$t("t1.140") }`   | `r { i18n$t("t1.7") }` |
+| species_group              | `r { i18n$t("t1.141") }`   | BV                    |
+| category                   | `r { i18n$t("t1.143") }`   | `r { i18n$t("t1.7") }` |
+| processing                 | `r { i18n$t("t1.144") }`   | `r { i18n$t("t1.7") }` |
+| **lw_ref**                 |                            |                        |
+| species                    | `r { i18n$t("t1.132") }`   | BV                    |
+| genus                      | `r { i18n$t("t1.145") }`   | BV                    |
+| family                     | `r { i18n$t("t1.146") }`   | BV                   |
+| common_name                | `r { i18n$t("t1.147") }`   | BV                    |
+| species_group              | `r { i18n$t("t1.148") }`   | BV                    |
+| avg_k                      | `r { i18n$t("t1.149") }`   | BV                    |
+| avg_k_type                 | `r { i18n$t("t1.150") }`   | BV                    |
+| a                          | `r { i18n$t("t1.151") }`   | BV                    |
+| b                          | `r { i18n$t("t1.152") }`   | BV                    |
+| a_b_ref                    | `r { i18n$t("t1.153") }`   | BV                    |
+| a_b_type                   | `r { i18n$t("t1.154") }`   | BV                    |
+| lmax                       | `r { i18n$t("t1.155") }`   | BV                    |
+| max_length_type            | `r { i18n$t("t1.156") }`   | BV                    |
+| lmax_ref                   | `r { i18n$t("t1.157") }`   | BV                    |
+| length_conversion_a        | `r { i18n$t("t1.158") }`   | BV                    |
+| length_conversion_b        | `r { i18n$t("t1.159") }`   | BV                    |
+| lmax_tl                    | `r { i18n$t("t1.160") }`   | BV                    |
+| trophic_level              | `r { i18n$t("t1.161") }`   | BV                    |
+| vulnerability              | `r { i18n$t("t1.162") }`   | BV                    |
+| trophic_group              | `r { i18n$t("t1.163") }`   | BV                    |
+| functional_group           | `r { i18n$t("t1.164") }`   | BV                    |
+| group_size                 | `r { i18n$t("t1.165") }`   | BV                    |
+| loo                        | `r { i18n$t("t1.166") }`   | BV                    |
+| lmat                       | `r { i18n$t("t1.167") }`   | BV                    |
+| lmat_type                  | `r { i18n$t("t1.168") }`   | BV                    |
+| lmat_ref                   | `r { i18n$t("t1.169") }`   | BV                    |
+| final_type                 | `r { i18n$t("t1.170") }`   | BV                    |
+| final_lmax                 | `r { i18n$t("t1.171") }`   | BV                    |
+| calc_loo                   | `r { i18n$t("t1.172") }`   | BV                    |
+| calc_lmat                  | `r { i18n$t("t1.173") }`   | BV                    |
+| final_lmat                 | `r { i18n$t("t1.174") }`   | BV                    |
+| calc_limit_min             | `r { i18n$t("t1.175") }`   | `r { i18n$t("t1.6") }` |
+| length_limit_max           | `r { i18n$t("t1.176") }`   | `r { i18n$t("t1.6") }` |
+| length_limit_min           | `r { i18n$t("t1.177") }`   | `r { i18n$t("t1.6") }` |
+| weight_limit_max           | `r { i18n$t("t1.178") }`   | `r { i18n$t("t1.6") }` |
+| weight_limit_min           | `r { i18n$t("t1.179") }`   | `r { i18n$t("t1.6") }` |
+| avg_weight                 | `r { i18n$t("t1.180") }`   | `r { i18n$t("t1.6") }` |
+| avg_weight_refs            | `r { i18n$t("t1.181") }`   | BV                    |
+| habitat_deepwater          | `r { i18n$t("t1.182") }`   | BV                    |
+| habitat_reef               | `r { i18n$t("t1.183") }`   | BV                    |
+| habitat_mangrove           | `r { i18n$t("t1.184") }`   | BV                    |
+| habitat_seagrass           | `r { i18n$t("t1.185") }`   | BV                    |
+| habitat_mud                | `r { i18n$t("t1.186") }`   | BV                    |
+| habitat_sand               | `r { i18n$t("t1.187") }`   | BV                    |
+| habitat_estuary            | `r { i18n$t("t1.188") }`   | BV                    |
+
+
+: {tbl-colwidths="\[25,50,25\]"}
+
+`r { i18n$t("faq") }`
+
+1.  `r { i18n$t("q1") }`
+
+-   `r { i18n$t("a1") }`
+
+2.  `r { i18n$t("q2") }`
+
+-   `r { i18n$t("a2") }`
+
+3.  `r { i18n$t("q3") }`
+
+-   `r { i18n$t("a3") }`
+
+`r { i18n$t("fig5") }`
+
+![](images/fig5.jpg){width="844"}

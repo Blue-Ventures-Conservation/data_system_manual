@@ -1,0 +1,100 @@
+---
+title: Quick Guide
+echo: false
+output: false
+---
+
+```{r}
+library(shiny.i18n)
+library(rmarkdown)
+library(knitr)
+i18n <- Translator$new(translation_csvs_path = "data")
+i18n$set_translation_language("tet")
+i18n
+
+
+```
+
+## `r i18n$t("title")`
+
+### `r { i18n$t("subtitle") }`
+
+#### `r { i18n$t("intro") }`
+
+`r { i18n$t("p1") }`
+
+`r { i18n$t("p2") }`
+
+`r { i18n$t("p3") }`
+
+`r { i18n$t("p4") }`
+
+`r { i18n$t("p5") }`
+
+`r { i18n$t("p6") }`
+
+#### `r { i18n$t("steps") }`
+
+1.  `r { i18n$t("step1") }`
+    a.  `r { i18n$t("1a") }`
+    b.  `r { i18n$t("1b") }`
+    c.  `r { i18n$t("1c") }`
+    d.  `r { i18n$t("1d") }`
+
+```{=html}
+<!-- -->
+```
+2.  `r { i18n$t("step2") }`
+    a.  `r { i18n$t("2a") }`
+    b.  `r { i18n$t("2b") }`
+    c.  `r { i18n$t("2c") }`
+
+```{=html}
+<!-- -->
+```
+3.  `r { i18n$t("step3") }`
+
+    a.  `r { i18n$t("3a") }`
+
+4.  `r { i18n$t("step4") }`
+
+    a.  `r { i18n$t("4a") }`
+    b.  `r { i18n$t("4b") }`
+    c.  `r { i18n$t("4c") }`
+    d.  `r { i18n$t("4d") }`
+    e.  `r { i18n$t("4e") }`
+
+```{=html}
+<!-- -->
+```
+5.  `r { i18n$t("step5") }`
+    a.  `r { i18n$t("5a") }`
+    b.  `r { i18n$t("5b") }`
+    c.  `r { i18n$t("5c") }`
+
+```{=html}
+<!-- -->
+```
+6.  `r { i18n$t("step6") }`
+    a.  `r { i18n$t("6a") }`
+    b.  `r { i18n$t("6b") }`
+    c.  `r { i18n$t("6c") }`
+    d.  `r { i18n$t("6d") }`
+    e.  `r { i18n$t("6e") }`
+    f.  `r { i18n$t("6f") }`
+
+```{=html}
+<!-- -->
+```
+7.  `r { i18n$t("step7") }`
+
+    a.  `r { i18n$t("7a") }`
+
+8.  `r { i18n$t("step8") }`
+
+    a.  `r { i18n$t("8a") }`
+
+`r { i18n$t("p7") }`
+
+`r { i18n$t("p8") }`
+

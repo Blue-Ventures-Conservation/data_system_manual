@@ -1,0 +1,200 @@
+key,tet
+title,Atualiza Files Referensia
+p1,"Arkivu referénsia hotu-hotu atualiza iha Smartsheet Dynamic View. Arkivu referénsia sira serve hanesan inputs ba lista dropdown iha formuláriu KoboToolbox no kontein dadus ne'ebé aumenta ba dadus master liu husi konjuntu. Sira iha informasaun ne'ebé komprensivu kona-ba nivel administrativu komunidade peska sira (nasaun, provínsia, distritu, suku), fatin ba rai-maran, rai peska, peskadór, sosa-nain, koletor dadus, espésie, área jestaun, tipu sasán no organizasaun parseria sira. Pasu sira iha kraik esplika oinsá atu atualiza fail referénsia ho informasaun foun."
+step1,Pasu 1: Halo konta ne'ebé livre.
+point1,Bele kria konta gratuita ida iha https://www.smartsheet.com/
+point2,"Hili ""Haree smart sheet ho gratuita"""
+step2,Pasu 2: Fornese Blue Ventures (BV) diresaun e-mail ne'ebé uluk ita kria ita-nia konta smartsheet.
+point3,BV sei fahe fail referénsia sira ne'ebé asosiadu ho ita-nia organizasaun.
+point4,Atu haree ita-nia arkivu referénsia sira ita presiza asina iha smartsheet Dynamy View uza ita-nia kredensiál smartsheet: https://dynamicview.smartsheet.com/login
+point5,"Bainhira tama tiha ona iha Vizaun dinámika (laos aplikasaun smartsheet), ita sei haree lista arkivu referénsia sira ne'ebé fahe ho ita-nia konta (Figura 1)."
+fig1,Figura 1: Lista arkivu referénsia sira iha Vizaun dinámika
+step3,Pasu 3: Klike iha fail referénsia atu halo atualizaun
+point6,"Bainhira loke tiha, ita bele klike iha liña ida-idak atu halo edisaun ba dadus ne'ebé eziste, ka klike iha knotak ""New"" iha parte loos leten atu aumenta dadus foun (Figura 2)."
+point7,"Painél detallu ida sei hatudu iha parte loos iha ne'ebé ita bele hatama informasaun ne'ebé presiza (Figura); Tabela 1). Hili ""save"" iha parte loos okos husi painél detallu bainhira ita remata atualiza."
+point8,"Atu husik komentáriu ruma ka husu pergunta ruma ba ekipa, hili tabela ""Kordenador"" iha painél detallu. Ema hotu-hotu ne'ebé fahe fail referénsia, inklui ekipa BV, sei simu notifikasaun bainhira halo komentáriu, nune'e la presiza marka ema ida-idak."
+fig2,Figura 2: Ezemplu vizaun husi admin2_ref iha Vizaun dinámika
+fig3,Figura 3: Ezemplu vizaun husi painél detallu admin2_ref iha Vizaun dinámika
+step4,"Pasu 4: Responde atu atualiza pedidu bainhira dadus lakon ka la loos, ka atu hatán ba komentáriu ruma."
+point9,"Karik iha informasaun ne'ebé la kompletu ka la loos ne'ebé esensiál ba populasaun Kobo dropdowns ka ba konjuntu, ka karik halo komentáriu iha surat-tahan, sei haruka pedidu atualizasaun ba utilizadór apropriadu hotu-hotu, hodi fó lalais informasaun ne'e atu atualiza ka hatán ba komentáriu (Figura 4). Tuir loloos, ema hotu ne'ebé iha asesu ba ita-nia arkivu referénsia sei simu pedidu atualizasaun."
+point10,"Prevee dadus ne'ebé presiza atualiza ka responde ba sei hatudu iha mensajen e-mail nia okos, maibé ita sei la bele atualiza dadus ruma diretamente iha e-mail"
+point10.1,"Iha e-mail nia okos, iha ligasaun ba ""Ba iha surat-tahan""; maibé, surat-tahan ne'e limitadu ona. Favór haree fali ita-nia dadus ka hatán ba komentáriu liuhosi pedidu nakloke."
+point11,"Klike iha knotak ""Open Request"" iha mensajen e-mail."
+point12,Janela navegador internét foun sei loke ho setup hanesan formuláriu ba kada entrada (Figura 5)
+point13,Halo revizaun ba kampu sira-ne'e no halo populasaun ba kampu sira ne'ebé edita.
+point14,Klike tuir mai iha telemovel nia okos hodi muda liu husi kada entrada ne'ebé presiza atualiza.
+point15,"Atu hasai tiha (hanesan se ita seidauk hatene resposta ida-ne'ebé atu hili) klike "" Tuirmai"" la halo selesaun iha koluna edivel sira. Sei haree mós informasaun tuirmai ne'ebé presiza atualiza."
+point16,"Se ita presiza sai husi pájina ne'e ka para molok atualiza tiha ona, ita tenke salva ita-nia desizaun bainhira ita loke fali pedidu ne'e. Bainhira loke tiha ona, klike de'it "" Tuirmai"" to'o ita hetan informasaun ne'ebé presiza atualiza."
+point17,"Bainhira ita haree informasaun ikus, klike iha ""Haree."" Mensajen pop-up sei mosu hodi husu se Ita-Boot mak ""Ready atu hato'o Ita-Boot nia atualizaun?"
+point17.1,"Klike ""Ba kotuk"" se ita presiza haree fali"
+point17.2,"Klike ""Haree Atualizasaun"" atu hato'o Ita-nia atualizaun."
+point17.3,Ita-boot sira-nia atualizasaun automatikamente aplika ba arkivu referénsia no ita bele haree iha Vizaun dinámika
+fig4,"Figura 4: Ezemplu ""Atualiza pedidu"" e-mail bainhira presiza korrije informasaun ka hato'o komentáriu."
+table1,"Tabela 1: Kampu prinsipál sira iha kada arkivu referénsia. Tipu kampu ""BV"" jere husi Blue Ventures no la editavel. Atu husu alterasaun ba kualkér kampu ""BV"" favór ida, husik komentáriu. Bele edita de'it kampu sira ho tipu kampu ""editavel"". Tipu kampu ""auto"" mak populasaun automatikamente."
+t1.1,Naran kampu
+t1.2,Deskrisaun kampu
+t1.3,Tipu kampu
+t1.4,Arkivu referénsia hotu
+t1.5,"Koluna ida-ne'e haree komentáriu ikus ne'ebé hato'o ba liña ne'e. Atu haree diskusaun kona-ba komentáriu sira iha liña ne'e, klike de'it iha fatin naran de'it iha liña ne'e. Painél detallu sei mosu, hanesan iha Figura 3. Klike iha tabela ""Hanoin"" atu haree komentáriu hotu kona-ba liña ne'e."
+t1.6,Auto
+t1.7,Edita
+t1.8,Data edisaun ikus
+t1.9,Utilizadór ne'ebé halo edisaun ikus
+t1.10,"Kódigu nasaun ISO, ne'ebé nu'udar kódigu kombinasaun karta internasionál ne'ebé rekoñese"
+t1.11,"Naran administradór1, nivel administrativu aas liu tuir nasaun (hanesan provínsia) laiha fatin no laiha pontuasaun, só subliña de'it"
+t1.12,"Naran administradór1, nivel administrativu aas liu tuir nasaun (hanesan provínsia) ho fatin no pontuasaun ne'ebé permite. Favór ida keta troka marka ne'e se la nesesáriu, tanba hamutuk bazeia ba ida-ne'e."
+t1.13,"Bandeira sei mean se valór ""parseiru"" la eziste iha órgaun"
+t1.14,"Naran parseiru ho laiha fatin no laiha pontuasaun, só subliña de'it. Lista dropdown ne'e liga ba koluna ""naran"" iha org_ref."
+t1.15,"Hili ""Yes"" se dadus ne'ebé daudaun ne'e halibur hela husi área ida-ne'e. Se dadus sira-ne'e la halibur tiha ona husi individu/area ida-ne'e, no ita hakarak subar husi Kobo dropdown, hili ""Lae."""
+t1.16,"Se Ita hakarak hasai tiha livru sira-ne'e, hili ""Yes"". Rejistu sira tenke hasai de'it bainhira naran ne'e la loos ka duplikadu husi rejistu ne'ebé eziste."
+t1.18,"Naran administradór2, nivel administrativu aas liu hafoin administradór1 (hanesan distritu) laiha fatin no laiha pontuasaun, só subliña de'it"
+t1.19,"Naran administradór2, nivel administrativu aas liu hafoin administradór1 (hanesan distritu) ho fatin no pontuasaun ne'ebé permite. Favór ida keta troka marka ne'e se la nesesáriu, tanba hamutuk bazeia ba ida-ne'e."
+t1.20,"Bandeira sei mean se valór ""admin1_ref_name"" la eziste iha admin1_ref"
+t1.21,"Admin1 naran laiha fatin no laiha pontuasaun, só subliña de'it. Lista dropdown ne'e liga ba koluna ""naran"" iha admin1_ref."
+t1.25,"Admin2 no admin3 naran hamutuk ho laiha fatin no laiha pontuasaun, só subliña de'it.Admin3 mak nivel administrativu aas liu hafoin administrasaun2 (hanesan suku)."
+t1.26,"Naran administradór nian, nivel administrativu ne'ebé aas liu hafoin administradór (hanesan suku) ho fatin no pontuasaun ne'ebé permite. Favór ida keta troka marka ne'e se la nesesáriu, tanba hamutuk bazeia ba ida-ne'e."
+t1.27,Admin1 naran ho espasu no pontuasaun permite. Ida ne'e dada husi admin1_ref no auto populasaun bazeia ba administrasaun2 ne'ebé hili ona.
+t1.28,"Admin1 naran laiha fatin no laiha pontuasaun, só subliña de'it. Ida ne'e dada husi administradór1_ref no auto populasaun bazeia ba administradór2 ne'ebé hili ona"
+t1.29,"Bandeira sei mean se valór ""admin2"" la eziste iha admin2_ref."
+t1.30,"Admin2 naran ho espasu no pontuasaun permite. Lista dropdown ne'e liga ba koluna ""label"" iha admin2_ref."
+t1.31,"Admin2 naran laiha fatin no laiha pontuasaun, só subliña de'it. Ida ne'e dada husi admin2_ref no auto-populasaun bazeia ba administrasaun2 ne'ebé hili ona."
+t1.34,Latitude admin3
+t1.35,Naruk administradór3
+t1.38.1,"Hili ""Yes"" se ita hakarak administradór3 atu aprezenta iha dropdown ba formuláriu monitorizasaun ba rai-Kobo."
+t1.38.2,"Hili ""Yes"" se ita hakarak admin3 atu hatama iha dropdown ba formuláriu perfíl ba rai-Kobo."
+t1.38.3,"Hili ""Yes"" se ita hakarak admin3 atu hatama iha dropdown ba formuláriu perfíl komunidade Kobo."
+t1.38.4,"Hili ""Yes"" se ita hakarak administradór3 atu aprezenta iha dropdown ba formuláriu levantamentu uma-kain Kobo."
+t1.40,"Naran sosa-na'in ne'ebé laiha fatin no laiha pontuasaun, de'it subliña"
+t1.41,"Naran sosa-na'in ho fatin no pontuasaun permite. Favór ida keta troka marka ne'e se la nesesáriu, tanba hamutuk bazeia ba ida-ne'e."
+t1.42,"Jéneru sosa-na'in; mane, feto, la'ós-binariu ka negósiu_nogender"
+t1.43,"Bandeira sei mean se valór sosa-na'in la hanesan ba sosa-na'in ne'ebé hanesan (ezemplu, se Raymond Scott iha admin3= Boston iha jéneru, maibé Raymond Scott iha admin3=Miami iha jéneru=feto, bandeira sei mean tanba jéneru la hanesan ba sosa-na'in ne'ebé hanesan)."
+t1.44,"Naran Administrador1 ne'ebé sosa hosi, ho fatin no pontuasaun ne'ebé permite. Ida ne'e dada husi admin1_ref no auto populasaun bazeia ba admin3_ref_name hili ona."
+t1.45,"Naran administradór2 ne'ebé sosa husi, ho fatin no pontuasaun ne'ebé permite. Ida ne'e dada husi admin2_ref no auto populasaun bazeia ba admin3_ref_name hili ona."
+t1.46,"Admin3 naran ne'ebé sosa husi, ho fatin no pontuasaun ne'ebé permite. Ida ne'e dada husi admin3_ref no auto populasaun bazeia ba admin3_ref_name hili."
+t1.47,"Admin2 no admin3 naran hamutuk ho laiha fatin no laiha pontuasaun, só subliña de'it.Lista dropdown ne'e liga ba koluna ""naran"" iha admin3_ref."
+t1.48,"Bandeira sei mean se valór ""admin3_ref_name"" la eziste iha admin3_ref."
+t1.52,"Naran ba peskadór ne'ebé la iha fatin no la iha pontuasaun, de'it subliña"
+t1.53,"Naran peskadór ho fatin no pontuasaun permite. Favór ida keta troka marka ne'e se la nesesáriu, tanba hamutuk bazeia ba ida-ne'e."
+t1.54,"Jéneru peskadór nian; mane, feto, la-binariu ka negósiu_nogender"
+t1.55,"Bandeira ne'e sei sai mean se valór peskadór la hanesan ba peskadór ida (ezemplu, se Raymond Scott iha admin3= Boston iha jéneru, maibé Raymond Scott iha admin3=Miami iha jéneru=feto, bandeira ne'e sei mean tanba jéneru la hanesan ho peskadór ida)."
+t1.56,"Naran administradór1 iha fatin ne'ebé peskadór rai sira-nia rai, ho fatin no pontuasaun ne'ebé permite. Ida ne'e dada husi admin1_ref no auto populasaun bazeia ba admin3_ref_name hili ona."
+t1.57,"Naran administradór2 iha fatin ne'ebé peskadór rai sira-nia rai, ho fatin no pontuasaun ne'ebé permite. Ida ne'e dada husi admin2_ref no auto populasaun bazeia ba admin3_ref_name hili ona."
+t1.58,"Naran administradór3 iha fatin ne'ebé peskadór rai sira-nia rai, ho fatin no pontuasaun ne'ebé permite. Ida ne'e dada husi admin3_ref no auto populasaun bazeia ba admin3_ref_name hili."
+t1.64,"Naran koletor dadus laiha fatin no laiha pontuasaun, só subliña de'it"
+t1.65,Naran koletor dadus ho fatin no pontuasaun permite.
+t1.66,"Jéneru koletor dadus; mane, feto, la-binaria ka negósiu_nogender"
+t1.69,"Hili ""Yes"" se ita hakarak koletor dadus atu aprezenta iha dropdown ba formuláriu monitorizasaun ba rai-Kobo."
+t1.70,"Hili ""Yes"" se ita hakarak koletor dadus atu aprezenta iha dropdown ba formuláriu perfíl ba rai-Kobo"
+t1.71,"Hili ""Yes"" se ita hakarak koletor dadus atu aprezenta iha dropdown ba formuláriu levantamentu uma-kain Kobo"
+t1.72,"Hili ""Yes"" se ita hakarak koletor dadus atu aprezenta iha dropdown ba formuláriu perfíl komunidade Kobo"
+t1.75,"Naran ba rai peska nian ne'ebé la iha fatin no la iha pontuasaun, de'it subliña."
+t1.76,"Naran rai peska nian ho fatin no pozisaun ne'ebé permite. Favór ida keta troka marka ne'e se la nesesáriu, tanba hamutuk bazeia ba ida-ne'e."
+t1.81,Latitude rai peska nian
+t1.82,Naruk rai peska nian
+t1.85,"Naran lokál ba sasán sira ne'ebé la iha fatin no la iha pontuasaun, só subliña de'it"
+t1.86,"Naran lokál ba sasán ho fatin no pontuasaun permite. Favór ida keta troka marka ne'e se la nesesáriu, tanba hamutuk bazeia ba ida-ne'e."
+t1.87,"Naran Ingles husi sasán sira-ne'e la iha fatin no la iha pontuasaun, só subliña de'it. Ida ne'e lista dropdown ne'ebé define ona. Favór ida hili ida-ne'ebé di'ak liu tuir sasán lokál, ka komentáriu se ita la hatene."
+t1.88,Deskrisaun kona-ba sasán
+t1.89,"Grupu espésie sira-ne'e nia alvu. Se sasán ida-ne'e alvu ba espésie oioin, kria dadus foun ida ba kada grupu espésie. Lista dropdown ne'e liga ho koluna ""espésie_grupu"" iha espésie_ref."
+t1.90,"Bandeira ne'e sei mean se ""espésie grupu"" ne'ebé hili la eziste iha espésie_ref."
+t1.95,"Naran ba fatin rai-maran ne'ebé la iha fatin no la iha pontuasaun, só subliña de'it"
+t1.96,Naran ba fatin rai-maran ho fatin no pontuasaun ne'ebé permite
+t1.103,"Naran úniku ba área jestaun ho espasu no pontuasaun permite. Favór ida, keta troka naran ne'e se la presiza duni, tanba hamutuk bazeia ba ida-ne'e."
+t1.104,"Naran úniku ba área jestaun no data efetivu. Liu-liu, iha informasaun sira tuir mai ne'ebé ketak husi sub-distritu: jestaun, jestaun, métodu, besik no nakloke."
+t1.104.1,Lista administradór sira ne'ebé ikan iha área jestaun.
+t1.104.2,"Bandeira ne'e sei mean se administradór ida-ne'ebé lista ona iha koluna ""admin3_fish"" la eziste iha admin3_ref."
+t1.104.3,Lista administradór sira ne'ebé iha papél atu regula eventu jestaun.
+t1.104.4,"Bandeira ne'e sei mean se administradór ida-ne'ebé lista iha ""admin3_government"" koluna la eziste iha admin3_ref."
+t1.105,"Lista baze peska nian ne'ebé asosiadu ho eventu jestaun nian. Lista dropdown iha ligasaun ho koluna ""naran"" iha peska_ground_ref."
+t1.105.5,"Bandeira ne'e sei mean se baze peska ida-ne'ebé lista iha ""management_fishing_ground"" la eziste iha peska-ground_ref."
+t1.106,"Tipu métodu jestaun ne'ebé uza durante eventu. Lista pre-definida ne'e inklui: Enserramentu Temporariu, Laiha Zona foti, Restriksaun Gear, Asesu Jestaun, Banu Koá ka Banu Deflorestasaun."
+t1.106.1,"Tipu regulamentu legál. Lista pre-definida ne'e inklui: regulamentu xefe-suku, dekretu xefe-suku, regulamentu xefe-suku konjunta ka laiha."
+t1.106.2,Grupu espésie alvu ba área jestaun. Ida ne'e bele inklui grupu espésie ida ka oin-oin. Lista dropdown ne'e liga ho espésie MASTER_ref no inklui espésie grupu hosi parseiru hotu-hotu.
+t1.107,"Espesialidade alvu ba área jestaun. Ida-ne'e bele inklui espésie hotu-hotu, espésie sientifika ida ka oin-oin. Lista dropdown ne'e liga ho espésie MASTER_ref no inklui espésie hosi parseiru hotu-hotu."
+t1.107.1,"Bandeira ne'e sei sai mean se ""espésia tarjetu"" ne'ebé hili la refere ba espésie parseiru nian_ref."
+t1.108,"Alvu ba área ne'ebé jere. Lista dropdown ne'ebé pre-definidu inklui opsaun sira kona-ba uma-laran: rai-maran, tasi-maran, mangrove, rai-maran, rai-henek, bee kle'an ka seluk tan."
+t1.109,Dimensaun área jestaun ne'ebé sukat iha ektares (ha)
+t1.110,Data enserramentu área jestaun nian; MM/DD/YY
+t1.111,Data abertura área jestaun; MM/DD/YYY
+t1.112,Latitude área jestaun
+t1.113,Naruk área jestaun
+t1.116,"Naran parseiru/organizasaun ho laiha fatin no laiha pontuasaun, só subliña de'it"
+t1.117,"Naran parseiru/organizasaun ho espasu no pontuasaun permite. Favór ida keta troka marka ne'e se la nesesáriu, tanba hamutuk bazeia ba ida-ne'e."
+t1.118,"Grupu espésie sira ne'ebé parseiru halibur dadus kona-ba. Lista dropdown ne'e liga ho koluna ""espésie_grupu"" iha espésie_ref. Hili grupu hotu se sira hakarak espésie hotu iha espésie_ref atu hatudu."
+t1.122,"Naran parseiru ho laiha fatin ka pontuasaun, só subliña de'it. Espésie dropdowns hetan filtra husi parseiru. Nasaun balu iha parseiru oin-oin ne'ebé fahe lista espésie. Iha kazu ida-ne'e, ita sei haree kódigu nasaun nian duke parseiru, no lista espésie hotu-hotu sei hatudu ba parseiru ida-idak iha nasaun ne'e, se la espesífika grupu espésie balun iha koluna ""espésie grupu"" iha org_ref."
+t1.123,Tipu habitat ne'ebé asosiadu ho espésie
+t1.124,"Naran lokál no naran espésie sira hamutuk ho rai-kuak, laiha pontuasaun ka fatin seluk."
+t1.125,Naran lokál ho naran espésie iha parentesis
+t1.126,"Espésie sira ne'ebé kategoria ba grupu sira bazeia ba sira-nia biolojia laiha fatin ka pontuasaun, só subliña de'it. Kampu ne'e uza atu ajuda filtra opsaun resposta balun iha Kobo."
+t1.127,"Bandeira ne'e sei mean se ""espésia grupu"" ne'ebé hili la refere iha gear_ref. Ne'e signifika katak sasán hotu ne'ebé lista iha gear_ref sei mosu ba grupu espésie ida-ne'e. Atu hatudu de'it sasán sira ne'ebé alvu ba grupu espésie ida-ne'e, favór ida aumenta sasán sira-ne'e ba sasán sira-ne'e."
+t1.128,Naran espésie lokál ho espasu no pontuasaun permite
+t1.129,"Naran administradór1, 2 ka 3 laiha fatin ka pontuasaun, só subliña de'it. Lista dropdown iha ligasaun ho koluna ""naran"" iha admin_ref. *Kampu ida-ne'e sei hatudu de'it ba parseiru sira ne'ebé hakarak espésie dropdown ne'ebé administradór ne'e halo."
+t1.130,Espésie Ingles komún naran ho espasu no pontuasaun permite
+t1.131,Naran família ba espésie ida-ne'ebé iha fatin no pontuasaun permite
+t1.132,"Naran sientífiku ba espésie sira ne'ebé iha espasu no pontuasaun permite. Se espésie sira-ne'e la hatene, bele tama mós ba jéneru ka família. Se ema hatene de'it jéneru ne'e, hakerek naran jéneru ne'e tuir mai ""sp"" (la hanesan ho ""spp"" ka sp). Se ema hatene de'it kona-ba família, hakerek família nia naran (hanesan Lutjanidae)."
+t1.133.1,Limitasaun naruk másimu (cm) uza ba avizu valór. Haree lw_ref atu hetan informasaun liután.
+t1.133.2,Limitasaun naruk mínimu (cm) uza ba avizu valór. Haree lw_ref atu hetan informasaun liután.
+t1.133.3,"Limitasaun pesoál másimu (kg) uza ba avizu valór bazeia ba valór naruk_limit_max, valór a, no b, auto-kalkuladu iha Smartsheet uza formula ""= ([ longu_limit_max]@row ^ b@row) * a@row) / 1000."" Haree lw_ref atu hetan informasaun liután."
+t1.133.4,"Limitasaun pesoál mínimu (kg) uza ba avizu valór bazeia ba valór naruk_limit_min, valór a, no b, kalkulasaun auto iha Smartsheet uza formula""= ([ longu_limit_min]@row ^ b@row) * a@row) / 1000."" Haree lw_ref atu hetan informasaun liután."
+t1.133.5,"(kg), auto-kalkuladu iha Smartsheet uza formula ""= ([weight_limit_max]@row + [weight_limit_min]@row) / 2."" Haree lw_ref atu hetan informasaun liután."
+t1.134,"Tradusaun lia-ingles ne'ebé tradús nu'udar ""hatudu buat foun,"" ""la hatene,"" ""la fa'an,"" no seluk tan."
+t1.135,"Tradusaun ba língua rai nian ne'ebé tradús nu'udar ""adia foun"", ""la hatene,"" ""la fa'an,"" no seluk tan."
+t1.136,Karta referénsia tradusaun ne'e sei akorda ho atu hatudu iha Kobo nia dropdown apropriadu
+t1.138,"Naran parseiru ho laiha fatin ka pontuasaun, só subliña de'it."
+t1.139,Presu mínimu bazeia ba espésie_grupu
+t1.140,Presu másimu bazeia ba espésie_grupu
+t1.141,"Grupu espésie sira ne'ebé aplika ba avizu min/max. Atu aumenta grupu foun, favór ida fó komentáriu no fó-hatene BFO."
+t1.143,Presu kada kg ka presu kada individu (espésia todan no naruk avizu implementa iha kotuk liu husi dadus husi livru)
+t1.144,"Kampu prosesamentu ne'e define oinsá fa'an ikan ka invertebradu. Opsaun sira inklui hotu, parsialmente, arkivu, tail, ka fin."
+t1.145,"Naran jéneru espésie, mai husi funsaun rfishbase load_taxa ()."
+t1.146,"Naran família espésie, mai husi funsaun rfishbase load_taxa ()."
+t1.147,"Naran espésie Ingles komún ho espasu no pontuasaun, mai husi ikan-baze tbl uza koluna klasifikasaun atu hili naran favoravel ba espésie ida-idak husi naran komún oin-oin ne'ebé disponivel."
+t1.148,"Espésie sira ne'ebé kategoria ba grupu sira bazeia ba sira-nia biolojia laiha fatin ka pontuasaun, só subliña de'it. Kampu ne'e uza atu ajuda filtra opsaun resposta balun iha Kobo. Opsaun ne'e inklui: finfish, ray, eel, shark, crab, shrimp, lobster, octopus, squid, cuttlefish, bivalve, gastropod, sea_urchin, no sea_cucumber."
+t1.149,"Valor médiu k husi espésie sira, mai husi rfishbase 'popgrowth' tbl."
+t1.150,"Tipu naruk sukat ba valór avg_k. Opsaun sira inklui: TL = totál naruk, SL = naruk padraun, WD = luan, CL = naruk karapace, CW = luan karapace, ML = naruk mantle, shL = naruk shell."
+t1.151,"Valór médiu ba espésie sira, mai husi rfishbase 'poplw' tbl."
+t1.152,"Valór médiu b ba espésie sira, mai husi rfishbase 'poplw' tbl."
+t1.153,"Referénsia ba valór a no b. Opsaun sira-ne'e inklui: Artigu ""Fishbase, SeaLifebase, Journal"""
+t1.154,"Tipu naruk sukat ba valór a_b_type. Opsaun sira inklui: TL = totál naruk, SL = naruk padraun, WD = luan, CL = naruk karapace, CW = luan karapace, ML = naruk mantle, shL = naruk shell."
+t1.155,"Naruk másimu espésie (cm), mai husi rfishbase ""popchar"" tbl."
+t1.156,"Tipu naruk sukat ba valór lmax. Opsaun sira inklui: TL = totál naruk, SL = naruk padraun, WD = luan, CL = naruk karapace, CW = luan karapace, ML = naruk mantle, shL = naruk shell."
+t1.157,"Referénsia valór lmax. Opsaun sira-ne'e inklui: Artigu ""Fishbase, SeaLifebase, Journal"""
+t1.158,"Konversaun valór a ba espésie sira ho max_ longth_type = SL konversaun ba TL, fonte husi rfishbase 'popll' tbl"
+t1.159,"Valor konversaun b ba espésie sira ho max_ longth_type = SL konversaun ba TL, fonte husi rfishbase 'polll' tbl"
+t1.160,"Valór naruk max ho tipu naruk = TL, hafoin konversa uza valór konversaun."
+t1.161,"Nivel trofiku ne'ebé asosiadu ho espésie sira-ne'e mai husi koluna FoodTroph iha ikan-baze ekolojia tbl. Tuir Tabela Ekolojia, Trof = 1 + ai-han nia trofe mean. Valór entre 2.0-5.0"
+t1.162,"Score vulnerabilidade, mai husi rfishbase ""espésie"" tbl. Valór husi 0-100."
+t1.163,"Grupu trofiku ne'ebé mai husi referénsia ikan MerMAID no atributu bentiku. Opsaun sira inklui: omnivore, planktivore, herbivore-detritivore, herbivore-makroalgae, piscivore, invertivore-mobile, invertivore-sessile."
+t1.164,"Grupu funsionál mai husi referénsia ikan MerMAID no atributu benthiku. Opsaun sira inklui: kropper/grazer, planktivore, detritivore, navegador, piscivore, pisci-invertivore, mikro-invertivore, makro-invertivore, korallivore, cleoner, spongivore, excavator, scraper."
+t1.165,"Grupu nia medida mai husi referénsia ikan MerMAID no atributu bentiku. Opsaun sira inklui: grupu boot, grupu médiu, grupu ki'ik, parseiru,"
+t1.166,Atualiza daudaun
+t1.167,"Naruk iha espésie sira-nia maturidade (cm), mai husi rfishbase maturidade tbl."
+t1.168,"Tipu naruk sukat ba valór lmat. Opsaun sira inklui: TL = totál naruk, SL = naruk padraun, WD = luan, CL = naruk karapace, CW = luan karapace, ML = naruk mantle, shL = naruk shell."
+t1.169,"Referénsia ba valór lmat. Opsaun sira-ne'e inklui: Artigu ""Fishbase, SeaLifebase, Journal"""
+t1.170,"Tipu naruk sukat ba valór finál_lmax. Opsaun sira inklui: TL = totál naruk, SL = naruk padraun, WD = luan, CL = naruk karapace, CW = luan karapace, ML = naruk mantle, shL = naruk shell."
+t1.171,"Naruk másimu finál (cm) kada espésie ne'ebé uza iha kalkulasaun, ka husi koluna ""lmax"" ka koluna ""lmax_tl"" bazeia ba tipu naruk ne'ebé hakarak."
+t1.172,"Kalkula valór ""loo"" uza valór ""finál_lmax"" iha formula "" = (10^ (0.044 + 0.9841 *LOG10 (finál_lmax))) """
+t1.173,"Kalkulasaun ho valór kalkulasaun hosi koluna kalkulasaun, uza formuláriu ne'ebé uza hodi uza formuláriu ida-ne'ebé uza hodi uza kalkulasaun ho valór kalkulasaun hosi koluna kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulasaun ho valór kalkulas"
+t1.174,Naruk finál iha maturidade (cm) valór bazeia ba kalkulasaun iha koluna kal_lmat arredondadu ba sanulu.
+t1.175,"Kalkulasaun ba determinasaun limitasaun naruk mínimu, auto-kalkula iha Smartsheet uza formula ""= [finál_lmat]@row * 0.5"""
+t1.176,"Limitasaun naruk másimu (cm) uza ba avizu valór bazeia ba valór finál_lmax, auto-calkuladu iha Smartsheet uza formula ""= [finál_lmax]@row"""
+t1.177,"Limitasaun naruk mínimu (cm) uza ba avizu valór bazeia ba valór kal_limit_min, auto-calkuladu iha Smartsheet uza formula""=[cal_limit_min]@row"""
+t1.178,"Limitasaun pesoál másimu (kg) uza ba avizu valór bazeia ba valór naruk_limit_max, valór a, no b, auto-calkuladu iha Smartsheet uza formula ""= ([ longu_limit_max]@row ^ b@row) * a@row) / 1000"""
+t1.179,"Limitasaun pesoál mínimu (kg) ne'ebé uza ba avizu valór bazeia ba valór naruk_limit_min, valór a, no b, auto- kalkuladu iha Smartsheet uza formula""= ([ longu_limit_min]@row ^ b@row) * a@row) / 1000"""
+t1.180,"(kg), auto-calkuladu iha Smartsheet uza formula ""= ([weight_limit_max]@row + [weight_limit_min]@row) / 2"""
+t1.181,Referénsia ka formula ba valór avg_weight
+t1.182,"TRUE/PRESENTU (1) ka FALSE/ABSENTU (0), mai husi koluna Oceaniku iha peska-baze ekolojia tbl."
+t1.183,"TRUE/PRESENTU (1) ka FALSE/ABSENTU (0), mai husi koluna KoralReefs iha ekolojia baze ikan."
+t1.184,"TRUE/PRESENTU (1) ka FALSE/ABSENTU (0), mai husi koluna Mangroves iha ekolojia baze ikan."
+t1.185,"TRUE/PRESENTU (1) ka FALSE/ABSENTU (0), mai husi koluna SeaGrassBeds iha baze ikan nian tbl."
+t1.186,"TRUE/PRESENTU (1) ka FALSE/ABSENTU (0), mai husi koluna MUD iha ekolojia baze ikan tbl."
+t1.187,"TRUE/PRESENTU (1) ka FALSE/ABSENTU (0), mai husi koluna Sand iha ekolojia baze ikan tbl."
+t1.188,"TRUE/PRESENTU (1) ka FALSE/ABSENTU (0), mai husi koluna Estuaria iha ekolojia baze ikan tbl."
+faq,Pergunta beibeik:
+q1,"Bainhira ha'u aumenta administradór foun ida1, to'o bainhira mak presiza molok ida-ne'e mosu iha dropdown ba administradór2?"
+a1,"Ida ne'e sei lori maizumenus minutu 15 molok iha dropdown dinámiku sira bele hetan tama. Ida ne'e aplika ba admin2 dropdown iha admin3_ref, espésie_grupu dropdown iha gear_ref, admin3 dropdown iha sosa-nain_ref, fisher_ref, data_koletor, etc. Haree Figura 5 ba lista kompletu kona-ba dropdown dinámiku no sira-nia fluxu servisu liu husi arkivu referénsia sira."
+q2,"Bainhira ha'u aumenta ka atualiza fail referénsia, to'o bainhira mak ha'u presiza atu atualiza iha peskiza Kobo?"
+a2,Imi tenke haree formuláriu Kobo ne'ebé atualiza iha maizumenus oras 12-24.
+q3,"Oinsá mak tenke rejista naran sosa-na'in, peskadór no koletor dadus sira-nian?"
+a3,"Idealmente, naran sira-ne'e tenke úniku liu ba ema ida-idak no inklui sira-nia naran primeiru, naran ikus no naran-boot. Se ema ida lakohi fahe sira-nia naran ikus tomak, ita mós bele uza karta inisiál ka primeiru husi sira-nia naran ikus."
+fig5,Ligasaun dropdown dinámika entre arkivu referénsia sira.

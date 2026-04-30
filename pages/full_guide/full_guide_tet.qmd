@@ -1,0 +1,531 @@
+---
+title: Full Guide
+echo: false
+output: false
+---
+
+```{r}
+library(shiny.i18n)
+library(rmarkdown)
+library(knitr)
+i18n <- Translator$new(translation_csvs_path = "data")
+i18n$set_translation_language("tet")
+i18n
+
+
+```
+
+# `r i18n$t("title")`
+
+## `r { i18n$t("subtitle") }`
+
+### `r { i18n$t("intro") }`
+
+`r { i18n$t("p1") }`
+
+![](images/Fig1_en.png)
+
+`r { i18n$t("fig1") }`
+
+### `r { i18n$t("survey") }`
+
+#### **`r { i18n$t("cps") }`**
+
+***`r { i18n$t("goal") }`***
+
+`r { i18n$t("p2") }`
+
+***`r { i18n$t("dc") }`***
+
+-   `r { i18n$t("point1") }`
+
+-   `r { i18n$t("point2") }`
+
+-   `r { i18n$t("point3") }`
+
+-   `r { i18n$t("point4") }`
+
+-   `r { i18n$t("point5") }`
+
+-   `r { i18n$t("point6") }`
+
+-   `r { i18n$t("point7") }`
+
+***`r { i18n$t("ta") }`***
+
+`r { i18n$t("p3") }`
+
+***`r { i18n$t("ft") }`***
+
+`r { i18n$t("p4") }`
+
+***`r { i18n$t("method") }`***
+
+`r { i18n$t("p5") }`
+
+#### **`r { i18n$t("lms") }`**
+
+***`r { i18n$t("goal") }`***
+
+`r { i18n$t("p6") }`
+
+***`r { i18n$t("dc") }`***
+
+-   `r { i18n$t("point8") }`
+
+-   `r { i18n$t("point9") }`
+
+-   `r { i18n$t("point10") }`
+
+-   `r { i18n$t("point11") }`
+
+-   `r { i18n$t("point12") }`
+
+-   `r { i18n$t("point13") }`
+
+-   `r { i18n$t("point14") }`
+
+-   `r { i18n$t("point15") }`
+
+-   `r { i18n$t("point16") }`
+
+-   `r { i18n$t("point17") }`
+
+***`r { i18n$t("ta") }`***
+
+`r { i18n$t("p7") }`
+
+***`r { i18n$t("ft") }`***
+
+`r { i18n$t("p8") }`
+
+`r { i18n$t("p9") }`
+
+***`r { i18n$t("method") }`***
+
+`r { i18n$t("p10") }`
+
+#### **`r { i18n$t("lps") }`**
+
+***`r { i18n$t("goal") }`***
+
+`r { i18n$t("p11") }`
+
+***`r { i18n$t("dc") }`***
+
+-   `r { i18n$t("point18") }`
+
+-   `r { i18n$t("point19") }`
+
+-   `r { i18n$t("point20") }`
+
+-   `r { i18n$t("point21") }`
+
+-   `r { i18n$t("point22") }`
+
+-   `r { i18n$t("point23") }`
+
+-   `r { i18n$t("point24") }`
+
+-   `r { i18n$t("point25") }`
+
+-   `r { i18n$t("point26") }`
+
+-   `r { i18n$t("point27") }`
+
+-   `r { i18n$t("point28") }`
+
+-   `r { i18n$t("point29") }`
+
+-   `r { i18n$t("point30") }`
+
+-   `r { i18n$t("point31") }`
+
+-   `r { i18n$t("point32") }`
+
+-   `r { i18n$t("point33") }`
+
+***`r { i18n$t("ta") }`***
+
+`r { i18n$t("p12") }`
+
+***`r { i18n$t("ft") }`***
+
+`r { i18n$t("p13") }`
+
+***`r { i18n$t("method") }`***
+
+`r { i18n$t("p14") }`
+
+#### **`r { i18n$t("ms") }`**
+
+![](images/Fig2_en.jpg)
+
+`r { i18n$t("fig2") }`
+
+![](images/Fig3_en.jpg)
+
+`r { i18n$t("fig3") }`
+
+![](images/Fig4_en.jpg)
+
+`r { i18n$t("fig4") }`
+
+![](images/Fig5_en.jpg)
+
+`r { i18n$t("fig5") }`
+
+![](images/Fig6_en.jpg)
+
+`r { i18n$t("fig6") }`
+
+![](images/Fig7_en.jpg)
+
+`r { i18n$t("fig7") }`
+
+![](images/Fig8_en.jpg)
+
+`r { i18n$t("fig8") }`
+
+### `r { i18n$t("dfo") }`
+
+`r { i18n$t("p15") }`
+
+`r { i18n$t("p16") }`
+
+![](images/Fig9_en.jpg)
+
+`r { i18n$t("fig9") }`
+
+`r { i18n$t("p17") }`
+
+1.  `r { i18n$t("step1") }`
+
+2.  `r { i18n$t("step2") }`
+
+3.  `r { i18n$t("step3") }`
+
+4.  `r { i18n$t("step4") }`
+
+5.  `r { i18n$t("step5") }`
+
+6.  `r { i18n$t("step6") }`
+
+7.  `r { i18n$t("step7") }`
+
+8.  `r { i18n$t("step8") }`
+
+9.  `r { i18n$t("step9") }`
+
+10. `r { i18n$t("step10") }`
+
+#### **`r { i18n$t("datasecurity") }`**
+
+`r { i18n$t("p18") }`
+
+1.  [Kobo software](https://support.kobotoolbox.org/is_my_data_safe.html?highlight=security)
+
+2.  [PostgreSQL](https://www.postgresql.org/support/security/)
+
+3.  [Amazon Web Services](https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/security-of-the-aws-infrastructure.html)
+
+4.  [Google drive](https://support.google.com/drive/answer/10375054?hl=en)
+
+5.  [Smartsheet](https://www.smartsheet.com/trust/security)
+
+6.  [Shinyapps.io](https://docs.posit.co/shinyapps.io/security-and-compliance.html)
+
+7.  [Github](https://github.com/security)
+
+`r { i18n$t("p19") }`
+
+`r { i18n$t("p20") }`
+
+`r { i18n$t("p21") }`
+
+`r { i18n$t("p22") }`
+
+
+#### **`r { i18n$t("dp") }`**
+
+`r { i18n$t("p24") }`
+
+`r { i18n$t("p25") }`
+
+-   `r { i18n$t("point34") }`
+
+-   `r { i18n$t("point35") }`
+
+#### **`r { i18n$t("datasharing") }`**
+
+`r { i18n$t("p26") }`
+
+`r { i18n$t("p27") }`
+
+`r { i18n$t("p28") }`
+
+**`r { i18n$t("level1") }`**
+
+-   `r { i18n$t("point36") }`
+
+-   `r { i18n$t("point37") }`
+
+-   `r { i18n$t("point38") }`
+
+-   `r { i18n$t("point39") }`
+
+**`r { i18n$t("level2") }`**
+
+-   `r { i18n$t("point40") }`
+
+-   `r { i18n$t("point41") }`
+
+-   `r { i18n$t("point42") }`
+
+**`r { i18n$t("level3") }`**
+
+-   `r { i18n$t("point43") }`
+
+-   `r { i18n$t("point44") }`
+
+-   `r { i18n$t("point45") }`
+
+-   `r { i18n$t("point46") }`
+
+#### **`r { i18n$t("newdata") }`**
+
+`r { i18n$t("p29") }`
+
+`r { i18n$t("p30") }`
+
+`r { i18n$t("p31") }`
+
+### `r { i18n$t("datacol") }`
+
+`r { i18n$t("p32") }`
+
+`r { i18n$t("p33") }`
+
+`r { i18n$t("p34") }`
+
+`r { i18n$t("p35") }`
+
+`r { i18n$t("p36") }`
+
+### `r { i18n$t("translations") }`
+
+`r { i18n$t("p37") }`
+
+### `r { i18n$t("ref") }`
+
+`r { i18n$t("p38") }`
+
+`r { i18n$t("p39") }`
+
+### `r { i18n$t("appendixa") }`
+
+**`r { i18n$t("p40") }`**
+
+**`r { i18n$t("p41") }`**
+
+`r { i18n$t("p42") }`
+
+**`r { i18n$t("p43") }`**
+
+`r { i18n$t("p44") }`
+
+**`r { i18n$t("p45") }`**
+
+`r { i18n$t("p46") }`
+
+**`r { i18n$t("p47") }`**
+
+`r { i18n$t("p48") }`
+
+**`r { i18n$t("p49") }`**
+
+`r { i18n$t("p50") }`
+
+**`r { i18n$t("p51") }`**
+
+`r { i18n$t("p52") }`
+
+**`r { i18n$t("p53") }`**
+
+`r { i18n$t("p54") }`
+
+#### `r { i18n$t("p55") }`
+
+`r { i18n$t("p56") }`
+
+I. `r { i18n$t("p57") }`
+
+`r { i18n$t("p58") }`
+
+`r { i18n$t("p59") }`
+
+*`r { i18n$t("p60") }`*
+
+-   `r { i18n$t("tip1") }`
+
+-   `r { i18n$t("tip2") }`
+
+-   `r { i18n$t("tip3") }`
+
+-   `r { i18n$t("tip4") }`
+
+-   `r { i18n$t("tip5") }`
+
+-   `r { i18n$t("tip6") }`
+
+`r { i18n$t("p61") }`
+
+*`r { i18n$t("examples") }`*
+
+-   `r { i18n$t("example1") }`
+
+-   `r { i18n$t("example2") }`
+
+-   `r { i18n$t("example3") }`
+
+-   `r { i18n$t("example4") }`
+
+-   `r { i18n$t("example5") }`
+
+-   `r { i18n$t("example6") }`
+
+-   `r { i18n$t("example7") }`
+
+-   `r { i18n$t("example8") }`
+
+*`r { i18n$t("p62") }`*
+
+-   `r { i18n$t("point47") }`
+
+`r { i18n$t("p63") }`
+
+II\. `r { i18n$t("p64") }`
+
+**A.** **`r { i18n$t("2a") }`**
+
+-   `r { i18n$t("2a.1") }`
+
+-   `r { i18n$t("2a.2") }`
+
+-   `r { i18n$t("2a.3") }`
+
+-   `r { i18n$t("2a.4") }`
+
+    -   `r { i18n$t("2a.4.1") }`
+
+    -   `r { i18n$t("2a.4.2") }`
+
+    -   `r { i18n$t("2a.4.3") }`
+
+    -   `r { i18n$t("2a.4.4") }`
+
+    -   `r { i18n$t("2a.4.5") }`
+
+        -   `r { i18n$t("2a.4.5.1") }`
+
+        -   `r { i18n$t("2a.4.5.2") }`
+
+        -   `r { i18n$t("2a.4.5.3") }`
+
+        -   `r { i18n$t("2a.4.5.4") }`
+
+-   `r { i18n$t("2a.5") }`
+
+-   `r { i18n$t("2a.6") }`
+
+-   `r { i18n$t("2a.7") }`
+
+**B.** **`r { i18n$t("2b") }`**
+
+`r { i18n$t("p65") }`
+
+*`r { i18n$t("p66") }`*
+
+-   `r { i18n$t("2b.1") }`
+
+-   `r { i18n$t("2b.2") }`
+
+-   `r { i18n$t("2b.3") }`
+
+-   `r { i18n$t("2b.4") }`
+
+-   `r { i18n$t("2b.5") }`
+
+-   `r { i18n$t("2b.6") }`
+
+-   `r { i18n$t("2b.7") }`
+
+-   `r { i18n$t("2b.8") }`
+
+*`r { i18n$t("p67") }`*
+
+-   `r { i18n$t("2b.9") }`
+
+-   `r { i18n$t("2b.10") }`
+
+-   `r { i18n$t("2b.11") }`
+
+-   `r { i18n$t("2b.12") }`
+
+-   `r { i18n$t("2b.13") }`
+
+*`r { i18n$t("p68") }`*
+
+-   `r { i18n$t("2b.14") }`
+
+-   `r { i18n$t("2b.15") }`
+
+-   `r { i18n$t("2b.16") }`
+
+-   `r { i18n$t("2b.17") }`
+
+**C.** **`r { i18n$t("2c") }`**
+
+`r { i18n$t("p69") }`
+
+**D.** **`r { i18n$t("2d") }`**
+
+`r { i18n$t("p70") }`
+
+`r { i18n$t("p71") }`
+
+`r { i18n$t("p72") }`
+
+`r { i18n$t("p73") }`
+
+-   `r { i18n$t("2d.1") }`
+
+-   `r { i18n$t("2d.2") }`
+
+-   `r { i18n$t("2d.3") }`
+
+-   `r { i18n$t("2d.4") }`
+
+-   `r { i18n$t("2d.5") }`
+
+III\. `r { i18n$t("p74") }`
+
+`r { i18n$t("p75") }`
+
+IV\. `r { i18n$t("p76") }`
+
+-   [Facilitator Core Competencies](https://www.iaf-world.org/site/sites/default/files/Revised%20IAF%20Core%20%20Competencies%20-%20December%206%202021.pdf) – International Association of Facilitators (IAF)
+
+-   [Facilitator’s Meeting Checklist](http://stproject.org/wp-content/uploads/2014/11/facilitators-meeting-checklist.pdf) – Social Transformation Project, Tools for Transformation
+
+-   [Introduction to Planning and Facilitating Effective Meetings](https://reefresilience.org/pdf/Facilitation_Effective_Meetings.pdf) – Social Science Tools for Social Programs, NOAA Coastal Services Center
+
+-   [Group Facilitation and Problem-Solving](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation) – Community Tool Box, Center for Community Health and Development at the University of Kansas
+
+    -   Section 1:[ Conducting Effective Meetings](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/main)
+
+    -   Section 2:[ Developing Facilitation Skills](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/facilitation-skills/main)
+
+    -   Section 3:[ Capturing What People Say: Tips for Recording a Meeting](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/record-meeting/main)
+
+    -   Section 4:[ Techniques for Leading Group Discussions](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/group-discussions/main)

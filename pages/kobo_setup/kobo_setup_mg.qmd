@@ -1,0 +1,100 @@
+---
+title: Kobo Setup
+echo: false
+output: false
+---
+
+```{r}
+library(shiny.i18n)
+library(rmarkdown)
+library(knitr)
+i18n <- Translator$new(translation_csvs_path = "data")
+i18n$set_translation_language("mg")
+i18n
+
+
+```
+
+## `r i18n$t("title")`
+
+1.  `r { i18n$t("step1") }`
+
+![](images/fig1.jpg){width="653"}
+
+2.  `r { i18n$t("step2") }`
+
+    ![](images/fig2.jpg){width="451"}
+
+3.  `r { i18n$t("step3") }`
+
+    ![](images/fig3.jpg){width="503"}
+
+4.  `r { i18n$t("step4") }`
+
+    ![](images/fig4.jpg){width="504"}
+
+5.  `r { i18n$t("step5") }`
+
+    ![](images/fig5.jpg){width="586"}
+
+6.  `r { i18n$t("step6") }`
+
+    ![](images/fig6.jpg){width="647"}
+
+7.  `r { i18n$t("step7") }`
+
+8.  `r { i18n$t("step8") }`
+
+    ![](images/fig8.jpg){width="676"}
+
+9.  `r { i18n$t("step9") }`
+
+    ![](images/fig9.jpg){width="656"}
+
+10. `r { i18n$t("step10") }`
+
+    ![](images/fig10.jpg){width="633"}
+
+11. `r { i18n$t("step11") }`
+
+    ![](images/fig11.jpg){width="640"}
+
+12. `r { i18n$t("step12") }`
+
+    ![](images/fig12.jpg){width="626"}
+
+13. `r { i18n$t("step13") }`
+
+    ![](images/fig13.jpg){width="623"}
+
+14. `r { i18n$t("step14") }`
+
+    ![](images/fig14.jpg){width="598"}
+
+15. `r { i18n$t("step15") }`
+
+    ![](images/fig15.jpg){width="573"}
+
+16. `r { i18n$t("step16") }`
+
+    ![](images/fig16.jpg){width="584"}
+
+17. `r { i18n$t("step17") }`
+
+    ![](images/fig17.jpg){width="561"}
+
+18. `r { i18n$t("step18") }`
+
+    ![](images/fig18.jpg){width="548"}
+
+19. `r { i18n$t("step19") }`
+
+    ![](images/fig19.jpg){width="547"}
+
+20. `r { i18n$t("step20") }`
+
+    ![](images/fig20.jpg){width="557"}
+
+21. `r { i18n$t("step21") }`
+
+    ![](images/fig21.jpg){width="542"}

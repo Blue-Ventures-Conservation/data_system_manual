@@ -1,0 +1,162 @@
+---
+title: Fisheries Dashboard
+---
+## Translation coming soon.
+
+## Training Video
+
+{{< video https://youtu.be/wXpLnF9dF-M >}}
+
+## An Interpretation Guide for the Community Fisheries Data Dashboard
+
+## **Objective**
+
+The purpose of this guide is to help local organizations, resource managers and fishing community members most effectively use the community fisheries data dashboard to evaluate their collected data, overall state of the fisheries and analyze different management strategies. Data collected through three digital survey instruments are visualized through the dashboard's pages: Current Status, Fisheries Profiling and Community Profiling. The dashboard's Data Application page also provides users with the opportunity to view information on fisheries production, fishing activity, and effects of management strategies. With permission from fishers and fish traders, these data can be shared across organizations and geographies to better understand regional trends and broader management implications. 
+
+## **Data System Overview**
+
+This guide provides a comprehensive overview for users to understand how data collected through digital tools are analyzed, visualized and interpreted to generate accessible results and empower fishing communities with the data needed to effectively manage their fisheries. The dashboard displays catch weight and value, shifts in fish or invertebrate species, the proportion of mature individuals in catch and trends over time.
+
+The three KoboCollect surveys used to collect data on fisheries landings and fishing communities are described below. A full description of each survey can be found under the Full Guide page. 
+
+-   The **Landings Monitoring Survey** was designed to be conducted daily, or as often as possible, capturing the minimum data needed to track long-term trends in fisheries production, species composition and catch value. This survey can be used to evaluate the effects of fisheries closures or other management strategies by comparing data before and after implementation. The survey is short and simple allowing for more frequent and consistent data collection.
+
+<!-- -->
+
+-   The **Landings Profiling Survey** collects detailed fisheries data on gear, effort, and size of individual fish or invertebrates alongside specialized information for certain species groups such as sex, catch quality, stylet data, and egg maturity. Catch quality of octopus includes storage methods, color, tentacle number, physical abrasions, beak quality, and skin conditions. Octopus stylet data includes sample photos and growth circumference. Egg maturity includes gonad weight, color, stage, length, and line appearances in the ovary glands of female octopus. These data complement the landings monitoring data and help partners better understand observed catch trends in fisheries production and effects of fisheries management. The survey was designed to be conducted at the beginning of involvement in a community and subsequently conducted every 1 to 2 years, before and after implementation of management strategy, or as needed to explain changes in catch observed through monitoring data.
+
+<!-- -->
+
+-   The **Community Profiling Survey** is designed to gather a comprehensive understanding of the socio-economic and fisheries landscape of a community. The survey is used when first engaging with a community and repeated every five to ten years to document major shifts in fishing behavior, fisher perceptions, and resource management.  
+
+Data collected through KoboCollect is stored and transformed in a central database. Raw data is backed up in the KoboToolbox database and will be available to download in the dashboard.
+
+## **How the Data is Used**
+
+Data collected through KoboCollect and the OurFish mobile app are linked to a central data storage system. From there, automated analyses and visualizations are made available through the community fisheries data dashboard. Performance indicators help summarize the data and provide an indication of how the fishery or community is performing relative to a reference point.
+
+### What is a Performance Indicator?
+
+A performance indicator is a flexible assessment tool that measures the performance of a fishery to understand the impacts of a fishery reform project and identify improvable aspects based on low metric scoring. Measuring ecological and socioeconomic fishery performances is crucial to understand the sustainability of fish stocks and communities that depend on them. Performance indicators can not only determine how a fishery changes over time from potential management changes, but they can also provide helpful criteria to apply across similar fisheries and effectively determine what makes a fishery and management strategy successful concerning fishery or project goals. The Fishery Performance Indicators (FPIs) include 68 output and 54 input metrics, but the dashboard interpretation guide will focus on the seven performance indicators listed below.
+
+## **Getting Started**
+
+### **Data Selection**
+
+Visit the [Community Fisheries Data Dashboard](https://barefootocean.shinyapps.io/fisheries_dashboard/) website (<https://barefootocean.shinyapps.io/fisheries_dashboard/>). To get started, follow the steps below to use the community fisheries dashboard: 
+
+1.  Fill in the required geography or partner information
+
+In Figure 1, the left section of the page shows the following information required for the data visualizations. You must first select the country from the dropdown menu under "I want to see data from." You can then view the data visualizations organized by geography or partner. If you select geography for the "Organized by" question, you must also select the province, district, and village. Click "See Results" to view the dashboard results. 
+
+The "Selected Locations" shows a map displaying the selected geography. The data on the right section of the page shows when data collection started, the number of days since the start date, the number of days recording data, and buttons to download the data and  summary report. 
+
+Figure 1. Example dashboard data selected for Cebu, Philippines.
+
+### **Data Summary**
+
+2.  Summary data values from the selected geography and date range 
+
+Boxes on the Fisheries Status page show eight key fishery values: total weight landed (kg) and income, mean catch per unit effort (kg/trip), mean income per trip, mean percent mature catch, number of recorded fishers and buyers and number of species and families in parentheses (Figure 2). The total income and mean income per trip is determined using the selected country's currency.
+
+Figure 2. Summary of data parameters from the Current Status page.
+
+### Species Composition
+
+3.  Total weight and income of the most common species/families by habitat and date
+
+The most commonly harvested species for the pre-selected geographical areas are listed next in the dashboard(Figure 3). The table displays the local names, common names, scientific names, total weight (kg) and total income (\$) for the most common species or families. Total percent income and weight are also represented as pie charts by species. 
+
+Figure 3. List and pie chart (%) of the most common species/families by total weight and total income.
+
+Additional data selections include habitat and date range. Available habitat types include: reef, seagrass, mangrove, deepwater, sand and mud_flat. The selected date range types include past year, past six months, past month, and past week. The dashboard also has an option to show income in \$USD and show confidence intervals on the following time series plots.
+
+## **Performance Indicators**
+
+### **Indicator 1: Catch per Unit Effort - CPUE**
+
+**Description:** Catch per Unit Effort (CPUE) is the total catch landed (kg) divided by the amount of effort (defined either per trip or per fisher/day).CPUE is a useful indicator for long-term fishery monitoring by evaluating population trends of fished species and serving as an index of the abundance of a species. While an unchanging CPUE indicates sustainable harvesting, decreasing CPUE indicates fewer fish are caught per day (or hour) over time due to fewer fish in the water and potential overharvesting.
+
+**Unit:** kg/trip 
+
+**Calculation:** Steps to calculate CPUE in units of kg/trip:
+
+1.  Convert all catch weight to kilograms (if other units are recorded)
+
+2.  For each date, sum total weight landed (kg)
+
+3.  For each date, sum total number of trips by counting the number of unique trip IDs 
+
+4.  Daily CPUE = total weight landed (kg) / total number of trips
+
+**Management Goal:** The target species is stable or increasing CPUE over time. Identifying the fish species or family driving increasing or decreasing trends can guide adaptive management.
+
+**Notes:** Changes in gear type should also be accounted for since some gears catch more fish than others in the same amount of time (i.e., net vs line). Seasonal changes and daily variations in growth, recruitment, and mortality can also impact catch per unit effort. 
+
+Figure 4. Average CPUE
+
+Figure 5. CPUE over time
+
+### **Indicator 2: Total catch**
+
+**Description:** Total landings, or total catch recorded for a given area, are the total number of marine fish and invertebrate species brought ashore that allows for tracking catch declines and increases. Total landings data can estimate the total catch value and small-scale fishery contributions. 
+
+**Unit:** tonnes (1 tonne = 1000 kg) and USD
+
+**Management Goal:** The target is stable or increasing total landings. 
+
+**Notes:** Market demand, price changes, and the need to rebuild stocks for maximum sustainable yield levels can impact total landings. Fishing effort and environmental conditions should be accounted for when interpreting increases and declines in total landings. Other unrelated fishing events, such as natural disasters, increased pollution, sedimentation, and habitat destruction, can also lower total landings. 
+
+### **Indicator 3: Fishing Gear**
+
+**Description:** Fishing gear is any tool or equipment for fishing or capturing aquatic resources. Fishing gears generally fall under two categories: active gear and passive gear. While active gear chases and catches target species, passive gear is stationary, allowing the target species to approach the capture device. 
+
+Destructive fishing practices are fishing practices that result in irreversible damage to aquatic habitats and marine ecosystems. Examples of such fishing practices include dynamite, cyanide, gillnets, beach seines, trawling, and long lines. These fishing practices can increase the risk of overfishing beyond sustainable recovery limits, excessive bycatch, damaging habitat destruction, ghost fishing, and killing large numbers of target and non-target species.
+
+**Unit:** N/A
+
+**Management Goal:** The target is using no destructive fishing gears and minimizing bycatch. 
+
+**Notes:** Fishing gear examples include pole and line, long line, pots and traps, dredging, gillnets, purse seine, pelagic trawl, and bottom trawl.
+
+### **Indicator 4: Reporting Effort**
+
+**Description:** Reporting effort is the number of buyers and fishers reporting their catch. Catch reporting is a part of monitoring, control, and surveillance (MCS) of commercial fishing to support the broader issues of fishing management, such as revealing illegal fishing practices or pinpointing overfished locations.
+
+**Unit:** Catch over time 
+
+**Management Goal:** The target is consistently collecting data from small-scale fishing communities.
+
+**Notes:** Reporting effort evaluates fishing effort over time, such as seasonal changes. This indicator also identifies changes in catch reporting and areas requiring support in the data collection process. Studies show that unreported catch substantially contributes to total catch, so fishing trends are highly impacted by reporting effort results. 
+
+### **Indicator 5: Species Composition**
+
+**Description:** Species composition is the identity of species present in the catch. Species composition is measured based on the individual species basis or species groups based on the fishery management objectives. This indicator tracks shifts in the most abundant species in catch. Long-term species composition studies can highlight socioeconomic changes and ecosystem stability in a given location.
+
+**Unit:** Percent (%) such that all species components add up to 100%
+
+**Management Goal:** The target is stable or increasing species composition in a balanced dynamic with species richness for ecosystem stability.
+
+**Notes:** A decline in the species numbers and shifts from large predators to small fish can indicate overfishing and loss of ecosystem function. Species richness (the number of species) and species composition (the identity of the species) are the primary components of species diversity. Since species differ from one another based on their unique biotic interactions, environmental tolerances, and resource usages, species composition significantly impacts ecosystem function and stability.  
+
+### **Indicator 6: Average Length/Weight**
+
+**Description:** Average length of individuals in the catch. Fish measurement involves measuring an individual fish based on various parts of their anatomy. Fish lengths are significant for fishery management and resource assessment, especially when methods to measure age or weight are inaccessible or harmful to marine wildlife populations. Fish length measurements can provide insight into population dynamics, such as age structure and biomass for habitat protection and harvest regulations. 
+
+Overall length measurements include measuring standard length (SL), total length (TL), and fork length (FL) depending on the fish species and anatomy. SL measures the fish from the tip of the snout to the posterior end of the last vertebra and excludes the tail length. TL measures the fish from the snout tip to the tail tip. FL measures the fish from the snout tip to the tail fork. 
+
+**Unit:** Centimeters (cm)
+
+**Management Goal:** The target is stable or increasing average length. 
+
+**Notes:** Socioeconomic and ecological factors such as fishing and temperature fluctuations can impact fish population average lengths and size structures. The decline in average length can indicate size-selective removal and overfishing of larger-sized individuals. 
+
+### **Indicator 7: Mature Catch**
+
+**Description:** Mature catches are the individuals that have reached the estimated length at maturity. While the length at maturity is the total length at which 50% of the population reaches reproductive maturity (Lmat), the proportion of mature fish in the catch has 100% as the reference target point (Pmat). 
+
+**Unit: Frequency** (# of fishes) and length at maturity (cm)
+
+**Management Goal:** The target is to have \> 90% mature fish in the catch. 
+
+**Notes:** Caught immature fish cannot grow, reproduce, and help build the population.

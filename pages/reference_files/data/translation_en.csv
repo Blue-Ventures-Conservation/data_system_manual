@@ -1,0 +1,200 @@
+key,en
+title,Updating Reference Files
+p1,"All reference files are updated in Smartsheet Dynamic View. Reference files serve as inputs for dropdown lists in KoboToolbox forms and contain data that is added to the master datasets through joins. They contain comprehensive information on the administrative levels of the fishing communities (country, province, district, village), landing sites, fishing ground, fishers, buyers, data collectors, species, management areas, gear types, and partnering organizations. The steps below outline how to update reference files with new information."
+step1,Step 1: Create a free smartsheet account.
+point1,A free account can be created at https://www.smartsheet.com/
+point2,Select “Try smartsheet for free”
+step2,Step 2: Provide Blue Ventures (BV) the email address you used to create your smartsheet account.
+point3,BV will then share the reference files associated with your organization.
+point4,To view your reference files you will need to sign into smartsheet Dynamic View using your smartsheet credentials: https://dynamicview.smartsheet.com/login
+point5,"Once logged in to Dynamic View (not the smartsheet app), you will see a list of reference files shared with your account (Figure 1)."
+fig1,Figure 1: List of reference files in Dynamic View
+step3,Step 3: Click on a reference file to make updates
+point6,"Once open, you can click on each row to make edits to existing data, or click the “New” button in the top right corner to add new data (Figure 2)."
+point7,A details panel will appear on the right hand side where you’ll input the necessary information (Figure 3; Table 1). Select “save” on the bottom right of the details panel when you are finished updating.
+point8,"To leave a comment or to ask the team any questions, select the “Comments” tab in the details panel. All individuals that the reference file is shared with, including the BV team, will receive notification when a comment is made, so there is no need to tag any particular individual."
+fig2,Figure 2: Example view of the admin2_ref in Dynamic View
+fig3,Figure 3: Example view of the admin2_ref details panel in Dynamic View
+step4,"Step 4: Respond to update requests when data is missing or incorrect, or to respond to a comment."
+point9,"If there is incomplete or incorrect information that is essential for populating Kobo dropdowns or for joins, or if a comment is made in the sheet, an update request will be sent to all appropriate users, prompting them to update the information or respond to a comment (Figure 4). By default, everyone with access to your reference files will receive the update request."
+point10,"A preview of the data that needs to be updated or responded to will appear below the email message, but you will not be able to update any data directly in the email"
+point10.1,"At the bottom of the email, there is a link for “Go to the sheet”; however, the underlying sheet has restricted access. Please review your data or respond to the comment via Open request."
+point11,Click on the “Open Request” button in the email message.
+point12,A new internet browser window will open with a form-like setup for each entry (Figure 5)
+point13,Review the BV fields and populate the editable fields.
+point14,Click next at the bottom of the screen to move through each entry that needs to be updated.
+point15,To skip an entry (e.g. if you are not sure yet which answer to pick) click “Next” without making a selection in the editable columns. The next entry that needs to be updated will appear.
+point16,"If you need to exit the page or stop before all entries have been updated, your choices should be saved the next time you reopen the request. Upon opening to continue, just click “Next” until you find an entry that needs to be updated."
+point17,"When you get to the last entry, click “Done”. A pop-up message will appear asking if you are ‘Ready to submit your update?’:"
+point17.1,Click “Go Back” if you need to review
+point17.2,Click “Submit Update” to submit your updates.
+point17.3,Your updates are automatically appended to the reference file and you can view them in Dynamic View
+fig4,Figure 4: Example “Update Request” email when information needs to be corrected or comment needs to be responded to.
+table1,"Table 1: The primary fields in each of the reference files. Field type “BV” is managed by Blue Ventures and is not editable. To request changes to any of the “BV” fields, please leave a comment. Only fields with field type “editable” can be edited. Field type “auto” is populated automatically."
+t1.1,Field name
+t1.2,Field description
+t1.3,Field type
+t1.4,All reference files
+t1.5,"This column stores the last comment that was made for that row. To view the entire discussion of comments for that row, simply click anywhere on the row. The details panel will appear, like it does in Figure 3. Click on the “Comments” tab to view all comments for that row."
+t1.6,auto
+t1.7,editable
+t1.8,Date of last edit
+t1.9,User that made the last edit
+t1.10,"ISO country code, which is an internationally recognized letter combination code"
+t1.11,"Name of admin1, the highest administrative level after country (i.e. province) with no spaces and no punctuation, only underscores"
+t1.12,"Name of admin1, the highest administrative level after country (i.e. province) with spaces and punctuation allowed. Please do not change the label unless absolutely necessary, as joins are based on this."
+t1.13,The flag will be red if the “partner” value does not exist in the org_ref
+t1.14,"Partner name with no spaces and no punctuation, only underscores. The dropdown list is connected to the ""name"" column in the org_ref."
+t1.15,"Select “Yes” if data is currently being collected from this individual/area. If data is no longer being collected from this individual/area, and you want to hide it from the Kobo dropdown, select “No.”"
+t1.16,Choose “Yes” if you would like to remove the record. Records should only be removed if the name is incorrect or it is a duplicate of an existing record.
+t1.18,"Name of admin2, the highest administrative level after admin1 (i.e. district) with no spaces and no punctuation, only underscores"
+t1.19,"Name of admin2, the highest administrative level after admin1 (i.e. district) with spaces and punctuation allowed. Please do not change the label unless absolutely necessary, as joins are based on this."
+t1.20,The flag will be red if the “admin1_ref_name” value does not exist in the admin1_ref
+t1.21,"Admin1 name with no spaces and no punctuation, only underscores. The dropdown list is connected to the ""name"" column in the admin1_ref."
+t1.25,"Admin2 and admin3 names combined with no spaces and no punctuation, only underscores.The admin3 is the highest administrative level after admin2 (i.e. village)."
+t1.26,"Name of admin3, the highest administrative level after admin2 (i.e. village) with spaces and punctuation allowed. Please do not change the label unless absolutely necessary, as joins are based on this."
+t1.27,Admin1 name with spaces and punctuation allowed. This is pulled from the admin1_ref and auto populated based on the admin2 chosen.
+t1.28,"Admin1 name with no spaces and no punctuation, only underscores. This is pulled from the admin1_ref and auto populated based on the admin2 chosen"
+t1.29,The flag will be red if the “admin2” value does not exist in the admin2_ref.
+t1.30,"Admin2 name with spaces and punctuation allowed. The dropdown list is connected to the ""label"" column in the admin2_ref."
+t1.31,"Admin2 name with no spaces and no punctuation, only underscores. This is pulled from the admin2_ref and auto populated based on the admin2 chosen."
+t1.34,Latitude of admin3
+t1.35,Longitude of admin3
+t1.38.1,Select “Yes” if you want the admin3 to appear in the dropdown for the Kobo landings monitoring form.
+t1.38.2,Select “Yes” if you want the admin3 to appear in the dropdown for the Kobo landings profiling form.
+t1.38.3,Select “Yes” if you want the admin3 to appear in the dropdown for the Kobo community profiling form.
+t1.38.4,Select “Yes” if you want the admin3 to appear in the dropdown for the Kobo household survey form.
+t1.40,"Name of the buyer with no spaces and no punctuation, only underscores"
+t1.41,"Name of the buyer with spaces and punctuation allowed. Please do not change the label unless absolutely necessary, as joins are based on this."
+t1.42,"Gender of the buyer; 'male', 'female', 'nonbinary' or 'business_nogender'"
+t1.43,"The flag will be red if the buyer_gender value is different for the same buyer (i.e. if Raymond Scott in admin3= Boston has gender=male, but Raymond Scott in admin3=Miami has gender=female, the flag will be red because the genders are not the same for the same buyer)."
+t1.44,"Admin1 name where the buyer buys from, with spaces and punctuation allowed. This is pulled from the admin1_ref and auto populated based on the admin3_ref_name chosen."
+t1.45,"Admin2 name where the buyer buys from, with spaces and punctuation allowed. This is pulled from the admin2_ref and auto populated based on the admin3_ref_name chosen."
+t1.46,"Admin3 name where the buyer buys from, with spaces and punctuation allowed. This is pulled from the admin3_ref and auto populated based on the admin3_ref_name chosen."
+t1.47,"Admin2 and admin3 names combined with no spaces and no punctuation, only underscores.The dropdown list is connected to the ""name"" column in the admin3_ref."
+t1.48,The flag will be red if the “admin3_ref_name” value does not exist in the admin3_ref.
+t1.52,"Name of the fisher with no spaces and no punctuation, only underscores"
+t1.53,"Name of the fisher with spaces and punctuation allowed. Please do not change the label unless absolutely necessary, as joins are based on this."
+t1.54,"Gender of the fisher; 'male', 'female', 'nonbinary' or 'business_nogender'"
+t1.55,"The flag will be red if the fisher_gender value is different for the same fisher (i.e. if Raymond Scott in admin3= Boston has gender=male, but Raymond Scott in admin3=Miami has gender=female, the flag will be red because the genders are not the same for the same fisher)."
+t1.56,"Admin1 name where the fisher lands their catch, with spaces and punctuation allowed. This is pulled from the admin1_ref and auto populated based on the admin3_ref_name chosen."
+t1.57,"Admin2 name where the fisher lands their catch, with spaces and punctuation allowed. This is pulled from the admin2_ref and auto populated based on the admin3_ref_name chosen."
+t1.58,"Admin3 name where the fisher lands their catch, with spaces and punctuation allowed. This is pulled from the admin3_ref and auto populated based on the admin3_ref_name chosen."
+t1.64,"Name of the data collector with no spaces and no punctuation, only underscores"
+t1.65,Name of the data collector with spaces and punctuation allowed.
+t1.66,"Gender of the data collector; 'male', 'female', 'nonbinary' or 'business_nogender'"
+t1.69,Select “Yes” if you want the data collector to appear in the dropdown for the Kobo landings monitoring form.
+t1.70,Select “Yes” if you want the data collector to appear in the dropdown for the Kobo landings profiling form
+t1.71,Select “Yes” if you want the data collector to appear in the dropdown for the Kobo household survey form
+t1.72,Select “Yes” if you want the data collector to appear in the dropdown for the Kobo community profiling form
+t1.75,"Name of the fishing ground with no spaces and no punctuation, only underscores"
+t1.76,"Name of the fishing ground with spaces and punctuation allowed. Please do not change the label unless absolutely necessary, as joins are based on this."
+t1.81,Latitude of the fishing ground
+t1.82,Longitude of the fishing ground
+t1.85,"Local name of the gear with no spaces and no punctuation, only underscores"
+t1.86,"Local name of the gear with spaces and punctuation allowed. Please do not change the label unless absolutely necessary, as joins are based on this."
+t1.87,"English name of the gear with no spaces and no punctuation, only underscores. This is a predefined dropdown list. Please choose one that best fits the local gear, or comment if you are unsure."
+t1.88,Description of the gear
+t1.89,"The species group the gear targets. If one gear targets multiple species, create a new row of data for each species group. The dropdown list is connected to the “species_group” column in the species_ref."
+t1.90,The flag will be red if the “species_group” chosen does not exist in the species_ref.
+t1.95,"Name of the landing site with no spaces and no punctuation, only underscores"
+t1.96,Name of the landing site with spaces and punctuation allowed
+t1.103,"Unique name of the management area with spaces and punctuation allowed. Please do not change the name unless absolutely necessary, as joins are based on this."
+t1.104,"Unique name of the management area and effective  dates. More specifically, it contains the following information separated by an underscore: management_id, management_method, close_date and open_date."
+t1.104.1,The list of admin3s that fish within the management area.
+t1.104.2,The flag will be red if one of the admin3s listed in the “admin3_fish” column does not exist in the admin3_ref.
+t1.104.3,The list of admin3s that have a role in governing the management event.
+t1.104.4,The flag will be red if one of the admin3s listed in the “admin3_govern” column does not exist in the admin3_ref.
+t1.105,The list of fishing grounds associated with the management event. The dropdown list is connected to the “name” column in the fishing_ground_ref.
+t1.105.5,The flag will be red if one of the fishing grounds listed in “management_fishing_ground” does not exist in the fishing_ground_ref.
+t1.106,"The type of management method utilized during the event. The predefined list includes: Temporary Closure, No Take Zone, Gear Restriction, Managed Access, Harvesting Ban or Deforestation Ban."
+t1.106.1,"The type of legal regulation. The predefined list includes: village head regulation, village head decree, joint village head regulation or none."
+t1.106.2,"Target species group for the managed area. This can include ‘All’, one or multiple species groups. The dropdown list is connected to the MASTER species_ref and includes species groups from all partners."
+t1.107,"Target species for the managed area. This can include ‘All_species’, one or multiple scientific species. The dropdown list is connected to the MASTER species_ref and includes species from all partners."
+t1.107.1,The flag will be red if the “target_species” chosen is not referenced in the partner’s species_ref.
+t1.108,"Target habitat for the managed area. The predefined dropdown list includes the habitat choices: 'reef, seagrass, mangrove, mud_flat, sand, deepwater or other'."
+t1.109,Size of the managed area measured in hectares (ha)
+t1.110,Closing date of the managed area; MM/DD/YY
+t1.111,Opening date of the managed area; MM/DD/YY
+t1.112,Latitude of management area
+t1.113,Longitude of management area
+t1.116,"Name of the partner/organization with no spaces and no punctuation, only underscores"
+t1.117,"Name of the partner/organization with spaces and punctuation allowed. Please do not change the label unless absolutely necessary, as joins are based on this."
+t1.118,The species groups the partner collects data on. The dropdown list is connected to the “species_group” column in the species_ref. Select all groups if they want all species in the species_ref to show up.
+t1.122,"Partner name with no spaces or punctuation, only underscores. Species dropdowns are filtered by the partner. Some countries have multiple partners that share a species list. In that case, you will see the country code instead of the partner, and the entire species list will show for every partner in that country, unless certain species groups are specified in the “species_group” column in the org_ref."
+t1.123,Habitat type associated with the species
+t1.124,"Local name and species name combined with an underscore, with no other punctuation or spaces."
+t1.125,Local name with species name in parenthesis
+t1.126,"Species categorized into groups based on their biology with no spaces or punctuation, only underscores. This field is used to help filter certain answer choices in Kobo."
+t1.127,"The flag will be red if the “species_group” chosen is not referenced in the gear_ref. That means all gears listed in the gear_ref will appear for this species group. To only show gears that target this species group, please add the species group to the gear_ref."
+t1.128,Local species name with spaces and punctuation allowed
+t1.129,"Name of admin1, 2 or 3 with no spaces or punctuation, only underscores. The dropdown list is connected to the ""name"" column in the corresponding admin_ref. *This field will only show for partners that want the species dropdown filtered by that admin.*"
+t1.130,Common English species name with spaces and punctuation allowed
+t1.131,Family name of a species with spaces and punctuation allowed
+t1.132,"Scientific name of the species with spaces and punctuation allowed. If the species is unknown, the genus or family can also be entered. If only the genus is known, type the name of the genus followed by “sp” (as opposed to “spp” or sp.”). If only the family is known, type the name of the family (i.e. Lutjanidae)."
+t1.133.1,Maximum length limit (cm) used for value warnings. See lw_ref for more information.
+t1.133.2,Minimum length limit (cm) used for value warnings. See lw_ref for more information.
+t1.133.3,"Maximum weight limit (kg) used for value warnings based on the 'length_limit_max', 'a', and 'b' values, auto-calculated in Smartsheet using the formula ""=(([length_limit_max]@row ^ b@row) * a@row) / 1000"". See lw_ref for more information."
+t1.133.4,"Minimum weight limit (kg) used for value warnings based on the 'length_limit_min', 'a', and 'b' values, auto-calculated in Smartsheet using the formula""=(([length_limit_min]@row ^ b@row) * a@row) / 1000"". See lw_ref for more information."
+t1.133.5,"Average weight (kg), auto-calculated in Smartsheet using the formula ""=([weight_limit_max]@row + [weight_limit_min]@row) / 2"". See lw_ref for more information."
+t1.134,"The english translation for “add new”, “don’t know”, “not for sale”, etc."
+t1.135,"The country language translation for “add new”, “don’t know”, “not for sale”, etc."
+t1.136,The reference sheet the translation will be merged with to appear in the appropriate dropdown in Kobo
+t1.138,"Partner name with no spaces or punctuation, only underscores."
+t1.139,The minimum price based on species_group
+t1.140,The maximum price based on species_group
+t1.141,"The species group the min/max warning applies to. To add a new group, please comment and let BFO know."
+t1.143,Price per kg or price per individual (species weight and length warnings are implemented on the back end via data from the literature)
+t1.144,"The processing field defines how the fish or invertebrate is sold. Options include 'whole, partially_processed, filet, tail, or fin'."
+t1.145,"Genus name of species, sourced from rfishbase function 'load_taxa()'."
+t1.146,"Family name of species, sourced from rfishbase function 'load_taxa()'."
+t1.147,"Common English species name with spaces and punctuation, sourced from the fishbase 'comnames' tbl using the rank column to select the favorable name per species from the multiple common names available."
+t1.148,"Species categorized into groups based on their biology with no spaces or punctuation, only underscores. This field is used to help filter certain answer choices in Kobo. Option include: 'finfish, ray, eel, shark, crab, shrimp, lobster, octopus, squid, cuttlefish, bivalve, gastropod, sea_urchin, and sea_cucumber'."
+t1.149,"Average k value of species, sourced from rfishbase 'popgrowth' tbl."
+t1.150,"Measurement length type for 'avg_k' value. Options include: 'TL = total length, SL = standard length, WD = width, CL = carapace length, CW = carapace width, ML = mantle length, ShL = shell length'."
+t1.151,"Average 'a' value for species, sourced from rfishbase 'poplw' tbl."
+t1.152,"Average 'b' value for species, sourced from rfishbase 'poplw' tbl."
+t1.153,"Reference of 'a' and 'b' values. Options include: 'Fishbase, SeaLifebase, Journal article'."
+t1.154,"Measurement length type for 'a_b_type' value. Options include: 'TL = total length, SL = standard length, WD = width, CL = carapace length, CW = carapace width, ML = mantle length, ShL = shell length'."
+t1.155,"Maximum length of species (cm), sourced from rfishbase 'popchar' tbl."
+t1.156,"Measurement length type for 'lmax' value. Options include: 'TL = total length, SL = standard length, WD = width, CL = carapace length, CW = carapace width, ML = mantle length, ShL = shell length'."
+t1.157,"Reference of 'lmax' value. Options include: 'Fishbase, SeaLifebase, Journal article'."
+t1.158,"Conversion 'a' value for species with 'max_length_type' = SL converting to TL, sourced from rfishbase 'popll' tbl"
+t1.159,"Conversion 'b' value for species with 'max_length_type' = SL converting to TL, sourced from rfishbase 'popll' tbl"
+t1.160,"The max length value with length type = TL, after converting using the conversion values."
+t1.161,"Trophic level associated with the species, sourced from the 'FoodTroph' column in the fishbase 'ecology' tbl. According to the ECOLOGY Table, Troph = 1 + mean troph of the food items. Values range from 2.0-5.0"
+t1.162,"Vulnerability score, sourced from rfishbase 'species' tbl. Values range from 0-100."
+t1.163,"Trophic group sourced from MERMAID fish and benthic attributes reference. Options include: 'omnivore, planktivore, herbivore-detritivore, herbivore-macroalgae, piscivore, invertivore-mobile, invertivore-sessile'."
+t1.164,"Functional group sourced from MERMAID fish and benthic attributes reference. Options include: 'cropper/grazer, planktivore, detritivore, browser, piscivore, pisci-invertivore, micro-invertivore, macro-invertivore, corallivore, cleaner, spongivore, excavator, scraper'."
+t1.165,"Group size sourced from MERMAID fish and benthic attributes reference. Options include: 'large group, medium group, small group, pair, solitary'."
+t1.166,CURRENTLY BEING UPDATED
+t1.167,"Length at maturity of species (cm), sourced from rfishbase 'maturity' tbl."
+t1.168,"Measurement length type for 'lmat' value. Options include: 'TL = total length, SL = standard length, WD = width, CL = carapace length, CW = carapace width, ML = mantle length, ShL = shell length'."
+t1.169,"Reference of 'lmat' value. Options include: 'Fishbase, SeaLifebase, Journal article'."
+t1.170,"Measurement length type for 'final_lmax' value. Options include: 'TL = total length, SL = standard length, WD = width, CL = carapace length, CW = carapace width, ML = mantle length, ShL = shell length'."
+t1.171,"Final maximum length (cm) per species used in calculations, either from the 'lmax' column or the 'lmax_tl' column based on desired length type."
+t1.172,"Calculated 'loo' value using the 'final_lmax' value in the the formula "" = ( 10^(0.044 + 0.9841 *LOG10(final_lmax)))"""
+t1.173,"Length at maturity is estimated using the calculated value from the 'calc_loo' column, using the formula""=(10^(0.8979 *LOG10(calc_loo) - 0.0782))"""
+t1.174,Final length at maturity (cm) value based on the calculation in 'calc_lmat' column rounded to the nearest tenth.
+t1.175,"Calculation for determining the minimum length limit, auto-calculated in Smartsheet using the formula ""=[final_lmat]@row * 0.5"""
+t1.176,"Maximum length limit (cm) used for value warnings based on the 'final_lmax' value, auto-calculated in Smartsheet using the formula ""=[final_lmax]@row"""
+t1.177,"Minimum length limit (cm) used for value warnings based on the 'calc_limit_min' value, auto-calculated in Smartsheet using the formula""=[calc_limit_min]@row"""
+t1.178,"Maximum weight limit (kg) used for value warnings based on the 'length_limit_max', 'a', and 'b' values, auto-calculated in Smartsheet using the formula ""=(([length_limit_max]@row ^ b@row) * a@row) / 1000"""
+t1.179,"Minimum weight limit (kg) used for value warnings based on the 'length_limit_min', 'a', and 'b' values, auto-calculated in Smartsheet using the formula""=(([length_limit_min]@row ^ b@row) * a@row) / 1000"""
+t1.180,"Average weight (kg), auto-calculated in Smartsheet using the formula ""=([weight_limit_max]@row + [weight_limit_min]@row) / 2"""
+t1.181,Reference or formula for 'avg_weight' value
+t1.182,"TRUE/PRESENT (1) or FALSE/ABSENT (0), sourced from the 'Oceanic' column in the fishbase 'ecology' tbl."
+t1.183,"TRUE/PRESENT (1) or FALSE/ABSENT (0), sourced from the 'CoralReefs' column in the fishbase 'ecology' tbl."
+t1.184,"TRUE/PRESENT (1) or FALSE/ABSENT (0), sourced from the 'Mangroves' column in the fishbase 'ecology' tbl."
+t1.185,"TRUE/PRESENT (1) or FALSE/ABSENT (0), sourced from the 'SeaGrassBeds' column in the fishbase 'ecology' tbl."
+t1.186,"TRUE/PRESENT (1) or FALSE/ABSENT (0), sourced from the 'Mud' column in the fishbase 'ecology' tbl."
+t1.187,"TRUE/PRESENT (1) or FALSE/ABSENT (0), sourced from the 'Sand' column in the fishbase 'ecology' tbl."
+t1.188,"TRUE/PRESENT (1) or FALSE/ABSENT (0), sourced from the 'Estuaries' column in the fishbase 'ecology' tbl."
+faq,Frequently Asked Questions:
+q1,"Once I add a new admin1, how long does it take before it appears in the dropdown for admin2?"
+a1,"It will take approximately 15 minutes before new entries are available in the dynamic dropdowns. This applies to the admin2 dropdown in admin3_ref, the species_group dropdown in gear_ref, the admin3 dropdown in buyer_ref, fisher_ref, data_collector, etc. See Figure 5 for the full list of dynamic dropdowns and their workflow through the reference files."
+q2,"Once I add or update a reference file, how long does it take before the updates appear in the Kobo surveys?"
+a2,You should see an updated Kobo form in approximately 12-24 hours.
+q3,"How should the names of buyers, fishers and data collectors be recorded?"
+a3,"Ideally, names should be as unique as possible to the individual and include their first name, last name and nickname. If an individual does not wish to share their full last name you could also use the first initial or first letter of their last name."
+fig5,Dynamic dropdown connection between reference files.

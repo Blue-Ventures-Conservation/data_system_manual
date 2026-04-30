@@ -1,0 +1,122 @@
+key,tet
+title,Matadalan ba Validasaun Dadus Peskas.
+p1,"Dadus hotu-hotu ne'ebé suli liu husi sistema dadus peska nian hetan validasaun iha Smartsheet. Dadus haruka ba validasaun iha senáriu tolu nia laran; 1) naran foun ka informasaun seluk aumenta manualmente iha Kobo Kollect, 2) valór numeriku ida monu liu husi limite ne'ebé estabelese ona ka 3) naran iha dataset la iha korresponde iha arkivu referénsia ida. Bainhira hetan validasaun dadus, dadus iha baze dadus no tabela referénsia sira atualiza tiha ona. Tabela referénsia serve hanesan inputs ba lista dropdown iha formuláriu KoboToolbox no kontein dadus ne'ebé aumenta ba datasets liu husi konjuntu. Haree ai-huun desizaun iha kraik (Figura 1)."
+p2,"Dadus ne'ebé hamosu ba validasaun haruka ba tabela haat ida: 1) Naran no Gears, 2) Avizu Valor, 3) Espesias ka 4) Seluk tan. Instrusaun sira iha kraik detallu kona-ba prosesu validasaun dadus iha Smartsheet Dynamic View ba tabela validasaun haat. Tabela validasaun ida-idak sei rekere ka hili valór kampu ne'ebé loos husi lista dropdown ka hatama valór ne'ebé loos manualmente. Prosesu ne'e sei aplika ba nesesidade validasaun dadus iha futuru, tuir nesesidade."
+p2.1,"Tabela validasaun Naran no Gears nian iha dadus foun husi peskiza Kobo nian hotu inklui naran foun husi peskadór sira, sosa-nain sira, koletor dadus, baze peska, fatin ba rai no sasán sira. ""Avizu Valor"" iha informasaun númeru ne'ebé halibur husi Peskiza kona-ba Monitorizasaun Rai ka Rai ne'ebé marka valór presu, todan ka naruk bazeia ba limite ne'ebé estabelese ona. Pre-estabelese ona kuadru ba avizu todan no naruk mai husi lw_ref; no avizu presu mai husi min_max_ref. Tabela validasaun Espesial iha foto no naran lokál foun hosi peskiza hotu-hotu atu omologa espésie foun sira ho prosesu verifikasaun dupla. Ikusliu, tabela validasaun dadus seluk ne'e inklui informasaun seluk ne'ebé halibur husi Peskiza Profiling Landing, Profiling Komunidade ka Uma-kain no hetan validasaun barak liu ba objetivu tradusaun."
+p2.2,"Mensajen e-mail loroloron nian haruka ho informasaun no ligasaun kona-ba oinsá atu kompleta validasaun dadus (haree instrusaun detalladu iha kraik). Notifikasaun adisionál husi Smartsheet bele haruka liuhusi email hodi halo akompañamentu ho selesaun validasaun dadus ne'ebé la kompletu, se presiza."
+step1,"Pasu 1: Fornese pontu kontaktu, naran no diresaun e-mail ba sira ne'ebé responsavel ba validasaun dadus."
+point1,Organizasaun jere parseiru oin-oin bele fornese informasaun kontaktu hotu-hotu.
+point2,Parseiru individuál sira bele fornese informasaun kontaktu.
+point3,Pontu kontaktu sei simu notifikasaun validasaun dadus liuhosi email.
+step2,Pasu 2: Haree Ita-nia e-mail atu hetan pedidu validasaun dadus.
+point4,"Ita sei simu e-mail husi ""Smartsheet automation"" (Figura 2)"
+point5,"E-mail ne'e sei iha ligasaun hodi halo validasaun liu husi ""Vizaun Diamika"" ka ""Open Request."" Vizaun dinámika mak formatu tabela no pedidu nakloke sei dirije ita-boot sira ba formuláriu validasaun."
+point6,"Atu loke ho ""Dynamic View"" (Step 3, Opsaun A), klike iha link ne'ebé hahú ho ""https://dynamicview.smarthseet.com."
+point7,"Atu loke formuláriu pedidu atualizasaun (Pasu 3, Opsaun B), klike iha knotak ""Open request"""
+point8,"Prevee kona-ba informasaun sira ne'ebé presiza hetan validasaun sei hatudu iha mensajen ida-ne'e nia okos, maibé ita sei la bele omologa dadus ruma diretamente iha email"
+point9,"Iha e-mail nia okos, iha ligasaun ba ""Ba iha surat-tahan""; maibé, surat-tahan ne'e limitadu ona. Favór ida haree fali ita-nia validasaun dadus liu husi vizaun dinámika, pedidu nakloke, ka relatóriu espesífiku parseiru nian."
+caption1,Figura 1: Ai-huun desizaun validasaun dadus.
+caption2,Figura 2: Ezemplu
+step3a,"Pasu 3, Opsaun A: Kompleta Ita-nia validasaun dadus liu husi Vizaun dinámika (rekomenda)"
+point10,"Atu hetan opsaun ida-ne'e, ita presiza kria konta ne'ebé livre. Imi sei hetan diresaun husi e-mail atu halo konta."
+point11,Klike iha link Vizaun dinámika iha pedidu e-mail.
+point12,"Janela navegador internét foun sei loke ho setup hanesan meza ba tama hotu. Iha ne'e, fasil atu hakerek informasaun hotu ne'ebé presiza validasaun."
+point13,Klike iha liña atu hahú validasaun.
+point14,"Painél ""Detallu"" sei hatudu iha liman-loos."
+point15,Halo revizaun ba kampu kontestu no halo kampu validasaun. Kampu validasaun sira-ne'e inklui dadus ne'ebé sei transfere ba data finál (Tabela 1).
+point16,"Husik komentáriu ida, só de'it se iha buat ruma ne'ebé presiza ita-nia atensaun. Funsionarius Blue Ventures (BV) sei halo revizaun ba komentáriu no hatán ho apropriadu."
+point17,"Klike iha knotak ""Salva"" kor-azul atu salva ita-nia selesaun."
+point18,"Bainhira ita hetan ona validasaun, ita-nia hanoin sei lakon tanba ita-nia hanoin."
+point19,Klike iha liña tuirmai no repete fali pasu sira atu kompleta validasaun ba entrada hotu.
+point20,Ita bele sai no tama fali hodi klik iha link vizaun dinámika husi ita-nia e-mail ka tama iha ita-nia konta iha kualkér tempu. Ita la presiza omologa karta hotu iha tuur ida de'it.
+point21,Ita bele hakerek ligasaun ne'e no fila fali iha kualkér tempu.
+table1,"Tabela 1: Kampu primáriu ka koluna sira iha tabela validasaun. Kampu kontestu sira fornese informasaun ne'ebé presiza atu omologa dadus. Kampu validasaun sira-ne'e populadu ho dadus ne'ebé sei transfere ba dadus prinsipál. Só kampu validasaun de'it mak bele edita. Kampu balu bele haree de'it iha painél ""Detallu"" bainhira klik iha tabela Vizaun dinámika."
+t1.1,Kampu tabela validasaun
+t1.2,Deskrisaun kampu
+t1.3,Tipu kampu
+t1.5,Organizasaun nia naran halibur dadus
+t1.6,Kontextu
+t1.7,Validasaun
+t1.8,Auto
+t1.9,Suku ka sub- aldeia sira ne'ebé kaer hela rai no rejista
+t1.10,Naran ema ne'ebé halibur dadus iha Kobo (enumerador)
+t1.12,Kampu husi formuláriu KoboCollect ne'ebé presiza hetan validasaun ka naran ne'ebé laiha korresponde iha arkivu referénsia sira.
+t1.13,Valór ne'ebé tama ona ba kampu korresponde
+t1.14,"Naran ne'ebé iha ona iha baze dadus. Karik naran ne'ebé iha, la iha naran ida-ne'ebé korresponde ho naran iha koluna ""foun_data"""
+t1.15,"Naran ne'ebé iha ona iha baze dadus. Karik naran ne'ebé iha, la iha naran ida-ne'ebé korresponde ho naran iha koluna ""foun_data"""
+t1.16,"Naran ne'ebé iha ona iha baze dadus. Karik naran ne'ebé iha mak hanesan ho naran iha koluna ""foun_data""."
+t1.17,"Hili kampu ho dadus ne'ebé loos (foun_data, ref_match1, ref_match2, ref_match3), hatama valór seluk (seluk), ka hasai (halo removal row husi análize tanba dadus labele hetan validasaun). Presiza. Haree de'it iha painél detallu. Entry sei lakon bainhira dadus hetan validasaun."
+t1.18,"Hatama valór seluk se opsaun validasaun la loos. Rekizitu IF ""seluk"" selesionadu hosi validasaun_opsaun. Haree de'it iha painél detallu."
+t1.19,"Lista submisaun ids valór dadus foun ida-ne'e mosu iha, husi tun monitorizasaun formuláriu Kobo"
+t1.20,"Lista submisaun ids valór dadus foun ida-ne'e mosu iha, husi lands perfíl form Kobo"
+t1.20.1,"Lista submisaun ids valór dadus foun ida-ne'e mosu iha, hosi formuláriu Kobo."
+t1.20.2,"Grupu espésie sira ne'ebé asosiadu ho naran foun, hanesan halibur iha forma Kobo. Ida ne'e sei mosu de'it se ""kobo-field"" mak kategoria gear."
+t1.20.3,Rekizitu IHA validasaun ba naran foun. Lista dropdown kona-ba tipu gear ne'ebé asosiadu ho naran gear ne'ebé hetan validasaun.
+t1.20.4,"Jéneru ne'ebé asosiadu ho peskadór foun, hanesan halibur iha forma Kobo. Ida-ne'e sei mosu de'it se ""kampu"" mak naran peskadór ida."
+t1.20.5,"Jéneru asosiadu ho sosa-nain foun, hanesan halibur iha forma Kobo. Ida-ne'e sei mosu de'it se ""kampu-kobo"" mak naran sosa-nain."
+t1.22,Naran peskadór ne'ebé tun ba rai-kuak
+t1.23,Dadus kapturasaun rai hela
+t1.24,Espésie naran lokál
+t1.25,"Valór unidade: peso/individual, presu/weight, naruk/individual, width/individual"
+t1.26,Tipu avizu
+t1.27,"Valór númeru avizu: todan, folin, naruk"
+t1.28,"Unidade Numerador: kg, g, lb, ons, USD, IDR, PHP, cm"
+t1.29,"Valor denominador: sura, todan"
+t1.30,"Unidade denominador: númeru, kg, g, lb, ons"
+t1.31,"Y = valór sira loos, N=valor sira la loos, Hasai = hasai husi análize tanba valór sira labele validadu. Presiza."
+t1.32,"Se loos = Y, valór sira mak auto-populadu, Se loos = N, enter valór loos"
+t1.33,"Se loos = Y, valór sira mak auto-populadu, Se loos = N, enter valór loos"
+t1.34,"Se númeru_unidade sira la loos, hili opsaun loloos husi dropdown"
+t1.35,Dadus ne'e mai husi (Ambitu monitorizasaun ka perfíl).
+t1.36,"Submisaun ID hosi formuláriu Kobo. Uza ida-ne'e atu kompara ho dadus primeiru, karik presiza, ba validasaun."
+t1.37,"Orijen ka fonte dadus: rai, profiling, komunidade_profiling ka hhs"
+t1.37.1,Administradór1 iha fatin ne'ebé kapturasaun ne'e tun no rejista.
+t1.37.2,Administradór2 iha fatin ne'ebé kaer hela rai no rejista.
+t1.37.3,Naran peskadór ne'ebé asosiadu ho dadus espésie foun ne'e.
+t1.38,Link to photo ne'ebé submete iha Kobo Kollect
+t1.39,Valór ne'ebé tama ona nu'udar espésie foun ida naran lokál iha Kobo Koleta OR naran lokál no naran sientifika ID ( localname_sientifika espesialidade) ne'ebé la korresponde tan ho naran ida-ne'ebé hetan iha espésie_ref.
+t1.40,"Naran ne'ebé iha ona iha baze dadus. Karik naran ne'ebé iha, la iha naran ida-ne'ebé korresponde ho naran iha koluna ""foun_data"""
+t1.41,"Naran ne'ebé iha ona iha baze dadus. Karik naran ne'ebé iha, la iha naran ida-ne'ebé korresponde ho naran iha koluna ""foun_data"""
+t1.42,"Naran ne'ebé iha ona iha baze dadus. Karik naran ne'ebé iha, la iha naran ida-ne'ebé korresponde ho naran iha koluna ""foun_data"""
+t1.43,"Naran komún Ingles ba espésie foun sira. Favór ida fó-hatene se hatene, se lae husik metan. (La presiza)"
+t1.44,"Naran família sientifika ba espésie foun sira. Favór ida fó-hatene se hatene, se lae husik metan. (La presiza)"
+t1.45,"Espesialidade sientifika naran espésie foun. Favór ida fó-hatene se hatene, se lae husik metan. Rekizitu: Se espésie nia naran la hatene, favór ida tau kualkér nivel identifikasaun taxonomiku (hanesan naran Familia, naran komún Ingles)"
+t1.46,"Submisaun ID hosi formuláriu Kobo. Uza ida-ne'e atu kompara ho dadus primeiru, karik presiza, ba validasaun."
+t1.48,"Hili kampu ho dadus lokál_name_new, ref_match1, ref_match2, ref_match3), hatama valór seluk (seluk), ka hasai (halo removal ba liña análize tanba dadus labele hetan validasaun). Presiza. Haree de'it iha painél detallu. Entry sei lakon bainhira dadus hetan validasaun."
+t1.49,"Hatama valór seluk se opsaun validasaun la loos. Rekizitu IF ""seluk"" selesionadu hosi validasaun_opsaun. Haree de'it iha painél detallu."
+t1.50,"Koluna ida-ne'e haree komentáriu ikus ne'ebé hato'o ba liña ne'e. Atu haree diskusaun kona-ba komentáriu sira iha liña ne'e, klike de'it iha fatin naran de'it iha liña ne'e. Painél informasaun ne'e sei hatudu no klike iha tabela ""Kordenador"" atu haree komentáriu hotu kona-ba liña ne'e."
+t1.51,"Kampu husi formuláriu KoboToolbox ne'ebé presiza hetan validasaun. Ida ne'e bele mosu husi pergunta ida iha Peskiza Profiling, Profiling Komunidade ka Uma-kain."
+t1.52,Valór ne'ebé tama ona ba kampu korresponde
+t1.53,"Dadus ne'e mai husi (Profilamentu Rai, Profilamentu Komunidade ka Peskiza Uma-kain)."
+t1.54,"Submisaun ID hosi formuláriu Kobo. Uza ida-ne'e atu kompara ho dadus primeiru, karik presiza, ba validasaun."
+t1.55,"Hili kampu ho dadus ne'ebé loos (foun_data), hatama valór seluk (seluk), ka hasai (halo removal husi análize tanba dadus labele hetan validasaun). Presiza. Haree de'it iha painél detallu. Entry sei lakon bainhira dadus hetan validasaun."
+t1.56,"Hatama valór seluk se opsaun validasaun la loos. Rekizitu IF ""seluk"" selesionadu hosi validasaun_opsaun. Haree de'it iha painél detallu."
+t1.57,Presiza. Hatama tradusaun Ingles ba dadus foun ka kampu seluk selesionadu hanesan opsaun validasaun. Haree de'it iha painél detallu.
+caption3,Figura 3: Ezemplu Vizaun dinámika - Valor avizu
+caption4,Figura 4: Ezemplu Vizaun dinámika - Detallu Painel
+step3b,"Pasu 3, Opsaun B: Kompleta Ita-nia validasaun dadus liuhosi ""Open Request"""
+point22,"Tan ne'e, ita la presiza iha konta ne'ebé loos."
+point23,"Klike iha knotak ""Open request"" iha mensajen validasaun e-mail."
+point24,Janela navegador internét foun sei loke ho setup hanesan formuláriu ba kada entrada
+point25,Halo revizaun ba kampu kontestu no halo kampu validasaun. Kampu validasaun sira-ne'e inklui dadus ne'ebé sei transfere ba data finál (Tabela 1).
+point26,Klike tuirmai iha telemovel nia okos hodi muda liu husi kada entrada ne'ebé presiza hetan validasaun.
+point27,"Atu sa'e tama (hanesan se ita seidauk hatene resposta ida-ne'ebé atu hili) klike "" Tuir mai"" sein halo selesaun iha koluna validasaun_opsaun sira. Sei iha mós entrada tuir mai ba validasaun."
+point28,"Karik ita presiza sai husi pájina ka para molok hetan validasaun, ita-nia desizaun tenke salva bainhira ita loke fali pedidu. Bainhira loke tiha, klike de'it "" Tuirmai"" to'o ita bele hetan validasaun."
+point29,"Bainhira ita haree informasaun ikus, klike iha ""Haree."" Mensajen pop-up sei mosu hodi husu se Ita-Boot mak ""Ready atu hato'o Ita-Boot nia atualizaun?"
+point29.1,"Klike ""Ba kotuk"" se ita presiza haree fali"
+point29.2,"Klike ""Haree Atualizasaun"" hodi submete validasaun"
+point29.3,"Haree kaixa ""Haruka ha'u-nia resposta sira-nia kopia"" se Ita hakarak kopia ida husi Ita-nia resposta sira ne'ebé haruka ba Ita-nia email"
+point30,"Se Ita-Boot hatete ""Hato'o ha'u-nia resposta kopia"" Ita-Boot sei simu e-mail ho títulu ""Atualiza Konfirma: Naran no Gears."""
+point30.1,Sei iha meza sumáriu ida-ne'ebé atualiza ona. La inklui opsaun sira ne'ebé laiha opsaun atu halo avaliasaun.
+point30.2,"E-mail ne'e bele iha ligasaun ba naran ""Data Validation - Naran no Gears""; maibé, asesu ba surat-tahan ne'e taka tiha ona."
+point31,"Atu haree validasaun sira seluk ne'ebé presiza, ita presiza hein ba pedidu e-mail atualizasaun tuir mai ka loke Vizaun dinámika."
+caption5,"Figura 5: Ezemplu husi formatu ""Open Request"""
+faq,Pergunta beibeik:
+q1,Ema barak bele servisu iha validasaun dadus iha tempu hanesan?
+a1,"Maski nune'e, bainhira ema hetan ona validasaun iha Vizaun dinámika, ida-ne'e sei la hare tan."
+q2,Ha'u presiza istória ne'ebé matenek ka lae?
+a2,"Atu kompleta de'it validasaun dadus liu husi Vizaun dinámika (hanesan vizaun tabela). Ita la presiza konta pagadu, ho julgamentu gratuita ka versaun gratuita (bainhira ita-nia julgamentu remata tiha), ita bele haree no interasaun ho arkivu hotu-hotu iha telemovel."
+q3,Saida mak akontese bainhira dadus hetan validasaun?
+a3,"Iha kazu balu, dadus sei hetan revizaun adisionál husi ekipa dadus Blue Ventures. Dadus ne'ebé hetan ona validasaun sei atualiza iha baze dadus, no bainhira apropriadu, menus dropdown sei atualiza iha arkivu referénsia Kobo (Figura 6). Dadus ne'ebé seidauk hetan validasaun sei la mosu iha vizualizasaun dashboard ka estatístika, maibé sei disponivel iha download dadus."
+p3,"Karik iha tempu ruma ita hasoru erru ruma, iha pergunta ruma, ka presiza apoiu atu kompleta validasaun dadus, favór kontaktu ami iha mary.mccabe@ blueventures.org."
+caption6,Figura 6: Validasaun dadus ba Referensia Files Servisu.

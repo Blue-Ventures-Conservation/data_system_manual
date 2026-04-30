@@ -1,0 +1,122 @@
+key,sw
+title,Mwongozo Wa Uthibitishaji Wa Data Ya Uvuvi
+p1,"Takwimu zote zinazotiririka kupitia mfumo wa data ya uvuvi zinathibitishwa Katika Smartsheet. Data ni alimtuma kwa ajili ya uthibitisho chini ya matukio matatu; 1) majina mapya au 'nyingine' habari ni manually aliongeza Katika Kobo Kukusanya, 2) thamani ya tarakimu iko zaidi ya vizingiti imara au 3) majina katika seti ya data hawana mechi sambamba katika faili ya kumbukumbu. Mara data ni kuthibitishwa, wote seti data katika database na meza za kumbukumbu ni updated. Jedwali la kumbukumbu kutumika kama pembejeo kwa orodha dropdown katika fomu kobotoolbox na vyenye data ambayo ni aliongeza kwa seti data kupitia joins. Tazama mti wa uamuzi hapa chini (Kielelezo 1)."
+p2,"Takwimu zilizosababishwa kwa uthibitisho hutumwa kwa moja ya meza nne: 1) Majina na Gia, 2) Maonyo Ya Thamani, 3) Spishi Au 4) Nyingine. Maagizo hapa chini yanaelezea mchakato wa uthibitishaji wa data Katika Smartsheet Dynamic View kwa meza nne za uthibitishaji. Kila meza ya uthibitisho itahitaji ama kuchagua thamani sahihi uwanja kutoka orodha dropdown au kuingia maadili sahihi manually. Mchakato huo utaongezwa kwa mahitaji ya uthibitisho wa data ya baadaye, kama inavyotakiwa."
+p2.1,"Jedwali la uthibitishaji la 'Majina Na Gia' lina data mpya kutoka kwa tafiti zote Za Kobo ikiwa ni pamoja na majina mapya ya wavuvi, wanunuzi, watoza data, maeneo ya uvuvi, maeneo ya kutua na gia. 'Onyo thamani' ina taarifa za tarakimu zilizokusanywa kutoka Kutua Ufuatiliaji au kutua Profiling utafiti ambayo flagged bei, uzito au urefu thamani kulingana na kizingiti kabla ya kuanzishwa. Vizingiti vilivyowekwa tayari kwa maonyo ya uzito na urefu hutoka kwa lw_ref; na maonyo ya bei hutoka kwa min_max_ref. Jedwali la uthibitishaji wa 'Spishi' lina picha na majina mapya ya ndani kutoka kwa tafiti zote ili kuthibitisha spishi mpya kwa kutumia mchakato wa uthibitishaji mara mbili. Hatimaye,' Nyingine 'data uthibitisho meza ina 'nyingine' habari zilizokusanywa kutoka Kutua Profiling, Jamii Profiling au Kaya Utafiti na ni hasa kuthibitishwa kwa madhumuni ya tafsiri."
+p2.2,"Ujumbe wa barua pepe wa kila siku hutumwa na habari na viungo juu ya jinsi ya kukamilisha uthibitisho wa data (tazama maagizo ya kina hapa chini). Arifa za ziada kutoka Smartsheet zinaweza kutumwa kupitia barua pepe kufuatilia na uteuzi wa uthibitisho wa data usio kamili, ikiwa inahitajika."
+step1,"Hatua ya 1: Toa eneo la mawasiliano, majina na anwani za barua pepe kwa wale wanaohusika na uthibitishaji wa data."
+point1,Shirika kusimamia washirika mbalimbali inaweza kutoa pointi zote za mawasiliano ya habari.
+point2,Washirika binafsi wanaweza kutoa hatua ya mawasiliano ya habari.
+point3,Pointi za mawasiliano zitapokea arifa za uthibitishaji wa data kupitia barua pepe.
+step2,Hatua ya 2: Angalia barua pepe yako kwa ombi la uthibitishaji wa data.
+point4,"Utapokea barua pepe kutoka Kwa ""Smartsheet Automation"" (Kielelezo 2)"
+point5,"Barua pepe itakuwa na ujumbe na viungo kuendelea na uthibitisho kupitia ama ""Mtazamo Nguvu""au"" Ombi Wazi"". Dynamic View ni umbizo la jedwali Na Ombi Wazi litakuelekeza kwenye fomu ya uthibitishaji."
+point6,"Ili kufungua na ""Mtazamo Wa Nguvu"" (Hatua Ya 3, Chaguo A), bofya kiungo kinachoanza na ""https://dynamicview.smarthseet.com...."""
+point7,"Ili kufungua fomu ya ombi la sasisho (Hatua Ya 3, Chaguo B), bofya kitufe cha bluu ""fungua ombi"""
+point8,"Hakikisho la maingizo ambayo yanahitaji kuthibitishwa itaonekana chini ya ujumbe huu, lakini hautaweza kudhibitisha data yoyote moja kwa moja kwenye barua pepe"
+point9,"Chini ya barua pepe, kuna kiungo cha ""Nenda kwenye karatasi""; hata hivyo, karatasi ya msingi ina upatikanaji mdogo. Tafadhali kagua uthibitishaji wako wa data kupitia dynamic view, open request, au ripoti mahususi ya mshirika wako (inakuja hivi karibuni)."
+caption1,Kielelezo 1: Mti wa uamuzi Wa uthibitishaji Wa Data.
+caption2,Kielelezo 2: Mfano Smartsheet Uthibitisho Email Ujumbe
+step3a,"Hatua ya 3, Chaguo A: Kamilisha uthibitishaji wako wa data kupitia Dynamic View (imependekezwa)"
+point10,"Kwa chaguo hili, utahitaji kuunda akaunti Ya Bure Ya Smartsheet. Utaelekezwa kutoka kwa barua pepe ili kuanzisha akaunti."
+point11,Bofya kwenye kiungo Cha Mtazamo Wa Nguvu katika ombi la barua pepe.
+point12,"Dirisha jipya la kivinjari cha mtandao litafunguliwa na usanidi kama wa meza kwa viingilio vyote. Hapa, unaweza kusogeza kwa urahisi maingizo yote ambayo yanahitaji uthibitisho."
+point13,Bonyeza mstari kuanza uthibitisho.
+point14,"Jopo la ""Maelezo"" litaonekana upande wa kulia."
+point15,Kagua sehemu za muktadha na ujaze sehemu za uthibitishaji. Mashamba ya uthibitisho yana data ambayo itahamishiwa kwenye seti ya mwisho ya data (Jedwali 1).
+point16,"Acha maoni, IKIWA tu kuna kitu kinachohitaji umakini wetu. Wafanyakazi wa Blue Ventures watakagua maoni na kujibu ipasavyo."
+point17,"Bofya kitufe cha bluu ""Hifadhi"" ili kuhifadhi uteuzi wako."
+point18,"Mara baada ya kuthibitishwa, safu hiyo itatoweka kutoka kwa mtazamo wako wa nguvu."
+point19,Bofya kwenye safu mlalo inayofuata na urudie hatua ili kukamilisha uthibitishaji wa maingizo yote.
+point20,Unaweza kutoka na kuingia tena kwa kubofya kiungo cha mtazamo wa nguvu kutoka kwa barua pepe yako au kuingia kwenye akaunti yako wakati wowote. Huna haja ya kuthibitisha maingizo yote katika kikao kimoja.
+point21,Unaweza kuweka alama kwenye kiunga hiki na kurudi wakati wowote.
+table1,"Jedwali 1: mashamba Ya Msingi au nguzo katika meza ya uthibitisho. Mazingira mashamba kutoa taarifa zinazohitajika kuthibitisha data. Sehemu za uthibitishaji zimejaa data ambayo itahamishiwa kwa hifadhidata kuu. Tu mashamba ya uthibitisho inaweza kuhaririwa. Baadhi ya mashamba ni tu inayoonekana katika"" Maelezo "" jopo wakati safu ni clicked katika Meza Ya Mtazamo Nguvu."
+t1.1,Shamba la jedwali la uthibitishaji
+t1.2,Maelezo ya shamba
+t1.3,Aina ya shamba
+t1.5,jina la shirika kukusanya data
+t1.6,muktadha
+t1.7,uthibitisho
+t1.8,auto
+t1.9,Kijiji au kijiji kidogo ambapo samaki alitua na kurekodiwa
+t1.10,Jina la mtu ambaye alikusanya data Katika Kobo (enumerator)
+t1.12,Sehemu kutoka kwa fomu Ya KoboCollect ambayo inahitaji kuthibitishwa au jina ambalo halina mechi katika faili za kumbukumbu.
+t1.13,Thamani ambayo iliingizwa kwa kobo_field inayolingana
+t1.14,"Jina linalolingana kwa karibu ambalo tayari lipo kwenye hifadhidata. Kama tupu, hakuna majina zilizopo mechi jina katika safu ""new_data"""
+t1.15,"Jina linalolingana kwa karibu ambalo tayari lipo kwenye hifadhidata. Kama tupu, hakuna majina zilizopo mechi jina katika safu ""new_data"""
+t1.16,"Jina linalolingana kwa karibu ambalo tayari lipo kwenye hifadhidata. Kama tupu, hakuna majina zilizopo mechi jina katika safu ""new_data"""
+t1.17,"Chagua uwanja na data sahihi (new_data, ref_match1, ref_match2, ref_match3), ingiza thamani nyingine (nyingine), au uondoe (ondoa safu kutoka kwa uchambuzi kwa sababu data haiwezi kuthibitishwa). Inahitajika. Inaonekana tu katika jopo La Maelezo. Kuingia kutatoweka mara tu data itakapothibitishwa."
+t1.18,"Ingiza thamani nyingine ikiwa hakuna chaguo la uthibitishaji lililo sahihi. Inahitajika KAMA ""nyingine"" kuchaguliwa kutoka validation_options. Inaonekana tu katika jopo La Maelezo."
+t1.19,"Orodha ya vitambulisho kuwasilisha thamani hii mpya data inaonekana katika, kutoka kutua ufuatiliaji Kobo fomu"
+t1.20,"Orodha ya vitambulisho kuwasilisha thamani hii mpya data inaonekana katika, kutoka kutua profiling Kobo fomu"
+t1.20.1,"Orodha ya vitambulisho vya kuwasilisha thamani hii mpya ya data inaonekana katika, kutoka kwa fomu Ya Utafiti Wa Kaya Kobo."
+t1.20.2,"Kundi la aina kuhusishwa na jina mpya gear, kama zilizokusanywa katika Fomu Kobo. Hii itaonekana tu ikiwa"" kobo_field "" ni kitengo cha gia."
+t1.20.3,Inahitajika IKIWA inathibitisha majina mapya ya gia. Orodha ya kushuka ya aina gear kuhusishwa na jina gear kuthibitishwa.
+t1.20.4,"Jinsia inayohusishwa na mvuvi mpya, kama ilivyokusanywa katika Fomu Ya Kobo. Hii itaonekana tu ikiwa ""kobo_field"" ni jina la mvuvi."
+t1.20.5,"Jinsia inayohusishwa na mnunuzi mpya, kama ilivyokusanywa katika Fomu Ya Kobo. Hii itaonekana tu ikiwa ""kobo_field"" ni jina la mnunuzi."
+t1.22,Jina la fisher ambaye alitua samaki
+t1.23,Tarehe ya kukamata ilitua
+t1.24,Jina la eneo la spishi
+t1.25,"Thamani ya kitengo: uzito/mtu binafsi, bei/uzito, urefu/mtu binafsi, upana/mtu binafsi"
+t1.26,Aina ya onyo
+t1.27,"Thamani ya nambari ya onyo: uzito, bei, urefu"
+t1.28,"Unit of numerator: kg, g, lb, ons, USD, IDR, PHP, cm"
+t1.29,"Thamani ya dhehebu: hesabu, uzito"
+t1.30,"Kitengo cha dhehebu: nambari, kg, g, lb, ons"
+t1.31,"Y = maadili ni sahihi, n=maadili sio sahihi, Ondoa = ondoa kutoka kwa uchambuzi kwa sababu maadili hayawezi kuthibitishwa. Inahitajika."
+t1.32,"Kama sahihi = Y, maadili ni auto-populated, Kama sahihi = N, kuingia thamani sahihi"
+t1.33,"Kama sahihi = Y, maadili ni auto-populated, Kama sahihi = N, kuingia thamani sahihi"
+t1.34,"Ikiwa nambari_units sio sahihi, chagua chaguo sahihi kutoka kwa kushuka"
+t1.35,Dataset data alikuja kutoka (Kutua ufuatiliaji au profiling).
+t1.36,"Kitambulisho cha uwasilishaji kutoka Kwa Fomu Ya Kobo. Tumia hii kulinganisha dhidi ya data mbichi, ikiwa inahitajika, kwa uthibitisho."
+t1.37,"Asili au chanzo cha data: 'kutua', 'profiling', 'community_profiling' au 'hhs'"
+t1.37.1,Admin1 ambapo catch ilikuwa landed na kumbukumbu.
+t1.37.2,Admin2 ambapo catch ilikuwa landed na kumbukumbu.
+t1.37.3,Jina la fisher linalohusishwa na data hii mpya ya spishi.
+t1.38,Kiungo kwa picha iliyowasilishwa Katika Kobo Kukusanya
+t1.39,Thamani ambayo iliingizwa kama spishi mpya jina la ndani Katika Kobo Kukusanya au jina la ndani NA kitambulisho cha jina la kisayansi (localname_scientificspecies) ambayo hailingani tena na jina linalopatikana katika species_ref
+t1.40,"Jina linalolingana kwa karibu ambalo tayari lipo kwenye hifadhidata. Kama tupu, hakuna majina zilizopo mechi jina katika safu ""new_data"""
+t1.41,"Jina linalolingana kwa karibu ambalo tayari lipo kwenye hifadhidata. Kama tupu, hakuna majina zilizopo mechi jina katika safu ""new_data"""
+t1.42,"Jina linalolingana kwa karibu ambalo tayari lipo kwenye hifadhidata. Kama tupu, hakuna majina zilizopo mechi jina katika safu ""new_data"""
+t1.43,"Jina la kawaida la kiingereza la spishi mpya. Tafadhali toa ikiwa inajulikana, vinginevyo acha tupu. (Haihitajiki)"
+t1.44,"Jina la familia ya kisayansi ya aina mpya. Tafadhali toa ikiwa inajulikana, vinginevyo acha tupu. (Haihitajiki)"
+t1.45,"Jina la aina ya kisayansi ya aina mpya. Tafadhali toa ikiwa inajulikana, vinginevyo acha tupu. Inahitajika: ikiwa jina la spishi halijulikani, tafadhali weka kiwango chochote cha kitambulisho cha ushuru (kwa mfano jina la Familia, jina la kawaida la kiingereza)"
+t1.46,"Kitambulisho cha uwasilishaji kutoka Kwa Fomu Ya Kobo. Tumia hii kulinganisha dhidi ya data mbichi, ikiwa inahitajika, kwa uthibitisho."
+t1.48,"Chagua uwanja na data sahihi (local_name_new, ref_match1, ref_match2, ref_match3), ingiza thamani nyingine (nyingine), au uondoe (ondoa safu kutoka kwa uchambuzi kwa sababu data haiwezi kuthibitishwa). Inahitajika. Inaonekana tu katika jopo La Maelezo. Kuingia kutatoweka mara tu data itakapothibitishwa."
+t1.49,"Ingiza thamani nyingine ikiwa hakuna chaguo la uthibitishaji lililo sahihi. Inahitajika KAMA ""nyingine"" kuchaguliwa kutoka validation_options. Inaonekana tu katika jopo La Maelezo."
+t1.50,"Safu hii huhifadhi maoni ya mwisho ambayo yalitolewa kwa safu hiyo. Ili kuona majadiliano yote ya maoni kwa safu hiyo, bonyeza tu mahali popote kwenye safu. Jopo la maelezo litaonekana na bonyeza kwenye kichupo cha ""Maoni"" kutazama maoni yote ya safu hiyo."
+t1.51,"Sehemu kutoka kwa fomu Ya KoboToolbox ambayo inahitaji kuthibitishwa. Hii inaweza kuwa kutoka swali katika Kutua Profiling, Jamii Profiling au Kaya Utafiti."
+t1.52,Thamani ambayo iliingizwa kwa kobo_field inayolingana
+t1.53,"Dataset data alikuja kutoka (Kutua profiling, jamii profiling au Kaya utafiti)."
+t1.54,"Kitambulisho cha uwasilishaji kutoka Kwa Fomu Ya Kobo. Tumia hii kulinganisha dhidi ya data mbichi, ikiwa inahitajika, kwa uthibitisho."
+t1.55,"Chagua shamba na data sahihi (new_data), ingiza thamani nyingine (nyingine), au uondoe (ondoa safu kutoka kwa uchambuzi kwa sababu data haiwezi kuthibitishwa). Inahitajika. Inaonekana tu katika jopo La Maelezo. Kuingia kutatoweka mara tu data itakapothibitishwa."
+t1.56,"Ingiza thamani nyingine ikiwa hakuna chaguo la uthibitishaji lililo sahihi. Inahitajika KAMA ""nyingine"" kuchaguliwa kutoka validation_options. Inaonekana tu katika jopo La Maelezo."
+t1.57,Inahitajika. Ingiza tafsiri ya kiingereza ya new_data au uwanja mwingine ikiwa 'nyingine' ilichaguliwa kama chaguo la uthibitishaji. Inaonekana tu katika jopo La Maelezo.
+caption3,Kielelezo 3: Mfano Dynamic View-Thamani Maonyo
+caption4,Kielelezo 4: Mfano Dynamic View-Maelezo Jopo
+step3b,"Hatua ya 3, Chaguo B: Kamilisha uthibitishaji wako wa data kupitia 'Ombi Wazi'"
+point22,"Kwa chaguo hili, hauitaji kuwa Na Kuingia Kwa Akaunti Ya Smartsheet ."
+point23,"Bofya kitufe cha ""fungua ombi"" katika ujumbe wa barua pepe wa uthibitishaji."
+point24,Dirisha jipya la kivinjari cha mtandao litafunguliwa na usanidi kama fomu kwa kila kiingilio
+point25,Kagua sehemu za muktadha na ujaze sehemu za uthibitishaji. Mashamba ya uthibitisho yana data ambayo itahamishiwa kwenye seti ya mwisho ya data (Jedwali 1).
+point26,Bofya inayofuata chini ya skrini ili upitie kila ingizo linalohitaji kuthibitishwa.
+point27,"Ili kuruka kiingilio (k. m. ikiwa bado huna uhakika ni jibu gani la kuchagua) bofya ""Inayofuata"" bila kufanya uteuzi katika safu wima ya' uthibitishaji_options'. Ingizo linalofuata la uthibitishaji litaonekana."
+point28,"Ikiwa unahitaji kutoka kwenye ukurasa au kuacha kabla ya maingizo yote kuthibitishwa, chaguo zako zinapaswa kuhifadhiwa wakati mwingine utakapofungua tena ombi. Baada ya kufungua ili kuendelea, bonyeza tu ""Ifuatayo"" hadi upate kiingilio kinachohitaji uthibitisho."
+point29,"Unapofika kwenye kiingilio cha mwisho, bonyeza ""Imekamilika"". Ujumbe ibukizi utaonekana ukiuliza ikiwa uko Tayari kuwasilisha sasisho lako?’:"
+point29.1,"Bofya ""Rudi nyuma"" ikiwa unahitaji kukagua"
+point29.2,"Bofya ""Wasilisha Sasisha"" ili kuwasilisha uthibitishaji"
+point29.3,"Angalia kisanduku cha ""Nitumie nakala ya majibu yangu"" ikiwa ungependa nakala ya majibu yako yatumwe kwa barua pepe yako"
+point30,"Ukibofya ""Nitumie nakala ya majibu yangu"" utapokea barua pepe yenye kichwa ""Sasisha Uthibitisho: Majina na Gia""."
+point30.1,"Kutakuwa na meza muhtasari ambayoriesies walikuwa updated. Riesies ambayo hakuna chaguo alichaguliwa katika 'validation_options"" si ni pamoja na."
+point30.2,"Barua pepe hii inaweza kuwa na kiungo kwa jina la karatasi ""Uthibitisho Wa Data-Majina na Gia""; hata hivyo, upatikanaji wa karatasi hii imefungwa."
+point31,"Ili kuona uthibitisho wowote uliobaki unahitajika, utahitaji kusubiri barua pepe inayofuata ya ombi la sasisho au ufungue Mtazamo Wa Nguvu."
+caption5,"Kielelezo 5: Mfano wa muundo Wa"" Ombi Wazi"""
+faq,Maswali Yanayoulizwa Mara Kwa Mara:
+q1,"Je, watu wengi wanaweza kufanya kazi kwenye uthibitishaji wa data kwa wakati mmoja?"
+a1,"Ndiyo, hata hivyo, mara moja kuingia (safu) imekuwa kuthibitishwa Katika Mtazamo Nguvu itakuwa tena kuonekana."
+q2,"Je, ninahitaji Akaunti Ya Smartsheet?"
+a2,"Tu kukamilisha data uthibitisho kupitia Mtazamo Nguvu (yaani meza mtazamo). Huna haja ya akaunti iliyolipwa, na jaribio la bure au toleo la bure (mara tu jaribio lako litakapokamilika), utaweza kutazama na kuingiliana na faili Zote Za Smartsheet zinazomilikiwa Na Bahari."
+q3,Nini kinatokea baada ya data kuthibitishwa?
+a3,"Katika baadhi ya kesi, data itakuwa kupitia mapitio ya ziada na Blue Ventures data team. Takwimu zilizothibitishwa zitasasishwa kwenye hifadhidata, na inapofaa, menyu za kushuka zitasasishwa katika Faili Na fomu za kumbukumbu Za Kobo (Kielelezo 6). Data ambayo haijathibitishwa haitaonekana kwenye taswira za dashibodi au takwimu, lakini itapatikana katika upakuaji wa data mbichi."
+p3,"Ikiwa wakati wowote unakutana na makosa yoyote, una maswali, au unahitaji msaada wa kukamilisha uthibitisho wa data, tafadhali wasiliana nasi kwa mary.mccabe@blueventures.org."
+caption6,Kielelezo 6: Data Uthibitisho Kwa Kumbukumbu Faili Workflow

@@ -1,0 +1,83 @@
+key,fr
+subtitle1,Informations générales sur les débarquements
+q1,Pays
+q2,Organisation
+q3,Région
+q4,Département
+q5,Commune/village
+q6,Nom du collecteur de données
+a1,*Nom du nouveau collecteur de données*
+q7,Date de débarquement
+subtitle2,Informations sur les captures par pêcheur
+q8,Nom du pêcheur
+a2,*Nouveau nom de pêcheur*
+q9,Sexe du pêcheur
+q10,Le pêcheur vit-il dans le village ?
+q11,Région d'où vient Fisher :
+q12,Département d'où vient Fisher :
+q13,Commune ou village d'où vient Fisher :
+q13.5,Le pêcheur est-il considéré comme local ou migrant ?
+a8.1,Local
+a8.2,Migrant
+q14,Nombre de jours de pêche active (hors temps de déplacement)
+q15,Nom du site de débarquement
+a8.5,*Nouveau nom de débarquement*
+q15.5,La prise a-t-elle été vendue et si oui à qui ?
+q16,Nom de l'acheteur (si connu)
+a9,*Nouveau nom de l'acheteur*
+q17,Sexe de l'acheteur
+q18,La capture enregistrée correspond-elle à la totalité des captures du bateau ou à la part ${fisher_id_label} des captures ?
+subtitle3,Espèces débarquées par ${fisher_id_label}
+q19,Type de capture
+q20,"Nom local de l'espèce (utiliser la carte de référence de l'espèce, si nécessaire)"
+a12,Veuillez préciser les espèces dans le sac mélangé (sélectionnez-en plusieurs)
+a13,*Nom local de la nouvelle espèce*
+q21,*Nom commun anglais ou français de la nouvelle espèce (si connu)*
+q22,*Nom de famille scientifique de la nouvelle espèce (si connu)*
+q23,*Nom scientifique de l'espèce nouvelle (si connu)*
+q24,*Ajouter une photo de nouvelles espèces.*
+q25,Unité de poids de capture
+q26,Poids total (${weight_unit}) ${local_name_label} : ${local_name_new}
+q27,Poids total vendu (estimé ou réel) ${local_name_label} : ${local_name_new}
+q27.1,Sélectionnez le ou les acheteurs auxquels vous avez vendu:
+q28,Nombre total : ${local_name_label}
+q29,Traitez-vous cette prise ?
+q30,"Prix total des captures vendues, monnaie locale (estimée ou réelle) : ${local_name_label}"
+q31,Raison pour laquelle les captures totales n'ont pas été achetées/vendues
+a27,Mauvaise qualité
+a28,Trop petit
+a29,Trop grand
+a30,Autoconsommation
+a31,Autre
+a14,kilogrammes (kg)
+a15,grammes (g)
+a16,livres (lbs)
+a17,onces (oz)
+a3,Mâle
+a4,Femelle
+a5,Non binaire
+a6,Entreprise comprenant plusieurs personnes (sans distinction de sexe)
+a7,Oui
+a8,Non
+a10,Prise entière
+a11,La part du pêcheur
+a23,Non
+a24,Secs
+a25,Sel
+a26,Fumée
+a18,Entier
+a19,Marché propre/Partiellement transformé
+a20,Filet
+a21,Queue
+a22,Nageoire
+a32,Autoconsommation
+a33,Marché local
+a34,"Commerçant (négociant, intermédiaire)"
+a35,Transformateur
+a36,Exportateur
+a37,"Détaillant (supermarché, restaurant)"
+a38,"Consommateur (ami, voisin)"
+a39,"Acheteur institutionnel (gouvernement, ONG)"
+star,S'applique uniquement aux partenaires ou pays désignés.
+question,Question
+answer,Choix de réponses

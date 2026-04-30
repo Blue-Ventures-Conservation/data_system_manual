@@ -1,0 +1,122 @@
+key,pt
+title,Guia De Validação Dos Dados Das Pescas
+p1,"Todos os dados que fluem através do sistema de dados das pescas são validados no Smartsheet. Os dados são enviados para validação em três cenários: 1) novos nomes ou 'outras' informações são adicionados manualmente no Kobo Collect, 2) um valor numérico ultrapassa os limites estabelecidos ou 3) os nomes no conjunto de dados não têm uma correspondência correspondente num ficheiro de referência. Uma vez validados os dados, os conjuntos de dados na base de dados e as tabelas de referência são actualizados. As tabelas de referência servem como entradas para listas suspensas em formulários KoboToolbox e contêm dados que são adicionados aos conjuntos de dados através de junções. Ver a árvore de decisão abaixo (Figura 1)."
+p2,"Os dados acionados para validação são enviados para um dos quatro quadros: 1) nomes e Artes, 2) Avisos de Valor, 3) espécies ou 4) Outros. As instruções abaixo detalham o processo de validação de dados no Smartsheet Dynamic View para as quatro tabelas de validação. Cada tabela de validação exigirá a seleção do valor do campo correto em uma lista suspensa ou a inserção manual dos valores corretos. O processo será anexado para futuras necessidades de validação de dados, conforme necessário."
+p2.1,"A tabela de validação dos nomes e das Artes contém novos dados de todos os inquéritos da Kobo, incluindo os novos nomes dos Pescadores, compradores, colectores de dados, zonas de pesca, locais de desembarque e Artes. Os 'avisos de Valor' contêm informações numéricas recolhidas no inquérito de monitorização dos desembarques ou de definição de perfis dos desembarques que assinalaram um valor de preço, peso ou comprimento com base num limiar pré-estabelecido. Os limiares pré-estabelecidos para as advertências de peso e comprimento provêm do lw_ref; e as advertências de preço provêm do min_max_ref. A tabela de validação das espécies contém fotografias e novos nomes locais de todos os inquéritos, a fim de validar novas espécies através de um processo de dupla verificação. Por último, a tabela de validação de outros dados contém outras informações recolhidas a partir da definição de perfis de desembarques, da definição de perfis comunitários ou do Inquérito às famílias e é principalmente validada para fins de tradução."
+p2.2,"As mensagens de correio electrónico diárias são enviadas com informações e ligações sobre a forma de completar a validação dos dados (ver instruções pormenorizadas abaixo). Notificações adicionais do Smartsheet podem ser enviadas por e-mail para acompanhamento com seleções de validação de dados incompletas, se necessário."
+step1,"Passo 1: Forneça um ponto de contacto, nomes e endereços de e-mail dos responsáveis ​​pela validação dos dados."
+point1,A organização que gere múltiplos parceiros Pode fornecer todos os pontos de contacto.
+point2,Os parceiros individuais podem fornecer informações sobre pontos de contacto.
+point3,Os pontos de contacto receberão notificações de validação de dados por correio electrónico.
+step2,Passo 2: Verifique se há um pedido de validação de dados no seu e-mail.
+point4,"Você receberá um e-mail de "" Smartsheet Automation ""(Figura 2)"
+point5,"O e-mail conterá uma mensagem com links para prosseguir com a validação através de uma ""Visualização Dinâmica"" ou ""solicitação aberta"". A visualização dinâmica é um formato de tabela e a solicitação aberta o direcionará para um formulário de validação."
+point6,"Para abrir com "" visualização dinâmica ""(Etapa 3, Opção A), clique no link que começa com ""https://dynamicview.smarthseet.com...."""
+point7,"Para abrir o formulário de solicitação de atualização (Etapa 3, Opção B), clique no botão azul "" abrir solicitação"
+point8,"Uma prévia das entradas que precisam ser validadas aparecerá abaixo desta mensagem, mas você não poderá validar nenhum dado diretamente no e-mail"
+point9,"Na parte inferior do E-mail, há um link para ""ir para a planilha""; no entanto, a planilha subjacente tem acesso restrito. Reveja a validação dos seus dados através da visualização dinâmica, do pedido aberto ou do Relatório específico do seu parceiro (em breve)."
+caption1,Figura 1: Árvore de decisão de validação de dados.
+caption2,Figura 2: Exemplo De Mensagem De E-Mail De Validação Do Smartsheet
+step3a,"Passo 3, Opção A: concluir a validação dos dados através da Visualização Dinâmica (recomendado)"
+point10,"Para essa opção, você precisará criar uma conta gratuita do Smartsheet. Você será direcionado a partir do E-mail para configurar uma conta."
+point11,Clique no link visualização dinâmica na solicitação de E-mail.
+point12,"Uma nova janela do navegador da Internet será aberta com uma configuração semelhante a uma tabela para todas as entradas. Aqui, você pode facilmente percorrer todas as entradas que precisam de validação."
+point13,Clique em uma linha para iniciar a validação.
+point14,"Um painel"" Detalhes "" aparecerá à direita."
+point15,Revise os campos de contexto e preencha os campos de validação. Os campos de validação contêm os dados que serão transferidos para o conjunto de dados final (Quadro 1).
+point16,"Deixe um comentário, apenas se houver algo que precise da nossa atenção. A equipa da Blue Ventures (BV) analisará os comentários e responderá de forma adequada."
+point17,"Clique no botão azul ""Salvar"" para salvar sua seleção."
+point18,"Uma vez validada, essa linha desaparecerá da sua visualização dinâmica."
+point19,Clique na linha seguinte e repita os passos para concluir a validação de todas as entradas.
+point20,Você pode sair e entrar novamente clicando no link visualização dinâmica do seu e-mail ou fazendo login na sua conta a qualquer momento. Não é necessário validar todas as entradas de uma só vez.
+point21,Você pode marcar este link e retornar a qualquer momento.
+table1,"Tabela 1: campos ou colunas principais nas tabelas de validação. Os campos de contexto fornecem as informações necessárias para validar os dados. Os campos de validação são preenchidos com dados que serão transferidos para os conjuntos de dados principais. Apenas os campos de validação podem ser editados. Alguns campos só são visíveis no painel"" Detalhes "" quando uma linha é clicada na tabela de Visualização Dinâmica."
+t1.1,Campo da tabela de validação
+t1.2,Descrição do campo
+t1.3,Tipo de campo
+t1.5,nome da organização que recolhe os dados
+t1.6,contexto
+t1.7,validação
+t1.8,auto
+t1.9,Aldeia ou sub-aldeia onde a captura foi desembarcada e registada
+t1.10,Nome da pessoa que recolheu os dados na Kobo (enumerador)
+t1.12,O campo do formulário KoboCollect que precisa de ser validado ou o nome que não tem correspondência nos ficheiros de referência.
+t1.13,O valor que foi introduzido para o kobo_field correspondente
+t1.14,"Nome estreitamente correspondente que já existe na base de dados. Se estiver em branco, nenhum nome existente corresponde ao nome na coluna "" new_data"
+t1.15,"Nome estreitamente correspondente que já existe na base de dados. Se estiver em branco, nenhum nome existente corresponde ao nome na coluna "" new_data"
+t1.16,"Nome estreitamente correspondente que já existe na base de dados. Se estiver em branco, nenhum nome existente corresponde ao nome na coluna "" new_data"
+t1.17,"Selecione o campo com os dados corretos (new_data, ref_match1, ref_match2, ref_match3), insira outro valor (other) ou remove (remove row from analysis because data cannot be validated). Obrigatório. Visível apenas no painel de detalhes. A entrada desaparecerá assim que os dados forem validados."
+t1.18,"Introduza outro valor se nenhuma das opções de validação estiver correcta. Obrigatório se"" outro "" selecionado de validation_options. Visível apenas no painel de detalhes."
+t1.19,Lista de IDs de envio este novo valor de dados aparece no formulário Kobo de monitorização de aterragens
+t1.20,"Lista de IDs de envio este novo valor de dados aparece em, de landings profiling Kobo form"
+t1.20.1,Lista de ids de envio este novo valor de dados aparece no formulário Kobo do inquérito aos agregados familiares.
+t1.20.2,"O grupo de espécies associado ao novo nome da arte, tal como recolhido na forma Kobo. Isso só aparecerá se o ""kobo_field"" for uma categoria de engrenagem."
+t1.20.3,Obrigatório se validar novos nomes de artes. Uma lista suspensa de tipos de engrenagens a serem associados ao nome da engrenagem validada.
+t1.20.4,"O género associado ao novo pescador, tal como recolhido no formulário Kobo. Isso só aparecerá se o ""kobo_field"" for um nome de pescador."
+t1.20.5,"O género associado ao novo comprador, tal como recolhido no formulário Kobo. Isso só aparecerá se o"" kobo_field "" for um nome de comprador."
+t1.22,Nome do pescador que desembarcou a captura
+t1.23,Data de desembarque das capturas
+t1.24,Denominação local da espécie
+t1.25,"Valor unitário: peso / indivíduo, preço / peso, comprimento / indivíduo, largura / indivíduo"
+t1.26,Tipo de advertência
+t1.27,"Valor do numerador de advertência: peso, preço, comprimento"
+t1.28,"Unit of numerator: kg, g, lb, ons, USD, IDR, PHP, cm"
+t1.29,"Valor do denominador: Contagem, peso"
+t1.30,"Unidade de denominador: número, kg, g, lb, ons"
+t1.31,"Y = os valores estão correctos, n = Os valores estão incorrectos, Remove = remove da análise porque os valores não podem ser validados. Obrigatório."
+t1.32,"Se correct = Y, os valores são preenchidos automaticamente, se correct = N, introduza o valor correct"
+t1.33,"Se correct = Y, os valores são preenchidos automaticamente, se correct = N, introduza o valor correct"
+t1.34,"Se os numerator_units estiverem incorretos, selecione a opção correta na lista suspensa"
+t1.35,Conjunto de dados de onde provêm os dados (monitorização dos desembarques ou definição de perfis).
+t1.36,"ID de envio do formulário Kobo. Use - o para comparar com dados brutos, se necessário, para validação."
+t1.37,"Origem ou fonte dos dados: 'landings', 'profiling', ' community_profiling 'ou'hhs'"
+t1.37.1,Admin1 onde as capturas foram desembarcadas e registadas.
+t1.37.2,Admin2 onde a captura foi desembarcada e registada.
+t1.37.3,Nome do pescador associado a estes novos dados de espécies.
+t1.38,Link para a foto que foi enviada no Kobo Collect
+t1.39,O valor que foi introduzido como um novo nome local de espécie no Kobo Collect ou um nome local e ID de nome científico (localname_scientificspecies) que já não corresponde a um nome encontrado em species_ref
+t1.40,"Nome estreitamente correspondente que já existe na base de dados. Se estiver em branco, nenhum nome existente corresponde ao nome na coluna "" new_data"
+t1.41,"Nome estreitamente correspondente que já existe na base de dados. Se estiver em branco, nenhum nome existente corresponde ao nome na coluna "" new_data"
+t1.42,"Nome estreitamente correspondente que já existe na base de dados. Se estiver em branco, nenhum nome existente corresponde ao nome na coluna "" new_data"
+t1.43,"Nome comum inglês de novas espécies. Por favor, forneça se conhecido, caso contrário, deixe em branco. (Não obrigatório)"
+t1.44,"Nome científico da família das novas espécies. Por favor, forneça se conhecido, caso contrário, deixe em branco. (Não obrigatório)"
+t1.45,"Nome científico das novas espécies. Por favor, forneça se conhecido, caso contrário, deixe em branco. Obrigatório: se o nome da espécie for desconhecido, indicar qualquer nível de identificação taxonómica (por exemplo, Nome de Família, nome comum em inglês)"
+t1.46,"ID de envio do formulário Kobo. Use - o para comparar com dados brutos, se necessário, para validação."
+t1.48,"Selecione o campo com os dados corretos (local_name_new, ref_match1, ref_match2, ref_match3), insira outro valor (other) ou remove (remove row from analysis because data cannot be validated). Obrigatório. Visível apenas no painel de detalhes. A entrada desaparecerá assim que os dados forem validados."
+t1.49,"Introduza outro valor se nenhuma das opções de validação estiver correcta. Obrigatório se"" outro "" selecionado de validation_options. Visível apenas no painel de detalhes."
+t1.50,"Esta coluna armazena o último comentário que foi feito para essa linha. Para ver toda a discussão de comentários para essa linha, basta clicar em qualquer lugar na linha. O painel de detalhes aparecerá e clique na guia"" Comentários "" para ver todos os comentários dessa linha."
+t1.51,"O campo do formulário KoboToolbox que precisa de ser validado. Isto pode ser devido a uma pergunta do perfil dos desembarques, do perfil comunitário ou do inquérito aos agregados familiares."
+t1.52,O valor que foi introduzido para o kobo_field correspondente
+t1.53,"Conjunto de dados os dados provêm de (perfis de desembarques, perfis comunitários ou inquéritos domiciliários)."
+t1.54,"ID de envio do formulário Kobo. Use - o para comparar com dados brutos, se necessário, para validação."
+t1.55,"Selecione o campo com dados corretos (new_data), insira outro valor (other) ou remove (remove row from analysis because data cannot be validated). Obrigatório. Visível apenas no painel de detalhes. A entrada desaparecerá assim que os dados forem validados."
+t1.56,"Introduza outro valor se nenhuma das opções de validação estiver correcta. Obrigatório se"" outro "" selecionado de validation_options. Visível apenas no painel de detalhes."
+t1.57,Obrigatório. Digite a tradução em Inglês do campo new_data ou other se 'other' foi selecionado como a opção de validação. Visível apenas no painel de detalhes.
+caption3,Figura 3: Exemplo De Avisos De Valor De Visualização Dinâmica
+caption4,Figura 4: Exemplo De Visualização Dinâmica - Painel De Detalhes
+step3b,"Passo 3, Opção B: concluir a validação dos seus dados através de'pedido aberto'"
+point22,"Para essa opção, você não precisa ter um login de conta do Smartsheet ."
+point23,"Clique no botão ""Abrir pedido"" na mensagem de E-mail de validação."
+point24,Uma nova janela do navegador da internet será aberta com uma configuração semelhante a um formulário para cada entrada
+point25,Revise os campos de contexto e preencha os campos de validação. Os campos de validação contêm os dados que serão transferidos para o conjunto de dados final (Quadro 1).
+point26,Clique em avançar na parte inferior da tela para percorrer cada entrada que precisa ser validada.
+point27,"Para pular uma entrada (por exemplo, se você ainda não tem certeza de qual resposta escolher) clique em ""Avançar"" sem fazer uma seleção na coluna 'validation_options'. Será apresentada a próxima entrada para validação."
+point28,"Se precisar de sair da página ou parar antes de todas as entradas terem sido validadas, as suas opções devem ser guardadas na próxima vez que reabrir o pedido. Ao abrir para continuar, basta clicar em ""Avançar"" até encontrar uma entrada que precisa de validação."
+point29,"Quando chegar à última entrada, clique em ""Concluído"". Uma mensagem pop-up aparecerá perguntando se você está pronto para enviar sua atualização?’:"
+point29.1,"Clique em ""Voltar"" Se precisar rever"
+point29.2,"Clique em ""Enviar atualização"" para enviar validação"
+point29.3,"Marque a caixa ""envie-me uma cópia das minhas respostas"" se desejar que uma cópia das suas respostas seja enviada para o seu e-mail"
+point30,"Se clicar em"" Enviar-me uma cópia das minhas respostas"", receberá um e-mail intitulado""confirmação de atualização: nomes e engrenagens""."
+point30.1,"Haverá um quadro que resumirá as entradas que foram actualizadas. As entradas nas quais nenhuma opção foi selecionada em"" validation_options "" não serão incluídas."
+point30.2,"Este e - mail pode conter uma ligação para um nome de folha ""Data Validation-Names and Gears""; no entanto, o acesso a esta folha está bloqueado."
+point31,"Para ver qualquer validação restante necessária, você precisará aguardar o próximo e-mail de solicitação de atualização ou abrir a visualização dinâmica."
+caption5,"Figura 5: exemplo do formato ""pedido aberto"""
+faq,Perguntas Frequentes:
+q1,Várias pessoas podem trabalhar na validação de dados ao mesmo tempo?
+a1,"Sim, no entanto, uma vez validada uma entrada (linha) na vista dinâmica, esta deixará de estar visível."
+q2,Preciso de uma conta Smartsheet?
+a2,"Apenas para completar a validação dos dados através da Visualização Dinâmica (ou seja, a visualização em tabela). Você não precisa de uma conta paga, com uma versão de avaliação gratuita ou gratuita (uma vez concluída a avaliação), você poderá visualizar e interagir com todos os arquivos do Smartsheet."
+q3,O que acontece após a validação dos dados?
+a3,"Em alguns casos, os dados serão submetidos a uma revisão adicional pela Equipa de dados oceânicos Blue Ventures. Os dados validados serão actualizados na base de dados e, quando adequado, os menus suspensos serão actualizados nos ficheiros e formulários de referência Kobo (Figura 6). Os dados que não foram validados não aparecerão nas visualizações ou estatísticas do painel, mas estarão disponíveis no download de dados brutos."
+p3,"Se, a qualquer momento, encontrar erros, tiver dúvidas ou precisar de apoio para concluir a validação dos dados, contacte-nos em mary.mccabe@blueventures.org."
+caption6,Figura 6: validação de dados para fazer referência ao fluxo de trabalho do ficheiro

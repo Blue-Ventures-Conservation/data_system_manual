@@ -1,0 +1,217 @@
+---
+title: Data Validation
+echo: false
+output: false
+---
+
+```{r}
+library(shiny.i18n)
+library(rmarkdown)
+library(knitr)
+i18n <- Translator$new(translation_csvs_path = "data")
+i18n$set_translation_language("tet")
+i18n
+
+
+```
+
+## `r i18n$t("title")`
+
+
+{{< video https://youtu.be/RY-iIAwyerk >}}
+
+
+`r { i18n$t("p1") }`
+
+`r { i18n$t("p2") }`
+
+`r { i18n$t("p2.1") }`
+
+`r { i18n$t("p2.2") }`
+
+`r { i18n$t("step1") }`
+
+-   `r { i18n$t("point1") }`
+
+-   `r { i18n$t("point2") }`
+
+-   `r { i18n$t("point3") }`
+
+`r { i18n$t("step2") }`
+
+-   `r { i18n$t("point4") }`
+
+-   `r { i18n$t("point5") }`
+
+-   `r { i18n$t("point6") }`
+
+-   `r { i18n$t("point7") }`
+
+-   `r { i18n$t("point8") }`
+
+-   `r { i18n$t("point9") }`
+
+`r { i18n$t("caption1") }`
+
+![](images/fig1.jpg){width="733" height="547"}
+
+`r { i18n$t("caption2") }`
+
+![](images/fig2.jpg){width="687" height="355"}
+
+`r { i18n$t("step3a") }`
+
+-   `r { i18n$t("point10") }`
+
+-   `r { i18n$t("point11") }`
+
+-   `r { i18n$t("point12") }`
+
+-   `r { i18n$t("point13") }`
+
+-   `r { i18n$t("point14") }`
+
+-   `r { i18n$t("point15") }`
+
+-   `r { i18n$t("point16") }`
+
+-   `r { i18n$t("point17") }`
+
+-   `r { i18n$t("point18") }`
+
+-   `r { i18n$t("point19") }`
+
+-   `r { i18n$t("point20") }`
+
+-   `r { i18n$t("point21") }`
+
+`r { i18n$t("table1") }`
+
+| `r { i18n$t("t1.1") }`      | `r { i18n$t("t1.2") }`  | `r { i18n$t("t1.3")}`  |
+|-----------------------------|-------------------------|------------------------|
+| **All Data Validation Tables**  |                         |                        |
+| partner                     | `r { i18n$t("t1.5") }`  | `r { i18n$t("t1.6") }` |
+| admin3_landed               | `r { i18n$t("t1.9") }`  | `r { i18n$t("t1.6") }` |
+| data_collector              | `r { i18n$t("t1.10") }` | `r { i18n$t("t1.6") }` |
+| **Names and Gears** |                         |                        |
+| kobo_field                  | `r { i18n$t("t1.12") }` | `r { i18n$t("t1.6") }` |
+| new_data                    | `r { i18n$t("t1.13") }` | `r { i18n$t("t1.6") }` |
+| ref_match1                  | `r { i18n$t("t1.14") }` | `r { i18n$t("t1.6") }` |
+| ref_match2                  | `r { i18n$t("t1.15") }` | `r { i18n$t("t1.6") }` |
+| ref_match3                  | `r { i18n$t("t1.16") }` | `r { i18n$t("t1.6") }` |
+| validation_options          | `r { i18n$t("t1.17") }` | `r { i18n$t("t1.7") }` |
+| other                       | `r { i18n$t("t1.18") }` | `r { i18n$t("t1.7") }` |
+| landings_submission_ids     | `r { i18n$t("t1.19") }` | `r { i18n$t("t1.6") }` |
+| profiling_submission_ids    | `r { i18n$t("t1.20") }` | `r { i18n$t("t1.6") }` |
+| hhs_submission_ids          | `r { i18n$t("t1.20.1") }` | `r { i18n$t("t1.6") }` |
+| species_group               | `r { i18n$t("t1.20.2") }` | `r { i18n$t("t1.6") }` |
+| gear_type                   | `r { i18n$t("t1.20.3") }` | `r { i18n$t("t1.7") }` |
+| fisher_gender               | `r { i18n$t("t1.20.4") }` | `r { i18n$t("t1.6") }` |
+| buyer_gender                | `r { i18n$t("t1.20.5") }` | `r { i18n$t("t1.6") }` |
+| **Value Warnings**          |                         |                        |
+| fisher_name                 | `r { i18n$t("t1.22") }` | `r { i18n$t("t1.6") }` |
+| date_landed                 | `r { i18n$t("t1.23") }` | `r { i18n$t("t1.6") }` |
+| local_name                  | `r { i18n$t("t1.24") }` | `r { i18n$t("t1.6") }` |
+| warning_calc                | `r { i18n$t("t1.25") }` | `r { i18n$t("t1.6") }` |
+| warning                     | `r { i18n$t("t1.26") }` | `r { i18n$t("t1.6") }` |
+| numerator                   | `r { i18n$t("t1.27") }` | `r { i18n$t("t1.6") }` |
+| numerator_unit              | `r { i18n$t("t1.28") }` | `r { i18n$t("t1.6") }` |
+| denominator                 | `r { i18n$t("t1.29") }` | `r { i18n$t("t1.6") }` |
+| denominator_unit            | `r { i18n$t("t1.30") }` | `r { i18n$t("t1.6") }` |
+| correct                     | `r { i18n$t("t1.31") }` | `r { i18n$t("t1.7") }` |
+| correct_numerator           | `r { i18n$t("t1.32") }` | `r { i18n$t("t1.7") }` |
+| correct_denominator         | `r { i18n$t("t1.33") }` | `r { i18n$t("t1.7") }` |
+| correct_numerator_unit      | `r { i18n$t("t1.34") }` | `r { i18n$t("t1.7") }` |
+| data_origin                 | `r { i18n$t("t1.35") }` | `r { i18n$t("t1.6") }` |
+| submission_id               | `r { i18n$t("t1.36") }` | `r { i18n$t("t1.6") }` |
+| **Species**                 |                         |                        |
+| data_origin                 | `r { i18n$t("t1.37") }` | `r { i18n$t("t1.6") }` |
+| admin1                      | `r { i18n$t("t1.37.1") }` | `r { i18n$t("t1.6") }` |
+| admin2                      | `r { i18n$t("t1.37.2") }` | `r { i18n$t("t1.6") }` |
+| fisher_name                 | `r { i18n$t("t1.37.3") }` | `r { i18n$t("t1.6") }` |
+| new_species_photo           | `r { i18n$t("t1.38") }` | `r { i18n$t("t1.6") }` |
+| new_data                    | `r { i18n$t("t1.39") }` | `r { i18n$t("t1.6") }` |
+| ref_match1                  | `r { i18n$t("t1.40") }` | `r { i18n$t("t1.6") }` |
+| ref_match2                  | `r { i18n$t("t1.41") }` | `r { i18n$t("t1.6") }` |
+| ref_match3                  | `r { i18n$t("t1.42") }` | `r { i18n$t("t1.6") }` |
+| eng_common_name_new         | `r { i18n$t("t1.43") }` | `r { i18n$t("t1.7") }` |
+| scientific_family_new       | `r { i18n$t("t1.44") }` | `r { i18n$t("t1.7") }` |
+| scientific_species_new      | `r { i18n$t("t1.45") }` | `r { i18n$t("t1.7") }` |
+| submission_id               | `r { i18n$t("t1.46") }` | `r { i18n$t("t1.6") }` |
+| validation_options          | `r { i18n$t("t1.48") }` | `r { i18n$t("t1.7") }` |
+| other                       | `r { i18n$t("t1.49") }` | `r { i18n$t("t1.7") }` |
+| latest_comment              | `r { i18n$t("t1.50") }` | `r { i18n$t("t1.8") }` |
+| **Other**                   |                         |                        |
+| kobo_field                  | `r { i18n$t("t1.51") }` | `r { i18n$t("t1.6") }` |
+| new_data                    | `r { i18n$t("t1.52") }` | `r { i18n$t("t1.6") }` |
+| data_origin                 | `r { i18n$t("t1.53") }` | `r { i18n$t("t1.6") }` |
+| submission_id               | `r { i18n$t("t1.54") }` | `r { i18n$t("t1.6") }` |
+| validation_options          | `r { i18n$t("t1.55") }` | `r { i18n$t("t1.7") }` |
+| other                       | `r { i18n$t("t1.56") }` | `r { i18n$t("t1.7") }` |
+| validated_data_english      | `r { i18n$t("t1.57") }` | `r { i18n$t("t1.7") }` |
+
+: {tbl-colwidths="\[25,50,25\]"}
+
+`r { i18n$t("caption3") }`
+
+![](images/fig3.jpg){width="673"}
+
+`r { i18n$t("caption4") }`
+
+![](images/fig4.jpg){width="907"}
+
+`r { i18n$t("step3b") }`
+
+-   `r { i18n$t("point22") }`
+
+-   `r { i18n$t("point23") }`
+
+-   `r { i18n$t("point24") }`
+
+-   `r { i18n$t("point25") }`
+
+-   `r { i18n$t("point26") }`
+
+-   `r { i18n$t("point27") }`
+
+-   `r { i18n$t("point28") }`
+
+-   `r { i18n$t("point29") }`
+
+    -   `r { i18n$t("point29.1") }`
+
+    -   `r { i18n$t("point29.2") }`
+
+    -   `r { i18n$t("point29.3") }`
+
+-   `r { i18n$t("point30") }`
+
+    -   `r { i18n$t("point30.1") }`
+
+    -   `r { i18n$t("point30.2") }`
+
+-   `r { i18n$t("point31") }`
+
+`r { i18n$t("caption5") }`
+
+![](images/fig5.jpg){width="441"}
+
+`r { i18n$t("faq") }`
+
+1.  `r { i18n$t("q1") }`
+
+-   `r { i18n$t("a1") }`
+
+2.  `r { i18n$t("q2") }`
+
+-   `r { i18n$t("a2") }`
+
+3.  `r { i18n$t("q3") }`
+
+-   `r { i18n$t("a3") }`
+
+`r { i18n$t("p3") }`
+
+`r { i18n$t("caption6") }`
+
+![](images/qa_workflow.png){width="678"}

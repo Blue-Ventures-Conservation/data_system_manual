@@ -1,0 +1,10 @@
+---
+title: Madagascar - MHJ
+echo: false
+warning: false # Suppresses warnings for the entire document
+---
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+<iframe src="MDG_MHJ_species_guide_2025-11-16.html" width="100%" height="94%" frameborder="0" allowfullscreen></iframe>
+

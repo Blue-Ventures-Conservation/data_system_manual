@@ -1,0 +1,23 @@
+key,fr
+title,Guide de Configuration KoboCollect
+step1,Téléchargez KoboCollect depuis la boutique GooglePlay.
+step2,"Ouvrez l'application et sélectionnez ""Saisir manuellement les détails du projet.""Des instructions sur la configuration via le code QR peuvent être trouvées ici."
+step3,Configurez la connexion au serveur et entrez les informations de connexion. Utilisez le serveur général: https://kc.kobotoolbox.org
+step4,"Si vous avez déjà téléchargé Kobo et que vous souhaitez ajouter un autre compte à l'application, sélectionnez l'icône de votre utilisateur dans le coin supérieur droit de l'écran. Sélectionnez "" Ajouter un projet.""À partir de là, vous pouvez saisir manuellement les détails du projet ou utiliser un code QR."
+step5,"Après avoir configuré le serveur, sélectionnez ""Télécharger le formulaire"" depuis l'écran d'accueil. Une liste de tous les formulaires d'enquête partagés avec votre compte devrait apparaître."
+step6,"Sélectionnez tous les formulaires d'enquête partagés avec votre compte, ou sélectionnez ceux que vous souhaitez avoir en les sélectionnant manuellement. Ensuite, cliquez sur "" Être sélectionné.""Kobo se connectera ensuite au serveur pour récupérer tous les formulaires. Cela nécessite une connexion Internet."
+step7,"Configurez la"" mise à jour automatique "" pour vous assurer que les sondages dans l'application restent à jour lorsque des modifications sont apportées (étapes 8 à 13). Si la version la plus récente de l'enquête n'est pas utilisée, cela entraînera des problèmes dans le pipeline de données et la base de données."
+step8,Cliquez sur l'icône de votre utilisateur dans le coin supérieur droit.
+step9,Cliquez sur paramètres.
+step10,"Une fois sur place, cliquez sur "" Gestion des formulaires."""
+step11,"Ensuite, cliquez sur "" Mode de mise à jour du formulaire vierge."""
+step12,"Sélectionnez "" Correspondre exactement au serveur.""Cela garantira que l'enquête est mise à jour vers la version la plus récente."
+step13,"Enfin, sélectionnez ""Fréquence de mise à jour automatique"" puis choisissez l'une des fréquences."
+step14,"Revenez à l'écran d'accueil. Pour collecter des données, sélectionnez "" Démarrer un nouveau formulaire."""
+step15,"Ensuite, sélectionnez le formulaire d'enquête que vous souhaitez utiliser pour commencer à collecter des données."
+step16,Parcourez toutes les questions de l'enquête en sélectionnant la touche SUIVANTE.
+step17,"À la fin de l'enquête, sélectionnez ""Finaliser.""Si vous souhaitez modifier le formulaire avant de le soumettre, sélectionnez"" Enregistrer en tant que brouillon."""
+step18,"Si vous avez sélectionné ""Enregistrer en tant que brouillon"", votre formulaire sera envoyé à ""Brouillons"".""Ici, vous pouvez apporter des modifications aux formulaires avant de les soumettre à l'ensemble de données final. Après avoir apporté des modifications, sélectionnez ""Finaliser"", comme à l'étape 17."
+step19,"Après avoir sélectionné ""Finaliser"", le formulaire est automatiquement stocké sous ""Prêt à envoyer"".""Dans la version actuelle de Kobo, vous pouvez toujours modifier les formulaires ici. À l'avenir, cependant, vous ne pourrez plus les modifier une fois qu'ils seront finalisés, et ""Prêt à envoyer"" ne sera qu'un lieu de stockage pour stocker les formulaires finalisés jusqu'à ce que vous disposiez d'une connexion Internet pour les envoyer au serveur."
+step20,"Sélectionnez ""Envoyer sélectionné"" pour envoyer tous les formulaires au serveur."
+step21,"Pour vous assurer que les formulaires ont été téléchargés avec succès sur le serveur, sélectionnez "" Envoyé.""Ces formulaires font maintenant partie de l'ensemble de données final."

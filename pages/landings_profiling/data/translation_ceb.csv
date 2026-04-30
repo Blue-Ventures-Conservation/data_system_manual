@@ -1,0 +1,207 @@
+key,ceb
+subtitle1,Kinatibuk-ang impormasyon
+q1,Nasod
+q2,Kahopungan
+q3,Probinsya nga gidalhan
+q4,Municipio nga gidalhan
+q5,Barangay nga gidalhan
+q6,Ngalan sa tig kolekta og datos
+a1,*Bag-ong ngalan sa tig kilekta og datos*
+q7,Petsa sa paghatod
+subtitle2,Impormasyon nga mga kuha sa mga mananagat
+q8,Ngalan sa mananagat
+a2,*Bag-ong ngalan sa mananagat*
+q9,*Kinatawhan sa mangingisda*
+q10,Ang mangingisda ba nagpuyo sa ${admin3_label}?
+q11,Probinsya diin gikan ang mangingisda:
+q12,Distrito diin gikan ang mangingisda:
+q13,Baryo diin gikan ang mangingisda:
+q14,Pila ka oras sa usa ka adlaw nga aktibo ka nanagat
+q15,Pila ka adlaw aktibo ka nga nanagat
+q16,Ngalan sa lugar kung asa ihatod
+a8.9,*Bag-ong ngalan sa lugar kung asa ihatod*
+q17,Unang lugar nga panagatan
+a9,*Ngalan sa lugar nga panagatan*
+q18,Ngalan sa pumapalit (kung nahibaw-an)
+a10,*Bag-ong ngalan sa pumapalit*
+q19,*Kinatawhan sa mamalitay*
+subtitle3,Impormasyon sa sakayan
+q20,Klase sa barko sa panagat
+q21,Rehistro nga numero sa pambot (optional):
+q22,Gidaghanon sa mga tripulante sa panagat sa samang sakayan
+q23,Si ${mananagat_id_label} ${bag-ong_pangalan_sa mangingisda} ba ang kapitan?
+q24,"Palihug pilia ang ubang mangingisda sa barko, DILI apil ang nag-unang mangingisda ${mangingisda_id_label}: ${bag-ong_pangalan_sa mananagat}"
+q25,Palihug ipiho ang bag-ong ngalan sa mangingisda:
+q26,Palihug pilia ang kapitan:
+q27,Ang nakuha ba girekord ang tibuok kuha gikan sa sakayan o ${fisher_id_label} nga bahin sa kuha?
+subtitle4,Klase sa mga isda nga ni abot ${fisher_id_label}
+q28,
+q29,Lokal nga ngalan sa mga matang sa isda
+a19,Palihug ipiho ang mga espisye nga sagol sa bag (pilia ang daghang)
+q30,*Bag-ong Espisye: Grupo sa Espisye*
+a18,*Bag-ong matang sa lokal nga ngalan (kung nahibaw-an)*
+q31,*Bag-ong matang sa ingles sa komon nga ngalan (kung nahibaw-an)*
+q32,*Bag-ong matang sa siyentepikong ngalan sa kada pamilya (kung na hibaw-an)*
+q33,*Bag-ong matang sa siyentipekong ngalan (kung na hibaw-an)*
+q34,*Pagdugang og litrato sa bag-ong mga matang sa isda*
+q35,Lokal nga ngalan sa galamiton
+q36,Sa unsa nga pamaagi gigamit ng geara (Pana)?
+q37,Pila ka mga lit-ag ang imong gibutang/gi-install?
+q38,Matang sa puy-anan
+q39,
+q40,"Palihog ihulagway ang dili gusto nga makuha, o ubang matang nga nadakpan."
+q41,Pagtakda sa oras (Oras)
+q42,Gigamitan ba nimo'g paon?
+q43,Paon nga gigamit (matang/espyises UG buhi o patay):
+q44,Timbang sa paon/pakaon (kg)
+subtitle5,Impormasyon sa mga matang sa isda
+q45,Tanang espisye
+q46,Timbang sa kuha
+q48,Kinatibuk-ang ihap sa kuha
+q50,
+q51,"Kinatibuk-ang presyo nga nabaligya nga kuha, lokal nga kwarta (gibanabana/aktuwal)"
+q52,Rason nga wala ma baligya o mapalit ang total nga kuha
+subtitle6,Mga sampol (${calc_local_name})
+q53,Timbang sa kuha
+q54,Kinatibuk-ang gidaghanon
+q56,Pila kabuok sampol ang imong gikuha sa kini nga espisye?
+q57,Timbang nga yunit alang sa indibidwal nga mga sampol
+q58,**Sampol 1:**
+q60,*Gilapdon (cm)*
+q61,*Ang gitas-on sa hapin (cm)*
+q62,*Ang gitas-on sa kabhang/bagal (cm)*
+q63,*Kalapad sa kabhang/Bagal (cm)*
+q64,*Indibiduwal nga kinatibuk-ang gitas-on (cm)*
+q67,**Sampol 10:**
+subtitle7,Mga sampol (${calc_local_name})
+q67.5,"Dugang sa datos sa gitas-on, unsa pa nga datos ang imong gikolekta?"
+q68,Pila ka sample ang imong nakolekta?
+q69,Timbang nga yunit alang sa indibidwal nga mga sampol
+q70,**Sampol 1:**
+q59,*Kinatawhan*
+q71,*Gilapdon (cm)*
+q72,*Ang gitas-on sa hapin (cm)*
+q73,*Ang gitas-on sa kabhang/bagal (cm)*
+q74,*Kalapad sa kabhang/Bagal (cm)*
+q75,*Indibiduwal nga kinatibuk-ang gitas-on (cm)*
+q76,Indibiduwal nga gibug-aton (${weight_unit_samples})*
+q77,* Panahon sa pagkahamtong sa bihod*
+q78,Kalidad sa mga kuha
+q79,Gigamitan og yelo alang sa pagtipig?
+q79.5,Temperatura sa Kugita (Celsius)
+q80,Gamita ang kolor kard aron mahibal-an ang gidaghanon nga bili alang sa kolor sa kugita nga sukdanan sa isa ngadto sa lima (1-5)
+q81,Gidaghanon sa mga gaway
+q82,Pisikal nga gasgas
+q83,Porsyento sa dagway sa kugita nga adunay gasgas
+q84,Sungo
+q85,Panit
+q86,Kalidad sa mga kuha
+q87,Is the crab still alive?
+q88,Are the eyes and body reactive to touch?
+q89,Are the eyes intact?
+q90,Are the claws intact?
+q91,How many legs are broken?
+q92,Is the crab foaming at the mouth?
+q93,Bihod
+q94,Gibug-atong timbang sa bihod (g)
+q95,Kolor sa bihod
+q96,Ang-ang sa itlog
+q97,Gitas-on sa bihod (cm)
+q98,Dagway sa spermatophore
+q99,Ang dagway sa mga linya sa obaryo glandula
+q100,Stylet
+q101,Stylet ID sumbanan niini:
+a35,Mga kilo (kg)
+a36,Gramo (g)
+a37,
+a38,
+a24,Kagasangan
+a25,Kalusayan
+a26,Katunggan
+a27,Patag nga lapukon
+a28,Baras
+a29,Lawom nga tubig
+a30,Ang uban
+a7,Oo
+a8,Dili
+a55,Walay ice
+a56,Gamitan og ice panahon sa pagkuha
+a57,Gamitan og ice panahon sa pag-abot
+a58,Gamitan og ice panahon sa pag-abot og pagkuha
+a59,Tibuok sungo walang gasgas
+a60,Tibuok sungo may danyos/gasgas
+a61,Dili tunokon
+a62,Tungol ming gawas
+a11,Dako nga makina labaw sa >15HP
+a12,Gamay nga makina ubos sa < 15HP
+a13,Baroto nga walay makina nga may bugsay
+a14,Baroto nga walay makina nga may layag
+a14.5,Baroto nga may makina nga may layag
+a15,Walay pamboat nga makasulod gikan sa baybayon o yuta
+a53,Babaye
+a54,Lalaki
+a74,Hanap
+a75,Puti
+a76,Puti nga puti
+a77,Puti
+a78,Hilaw nga dalag
+a79,Kahel/dalag
+a80,lugom nga dalag
+a81,I
+a82,II
+a83,III
+a84,IV
+a85,Wala
+a86,Gamay ra kaayo
+a87,Daghan
+a88,Wala
+a89,Dili klaro nga mga linya
+a90,Klaro nga mga linya
+a48,Dili maayo nga kalidad
+a49,Gamay ra kaayo
+a50,Dako kaayo
+a51,Gitipigan para sa kaugalingon
+a52,Ang uban
+a63,Ang gitas-on
+a64,Kalidad
+a65,Bihod
+a66,Stylet
+a67,Panahon sa pagkahamtong sa bihod
+a20,Sawom nga naay Kompresor hos/Sawom nga may tangke
+a21,Sawom
+a22,Maglakaw
+a23,Uban pa
+a16,Tibuok nga Kuha
+a17,Ang bahin sa mananagat
+a3,Lalake
+a4,Babaye
+a5,Dili sunod-sunod
+a6,Negosyo nga naglangkob sa daghang mga tawo (walay gender)
+a68,Yes
+a69,"No, the claw is broken and does not reach the base"
+a70,"No, the claw is broken at the base"
+a71,None are broken
+a72,1-3 broken
+a73,4-6 broken
+a31,
+a32,
+a33,
+a34,
+a39,Dili
+a40,Uga
+a41,Asin
+a42,Aso
+a43,Tibuok
+a44,Limpyo nga isda padung merkado/Partily nga giproseso
+a45,Walay bukog
+a46,Ikog
+a47,Kapay
+sp2,Kasag
+sp1,Kugita
+star,Magamit ra sa gitudlo nga mga kauban o mga nasud.
+question,Pangutana
+answer,Mga Pagpili sa Tubag
+q47,Kinatibuk-ang gibug-aton sa kuha
+q49,Kinatibuk-ang gibug-aton nga ibaligya
+q55,Kinatubuk-ang kabug-aton sa mga matang sa isda
+q65,*Bigat ng bawat isa*

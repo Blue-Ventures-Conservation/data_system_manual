@@ -1,0 +1,83 @@
+key,es
+subtitle1,Información general sobre aterrizajes
+q1,País
+q2,Organización
+q3,El administrador 1 aterrizó
+q4,El administrador 2 aterrizó
+q5,El administrador 3 aterrizó
+q6,Nombre del recopilador de datos
+a1,*Nuevo nombre del recopilador de datos*
+q7,Fecha de aterrizaje
+subtitle2,Información de captura por Fisher
+q8,Nombre del pescador
+a2,*Nuevo nombre de pescador*
+q9,Género del pescador
+q10,¿Vive el pescador en ${admin3_label}?
+q11,Admin1 de donde es Fisher:
+q12,Administrador 2 de donde es Fisher:
+q13,Administrador 3 de donde es Fisher:
+q13.5,¿Se considera al pescador local o migrante?
+a8.1,Local
+a8.2,Inmigrante
+q14,Número de días de pesca activa (sin incluir el tiempo de viaje)
+q15,Nombre del sitio de aterrizaje
+a8.5,*Nuevo nombre del sitio de aterrizaje*
+q15.5,"¿Se vendió la captura y, en caso afirmativo, a quién?"
+q16,Nombre del comprador (si se conoce)
+a9,*Nombre del nuevo comprador*
+q17,Género del comprador
+q18,¿Se registra la captura total del barco o ${fisher_id_label} parte de la captura?
+subtitle3,Especies desembarcadas por ${fisher_id_label}
+q19,Tipo de captura
+q20,"Nombre local de la especie (use la tarjeta de referencia de especies, si es necesario)"
+a12,Por favor especifique las especies en bolsa mixta (seleccione varias)
+a13,*Nombre local de la nueva especie*
+q21,*Nombre común en inglés de la nueva especie (si se conoce)*
+q22,*Nombre científico de la familia de la nueva especie (si se conoce)*
+q23,*Nueva especie Nombre científico de la especie (si se conoce)*
+q24,*Agregar foto de nuevas especies.*
+q25,Unidad de peso de captura
+q26,Peso total (${weight_unit}) ${local_name_label}: ${local_name_new}
+q27,Peso total vendido (estimado o real) ${local_name_label}: ${local_name_new}
+q27.1,Compradores seleccionados vendieron a:
+q28,Número total: ${local_name_label}
+q29,¿Procesáis esta captura?
+q30,"Precio total de la captura vendida, moneda local (estimada o real): ${local_name_label}"
+q31,Motivo de la captura total no comprada/vendida
+a27,Mala calidad
+a28,Demasiado pequeña
+a29,Demasiado grande
+a30,Autoconsumo
+a31,Otro
+a14,kilogramos (kg)
+a15,gramos (g)
+a16,libras (libras)
+a17,onzas (oz)
+a3,Masculino
+a4,Femenino
+a5,No binario
+a6,Empresa compuesta por varias personas (sin género)
+a7,Sí
+a8,No
+a10,Captura entera
+a11,Parte del pescador
+a23,No
+a24,Seco
+a25,Sal
+a26,Fumar
+a18,Entero
+a19,Mercado limpio/Parcialmente procesado
+a20,Filete
+a21,Cola
+a22,Aleta
+a32,Autoconsumo
+a33,Mercado Local
+a34,"Distribuidor (comerciante, intermediario)"
+a35,Procesador
+a36,Exportador
+a37,"Minorista (Supermercado, Restaurante)"
+a38,"Consumidor (amigo, vecino)"
+a39,"Comprador Institucional (Gobierno, ONG)"
+star,Solo se aplica a socios o países designados.
+question,Pregunta
+answer,Opciones de respuesta

@@ -1,0 +1,122 @@
+key,fil
+title,Gabay Sa Pagpapatunay Ng Data Ng Fisheries
+p1,"Ang lahat ng data na dumadaloy sa sistema ng data ng pangisdaan ay napatunayan sa Smartsheet. Ang Data ay ipinadala para sa Pagpapatunay sa ilalim ng tatlong mga sitwasyon; 1) Ang mga bagong pangalan o 'iba pang' impormasyon ay manu-manong idinagdag sa Kobo Collect, 2) Ang isang numerong halaga ay nahuhulog na lampas sa itinatag na mga threshold o 3) Ang mga pangalan sa dataset ay walang kaukulang tugma sa isang sanggunian na file. Kapag napatunayan ang data, ang parehong mga dataset sa database at ang mga talahanayan ng sanggunian ay na-update. Ang mga talahanayan ng sanggunian ay nagsisilbing mga input para sa mga listahan ng dropdown sa mga form ng KoboToolbox at naglalaman ng data na idinagdag sa mga dataset sa pamamagitan ng mga pagsali. Tingnan ang puno ng desisyon sa ibaba (Larawan 1)."
+p2,"Ang data na na-trigger para sa Pagpapatunay ay ipinadala sa isa sa apat na talahanayan: 1) Mga pangalan at Gears, 2) mga babala sa halaga, 3) Species o 4) iba pa. Ang mga tagubilin sa ibaba ay detalyado ang proseso ng Pagpapatunay ng data sa Smartsheet Dynamic View para sa apat na mga talahanayan ng pagpapatunay. Ang bawat talahanayan ng pagpapatunay ay mangangailangan ng alinman sa pagpili ng tamang halaga ng patlang mula sa isang listahan ng dropdown o manu-manong pagpasok ng mga tamang halaga. Ang proseso ay idadagdag para sa mga pangangailangan sa Pagpapatunay ng data sa hinaharap, kung kinakailangan."
+p2.1,"Ang talahanayan ng Pagpapatunay ng' mga pangalan at Gears ' ay naglalaman ng mga bagong data mula sa lahat ng mga survey ng Kobo kabilang ang mga bagong pangalan ng mga mangingisda, mamimili, kolektor ng data, Lugar ng pangingisda, mga landing site at gears. Ang 'Value Warnings' ay naglalaman ng numerikong impormasyon na nakolekta mula sa Landings Monitoring o Landings Profiling survey na nag-flag ng isang presyo, timbang o haba na halaga batay sa isang paunang itinatag na threshold. Ang paunang itinatag na mga threshold para sa mga babala sa timbang at haba ay nagmula sa lw_ref; at ang mga babala sa presyo ay nagmula sa min_max_ref. Ang talahanayan ng Pagpapatunay ng' Species ' ay naglalaman ng mga larawan at mga bagong lokal na pangalan mula sa lahat ng mga survey upang mapatunayan ang mga bagong species gamit ang isang dobleng proseso ng pag-verify. Sa wakas, ang talahanayan ng Pagpapatunay ng data na' iba 'ay naglalaman ng impormasyon na' iba ' na nakolekta mula sa pag-profile ng Landings, pag-profile ng komunidad o Survey ng sambahayan at higit sa lahat ay napatunayan para sa mga layunin ng pagsasalin."
+p2.2,"Ang pang-araw-araw na mga mensahe sa E-mail ay ipinadala kasama ang impormasyon at mga link sa kung paano makumpleto ang pagpapatunay ng data (tingnan ang detalyadong mga tagubilin sa ibaba). Ang mga karagdagang abiso mula sa Smartsheet ay maaaring maipadala sa pamamagitan ng email upang mag-follow-up na may hindi kumpletong mga pagpipilian sa Pagpapatunay ng data, kung kinakailangan."
+step1,"Hakbang 1: Magbigay ng punto ng contact, mga pangalan at email address para sa mga responsable para sa pagpapatunay ng data."
+point1,Ang organisasyon na namamahala ng maraming kasosyo ay maaaring magbigay ng lahat ng mga punto ng impormasyon sa pakikipag-ugnay.
+point2,Ang mga indibidwal na kasosyo ay maaaring magbigay ng impormasyon sa punto ng pakikipag-ugnay.
+point3,Ang mga punto ng contact ay makakatanggap ng mga abiso sa Pagpapatunay ng data sa pamamagitan ng email.
+step2,Hakbang 2: Suriin ang iyong email para sa isang kahilingan sa Pagpapatunay ng data.
+point4,"Makakatanggap ka ng isang email mula sa ""Smartsheet Automation"" (larawan 2)"
+point5,"Maglalaman ang email ng isang mensahe na may mga link upang magpatuloy sa Pagpapatunay sa pamamagitan ng alinman sa isang ""Dynamic View"" o ""Open Request"". Ang Dynamic View ay isang format ng talahanayan at ang bukas na kahilingan ay magdidirekta sa iyo sa isang form ng pagpapatunay."
+point6,"Upang buksan gamit ang "" Dynamic View ""(Hakbang 3, Pagpipilian a), i-click ang link na nagsisimula sa ""https://dynamicview.smarthseet.com...."""
+point7,"Upang buksan ang form ng kahilingan sa pag-update (Hakbang 3, Pagpipilian B), I-click ang asul na pindutang "" Buksan ang kahilingan"
+point8,"Ang isang preview ng mga entry na kailangang mapatunayan ay lilitaw sa ibaba ng mensaheng ito, ngunit hindi mo magagawang patunayan ang anumang data nang direkta sa email"
+point9,"Sa ilalim ng email, mayroong isang link para sa ""pumunta sa sheet""; gayunpaman, ang pinagbabatayan na sheet ay pinigilan ang pag-access. Mangyaring suriin ang iyong Pagpapatunay ng data sa pamamagitan ng Dynamic view, bukas na kahilingan, o ulat na tukoy sa iyong kasosyo (paparating na)."
+caption1,Larawan 1: Puno ng desisyon sa Pagpapatunay ng Data.
+caption2,Larawan 2: Halimbawang Mensahe Ng Email Sa Pagpapatunay Ng Smartsheet
+step3a,"Hakbang 3, Pagpipilian A: Kumpletuhin ang iyong Pagpapatunay ng data sa pamamagitan ng Dynamic View (inirerekomenda)"
+point10,"Para sa pagpipiliang ito, kakailanganin mong lumikha ng isang libreng Smartsheet account. Ididirekta ka mula sa email upang mag-set up ng isang account."
+point11,Mag-Click sa link na Dynamic View sa kahilingan sa email.
+point12,"Magbubukas ang isang bagong window ng browser ng internet na may isang pag-setup na tulad ng talahanayan para sa lahat ng mga entry. Dito, madali mong mag-scroll sa lahat ng mga entry na nangangailangan ng pagpapatunay."
+point13,Mag-Click sa isang hilera upang simulan ang pagpapatunay.
+point14,"Ang isang panel na"" mga detalye "" ay lilitaw sa kanan."
+point15,Suriin ang mga patlang ng konteksto at punan ang mga patlang ng pagpapatunay. Ang mga patlang ng pagpapatunay ay naglalaman ng data na ililipat sa panghuling dataset (talahanayan 1).
+point16,"Mag-iwan ng komento, kung mayroong isang bagay na nangangailangan ng aming pansin. Ang mga kawani ng Blue Ventures (BV) ay susuriin ang mga komento at tumugon nang naaangkop."
+point17,"I-Click ang asul na pindutang ""I-Save"" upang mai-save ang iyong pagpipilian."
+point18,"Kapag napatunayan, ang hilera na iyon ay mawawala mula sa iyong dynamic na pagtingin."
+point19,Mag-Click sa susunod na hilera at ulitin ang mga hakbang upang makumpleto ang pagpapatunay para sa lahat ng mga entry.
+point20,Maaari kang lumabas at muling ipasok sa pamamagitan ng pag-click sa link na dynamic view mula sa iyong email o pag-log in sa iyong account anumang oras. Hindi mo kailangang patunayan ang lahat ng mga entry sa isang pag-upo.
+point21,Maaari mong i-bookmark ang link na ito at bumalik sa anumang oras.
+table1,"Talahanayan 1: pangunahing mga patlang o haligi sa mga talahanayan ng pagpapatunay. Ang mga patlang ng konteksto ay nagbibigay ng impormasyon na kinakailangan upang mapatunayan ang data. Ang mga patlang ng pagpapatunay ay pinuno ng data na ililipat sa mga master dataset. Tanging ang mga patlang ng pagpapatunay ay maaaring mai-edit. Ang ilang mga patlang ay makikita lamang sa panel na ""mga detalye"" kapag ang isang hilera ay na-click sa Dynamic View table."
+t1.1,Patlang ng talahanayan ng pagpapatunay
+t1.2,Paglalarawan ng patlang
+t1.3,Uri ng patlang
+t1.5,pangalan ng organisasyon pagkolekta ng data
+t1.6,konteksto
+t1.7,pagpapatunay
+t1.8,auto
+t1.9,Nayon o sub-nayon kung saan ang catch ay nakarating at naitala
+t1.10,Pangalan ng tao na nakolekta ang data sa Kobo (enumerator)
+t1.12,Ang patlang mula sa form ng KoboCollect na kailangang mapatunayan o pangalan na walang tugma sa mga file ng sanggunian.
+t1.13,Ang halaga na ipinasok para sa kaukulang kobo_field
+t1.14,"Malapit na tumutugma sa pangalan na mayroon na sa database. Kung blangko, walang umiiral na mga pangalan na tumutugma sa pangalan sa haligi na ""new_data"""
+t1.15,"Malapit na tumutugma sa pangalan na mayroon na sa database. Kung blangko, walang umiiral na mga pangalan na tumutugma sa pangalan sa haligi na ""new_data"""
+t1.16,"Malapit na tumutugma sa pangalan na mayroon na sa database. Kung blangko, walang umiiral na mga pangalan na tumutugma sa pangalan sa haligi na ""new_data"""
+t1.17,"Piliin ang patlang na may tamang data (new_data, ref_match1, ref_match2, ref_match3), magpasok ng isa pang halaga (iba pa), o alisin (alisin ang hilera mula sa pagsusuri dahil hindi mapatunayan ang data). Kinakailangan. Makikita lamang sa panel ng mga detalye. Mawawala ang pagpasok sa sandaling napatunayan ang data."
+t1.18,"Magpasok ng isa pang halaga kung wala sa mga pagpipilian sa Pagpapatunay ang tama. Kinakailangan kung"" iba "" napili mula sa validation_options. Makikita lamang sa panel ng mga detalye."
+t1.19,"Listahan ng mga ID ng pagsusumite ang bagong halaga ng data na ito ay lilitaw sa, mula sa landings monitoring KOBO form"
+t1.20,"Listahan ng mga ID ng pagsusumite ang bagong halaga ng data na ito ay lilitaw sa, mula sa landings profiling KOBO form"
+t1.20.1,"Listahan ng mga ID ng pagsusumite ang bagong halaga ng data na ito ay lilitaw sa, mula sa form ng Kobo ng survey ng sambahayan."
+t1.20.2,"Ang pangkat ng species na nauugnay sa bagong pangalan ng gear, tulad ng nakolekta sa form na Kobo. Lilitaw lamang ito kung ang"" kobo_field "" ay isang kategorya ng gear."
+t1.20.3,Kinakailangan kung nagpapatunay ng mga bagong pangalan ng gear. Isang dropdown na listahan ng mga uri ng gear na maiugnay sa napatunayan na pangalan ng gear.
+t1.20.4,"Ang kasarian na nauugnay sa bagong mangingisda, tulad ng nakolekta sa form ng Kobo. Lilitaw lamang ito kung ang"" kobo_field "" ay isang pangalan ng mangingisda."
+t1.20.5,"Ang kasarian na nauugnay sa bagong mamimili, tulad ng nakolekta sa form ng Kobo. Lilitaw lamang ito kung ang"" kobo_field "" ay isang pangalan ng mamimili."
+t1.22,Pangalan ng fisher na nakarating sa catch
+t1.23,Petsa catch ay landed
+t1.24,Mga uri ng lokal na pangalan
+t1.25,"Halaga ng yunit: timbang / indibidwal, presyo / Timbang, Haba / indibidwal, lapad / indibidwal"
+t1.26,Uri ng babala
+t1.27,"Halaga ng babala numerator: timbang, presyo, haba"
+t1.28,"Unit of numerator: kg, g, lb, ons, USD, IDR, PHP, cm"
+t1.29,"Halaga ng denominator: bilangin, timbang"
+t1.30,"Yunit ng denominator: numero, kg, g, lb, ons"
+t1.31,"Y = ang mga halaga ay tama, n=ang mga halaga ay hindi tama, alisin = alisin mula sa pagsusuri dahil ang mga halaga ay hindi maaaring mapatunayan. Kinakailangan."
+t1.32,"Kung tama = Y, ang mga halaga ay auto-populated, kung tama = N, ipasok ang tamang halaga"
+t1.33,"Kung tama = Y, ang mga halaga ay auto-populated, kung tama = N, ipasok ang tamang halaga"
+t1.34,"Kung ang numerator_units ay hindi tama, piliin ang tamang pagpipilian mula sa dropdown"
+t1.35,Dataset Ang data ay nagmula sa (Landings monitoring o profiling).
+t1.36,"Submission ID mula sa Kobo form. Gamitin ito upang ihambing laban sa hilaw na data, kung kinakailangan, para sa pagpapatunay."
+t1.37,"Pinagmulan o pinagmulan ng data: 'landings', 'profiling', 'community_profiling' o 'hhs'"
+t1.37.1,Admin1 kung saan ang catch ay landed at naitala.
+t1.37.2,Admin2 kung saan ang catch ay landed at naitala.
+t1.37.3,Pangalan ng fisher na nauugnay sa bagong data ng species na ito.
+t1.38,Mag-Link sa larawan na isinumite sa Kobo Collect
+t1.39,Ang halaga na ipinasok bilang isang bagong species lokal na pangalan sa Kobo Collect o isang lokal na pangalan at scientific name ID (localname_scientificspecies) na hindi na tumutugma sa isang pangalan na matatagpuan sa species_ref
+t1.40,"Malapit na tumutugma sa pangalan na mayroon na sa database. Kung blangko, walang umiiral na mga pangalan na tumutugma sa pangalan sa haligi na ""new_data"""
+t1.41,"Malapit na tumutugma sa pangalan na mayroon na sa database. Kung blangko, walang umiiral na mga pangalan na tumutugma sa pangalan sa haligi na ""new_data"""
+t1.42,"Malapit na tumutugma sa pangalan na mayroon na sa database. Kung blangko, walang umiiral na mga pangalan na tumutugma sa pangalan sa haligi na ""new_data"""
+t1.43,"Ingles karaniwang pangalan ng mga bagong species. Mangyaring magbigay kung kilala, iba pa mag-iwan ng blangko. (Hindi kinakailangan)"
+t1.44,"Pang-agham na pangalan ng pamilya ng mga bagong species. Mangyaring magbigay kung kilala, iba pa mag-iwan ng blangko. (Hindi kinakailangan)"
+t1.45,"Pang-agham na pangalan ng species ng mga bagong species. Mangyaring magbigay kung kilala, iba pa mag-iwan ng blangko. Kinakailangan: kung ang pangalan ng species ay hindi kilala, mangyaring ilagay ang anumang antas ng taxonomic identification (hal."
+t1.46,"Submission ID mula sa Kobo form. Gamitin ito upang ihambing laban sa hilaw na data, kung kinakailangan, para sa pagpapatunay."
+t1.48,"Piliin ang patlang na may tamang data (local_name_new, ref_match1, ref_match2, ref_match3), magpasok ng isa pang halaga (iba pa), o alisin (alisin ang hilera mula sa pagsusuri dahil hindi mapatunayan ang data). Kinakailangan. Makikita lamang sa panel ng mga detalye. Mawawala ang pagpasok sa sandaling napatunayan ang data."
+t1.49,"Magpasok ng isa pang halaga kung wala sa mga pagpipilian sa Pagpapatunay ang tama. Kinakailangan kung"" iba "" napili mula sa validation_options. Makikita lamang sa panel ng mga detalye."
+t1.50,"Ang haligi na ito ay nag-iimbak ng huling komento na ginawa para sa hilera na iyon. Upang tingnan ang buong talakayan ng mga komento para sa hilera na iyon, i-click lamang kahit saan sa hilera. Lilitaw ang panel ng mga detalye at mag-click sa tab na ""mga komento"" upang matingnan ang lahat ng mga komento para sa hilera na iyon."
+t1.51,"Ang patlang mula sa form ng KoboToolbox na kailangang mapatunayan. Ito ay maaaring mula sa isang katanungan sa Landings Profiling, Community Profiling o Household Survey."
+t1.52,Ang halaga na ipinasok para sa kaukulang kobo_field
+t1.53,"Dataset Ang data ay nagmula sa (Landings profiling, community profiling o Household survey)."
+t1.54,"Submission ID mula sa Kobo form. Gamitin ito upang ihambing laban sa hilaw na data, kung kinakailangan, para sa pagpapatunay."
+t1.55,"Piliin ang patlang na may tamang data (new_data), magpasok ng isa pang halaga (iba pa), o alisin (alisin ang hilera mula sa pagsusuri dahil hindi mapatunayan ang data). Kinakailangan. Makikita lamang sa panel ng mga detalye. Mawawala ang pagpasok sa sandaling napatunayan ang data."
+t1.56,"Magpasok ng isa pang halaga kung wala sa mga pagpipilian sa Pagpapatunay ang tama. Kinakailangan kung"" iba "" napili mula sa validation_options. Makikita lamang sa panel ng mga detalye."
+t1.57,Kinakailangan. Ipasok ang pagsasalin ng Ingles ng new_data o iba pang larangan kung ang 'iba' ay napili bilang pagpipilian sa pagpapatunay. Makikita lamang sa panel ng mga detalye.
+caption3,Larawan 3: Halimbawa Ng Mga Babala Sa Dynamic View-Value
+caption4,Larawan 4: Halimbawa Ng Dynamic View-Panel Ng Mga Detalye
+step3b,"Hakbang 3, Pagpipilian B: Kumpletuhin ang iyong Pagpapatunay ng data sa pamamagitan ng 'Buksan ang kahilingan'"
+point22,"Para sa pagpipiliang ito, hindi mo kailangang magkaroon ng isang pag-login sa Smartsheet account ."
+point23,"Mag-Click sa pindutang ""Buksan ang kahilingan"" sa mensahe ng email sa pagpapatunay."
+point24,Magbubukas ang isang bagong window ng browser ng internet na may isang form na tulad ng pag-setup para sa bawat entry
+point25,Suriin ang mga patlang ng konteksto at punan ang mga patlang ng pagpapatunay. Ang mga patlang ng pagpapatunay ay naglalaman ng data na ililipat sa panghuling dataset (talahanayan 1).
+point26,I-Click ang susunod sa ilalim ng screen upang ilipat sa bawat entry na kailangang mapatunayan.
+point27,"Kung hindi ka pa sigurado kung aling sagot ang pipiliin) I-click ang ""susunod"" nang hindi pumipili sa column na 'validation_options'. Ang susunod na entry para sa Pagpapatunay ay lilitaw."
+point28,"Kung kailangan mong lumabas sa pahina o huminto bago napatunayan ang lahat ng mga entry, dapat na mai-save ang iyong mga pagpipilian sa susunod na muling buksan mo ang kahilingan. Sa pagbubukas upang magpatuloy, i-click lamang ang ""susunod"" hanggang sa makahanap ka ng isang entry na nangangailangan ng pagpapatunay."
+point29,"Kapag nakarating ka sa huling entry, i-click ang ""Tapos na"". Lilitaw ang isang pop-up na mensahe na nagtatanong kung handa ka nang isumite ang iyong pag-update?’:"
+point29.1,"I-Click ang ""Bumalik"" Kung kailangan mong suriin"
+point29.2,"I-Click ang ""Isumite ang Update"" upang magsumite ng pagpapatunay"
+point29.3,"Lagyan ng tsek ang kahon na ""ipadala sa akin ang isang kopya ng aking mga tugon"" kung nais mo ng isang kopya ng iyong mga tugon na ipinadala sa iyong email"
+point30,"Kung na-click mo ang ""magpadala sa akin ng isang kopya ng aking mga tugon"" makakatanggap ka ng isang email na pinamagatang ""I-update ang kumpirmasyon: Mga pangalan at Gears""."
+point30.1,"Magkakaroon ng isang talahanayan na nagbubuod kung aling mga entry ang na-update. Ang mga entry kung saan walang pagpipilian ang napili sa 'validation_options"" ay hindi isasama."
+point30.2,"Ang email na ito ay maaaring maglaman ng isang link sa isang pangalan ng sheet na ""data Validation - Mga pangalan at Gears""; gayunpaman, ang pag-access sa sheet na ito ay naka-lock."
+point31,"Upang makita ang anumang natitirang pagpapatunay na kinakailangan, kakailanganin mong maghintay para sa susunod na email ng kahilingan sa pag-update o buksan ang Dynamic na View."
+caption5,"Larawan 5: halimbawa ng format na ""buksan ang kahilingan"""
+faq,Mga Madalas Itanong:
+q1,Maaari bang gumana ang maraming tao sa Pagpapatunay ng data nang sabay?
+a1,"Oo, gayunpaman, sa sandaling ang isang entry (hilera) ay napatunayan sa Dynamic View hindi na ito makikita."
+q2,Kailangan ko ba ng Smartsheet account?
+a2,"Lamang upang makumpleto ang pagpapatunay ng data sa pamamagitan ng Dynamic View (ibig sabihin, ang view ng talahanayan). Hindi mo kailangan ng isang bayad na account, na may isang libreng pagsubok o libreng bersyon (sa sandaling nakumpleto ang iyong pagsubok), magagawa mong tingnan at makipag-ugnay sa lahat ng mga file ng Smartsheet na pag-aari."
+q3,Ano ang mangyayari pagkatapos mapatunayan ang data?
+a3,"Sa ilang mga kaso, ang data ay sasailalim sa karagdagang pagsusuri ng Blue Ventures data team. Ang napatunayan na data ay maa-update sa database, at kung naaangkop, ang mga dropdown na menu ay maa-update sa mga file at form ng sanggunian ng Kobo (larawan 6). Ang Data na hindi napatunayan ay hindi lilitaw sa mga visualization o istatistika ng dashboard, ngunit magagamit sa pag-download ng raw data."
+p3,"Kung sa anumang oras nakatagpo ka ng anumang mga error, may mga katanungan, o kailangan ng suporta para sa pagkumpleto ng Pagpapatunay ng data, mangyaring makipag-ugnay sa amin sa mary.mccabe@blueventures.org."
+caption6,Larawan 6: pagpapatunay ng Data upang Sanggunian ang daloy ng trabaho ng file

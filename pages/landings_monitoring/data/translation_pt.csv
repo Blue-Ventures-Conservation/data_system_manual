@@ -1,0 +1,83 @@
+key,pt
+subtitle1,Informações Gerais sobre Desembarques
+q1,País
+q2,Organização
+q3,Administrador 1 pousou
+q4,Administrador 2 pousou
+q5,Administrador 3 pousou
+q6,Nome do Coletor de Dados
+a1,*Novo nome do coletor de dados*
+q7,Data de chegada
+subtitle2,Informações de captura por Fisher
+q8,Nome do Pescador
+a2,*Novo nome do pescador*
+q9,Gênero de pescador
+q10,O pescador mora em ${admin3_label}?
+q11,Admin1 de onde o pescador é:
+q12,Admin 2 de onde o pescador é:
+q13,Admin 3 de onde o pescador é:
+q13.5,O pescador é considerado local ou migrante?
+a8.1,Local
+a8.2,Emigrante
+q14,Número de dias de pesca ativa (sem incluir o tempo de viagem)
+q15,Nome do local de destino
+a8.5,*Novo nome do local de destino*
+q15.5,"A captura foi vendida e, em caso afirmativo, para quem?"
+q16,Nome do comprador (se conhecido)
+a9,*Novo nome do comprador*
+q17,Gênero do comprador
+q18,A captura está sendo registrada como toda a captura do barco ou ${fisher_id_label} parte da captura?
+subtitle3,Espécies desembarcadas por ${fisher_id_label}
+q19,Tipo de captura
+q20,"Nome local da espécie (use cartão de referência da espécie, se necessário)"
+a12,"Por favor, especifique as espécies no saco misto (selecione vários)"
+a13,*Nome local da nova espécie*
+q21,*Nome comum em inglês da nova espécie (se conhecido)*
+q22,*Nome científico da família da nova espécie (se conhecido)*
+q23,*Nome científico da espécie nova espécie (se conhecido)*
+q24,*Adicionar foto de novas espécies.*
+q25,Unidade de peso da captura
+q26,Peso total (${weight_unit}) ${local_name_label}: ${local_name_new}
+q27,Peso total vendido (estimado ou real) ${local_name_label}: ${local_name_new}
+q27.1,Selecione compradores vendidos para:
+q28,Número total: ${local_name_label}
+q29,Voce processou esta captura?
+q30,"Preço total da captura vendida, moeda local (estimado ou real): ${local_name_label}"
+q31,Motivo da captura total não comprada/vendida
+a27,Qualidade ruim
+a28,Muito pequeno
+a29,Muito grande
+a30,Guardado para si mesmo
+a31,Outro
+a14,quilogramas (kg)
+a15,gramas (g)
+a16,libras (lbs)
+a17,onças (oz)
+a3,Homem
+a4,Mulher
+a5,Não binário
+a6,Empresa que inclui várias pessoas (sem género)
+a7,Sim
+a8,Não
+a10,Toda  a captura
+a11,Parte do pescador
+a23,Não
+a24,Seco
+a25,Salgado
+a26,Defumado
+a18,Inteiro
+a19,Limpo de mercado/Parcialmente processado
+a20,Filete
+a21,Rabo
+a22,Barbatana
+a32,Autoconsumo
+a33,Mercado local
+a34,"Negociante (comerciante, intermediário)"
+a35,Processador
+a36,Exportador
+a37,"Varejista (supermercado, restaurante)"
+a38,"Consumidor (amigo, vizinho)"
+a39,"Comprador institucional (governo, ONG)"
+star,Aplica-se apenas a parceiros ou países designados.
+question,Pergunta
+answer,Opções de resposta

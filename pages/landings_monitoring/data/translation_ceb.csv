@@ -1,0 +1,83 @@
+key,ceb
+subtitle1,Kinatibuk-ang impormasyon
+q1,Nasod
+q2,Kahopungan
+q3,Probinsya nga gidalhan
+q4,Municipio nga gidalhan
+q5,Barangay nga gidalhan
+q6,Ngalan sa tig kolekta og datos
+a1,*Bag-ong ngalan sa tig kilekta og datos*
+q7,Petsa sa paghatod
+subtitle2,Impormasyon nga mga kuha sa mga mananagat
+q8,Ngalan sa mananagat
+a2,*Bag-ong ngalan sa mananagat*
+q9,Kinatawhan sa mangingisda
+q10,Nagpuyo ba ang mananagat ${admin3_label}?
+q11,Probinsya diin gikan ang mangingisda:
+q12,Distrito diin gikan ang mangingisda:
+q13,Baryo diin gikan ang mangingisda:
+q13.5,Ang mangingisda ba giisip nga lokal o migrante?
+a8.1,Lokal
+a8.2,Migrante
+q14,Gidaghanon sa mga adlaw nga aktibo pagpangisda walay labot sa oras sa pagbyahi.
+q15,Ngalan sa lugar kung asa ihatod
+a8.5,*Bag-ong ngalan sa lugar kung asa ihatod*
+q15.5,"Gibaligya ba ang kuha, ug kung oo, kinsa man ang nakapalit?"
+q16,Ngalan sa pumapalit (kung nahibaw-an)
+a9,*Bag-ong ngalan sa pumapalit*
+q17,Kinatawhan sa mamalitay
+q18,Ang nakuha ba girekord ang tibuok kuha gikan sa sakayan o ${fisher_id_label} nga bahin sa kuha?
+subtitle3,Klase sa mga isda nga ni abot ${fisher_id_label}
+q19,Klase sa kuha
+q20,Lokal nga ngalan sa mga matang sa isda
+a12,Palihug ipiho ang mga espisye nga sagol sa bag (pilia ang daghang)
+a13,*Bag-ong matang sa lokal nga ngalan (kung nahibaw-an)*
+q21,*Bag-ong matang sa ingles sa komon nga ngalan (kung nahibaw-an)*
+q22,*Bag-ong matang sa siyentepikong ngalan sa kada pamilya (kung na hibaw-an)*
+q23,*Bag-ong matang sa siyentipekong ngalan (kung na hibaw-an)*
+q24,*Pagdugang og litrato sa bag-ong mga matang sa isda*
+q25,Timbang sa kuha
+q26,Kinatibuk-ang gibug-aton sa mo abot (${weight_unit}): ${local_name_label}
+q27,Kinatibuk-ang gibug-aton nga gibaligya (gibanabana/aktuwal): ${local_name_label}
+q27.1,Pilia ang mamalitay kung kinsa ang gibaligyaan:
+q28,Kinatibuk-ang gidaghanon sa mo abot: ${local_name_label}
+q29,Giproseso ba nimo kini nga kuha?
+q30,"Kinatibuk-ang presyo nga nabaligya nga kuha, lokal nga kwarta (gibanabana/aktuwal): ${local_name_label}"
+q31,Rason nga wala ma baligya o mapalit ang total nga kuha
+a27,Dili maayo nga kalidad
+a28,Gamay ra kaayo
+a29,Dako kaayo
+a30,Gitipigan para sa kaugalingon
+a31,Ang uban
+a14,Mga kilo (kg)
+a15,Gramo (g)
+a16,Libra (lbs)
+a17,ounce (oz)
+a3,Lalake
+a4,Babaye
+a5,Dili sunod-sunod
+a6,Negosyo nga naglangkob sa daghang mga tawo (walay kinatawhan)
+a7,Oo
+a8,Dili
+a10,Tibuok nga Kuha
+a11,Ang bahin sa mananagat
+a23,Dili
+a24,Uga
+a25,Asin
+a26,Aso
+a18,Tibuok
+a19,Limpyo ang merkado/Partily nga giproseso
+a20,Fillet
+a21,Ikog
+a22,Kapay
+a32,Paggamit sa kaugalingong panginahanglan
+a33,Lokal nga Mercado
+a34,Tigsal-ut o Negosyante
+a35,Prosesador
+a36,Taga-export
+a37,"Mangabaligya (Tindahan, Restawran)"
+a38,"Konsyumer (Higala, Silingan)"
+a39,"Mamumuhunan nga organisasyon (Goberno, NGO)"
+star,Magamit ra sa gitudlo nga mga kauban o mga nasud.
+question,Pangutana
+answer,Mga Pagpili sa Tubag

@@ -1,0 +1,200 @@
+key,mg
+title,Fanavaozana Ny Rakitra Referansa
+p1,"Ny rakitra referansa rehetra dia havaozina ao Amin'ny Smartsheet Dynamic View. Ny rakitra referansa dia miasa ho toy ny fidirana ho an'ny lisitra ""dropdown"" amin'ny endrika KoboToolbox ary misy angona izay ampiana amin'ny angon-drakitra amin'ny alàlan'ny fidirana. Ahitana fampahalalana feno momba ny ambaratonga ara-pitantanana ny vondrom-piarahamonina mpanjono (firenena, faritany, distrika, vohitra), toerana fiantsonana, toeram-panjonoana, mpanjono, mpividy, mpanangona antotan'isa, karazany, faritra fitantanana, karazana fitaovana ary fikambanana mpiara-miasa. Ireo dingana etsy ambany dia mamaritra ny fomba fanavaozana ireo rakitra referansa miaraka amin'ny fampahalalana vaovao."
+step1,"Dingana 1: Mamorona kaonty ""smartsheet"" maimaim-poana."
+point1,Azo atao ny mamorona kaonty maimaimpoana ao amin'ny https://www.smartsheet.com/
+point2,"Safidio ny""Try smartsheet for free"""
+step2,Dingana 2: Omeo ny Blue Ventures (BV) ny adiresy mailaka nampiasanao hamoronana ny kaontinao smartsheet.
+point3,BV dia hizara ireo rakitra fanondroana mifandraika amin'ny fikambananao.
+point4,Raha te hijery ireo rakitra fanovozan-kevitra dia mila miditra amin'ny Smartsheet Dynamic View ianao amin'ny fampiasana ny mari-pahamantarana smartsheet anao: https://dynamicview.smartsheet.com/login
+point5,Raha vao tafiditra Ao Amin'ny Dynamic View (fa tsy ny fampiharana smartsheet) dia hahita lisitry ny rakitra referansa zaraina amin'ny kaontinao ianao (Sary 1).
+fig1,Sary 1: Lisitry ny rakitra referansa Ao Amin'ny Dynamic View
+step3,Dingana 3: Tsindrio ny rakitra referansa hanaovana fanavaozana
+point6,"Rehefa misokatra dia azonao atao ny manindry ny laharana tsirairay mba hanovana ny angon-drakitra efa misy, na tsindrio ny bokotra ""Vaovao"" eo amin'ny zoro ambony havanana raha hanampy angona vaovao (Sary 2)."
+point7,"Ny tontonana antsipiriany dia hiseho eo amin'ny ilany havanana izay hampidiranao ny fampahalalana ilaina (Sary 3; Tabilao 1). Safidio ny"" save "" eo amin'ny farany ambany ankavanan'ny tontonana details rehefa vita ny fanavaozana."
+point8,"Raha hamela fanehoan-kevitra na hametraka fanontaniana amin'ny ekipan'ny BV, safidio ny tabilao ""Comments"" ao amin'ny tontonana antsipirihany. Ireo olona rehetra izay zaraina amin'ny rakitra referansa, anisan'izany ny Ekipan'ny BV, dia hahazo fampandrenesana rehefa misy fanehoan-kevitra, ka tsy ilaina ny manisy marika olona manokana."
+fig2,"Sary 2: Ohatra fijerena momba ny admin2_ref Amin'ny ""Dynamic View"""
+fig3,Sary 3: ohatra ny fijerena ny tontonana antsipirihany ny admin2_ref amin'ny Dynamic View
+step4,"Dingana 4: Famaliana ny fangatahana fanavaozana rehefa tsy hita na diso ny angona, na hamaly ny fanehoan-kevitra."
+point9,"Raha misy fampahalalana tsy feno na diso izay tena ilaina amin'ny fametrahana Ny ""list dropdowns"" ao amin'ny Kobo na raha misy fanehoan-kevitra atao ao amin'ny takelaka, dia halefa any amin'ny mpampiasa voakasika rehetra ny fangatahana fanavaozana, ka manosika azy ireo hanavao ny vaovao na hamaly ny fanehoan-kevitra (Sary 4). Ny olona rehetra manana fidirana amin'ny rakitra referansa dia hahazo ny fangatahana fanavaozana."
+point10,"Ny fijerena mialoha ny antotan'isa mila havaozina na valiana dia hiseho eo ambanin'ny hafatra mailaka, saingy tsy ho afaka hanavao ny angona mivantana amin'ny mailaka ianao"
+point10.1,"Eo amin'ny farany ambany amin'ny mailaka, misy rohy mankany amin'ny ""Go to the sheet""; na izany aza, voafetra ny fidirana amin'ny takelaka fototra. Azafady mba avereno jerena ny angon-drakitrao na valio Ny fanehoan-kevitra Amin'ny Alàlan'ny ""Open request""."
+point11,"Tsindrio ny bokotra"" Open Request "" ao amin'ny hafatra mailaka."
+point12,"Hisokatra ny ""onglet"" vaovao miaraka amin'ny karazana endrika tsirairay (Sary 5)"
+point13,Avereno jerena ireo saha BV ary fenoy ireo saha azo ovaina.
+point14,"Tsindrio ""next"" eo amin'ny farany ambany amin'ny efijery mba hivezivezy amin'ny fidirana tsirairay izay mila havaozina."
+point15,"Mba hialana amin'ny fidirana (ohatra, raha mbola tsy azonao antoka izay valiny hofidiana) tsindrio ""Next"" ka tsy manao safidy ao amin'ny tsanganana azo ovaina. Hiseho ny fidirana manaraka izay mila havaozina."
+point16,"Raha mila mivoaka ny pejy ianao na mijanona alohan'ny hanavaozana ny fidirana rehetra dia tokony hotehirizina ny safidinao amin'ny fotoana hanokafanao indray ny fangatahana. Rehefa manokatra hanohy dia tsindrio fotsiny Ny ""Next"" mandra-pahitanao fidirana mila havaozina."
+point17,"Rehefa tonga amin'ny fidirana farany ianao dia tsindrio ""Done"". Hisy hafatra mipoitra hanontany raha Toa ianao ka 'Vonona ny handefa ny fanavaozanao?’:"
+point17.1,"Tsindrio ""Go Back"" raha mila hanamarina ianao"
+point17.2,"Kitiho ny ""Submit Update"" mba handefasana ny fanavaozanao."
+point17.3,Ny fanavaozanao dia ampidirina ho azy amin'ny rakitra referansa ary azonao jerena ao amin'ny Dynamic View
+fig4,"Sary 4: Ohatra ""Update Request"" mailaka rehefa mila ahitsy ny fampahalalana na mila valiana ny fanehoan-kevitra."
+table1,"Tabilao 1: ny saha voalohany ao amin'ny rakitra referansa tsirairay. Ny karazana saha ""BV"" dia tantanan'ny Blue Ventures ary tsy azo ovaina. Mba hangataka fanovana amin'ny iray amin'ireo saha ""BV"", azafady avelao ny fanehoan-kevitra. Ny saha misy karazana saha ""azo ovaina"" ihany no azo ovaina. Ny karazana saha ""auto"" dia mipetraka ho azy."
+t1.1,Anaran'ny saha
+t1.2,Famaritana ny saha
+t1.3,Karazana saha
+t1.4,Ny rakitra referansa rehetra
+t1.5,"Ity tsanganana ity dia mitahiry ny fanehoan-kevitra farany natao ho an'io laharana io. Raha hijery ny fifanakalozan-kevitra manontolo momba ny fanehoan-kevitra momba an'io laharana io, tsindrio fotsiny na aiza na aiza eo amin'ny laharana. Hiseho ny tontonana antsipiriany, toy ny Hita Ao amin'ny Sary 3. Tsindrio ny tabilao"" Comments "" raha hijery ny fanehoan-kevitra rehetra momba an'io laharana io."
+t1.6,Mandeha ho azy
+t1.7,azo ovaina
+t1.8,Daty fanovana farany
+t1.9,Mpampiasa nanao ny fanovana farany
+t1.10,"""ISO country code"", izay kaody fampifangaroana litera ekena iraisam-pirenena"
+t1.11,"Anaran'ny admin1, ny ambaratonga ambony indrindra amin'ny fitantanana aorian'ny firenena (izany hoe faritany) tsy misy elanelana sy tsy misy mari-piatoana, fa tsipika ambany fotsiny"
+t1.12,"Anaran'ny admin1, ny ambaratonga ambony indrindra amin'ny fitantanana aorian'ny firenena (izany hoe faritany) miaraka amin'ny toerana sy ny mari-piatoana. Aza manova ny marika raha tsy tena ilaina, satria mifototra amin'izany ny fidirana."
+t1.13,Ho mena ny sainam-pirenena raha tsy misy ny mpiara-miasa ao amin'ny org_ref
+t1.14,"Anaran'ny mpiara-miasa tsy misy elanelana ary tsy misy mari-piatoana,tsipika ambany fotsiny. Ny ""list dropdown"" dia mifandray amin'ny tsanganana ""name"" ao amin'ny org_ref."
+t1.15,"Safidio Ny ""Yes"" raha angonina avy amin'inty olona/faritra ity ny antotan'isa. Raha tsy angonina avy amin'ity olona/faritra ity intsony ny angona, ary te hanafina izany amin'ny Kobo dropdown ianao dia safidio Ny ""Tsia.”"
+t1.16,"Safidio Ny "" Yes "" raha te hanala ilay rakitsoratra ianao. Ny firaketana dia tokony hesorina raha diso ny anarana na dika mitovy amin'ny firaketana efa misy."
+t1.18,"Ny anaran'ny admin2, ny ambaratonga ambony indrindra aorian'ny admin1 (izany hoe distrika) tsy misy elanelana sy tsy misy mari-piatoana, fa tsipika ambany fotsiny"
+t1.19,"Anaran'ny admin2, ny ambaratonga ambony indrindra aorian'ny admin1 (izany hoe distrika) miaraka amin'ny toerana sy ny mari-piatoana. Aza manova ny marika raha tsy tena ilaina, satria mifototra amin'izany ny fidirana."
+t1.20,"Ho mena ny sainam-pirenena raha tsy misy ny ""admin1_ref_name"" ao amin'ny admin1_ref"
+t1.21,"Anarana Admin1 tsy misy elanelana ary tsy misy mari-piatoana, tsipika ambany fotsiny. Ny ""list dropdown"" dia mifandray amin'ny tsanganana ""name"" ao amin'ny admin1_ref."
+t1.25,"Ny anarana Admin2 sy admin3 dia mitambatra tsy misy elanelana ary tsy misy mari-piatoana, fa tsipika ambany fotsiny.Ny admin3 no ambaratonga ambony indrindra aorian'ny admin2 (izany hoe tanàna)."
+t1.26,"Anaran'ny admin3, ny ambaratonga ambony indrindra aorian'ny admin2 (izany hoe tanàna) miaraka amin'ny elanelana sy ny mari-piatoana. Aza manova ny marika raha tsy tena ilaina, satria mifototra amin'izany ny fidirana."
+t1.27,Anarana Admin1 miaraka amin'ny elanelana sy mari-piatoana azo atao. Izany dia nalaina avy amin'ny admin1_ref sy miseho ho azy mifototra amin'ny admin2 voafidy.
+t1.28,"Anarana Admin1 tsy misy elanelana ary tsy misy mari-piatoana, tsipika ambany fotsiny. Izany dia nalaina avy amin'ny admin1_ref sy miseho ho azy mifototra amin'ny admin2 voafidy"
+t1.29,"Ho mena ny sainam-pirenena raha tsy misy ny anarana ""admin2 "" ao amin'ny admin2_ref."
+t1.30,"Anarana Admin2 miaraka amin'ny elanelana sy mari-piatoana azo atao. Ny ""liste dropdown"" dia mifandray amin'ny tsanganana ""label"" ao amin'ny admin2_ref."
+t1.31,"Anarana Admin2 tsy misy elanelana ary tsy misy mari-piatoana, tsipika ambany fotsiny. Izany dia nalaina avy amin'ny admin2_ref sy miseho ho azy mifototra amin'ny admin2 voafidy."
+t1.34,Latitude amin'ny admin3
+t1.35,Longitude admin3
+t1.38.1,"Safidio Ny "" Yes "" raha tianao hiseho ao amin'ny kobo dropdown ny admin3 ho an'ny endrika fanaraha-maso fiantsonana (landings monitoring)."
+t1.38.2,"Safidio Ny "" Eny "" raha tianao hiseho ao amin'ny kobo dropdown ny admin3 ho an'ny endrika fanarahamaso mombamomba ny fiantsonana (landings profiling)."
+t1.38.3,"Safidio Ny "" Eny "" raha tianao hiseho ao amin'ny kobo dropdown ny admin3 ho an'ny endrika mombamomba ny vondrom-piarahamonina."
+t1.38.4,"Safidio Ny "" Eny "" raha tianao hiseho ao amin'ny kobo dropdown ny admin3 ho an'ny endrika fanadihadiana ao An-tokantrano."
+t1.40,"Anaran'ny mpividy tsy misy elanelana ary tsy misy mari-piatoana, tsipika ambany fotsiny"
+t1.41,"Anaran'ny mpividy misy elanelana sy mari-piatoana azo atao. Aza manova ny marika raha tsy tena ilaina, satria mifototra amin'izany ny fidirana."
+t1.42,"Ny maha-lahy na maha-vavy ny mpividy; 'male' (lahy), 'female' (vavy), 'nonbinary' (tsy binary) na 'business_nogender' (orinasa)"
+t1.43,"Ho mena ny sainam-pirenena raha tsy mitovy ny buyer_gender ho an'ny mpividy iray ihany (izany hoe Raha Raymond Scott ao amin'ny admin3= Boston=Lehilahy, nefa Raymond Scott ao amin'ny admin3=Miami=vehivavy, dia ho mena ny sainam-pirenena satria tsy mitovy ny maha lahy sy ny maha vavy ho an'ny mpividy iray ihany)."
+t1.44,"Anarana Admin1 izay ividianan'ny mpividy, miaraka amin'ny elanelana sy ny mari-piatoana. Izany dia nalaina avy amin'ny admin1_ref sy miseho ho azy mifototra amin'ny admin3_ref_name voafidy."
+t1.45,"Anarana Admin2 izay ividianan'ny mpividy, miaraka amin'ny elanelana sy ny mari-piatoana. Izany dia nalaina avy amin'ny admin2_ref ary miseho ho azy mifototra amin'ny admin3_ref_name voafidy."
+t1.46,"Anarana Admin3 izay ividianan'ny mpividy, miaraka amin'ny toerana sy ny mari-piatoana. Izany dia nalaina avy amin'ny admin3_ref ary miseho ho azy mifototra amin'ny admin3_ref_name voafidy."
+t1.47,"Ny anarana Admin2 sy admin3 dia mitambatra tsy misy elanelana ary tsy misy mari-piatoana, fa tsipika ambany fotsiny.Ny ""list dropdown"" dia mifandray amin'ny tsanganana ""anarana"" ao amin'ny admin3_ref."
+t1.48,"Ho mena ny sainam-pirenena raha tsy misy ny"" admin3_ref_name "" ao amin'ny admin3_ref."
+t1.52,"Anaran'ny mpanjono tsy misy elanelana ary tsy misy mari-piatoana, tsipika ambany fotsiny"
+t1.53,"Anaran'ny mpanjono misy elanelana sy mari-piatoana azo atao. Aza manova ny marika raha tsy tena ilaina, satria mifototra amin'izany ny fidirana."
+t1.54,"Ny maha-lahy na maha-vavy ny mpanjono; 'male' (lahy), 'female' (vavy), 'nonbinary' (tsy binary) na 'business_nogender' (orinasa)"
+t1.55,"Ho mena ny sainam-pirenena raha tsy mitovy ny fisher_gender ho an'ny mpanjono iray ihany (izany hoe Raha Raymond Scott ao amin'ny admin3= Boston=Lehilahy, Fa Raymond Scott ao amin'ny admin3=Miami=vehivavy, dia ho mena ny sainam-pirenena satria tsy mitovy ny maha lahy sy ny maha vavy ho an'ny mpanjono iray ihany)."
+t1.56,"Anarana Admin1 izay ahazoan'ny mpanjono ny vokatra, miaraka amin'ny elanelana sy ny mari-piatoana azo atao. Izany dia nalaina avy amin'ny admin1_ref ary miseho ho azy mifototra amin'ny admin3_ref_name voafidy."
+t1.57,"Anarana Admin2 izay ahazoan'ny mpanjono ny vokatra, miaraka amin'ny elanelana sy ny mari-piatoana azo atao. Izany dia nalaina avy amin'ny admin2_ref sy miseho ho azy mifototra amin'ny admin3_ref_name voafidy."
+t1.58,"Anarana Admin3 izay ahazoan'ny mpanjono ny vokatra, miaraka amin'ny elanelana sy ny mari-piatoana azo atao. Izany dia nalaina avy amin'ny admin3_ref sy auto populated mifototra amin'ny admin3_ref_name voafidy."
+t1.64,"Anaran'ny mpanangona antotan'isa tsy misy elanelana ary tsy misy mari-piatoana, tsipika ambany fotsiny"
+t1.65,Anaran'ny mpanangona antotan'isa misy elanelana sy mari-piatoana azo atao.
+t1.66,"Ny maha-lahy na maha-vavy ny mpanangona antotan'isa; 'male' (lahy), 'female' (vavy), 'nonbinary' (tsy binary) na 'business_nogender'"
+t1.69,"Safidio Ny "" Eny "" raha tianao hiseho ao amin'ny dropdown ny mpanangona antotan'isa ho an'ny endrika fanaraha-maso fiantsonana."
+t1.70,"Safidio Ny ""Eny"" raha tianao hiseho ao amin'ny dropdown ny mpanangona antotan'isa ho an'ny endrika fanarahamaso mombamomba ny fiantsonana."
+t1.71,"Safidio Ny ""Eny"" raha tianao hiseho ao amin'ny kobo dropdown ny mpanangona antotan'isa ho an'ny endrika fanadihadiana ao An-tokantrano."
+t1.72,"Safidio Ny ""Eny"" raha tianao hiseho ao amin'ny kobo dropdown ny mpanangona antotan'isa ho an'ny endrika mombamomba ny vondrom-piarahamonina."
+t1.75,"Anaran'ny toeram-panjonoana tsy misy elanelana sy mari-piatoana, tsipika ambany fotsiny"
+t1.76,"Anaran'ny toeram-panjonoana misy elanelana sy mari-piatoana. Aza manova ny marika raha tsy tena ilaina, satria mifototra amin'izany ny fidirana."
+t1.81,Latitude an'ny toeram-panjonoana
+t1.82,Longitude an'ny toeram-panjonoana
+t1.85,"Anarana eo an-toerana ny fitaovana tsy misy elanelana sy tsy misy mari-piatoana, tsipika ambany fotsiny"
+t1.86,"Anarana eo an-toerana amin'ny fitaovana misy elanelana sy mari-piatoana azo atao. Aza manova ny marika raha tsy tena ilaina, satria mifototra amin'izany ny fidirana."
+t1.87,"Ny anaranan'ny fitaovana amin'ny anglisy tsy misy elanelana sy tsy misy mari-piatoana, tsipika ambany fotsiny. ""List dropdown"" efa voafaritra mialoha ity. Misafidiana iray izay mifanaraka tsara amin'ny fitaovana eo an-toerana, na maneho hevitra raha tsy azonao antoka."
+t1.88,Famaritana ny fitaovana
+t1.89,"Ny karazana biby izay azon'ny fitaovana. Raha mikendry karazana maro ny fitaovana iray, dia mamorona laharana vaovao ho an'ny karazany tsirairay. Ny ""list dropdown"" dia mifandray amin'ny tsanganana ""species_group"" ao amin'ny species_ref."
+t1.90,"Ho mena ny sainam-pirenena raha tsy misy ny"" species_group "" voafidy ao amin'ny species_ref."
+t1.95,"Anaran'ny toerana fiantsonana tsy misy elanelana ary tsy misy mari-piatoana, tsipika ambany fotsiny"
+t1.96,Anaran'ny toerana fiantsonana misy elanelana sy mari-piatoana azo atao
+t1.103,"Anaran'ny faritra fitantanana misy elanelana sy mari-piatoana azo atao. Aza manova ny anarana raha tsy tena ilaina, satria mifototra amin'izany ny fidirana."
+t1.104,"Anaranan'ny faritra fitantanana sy daty. Hanokanana azy, ahitana ireto fampahalalana manaraka ireto misaraka amin'ny tsipika ambany: management_id, management_method, close_date ary open_date."
+t1.104.1,Ny lisitry ny admin3 izay manjono ao anatin'ny faritra fitantanana.
+t1.104.2,"Ho mena ny sainam-pirenena raha tsy misy ao amin'ny admin3_ref ny iray amin'ireo admin3 voatanisa ao amin'ny tsanganana ""admin3_fish""."
+t1.104.3,Ny lisitry ny admin3 izay manana anjara toerana amin'ny fitantanana.
+t1.104.4,"Ho mena ny sainam-pirenena raha tsy misy ao amin'ny admin3_ref ny iray amin'ireo admin3 voatanisa ao amin'ny tsanganana ""admin3_govern""."
+t1.105,"Ny lisitry ny toeram-panjonoana mifandraika amin'ny hetsika fitantanana. Ny ""list dropdown"" dia mifandray amin'ny tsanganana ""anarana"" ao amin'ny fishing_ground_ref."
+t1.105.5,"Ho mena ny sainam-pirenena raha tsy misy ao amin'ny fishing_ground_ref ny iray amin'ireo toerana fanjonoana voatanisa ao amin'ny ""management_fishing_ground""."
+t1.106,"Ny karazana fomba fitantanana ampiasaina. Ny lisitra efa voafaritra mialoha dia ahitana: Fanakatonana Vonjimaika, Tsy Misy Faritra iasana, Famerana Ny Fitaovana, Fitantanana fahazoan-dalana, Fandraràna Ny fijinjana na Fandraràna ny Fandripahana Ala."
+t1.106.1,"Ny karazana fitsipika ara-dalàna. Ny lisitra efa voafaritra mialoha dia ahitana: fitsipika avy amin'ny lehiben'ny tanàna, didim-panjakana avy amin'ny ny lehiben'ny tanàna, fitsipika avy amin'ny lehiben'ny tanàna iraisana na tsy misy."
+t1.106.2,"Karazana vokatra kendrena ho an'ny faritra tantanana. Mety ho tafiditra ao Anatin'izany Ny' rehetra', karazana iray na maromaro. Ny ""liste dropdown"" dia mifandray AMIN'NY MASTER species_ref ary ahitana karazana vokatra avy amin'ny mpiara-miasa rehetra."
+t1.107,"Karazana vokatra kendrena ho an'ny faritra tantanana. Mety ho tafiditra ao Anatin'izany ny' All_species', karazana anarana siantifika iray na maromaro. Ny ""list dropdown"" dia mifandray amin'ny MASTER species_ref ary ahitana karazana avy amin'ny mpiara-miasa rehetra."
+t1.107.1,"Ho mena ny sainam-pirenena raha tsy voatonona ao amin'ny species_ref an'ny mpiara-miasa ny ""target_species"" voafidy."
+t1.108,"Toerana kendrena ho an'ny faritra tantanana. Ny lisitra efa voafaritra mialoha dia ahitana ny safidin'ny toeram-ponenana: ""reef, seagrass, mangrove, mud_flat, sand, deepwater na hafa""."
+t1.109,Haben'ny faritra tantanana refesina amin'ny hektara (ha)
+t1.110,Daty famaranana ny faritra tantanana
+t1.111,Daty fanokafana ny faritra tantanana
+t1.112,Latitude ny faritra fitantanana
+t1.113,Longitude ny faritra fitantanana
+t1.116,"Anaran'ny mpiara-miasa/fikambanana tsy misy elanelana ary tsy misy mari-piatoana, tsipika ambany fotsiny"
+t1.117,"Anaran'ny mpiara-miasa/fikambanana misy elanelana sy mari-piatoana azo atao. Aza manova ny marika raha tsy tena ilaina, satria mifototra amin'izany ny fidirana."
+t1.118,"Manangona antotan'isa momba ny vondron'ny karazana vokatra ny mpiara-miasa. Ny ""list dropdown"" dia mifandray amin'ny tsanganana ""species_group"" ao amin'ny species_ref. Safidio ny vondrona rehetra raha tiany hiseho ny karazana rehetra ao amin'ny species_ref."
+t1.122,"Anaran'ny mpiara-miasa tsy misy elanelana na mari-piatoana, tsipika ambany fotsiny. Ny mpiara-miasa no manivana ny ""dropdown species"". Misy firenena sasany manana mpiara-miasa maro izay mizara lisitry ny karazany. Amin'izay dia ho hitanao ny kaody firenena fa tsy ny mpiara-miasa, ary ny lisitry ny karazana iray manontolo dia haseho ho an'ny mpiara-miasa rehetra ao amin'io firenena io, raha tsy hoe misy vondrona karazana voafaritra ao amin'ny tsanganana ""species_group"" ao amin'ny org_ref."
+t1.123,Karazana toeram-ponenana mifandray amin'ny karazany
+t1.124,"Anarana sy anaran'ny karazany eo an-toerana miaraka amin'ny tsipika ambany, tsy misy mari-piatoana na elanelana hafa."
+t1.125,Anarana eo an-toerana miaraka amin'ny anaran'ny karazany eo amin'ny fononteny
+t1.126,"Ireo karazany voasokajy ho vondrona mifototra amin'ny biolojian'izy ireo tsy misy elanelana na mari-piatoana, tsipika misongadina fotsiny. Ity saha ity dia ampiasaina hanampiana amin'ny sivana safidy valiny sasany ao Amin'ny kobo."
+t1.127,"Ho mena ny sainam-pirenena raha tsy voatonona ao amin'ny gear_ref ny ""species_group"" voafidy. Midika izany fa ny fitaovana rehetra voatanisa ao amin'ny gear_ref dia hiseho ho an'ity vondrona karazana ity. Mba hampisehoana fotsiny ireo fitaovana mikendry ity vondrona karazana ity, azafady ampio ny vondrona karazana amin'ny gear_ref."
+t1.128,Anaran'ny karazana eo an-toerana miaraka amin'ny elanelana sy mari-piatoana azo atao
+t1.129,"Anaran'ny admin1, 2 na 3 tsy misy elanelana na mari-piatoana, tsipika ambany fotsiny. Ny ""list dropdown"" dia mifandray amin'ny tsanganana ""anarana"" ao amin'ny admin_ref mifanaraka amin'izany. *Ity saha ity dia hampiseho ho an'ny mpiara-miombon'antoka izay maniry ny fihenan'ny karazana voasivan'io admin io.*"
+t1.130,Anarana iombonana amin'ny teny anglisy miaraka amin'ny elanelana sy ny mari-piatoana
+t1.131,Anaran'ny fianakaviana amin'ny karazana iray misy elanelana sy mari-piatoana azo atao
+t1.132,"Anarana siantifika amin'ny karazana misy elanelana sy mari-piatoana azo atao. Raha tsy fantatra ny karazany, dia azo ampidirina ao koa ny ""genre"" na ny fianakaviana. Raha ny ""genre"" ihany no fantatra, soraty ny anaran'izany arahin'ny ""sp"" (mifanohitra amin'ny ""spp"" na sp.”). Raha ny fianakaviana ihany no fantatra dia soraty ny anaran'ny fianakaviana (Izany hoe lutjanidae)."
+t1.133.1,Fetra farany ambony indrindra (cm) ampiasaina amin'ny fampitandremana sanda. Jereo ny lw_ref raha mila fanazavana fanampiny.
+t1.133.2,Ny fetra farany ambany indrindra (cm) ampiasaina amin'ny fampitandremana ny sanda. Jereo ny lw_ref raha mila fanazavana fanampiny.
+t1.133.3,"Ny fetra farany ambony indrindra (kg) ampiasaina amin'ny fampitandremana ny sanda mifototra amin'ny sanda 'length_limit_max', 'a', ary 'b', kajy mandeha ho azy ao amin'ny Smartsheet amin'ny fampiasana ny raikipohy ""=(([length_limit_max]@row ^ b@row) * a@row) / 1000"". Jereo ny lw_ref raha mila fanazavana fanampiny."
+t1.133.4,"Ny fetran'ny lanjany farafahakeliny (kg) ampiasaina amin'ny fampitandremana ny sanda mifototra amin'ny sanda 'length_limit_min', 'a', ary 'b', kajy mandeha ho azy ao amin'ny Smartsheet amin'ny fampiasana ny raikipohy""=(([length_limit_min]@row ^ b@row) * a@row) / 1000"". Jereo ny lw_ref raha mila fanazavana fanampiny."
+t1.133.5,"Lanja antonony (kg), kajy mandeha ho azy ao amin'ny Smartsheet amin'ny fampiasana ny raikipohy ""=([weight_limit_max]@row + [weight_limit_min]@row) / 2"". Jereo ny lw_ref raha mila fanazavana fanampiny."
+t1.134,"Ny dikanteny anglisy ho an'ny"" add new"","" don't know"","" not for sale"", sns."
+t1.135,"Ny fandikan-teny amin'ny fiteny country ho an'ny ""add new"", ""don't know"", ""not for sale"", sns."
+t1.136,Ny taratasy fanovozan-kevitra ny fandikan teny dia hiaraka  hiseho ao amin'ny dropdown ao amin'ny Kobo
+t1.138,"Anaran'ny mpiara-miasa tsy misy elanelana na mari-piatoana, tsipika ambany fotsiny."
+t1.139,Ny vidiny ambany indrindra mifototra amin'ny karazana vokatra
+t1.140,Ny vidiny ambony indrindra mifototra amin'ny karazana vokatra
+t1.141,"Mihatra amin'ny vondrona karazana ny fampitandremana min/max. Mba hanampiana vondrona vaovao, azafady mba maneho hevitra ary ampahafantaro BFO."
+t1.143,Vidiny isaky ny kilao na vidiny isaky ny olona (ny fampitandremana ny lanjan'ny karazana sy ny halavany dia ampiharina amin'ny faran'ny aoriana amin'ny alàlan'ny angona avy amin'ny literatiora)
+t1.144,"Ny saha fanodinana dia mamaritra ny fomba amidy ny trondro na biby tsy manana hazon-damosina. Anisan'ny safidy ny ""felo, ampahany_ahodina, filet, rambony, na fin""."
+t1.145,"Anaran'ny karazana, avy amin'ny fiasan'ny rfishbase 'load_taxa()'."
+t1.146,"Anaran'ny fianakaviana, avy amin'ny fiasan'ny rfishbase 'load_taxa()'."
+t1.147,"Anarana iombonana amin'ny teny anglisy miaraka amin'ny toerana sy ny tondro-tondro, nalaina avy amin'ny tbl 'comnames' an'ny fishbase mampiasa ny tsanganana laharana hisafidianana ny anarana tsara isaky ny karazany avy amin'ireo anarana iraisana marobe misy."
+t1.148,"Ireo karazany voasokajy ho vondrona mifototra amin'ny biolojian'izy ireo tsy misy toerana na mari-piatoana, dia manasongadina fotsiny. Ity saha ity dia ampiasaina hanampiana amin'ny sivana safidy valiny sasany ao Amin'ny kobo. Anisan'ny safidy: ""finfish, ray, eel, shark, crab, shrimp, lobster ,opopus, squid, cuttlefish, bivalve, gastropod, sea_urchin, ary sea_cucumber""."
+t1.149,"Salanisan'ny karazana k, avy amin'ny rfishbase 'popgrowth' tbl."
+t1.150,"Karazana halavan'ny fandrefesana ho an'ny sanda 'avg_k'. Anisan'ny safidy: 'tl = halavany manontolo, sl = halavany mahazatra, wd = sakany, CL = halavan'ny carapace, CW = sakany carapace, ml = halavan'ny lamba firakotra, ShL = halavan'ny akorandriaka'."
+t1.151,"Salanisan'ny sanda 'a 'ho an'ny karazany, avy amin'ny rfishbase' poplw ' tbl."
+t1.152,"Ny salanisan'ny 'b' ho an'ny karazany, avy amin'ny rfishbase 'poplw' tbl."
+t1.153,"Fanondroana ny soatoavina' a 'sy' b'. Anisan'ny safidy: ""Fishbase, SeaLifebase, Journal article""."
+t1.154,"Karazana halavan'ny fandrefesana ho an'ny sanda' a_b_type'. Anisan'ny safidy: 'tl = halavany manontolo, sl = halavany mahazatra, wd = sakany, CL = halavan'ny carapace, CW = sakany carapace, ml = halavan'ny lamba firakotra, ShL = halavan'ny akorandriaka'."
+t1.155,"Ny halavan'ny karazany (cm), avy amin'ny rfishbase 'popchar' tbl."
+t1.156,"Karazana halavan'ny fandrefesana ho an'ny sanda 'lmax'. Anisan'ny safidy: 'tl = halavany manontolo, sl = halavany mahazatra, wd = sakany, CL = halavan'ny carapace, CW = sakany carapace, ml = halavan'ny lamba firakotra, ShL = halavan'ny akorandriaka'."
+t1.157,"Fanondroana ny sandan'ny 'lmax'. Anisan'ny safidy: ""Fishbase, SeaLifebase, Journal article""."
+t1.158,"Fiovam-po' a 'sanda ho an'ny karazana amin'ny 'max_length_type' = sl niova fo HO TL, avy amin'ny rfishbase' popll ' tbl"
+t1.159,"Ny sandan'ny fiovam-po 'b' ho an'ny karazana miaraka amin'ny 'max_length_type' = sl miova HO TL, avy amin'ny rfishbase' popll ' tbl"
+t1.160,"Ny sandan'ny halavany ambony indrindra miaraka amin'ny karazana halavany = TL, aorian'ny fiovam-po amin'ny fampiasana ny sanda fiovam-po."
+t1.161,"Ny haavon'ny trôfika mifandraika amin'ny karazany, avy amin'ny tsanganana 'FoodTroph' ao amin'ny fishbase 'ecology' tbl. Araka ny Tabilao MOMBA ny TONTOLO iainana, Ny Troph = 1 + dia midika hoe troph amin'ny sakafo. Ny sanda dia manomboka amin'ny 2.05.0"
+t1.162,"Ny isa momba ny fahalemena, avy amin'ny rfishbase 'species' tbl. Ny sanda dia manomboka amin'ny 0-100."
+t1.163,"Vondrona Trophic avy amin'ny trondro MERMAID sy ny fanondroana ny toetra benthic. Anisan'ny safidy ny: 'omnivore, planktivore, herbivore-detritivore, herbivore-macroalgae, piscivore, invertivore-mobile, invertivore-sessile'."
+t1.164,"Vondrona miasa avy amin'ny trondro MERMAID sy ny fanondroana ny toetra benthic. Anisan'ny safidy ny: ""cropper/grazer, planktivore, detritivore, browser, piscivore, pisci-invertivore, micro-invertivore, macro-invertivore, corallivore, cleaner, spongivore, excavator, scraper""."
+t1.165,"Ny haben'ny vondrona dia avy amin'ny trondro MERMAID sy ny fanondroana ny toetra benthic. Anisan'ny safidy: ""vondrona lehibe, vondrona antonony, vondrona kely, mpivady, irery""."
+t1.166,AMIN'IZAO FOTOANA IZAO DIA HAVAOZINA
+t1.167,"Ny halavany rehefa matotra ny karazany (cm), avy amin'ny rfishbase 'matotra' tbl."
+t1.168,"Karazana halavan'ny fandrefesana ho an'ny sanda 'lmat'. Anisan'ny safidy: 'tl = halavany manontolo, sl = halavany mahazatra, wd = sakany, CL = halavan'ny carapace, CW = sakany carapace, ml = halavan'ny lamba firakotra, ShL = halavan'ny akorandriaka'."
+t1.169,"Fanondroana ny sandan'ny 'lmat'. Anisan'ny safidy: ""Fishbase, SeaLifebase, Journal article""."
+t1.170,"Karazana halavan'ny fandrefesana ho an'ny sanda' final_lmax'. Anisan'ny safidy: 'tl = halavany manontolo, sl = halavany mahazatra, wd = sakany, CL = halavan'ny carapace, CW = sakany carapace, ml = halavan'ny lamba firakotra, ShL = halavan'ny akorandriaka'."
+t1.171,"Ny halavany farany ambony indrindra (cm) isaky ny karazany ampiasaina amin'ny kajy, na avy amin'ny tsanganana 'lmax' na ny tsanganana 'lmax_tl' mifototra amin'ny karazana halavany tadiavina."
+t1.172,"Ny sanda 'loo' voaisa amin'ny fampiasana ny sanda 'final_lmax' ao amin'ny raikipohy "" = ( 10^(0.044 + 0.9841 *LOG10 (final_lmax))"""
+t1.173,"Ny halavan'ny fahamatorana dia tombanana amin'ny fampiasana ny sanda voaisa avy amin'ny tsanganana 'calc_loo', amin'ny fampiasana ny raikipohy "" =(10^(0.8979 *LOG10 (calc_loo) - 0.0782))"""
+t1.174,Ny halavan'ny farany amin'ny fahamatorana (cm) mifototra amin'ny kajy ao amin'ny tsanganana 'calc_lmat' boribory hatramin'ny fahafolo akaiky indrindra.
+t1.175,"Kajy hamaritana ny fetra farany ambany indrindra, kajy mandeha ho azy amin'ny Smartsheet amin'ny fampiasana ny formula ""=[final_lmat]@row * 0.5"""
+t1.176,"Fetra farany ambony indrindra (cm) ampiasaina amin'ny fampitandremana sanda mifototra amin'ny sanda 'final_lmax', kajy mandeha ho azy amin'ny Smartsheet amin'ny fampiasana ny formula ""=[final_lmax]@row"""
+t1.177,"Fetra farany ambany indrindra (cm) ampiasaina amin'ny fampitandremana sanda mifototra amin'ny sanda 'calc_limit_min', kajy mandeha ho Azy amin'ny Smartsheet amin'ny fampiasana ny formula""=[calc_limit_min]@row"""
+t1.178,"Ny fetra farany ambony indrindra (kg) ampiasaina amin'ny fampitandremana ny sanda mifototra amin'ny sanda 'length_limit_max', 'a', ary 'b', kajy mandeha ho azy ao Amin'ny Smartsheet amin'ny fampiasana ny raikipohy ""=(([length_limit_max]@row ^ b@row) * a@row) / 1000"""
+t1.179,"Ny fetra farany ambany indrindra (kg) ampiasaina amin'ny fampitandremana ny sanda mifototra amin'ny sanda' length_limit_min',' a', ary' b', kajy mandeha ho azy ao Amin'ny Smartsheet amin'ny fampiasana ny raikipohy ""=(([length_limit_min]@row ^ b@row) * a@row) / 1000"""
+t1.180,"Lanja antonony (kg), kajy mandeha ho azy amin'ny Smartsheet amin'ny fampiasana ny formula ""=([weight_limit_max]@row + [weight_limit_min]@row) / 2"""
+t1.181,Referansa na raikipohy ho an'ny sanda 'avg_weight'
+t1.182,"TRUE/PRESENT (1) na FALSE/ABSENT (0), avy amin'ny tsanganana 'Oceanic' ao amin'ny fishbase 'ecology' tbl."
+t1.183,"MARINA/MISY (1) NA DISO/TSY misy (0), avy amin'ny tsanganana 'CoralReefs' ao amin'ny tbl 'ecology' fishbase."
+t1.184,"MARINA/MISY (1) NA DISO/TSY misy (0), avy amin'ny tsanganana 'Mangroves' ao amin'ny tbl 'ecology' fishbase."
+t1.185,"MARINA/MISY (1) na DISO/TSY misy (0), avy amin'ny tsanganana 'SeaGrassBeds' ao amin'ny fishbase 'ecology' tbl."
+t1.186,"TRUE/PRESENT (1) na FALSE/ABSENT (0), avy amin'ny tsanganana 'Mud' ao amin'ny tbl 'ecology' fishbase."
+t1.187,"TRUE/PRESENT (1) na FALSE/ABSENT (0), avy amin'ny tsanganana 'Sand' ao amin'ny tbl 'ecology' fishbase."
+t1.188,"MARINA/MISY (1) na DISO/TSY misy (0), avy amin'ny tsanganana 'Estuaries' ao amin'ny tbl 'ecology' fishbase."
+faq,Fanontaniana Apetraka Matetika:
+q1,"Raha vao manampy admin vaovao aho, hafiriana vao miseho ao amin'ny dropdown ho an'ny admin2?"
+a1,"Haharitra 15 minitra eo ho eo vao misy fidirana vaovao ao amin'ny dynamic dropdowns. Izany dia mihatra amin'ny ""dropdown"" admin2 ao amin'ny admin3_ref, ny ""dropdown"" vondrona karazana ao amin'ny gear_ref, ny ""dropdown"" admin3 ao amin'ny buyer_ref, fisher_ref, data_collector, sns. Jereo ny Sary 5 ho an'ny lisitra feno ny f""dropdown dynamic"" sy ny fizotran'ny asany amin'ny alàlan'ny rakitra referansa."
+q2,"Raha vao manampy na manavao rakitra referansa aho, hafiriana vao miseho ny fanavaozana ao Amin'ny fanadihadiana Kobo?"
+a2,Tokony hahita endrika kobo nohavaozina ianao ao anatin'ny 12-24 ora eo ho eo.
+q3,"Ahoana no tokony hanoratana ny anaran'ny mpividy, mpanjono ary mpanangona angona?"
+a3,"Raha ny tokony ho izy, ny anarana dia tokony ho tokana araka izay azo atao ho an'ny tsirairay ary ahitana ny anarany voalohany, ny anarany farany ary ny anaram-bosotra. Raha tsy te hizara ny anarany feno ny olona iray dia azonao atao koa ny mampiasa ny litera voalohany na voalohany amin'ny anarany farany."
+fig5,Fifandraisana dynamic dropdown eo amin'ny rakitra referansa.

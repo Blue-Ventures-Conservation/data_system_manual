@@ -1,0 +1,207 @@
+key,id
+subtitle1,Informasi umum
+q1,Negara
+q2,Organisasi
+q3,Provinsi pendaratan
+q4,Kecamatan pendaratan
+q5,Desa pendaratan
+q6,Nama pendata
+a1,*Nama pendata baru*
+q7,Tanggal pendaratan
+subtitle2,Informasi tangkapan oleh nelayan
+q8,Nama nelayan
+a2,*Nama nelayan baru*
+q9,*Jenis kelamin nelayan*
+q10,Apakah nelayan tinggal di ${admin3_label}?
+q11,Provinsi asal nelayan:
+q12,Kecamatan asal nelayan:
+q13,Desa asal nelayan:
+q14,Berapa jam per hari Anda aktif menangkap atau memungut ikan (tidak termasuk waktu perjalanan)
+q15,Berapa hari Anda aktif menangkap atau memungut ikan? (tidak termasuk waktu perjalanan)
+q16,Nama lokasi pendaratan
+a8.9,Nama lokasi pendaratan baru
+q17,Lokasi penangkapan utama
+a9,*Nama lokasi penangkapan*
+q18,Nama pembeli (jika diketahui)
+a10,*Nama pembeli baru*
+q19,*Jenis kelamin pembeli*
+subtitle3,Informasi kapal
+q20,Jenis kapal:
+q21,Nomor registrasi perahu (opsional):
+q22,Jumlah orang nelayan (ABK) di atas perahu
+q23,Apakah ${fisher_id_label} ${fisher_new_name} adalah kaptennya?
+q24,"Pilih nelayan lain yang ada di kapal, TIDAK termasuk nelayan utama ${fisher_id_label}: ${fisher_name_new}"
+q25,Harap tentukan nama nelayan baru:
+q26,Silakan pilih kapten:
+q27,Apakah hasil tangkapan yang dicatat adalah semua hasil tangkapan dari perahu atau hanya sebagian tangkapan dari ${fisher_id_label}?
+subtitle4,Spesies didaratkan oleh ${fisher_id_label}
+q28,Jenis tangkapan
+q29,"Nama lokal spesies (gunakan kartu referensi spesies, jika diperlukan)"
+a19,Harap tentukan spesies dalam wadah yang tercampur (pilih kelipatan)
+q30,*Spesies Baru: Kelompok Spesies*
+a18,*Nama lokal spesies baru*
+q31,*Nama Inggris spesies (jika diketahui)*
+q32,*Nama family spesies baru (jika diketahui)*
+q33,*Nama ilmiah spesies baru (jika diketahui)*
+q34,*Ambil foto spesies baru*
+q35,Nama lokal alat tangkap
+q36,"Melalui metode apa Anda menggunakan peralatan ini (Panah, Tombak/Ganco)?"
+q37,Berapa bubu yang Anda pasang?
+q38,Jenis habitat lokasi tangkapan
+q39,Apakah Anda memancing saat pasang bulan purnama atau pasang perbani?
+q40,"Tolong jelaskan tangkapan sampingan, atau spesies lain yang ditangkap."
+q41,Waktu tawur/pemasangan alat tangkap (jam)
+q42,Apakah Anda menggunakan umpan dalam proses penangkapan?
+q43,Umpan yang digunakan (jenis/spesies):
+q44,Berat umpan (kg)
+subtitle5,Informasi spesies
+q45,Semua spesies
+q46,Satuan (unit) berat hasil tangkapan
+q48,Total individu tangkapan
+q50,Apakah Anda memproses/mengolah tangkapan ini?
+q51,Total harga tangkapan terjual (perkiraan atau sebenarnya)
+q52,Alasan jumlah tangkapan tidak dibeli/tidak terjual
+subtitle6,Sampel (${calc_local_name})
+q53,Satuan (unit) berat hasil tangkapan
+q54,Jumlah total
+q56,Berapa banyak jumlah sample yang dikumpalkan untuk spesies ini?
+q57,Satuan berat untuk sampel individu
+q58,**Sampel 1:**
+q60,*Lebar (cm)*
+q61,*Panjang mantel (cm)*
+q62,*Panjang karapas (cm)*
+q63,*Lebar karapas (cm)*
+q64,*Panjang total individu (cm)*
+q67,**Sampel 10:**
+subtitle7,Sampel (${calc_local_name})
+q67.5,"Selain data panjang/berat, data apa lagi yang Anda kumpulkan?"
+q68,Berapa banyak sampel yang Anda dikumpulkan?
+q69,Satuan berat untuk sampel individu
+q70,**Sampel 1:**
+q59,*Jenis kelamin*
+q71,*Lebar (cm)*
+q72,*Panjang mantel (cm)*
+q73,*Panjang karapas (cm)*
+q74,*Lebar karapas (cm)*
+q75,*Panjang total individu (cm)*
+q76,*Berat individu (${weight_unit_samples})*
+q77,*Tingkat kematangan gonad (TKG):*
+q78,Kualitas tangkapan
+q79,Apakah menggunakan es untuk penyimpanan?
+q79.5,Suhu gurita (Celsius)
+q80,Gunakan kartu warna untuk menentukan nilai kuantitatif untuk warna gurita dalam skala 1-5
+q81,Jumlah lengan
+q82,Lecet fisik
+q83,Persentase permukaan gurita dengan lecet
+q84,Paruh
+q85,Kulit
+q86,Kualitas tangkapan
+q87,Apakah kepitingnya masih hidup?
+q88,Apakah mata dan tubuhnya reaktif terhadap sentuhan?
+q89,Apakah matanya utuh?
+q90,Apakah capitnya utuh?
+q91,Berapa jumlah kaki yang patah?
+q92,Apakah mulutnya berbusa?
+q93,Gonads
+q94,Berat gonad (g)
+q95,Warna gonad
+q96,Tingkat Kematangan Gonad
+q97,Panjang gonad (cm)
+q98,Penampilan spermatofor
+q99,Munculnya garis-garis pada kelenjar ovarium
+q100,Stylet
+q101,ID Stylet untuk sample ini:
+a35,kilogram (kg)
+a36,gram (g)
+a37,pound (lbs)
+a38,ons (oz)
+a24,Terumbu karang
+a25,Lamun
+a26,Bakau
+a27,Dataran berlumpur
+a28,Pasir
+a29,Perairan dalam
+a30,Lainnya
+a7,Ya
+a8,Tidak
+a55,Tanpa es
+a56,Es digunakan selama penangkapan
+a57,Es digunakan selama pendaratan
+a58,Es digunakan selama penangkapan dan pendaratan
+a59,"Paruh utuh, tidak patah"
+a60,"Paruh rusak, patah"
+a61,Tidak robek
+a62,"Robek, isi perut terbuka"
+a11,Bermesin besar > 15 HP
+a12,Bermesin kecil < 15 HP
+a13,Perahu dayung
+a14,Perahu layar
+a14.5,Perahu bermotor dengan layar
+a15,"Tidak ada perahu, langsung ke lokasi penangkapan melalui pantai"
+a53,Jantan
+a54,Betina
+a74,Buram/agak bening
+a75,Putih
+a76,Putih pucat
+a77,Putih
+a78,Krem
+a79,Oranye/Kuning
+a80,Kuning gelap
+a81,I
+a82,II
+a83,III
+a84,IV
+a85,Tidak ada
+a86,Sedikit
+a87,Banyak
+a88,Tidak ada
+a89,Garis tidak jelas
+a90,Garis jelas
+a48,Kualitas buruk
+a49,Terlalu kecil
+a50,Terlalu besar
+a51,Disimpan untuk diri sendiri
+a52,Lainnya
+a63,Panjang/Berat
+a64,Kualitas
+a65,Gonad
+a66,Stylet
+a67,Tahap kematangan telur
+a20,Menyelam dengan kompresor/scuba
+a21,Menyelam tanpa alat bantu
+a22,Berjalan
+a23,Lainnya
+a16,Semua hasil tangkapan
+a17,Sebagian hasil milik nelayan
+a3,Laki-laki
+a4,Perempuan
+a5,Non bineri
+a6,Usaha yang terdiri dari beberapa orang (tanpa jenis kelamin)
+a68,Ya
+a69,"Tidak, capit patah tidak sampai pangkal"
+a70,"Tidak, capit patah sampai pangkal"
+a71,Tidak ada
+a72,Patah 1-3
+a73,Patah 4-6
+a31,Pasang purnama (pasang tinggi)
+a32,Pasang purnama (pasang rendah)
+a33,Pasang perbani (pasang tinggi)
+a34,Pasang perbani (pasang rendah)
+a39,Tidak
+a40,Kering
+a41,Penggaraman
+a42,Pengasapan
+a43,Keseluruhan
+a44,Pasar bersih/Diproses sebagian
+a45,Filet
+a46,Ekor
+a47,Sirip
+sp2,Kepiting
+sp1,Gurita
+star,Hanya berlaku untuk mitra atau negara yang ditunjuk.
+question,Pertanyaan
+answer,Pilihan Jawaban
+q47,Total berat tangkapan
+q49,Berat total tangkapan yang akan dijual
+q55,Berat total spesies
+q65,*Berat individu*

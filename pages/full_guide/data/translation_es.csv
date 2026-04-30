@@ -1,0 +1,224 @@
+key,es
+title,Orientación sobre la Recopilación de Datos Pesqueros
+subtitle,Guía para administrar encuestas para obtener datos pesqueros
+intro,Introducción
+p1,"Este documento proporciona orientación y recomendaciones para administrar tres instrumentos de encuesta para capturar información sobre las comunidades pesqueras y las pesquerías de las que dependen (Figura 1). Las encuestas fueron diseñadas para alinear el contenido con la forma en que se utilizarán los datos y la frecuencia esperada de cambio. La encuesta de más alto nivel, Perfiles comunitarios, contiene preguntas que ayudan a comprender mejor la actividad pesquera en la comunidad y las condiciones socioeconómicas. Comprender el panorama socioeconómico es especialmente importante cuando el trabajo comienza por primera vez en una comunidad. La información recopilada durante esta encuesta es esencial para diseñar estrategias de participación comunitaria y planes de muestreo de datos. Las encuestas de Perfil y Monitoreo de Desembarques recopilan datos sobre las capturas desembarcadas por las pesquerías. Los datos de Perfiles de Desembarque se recopilan con menos frecuencia y capturan información sobre el hábitat de pesca, el tipo de arte, el esfuerzo y la longitud de los peces individuales. La encuesta de Monitoreo de Desembarques, idealmente realizada a diario, es una encuesta rápida de pesquerías que recopila la cantidad mínima de información necesaria para rastrear los cambios en el volumen y el valor de las capturas, como las especies, el peso, el recuento y el precio."
+fig1,Figura 1: Cronograma para administrar los tres instrumentos de encuesta diferentes en una escala de un año.
+survey,Detalles de la Encuesta
+cps,Encuesta de Perfiles de la Comunidad
+goal,Objetivo
+p2,Comprender el panorama general de la comunidad y las pesquerías que operan dentro de la comunidad.
+dc,Datos Recopilados
+point1,"Número de miembros de la comunidad, pescadores, comerciantes de pescado, mujeres"
+point2,Panorama general de las pesquerías que faenan en la comunidad
+point3,Artes utilizados; especies objetivo; hábitat pescado; estaciones; embarcaciones
+point4,Información sobre el esfuerzo pesquero y el coste
+point5,"Percepciones sobre las condiciones de pesca y hábitat, amenazas"
+point6,Información sobre la gestión/reglamentación pesquera actual
+point7,"Identificación (mediante cartografía) de zonas de pesca, hábitats y lugares de desembarque importantes"
+ta,Público Objetivo
+p3,"10-20 informantes clave dentro de la comunidad, a saber, líderes comunitarios, pescadores respetados, comerciantes de pescado y mujeres."
+ft,Frecuencia y Temporización
+p4,"Cuando se comienza a trabajar en una nueva comunidad pesquera, la realización de la Encuesta de Perfil Comunitario y el ejercicio de perfil inicial proporciona datos de referencia e información relevante para diseñar los esfuerzos de conservación y manejo más apropiados para la comunidad. Repetir la Encuesta de Creación de perfiles de la Comunidad puede ayudar a documentar los cambios significativos que ocurren con el tiempo."
+method,Metodología
+p5,"La información se puede recopilar a través de encuestas de terceros (es decir, censos, registros del departamento de pesca, etc.), grupos focales compuestos por 10-20 miembros clave de la comunidad o informantes clave. Los líderes comunitarios, así como una variedad de pescadores y comerciantes de pescado conocedores y diversos (incluidas mujeres y jóvenes) serían los participantes ideales para incluir en el grupo focal. Al facilitar los grupos focales, se recomienda tener, como mínimo, un facilitador y un tomador de notas. En el grupo focal, también se recomienda que los participantes proporcionen una lista de / información de contacto para los pescadores de la comunidad a quienes luego se pueda contactar para administrar las Encuestas de hogares. Si no es posible llevar a cabo la Encuesta de Perfiles Comunitarios en un formato de grupo focal, una alternativa es administrar las mismas preguntas que las encuestas individuales con informantes clave y agrupar las respuestas. Las preguntas incluidas en la encuesta de perfiles de la comunidad y las recomendaciones para llevar a cabo discusiones de grupos focales se pueden encontrar en el apéndice A a continuación."
+lms,Encuesta de Monitoreo de Desembarques
+p6,"Capture los datos clave necesarios para calcular indicadores simples de salud pesquera basados en la longitud y para rastrear los cambios en la producción, el valor y la composición de las pesquerías."
+point8,Fecha de desembarque
+point9,Lugar de aterrizaje
+point10,Nombre del comerciante de pescado
+point11,Nombre del pescador
+point12,Esfuerzo pesquero (días pescando / espigando)
+point13,"Identidad de especies (nombres locales, comunes, científicos)"
+point14,Recuento total
+point15,Peso total
+point16,Precio total
+point17,"Motivo captura total no vendida, si procede"
+p7,Pescadores mientras desembarcan sus capturas o en la casa/mercado de compradores de pescado.
+p8,"La Encuesta de Monitoreo de Desembarques debe realizarse diariamente o con la mayor frecuencia posible. Realice Encuestas de Monitoreo de desembarques antes y después de la implementación para evaluar los efectos de los cierres de pesquerías u otras estrategias de manejo. Recomendamos recopilar datos 30 días antes y después de los períodos de cierre temporal. Durante los primeros siete días de los períodos de muestreo, recomendamos que los enumeradores realicen Encuestas de Monitoreo de Desembarques diariamente. Si es posible, continúe con el monitoreo diario durante todo el período de 30 días. Si esto no es posible, realice una encuesta al menos del 80% de los días dentro de cada 30 días. También recomendamos encuestar al 80% o más de todos los pescadores que desembarcan capturas en un día en particular antes o después del cierre. Distribuya los esfuerzos de encuestas representativas entre pescadores de embarcaciones y pescadores no de embarcaciones. Recopile datos de todos los pescadores que desembarquen en la aldea, independientemente de si estaban pescando dentro del sitio de veda o no."
+p9,"Para cierres a más largo plazo, asegúrese de que los datos se recopilen durante el mismo mes de cada año para capturar los cambios durante el período de cierre. Si eso no es factible, recomendamos recopilar datos durante el mismo mes antes y después del cierre. Como se indicó anteriormente, recomendamos encuestar al menos el 80% del día dentro del mes y el 80% de los pescadores desembarcan capturas cada día."
+p10,"Usando el formulario Kobo, reúnase con pescadores en los sitios de desembarco/casas de compradores para registrar sus capturas."
+lps,Encuesta de Perfiles de Desembarques
+p11,Comprender las tendencias de captura observadas.
+point18,Fecha de desembarque
+point19,Lugar de aterrizaje
+point20,Caladero primario
+point21,Nombre del comerciante de pescado
+point22,Nombre del pescador
+point23,Esfuerzo pesquero (horas y días pescando / espigando)
+point24,"Tipo de embarcación (número de registro del barco, número de tripulación)"
+point25,"Identidad de especies (nombres locales, comunes, científicos)"
+point26,Engranajes utilizados
+point27,Hábitat pescado
+point28,Recuento total
+point29,Peso total
+point30,Precio total
+point31,"Motivo captura total no vendida, si procede"
+point32,Muestras de pesos y longitudes individuales (figuras 2-8)
+point33,"Datos de muestra específicos de la pareja (sexo, calidad de captura, gónadas, estilete, # trampas, etc.)"
+p12,"Una muestra representativa de capturas dentro de la comunidad. Registre al menos 50 muestras (idealmente 100) para cada especie objetivo, que representen varios tipos de artes y perfiles de pescadores."
+p13,"Esta encuesta debe realizarse inicialmente al comienzo de la participación en una comunidad y posteriormente cada uno o dos años, antes y después de implementar la estrategia de manejo, o según sea necesario para explicar las disminuciones observadas a través de los datos de monitoreo. Usando el formulario Kobo, reúnase con pescadores en los sitios de desembarque para tomar muestras de sus capturas y registrar su actividad pesquera."
+p14,"Usando el formulario Kobo, reúnase con pescadores en los sitios de desembarque para tomar muestras de sus capturas y registrar su actividad pesquera."
+ms,Estandarización de la medición: Tipo de longitud a medir por grupo de especies
+fig2,"Figura 2: La longitud total debe usarse para medir peces de aleta, tiburones y anguilas (AFS)."
+fig3,Figura 3: El ancho del disco debe usarse para medir rayos y patines.
+fig4,"Figura 4: Se debe usar el ancho del caparazón al medir cangrejos (Suryandari et. alabama, 2018)."
+fig5,Figura 5: La longitud del manto debe usarse al medir pulpos y calamares (FAO).
+fig6,Figura 6: Se debe usar la longitud del caparazón al medir camarones y langostas (Hart et al. 2001).
+fig7,Figura 7: La longitud debe usarse al medir bivalvos y gasterópodos.
+fig8,Figura 8: Se debe usar la longitud total al medir pepinos de mar. El ancho o diámetro de prueba debe usarse al medir erizos de mar.
+dfo,Descripción General del Flujo de Datos
+p15,"La recopilación, validación, transformación y visualización de datos son los cuatro componentes principales del sistema de datos. Las principales aplicaciones de software utilizadas son KoBoToolbox, Smartsheet, PostgreSQL y R."
+p16,"KoBoToolbox es un software gratuito y de código abierto que es un poderoso conjunto de herramientas para la recopilación de datos accesible a través de entornos desafiantes y múltiples plataformas, como dispositivos móviles, computadoras y papel. Los enumeradores recopilan datos sobre las condiciones socioeconómicas y ecológicas esenciales para evaluar las comunidades y el estado de las pesquerías a través de los cuestionarios de la encuesta KoBoToolbox. Smartsheet es una plataforma colaborativa de administración del trabajo que proporciona una interfaz flexible e intuitiva para que las organizaciones planifiquen, rastreen, automaticen y administren varios proyectos y procesos en tiempo real. Los archivos de referencia que se utilizan para completar formularios de encuestas y conectar datos adicionales a los conjuntos de datos maestros se administran en Smartsheet. Además, los datos se validan en Smartsheet. PostgreSQL es un sistema de administración de bases de datos gratuito y de código abierto que se utiliza como almacén de datos para numerosas aplicaciones web, analíticas y geoespaciales, al tiempo que almacena datos estructurados y no estructurados en un solo producto. R es un entorno de software gratuito y de código abierto y un lenguaje de programación ampliamente utilizado para la ciencia de datos, la computación estadística y la visualización de datos. Los paneles de datos se crean utilizando el paquete Shiny del lenguaje de programación R y se alojan en shinyapps.io, una plataforma como servicio (PaaS) para alojar aplicaciones web brillantes (aplicaciones)."
+fig9,Figura 9: Diagrama de Flujo de Datos.
+p17,"La recopilación de datos implica recopilar y medir sistemáticamente información de fuentes relevantes sobre variables de interés para la toma de decisiones, la planificación estratégica, las evaluaciones de resultados y otros fines. Al incorporar datos cuantitativos y cualitativos en los cuestionarios de la encuesta, desarrollamos una comprensión más profunda de las condiciones socioeconómicas y ecológicas pertinentes para las comunidades pesqueras y las estrategias de manejo adaptativo. La validación de datos se refiere a la aplicación de métodos para medir las condiciones de los datos recopilados y determinar si los datos recopilados cumplen con los criterios de calidad definidos, como precisión, coherencia, relevancia, integridad y singularidad. La transformación de datos convierte, limpia y estructura los datos sin procesar en un formato utilizable que puede analizarse y evaluarse para la toma de decisiones. El análisis y visualización de datos implica diseñar y crear gráficos accesibles o pantallas visuales de información para comunicar de manera efectiva los complejos datos cualitativos y cuantitativos previamente recopilados, verificados y transformados entre las audiencias objetivo. Hemos descrito el proceso de flujo de datos a continuación:"
+step1,Los datos se recopilan a través de formularios de encuestas de KoBoToolbox.
+step2,Los datos se ingresan en la base de datos.
+step3,"Si el enumerador seleccionó opciones de respuesta rellenadas previamente en las encuestas, no es necesario validar los datos y pueden pasar directamente al proceso de análisis y visualización de datos."
+step4,"Si el enumerador ingresa datos manualmente, como un nuevo pescador, comprador, recolector de datos, sitio de desembarque o especie, los datos se verifican en Smartsheet antes de incluirlos en la tabla de datos final y visualizarlos en el tablero. Los líderes del equipo de campo son notificados por correo electrónico cuando los datos están listos para su validación. Los líderes del equipo verificarán manualmente las tablas de control de calidad para confirmar que la información recién agregada es válida."
+step5,"Después de la validación, los nuevos datos se envían tanto a los archivos de referencia como a la base de datos para su transformación final antes del análisis y la visualización."
+step6,"Una vez que los datos se envíen a los archivos de referencia, se notificará a los líderes del equipo por correo electrónico si se necesita información adicional en los archivos de referencia."
+step7,Los archivos de referencia actualizados se cargan luego en la plataforma KoBoToolbox para su inclusión en los formularios.
+step8,"Los datos actualizados de los archivos de referencia también se utilizan en el proceso de transformación de datos para unir campos de datos adicionales, como coordenadas y género."
+step9,Los pasos finales del proceso de transformación de datos dan como resultado tablas de datos maestros que se utilizan para el análisis y visualización de datos en los paneles de datos.
+step10,"Los paneles de datos (es decir, las aplicaciones Shiny) se conectan directamente a la base de datos, extrayendo los datos más actualizados disponibles, proporcionando así a los socios un acceso casi inmediato a los datos sin procesar y resumidos."
+datasecurity,Seguridad de Datos
+p18,A continuación se muestra una lista de plataformas de software donde los datos pueden almacenarse y moverse en tránsito desde la base de datos. La información sobre seguridad de datos para cada plataforma externa está disponible en el sitio web específico de la plataforma vinculado aquí.
+p19,"Además de las medidas de seguridad de datos proporcionadas por las plataformas de software mencionadas anteriormente, se implementaron procedimientos de seguridad complementarios. Todas las cuentas en todas las plataformas de software utilizadas están protegidas con contraseña."
+p20,"Usamos Github como nuestro sistema de control de versiones para productos codificados. De forma predeterminada, todas las carpetas y proyectos con datos socioeconómicos y de pesca son privados y solo son accesibles para el personal y los contratistas."
+p21,"Desde cualquier plataforma de datos compartidos (por ejemplo, Shiny Apps), se requiere autenticación de usuario para ver o descargar datos, según el acuerdo de intercambio de datos elegido por cada organización asociada. Esto incluye la verificación de los usuarios antes de permitir que se vean o descarguen los datos, el inicio de sesión de los usuarios en las plataformas de visualización de datos y la gestión periódica de los usuarios verificados."
+p22,"El acceso a los documentos de Smartsheet (por ejemplo, archivos de referencia, hojas de validación de datos) está restringido al personal identificado por cada organización, y cada socio solo puede ver su propia información específica del socio. Las excepciones a esto incluyen el personal que controla y ayuda con los flujos de trabajo de calidad de los datos, y el personal de Blue Ventures que ayuda a los socios con los flujos de trabajo de información en Smartsheet."
+dp,Privacidad de Datos
+p24,"La información de identificación personal (PII) y los datos de capturas pesqueras son propiedad de pescadores y compradores de pescado y nunca se compartirán sin consentimiento previo. Para proteger la privacidad de los pescadores, compradores y recopiladores de datos, todos los nombres se anonimizan en números de identificación aleatorios. Por lo tanto, todos los datos parcial o totalmente disponibles públicamente solo incluirán los números de identificación numéricos aleatorios. Consulte la sección sobre intercambio de datos para obtener una explicación completa de los acuerdos de intercambio de datos."
+p25,Los datos considerados PII incluyen:
+point34,"Nombres de pescadores, compradores y recopiladores de datos"
+point35,Nombres de los encuestados para cualquier encuesta
+datasharing,Intercambio de Datos
+p26,"El sistema de datos de pesquerías está diseñado para agilizar la utilización de sus datos y proporcionar una plataforma para su participación activa en esfuerzos más amplios de gestión y conservación de la pesca. Los datos agregados recopilados en colaboración entre los socios pueden generar información valiosa para monitorear la pesquería, evaluar las estrategias de manejo, guiar la toma de decisiones a nivel local y nacional, comprender los cambios regionales e identificar posibles servicios financieros."
+p27,"Reconocemos la importancia crítica de la propiedad y el uso de los datos para todos los socios contribuyentes. Nuestro objetivo es brindarle flexibilidad para administrar y determinar cómo se utilizan sus datos. Al seleccionar uno de los tres niveles de permiso de uso de datos, puede regular la medida en que sus datos se comparten con otros usuarios. Puede adaptar los niveles de permisos en función de los tipos de datos y, lo que es más importante, tiene la libertad de ajustar su nivel de permisos de datos en cualquier momento. La información de identificación personal (PII) y los datos de capturas pesqueras son propiedad de pescadores y compradores de pescado y nunca se compartirán sin consentimiento previo. Al elegir un nivel de permiso de uso de datos, está confirmando que se han obtenido permisos individuales tanto de pescadores como de compradores de pescado."
+p28,Todos los datos están actualmente configurados en el nivel 1-Privado. Los usuarios tendrán la oportunidad de ajustar sus niveles de permisos según sea necesario.
+level1,Nivel 1-Privado
+point36,Los datos son estrictamente para fines internos del contribuyente de datos original.
+point37,Los datos estarán disponibles para su descarga por parte del contribuyente de datos original.
+point38,Los datos no se incluirán en los análisis regionales proporcionados en el tablero.
+point39,El intercambio o distribución no autorizados de los datos a terceros está estrictamente prohibido.
+level2,Nivel 2-Compartir con Otros Contribuyentes de Datos
+point40,Los datos del nivel de viaje están disponibles para que otros contribuyentes de datos los descarguen.
+point41,Los resúmenes y visualizaciones de datos estarán disponibles para otros contribuyentes de datos.
+point42,Los datos se incluirán en los análisis regionales en el tablero.
+level3,Nivel 3-Compartir con Todos los usuarios
+point43,Los datos del nivel de viaje están disponibles para que todos los usuarios los descarguen.
+point44,Los resúmenes de datos y las visualizaciones estarán disponibles para todos los usuarios.
+point45,Los datos se incluirán en los análisis regionales en el tablero.
+point46,El contribuyente de datos original puede especificar cualquier limitación o condición de uso aplicable a todos los usuarios.
+newdata,Validación de Datos Nuevos y Marcados
+p29,"En las encuestas, algunas preguntas permiten a los enumeradores agregar un nuevo pescador, comprador, recolector de datos, sitio de desembarque, especie u ""otro.""La información de estas opciones son nuevos puntos de datos y debe someterse a verificación antes de ser enviada al conjunto de datos final, visualizada en el tablero y agregada a los archivos de referencia. También hay restricciones establecidas sobre el peso, el precio y la longitud de una especie, y si los datos recopilados están por debajo o por encima de estas restricciones, estos valores se marcan para su revisión. Las restricciones de peso y precio las establecen los socios en min_max_ref. Las restricciones de longitud de las especies las establece el equipo utilizando parámetros biológicos."
+p30,"Todos los datos que fluyen a través del sistema de datos de pesquerías se validan en Smartsheet. Cualquiera de estas entradas nuevas o marcadas se envía a la tabla de validación en Smartsheet para que los equipos de campo las validen. Las tablas son específicas de los socios y se puede acceder a ellas mediante solicitudes de actualización enviadas a su correo electrónico o visitando los enlaces de vista dinámica que se le proporcionan. Los líderes del equipo de campo serán notificados por correo electrónico cuando los datos deban validarse en las tablas. Una vez que los datos se hayan verificado en las tablas de validación, agregaremos nueva información al archivo de referencia y proporcionaremos las correcciones necesarias al conjunto de datos maestro."
+p31,Las instrucciones específicas paso a paso sobre cómo completar la validación de datos en Smartsheet se pueden encontrar en la página Validación de datos.
+datacol,Recopilación de Datos
+p32,"Blue Ventures administra todas las encuestas a través de formularios de Kobo Toolbox que se pueden compartir a través de una cuenta de Kobo Toolbox. Puede configurar una cuenta en https://kf.kobotoolbox.org/accounts/signup/. Comuníquese con el equipo con su nombre de usuario y los detalles de su cuenta. Una vez que se compartan las encuestas, acceda a los formularios de Kobo a través de la aplicación gratuita para teléfonos móviles Android KoboCollect o mediante el formulario web de Enketo. Las instrucciones detalladas sobre cómo configurar una cuenta Kobo, recopilar datos y enviarlos se pueden encontrar en la página de configuración de Kobo. Use un código QR para configurar todos los dispositivos después de configurar manualmente el primer teléfono o tableta para configurar varios teléfonos o tabletas en una cuenta de recopilación de datos. La configuración manual del primer dispositivo requiere la URL del servidor Kobo, el nombre de usuario y la contraseña. La URL del servidor de Kobo es https://kc.kobotoolbox.org. Puede encontrar más información sobre cómo configurar la recopilación de datos con Kobo, incluido cómo configurar varios dispositivos de recopilación de datos a través de un código QR, en https://support.kobotoolbox.org/."
+p33,"Una vez que haya descargado KoboCollect, abra la aplicación e ingrese la URL del servidor, el nombre de usuario y la contraseña para conectar su aplicación KoboCollect al servidor KoBoToolbox. Conectar la aplicación KoboCollect al servidor KoBoToolbox le permite descargar formularios implementados desde KoBoToolbox a su dispositivo móvil y enviar los datos recopilados a través de la aplicación al servidor. En la pantalla de inicio, seleccione "" Obtener formulario en blanco.""Debería aparecer una lista de todos los formularios de encuesta implementados .  Presione ""Seleccionar todo"" para que se envíen todos los formularios de la encuesta a la aplicación, o seleccione los que desee seleccionando manualmente. Luego haga clic en "" Ser seleccionado.""Para implementar la encuesta, seleccione"" Completar formulario en blanco.”"
+p34,"Si bien el formulario web se actualiza automáticamente cuando hay una nueva versión de la encuesta disponible, los usuarios deben configurar la ""actualización automática"" ellos mismos en la aplicación. La actualización periódica de las encuestas en la aplicación garantiza el uso de la última versión del formulario y no causa problemas de canalización de datos. Puede configurar la actualización automática en la aplicación yendo a"" Configuración "" y ""Administración de formularios"".""Puede encontrar más información sobre la actualización automática de encuestas en la aplicación en la página de configuración de Kobo. Es importante tener en cuenta que se requiere una conexión para que la aplicación obtenga la versión más reciente de la encuesta, incluso con la configuración de actualización automática activada. Por lo tanto, aconseje a los enumeradores que tengan una conexión a Internet antes de realizar el trabajo de campo para que KoboCollect pueda extraer la versión más reciente."
+p35,"Después de recopilar los datos, las encuestas enviadas a través del formulario web se enviarán automáticamente al servidor una vez que el recopilador de datos presione el botón"" Enviar"". Los datos recopilados a través de la aplicación KoboCollect se guardan primero en la aplicación en un lugar de espera y luego se envían al servidor. Las encuestas completadas permanecen en espera antes de enviarlas al servidor para que los recopiladores de datos puedan realizar ediciones de la encuesta después de recopilar los datos, o si no hay conexión a Internet, la aplicación puede guardar las encuestas y luego enviarlas al servidor una vez que haya conectividad a Internet. Específicamente, cuando se complete la encuesta, el usuario presionará ""Guardar formulario y salir"", asegurándose de que ""Marcar formulario como finalizado"" también esté marcado. ""Editar formulario guardado"" almacena automáticamente el formulario guardado.  El recopilador de datos puede realizar los cambios necesarios y seleccionar "" Guardar formulario y salir.""La pantalla de inicio también tiene un botón llamado"" Enviar formulario finalizado.""Presione Seleccionar todo (o seleccione los que desea cargar) y luego presione"" Enviar seleccionado.""Seleccione"" Ver formulario enviado "" para asegurarse de cargar correctamente los formularios y ahora debería poder ver todos los formularios enviados."
+p36,"Un sistema central de almacenamiento de datos se vincula a los datos de Kobo, y los análisis y visualizaciones automatizados estarán disponibles a través de un panel estandarizado. Los datos sin procesar se respaldan en la base de datos de KoBoToolbox y estarán disponibles mediante descarga o enlace directo a otra base de datos o almacén de datos."
+translations,Traducciones
+p37,"Las traducciones de todos los idiomas se completan editando las hojas de traducción en Smartsheet. Si encuentra que una traducción necesita actualizarse o está incorrecta en las encuestas, actualice directamente la traducción correspondiente en la hoja de Smartsheet correspondiente. Si el equipo necesita nuevas traducciones, los socios recibirán una notificación de Smartsheet."
+ref,Archivos de Referencia
+p38,"Los archivos de referencia son específicos de socios o países y contienen información completa sobre los niveles administrativos de las comunidades pesqueras (país, provincia, distrito, aldea), sitios de desembarque, pescadores, compradores, recolectores de datos, datos de especies, áreas de manejo, tipos de hábitat, tipos de artes y organizaciones asociadas. Parte de la información se rellena en las listas desplegables de las encuestas y otra se une al conjunto de datos maestro una vez que se recopilan los datos. La nueva información debe agregarse directamente a las hojas de referencia."
+p39,Las instrucciones específicas paso a paso sobre cómo actualizar los archivos de referencia en Smartsheet se pueden encontrar en la página Archivos de referencia.
+appendixa,Apéndice A: Guía de Discusión de Grupos Focales
+p40,Consideraciones importantes antes de realizar encuestas o perfiles pesqueros
+p41,Relación y confianza
+p42,"Establecer relaciones y ganarse la confianza de la comunidad es un paso inicial importante antes de preguntar sobre información pesquera. El primer paso para entablar relaciones y ganarse la confianza de la comunidad es presentarse a usted mismo, a su organización y al propósito de realizar perfiles pesqueros."
+p43,Preparación
+p44,"La preparación es importante para llevar a cabo cada método de encuesta, ya que una buena preparación le dará confianza en la efectividad de cada método que aplique."
+p45,Tiempo para recopilar información
+p46,Ajuste el tiempo de realización de cada método al tiempo del posible encuestado o grupo comunitario objetivo.
+p47,Demandado
+p48,"Comprender a los posibles encuestados que conocerá durante la elaboración de perfiles de pesca es crucial para realizar encuestas. Los grupos o individuos que estarán en la encuesta deben recibir notificación previa. Por lo tanto, presentar líderes comunitarios influyentes debe ser parte del trabajo previo a la encuesta."
+p49,Logística
+p50,Cada método tiene necesidades logísticas y materiales. Asegúrese de que se hayan preparado los recursos y el equipo necesarios para cada método de elaboración de perfiles pesqueros.
+p51,Lista de contactos de personas clave
+p52,Guarde una lista de contactos de personas clave en su teléfono y también tenga una versión impresa para hacer una copia de seguridad.
+p53,Salud y seguridad
+p54,Asegúrese de estar en buenas condiciones para realizar perfiles de pesca. Traiga un botiquín de primeros auxilios esencial.
+p55,Orientación para la Discusión en Grupos Focales
+p56,"Lo siguiente contiene orientación y recomendaciones sobre la realización de un grupo focal para capturar información de perfiles comunitarios. Se recomienda realizar una sesión de grupo focal para fomentar el diálogo, captar una diversidad de opiniones y comenzar a entablar relaciones con miembros importantes de la comunidad. Sin embargo, en el caso de que un grupo focal no sea factible, la encuesta de perfiles de la comunidad se puede realizar como entrevistas individuales con partes interesadas importantes utilizando el formulario de Kobo ""Encuesta de Perfiles de la Comunidad"". En general, el objetivo del ejercicio de elaboración de perfiles comunitarios, ya sea en un formato de grupo focal o entrevista individual, es comprender el panorama general de la comunidad y las pesquerías que operan dentro de la comunidad."
+p57,Antes de realizar un grupo focal
+p58,"Antes de organizar un grupo focal formal de elaboración de perfiles pesqueros, se recomienda mantener conversaciones informales y observación participante. Este método significa dedicar tiempo, establecer relaciones y comprender la pesquería mediante conversaciones informales y observación participante."
+p59,"La conversación informal es importante para comprender mejor el contexto general de las pesquerías antes de llevar a cabo una discusión de grupo focal. Utilice este método como uno de los puntos de partida para formular el contenido de la discusión del grupo focal. Este método le permitirá conocer la comunidad pesquera, comenzar a construir relaciones y ganar confianza."
+p60,Consejos recomendados para mantener conversaciones informales:
+tip1,"Respeta las diferencias culturales. Observe las normas sociales, como saludos aceptables, códigos de vestimenta y respete las prácticas religiosas. Sea cortés, humilde y escuche las opiniones de las partes interesadas sin imponer las suyas propias. Permanecer dentro de una comunidad, entablar una relación y compartir comidas puede ayudar a generar confianza."
+tip2,"Pase tiempo con las partes interesadas. No hay atajos para ganar confianza y apoyo. Especialmente dentro de las comunidades es bueno ser visto, pasar tiempo en las aldeas y conocer gente. Esté preparado para discutir los problemas más amplios dentro de la comunidad. No trates de impulsar una agenda en particular."
+tip3,"Utilice el idioma local si es posible, a menos que se pueda acceder a un idioma común. De lo contrario, utilice un intérprete. Tenga en cuenta los errores en la traducción. La comprobación cruzada de la traducción entre más de un intérprete puede ayudar a reducir las interpretaciones erróneas."
+tip4,"No haga promesas que no puedan cumplirse. Sea claro sobre los objetivos y los resultados esperados sin aumentar las expectativas. Es importante enfatizar esto desde el principio para que las comunidades comprendan claramente el papel del socio técnico, es decir, facilitar el cierre de la pesquería de pulpos, no cavar pozos o reparar escuelas. Es importante asegurarse de que todos estén al tanto de lo que la organización puede y no puede hacer dentro de la comunidad. Garantizar expectativas realistas ayuda a minimizar la decepción, las quejas y los conflictos a medida que avanza el proyecto."
+tip5,Comunique ampliamente los planes y actividades. Asegúrese de que las reuniones o actividades se planifiquen con anticipación y en horarios y lugares mutuamente aceptables para maximizar la asistencia. Asegúrese de que cualquier cambio en los planes y actividades se comunique lo antes posible. Llegar a tiempo y cumplir con los acuerdos ayuda a generar confianza entre las partes interesadas.
+tip6,"Reconozca siempre a las partes interesadas en los resultados del proyecto, como informes y comunicados de prensa dentro de las reuniones de partes interesadas y presentaciones externas. Sea consciente de la ""propiedad"" de la información y respete la confidencialidad y la privacidad."
+p61,"Comprender mejor el panorama de las partes interesadas en la comunidad es un objetivo fundamental a la hora de llevar a cabo conversaciones informales y observaciones de los participantes. Las partes interesadas afectan o pueden verse afectadas por las acciones de una organización. Su apoyo es esencial para el éxito de una organización en la implementación de planes de gestión pesquera. Al comprender mejor a las partes interesadas, podrá identificar de manera eficaz a las partes interesadas que participan en el futuro seguimiento de la pesca para la gestión pesquera en su área."
+examples,Ejemplos de tipos de partes interesadas a incluir:
+example1,Pescadores
+example2,Jefe de aldea
+example3,Fe / líderes religiosos
+example4,Jefe de distrito
+example5,Trabajador de salud comunitario / profesional de la salud
+example6,Comprador/proveedor del pueblo
+example7,Planta de procesamiento
+example8,Mujeres en el pueblo / esposas de pescadores
+p62,Información que se recopilará sobre las partes interesadas:
+point47,"Información sobre las partes interesadas clave y sus posiciones en relación con los objetivos de una entidad (grado de apoyo, poder, etc.). Esta información se puede utilizar para identificar qué partes interesadas incluir en el grupo focal de creación de perfiles comunitarios."
+p63,"Después de llevar a cabo conversaciones informales, el siguiente paso que puede hacer es la observación participante. La observación es un método que le permite utilizar los eventos a su alrededor para recopilar pistas y generar conclusiones sobre lugares o experiencias específicos al observar un día en el pueblo de pescadores. Este método es necesario para recopilar evidencia de la información proporcionada en conversaciones informales. Este método le permite comprender las actividades cotidianas del pueblo de pescadores."
+p64,Procedimientos de Grupos Focales
+2a,Organizando el grupo focal
+2a.1,"Es importante mantener buenas relaciones con las comunidades objetivo. Por lo tanto, siempre que sea posible, se debe informar a las aldeas del programa de la reunión del grupo focal con al menos dos semanas de anticipación."
+2a.2,"Si la aldea tiene recepción de teléfono móvil, llame al jefe de la aldea u otros contactos locales."
+2a.3,"Si la aldea no tiene recepción de teléfono móvil, realice una visita a la aldea para reunirse con el jefe de la aldea u otros contactos locales."
+2a.4,"Durante esta llamada telefónica o visita con el presidente de la aldea u otros contactos locales, explique lo siguiente:"
+2a.4.1,Objetivo del encuentro
+2a.4.2,Ubicación de la reunión
+2a.4.3,Fecha y hora de la reunión
+2a.4.4,Método de información a los participantes de la reunión
+2a.4.5,Número de participantes
+2a.4.5.1,Todos los aldeanos o personas especiales según los mejores pescadores (2)
+2a.4.5.2,Pescadores más frecuentes (2)
+2a.4.5.3,Pescadores que frecuentan muchos sitios de pesca diferentes (2)
+2a.4.5.4,"Pescadores respetados, preferiblemente con experiencia en cartografía (2)"
+2a.5,"Mujeres: consulte con el jefe de la aldea si el grupo focal puede llevarse a cabo con ambos sexos presentes juntos de antemano, ya que en algunas áreas, esto no siempre es posible."
+2a.6,"Trate de evitar llevar a cabo las reuniones durante las mareas de primavera/temporada alta de pesca, ya que es probable que muchos de los pescadores requeridos estén ocupados pescando."
+2a.7,Asegúrese de verificar los horarios de otros proyectos que podrían estar funcionando en la misma área al mismo tiempo para evitar enfrentamientos.
+2b,Equipo de grupos focales
+p65,"Los siguientes son los roles recomendados para el equipo que lidera el grupo focal. Como mínimo, un grupo focal debe tener un facilitador y un tomador de notas."
+p66,Facilitador principal: Dirige y modera la reunión
+2b.1,Presenta la reunión
+2b.2,Facilita el evento
+2b.3,Modera el proceso
+2b.4,Actúa como catalizador entre los individuos del grupo
+2b.5,Encuentra formas de integrar a las personas dominantes y tranquilas y se asegura de que todos los miembros del grupo puedan expresar sus opiniones.
+2b.6,"Se asegura de que el grupo mantenga el tema, pero también sea flexible en el manejo de información adicional importante."
+2b.7,Repite con sus propias palabras lo que dice la gente para confirmar que hay una buena comprensión de la discusión.
+2b.8,Se encarga de la gestión del tiempo
+p67,"Asistente del facilitador: Ayuda al facilitador principal, especialmente a mostrar ayudas visuales."
+2b.9,Apoya al tomador de notas en la recopilación de toda la información relevante
+2b.10,"Lidera la visualización de ayudas visuales y ayuda con otros componentes interactivos de la reunión, como contar votos, tomar notas que se muestran, repartir materiales, etc."
+2b.11,Trae el material necesario
+2b.12,"Ayuda al facilitador de manera indirecta dando señales (por ejemplo, señalando a quienes desean hablar)."
+2b.13,"Apoya al facilitador directamente haciéndole preguntas, si la situación lo requiere."
+p68,Tomador de notas: Documenta la reunión
+2b.14,Observa el evento desde el fondo
+2b.15,Captura todas las respuestas. Es útil tener impresa la lista de preguntas para que pueda anotarse con notas durante la reunión.
+2b.16,Anota toda la información importante
+2b.17,Anota quién está hablando. ¿Hay una participación equitativa de todos o algunas personas dominan el proceso? ¿Hablan las mujeres?
+2c,Participantes de grupos focales
+p69,"Planifique cuidadosamente a quién invitar a la reunión del grupo focal. Se recomienda identificar de 10 a 12 individuos para garantizar que el tamaño sea manejable, lo que permita una representación adecuada de las diferentes perspectivas. En la medida de lo posible, incluya representantes de diversos grupos de partes interesadas y sectores comunitarios (consulte ejemplos de tipos de partes interesadas en la sección anterior). Al seleccionar a los participantes, tenga en cuenta sus conocimientos y roles en la comunidad. Invitar a personas con más conocimientos sobre las pesquerías y la comunidad, como un pescador a tiempo completo en lugar de un pescador recreativo ocasional, proporcionará información más sólida y precisa. Identificar e invitar a personas que son muy respetadas en la comunidad ayuda a generar confianza."
+2d,Discusión logística y metodología
+p70,"Los datos se pueden capturar en el formulario de Kobo ""Encuesta de creación de perfiles de la comunidad"". Sin embargo, puede ser más fácil para el tomador de notas capturar los datos a través de notas escritas para capturar más fácilmente los matices y la información que surgen de la discusión grupal, como las respuestas diferentes por encuestado."
+p71,"Si la información se recopila tomando notas. Una vez finalizada la reunión del grupo focal, las respuestas deben ingresarse en el formulario de Kobo ""Encuesta de creación de perfiles de la comunidad""."
+p72,"Anime a todos los miembros del grupo a hablar, ya que representan una mezcla de edades y posiciones sociales que pueden tener diferentes experiencias de la pesquería."
+p73,"Plantear preguntas una por una al grupo y esperar a que los voluntarios respondan es una forma de dirigir una discusión. Sin embargo, variar la forma en que el facilitador solicita respuestas puede ayudar a mantener la discusión interesante y también garantizar que se escuchen todas las voces y que los participantes menos vocales puedan participar. Antes de comenzar el grupo de enfoque, piense en cómo le gustaría obtener respuestas para cada pregunta planificada."
+2d.1,Foro abierto: cualquiera puede responder a la pregunta y hablar.
+2d.2,"Llame a participantes específicos: esto puede ayudar a garantizar que los participantes menos vocales tengan la oportunidad de hablar. Esto se puede usar más adelante en la discusión una vez que el facilitador tenga una idea de qué participantes pueden beneficiarse de ser llamados. Alternativamente, un facilitador puede usar esta técnica cuando sabe que cierto participante tiene conocimientos o información importantes relacionados con una pregunta."
+2d.3,"Respuesta rápida: Vaya en círculo y cada persona comparte muy brevemente su opinión/respuesta a la pregunta. Esto puede ser efectivo para sondear a la audiencia, ya que involucra a todos. Sin embargo, asegúrese de comunicarse claramente y hacer cumplir los límites de tiempo o este método puede terminar agotando demasiado tiempo de discusión."
+2d.4,Vota: encuesta a la audiencia haciendo una pregunta y haciendo que la gente levante la mano de acuerdo con las diferentes opciones de respuesta. Esto se puede hacer de forma abierta o anónima con los ojos cerrados o con personas escribiendo sus respuestas en hojas de papel dobladas que luego se recogen.
+2d.5,"Grupos: divida el grupo en grupos más pequeños que discutan e informen al grupo principal. Esta técnica es especialmente útil con grupos grandes cuando no hay tiempo suficiente para que todos los miembros del grupo participen en el foro grupal completo. En esta situación, asegúrese de que cada grupo tenga partes interesadas que representen diferentes opiniones y perspectivas."
+p74,Preguntas de Grupos Focales
+p75,"Comience el grupo focal presentándose a sí mismo, al proyecto y al objetivo de la reunión. Luego, haga que todos en la sala se presenten. Planifique los mejores métodos para cada pregunta para obtener y recopilar respuestas de antemano (consulte la sección anterior para obtener ideas). Consulte el documento de la Encuesta de Perfiles de la Comunidad para ver la lista completa de preguntas de los grupos focales a las que puede acceder."
+p76,Recursos de facilitación (disponibles en inglés)

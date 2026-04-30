@@ -1,0 +1,23 @@
+key,ceb
+title,Kobocollect Setup Giya
+step1,Download KoboCollect gikan sa google play store.
+step2,"Ablihi ang app, ug pilia ang ""Mano-mano nga pagsulod sa mga detalye sa proyekto.""Ang mga panudlo sa PAG-set up pinaagi sa qr code makit-an dinhi."
+step3,I-Set up ang koneksyon sa server ug isulud ang mga kredensyal sa pag-login. Gamita ang kinatibuk-ang server: https://kc.kobotoolbox.org
+step4,"Kon kamo na download Kobo, ug gusto aron sa pagdugang sa laing asoy sa app, pagpili sa imong user icon sa ibabaw sa tuo nga bahin sa screen. Piliin Ang ""Idagdag.""""Gikan didto, mahimo ka nga mano-mano nga mosulod sa mga detalye sa proyekto, o mogamit usa ka QR code."
+step5,"Pagkahuman sa pag-set up sa server, pilia ang ""Download form"" gikan sa home screen. Usa ka listahan sa tanan nga mga matang sa survey nga mipakigbahin uban sa imong account kinahanglan nga makita."
+step6,"Pilia ang tanan nga mga porma sa survey nga gipaambit sa imong account, o pilia ang mga gusto nimo pinaagi sa pagpili kanila sa kamut. Unya, i-klik ""Get Pinili nga.""Kobo unya sumpaysumpaya sa server sa pagkuha sa tanan nga mga matang. Nagkinahanglan kini og koneksyon sa internet."
+step7,"Pag-Set up sa ""auto-update"" aron maseguro ang mga survey sa app magpabilin hangtod karon kung ang mga pagbag-o gihimo (mga lakang 8-13). Kung ang labing bag-o nga bersyon sa survey wala gigamit, kini ang hinungdan sa mga isyu sa pipeline sa datos ug database."
+step8,I-klik ang icon sa user sa ibabaw sa tuo nga bahin.
+step9,I-klik ang settings.
+step10,"Sa higayon nga didto, i-klik ang ""Porma Sa Pagdumala."""""
+step11,"Unya, i-klik ang ""Blangko nga porma update mode."""
+step12,"Piliin ang ""match server.""""Kini sa pagsiguro nga ang survey nga updated sa labing bag-o nga bersyon."
+step13,"Sa katapusan, pilia ang"" Awtomatikong pag-update sa frequency "" ug dayon pilia ang usa sa mga frequency."
+step14,"Balik sa home screen. Aron makolekta ang datos, pilia ang ""Pagsugod sa bag-ong porma."""""
+step15,Pagkahuman pilia ang porma sa survey nga gusto nimo gamiton aron magsugod sa pagkolekta sa datos.
+step16,I-klik ang tanang mga pangutana sa survey pinaagi sa pagpili sa sunod nga yawe.
+step17,"Sa pagtapos sa survey, pilia ang ""Finalize.""""Kung gusto nimo i-edit ang porma sa wala pa isumite, pilia ang ""I-Save ingon draft."""
+step18,"Kung gipili nimo ang ""Save ingon draft,"" ang imong porma ipadala sa ""Mga Draft.""Dinhi, mahimo ka makahimo mga pag-edit sa mga porma sa wala pa nimo isumite kini sa katapusang dataset. Human nimo mausab, pilia ang ""Finalize,"" sama sa step 17."
+step19,"Human sa pagpili sa"" Finalize, "" ang porma awtomatikong gitipigan sa ilalum sa ""Andam sa pagpadala.""Sa kasamtangan nga bersyon sa Kobo, mahimo ka pa mag-edit sa mga porma dinhi. Sa umaabot, bisan pa, dili ka maka-edit sa higayon nga kini nahuman na, ug ang ""Andam nga ipadala"" mahimong usa ka lugar nga tipigan ang mga nahuman nga porma hangtod nga adunay ka koneksyon sa internet aron ipadala kini sa server."
+step20,"Pilia ang"" Ipadala gipili "" aron ipadala ang tanan nga mga porma sa server."
+step21,"Aron maseguro nga ang mga porma malampuson nga gi-upload sa server, pilia ang ""Gipadala.""""Kini nga mga porma karon bahin sa katapusang dataset."

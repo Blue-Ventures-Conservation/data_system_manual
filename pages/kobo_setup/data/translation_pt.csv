@@ -1,0 +1,23 @@
+key,pt
+title,Orientação De Configuração Do KoboCollect
+step1,Faça o download do KoboCollect na GooglePlay store.
+step2,"Abra o aplicativo e selecione ""inserir manualmente os detalhes do projeto.""As instruções sobre a configuração através do código QR podem ser encontradas aqui."
+step3,Configure a ligação ao servidor e introduza as credenciais de início de sessão. Use o servidor geral: https://kc.kobotoolbox.org
+step4,"Se já tiver descarregado a Kobo e pretender adicionar outra conta à aplicação, seleccione o ícone de utilizador no canto superior direito do ecrã. Selecione "" Adicionar Projeto.""A partir daí, você pode inserir manualmente os detalhes do projeto ou usar um código QR."
+step5,"Depois de configurar o servidor, selecione ""Baixar formulário"" na tela inicial. Deve ser apresentada uma lista de todos os formulários de inquérito partilhados com a sua conta."
+step6,"Selecione Todos os formulários de inquérito partilhados com a sua conta ou selecione os que deseja ter selecionando-os manualmente. Em seguida, clique em "" obter selecionado.""A Kobo então se conectará ao servidor para buscar todos os formulários. Isso requer uma conexão com a internet."
+step7,"Configure a ""atualização automática"" para garantir que as pesquisas no aplicativo se mantenham atualizadas quando as alterações forem feitas (etapas 8 a 13). Se a versão mais recente da pesquisa não estiver sendo usada, isso causará problemas no pipeline de dados e no banco de dados."
+step8,Clique no ícone do usuário no canto superior direito.
+step9,Clique em Configurações.
+step10,"Uma vez lá, clique em ""Gerenciamento de formulários."""
+step11,"Em seguida, clique em "" Modo de atualização do formulário em branco."""
+step12,"Selecione "" corresponder exatamente ao servidor.""Isso garantirá que a pesquisa seja atualizada para a versão mais recente."
+step13,"Por fim, selecione ""frequência de atualização automática"" e, em seguida, escolha uma das frequências."
+step14,"Volte para o ecrã inicial. Para coletar dados, selecione "" Iniciar novo formulário."""
+step15,"Em seguida, selecione o formulário de inquérito que pretende utilizar para iniciar a recolha de dados."
+step16,Passe por todas as perguntas da pesquisa selecionando a próxima chave.
+step17,"No final da pesquisa, selecione ""Finalizar.""Se você quiser editar o formulário antes de enviar, Selecione ""Salvar como rascunho."""
+step18,"Se você selecionou ""Salvar como rascunho"", seu formulário será enviado para "" rascunhos.""Aqui, você pode fazer edições em formulários antes de enviá-los para o conjunto de dados final. Depois de fazer alterações, selecione ""Finalizar"", como na etapa 17."
+step19,"Depois de selecionar ""Finalizar"", o formulário é automaticamente armazenado em "" Pronto para enviar.""Na versão atual do Kobo, você ainda pode editar formulários aqui. No futuro, no entanto, você não poderá editar uma vez finalizados, e ""pronto para enviar"" será apenas um espaço de armazenamento para armazenar formulários finalizados até que você tenha uma conexão com a internet para enviá-los ao servidor."
+step20,"Selecione ""Enviar selecionado"" para enviar todos os formulários para o servidor."
+step21,"Para garantir que os formulários foram carregados com sucesso no servidor, selecione "" enviado.""Estes formulários fazem agora parte do conjunto de dados final."

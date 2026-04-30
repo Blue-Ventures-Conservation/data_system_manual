@@ -1,0 +1,122 @@
+key,en
+title,Fisheries Data Validation Guide
+p1,"All data that flows through the fisheries data system is validated in Smartsheet. Data is sent for validation under three scenarios; 1) new names or ‘other’ information are manually added in Kobo Collect, 2) a numeric value falls beyond established thresholds or 3) names in the dataset do not have a corresponding match in a reference file. Once data is validated, both the datasets in the database and the reference tables are updated. Reference tables serve as inputs for dropdown lists in KoboToolbox forms and contain data that is added to the datasets through joins. See the decision tree below (Figure 1)."
+p2,"Data triggered for validation is sent to one of four tables: 1) Names and Gears, 2) Value Warnings, 3) Species or 4) Other. The instructions below detail the data validation process in Smartsheet Dynamic View for the four validation tables. Each validation table will require either selecting the correct field value from a dropdown list or entering correct values manually. The process will be appended for future data validation needs, as required."
+p2.1,"The ‘Names and Gears’ validation table contains new data from all the Kobo surveys including the new names of fishers, buyers, data collectors, fishing grounds, landing sites and gears. ‘Value Warnings’ contains numeric information collected from the Landings Monitoring or Landings Profiling survey which flagged a price, weight or length value based on a pre-established threshold. The pre-established thresholds for weight and length warnings originate from the lw_ref; and price warnings originate from the min_max_ref. The ‘Species’ validation table contains photos and new local names from all the surveys in order to validate new species using a double verification process. Lastly, the ‘Other’ data validation table contains ‘other’ information collected from the Landings Profiling, Community Profiling or Household Survey and is mainly validated for translational purposes."
+p2.2,"Daily e-mail messages are sent out with information and links on how to complete the data validation (see detailed instructions below). Additional notifications from Smartsheet may be sent via email to follow-up with incomplete data validation selections, if needed."
+step1,"Step 1: Provide a point of contact, names and email addresses for those responsible for data validation."
+point1,The organization managing multiple partners may provide all points of contact information.
+point2,Individual partners may provide point of contact information.
+point3,The points of contact will receive data validation notifications through email.
+step2,Step 2: Check your email for a data validation request.
+point4,"You will receive an email from ""Smartsheet Automation"" (Figure 2)"
+point5,"The email will contain a message with links to proceed with validation through either a ""Dynamic View"" or ""Open Request"". Dynamic View is a table format and Open Request will direct you to a validation form."
+point6,"To open with ""Dynamic View"" (Step 3, Option A), click the link that begins with ""https://dynamicview.smarthseet.com…."""
+point7,"To open the update request form (Step 3, Option B), click the blue ""Open request"" button"
+point8,"A preview of the entries that need to be validated will appear below this message, but you will not be able to validate any data directly in the email"
+point9,"At the bottom of the email, there is a link for ""Go to the sheet""; however, the underlying sheet has restricted access. Please review your data validation via Dynamic view, Open request, or your partner-specific report (coming soon)."
+caption1,Figure 1: Data validation decision tree.
+caption2,Figure 2: Sample Smartsheet Validation Email Message
+step3a,"Step 3, Option A: Complete your data validation via Dynamic View (recommended)"
+point10,"For this option, you will need to create a free Smartsheet account. You will be directed from the email to set up an account."
+point11,Click on the Dynamic View link in the email request.
+point12,"A new internet browser window will open with a table-like setup for all entries. Here, you can easily scroll through all the entries that need validation."
+point13,Click on a row to begin validation.
+point14,"A ""Details"" panel will appear on the right."
+point15,Review the context fields and populate the validation fields. The validation fields contain the data that will be transferred to the final dataset (Table 1).
+point16,"Leave a comment, ONLY IF there is something that needs our attention. Blue Ventures (BV) staff will review comments and respond appropriately."
+point17,"Click the blue ""Save"" button to save your selection."
+point18,"Once validated, that row will disappear from your dynamic view."
+point19,Click on the next row and repeat steps to complete validation for all entries.
+point20,You can exit and re-enter by clicking on the dynamic view link from your email or logging into your account at any time. You do not need to validate all entries in one sitting.
+point21,You can bookmark this link and return at any time.
+table1,Table 1: Primary fields or columns in the validation tables. Context fields provide information needed to validate data. Validation fields are populated with data that will be transferred to the master datasets. Only the validation fields can be edited. Some fields are only visible in the “Details” panel when a row is clicked in the Dynamic View table.
+t1.1,Validation table field
+t1.2,Field description
+t1.3,Field type
+t1.5,organization name collecting the data
+t1.6,context
+t1.7,validation
+t1.8,auto
+t1.9,Village or sub-village where the catch was landed and recorded
+t1.10,Name of person who collected the data in Kobo (enumerator)
+t1.12,The field from the KoboCollect form that needs to be validated or name that does not have a match in the reference files.
+t1.13,The value that was entered for the corresponding kobo_field
+t1.14,"Closely matching name that already exists in the database. If blank, no existing names match the name in the ""new_data"" column"
+t1.15,"Closely matching name that already exists in the database. If blank, no existing names match the name in the ""new_data"" column"
+t1.16,"Closely matching name that already exists in the database. If blank, no existing names match the name in the ""new_data"" column"
+t1.17,"Select field with correct data (new_data, ref_match1, ref_match2, ref_match3), enter another value (other), or remove (remove row from analysis because data cannot be validated). Required. Only visible in the Details panel. Entry will disappear once data is validated."
+t1.18,"Enter another value if none of the validation options are correct. Required IF ""other"" selected from validation_options. Only visible in the Details panel."
+t1.19,"List of submission ids this new data value appears in, from landings monitoring Kobo form"
+t1.20,"List of submission ids this new data value appears in, from landings profiling Kobo form"
+t1.20.1,"List of submission ids this new data value appears in, from the household survey Kobo form."
+t1.20.2,"The species group associated with the new gear name, as collected in the Kobo form. This will only appear if the “kobo_field” is a gear category."
+t1.20.3,Required IF validating new gear names. A dropdown list of gear types to be associated with the validated gear name.
+t1.20.4,"The gender associated with the new fisher, as collected in the Kobo form. This will only appear if the “kobo_field” is a fisher name."
+t1.20.5,"The gender associated with the new buyer, as collected in the Kobo form. This will only appear if the “kobo_field” is a buyer name."
+t1.22,Name of fisher who landed the catch
+t1.23,Date catch was landed
+t1.24,Species local name
+t1.25,"Unit value: weight/individual, price/weight, length/individual, width/individual"
+t1.26,Type of warning
+t1.27,"Value of warning numerator: weight, price, length"
+t1.28,"Unit of numerator: kg, g, lb, ons, USD, IDR, PHP, cm"
+t1.29,"Value of denominator: count, weight"
+t1.30,"Unit of denominator: number, kg, g, lb, ons"
+t1.31,"Y = values are correct, N=values are incorrect, Remove = remove from analysis because values cannot be validated. Required."
+t1.32,"If correct = Y, values are auto-populated, If correct = N, enter correct value"
+t1.33,"If correct = Y, values are auto-populated, If correct = N, enter correct value"
+t1.34,"If the numerator_units are incorrect, select the correct option from the dropdown"
+t1.35,Dataset the data came from (Landings monitoring or profiling).
+t1.36,"Submission ID from the Kobo form. Use this to compare against raw data, if needed, for validation."
+t1.37,"Origin or source of the data: ‘landings’, ‘profiling’, ‘community_profiling’ or ‘hhs’"
+t1.37.1,Admin1 where the catch was landed and recorded.
+t1.37.2,Admin2 where the catch was landed and recorded.
+t1.37.3,Name of fisher associated with this new species data.
+t1.38,Link to photo that was submitted in Kobo Collect
+t1.39,The value that was entered as a new species local name in Kobo Collect OR a local name and scientific name ID (localname_scientificspecies) that no longer matches a name found in species_ref
+t1.40,"Closely matching name that already exists in the database. If blank, no existing names match the name in the ""new_data"" column"
+t1.41,"Closely matching name that already exists in the database. If blank, no existing names match the name in the ""new_data"" column"
+t1.42,"Closely matching name that already exists in the database. If blank, no existing names match the name in the ""new_data"" column"
+t1.43,"English common name of new species. Please provide if known, else leave blank. (Not required)"
+t1.44,"Scientific family name of new species. Please provide if known, else leave blank. (Not required)"
+t1.45,"Scientific species name of new species. Please provide if known, else leave blank. Required: If species name is unknown, please put any level of taxonomic identification (e.g. Family name, English common name)"
+t1.46,"Submission ID from the Kobo form. Use this to compare against raw data, if needed, for validation."
+t1.48,"Select field with correct data (local_name_new, ref_match1, ref_match2, ref_match3), enter another value (other), or remove (remove row from analysis because data cannot be validated). Required. Only visible in the Details panel. Entry will disappear once data is validated."
+t1.49,"Enter another value if none of the validation options are correct. Required IF ""other"" selected from validation_options. Only visible in the Details panel."
+t1.50,"This column stores the last comment that was made for that row. To view the entire discussion of comments for that row, simply click anywhere on the row. The details panel will appear and click on the ""Comments"" tab to view all comments for that row."
+t1.51,"The field from the KoboToolbox form that needs to be validated. This could be from a question in the Landings Profiling, Community Profiling or Household Survey."
+t1.52,The value that was entered for the corresponding kobo_field
+t1.53,"Dataset the data came from (Landings profiling, Community profiling or Household survey)."
+t1.54,"Submission ID from the Kobo form. Use this to compare against raw data, if needed, for validation."
+t1.55,"Select field with correct data (new_data), enter another value (other), or remove (remove row from analysis because data cannot be validated). Required. Only visible in the Details panel. Entry will disappear once data is validated."
+t1.56,Enter another value if none of the validation options are correct. Required IF “other” selected from validation_options. Only visible in the Details panel.
+t1.57,Required. Enter the English translation of the new_data or other field if ‘other’ was selected as the validation option. Only visible in the Details panel.
+caption3,Figure 3: Example Dynamic View - Value Warnings
+caption4,Figure 4: Example Dynamic View- Details Panel
+step3b,"Step 3, Option B: Complete your data validation via ‘Open Request’"
+point22,"For this option, you do not need to have a Smartsheet account login ."
+point23,"Click on the ""Open request"" button in the validation email message."
+point24,A new internet browser window will open with a form-like setup for each entry
+point25,Review the context fields and populate the validation fields. The validation fields contain the data that will be transferred to the final dataset (Table 1).
+point26,Click next at the bottom of the screen to move through each entry that needs to be validated.
+point27,"To skip an entry (e.g. if you are not sure yet which answer to pick) click ""Next"" without making a selection in the ‘validation_options’ column. The next entry for validation will appear."
+point28,"If you need to exit the page or stop before all entries have been validated, your choices should be saved the next time you reopen the request. Upon opening to continue, just click ""Next"" until you find an entry that needs validation."
+point29,"When you get to the last entry, click ""Done"". A pop-up message will appear asking if you are ‘Ready to submit your update?’:"
+point29.1,"Click ""Go Back"" if you need to review"
+point29.2,"Click ""Submit Update"" to submit validation"
+point29.3,"Check the ""Send me a copy of my responses"" box if you would like a copy of your responses sent to your email"
+point30,If you click “Send me a copy of my responses” you will receive an email titled “Update Confirmation: Names and Gears”.
+point30.1,There will be a table summarizing which entries were updated. Entries in which no option was selected in ‘validation_options” will not be included.
+point30.2,"This email may contain a link to a sheet name “Data Validation - Names and Gears”; however, access to this sheet is locked."
+point31,"To see any remaining validation needed, you will need to wait for the next update request email or open the Dynamic View."
+caption5,"Figure 5: Example of ""Open Request"" format"
+faq,Frequently Asked Questions:
+q1,Can multiple people work on data validation at the same time?
+a1,"Yes, however, once an entry (row) has been validated in Dynamic View it will no longer be visible."
+q2,Do I need a Smartsheet account?
+a2,"Only to complete data validation via Dynamic View (i.e. the table view). You do not need a paid account, with a free trial or free version (once your trial is completed), you will be able to view and interact with all the Smartsheet files."
+q3,What happens after data is validated?
+a3,"In some cases, data will undergo additional review by the Blue Ventures data team. Validated data will be updated in the database, and when appropriate, dropdown menus will be updated in the Kobo reference files and forms (Figure 6). Data that has not been validated will not appear in the dashboard visualizations or statistics, but will be available in the raw data download."
+p3,"If at any time you encounter any errors, have questions, or need support for completing the data validation, please contact us at mary.mccabe@blueventures.org."
+caption6,Figure 6: Data Validation to Reference File Workflow

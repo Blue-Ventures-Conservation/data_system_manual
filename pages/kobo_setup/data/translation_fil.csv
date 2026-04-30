@@ -1,0 +1,23 @@
+key,fil
+title,Patnubay Sa Pag-Setup Ng KoboCollect
+step1,I-download ang KoboCollect mula sa tindahan ng GooglePlay.
+step2,"Buksan ang app, at piliin ang ""manu-manong ipasok ang mga detalye ng proyekto.""Ang mga tagubilin sa pag-set up sa pamamagitan ng QR code ay matatagpuan dito."
+step3,I-Set up ang koneksyon sa server at ipasok ang mga kredensyal sa pag-login. Gamitin ang pangkalahatang server: https://kc.kobotoolbox.org
+step4,"Kung mayroon ka nang na-download na Kobo, at nais na magdagdag ng isa pang account sa app, piliin ang icon ng iyong gumagamit sa kanang sulok sa itaas ng screen. Piliin Ang "" Magdagdag Ng Proyekto.""Mula doon, maaari mong manu-manong ipasok ang mga detalye ng proyekto, o gumamit ng isang QR code."
+step5,"Matapos i-set up ang server, piliin ang ""I-Download ang form"" mula sa home screen. Ang isang listahan ng lahat ng mga form ng survey na ibinahagi sa iyong account ay dapat lumitaw."
+step6,"Piliin ang lahat ng mga form ng survey na ibinahagi sa iyong account, o piliin ang mga nais mong magkaroon sa pamamagitan ng pagpili ng mga ito nang manu-mano. Pagkatapos, i-click ang ""Pumili.""Kobo ay pagkatapos ay kumonekta sa server upang makuha ang lahat ng mga form. Nangangailangan ito ng koneksyon sa internet."
+step7,"I-Set up ang ""auto-update"" upang matiyak na ang mga survey sa app manatiling napapanahon kapag ang mga pagbabago ay ginawa (hakbang 8-13). Kung ang pinakabagong bersyon ng survey ay hindi ginagamit, ito ay magiging sanhi ng mga isyu sa pipeline ng data at database."
+step8,Mag-Click sa icon ng iyong gumagamit sa kanang sulok sa itaas.
+step9,Mag-Click sa mga setting.
+step10,"Kapag doon, mag-click sa ""pamamahala ng Form."""
+step11,"Pagkatapos, mag-click sa ""Blank Form update mode."""
+step12,"Piliin ang "" eksaktong tugma server.""Titiyakin nito na ang survey ay na-update sa pinakabagong bersyon."
+step13,"Panghuli, piliin ang"" awtomatikong dalas ng pag-update "" at pagkatapos ay pumili ng isa sa mga frequency."
+step14,"Mag-Navigate pabalik sa home screen. Upang mangolekta ng data, piliin ang ""Magsimula ng bagong form."""
+step15,"Pagkatapos, piliin ang form ng survey na nais mong gamitin upang simulan ang pagkolekta ng data."
+step16,Dumaan sa lahat ng mga katanungan sa survey sa pamamagitan ng pagpili ng susunod na key.
+step17,"Sa pagtatapos ng survey, Piliin ang ""tapusin.""Kung nais mong i-edit ang form bago isumite, piliin ang ""I-Save bilang draft."""
+step18,"Kung pinili mo ang ""I-Save bilang draft,"" ipapadala ang iyong form sa ""mga draft.""Dito, maaari kang gumawa ng mga pag-edit sa mga form bago mo isumite ang mga ito sa panghuling dataset. Pagkatapos mong gumawa ng mga pagbabago, piliin ang ""i-Finalize,"" tulad ng sa hakbang 17."
+step19,"Matapos piliin ang"" tapusin, ""ang form ay awtomatikong nakaimbak sa ilalim ng"" handa nang ipadala.""Sa kasalukuyang bersyon ng Kobo, Maaari mo pa ring i-edit ang mga form dito. Sa hinaharap, gayunpaman, hindi ka makakapag-edit sa sandaling natapos na ang mga ito, at ang ""Handa nang ipadala"" ay magiging isang lugar na may hawak upang mag-imbak ng mga natapos na form hanggang sa magkaroon ka ng koneksyon sa internet upang maipadala ang mga ito sa server."
+step20,"Piliin ang"" Ipadala ang napili "" upang maipadala ang lahat ng mga form sa server."
+step21,"Upang matiyak na matagumpay na na-upload ang mga form sa server, piliin ang ""ipinadala.""Ang mga form na ito ay bahagi na ngayon ng panghuling dataset."

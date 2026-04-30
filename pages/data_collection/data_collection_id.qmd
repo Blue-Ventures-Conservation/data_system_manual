@@ -1,0 +1,44 @@
+---
+title: Pengumpulan Data
+echo: false
+output: false
+---
+
+```{r}
+library(shiny.i18n)
+library(rmarkdown)
+library(knitr)
+i18n <- Translator$new(translation_csvs_path = "data")
+i18n$set_translation_language("id")
+i18n
+
+
+```
+
+## `r i18n$t("title")`
+
+
+`r { i18n$t("p1") }`
+
+
+### `r i18n$t("subtitle3")`
+
+-   `r { i18n$t("point1") }`
+
+-   `r { i18n$t("point2") }`
+
+-   `r { i18n$t("point3") }`
+
+-   `r { i18n$t("point4") }`
+
+-   `r { i18n$t("point5") }`
+
+-   `r { i18n$t("point6") }`
+
+-   `r { i18n$t("point7") }`
+
+
+`r { i18n$t("fig1") }`
+
+![](images/fig1.jpg)
+

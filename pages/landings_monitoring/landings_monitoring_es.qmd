@@ -1,0 +1,80 @@
+---
+title: Landings Monitoring
+echo: false
+output: false
+---
+
+```{r}
+library(shiny.i18n)
+library(rmarkdown)
+library(knitr)
+i18n <- Translator$new(translation_csvs_path = "data")
+i18n$set_translation_language("es")
+i18n
+
+
+```
+
+## KoboCollect - Landings Monitoring
+
+### `r { i18n$t("subtitle1") }`
+
+| `r { i18n$t("question") }`    | `r { i18n$t("answer") }`  |
+|----------------------|-------------------------------------------|
+| `r { i18n$t("q1") }` |                                           |
+| `r { i18n$t("q2") }` | org_ref                                   |
+| `r { i18n$t("q3") }` | admin1_ref                                |
+| `r { i18n$t("q4") }` | admin2_ref                                |
+| `r { i18n$t("q5") }` | admin3_ref                                |
+| `r { i18n$t("q6") }` | data_collector_ref / `r { i18n$t("a1") }` |
+| `r { i18n$t("q7") }` |                                           |
+
+: {tbl-colwidths="\[50,50\]" .table .table-striped .table-hover}
+
+### `r { i18n$t("subtitle2") }`
+
+| `r { i18n$t("question") }`    | `r { i18n$t("answer") }`      |
+|------------------|------------------------------------------------------|
+| `r { i18n$t("q8") }`  | fisher_ref / `r { i18n$t("a2") }`                                                         |
+| `r { i18n$t("q9") }`  | `r { i18n$t("a3") }` / `r { i18n$t("a4") }` / `r { i18n$t("a5") }` / `r { i18n$t("a6") }` |
+| `r { i18n$t("q10") }` | `r { i18n$t("a7") }` / `r { i18n$t("a8") }`                                               |
+| `r { i18n$t("q11") }` | admin1_ref                                                                                |
+| `r { i18n$t("q12") }` | admin2_ref                                                                                |
+| `r { i18n$t("q13") }` | admin3_ref                                                                                |
+| `r { i18n$t("q13.5") }` | \*`r { i18n$t("a8.1") }` / `r { i18n$t("a8.2") }`                                               |
+| `r { i18n$t("q14") }` |                                                                                           |
+| `r { i18n$t("q15") }` | landing_site_ref  / `r { i18n$t("a8.5") }`                                               |
+| `r { i18n$t("q15.5") }` | `r { i18n$t("a32") }` / `r { i18n$t("a33") }` / `r { i18n$t("a34") }` / `r { i18n$t("a35") }`/ `r { i18n$t("a36") }` / `r { i18n$t("a37") }` / `r { i18n$t("a38") }` / `r { i18n$t("a39") }` |
+| `r { i18n$t("q16") }` | buyer_ref / `r { i18n$t("a9") }`                                                          |
+| `r { i18n$t("q17") }` | `r { i18n$t("a3") }` / `r { i18n$t("a4") }` / `r { i18n$t("a5") }` / `r { i18n$t("a6") }` |
+| `r { i18n$t("q18") }` | `r { i18n$t("a10") }` / `r { i18n$t("a11") }`                                             |
+
+: {tbl-colwidths="\[50,50\]" .table .table-striped .table-hover}
+
+### `r { i18n$t("subtitle3") }`
+
+| `r { i18n$t("question") }`    | `r { i18n$t("answer") }`  |
+|----------------|--------------------------------------------------------|
+| `r { i18n$t("q19") }` | \*species_group_ref                                                                                                                                                                                                       |
+| `r { i18n$t("q20") }` | species_ref / `r { i18n$t("a13") }` / \*`r { i18n$t("a12") }`                                                                                                                                                             |
+| `r { i18n$t("a13") }` |                                                                                                                                                                                                                           |
+| `r { i18n$t("q21") }` |                                                                                                                                                                                                                           |
+| `r { i18n$t("q22") }` |                                                                                                                                                                                                                           |
+| `r { i18n$t("q23") }` |                                                                                                                                                                                                                           |
+| `r { i18n$t("q24") }` |                                                                                                                                                                                                                           |
+| `r { i18n$t("q25") }` | `r { i18n$t("a14") }` / `r { i18n$t("a15") }` / `r { i18n$t("a16") }` / `r { i18n$t("a17") }`                                                                                                                             |
+| `r { i18n$t("q26") }` |                                                                                                                                                                                                                           |
+| `r { i18n$t("q27") }` |                                                                                                                                                                                                                           |
+| `r { i18n$t("q28") }` |                                                                                                                                                                                                                           |
+| `r { i18n$t("q29") }` |                                                                                                                                                                                                                           |
+| `r { i18n$t("q30") }` |                                                                                                                                                                                                                           |
+| `r { i18n$t("q27") }` |                                                                                                                                                                                                                           |
+| `r { i18n$t("q27.1") }` | buyer_ref                                                         |
+| `r { i18n$t("q28") }` |                                                                                                                                                                                                                           |
+| `r { i18n$t("q29") }` | \* `r { i18n$t("a18") }` / `r { i18n$t("a19") }` / `r { i18n$t("a20") }` / `r { i18n$t("a21") }` / `r { i18n$t("a22") }` // `r { i18n$t("a23") }` / `r { i18n$t("a24") }` / `r { i18n$t("a25") }` / `r { i18n$t("a26") }` |
+| `r { i18n$t("q30") }` |                                                                                                                                                                                                                           |
+| `r { i18n$t("q31") }` | `r { i18n$t("a27") }` / `r { i18n$t("a28") }` / `r { i18n$t("a29") }` / `r { i18n$t("a30") }` / `r { i18n$t("a31") }`                                                                                                     |
+
+: {tbl-colwidths="\[50,50\]" .table .table-striped .table-hover}
+
+\*`r { i18n$t("star") }`

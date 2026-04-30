@@ -1,0 +1,207 @@
+key,pt
+subtitle1,Informações gerais
+q1,País
+q2,Organização
+q3,Administrador 1 pousou
+q4,Administrador 2 pousou
+q5,Administrador 3 pousou
+q6,Nome do Coletor de Dados
+a1,*Novo nome do coletor de dados*
+q7,Data de chegada
+subtitle2,Informações de captura por Fisher
+q8,Nome do Pescador
+a2,*Novo nome do pescador*
+q9,*Gênero de pescador*
+q10,O pescador vive em ${admin3_label}?
+q11,Admin 1 de onde o pescador é:
+q12,Admin 2 de onde o pescador é:
+q13,Admin 3 de onde o pescador é:
+q14,Quantas horas por dia você pescava ou respigava ativamente? (não incluindo tempo de viagem)
+q15,Por quantos dias você esteve pescando ou respigando ativamente? (não incluindo tempo de viagem)
+q16,Nome do local de destino
+a8.9,*Novo nome do local de destino*
+q17,Zona de Pesca Primária
+a9,*Novo nome do local de pesca*
+q18,Nome do comprador (se conhecido)
+a10,*Novo nome do comprador*
+q19,*Gênero do comprador*
+subtitle3,Informações sobre o bote
+q20,Tipo de embarcação:
+q21,Número de matrícula do barco (opcional):
+q22,Número de tripulantes de pesca no mesmo barco
+q23,${fisher_id_label} ${fisher_name_new} é o capitão?
+q24,"Por favor, seleccione os outros pescadores no bote, NÃO incluindo o pescador principal ${fisher_id_label}: ${fisher_name_new}"
+q25,"Por favor, especifique o novo nome do pescador:"
+q26,"Por favor, seleccione o capitão:"
+q27,A captura está sendo registrada como toda a captura do barco ou ${fisher_id_label} parte da captura?
+subtitle4,Espécies desembarcadas por ${fisher_id_label}
+q28,
+q29,"Nome local da espécie (use cartão de referência da espécie, se necessário)"
+a19,"Por favor, especifique as espécies no saco misto (selecione vários)"
+q30,Nova espécie: Grupo de espécies
+a18,*Nome local da nova espécie*
+q31,*Nome comum em inglês da nova espécie (se conhecido)*
+q32,*Nome científico da família da nova espécie (se conhecido)*
+q33,*Nome científico da espécie nova espécie (se conhecido)*
+q34,*Adicionar foto de novas espécies.*
+q35,Nome local da engrenagem
+q36,Através de qual método você usa a lança?
+q37,Quantas armadilhas você configurou/instalou?
+q38,Tipo de habitat pescado
+q39,
+q40,"Por favor, descreva a captura acidental ou outras espécies capturadas."
+q41,Definir tempo (horas)
+q42,Você usa isca?
+q43,Isca utilizada (tipo/espécie):
+q44,Peso da isca/ração (kg)
+subtitle5,Informações sobre espécies
+q45,Todas as espécies
+q46,Unidade de peso da captura
+q48,Contagem total de capturas
+q50,
+q51,"Preço total da captura vendida, moeda local (estimado ou real)"
+q52,Motivo da captura total não comprada/vendida
+subtitle6,Amostras (${calc_local_name})
+q53,Unidade de peso da captura
+q54,Número total
+q56,Quantas amostras você está coletando para esta espécie?
+q57,Unidade de peso para amostras individuais
+q58,**Amostra 1:**
+q60,*Largura (cm)*
+q61,*Comprimento do manto (cm)*
+q62,*Comprimento da carapaça (cm)*
+q63,*Largura da carapaça (cm)*
+q64,*Comprimento total individual (cm)*
+q67,**Amostra 10:**
+subtitle7,Amostras (${calc_local_name})
+q67.5,"Além dos dados de comprimento, que outros dados você está coletando?"
+q68,Quantas amostras você está coletando para esta espécie?
+q69,Unidade de peso para amostras individuais
+q70,**Amostra 1:**
+q59,*Sexo*
+q71,*Largura (cm)*
+q72,*Comprimento do manto (cm)*
+q73,*Comprimento da carapaça (cm)*
+q74,*Largura da carapaça (cm)*
+q75,*Comprimento total individual (cm)*
+q76,*Peso individual (${weight_unit_samples})*
+q77,*Estágio de maturidade das gônadas*
+q78,Qualidade de captura
+q79,O gelo foi usado para armazenamento?
+q79.5,Temperatura do polvo (Celsius)
+q80,Use o cartão de cores para determinar o valor quantitativo da cor do polvo em uma escala de 1 a 5.
+q81,Número de tentáculos
+q82,Abrasões físicas?
+q83,Porcentagem (%) da superfície do polvo com abrasões
+q84,Bico
+q85,Pele
+q86,Qualidade de captura
+q87,O caranguejo ainda está vivo?
+q88,Os olhos e o corpo reagem ao toque?
+q89,Os olhos estão intactos?
+q90,As garras estão intactas?
+q91,Quantas pernas estão quebradas?
+q92,O caranguejo está espumando pela boca?
+q93,Gônadas
+q94,Peso das gônadas (g)
+q95,Cor das gônadas
+q96,Estágio da Gônada
+q97,Comprimento da gônada (cm)
+q98,Aparência do espermatóforo
+q99,Aparecimento de linhas nas glândulas ovarianas
+q100,Estilete
+q101,O ID do estilete para esta amostra é:
+a35,quilogramas (kg)
+a36,gramas (g)
+a37,libras (lbs)
+a38,onças (oz)
+a24,Recife
+a25,Algas marinhas
+a26,Mangue
+a27,Plano de lama
+a28,Areia
+a29,Águas profundas
+a30,Outro
+a7,Sim
+a8,Não
+a55,Sem gelo
+a56,Gelo usado durante a captura
+a57,Gelo usado durante o pouso
+a58,Gelo usado durante a captura e o pouso
+a59,"Bico inteiro, intacto"
+a60,"Bico danificado, quebrado"
+a61,Não rasgado
+a62,"Rasgado, entranhas expostas"
+a11,Grande motorizado > 15 HP
+a12,Pequeno motorizado < 15 HP
+a13,Não motorizado com remo
+a14,Não motorizado com vela
+a14.5,Motorizado com vela
+a15,"Nenhum barco, entra pela praia ou terra"
+a53,Macho
+a54,Fêmea
+a74,Opaco
+a75,Branco
+a76,Off white
+a77,Branco
+a78,Bege
+a79,Laranja amarelo
+a80,Amarelo escuro
+a81,I
+a82,II
+a83,III
+a84,IV
+a85,Nenhum
+a86,Alguns
+a87,Muitos
+a88,Nenhum
+a89,Linhas pouco claras
+a90,Linhas claras
+a48,Qualidade ruim
+a49,Muito pequeno
+a50,Muito grande
+a51,Guardado para si mesmo
+a52,Outro
+a63,Comprimento
+a64,Qualidade
+a65,Gônada
+a66,Estilete
+a67,Estágio de maturidade das gônadas
+a20,Compressor/mergulho
+a21,Mergulho livre
+a22,Andando
+a23,Outro
+a16,Captura inteira
+a17,A parte de Fisher
+a3,Macho
+a4,Fêmea
+a5,Não binário
+a6,Empresa que engloba várias pessoas (sem género)
+a68,Sim
+a69,"Não, a garra está quebrada e não chega à base"
+a70,"Não, a garra está quebrada na base"
+a71,Nenhum está quebrado
+a72,1-3 quebrado
+a73,4-6 quebrado
+a31,
+a32,
+a33,
+a34,
+a39,Nao
+a40,Seco
+a41,Salgado
+a42,Fumado
+a43,Inteiro
+a44,Limpo de mercado/Parcialmente processado
+a45,Filete
+a46,Rabo
+a47,Barbatana
+sp2,Caranguejo
+sp1,Polvo
+star,Aplica-se apenas a parceiros ou países designados.
+question,Pergunta
+answer,Opções de resposta
+q47,Peso total da captura
+q49,Peso total a ser vendido
+q55,Peso total das espécies
+q65,*Peso individual*
