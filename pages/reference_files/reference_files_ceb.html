@@ -1,0 +1,2321 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Mga Reperensya nga File – Community Fisheries Data System Manual</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../pages/data_validation/data_validation_ceb.html" rel="next">
+<link href="../../pages/landings_profiling/landings_profiling_ceb.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_ceb.html">Cebuano</a></li><li class="breadcrumb-item"><a href="../../pages/reference_files/reference_files_ceb.html">Mga Reperensya nga File</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/bv_logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/bv_logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://blueventures.org/" title="Blue Ventures Website" class="quarto-navigation-tool px-1" aria-label="Blue Ventures Website"><i class="bi bi-globe"></i></a>
+    <a href="https://youtube.com/playlist?list=PLwUVTxKktakVz45STRgXwoNwiUFIOQOaZ&amp;feature=shared" title="Youtube Training Videos" class="quarto-navigation-tool px-1" aria-label="Youtube Training Videos"><i class="bi bi-youtube"></i></a>
+    <a href="https://app.smartsheet.com/" title="Smartsheet" class="quarto-navigation-tool px-1" aria-label="Smartsheet"><i class="bi bi-check-circle-fill"></i></a>
+    <a href="https://blueventures.shinyapps.io/fisheries-dashboard/" title="Fisheries Data Dashboard" class="quarto-navigation-tool px-1" aria-label="Fisheries Data Dashboard"><i class="bi bi-bar-chart-fill"></i></a>
+    <a href="https://blueventures.shinyapps.io/social-economic-dashboard/" title="Social and Economic Dashboard" class="quarto-navigation-tool px-1" aria-label="Social and Economic Dashboard"><i class="bi bi-house-fill"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">English</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_collection/data_collection_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/management_ref/management_ref_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Management Ref</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fisheries Dashboard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/household_survey/household_survey_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Household Survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/socioeco_dashboard/socioeco_dashboard_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Socioeconomic Dashboard</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bahasa Indonesia</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panduan Cepat</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panduan Lengkap</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengaturan Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_collection/data_collection_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengumpulan Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">File Referensi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validasi data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dasbor Perikanan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cebuano</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dali nga Giya</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bug-os nga Giya</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pag-setup sa Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_ceb.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Mga Reperensya nga File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pagpamatuod sa Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard sa Pangisda</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tagalog</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mabilis na Gabay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Buong Gabay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pag-setup ng Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mga Reference File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pagpapatunay ng Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard ng Pangisdaan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Malagasy</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Torolalana haingana</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Torolalana feno</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fanamarinana angona</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard momba ny jono</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Français</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide rapide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide complet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuration Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fichiers de référence</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">La validation des données</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard des pêches</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Español</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guía rápida</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guía completa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuración de Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Archivos de referencia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validación de datos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panel de pesca</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Português</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guia rápido</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guia completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuração do Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Arquivos de referência</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data de validade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Painel de Pesca</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kiswahili</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mwongozo wa Haraka</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mwongozo Kamili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mpangilio wa Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Faili za Marejeleo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Uthibitishaji wa Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashibodi ya Uvuvi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tetun</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fisheries Dashboard</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species Guides</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_BLZ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Belize</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_CV.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cabo Verde</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_GMB.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Gambia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_MDG_MHJ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Madagascar - MHJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_SEN.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Senegal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_ceb.html">Cebuano</a></li><li class="breadcrumb-item"><a href="../../pages/reference_files/reference_files_ceb.html">Mga Reperensya nga File</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Mga Reperensya nga File</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-right">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="update-sa-pakisayran-files" class="level2">
+<h2 class="anchored" data-anchor-id="update-sa-pakisayran-files">Update Sa Pakisayran Files</h2>
+<p>Ang tanan nga mga reference file nga updated Sa Smartsheet Dinamikong Panglantaw. Ang mga reference nga mga file nagsilbing mga input alang sa mga lista sa dropdown sa mga porma sa KoboToolbox ug adunay mga datos nga gidugang sa master datasets pinaagi sa mga pag-apil. Naglangkob sila sa komprehensibo nga kasayuran sa lebel sa administratiba sa mga komunidad sa pangisda (nasud, lalawigan, distrito, baryo), mga landing site, yuta sa pangisda, mangingisda, pumapalit, data collector, mga espisye, mga lugar sa pagdumala, mga tipo sa gear, ug mga organisasyon sa pakigtambayayong. Ang mga lakang sa ubos naglatid kon unsaon pag-update sa mga reference nga mga file uban sa bag-ong impormasyon.</p>
+<p>Lakang 1: paghimo usa ka libre nga account sa smartsheet.</p>
+<ul>
+<li><p>Ang usa ka libre nga account mahimong ma-access https://www.smartsheet.com/</p></li>
+<li><p>Pagpili “Sulayi smartsheet alang sa free”</p></li>
+</ul>
+<p>Lakang 2: Paghatag Og Blue Ventures (BV) ang email address nga imong gigamit sa paghimo sa imong smartsheet account.</p>
+<ul>
+<li><p>BV nga nagtiniil dayon ipaambit ang mga pakisayran nga mga file nga may kalabutan sa imong organisasyon.</p></li>
+<li><p>Aron sa pagtan aw sa imong pakisayran files kamo kinahanglan nga mopirma ngadto sa smartsheet Dinamikong Panglantaw sa paggamit sa imong smartsheet credentials: https://dynamicview.smartsheet.com/login</p></li>
+<li><p>Sa higayon nga logged sa Dinamikong Panglantaw (dili ang smartsheet app), imong makita ang usa ka listahan sa mga pakisayran files mipakigbahin uban sa imong account (Figure 1).</p></li>
+</ul>
+<p>Figure 1: Listahan sa mga pakisayran nga mga file sa Dinamikong Panglantaw</p>
+<p><img src="images/fig1.jpg" class="img-fluid"></p>
+<p>Lakang 3: I-Klik ang usa ka reperensiya file sa paghimo sa updates</p>
+<ul>
+<li><p>Sa higayon nga maablihan, mahimo ka mag-klik sa matag laray aron mahimo ang pag-edit sa adunay na nga datos, o i-klik ang “Bag-ong” button sa taas nga tuo nga suok aron makadugang bag-ong datos (Figure 2).</p></li>
+<li><p>Ang usa ka panel sa detalye makita sa tuo nga bahin diin imong i-input ang gikinahanglan nga kasayuran (Numero 3; Lamesa 1). Pilia ang” save ” sa ubos nga tuo sa panel sa mga detalye kung nahuman na nimo ang pag-update.</p></li>
+<li><p>Sa pagbiya sa usa ka comment o sa pagpangutana team sa bisan unsa nga mga pangutana, pagpili sa “Comments” tab sa mga detalye panel. Ang tanan nga mga indibidwal nga ang pakisayran nga file gipaambit, lakip ang BV team, makadawat pahibalo kung gihimo ang usa ka komentaryo, busa dili kinahanglan nga tag bisan unsang partikular nga indibidwal.</p></li>
+</ul>
+<p>Figure 2: Example view sa admin_ref sa Dinamikong Panglantaw</p>
+<p><img src="images/fig2.jpg" class="img-fluid" width="935"></p>
+<p>Figure 3: Example view sa admin_ref detalye panel sa Dinamikong Panglantaw</p>
+<p><img src="images/fig3.jpg" class="img-fluid" width="947"></p>
+<p>Lakang 4: Tubaga ang mga hangyo sa pag-update kung ang datos nawala o sayup, o aron pagtubag sa usa ka komento.</p>
+<ul>
+<li><p>Kung adunay dili kompleto o dili husto nga kasayuran nga hinungdanon alang sa pagpopular Sa Mga dropdown sa Kobo o alang sa mga pag-apil, o kung ang usa ka komento gihimo sa sheet, usa ka hangyo sa pag-update ang ipadala sa tanan nga angay nga tiggamit, nga nag-aghat kanila sa pag-update sa kasayuran o pagtubag sa usa ka komento (Figure 4). Pinaagi sa default, ang tanan nga adunay access sa imong mga file sa pakisayran makadawat sa hangyo sa pag-update.</p></li>
+<li><p>Ang usa ka preview sa datos nga kinahanglan nga ma-update o matubag makita sa ubos sa mensahe sa email, apan dili ka makahimo sa pag-update sa bisan unsang datos nga direkta sa email</p>
+<ul>
+<li>Sa ilawom sa email, adunay usa ka link alang sa “Pag-Adto sa sheet”; bisan pa, ang nagpahiping sheet nagpugong sa pag-access. Palihug ribyuha ang imong datos o tubaga ang komento pinaagi sa Bukas nga hangyo.</li>
+</ul></li>
+<li><p>I-klik ang “Open Hangyo” button sa email nga mensahe.</p></li>
+<li><p>Ang usa ka bag-ong bintana sa browser sa internet magbukas sa usa ka porma nga sama sa pag-setup alang sa matag entry (Figure 5)</p></li>
+<li><p>Ribyuha ANG BV kaumahan ug pun-on ang mga editable kaumahan.</p></li>
+<li><p>I-klik sunod sa ubos sa screen sa paglihok pinaagi sa matag entry nga kinahanglan nga updated.</p></li>
+<li><p>Aron laktawan ang usa ka entry (pananglitan kung dili ka sigurado kung unsang tubag ang pilion) i-klik ang “Next” nga wala maghimo usa ka pagpili sa mga ma-edit nga kolum. Ang sunod nga entry nga kinahanglan ma-update magpakita.</p></li>
+<li><p>Kung kinahanglan nimo nga mogawas sa panid o mohunong sa wala pa ma-update ang tanan nga mga entry, ang imong mga kapilian kinahanglan maluwas sa sunod nga imong ablihan usab ang hangyo. Sa pag-abli sa pagpadayon sa, lang i-klik “Next” hangtud nga imong makita ang usa ka entry nga kinahanglan nga updated.</p></li>
+<li><p>Sa diha nga ikaw sa pagkuha sa mga katapusan nga entry, i-klik “Gibuhat”. Ang usa ka pop-up nga mensahe makita nga nangutana kung Andam ka ba nga isumite ang imong pag-update?’:</p>
+<ul>
+<li><p>Pag-klik sa” Balik ” kung kinahanglan nimo nga repasuhon</p></li>
+<li><p>I-klik ang “Submit Update” sa pagsumiter sa inyong mga updates.</p></li>
+<li><p>Ang imong mga pag update awtomatiko nga nadugang sa file sa pakisayran ug mahimo nimo kini makita sa Dinamikong Panan aw</p></li>
+</ul></li>
+</ul>
+<p>Figure 4: Panig-Ingnan “Update Hangyo” email sa diha nga impormasyon kinahanglan nga matul-id o comment kinahanglan nga mitubag sa.</p>
+<p><img src="images/fig4.jpg" class="img-fluid" width="788"></p>
+<p>Table 1: ang nag-unang mga natad sa matag usa sa mga pakisayran nga mga file. Ang tipo sa uma nga “BV” gidumala sa Blue Ventures ug dili ma-edit. Sa paghangyo sa mga kausaban sa bisan unsa sa mga “BV” kaumahan, palihug mobiya sa usa ka comment. Ang mga uma nga adunay tipo sa uma nga “editable” mahimong ma-edit. Ang tipo sa uma nga “awto” awtomatiko nga gipuy-an.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 50%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ngalan sa uma</th>
+<th>Paghulagway sa uma</th>
+<th>Matang sa uma</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Ang tanan nga reference files</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>latest_comment</td>
+<td>Kini nga kolum nagtipig sa katapusang komento nga gihimo alang sa kana nga laray. Aron matan-aw ang tibuuk nga diskusyon sa mga komento alang sa kana nga laray, pag-klik lang bisan diin sa laray. Ang mga detalye sa panel makita, sama sa gihimo sa Figure 3. Pag-klik sa tab nga “Mga Komento” aron makita ang tanan nga mga komento alang sa kana nga laray.</td>
+<td>auto</td>
+</tr>
+<tr class="odd">
+<td>modified_date</td>
+<td>Petsa sa katapusan nga pag edit</td>
+<td>auto</td>
+</tr>
+<tr class="even">
+<td>modified_by</td>
+<td>Ang mga tiggamit nga naghimo sa katapusan nga pag-edit</td>
+<td>auto</td>
+</tr>
+<tr class="odd">
+<td>active</td>
+<td>Pilia ang” Oo ” kung ang datos karon nakolekta gikan sa kini nga indibidwal/lugar. Kung ang datos dili na nakolekta gikan sa kini nga indibidwal/lugar, ug gusto nimo nga itago kini gikan sa Kobo dropdown, pilia ang “Dili.”</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>remove</td>
+<td>Pilia ang” Oo ” kung gusto nimo i-download ang file. Ang mga rekord kinahanglan lamang nga tangtangon kung ang ngalan sayop o kini usa ka duplicate sa usa ka kasamtangan nga rekord.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td><strong>admin1_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>country</td>
+<td>Ang code sa nasud sa iso usa ka giila nga code sa kombinasyon sa sulat</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>name</td>
+<td>Ngalan sa administrasyon 1, ang labing kataas nga lebel sa administratiba pagkahuman sa nasud (ie lalawigan) nga wala ‘y lugar ug wala’ y punctuation, gihatagan ra og gibug-aton</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>label</td>
+<td>Ngalan sa administrasyon 1, ang labing kataas nga lebel sa administratibo pagkahuman sa nasud (ie lalawigan) nga adunay gitugotan nga mga wanang ug punctuation. Palihug ayaw usba ang label gawas kung kinahanglan gyud, tungod kay gipasukad niini ang mga pag-apil.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>partner_flag</td>
+<td>Ang bandila mahimong pula kung ang kantidad sa” partner ” wala maglungtad sa org_ref</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>partner</td>
+<td>Ngalan sa kauban nga wala ‘y mga wanang ug wala’ y punctuation, gihatagan ra og gibug-aton. Ang lista sa dropdown konektado sa kolum nga “ngalan” sa org_ref.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td><strong>admin2_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>country</td>
+<td>Ang code sa nasud sa iso usa ka giila nga code sa kombinasyon sa sulat</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>name</td>
+<td>Ngalan sa administrasyon 2, ang labing kataas nga lebel sa administratibo pagkahuman sa administratibo (ie distrito) nga wala ‘y wanang ug wala’ y punctuation, gihatagan ra og gibug-aton</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>label</td>
+<td>Ngalan sa administrasyon 2, ang labing kataas nga lebel sa administratibo pagkahuman sa administratibo (ie distrito) nga adunay gitugotan nga mga wanang ug punctuation. Palihug ayaw usba ang label gawas kung kinahanglan gyud, tungod kay gipasukad niini ang mga pag-apil.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>admin1_flag</td>
+<td>Ang bandila mahimong pula kung ang kantidad nga” admin1_ref_name ” wala maglungtad sa admin1_ref</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>admin1_ref_name</td>
+<td>Ang ngalan sa admin 1 nga walay luna ug walay punctuation, mga underscore lamang. Ang lista sa dropdown konektado sa kolum nga “ngalan” sa admin1_ref.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td><strong>admin3_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>country</td>
+<td>Ang code sa nasud sa iso usa ka giila nga code sa kombinasyon sa sulat</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>name</td>
+<td>Ang mga ngalan sa admin 2 ug admin 3 gihiusa nga wala ‘y mga wanang ug wala’ y punctuation, gihatagan ra og gibug-aton.Ang admin3 mao ang labing kataas nga lebel sa administratibo pagkahuman sa admin 2 (ie baryo).</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>label</td>
+<td>Ngalan sa admin3, ang labing kataas nga lebel sa administratibo pagkahuman sa admin 2 (ie baryo) nga adunay mga wanang ug gitugotan nga punctuation. Palihug ayaw usba ang label gawas kung kinahanglan gyud, tungod kay gipasukad niini ang mga pag-apil.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>admin1</td>
+<td>Admin 1 ngalan uban sa luna ug punctuation gitugotan. Kini gikuha gikan sa administr1_ref ug auto nga gipuy-an base sa gipili sa administr2 nga gipili.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>admin1_ref_name</td>
+<td>Ang ngalan sa admin 1 nga walay luna ug walay punctuation, mga underscore lamang. Kini gikuha gikan sa admin1_ref ug auto nga gipuy an base sa gipili sa administr2</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>admin2_flag</td>
+<td>Ang bandila mahimong pula kung ang kantidad nga” admin2 ” wala maglungtad sa administr2_ref.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>admin2</td>
+<td>Admin 2 ngalan uban sa luna ug punctuation gitugotan. Ang lista sa dropdown konektado sa kolum nga “label” sa administr2_ref.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>admin2_ref_name</td>
+<td>Ngalan sa admin 2 walay luna ug walay punctuation, lamang underscores. Gikuha kini gikan sa admin2_ref ug auto nga gipuy-an base sa gipili sa administr2 nga gipili.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>admin3_lat</td>
+<td>Latitude sa admin 3</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>admin3_long</td>
+<td>Longitude sa admin 3</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>landings_mon</td>
+<td>Pilia Ang “Oo” kung gusto nimo makita ang admin3 sa dropdown alang sa porma sa pag-monitor sa kobo landings.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>landings_prof</td>
+<td>Pilia Ang “Oo” kung gusto nimo makita ang admin3 sa dropdown alang sa porma sa pag-profile sa Kobo.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>comm_prof</td>
+<td>Pilia Ang “Oo” kung gusto nimo makita ang admin3 sa dropdown alang sa porma sa pag-profile sa komunidad sa Kobo.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>hhs</td>
+<td>Pilia Ang “Oo” kung gusto nimo makita ang admin3 sa dropdown alang sa porma sa survey sa Kobo household.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td><strong>buyer_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>country</td>
+<td>Ang code sa nasud sa iso usa ka giila nga code sa kombinasyon sa sulat</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>name</td>
+<td>Ngalan sa pumapalit nga walay luna ug walay punctuation, lamang underscore</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>label</td>
+<td>Ang ngalan sa pumapalit nga adunay mga luna ug gitugot nga punctuation. Palihug ayaw usba ang label gawas kung kinahanglan gyud, tungod kay gipasukad niini ang mga pag-apil.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>buyer_gender</td>
+<td>Ang Gender sa pumapalit; ‘male’ (lalaki), ‘female’ (babaye), ‘nonbinary’ o ‘business_nogender’</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>gender_flag</td>
+<td>Pula ang bandila kung ang kantidad sa buyer_gender magkalainlain alang sa parehas nga pumapalit (ie Kung Si Raymond Scott sa admin3= Boston adunay gender=lalaki, apan Si Raymond Scott sa admin3=Miami adunay gender=babaye, ang bandila mahimong pula tungod kay ang mga lalaki dili parehas alang sa parehas nga pumapalit).</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>admin1</td>
+<td>Admin 1 ngalan diin ang pumapalit gipalit gikan sa, uban sa luna ug punctuation gitugotan. Kini gikuha gikan sa admin1_ref ug auto nga gipuy-an base sa gipili nga administr3_ref_name.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>admin2</td>
+<td>Admin 2 ngalan diin ang pumapalit gipalit gikan sa, uban sa luna ug punctuation gitugotan. Gikuha kini gikan sa admin2_ref ug auto nga gipuy-an pinahiuyon sa gipili nga ngalan sa administr3_ref_name.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>admin3</td>
+<td>Admin 3 ngalan diin ang pumapalit gipalit gikan sa, uban sa luna ug punctuation gitugotan. Gikuha kini gikan sa admin3_ref ug auto nga gipuy-an pinahiuyon sa gipili nga ngalan sa administr3_ref_name.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>admin3_ref_name</td>
+<td>Ang mga ngalan sa admin 2 ug admin 3 gihiusa nga wala ‘y mga wanang ug wala’ y punctuation, gihatagan ra og gibug-aton.Ang lista sa dropdown konektado sa kolum nga “ngalan” sa admin3_ref.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>admin3_flag</td>
+<td>Ang bandila mahimong pula kung ang kantidad nga” admin3_ref_name ” wala sa admin3_ref.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td><strong>fisher_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>country</td>
+<td>Ang code sa nasud sa iso usa ka giila nga code sa kombinasyon sa sulat</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>name</td>
+<td>Ang ngalan sa mangingisda nga walay luna ug walay punctuation, lamang underscore</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>label</td>
+<td>Ang ngalan sa mangingisda nga adunay mga luna ug gitugot nga punctuation. Palihug ayaw usba ang label gawas kung kinahanglan gyud, tungod kay gipasukad niini ang mga pag-apil.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>fisher_gender</td>
+<td>Ang Gender sa mangingisda; ‘male’ (lalaki), ‘female’ (babaye), ‘nonbinary’ o ‘business_nogender’</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>gender_flag</td>
+<td>Ang bandila mahimong pula kung ang kantidad sa pangisda_gender magkalainlain alang sa parehas nga mangingisda (ie Kung Si Raymond Scott sa admin3= Boston adunay gender=lalaki, apan Si Raymond Scott sa admin3=Miami adunay gender=babaye, ang bandila mahimong pula tungod kay ang mga lalaki dili parehas alang sa parehas nga mangingisda).</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>admin1</td>
+<td>Admin 1 ngalan diin ang mga mangingisda yuta sa ilang mga dakpon, uban sa mga luna ug punctuation gitugotan. Kini gikuha gikan sa admin1_ref ug auto nga gipuy-an base sa gipili nga administr3_ref_name.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>admin2</td>
+<td>Ngalan sa admin 2 diin ang mangingisda yuta sa ilang mga dakpon, uban sa luna ug punctuation gitugotan. Gikuha kini gikan sa admin2_ref ug auto nga gipuy-an pinahiuyon sa gipili nga ngalan sa administr3_ref_name.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>admin3</td>
+<td>Admin 3 ngalan diin ang mga mangingisda yuta sa ilang mga dakpon, uban sa mga luna ug punctuation gitugotan. Gikuha kini gikan sa admin3_ref ug auto nga gipuy-an pinahiuyon sa gipili nga ngalan sa administr3_ref_name.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>admin3_ref_name</td>
+<td>Ang mga ngalan sa admin 2 ug admin 3 gihiusa nga wala ‘y mga wanang ug wala’ y punctuation, gihatagan ra og gibug-aton.Ang lista sa dropdown konektado sa kolum nga “ngalan” sa admin3_ref.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>admin3_flag</td>
+<td>Ang bandila mahimong pula kung ang kantidad nga” admin3_ref_name ” wala sa admin3_ref.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td><strong>data_collector_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>country</td>
+<td>Ang code sa nasud sa iso usa ka giila nga code sa kombinasyon sa sulat</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>name</td>
+<td>Ngalan sa tigkolekta sa datos nga walay luna ug walay punctuation, lamang underscores</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>label</td>
+<td>Ngalan sa tigkolekta sa datos nga adunay mga luna ug gitugot nga punctuation.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>gender</td>
+<td>Ang Gender sa data collector; ‘male’ (lalaki), ‘female’ (babaye), ‘nonbinary’ o ‘business_nogender’</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>admin3_flag</td>
+<td>Ang bandila mahimong pula kung ang kantidad nga” admin3_ref_name ” wala sa admin3_ref.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>admin3_ref_name</td>
+<td>Ang mga ngalan sa admin 2 ug admin 3 gihiusa nga wala ‘y mga wanang ug wala’ y punctuation, gihatagan ra og gibug-aton.Ang lista sa dropdown konektado sa kolum nga “ngalan” sa admin3_ref.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>landings_mon</td>
+<td>Pilia ang” Oo ” kon gusto nimo nga ang data collector makita sa dropdown alang sa kobo landings monitoring form.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>landings_prof</td>
+<td>Pilia Ang “Oo” kung gusto nimo makita ang kolektor sa datos sa dropdown alang sa porma sa pag-profile Sa Kobo</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>hhs</td>
+<td>Pilia Ang “Oo” kung gusto nimo makita ang kolektor sa datos sa dropdown alang sa porma Sa survey Sa Kobo household</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>comm_prof</td>
+<td>Pilia Ang “Oo” kung gusto nimo makita ang data collector sa dropdown para sa kobo community profiling form</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td><strong>fishing_ground_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>country</td>
+<td>Ang code sa nasud sa iso usa ka giila nga code sa kombinasyon sa sulat</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>name</td>
+<td>Ngalan sa pangisda wala ‘y lugar ug wala’ y punctuation, gipasiugda ra</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>label</td>
+<td>Ang ngalan sa yuta sa pangisda nga adunay mga luna ug gitugotan ang punctuation. Palihug ayaw usba ang label gawas kung kinahanglan gyud, tungod kay gipasukad niini ang mga pag-apil.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>admin3_flag</td>
+<td>Ang bandila mahimong pula kung ang kantidad nga” admin3_ref_name ” wala sa admin3_ref.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>admin3_ref_name</td>
+<td>Ang mga ngalan sa admin 2 ug admin 3 gihiusa nga wala ‘y mga wanang ug wala’ y punctuation, gihatagan ra og gibug-aton.Ang lista sa dropdown konektado sa kolum nga “ngalan” sa admin3_ref.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>partner_flag</td>
+<td>Ang bandila mahimong pula kung ang kantidad sa” partner ” wala maglungtad sa org_ref</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>partner</td>
+<td>Ngalan sa kauban nga wala ‘y mga wanang ug wala’ y punctuation, gihatagan ra og gibug-aton. Ang lista sa dropdown konektado sa kolum nga “ngalan” sa org_ref.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>latitude</td>
+<td>Latitude sa pangisdaan</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>longitude</td>
+<td>Ang gitas-on sa salog sa pangisda</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td><strong>gear_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>country</td>
+<td>Ang code sa nasud sa iso usa ka giila nga code sa kombinasyon sa sulat</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>name</td>
+<td>Lokal nga ngalan sa gear nga walay luna ug walay punctuation, lamang underscores</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>label</td>
+<td>Ang lokal nga ngalan sa gear nga adunay mga luna ug gitugot nga punctuation. Palihug ayaw usba ang label gawas kung kinahanglan gyud, tungod kay gipasukad niini ang mga pag-apil.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>gear_global</td>
+<td>Iningles nga ngalan sa gear nga walay luna ug walay punctuation, lamang underscores. Kini usa ka predefined dropdown list. Palihug pagpili usa nga labing angay sa lokal nga gamit, o komento kung dili ka sigurado.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>gear_detail</td>
+<td>Deskripsyon sa gear</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>species_group</td>
+<td>Mga espisye mga target sa gear. Kung ang usa ka gear nag-target sa daghang mga espisye, paghimo usa ka bag-ong laray sa datos alang sa matag grupo sa species. Ang lista sa dropdown konektado sa kolum nga “species_group” sa species_ref.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>species_flag</td>
+<td>Ang bandila mahimong pula kung ang gipili nga” species_group ” wala maglungtad sa specie_ref.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>partner</td>
+<td>Ngalan sa kauban nga wala ‘y mga wanang ug wala’ y punctuation, gihatagan ra og gibug-aton. Ang lista sa dropdown konektado sa kolum nga “ngalan” sa org_ref.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>partner_flag</td>
+<td>Ang bandila mahimong pula kung ang kantidad sa” partner ” wala maglungtad sa org_ref</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td><strong>landing_site_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>country</td>
+<td>Ang code sa nasud sa iso usa ka giila nga code sa kombinasyon sa sulat</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>name</td>
+<td>Ngalan sa landing site nga walay luna ug walay punctuation, lamang underscores</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>label</td>
+<td>Ang ngalan sa landing site nga adunay mga luna ug ang punctuation gitugotan</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>admin3_flag</td>
+<td>Ang bandila mahimong pula kung ang kantidad nga” admin3_ref_name ” wala sa admin3_ref.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>admin3_ref_name</td>
+<td>Ang mga ngalan sa admin 2 ug admin 3 gihiusa nga wala ‘y mga wanang ug wala’ y punctuation, gihatagan ra og gibug-aton.Ang lista sa dropdown konektado sa kolum nga “ngalan” sa admin3_ref.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td><strong>management_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>country</td>
+<td>Ang code sa nasud sa iso usa ka giila nga code sa kombinasyon sa sulat</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>partner_ID</td>
+<td>Ngalan sa kauban nga wala ‘y mga wanang ug wala’ y punctuation, gihatagan ra og gibug-aton. Ang lista sa dropdown konektado sa kolum nga “ngalan” sa org_ref.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>partner_flag</td>
+<td>Ang bandila mahimong pula kung ang kantidad sa” partner ” wala maglungtad sa org_ref</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>management_id_unique</td>
+<td>Talagsaon nga ngalan sa lugar sa pagdumala ug epektibo nga mga petsa. Dugang pa, kini naglangkob sa mosunod nga kasayuran nga gibulag sa usa ka underscore: management_id, management_method, close_date ug open_date.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>management_id</td>
+<td>Talagsaon nga ngalan sa lugar sa pagdumala nga adunay mga wanang ug gitugotan nga punctuation. Palihug ayaw usba ang ngalan gawas kung kinahanglan gyud, tungod kay gipasukad niini ang mga pag-apil.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>admin3_fish</td>
+<td>Ang listahan sa mga administrador 3 nga isda sulod sa management area.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>admin3_fish_flag</td>
+<td>Ang bandila mahimong pula kung ang usa sa mga admin3s nga gilista sa kolum nga “admin3_fish” wala maglungtad sa admin3_ref.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>admin3_govern</td>
+<td>Ang lista sa mga administrador nga adunay papel sa pagdumala sa kalihokan sa pagdumala.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>admin3_govern_flag</td>
+<td>Ang bandila mahimong pula kung ang usa sa mga admin3 nga gilista sa kolum nga “admin3_govern” wala maglungtad sa admin3_ref.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>management_fishing_ground</td>
+<td>Ang lista sa mga hinungdan sa pagpangisda nga may kalabutan sa kalihokan sa pagdumala. Ang lista sa dropdown konektado sa kolum nga “ngalan” sa fishing_ground_ref.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>fishing_ground_flag</td>
+<td>Ang bandila mahimong pula kung ang usa sa mga nataran sa pangisda nga gilista sa “management_fishing_ground_ref” wala maglungtad sa pangisda_ground_ref.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>management_method</td>
+<td>Ang matang sa pamaagi sa pagdumala nga gigamit sa panahon sa panghitabo. Ang predefined listahan naglakip sa: Temporaryo Nga Pagsira, Walay Take Zone, Gear Restriction, Gidumala Access, Pag-Ani Ban o Deforestation Ban.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>regulation_type</td>
+<td>Ang matang sa legal nga mga butang. Ang predefined listahan naglakip sa: balangay ulo regulasyon, balangay ulo sugo, joint balangay ulo regulasyon o walay.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>target_group</td>
+<td>Target nga grupo sa mga espisye alang sa gidumala nga lugar. Kini mahimong maglakip sa ‘Tanan’, usa o daghang mga matang sa mga grupo. Ang lista sa dropdown konektado sa MASTER species_ref ug kauban ang mga grupo sa species gikan sa tanan nga mga kauban.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>target_species</td>
+<td>Target nga mga espisye alang sa gidumala nga lugar. Kini mahimong maglakip sa ‘All_species’, usa o daghang siyentipikanhong mga espisye. Ang lista sa dropdown konektado sa MASTER species_ref ug kauban ang mga species gikan sa tanan nga mga kauban.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>species_flag</td>
+<td>Ang bandila mahimong pula kung ang gipili nga” target_species ” dili pakisayran sa species_ref sa kauban.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>target_habitat</td>
+<td>Target nga puy-anan alang sa gidumala nga lugar. Ang predefined dropdown listahan naglakip sa puy-anan pagpili: ‘reef, seagrass, mangrove, mud_flat, balas, lawom nga tubig o sa uban nga mga’.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>management_area_ha</td>
+<td>Gidak-on sa gidumala nga dapit gisukod sa hectares (ha)</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>close_date</td>
+<td>Pagsira sa gidumala nga lugar</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>open_date</td>
+<td>Petsa sa pag-abli sa gidumala nga lugar</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>management_lat</td>
+<td>Latitude sa management area</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>management_long</td>
+<td>Ang longitude sa management area</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td><strong>org_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>country</td>
+<td>Ang code sa nasud sa iso usa ka giila nga code sa kombinasyon sa sulat</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>name</td>
+<td>Ngalan sa kasosyo/organisasyon nga walay luna ug walay punctuation, lamang underscore</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>label</td>
+<td>Ngalan sa partner/organisasyon nga adunay mga luna ug gitugot nga punctuation. Palihug ayaw usba ang label gawas kung kinahanglan gyud, tungod kay gipasukad niini ang mga pag-apil.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>species_group</td>
+<td>Ang mga grupo sa mga species nga gikolekta sa kauban ang datos. Ang lista sa dropdown konektado sa kolum nga “species_group” sa species_ref. Pilia ang tanan nga mga grupo kung gusto nila ang tanan nga mga species sa species _ref aron magpakita.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td><strong>species_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>country</td>
+<td>Ang code sa nasud sa iso usa ka giila nga code sa kombinasyon sa sulat</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>partner</td>
+<td>Ang ngalan sa Partner nga walay luna o punctuation, nagpasiugda lamang. Ang mga dropdown sa Species gisala sa kauban. Ang pila ka mga nasud adunay daghang mga kauban nga nagbahin sa usa ka lista sa mga species. Sa kana nga kaso, makita nimo ang code sa nasud imbis nga kasosyo, ug ang tibuuk nga lista sa species ipakita alang sa matag kauban sa kana nga nasud, gawas kung ang pipila ka mga grupo sa species gipiho sa kolum nga “species_group” sa org_ref.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>habitat</td>
+<td>Tipo sa puy-anan nga may kalabutan sa mga espisye</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>name</td>
+<td>Ang lokal nga ngalan ug mga espisye nga ngalan gihiusa sa usa ka underscore, nga walay laing punctuation o luna.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>label</td>
+<td>Mga ngalan sa species sa parentesis</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>species_group</td>
+<td>Ang mga espisye giklasipikar ngadto sa mga grupo base sa ilang biology nga walay luna o punctuation, nagpasiugda lamang. Kini nga natad gigamit aron makatabang sa pagsala sa pipila ka mga kapilian sa tubag sa Kobo.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>species_flag</td>
+<td>Ang bandila mahimong pula kung ang gipili nga” species_group “wala’ y pakisayran sa gear_ref. Kana nagpasabut nga ang tanan nga mga gear nga gilista sa gear_ref makita alang sa kini nga grupo sa mga species. Aron lang ipakita ang mga gear nga nagpunting sa kini nga grupo sa species, palihug idugang ang grupo sa species sa gear_ref.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>local_name</td>
+<td>Lokal nga mga espisye ngalan uban sa luna ug punctuation gitugotan</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>admin1-3</td>
+<td>Ngalan sa administrasyon 1, 2 o 3 nga wala ’ y wanang o punctuation, gihatagan ra og gibug-aton. Ang lista sa dropdown konektado sa kolum nga “ngalan” sa katugbang nga admin_ref. <em>Kini nga uma lamang ipakita alang sa mga kauban nga gusto sa mga espisye dropdown nga gisala sa admin.</em></td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>common_english</td>
+<td>Kasagaran nga mga espisye sa ingles nga ngalan nga adunay mga luna ug ang punctuation gitugotan</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>scientific_family</td>
+<td>Ngalan sa pamilya sa usa ka espisye nga adunay mga luna ug punctuation nga gitugotan</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>scientific_species</td>
+<td>Ang siyentipikong ngalan sa mga espisye nga adunay mga luna ug gitugot nga punctuation. Kung ang mga espisye wala mahibal - an, ang genus o pamilya mahimo usab nga makasulod. Kung ang genus ra ang nahibal-an, i-type ang ngalan sa henero nga gisundan sa “sp” (sukwahi sa “spp” o spp.”). Kung ang pamilya ra ang nahibal-an, i-type ang ngalan sa pamilya (ie Lutjanidae).</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>length_limit_max</td>
+<td>Maximum nga limitasyon sa gitas-on (cm) nga gigamit alang sa mga pasidaan sa bili. Tan-awa ang lw_ref alang sa dugang nga impormasyon.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>length_limit_min</td>
+<td>Minimum nga gitas-on (cm) nga gigamit alang sa mga pasidaan sa bili. Tan-awa ang lw_ref alang sa dugang nga impormasyon.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>weight_limit_max</td>
+<td>Maximum gibug-aton limit (kg) gigamit alang sa bili pasidaan base sa’ length_limit_max’,’ a’, ug’ b ’ mga prinsipyo, auto-kalkulado Sa Smartsheet sa paggamit Sa pormula “=(([length_limit_max]<span class="citation" data-cites="row">@row</span> ^ b@row) / 1000”. Tan-awa ang lw_ref alang sa dugang nga impormasyon.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>weight_limit_min</td>
+<td>Minimum nga limitasyon sa timbang (kg) gigamit alang sa mga pasidaan sa kantidad base sa ‘length_limit_min’, ‘a’, ug ‘b’ nga mga kantidad, auto-kalkulado sa Smartsheet gamit ang pormula”=(([length_limit_min]<span class="citation" data-cites="row">@row</span> ^ b@row) / 1000”. Tan-awa ang lw_ref alang sa dugang nga impormasyon.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>avg_weight</td>
+<td>Average nga gibug-aton (kg), auto-kalkulado Sa Smartsheet sa paggamit sa pormula “=([weight_limit_max]<span class="citation" data-cites="row">@row</span> + [weight_limit_min]<span class="citation" data-cites="row">@row</span>) / 2”. Tan-awa ang lw_ref alang sa dugang nga impormasyon.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td><strong>translations_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>english</td>
+<td>Ang paghubad sa ingles alang sa” pagdugang bag-ong”,” wala mahibal-an”,” dili ibaligya”, ug uban pa.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>country language</td>
+<td>Paghubad sa pinulongan sa nasud alang sa “pagdugang bag-ong”, “wala mahibal-an”, “dili ibaligya”, ug uban pa.</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>ref_sheet</td>
+<td>Ang pakisayran sheet ang paghubad nga gihiusa sa sa pagpakita sa mga angay nga dropdown sa Kobo</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td><strong>min_max_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>country</td>
+<td>Ang code sa nasud sa iso usa ka giila nga code sa kombinasyon sa sulat</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>partner</td>
+<td>Ang ngalan sa Partner nga walay luna o punctuation, nagpasiugda lamang.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>min</td>
+<td>Minimum nga presyo base sa specie_group</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td>max</td>
+<td>Maximum nga presyo base sa specie_group</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>species_group</td>
+<td>Mga espisye ang min / max nga pasidaan magamit. Aron makadugang usa ka bag-ong grupo, palihug komentaryo ug ipahibalo SA BFO.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>category</td>
+<td>Presyo kada kg o presyo kada indibidwal (species gibug-aton ug gitas-on sa mga pasidaan nga gipatuman sa likod katapusan pinaagi sa data gikan sa literatura)</td>
+<td>edited</td>
+</tr>
+<tr class="even">
+<td>processing</td>
+<td>Gihubit sa natad sa pagproseso kung giunsa ang pagbaligya sa isda o invertebrate. Ang mga kapilian naglakip sa ‘tibuok, partially_processed, filet, ikog, o fin’.</td>
+<td>edited</td>
+</tr>
+<tr class="odd">
+<td><strong>lw_ref</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>species</td>
+<td>Ang siyentipikong ngalan sa mga espisye nga adunay mga luna ug gitugot nga punctuation. Kung ang mga espisye wala mahibal - an, ang genus o pamilya mahimo usab nga makasulod. Kung ang genus ra ang nahibal-an, i-type ang ngalan sa henero nga gisundan sa “sp” (sukwahi sa “spp” o spp.”). Kung ang pamilya ra ang nahibal-an, i-type ang ngalan sa pamilya (ie Lutjanidae).</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>genus</td>
+<td>Henero sa mga tanom nga bulak ang rfishbase function ’load_taxa ().</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>family</td>
+<td>Ngalan sa pamilya sa mga espisye, nga gikuha gikan sa rfishbase function ‘load_taxa ()’.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>common_name</td>
+<td>Kasagaran nga ngalan sa species sa ingles nga adunay mga luna ug punctuation, nga gikuha gikan sa fishbase ‘comnames’ tbl gamit ang ranggo nga kolum aron mapili ang paborableng ngalan matag species gikan sa daghang mga kasagarang ngalan nga magamit.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>species_group</td>
+<td>Ang mga espisye giklasipikar ngadto sa mga grupo base sa ilang biology nga walay luna o punctuation, nagpasiugda lamang. Kini nga natad gigamit aron makatabang sa pagsala sa pipila ka mga kapilian sa tubag sa Kobo. Opsyon naglakip sa: ‘finfish, ray, eel, shark, crab, hipon, lobster, kugita, nukos, cuttlefish, bivalve, gastropod, sea_urchin, ug sea_cucumber’.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>avg_k</td>
+<td>Average k bili sa mga espisye, gikuha gikan sa rfishbase ‘popgrowth’ tbl.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>avg_k_type</td>
+<td>Pagsukod gitas-on type alang sa ‘avg_k’ bili. Mga kapilian naglakip sa: ‘TL = total gitas-on, SL = standard gitas-on, WD = gilapdon, CL = carapace gitas-on, CW = carapace gilapdon, ML = mantle gitas-on, ShL = kabhang gitas-on’.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>a</td>
+<td>Aberids nga ‘usa ka’ bili alang sa mga espisye, nga gikuha gikan sa rfishbase ‘poplw’ tbl.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>b</td>
+<td>Aberids nga kantidad sa’ b ’ alang sa mga espisye, nga gikuha gikan sa rfishbase ‘poplw’ tbl.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>a_b_ref</td>
+<td>Ang paghingalan sa mga kantidad a ug b. Mga opsyon naglakip sa: ‘Fishbase, SeaLifebase, Journal article’.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>a_b_type</td>
+<td>Pagsukod gitas-on type alang sa ‘a_b_type’ bili. Mga kapilian naglakip sa: ‘TL = total gitas-on, SL = standard gitas-on, WD = gilapdon, CL = carapace gitas-on, CW = carapace gilapdon, ML = mantle gitas-on, ShL = kabhang gitas-on’.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>lmax</td>
+<td>Maximum nga gitas-on sa mga espisye (cm), gikan sa rfishbase ‘popchar’ tbl.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>max_length_type</td>
+<td>Pagsukod gitas-on type alang sa ‘lmax’ bili. Mga kapilian naglakip sa: ‘TL = total gitas-on, SL = standard gitas-on, WD = gilapdon, CL = carapace gitas-on, CW = carapace gilapdon, ML = mantle gitas-on, ShL = kabhang gitas-on’.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>lmax_ref</td>
+<td>Ang bili sa ‘lmax’. Mga opsyon naglakip sa: ‘Fishbase, SeaLifebase, Journal article’.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>length_conversion_a</td>
+<td>Pagkakabig ‘usa ka’ bili alang sa mga sakop sa henero nga uban sa ‘max_length_type’ = SL kinabig ngadto SA TL, gikuha gikan sa rfishbase ‘popl’ tbl</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>length_conversion_b</td>
+<td>Pagkakabig ’ b ’ bili alang sa mga sakop sa henero nga uban sa ‘max_length_type’ = SL kinabig ngadto SA TL, gikuha gikan sa rfishbase ‘popl’ tbl</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>lmax_tl</td>
+<td>Max gitas-on bili uban sa gitas-on type = TL, pagkahuman sa pagkabig gamit ang mga kantidad sa pagkakabig.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>trophic_level</td>
+<td>Ang lebel sa Trophic nga nalangkit sa mga species, nga gikuha gikan sa kolum nga ‘FoodTroph’ sa ekolohiya sa fishbase ’tbl. Sumala sa Lamesa SA EKOLOHIYA, Troph = 1 + nagpasabut nga tropiko sa mga butang sa pagkaon. Ang mga bili naglakip sa 2.0-5.0</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>vulnerability</td>
+<td>Ang rfishbase ‘species’ tbl. Ang mga bili nag-agad gikan sa 0 ngadto sa 100.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>trophic_group</td>
+<td>Ang trophic group nga nakuha gikan sa mermaid fish ug benthic attributes reference. Mga kapilian naglakip sa: ‘omnivore, plankivore, herbivore-detritivore, herbivore-macroalgae, piscivore, invertivore-mobile, invertivore-sessile’.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>functional_group</td>
+<td>Functional nga grupo nga gikuha gikan sa mermaid isda ug benthic mga hiyas reference. Mga kapilian naglakip sa: ‘cropper/grazer, plankivore, detritivore, browser, piscivore, pisci-invertivore, micro-invertivore, macro-invertivore, corallivore, cleaner, spongivore, excavator, scraper’.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>group_size</td>
+<td>Ang gidak-on sa grupo nga nakuha gikan sa mermaid fish ug benthic attributes reference. Mga kapilian naglakip sa: ‘dako nga grupo, medium nga grupo, gamay nga grupo, pares, nag-inusara’.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>loo</td>
+<td>KINI DI UPDATE</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>lmat</td>
+<td>Gitas-on sa pagkahamtong sa mga espisye (cm), gikuha gikan sa rfishbase ‘pagkahamtong’ tbl.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>lmat_type</td>
+<td>Pagsukod gitas-on type alang sa ‘lmat’ bili. Mga kapilian naglakip sa: ‘TL = total gitas-on, SL = standard gitas-on, WD = gilapdon, CL = carapace gitas-on, CW = carapace gilapdon, ML = mantle gitas-on, ShL = kabhang gitas-on’.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>lmat_ref</td>
+<td>Reference sa’ lmat ’ bili. Mga opsyon naglakip sa: ‘Fishbase, SeaLifebase, Journal article’.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>final_type</td>
+<td>Pagsukod gitas-on type alang sa ‘final_lmax’ bili. Mga kapilian naglakip sa: ‘TL = total gitas-on, SL = standard gitas-on, WD = gilapdon, CL = carapace gitas-on, CW = carapace gilapdon, ML = mantle gitas-on, ShL = kabhang gitas-on’.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>final_lmax</td>
+<td>Katapusan nga maximum gitas-on (cm) matag matang nga gigamit sa kalkulasyon, bisan gikan sa ‘lmax’ kolum o sa ‘lmax_tl’ kolum base sa gitinguha nga gitas-on type.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>calc_loo</td>
+<td>Kalkulado’ loa ‘bili sa paggamit sa’ final_lmax ’bili sa pormula” = ( 10^(0.044 + 0.9841 *LOG10(final_lmax)))”</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>calc_lmat</td>
+<td>Ang gitas-on sa pagkahamtong gibanabana sa paggamit sa kalkulado bili gikan sa’ calc_looo ’kolum, sa paggamit sa pormula”=(10^(0.8979 * LOG10(calc_looo) - 0.0782))”</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>final_lmat</td>
+<td>Katapusan nga gitas-on sa pagkahamtong (cm) bili base sa kalkulasyon sa ‘calc_lmat’ kolum rounded ngadto sa labing duol nga ikapulo.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>calc_limit_min</td>
+<td>Kalkulasyon alang sa pagtino sa minimum nga gitas-on utlanan, auto-kalkulado Sa Smartsheet sa paggamit sa pormula “=[final_lmat]<span class="citation" data-cites="row">@row</span> * 0.5”</td>
+<td>auto</td>
+</tr>
+<tr class="even">
+<td>length_limit_max</td>
+<td>Maximum nga limitasyon sa gitas-on (cm) gigamit alang sa mga pasidaan sa kantidad base sa’ final_lmax ’ nga kantidad, auto-kalkulado sa Smartsheet gamit ang pormula nga “=[final_lmax]<span class="citation" data-cites="row">@row</span>”</td>
+<td>auto</td>
+</tr>
+<tr class="odd">
+<td>length_limit_min</td>
+<td>Minimum nga limitasyon sa gitas-on (cm) gigamit alang sa mga pasidaan sa kantidad base sa’ calc_limit_min ’nga kantidad, auto-kalkulado sa Smartsheet gamit ang pormula nga”=[calc_limit_min]<span class="citation" data-cites="row">@row</span>”</td>
+<td>auto</td>
+</tr>
+<tr class="even">
+<td>weight_limit_max</td>
+<td>Maximum nga limitasyon sa timbang (kg) gigamit alang sa mga pasidaan sa kantidad base sa ‘length_limit_max’, ‘a’, ug ‘b’ nga mga kantidad, awtomatiko nga gikalkulo sa Smartsheet gamit ang pormula “=([[length_limit_max]<span class="citation" data-cites="row">@row</span> b@row) / 1000”</td>
+<td>auto</td>
+</tr>
+<tr class="odd">
+<td>weight_limit_min</td>
+<td>Minimum nga limitasyon sa timbang (kg) gigamit alang sa mga pasidaan sa kantidad base sa ‘length_limit_min’, ‘a’, ug ‘b’ nga mga kantidad, awtomatikong gikalkulo sa Smartsheet gamit ang pormula “=([[length_limit_min]<span class="citation" data-cites="row">@row</span><span class="citation" data-cites="row">@row</span>) / 1000”</td>
+<td>auto</td>
+</tr>
+<tr class="even">
+<td>avg_weight</td>
+<td>Average nga gibug-aton (kg), auto-kalkulado Sa Smartsheet sa paggamit Sa pormula “=([weight_limit_max]<span class="citation" data-cites="row">@row</span> + [weight_limit_min]<span class="citation" data-cites="row">@row</span>) / 2”</td>
+<td>auto</td>
+</tr>
+<tr class="odd">
+<td>avg_weight_refs</td>
+<td>Pakisayran o pormula alang sa’ avg_weight ’ bili</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>habitat_deepwater</td>
+<td>TINUOD/KARON (1) o BAKAK/WALA (0), gikuha gikan sa kolum nga ‘Oceanic’ sa ekolohiya sa fishbase ’tbl.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>habitat_reef</td>
+<td>TINUOD/KARON (1) o BAKAK/WALA (0), gikuha gikan sa kolum nga ‘CoralReefs’ sa ekolohiya sa fishbase ’tbl.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>habitat_mangrove</td>
+<td>TINUOD/KARON (1) o BAKAK/WALA (0), gikuha gikan sa kolum sa ‘Mangroves’ sa ekolohiya sa fishbase ’tbl.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>habitat_seagrass</td>
+<td>TINUOD/KARON (1) o BAKAK/WALA (0), gikuha gikan sa kolum nga ‘SeaGrassBeds’ sa ekolohiya sa fishbase ’tbl.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>habitat_mud</td>
+<td>TINUOD/KARON (1) o BAKAK/WALA (0), gikuha gikan sa kolum nga ‘Lapok’ sa ekolohiya sa fishbase ’tbl.</td>
+<td>BV</td>
+</tr>
+<tr class="odd">
+<td>habitat_sand</td>
+<td>TINUOD/KARON (1) o BAKAK/WALA (0), gikuha gikan sa kolum nga ‘Balas’ sa ekolohiya sa fishbase ’tbl.</td>
+<td>BV</td>
+</tr>
+<tr class="even">
+<td>habitat_estuary</td>
+<td>TINUOD/KARON (1) o BAKAK/WALA (0), gikuha gikan sa kolum nga ‘Estuaries’ sa ekolohiya sa fishbase ’tbl.</td>
+<td>BV</td>
+</tr>
+</tbody>
+</table>
+<p>Kanunay Nga Gipangutana Nga Mga Pangutana:</p>
+<ol type="1">
+<li>Unsa ka dugay ang pag-download sa usa ka bag-ong admin 1, unsa ka dugay kini moabut sa wala pa kini makita sa dropdown alang sa admin 2?</li>
+</ol>
+<ul>
+<li>Gikinahanglan ang 15 minuto sa wala pa magamit ang mga bag-ong entry sa mga dinamikong dropdown. Nalakip kini sa administr2 dropdown sa admin3_ref, ang species_group dropdown sa gear_ref, ang administr3 dropdown sa buyer_ref, fisher_ref, data_collector, ug uban pa. Tan-awa Ang Figure 5 alang sa bug-os nga lista sa mga dinamikong dropdown ug ang ilang agianan sa trabaho pinaagi sa mga file sa pakisayran.</li>
+</ul>
+<ol start="2" type="1">
+<li>Sa higayon nga ako makadugang o update sa usa ka pakisayran file, unsa ka dugay kini kuhaon sa atubangan sa mga updates makita diha sa Kobo survey?</li>
+</ol>
+<ul>
+<li>Kinahanglan nimo nga makita ang usa ka gi-update nga kobo form sa gibana-bana nga 12-24 ka oras.</li>
+</ul>
+<ol start="3" type="1">
+<li>Giunsa ang pagrekord sa mga ngalan sa mga pumapalit, mangingisda ug mga tigkolekta sa datos?</li>
+</ol>
+<ul>
+<li>Sa minithi, mga ngalan kinahanglan nga ingon sa talagsaon nga kutob sa mahimo ngadto sa mga indibidwal ug naglakip sa ilang unang ngalan, katapusan nga ngalan ug angga. Kung ang usa ka tawo dili gusto nga ipaambit ang ilang tibuuk nga ngalan mahimo usab nimo gamiton ang una o una nga letra sa ilang katapusan nga ngalan.</li>
+</ul>
+<p>Dinamikong dropdown nga koneksyon tali sa mga file sa pakisayran.</p>
+<p><img src="images/fig5.jpg" class="img-fluid" width="844"></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/barefoot-ocean\.github\.io\/Partner-Manual\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../../pages/landings_profiling/landings_profiling_ceb.html" class="pagination-link" aria-label="Landings Profiling">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Landings Profiling</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../pages/data_validation/data_validation_ceb.html" class="pagination-link" aria-label="Pagpamatuod sa Data">
+        <span class="nav-page-text">Pagpamatuod sa Data</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© CC-By Blue Ventures, 2025</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

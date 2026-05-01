@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Guia completo – Community Fisheries Data System Manual</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../pages/kobo_setup/kobo_setup_pt.html" rel="next">
+<link href="../../pages/quick_guide/quick_guide_pt.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_pt.html">Português</a></li><li class="breadcrumb-item"><a href="../../pages/full_guide/full_guide_pt.html">Guia completo</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/bv_logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/bv_logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://blueventures.org/" title="Blue Ventures Website" class="quarto-navigation-tool px-1" aria-label="Blue Ventures Website"><i class="bi bi-globe"></i></a>
+    <a href="https://youtube.com/playlist?list=PLwUVTxKktakVz45STRgXwoNwiUFIOQOaZ&amp;feature=shared" title="Youtube Training Videos" class="quarto-navigation-tool px-1" aria-label="Youtube Training Videos"><i class="bi bi-youtube"></i></a>
+    <a href="https://app.smartsheet.com/" title="Smartsheet" class="quarto-navigation-tool px-1" aria-label="Smartsheet"><i class="bi bi-check-circle-fill"></i></a>
+    <a href="https://blueventures.shinyapps.io/fisheries-dashboard/" title="Fisheries Data Dashboard" class="quarto-navigation-tool px-1" aria-label="Fisheries Data Dashboard"><i class="bi bi-bar-chart-fill"></i></a>
+    <a href="https://blueventures.shinyapps.io/social-economic-dashboard/" title="Social and Economic Dashboard" class="quarto-navigation-tool px-1" aria-label="Social and Economic Dashboard"><i class="bi bi-house-fill"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">English</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_collection/data_collection_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/management_ref/management_ref_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Management Ref</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fisheries Dashboard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/household_survey/household_survey_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Household Survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/socioeco_dashboard/socioeco_dashboard_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Socioeconomic Dashboard</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bahasa Indonesia</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panduan Cepat</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panduan Lengkap</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengaturan Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_collection/data_collection_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengumpulan Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">File Referensi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validasi data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dasbor Perikanan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cebuano</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dali nga Giya</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bug-os nga Giya</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pag-setup sa Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mga Reperensya nga File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pagpamatuod sa Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard sa Pangisda</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tagalog</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mabilis na Gabay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Buong Gabay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pag-setup ng Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mga Reference File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pagpapatunay ng Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard ng Pangisdaan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Malagasy</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Torolalana haingana</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Torolalana feno</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fanamarinana angona</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard momba ny jono</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Français</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide rapide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide complet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuration Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fichiers de référence</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">La validation des données</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard des pêches</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Español</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guía rápida</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guía completa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuración de Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Archivos de referencia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validación de datos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panel de pesca</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Português</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guia rápido</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_pt.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Guia completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuração do Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Arquivos de referência</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data de validade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Painel de Pesca</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kiswahili</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mwongozo wa Haraka</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mwongozo Kamili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mpangilio wa Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Faili za Marejeleo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Uthibitishaji wa Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashibodi ya Uvuvi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tetun</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fisheries Dashboard</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species Guides</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_BLZ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Belize</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_CV.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cabo Verde</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_GMB.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Gambia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_MDG_MHJ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Madagascar - MHJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_SEN.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Senegal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_pt.html">Português</a></li><li class="breadcrumb-item"><a href="../../pages/full_guide/full_guide_pt.html">Guia completo</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Guia completo</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-right">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="orientações-relativas-à-recolha-de-dados-sobre-as-pescas" class="level1">
+<h1>Orientações Relativas À Recolha De Dados Sobre As Pescas</h1>
+<section id="um-guia-para-a-gestão-de-inquéritos-para-obtenção-de-dados-sobre-as-pescas" class="level2">
+<h2 class="anchored" data-anchor-id="um-guia-para-a-gestão-de-inquéritos-para-obtenção-de-dados-sobre-as-pescas">Um guia para a gestão de inquéritos para obtenção de dados sobre as pescas</h2>
+<section id="introdução" class="level3">
+<h3 class="anchored" data-anchor-id="introdução">Introdução</h3>
+<p>Este documento fornece orientações e recomendações para a gestão de três instrumentos de inquérito destinados a captar informações sobre as comunidades piscatórias e as pescarias em que dependem (Figura 1). Os inquéritos foram concebidos para alinhar o conteúdo com a forma como os dados serão utilizados e a frequência esperada de mudança. O inquérito de mais alto nível, A definição de perfis comunitários, contém questões que contribuem para uma melhor compreensão da actividade pesqueira na comunidade e das condições socioeconómicas. A compreensão do panorama socioeconómico é especialmente importante quando o trabalho começa pela primeira vez numa comunidade. As informações recolhidas durante este inquérito são essenciais para conceber estratégias de envolvimento da comunidade e planos de amostragem de dados. Os inquéritos de definição de perfis e de acompanhamento dos desembarques recolhem dados sobre as capturas desembarcadas pelas pescarias. Os dados de perfil dos desembarques são recolhidos com menos frequência e captam informações sobre o habitat de pesca, o tipo de arte, o esforço e a duração de cada peixe. O inquérito de acompanhamento dos desembarques, idealmente realizado diariamente, é um inquérito rápido às pescas que recolhe a quantidade mínima de informações necessárias para acompanhar as variações do volume e do valor das capturas, tais como as espécies, o peso, a contagem e o preço.</p>
+<p><img src="images/Fig1_pt.png" class="img-fluid"></p>
+<p>Figura 1: Calendário para a administração dos três diferentes instrumentos de inquérito numa escala de um ano.</p>
+</section>
+<section id="detalhes-do-inquérito" class="level3">
+<h3 class="anchored" data-anchor-id="detalhes-do-inquérito">Detalhes Do Inquérito</h3>
+<section id="inquérito-comunitário-sobre-a-definição-de-perfis" class="level4">
+<h4 class="anchored" data-anchor-id="inquérito-comunitário-sobre-a-definição-de-perfis"><strong>Inquérito Comunitário Sobre A Definição De Perfis</strong></h4>
+<p><strong><em>Objectivo</em></strong></p>
+<p>Compreender o panorama geral da comunidade e as pescas que operam na comunidade.</p>
+<p><strong><em>Dados Recolhidos</em></strong></p>
+<ul>
+<li><p>Número de membros da comunidade, pescadores, comerciantes de peixe, mulheres</p></li>
+<li><p>Paisagem geral das pescarias que operam na comunidade</p></li>
+<li><p>Artes utilizadas; espécies visadas; habitat pescado; estações do ano; Navios</p></li>
+<li><p>Informações sobre o esforço e os custos de pesca</p></li>
+<li><p>Percepções sobre as condições da pesca e do habitat, ameaças</p></li>
+<li><p>Informação sobre a actual gestão/regulamentação das pescas</p></li>
+<li><p>Identificação (através de cartografia) de importantes zonas de pesca, habitats e locais de desembarque</p></li>
+</ul>
+<p><strong><em>Público-Alvo</em></strong></p>
+<p>10-20 informantes-chave na comunidade, nomeadamente líderes comunitários, pescadores respeitados, comerciantes de peixe e mulheres.</p>
+<p><strong><em>Frequência e temporização</em></strong></p>
+<p>Quando se inicia o trabalho numa nova comunidade de pescadores, a realização do inquérito comunitário sobre a definição de perfis e do exercício inicial de definição de perfis fornece dados de base e informações relevantes para conceber os esforços de conservação e de gestão mais adequados para a comunidade. A repetição do inquérito comunitário sobre a definição de perfis pode ajudar a documentar alterações significativas ocorridas ao longo do tempo.</p>
+<p><strong><em>Metodologia</em></strong></p>
+<p>As informações podem ser recolhidas através de inquéritos de terceiros (ou seja, recenseamento, registos do Departamento de pesca, etc.), grupos focais constituídos por 10-20 membros-chave da comunidade ou informantes-chave. Os líderes comunitários, bem como uma variedade de pescadores e comerciantes de peixe conhecedores e diversificados (incluindo mulheres e jovens) seriam os participantes ideais para incluir no grupo focal. Para facilitar os grupos focais, recomenda-se ter, no mínimo, um facilitador e um anotador. No grupo focal, recomenda-se igualmente que os participantes forneçam uma lista de informações de contacto para os pescadores da comunidade que possam ser contactados para administrar os inquéritos domiciliários. Se não for possível realizar o inquérito comunitário sobre a definição de perfis num formato de grupo focal, uma alternativa é administrar as mesmas perguntas que os inquéritos individuais com informantes-chave e agrupar as respostas. As perguntas incluídas no inquérito comunitário sobre a definição de perfis e as recomendações para a realização de discussões em grupos focais podem ser consultadas no Apêndice A que se segue.</p>
+</section>
+<section id="inquérito-de-acompanhamento-dos-desembarques" class="level4">
+<h4 class="anchored" data-anchor-id="inquérito-de-acompanhamento-dos-desembarques"><strong>Inquérito De Acompanhamento Dos Desembarques</strong></h4>
+<p><strong><em>Objectivo</em></strong></p>
+<p>Capturar os principais dados necessários para calcular indicadores simples de saúde da pesca baseados na duração e para acompanhar as alterações na produção, valor e composição da pesca.</p>
+<p><strong><em>Dados Recolhidos</em></strong></p>
+<ul>
+<li><p>Data de desembarque</p></li>
+<li><p>Local de aterragem</p></li>
+<li><p>Designação do comerciante de peixe</p></li>
+<li><p>Nome do Pescador</p></li>
+<li><p>Esforço de pesca (dias de pesca / recolha)</p></li>
+<li><p>Identidade das espécies (nomes locais, comuns, científicos)</p></li>
+<li><p>Contagem Total</p></li>
+<li><p>Peso Total</p></li>
+<li><p>Preço Total</p></li>
+<li><p>Motivo total das capturas não vendidas, se aplicável</p></li>
+</ul>
+<p><strong><em>Público-Alvo</em></strong></p>
+<p>Pescadores à medida que desembarcam as suas capturas ou numa casa/mercado de compradores de peixe.</p>
+<p><strong><em>Frequência e temporização</em></strong></p>
+<p>O Inquérito de monitorização dos desembarques deve ser realizado diariamente ou com a maior frequência possível. Realizar inquéritos de acompanhamento dos desembarques antes e depois da execução, a fim de avaliar os efeitos dos encerramentos das pescas ou de outras estratégias de gestão. Recomendamos a recolha de Dados 30 dias antes e após os períodos de encerramento temporário. Para os primeiros sete dias dos períodos de amostragem, recomendamos que os enumeradores realizem diariamente inquéritos de monitorização dos desembarques. Se possível, continue a monitorização diária durante todo o período de 30 dias. Se isso não for possível, examine pelo menos 80% dos dias em cada 30 dias. Recomenda-se igualmente que se efectue um levantamento de 80% ou mais de todos os pescadores que desembarcam nas capturas num determinado dia antes ou depois do encerramento. Distribuir esforços representativos de inquérito entre pescadores de barco e não pescadores de barco. Recolher dados de todos os pescadores que desembarcam na aldeia, independentemente de estarem ou não a pescar no local de encerramento.</p>
+<p>No caso de encerramentos a mais longo prazo, assegurar que os dados são recolhidos durante o mesmo mês para cada ano, a fim de captar as alterações ao longo do período de encerramento. Se isso não for viável, recomendamos a recolha de dados durante o mesmo mês antes e depois do encerramento. Tal como acima referido, recomendamos que efectue um levantamento de pelo menos 80% do dia durante o mês e 80% dos pescadores que desembarcam em cada dia.</p>
+<p><strong><em>Metodologia</em></strong></p>
+<p>Através do formulário Kobo, encontre-se com os pescadores nos locais de desembarque/casas de compradores para registar as suas capturas.</p>
+</section>
+<section id="levantamento-de-perfis-de-desembarques" class="level4">
+<h4 class="anchored" data-anchor-id="levantamento-de-perfis-de-desembarques"><strong>Levantamento De Perfis De Desembarques</strong></h4>
+<p><strong><em>Objectivo</em></strong></p>
+<p>Compreender as tendências de captura observadas.</p>
+<p><strong><em>Dados Recolhidos</em></strong></p>
+<ul>
+<li><p>Data de desembarque</p></li>
+<li><p>Local de aterragem</p></li>
+<li><p>Campo de pesca primário</p></li>
+<li><p>Designação do comerciante de peixe</p></li>
+<li><p>Nome do Pescador</p></li>
+<li><p>Esforço de pesca (horas e dias de pesca / recolha)</p></li>
+<li><p>Tipo de navio (número de matrícula do barco, número de tripulação)</p></li>
+<li><p>Identidade das espécies (nomes locais, comuns, científicos)</p></li>
+<li><p>Artes utilizadas</p></li>
+<li><p>Habitat pescado</p></li>
+<li><p>Contagem Total</p></li>
+<li><p>Peso Total</p></li>
+<li><p>Preço Total</p></li>
+<li><p>Motivo total das capturas não vendidas, se aplicável</p></li>
+<li><p>Amostras de pesos e comprimentos individuais (figuras 2-8)</p></li>
+<li><p>Dados amostrais específicos dos parceiros (Sexo, qualidade das capturas, gónadas, estilete, # armadilhas, etc.)</p></li>
+</ul>
+<p><strong><em>Público-Alvo</em></strong></p>
+<p>Uma amostra representativa das capturas na comunidade. Registar pelo menos 50 amostras (idealmente 100) para cada espécie-alvo, representando vários tipos de artes e perfis de pescadores.</p>
+<p><strong><em>Frequência e temporização</em></strong></p>
+<p>Este inquérito deve ser realizado inicialmente no início do envolvimento numa comunidade e subsequentemente realizado de um a dois anos, antes e depois da implementação da estratégia de gestão, ou conforme necessário para explicar os declínios observados através de dados de monitorização. Através do formulário Kobo, reunir-se com os pescadores nos locais de desembarque para amostrar as suas capturas e registar a sua actividade de pesca.</p>
+<p><strong><em>Metodologia</em></strong></p>
+<p>Através do formulário Kobo, reunir-se com os pescadores nos locais de desembarque para amostrar as suas capturas e registar a sua actividade de pesca.</p>
+</section>
+<section id="normalização-da-medição-tipo-de-comprimento-a-medir-por-grupo-de-espécies" class="level4">
+<h4 class="anchored" data-anchor-id="normalização-da-medição-tipo-de-comprimento-a-medir-por-grupo-de-espécies"><strong>Normalização da medição: Tipo de comprimento a medir por grupo de espécies</strong></h4>
+<p><img src="images/Fig2_pt.png" class="img-fluid"></p>
+<p>Figura 2: o comprimento Total deve ser utilizado para medir peixes-barbatanas, tubarões e enguias (AFS).</p>
+<p><img src="images/Fig3_pt.png" class="img-fluid"></p>
+<p>Figura 3: a largura do disco deve ser utilizada para medir arraias e raias.</p>
+<p><img src="images/Fig4_pt.png" class="img-fluid"></p>
+<p>Figura 4: a largura da carapaça deve ser utilizada na medição do Caranguejo (Suryandari et. al, 2018).</p>
+<p><img src="images/Fig5_pt.png" class="img-fluid"></p>
+<p>Figura 5: o comprimento do manto deve ser utilizado na medição de polvos e lulas (FAO).</p>
+<p><img src="images/Fig6_pt.png" class="img-fluid"></p>
+<p>Figura 6: O comprimento da carapaça deve ser utilizado na medição do camarão e da lagosta (Hart et al.&nbsp;2001).</p>
+<p><img src="images/Fig7_pt.png" class="img-fluid"></p>
+<p>Figura 7: o comprimento deve ser utilizado na medição dos bivalves e gastrópodes.</p>
+<p><img src="images/Fig8_pt.png" class="img-fluid"></p>
+<p>Figura 8: o comprimento Total deve ser utilizado na medição dos pepinos-do-mar. A largura ou o diâmetro de ensaio devem ser utilizados na medição dos ouriços-do-mar.</p>
+</section>
+</section>
+<section id="visão-geral-do-fluxo-de-dados" class="level3">
+<h3 class="anchored" data-anchor-id="visão-geral-do-fluxo-de-dados">Visão Geral Do Fluxo De Dados</h3>
+<p>A recolha, validação, transformação e visualização de dados são os quatro principais componentes do data system. As principais aplicações de software utilizadas são KoboToolBox, Smartsheet, PostgreSQL e R.</p>
+<p>KoboToolBox é um software livre e de código aberto que é um poderoso kit de ferramentas para coleta de dados acessível através de ambientes desafiadores e múltiplas plataformas, como dispositivos móveis, computadores e papel. Os enumeradores recolhem dados sobre as condições socioeconómicas e ecológicas essenciais para avaliar as comunidades e o estatuto das pescas através dos questionários KoboToolBox survey. O Smartsheet é uma plataforma colaborativa de gestão do trabalho que fornece uma interface flexível e intuitiva para as organizações planearem, acompanharem, automatizarem e gerirem vários projetos e processos em tempo real. Os ficheiros de referência utilizados para preencher formulários de inquérito e ligar dados adicionais aos conjuntos de dados principais são geridos no Smartsheet. Além disso, os dados são validados no Smartsheet. O PostgreSQL é um sistema de gerenciamento de banco de dados gratuito e de código aberto usado como um data warehouse para inúmeras aplicações web, analíticas e geoespaciais, armazenando dados não estruturados e estruturados em um único produto. R é um ambiente de software livre e de código aberto e linguagem de programação amplamente utilizada para ciência de dados, computação estatística e visualização de dados. Os painéis de dados são construídos usando o pacote Shiny da linguagem de Programação R e hospedados em shinyapps.io, uma plataforma como serviço (PaaS) para hospedar aplicativos da Web brilhantes (aplicativos).</p>
+<p><img src="images/Fig9_pt.png" class="img-fluid"></p>
+<p>Figura 9: Diagrama de fluxo de dados.</p>
+<p>A recolha de dados envolve a recolha e medição sistemática de informações de fontes relevantes sobre variáveis de interesse para a tomada de decisões, planeamento estratégico, avaliações de resultados e outros fins. Ao incorporar dados quantitativos e qualitativos nos questionários do inquérito, desenvolvemos uma compreensão mais aprofundada das condições socioeconómicas e ecológicas pertinentes para as comunidades pesqueiras e estratégias de gestão adaptativa. A validação de dados refere-se à aplicação de métodos para medir as condições dos dados recolhidos e determinar se os dados recolhidos satisfazem os critérios de qualidade definidos, tais como precisão, consistência, relevância, completude e exclusividade. A transformação de dados converte, limpa e estrutura dados brutos em um formato utilizável que pode ser analisado e avaliado para a tomada de decisões. A análise e visualização de dados envolve a concepção e criação de gráficos acessíveis ou exibições visuais de informações para comunicar eficazmente os dados qualitativos e quantitativos complexos previamente recolhidos, verificados e transformados entre os públicos-alvo. Descrevemos o processo de fluxo de dados abaixo:</p>
+<ol type="1">
+<li><p>Os dados são recolhidos através de formulários de inquérito KoboToolBox.</p></li>
+<li><p>Os dados são extraídos para a base de dados.</p></li>
+<li><p>Se o enumerador selecionou opções de resposta pré-preenchidas em inquéritos, os dados não precisam de ser validados e podem passar diretamente para o processo de análise e visualização dos dados.</p></li>
+<li><p>Se o enumerador inserir dados manualmente, como um novo pescador, comprador, coletor de dados, local de pouso ou espécie, os dados serão verificados no Smartsheet antes de serem incluídos na tabela de dados final e visualizados no painel. Os líderes das equipas de campo são notificados por e-mail quando os dados estão prontos para validação. Os líderes de equipa verificarão manualmente as tabelas de controlo de qualidade para confirmar que as informações recentemente adicionadas são válidas.</p></li>
+<li><p>Após a validação, novos dados são enviados para os arquivos de referência e de volta ao banco de dados para transformação final antes da análise e visualização.</p></li>
+<li><p>Assim que os dados forem enviados para os ficheiros de referência, os responsáveis da equipa serão notificados por e-mail se forem necessárias informações adicionais nos ficheiros de referência.</p></li>
+<li><p>Os ficheiros de referência actualizados são então carregados na plataforma KoboToolBox para inclusão nos formulários.</p></li>
+<li><p>Os dados actualizados dos ficheiros de referência são também utilizados no processo de transformação de dados para juntar campos de dados adicionais, como coordenadas e género.</p></li>
+<li><p>As etapas finais do processo de transformação de dados resultam em tabelas de dados mestre que são usadas para análise e visualização de dados nos painéis de dados.</p></li>
+<li><p>Os painéis de dados (ou seja, aplicações brilhantes) ligam-se directamente à base de dados, obtendo os dados mais actualizados disponíveis, proporcionando assim aos parceiros um acesso quase imediato a dados brutos e resumidos.</p></li>
+</ol>
+<section id="segurança-dos-dados" class="level4">
+<h4 class="anchored" data-anchor-id="segurança-dos-dados"><strong>Segurança Dos Dados</strong></h4>
+<p>Segue-se uma lista de plataformas de software em que os dados podem ser armazenados e movidos em trânsito a partir da base de dados. As informações sobre a segurança dos dados de cada plataforma externa estão disponíveis no sítio Web específico da plataforma ligado aqui.</p>
+<ol type="1">
+<li><p><a href="https://support.kobotoolbox.org/is_my_data_safe.html?highlight=security">Kobo software</a></p></li>
+<li><p><a href="https://www.postgresql.org/support/security/">PostgreSQL</a></p></li>
+<li><p><a href="https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/security-of-the-aws-infrastructure.html">Amazon Web Services</a></p></li>
+<li><p><a href="https://support.google.com/drive/answer/10375054?hl=en">Google drive</a></p></li>
+<li><p><a href="https://www.smartsheet.com/trust/security">Smartsheet</a></p></li>
+<li><p><a href="https://docs.posit.co/shinyapps.io/security-and-compliance.html">Shinyapps.io</a></p></li>
+<li><p><a href="https://github.com/security">Github</a></p></li>
+</ol>
+<p>Foram implementados procedimentos suplementares de segurança, para além das medidas de segurança de dados disponibilizadas pelas plataformas de software acima referidas. Todas as contas em todas as plataformas de software utilizadas estão protegidas por palavra-passe.</p>
+<p>Usamos o Github como nosso sistema de controle de versão para produtos codificados. Por defeito, todos os dossiers e projectos com dados de pesca e socioeconómicos são privados e apenas acessíveis ao pessoal e empreiteiros.</p>
+<p>A partir de quaisquer plataformas de dados partilhados (por exemplo, aplicações Shiny), a autenticação do utilizador é necessária para visualizar ou descarregar dados, dependendo do Acordo de partilha de dados escolhido por cada organização parceira. Isso inclui a verificação dos usuários antes de permitir que os dados sejam visualizados ou baixados, Os usuários que fazem login em plataformas de visualização de dados e o gerenciamento regular de usuários verificados.</p>
+<p>O acesso aos documentos do Smartsheet (por exemplo, ficheiros de referência, folhas de validação de dados) é restrito ao pessoal identificado por cada organização, e cada parceiro só pode visualizar as suas próprias informações específicas do parceiro. As excepções incluem a equipa que controla e presta assistência com fluxos de trabalho de qualidade de dados e a equipa da Blue Ventures que presta assistência aos parceiros com fluxos de trabalho de informação no Smartsheet.</p>
+</section>
+<section id="privacidade-dos-dados" class="level4">
+<h4 class="anchored" data-anchor-id="privacidade-dos-dados"><strong>Privacidade Dos Dados</strong></h4>
+<p>As informações pessoais identificáveis (PII) e os dados relativos às capturas de pesca são propriedade de pescadores e compradores de peixe e nunca serão partilhados sem o consentimento prévio. Para proteger a privacidade da fisher, dos compradores e dos coletores de dados, todos os nomes são anonimizados em números de identificação aleatórios. Por conseguinte, todos os dados parcial ou totalmente disponíveis ao público incluirão apenas os números de identificação numéricos aleatórios. Consulte a secção sobre partilha de dados para obter uma explicação completa dos acordos de partilha de dados.</p>
+<p>Os dados considerados PII incluem:</p>
+<ul>
+<li><p>Nomes dos Pescadores, compradores e colectores de dados</p></li>
+<li><p>Nomes dos inquiridos para quaisquer inquéritos</p></li>
+</ul>
+</section>
+<section id="partilha-de-dados" class="level4">
+<h4 class="anchored" data-anchor-id="partilha-de-dados"><strong>Partilha De Dados</strong></h4>
+<p>O fisheries data system foi concebido para simplificar a utilização dos seus dados e fornecer uma plataforma para o seu envolvimento ativo em esforços mais amplos de gestão e conservação das pescas. Os dados agregados recolhidos de forma colaborativa entre os parceiros podem fornecer informações poderosas para monitorizar a pesca, avaliar estratégias de gestão, orientar a tomada de decisões a nível local e nacional, compreender as mudanças regionais e identificar potenciais serviços financeiros.</p>
+<p>Reconhecemos a importância crítica da propriedade e utilização dos dados para todos os parceiros contribuintes. O nosso objectivo é proporcionar-lhe flexibilidade na gestão e determinação da forma como os seus dados são utilizados. Ao selecionar um dos três níveis de permissão de uso de dados, você pode regular até que ponto seus dados são compartilhados com outros usuários. Você pode adaptar os níveis de permissão com base nos tipos de dados e, mais importante, você tem a liberdade de ajustar seu nível de permissão de dados a qualquer momento. As informações pessoais identificáveis (PII) e os dados relativos às capturas de pesca são propriedade de pescadores e compradores de peixe e nunca serão partilhados sem o consentimento prévio. Ao escolher um nível de autorização de utilização de dados, confirma que foram obtidas autorizações individuais tanto de pescadores como de compradores de peixe.</p>
+<p>Todos os dados estão actualmente definidos para o Nível 1 - Privado. Os usuários terão a oportunidade de ajustar seus níveis de permissão conforme necessário.</p>
+<p><strong>Nível 1-Privado</strong></p>
+<ul>
+<li><p>Os dados são estritamente para fins internos do Contribuinte de dados original.</p></li>
+<li><p>Os dados estarão disponíveis para download pelo contribuinte de dados original.</p></li>
+<li><p>Os dados não serão incluídos nas análises regionais fornecidas no painel.</p></li>
+<li><p>A partilha ou distribuição não autorizada dos dados a terceiros é estritamente proibida.</p></li>
+</ul>
+<p><strong>Nível 2-Partilha com outros contribuintes de dados</strong></p>
+<ul>
+<li><p>Os dados de nível de viagem estão disponíveis para download por outros contribuintes de dados.</p></li>
+<li><p>Resumos e visualizações de dados estarão disponíveis para outros contribuidores de dados.</p></li>
+<li><p>Os dados serão incluídos nas análises regionais no painel.</p></li>
+</ul>
+<p><strong>Nível 3-partilhar com todos os utilizadores</strong></p>
+<ul>
+<li><p>Os dados de nível de viagem estão disponíveis para download por todos os utilizadores.</p></li>
+<li><p>Resumos e visualizações de dados estarão disponíveis para todos os utilizadores.</p></li>
+<li><p>Os dados serão incluídos nas análises regionais no painel.</p></li>
+<li><p>O contribuinte dos dados originais pode especificar quaisquer limitações ou condições de Utilização aplicáveis a todos os utilizadores.</p></li>
+</ul>
+</section>
+<section id="validação-de-dados-novos-e-sinalizados" class="level4">
+<h4 class="anchored" data-anchor-id="validação-de-dados-novos-e-sinalizados"><strong>Validação de dados novos e sinalizados</strong></h4>
+<p>Nas pesquisas, algumas perguntas permitem que os enumeradores adicionem um novo pescador, comprador, coletor de dados, local de pouso, espécie ou “outro.”As informações dessas opções são novos pontos de dados e devem passar por verificação antes de serem enviadas para o conjunto de dados final, visualizadas no painel e adicionadas aos arquivos de referência. Existem também restrições relativas ao peso, preço e comprimento de uma espécie e, se os dados recolhidos forem inferiores ou superiores a essas restrições, esses valores são sinalizados para revisão. As restrições relativas ao peso e ao preço são definidas pelos parceiros no min_max_ref. As restrições de comprimento das espécies são definidas pela equipa utilizando parâmetros biológicos.</p>
+<p>Todos os dados que fluem através do sistema de dados das pescas são validados no Smartsheet. Qualquer uma dessas entradas novas ou sinalizadas é enviada para a tabela de validação no Smartsheet para que as equipes de campo validem. As tabelas de controlo de qualidade são específicas do parceiro e podem ser acedidas através de pedidos de atualização enviados para o seu e-mail ou visitando as ligações de visualização dinâmica que lhe são fornecidas. Os líderes da equipa de campo serão notificados por e-mail quando os dados precisarem de ser validados nas tabelas. Uma vez verificados os dados nas tabelas de validação, acrescentaremos novas informações ao ficheiro de referência e forneceremos as correcções necessárias ao conjunto de dados principal.</p>
+<p>Instruções passo a passo específicas sobre como concluir a validação de dados no Smartsheet podem ser encontradas na página validação de dados.</p>
+</section>
+</section>
+<section id="recolha-de-dados" class="level3">
+<h3 class="anchored" data-anchor-id="recolha-de-dados">Recolha De Dados</h3>
+<p>A Blue Ventures administra todos os inquéritos através de formulários Kobo Toolbox partilháveis através de uma conta Kobo Toolbox. Pode configurar uma conta em https://kf.kobotoolbox.org/accounts/signup/. entre em contato com a equipe com seu nome de usuário e detalhes da conta. Uma vez partilhados os inquéritos, aceda aos formulários Kobo através da aplicação móvel KoboCollect free para Android ou através do formulário Web Enketo. Instruções detalhadas sobre a criação de uma conta Kobo, recolha de dados e apresentação de dados podem ser encontradas na página de configuração da Kobo. Use um código QR para configurar todos os dispositivos depois de configurar manualmente o primeiro telefone ou tablet para configurar vários telefones ou tablets em uma conta de coleta de dados. A configuração Manual do primeiro dispositivo requer o URL do servidor Kobo, o nome de utilizador e a palavra-passe. O URL do servidor Kobo é https://kc.kobotoolbox.org. mais informações sobre como configurar a recolha de dados com a Kobo, incluindo como configurar vários dispositivos de recolha de dados através de um código QR, podem ser encontradas em https://support.kobotoolbox.org/.</p>
+<p>Depois de ter descarregado o KoboCollect, abra a aplicação e introduza o URL do servidor, o nome de utilizador e a palavra-passe para ligar a aplicação KoboCollect ao servidor KoboToolbox. A ligação da aplicação KoboCollect ao servidor KoboToolbox permite-lhe transferir formulários implantados da KoboToolbox para o seu dispositivo móvel e enviar os dados recolhidos através da aplicação de volta para o servidor. Na tela inicial, selecione ” Obter Formulário em branco.”Uma lista de todos os seus formulários de pesquisa implantados deve aparecer. Pressione “Selecionar tudo” para que todos os formulários de pesquisa sejam enviados para o aplicativo ou selecione os que deseja, selecionando-os manualmente. Em seguida, clique em ” obter selecionado.”Para implementar o inquérito, selecione” Preencher formulário em branco.”</p>
+<p>Embora o formulário Web seja atualizado automaticamente quando uma nova versão do questionário estiver disponível, os usuários devem configurar a “atualização automática” no aplicativo. A atualização regular das pesquisas no aplicativo garante o uso da versão mais recente do formulário e não causa problemas no pipeline de dados. Você pode configurar a atualização automática no aplicativo acessando” Configurações “e” gerenciamento de formulários.”Mais informações sobre a atualização automática de inquéritos na aplicação podem ser encontradas na página de configuração da Kobo. É importante observar que é necessária uma conexão para que o aplicativo Obtenha a versão de pesquisa mais recente, mesmo com as configurações de atualização automática ativadas. Portanto, aconselhe os enumeradores a ter uma conexão com a internet antes de realizar o trabalho de campo para que o KoboCollect possa obter a versão mais recente.</p>
+<p>Após a recolha dos dados, os inquéritos enviados através do formulário web serão automaticamente enviados ao servidor assim que o coletor de dados clicar no botão “enviar”. Os dados recolhidos através da aplicação KoboCollect são primeiro guardados na aplicação num local de retenção e, em seguida, enviados para o servidor. As pesquisas concluídas permanecem em espera antes de serem enviadas ao servidor para que os coletores de dados possam fazer edições de pesquisa após a coleta de dados ou, se não houver conexão com a internet, o aplicativo pode salvar as pesquisas e, em seguida, enviar as pesquisas para o servidor assim que houver conectividade com a internet. Especificamente, quando a pesquisa estiver concluída, o usuário clicará em “Salvar formulário e sair”, garantindo que “marcar formulário como finalizado” também seja verificado. “Editar formulário salvo” armazena automaticamente o formulário salvo. O coletor de dados pode fazer as alterações necessárias e selecionar ” Salvar formulário e sair.”A tela inicial também possui um botão chamado “Enviar formulário finalizado.”Pressione Selecionar tudo (ou selecione os que deseja carregar) e, em seguida, pressione “Enviar selecionado.”Selecione” Visualizar formulário enviado ” para garantir o carregamento bem-sucedido dos formulários e agora você poderá visualizar todos os formulários enviados.</p>
+<p>Um sistema central de armazenamento de dados liga-se aos dados Kobo e as análises e visualizações automatizadas estarão disponíveis através de um painel normalizado. Os dados brutos são armazenados em cópia de segurança na Base de dados KoboToolbox e estarão disponíveis através de transferência ou ligação directa a outra base de dados ou armazém de dados.</p>
+</section>
+<section id="traduções" class="level3">
+<h3 class="anchored" data-anchor-id="traduções">Traduções</h3>
+<p>As traduções para todos os idiomas são concluídas editando as folhas de tradução no Smartsheet. Se você achar que uma tradução precisa ser atualizada ou está errada nas pesquisas, atualize diretamente a tradução correspondente na folha apropriada do Smartsheet. Caso a equipa necessite de novas traduções, os parceiros receberão uma notificação Smartsheet.</p>
+</section>
+<section id="ficheiros-de-referência" class="level3">
+<h3 class="anchored" data-anchor-id="ficheiros-de-referência">Ficheiros De Referência</h3>
+<p>Os ficheiros de referência são parceiros ou específicos de cada país e contêm informações completas sobre os níveis administrativos das comunidades piscatórias (País, Província, Distrito, Aldeia), locais de desembarque, pescadores, compradores, coletores de dados, dados de espécies, áreas de gestão, tipos de habitats, tipos de artes e organizações parceiras. Algumas informações preenchem as listas suspensas nos inquéritos e algumas são associadas ao conjunto de dados mestre após a recolha dos dados. Novas informações devem ser acrescentadas directamente às folhas de referência.</p>
+<p>Instruções passo a passo específicas sobre como atualizar arquivos de referência no Smartsheet podem ser encontradas na página Arquivos de referência.</p>
+</section>
+<section id="apêndice-a-guia-de-discussão-dos-grupos-focais" class="level3">
+<h3 class="anchored" data-anchor-id="apêndice-a-guia-de-discussão-dos-grupos-focais">Apêndice A: Guia De Discussão Dos Grupos Focais</h3>
+<p><strong>Considerações importantes antes da realização de perfis ou inquéritos sobre a pesca</strong></p>
+<p><strong>Relação e confiança</strong></p>
+<p>Construir relações e conquistar a confiança da Comunidade é um passo inicial Importante Antes de se perguntar sobre a informação sobre as pescas. O primeiro passo para construir relacionamentos e ganhar a confiança da Comunidade é apresentar a si mesmo, à sua organização e ao propósito de realizar perfis de pesca.</p>
+<p><strong>Preparação</strong></p>
+<p>A preparação é importante na realização de cada método de inquérito, uma vez que uma boa preparação lhe dará confiança na eficácia de cada método que aplicar.</p>
+<p><strong>Tempo de recolha de informações</strong></p>
+<p>Ajustar o tempo de condução de cada método ao tempo do potencial entrevistado ou do grupo comunitário visado.</p>
+<p><strong>Respondente</strong></p>
+<p>Compreender os potenciais inquiridos que irá encontrar durante a definição de perfis das pescas é crucial para a realização de inquéritos. Os grupos ou indivíduos que participarão no inquérito devem receber uma notificação prévia. Por conseguinte, a introdução de líderes comunitários influentes deve fazer parte do trabalho de pré-inquérito.</p>
+<p><strong>Logística</strong></p>
+<p>Cada método tem necessidades logísticas e materiais. Certificar-se de que foram preparados os recursos e o equipamento necessários para cada método de perfilamento das pescas.</p>
+<p><strong>Lista de contactos da pessoa-chave</strong></p>
+<p>Salve uma lista de contatos de pessoas-chave em seu telefone e também tenha uma versão impressa para backup.</p>
+<p><strong>Saúde e segurança</strong></p>
+<p>Certifique-se de que está em boas condições para realizar a definição de perfis de pesca. Traga um kit de Primeiros Socorros essencial.</p>
+<section id="orientação-para-discussão-em-grupos-focais" class="level4">
+<h4 class="anchored" data-anchor-id="orientação-para-discussão-em-grupos-focais">Orientação Para Discussão Em Grupos Focais</h4>
+<p>A seguir, contém orientações e recomendações sobre a realização de um grupo focal para capturar informações de perfil da comunidade. Recomenda-se a realização de uma sessão de grupo focal para incentivar o diálogo, captar uma diversidade de opiniões e começar a construir relações com membros importantes da comunidade. No entanto, no caso de um grupo focal não ser viável, o inquérito comunitário sobre a definição de perfis pode ser realizado como entrevistas individuais com partes interessadas importantes, utilizando o formulário Kobo “inquérito comunitário sobre a definição de perfis”. De um modo geral, o objectivo do exercício comunitário de definição de perfis, quer em grupo focal quer em formato de entrevista individual, é compreender o panorama geral da comunidade e as pescas que operam na comunidade.</p>
+<p>I. Antes da realização de um grupo focal</p>
+<p>Antes de sediar um grupo focal formal de definição de perfis das pescas, recomenda-se a realização de conversações informais e a observação participante. Este método significa gastar tempo, construir relacionamentos e compreender a pesca usando conversas informais e observação participante.</p>
+<p>Uma conversa Informal é importante para compreender melhor o contexto geral das pescas antes de realizar uma discussão em grupo focal. Utilizar este método como um dos pontos de partida para formular o conteúdo do debate em grupo focal. Este método permitirá conhecer a comunidade pesqueira, começar a construir relações e ganhar confiança.</p>
+<p><em>Dicas recomendadas para conduzir conversas informais:</em></p>
+<ul>
+<li><p>Respeite as diferenças culturais. Observe as normas sociais, como saudações aceitáveis, códigos de vestimenta e respeite as práticas religiosas. Seja educado, humilde e ouça as opiniões das partes interessadas sem impor as suas. Permanecer dentro de uma comunidade, construir um relacionamento e compartilhar refeições pode ajudar a construir confiança.</p></li>
+<li><p>Passar tempo com as partes interessadas. Não há atalho para ganhar confiança e apoio. Especialmente nas comunidades, é bom ser visto, passar tempo nas aldeias e conhecer pessoas. Esteja preparado para discutir as questões mais amplas na comunidade. Não tente empurrar uma agenda específica.</p></li>
+<li><p>Utilizar a língua local, se possível, a menos que uma língua comum esteja acessível. Caso contrário, use um intérprete. Esteja atento aos erros de tradução. A verificação cruzada da tradução entre mais do que um intérprete pode ajudar a reduzir a má interpretação.</p></li>
+<li><p>Não faça promessas que não possam ser cumpridas. Seja claro sobre os objetivos e os resultados esperados sem aumentar as expectativas. É importante sublinhar isto desde o início, para que as comunidades tenham uma compreensão clara do papel do parceiro técnico, ou seja, para facilitar o encerramento da pesca do polvo, não para cavar poços ou reparar escolas. É importante garantir que todos estejam cientes do que a organização pode ou não fazer na comunidade. Garantir expectativas realistas ajuda a minimizar decepções, reclamações e conflitos à medida que o projeto avança.</p></li>
+<li><p>Comunicar amplamente os planos e as actividades. Garantir que quaisquer reuniões ou atividades sejam planeadas com antecedência e em horários e locais mutuamente acordados para maximizar a participação. Assegurar que quaisquer alterações nos planos e actividades sejam comunicadas o mais cedo possível. Chegar a tempo e aderir a acordos ajuda a criar confiança entre as partes interessadas.</p></li>
+<li><p>Reconhecer sempre as partes interessadas nos resultados dos projetos, tais como relatórios e comunicados de imprensa, nas reuniões das partes interessadas e nas apresentações externas. Estar ciente da ‘propriedade’ da informação e respeitar a confidencialidade e a privacidade.</p></li>
+</ul>
+<p>Compreender melhor o panorama das partes interessadas na comunidade é um objectivo crucial na condução de conversas informais e na observação participante. As partes interessadas afetam ou podem ser afetadas pelas ações de uma organização. O seu apoio é essencial para o sucesso de uma organização na implementação de planos de gestão das pescas. Ao compreender melhor as partes interessadas, identificará eficazmente as partes interessadas envolvidas na futura monitorização das pescas para a gestão das pescas na sua área.</p>
+<p><em>Exemplos de tipos de partes interessadas a incluir:</em></p>
+<ul>
+<li><p>Pescadores</p></li>
+<li><p>Chefe da aldeia</p></li>
+<li><p>Líderes religiosos / religiosos</p></li>
+<li><p>Chefe de Distrito</p></li>
+<li><p>Agente Comunitário de saúde/profissional de saúde</p></li>
+<li><p>Aldeia comprador / fornecedor</p></li>
+<li><p>Fábrica de transformação</p></li>
+<li><p>Mulheres na aldeia / esposas de pescadores</p></li>
+</ul>
+<p><em>Informações a recolher sobre as partes interessadas:</em></p>
+<ul>
+<li>Informações sobre as principais partes interessadas e suas posições em relação aos objetivos de uma entidade (grau de apoio, poder, etc.). Estas informações podem ser utilizadas para identificar as partes interessadas a incluir no grupo focal de definição de perfis da comunidade.</li>
+</ul>
+<p>Depois de conduzir conversas informais, o próximo passo que você pode fazer é a observação participante. A observação é um método que permite que você use os eventos ao seu redor para reunir pistas e gerar conclusões sobre locais ou experiências específicas, observando um dia na vila de pescadores. Este método é necessário para reunir provas a partir das informações fornecidas em conversas informais. Este método permite compreender as actividades quotidianas da aldeia piscatória.</p>
+<p>II. Procedimentos Dos Grupos Focais</p>
+<p><strong>A.</strong> <strong>Organização do grupo focal</strong></p>
+<ul>
+<li><p>É importante manter boas relações com as comunidades-alvo. Por conseguinte, sempre que possível, as aldeias devem ser informadas do programa para a reunião do grupo focal com pelo menos duas semanas de antecedência.</p></li>
+<li><p>Se a aldeia tiver uma recepção de telemóvel, ligue para o chefe da aldeia ou para outro(s) contacto (s) local (s).</p></li>
+<li><p>Se a aldeia não tiver recepção de telemóvel, faça uma visita à aldeia para se encontrar com o chefe da aldeia ou outro(s) contacto (s) local (s).</p></li>
+<li><p>Durante este telefonema ou visita ao presidente da aldeia ou a outro(s) contacto (s) local (s), explique o seguinte:</p>
+<ul>
+<li><p>Objectivo da reunião</p></li>
+<li><p>Local da reunião</p></li>
+<li><p>Data e hora da reunião</p></li>
+<li><p>Método de informação dos participantes da reunião</p></li>
+<li><p>Número de participantes</p>
+<ul>
+<li><p>Todos os aldeões ou pessoas especiais com base nos melhores pescadores (2)</p></li>
+<li><p>Pescadores mais frequentes (2)</p></li>
+<li><p>Pescadores que frequentam muitos locais de pesca diferentes (2)</p></li>
+<li><p>Pescadores respeitados, de preferência com experiência em cartografia (2)</p></li>
+</ul></li>
+</ul></li>
+<li><p>Mulheres-verifique com o chefe da aldeia se o grupo focal pode ocorrer com ambos os sexos presentes juntos com antecedência, como em algumas áreas, isso nem sempre é possível.</p></li>
+<li><p>Tente evitar a realização da(s) Reunião (s) durante as marés de primavera/época alta de pesca, uma vez que muitos dos Pescadores requeridos provavelmente estarão ocupados a pescar.</p></li>
+<li><p>Certifique-se de verificar os cronogramas de outros projetos que possam estar trabalhando na mesma área ao mesmo tempo para evitar confrontos.</p></li>
+</ul>
+<p><strong>B.</strong> <strong>Equipa do grupo focal</strong></p>
+<p>A seguir estão as funções recomendadas para a equipe que lidera o grupo focal. No mínimo, um grupo focal deve ter um facilitador e um anotador.</p>
+<p><em>Facilitador principal: lidera e modera a reunião</em></p>
+<ul>
+<li><p>Apresenta a reunião</p></li>
+<li><p>Facilita o evento</p></li>
+<li><p>Modera o processo</p></li>
+<li><p>Actua como catalisador entre os indivíduos do grupo</p></li>
+<li><p>Encontra formas de integrar pessoas dominantes e tranquilas e assegura que todos os membros do grupo são capazes de expressar as suas opiniões</p></li>
+<li><p>Certifica-se de que o grupo mantém o tema, mas também é flexível no tratamento de informações importantes adicionais</p></li>
+<li><p>Repete com as suas próprias palavras o que as pessoas dizem, a fim de confirmar que existe uma boa compreensão do debate</p></li>
+<li><p>Cuida da gestão do tempo</p></li>
+</ul>
+<p><em>Assistente do Facilitador: auxilia o facilitador principal, especialmente na exibição de recursos visuais</em></p>
+<ul>
+<li><p>Apoia o anotador na recolha de todas as informações pertinentes</p></li>
+<li><p>Lidera a exibição de recursos visuais e auxilia com outros componentes interativos da reunião, como contagem de votos, anotações que são exibidas, distribuição de materiais, etc.</p></li>
+<li><p>Traz consigo o material necessário</p></li>
+<li><p>Auxilia o facilitador de forma indireta, dando sinais (por exemplo, apontando aqueles que desejam falar).</p></li>
+<li><p>Apoia directamente o facilitador, fazendo perguntas, se a situação o exigir.</p></li>
+</ul>
+<p><em>Anotador: documenta a reunião</em></p>
+<ul>
+<li><p>Observa o evento a partir do fundo</p></li>
+<li><p>Captura todas as respostas. É útil imprimir a lista de perguntas para que possa ser anotada com notas durante a reunião.</p></li>
+<li><p>Anota todas as informações importantes</p></li>
+<li><p>Nota quem fala. Existe uma participação igualitária de todos ou algumas pessoas dominam o processo? As mulheres falam?</p></li>
+</ul>
+<p><strong>C.</strong> <strong>Participantes do grupo focal</strong></p>
+<p>Planeje cuidadosamente quem convidar para a reunião do grupo focal. Recomenda-se a identificação de 10-12 indivíduos para garantir que a dimensão é gerível, permitindo uma representação adequada de diferentes perspectivas. Na medida do possível, incluir representantes de diversos grupos de partes interessadas e sectores comunitários (ver exemplos de tipos de partes interessadas na secção supra). Ao selecionar os participantes, ter em conta os seus conhecimentos e funções na comunidade. Convidar pessoas com maior conhecimento das Pescas e da comunidade, como um pescador a tempo inteiro em vez de um pescador ocasional de recreio, fornecerá informações mais robustas e precisas. Identificar e convidar pessoas respeitadas na comunidade ajuda a criar confiança.</p>
+<p><strong>D.</strong> <strong>Discussão logística e metodologia</strong></p>
+<p>Os dados podem ser capturados no formulário Kobo” Community Profiling Survey”. No entanto, pode ser mais fácil para o anotador capturar os dados através de notas escritas, a fim de capturar mais facilmente nuances e informações que surgem da discussão em grupo, como respostas diferentes por entrevistado.</p>
+<p>Se a informação for recolhida através de anotações. Após a conclusão da reunião do grupo focal, as respostas devem ser inscritas no formulário Kobo “Community Profiling Survey”.</p>
+<p>Incentivar todos os membros do grupo a falar, pois representam uma mistura de idades e posições sociais que podem ter experiências diferentes da pesca.</p>
+<p>Fazer perguntas uma a uma ao grupo e esperar que os voluntários respondam é uma abordagem para conduzir uma discussão. No entanto, variar a forma como o facilitador solicita respostas pode ajudar a manter a discussão interessante e também garantir que todas as vozes sejam ouvidas e que menos participantes vocais possam participar. Antes de iniciar o grupo focal, pense em como você gostaria de obter respostas para cada pergunta planejada.</p>
+<ul>
+<li><p>Fórum aberto - qualquer pessoa pode responder à pergunta e falar.</p></li>
+<li><p>Apelo a participantes específicos-isso pode ajudar a garantir que menos participantes vocais tenham a oportunidade de falar. Isso pode ser usado posteriormente na discussão, uma vez que o facilitador tenha uma noção de quais participantes podem se beneficiar de serem chamados. Em alternativa, um facilitador pode utilizar esta técnica quando souber que um determinado participante tem conhecimentos ou informações importantes relacionados com uma questão.</p></li>
+<li><p>Resposta rápida-faça um círculo e cada pessoa partilha brevemente a sua opinião / resposta à pergunta. Isso pode ser eficaz na votação do público, pois envolve todos. No entanto, certifique-se de comunicar claramente e impor limites de tempo ou este método pode acabar drenando muito tempo de discussão.</p></li>
+<li><p>Votação-sondar o público fazendo uma pergunta e fazendo com que as pessoas levantem a mão de acordo com diferentes opções de resposta. Isso pode ser feito abertamente ou anonimamente com os olhos fechados ou com pessoas escrevendo suas respostas em pedaços de papel dobrados que são então coletados.</p></li>
+<li><p>Grupos-divida o grupo em grupos menores que discutem e reportam ao grupo principal. Esta técnica é especialmente útil para grupos grandes quando não há tempo suficiente para todos os membros do grupo participarem no fórum completo do grupo. Nesta situação, certifique-se de que cada grupo tem partes interessadas que representam opiniões e perspectivas diferentes.</p></li>
+</ul>
+<p>III. Perguntas Dos Grupos Focais</p>
+<p>Comece o grupo focal apresentando-se, o projeto e o objetivo da reunião. Então, peça a todos na sala que se apresentem. Planeje os melhores métodos para cada pergunta para obter e coletar respostas com antecedência (veja a seção acima para ideias). Por favor, consulte o documento do inquérito sobre perfis comunitários para obter a lista completa das perguntas dos grupos focais a analisar.</p>
+<p>IV. Recursos de facilitação (disponível em inglês)</p>
+<ul>
+<li><p><a href="https://www.iaf-world.org/site/sites/default/files/Revised%20IAF%20Core%20%20Competencies%20-%20December%206%202021.pdf">Facilitator Core Competencies</a> – International Association of Facilitators (IAF)</p></li>
+<li><p><a href="http://stproject.org/wp-content/uploads/2014/11/facilitators-meeting-checklist.pdf">Facilitator’s Meeting Checklist</a> – Social Transformation Project, Tools for Transformation</p></li>
+<li><p><a href="https://reefresilience.org/pdf/Facilitation_Effective_Meetings.pdf">Introduction to Planning and Facilitating Effective Meetings</a> – Social Science Tools for Social Programs, NOAA Coastal Services Center</p></li>
+<li><p><a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation">Group Facilitation and Problem-Solving</a> – Community Tool Box, Center for Community Health and Development at the University of Kansas</p>
+<ul>
+<li><p>Section 1:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/main">Conducting Effective Meetings</a></p></li>
+<li><p>Section 2:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/facilitation-skills/main">Developing Facilitation Skills</a></p></li>
+<li><p>Section 3:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/record-meeting/main">Capturing What People Say: Tips for Recording a Meeting</a></p></li>
+<li><p>Section 4:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/group-discussions/main">Techniques for Leading Group Discussions</a></p></li>
+</ul></li>
+</ul>
+
+
+</section>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/barefoot-ocean\.github\.io\/Partner-Manual\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../../pages/quick_guide/quick_guide_pt.html" class="pagination-link" aria-label="Guia rápido">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Guia rápido</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../pages/kobo_setup/kobo_setup_pt.html" class="pagination-link" aria-label="Configuração do Kobo">
+        <span class="nav-page-text">Configuração do Kobo</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© CC-By Blue Ventures, 2025</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

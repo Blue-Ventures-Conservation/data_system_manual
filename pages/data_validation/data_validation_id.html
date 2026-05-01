@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Validasi data – Community Fisheries Data System Manual</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../pages/fisheries_dashboard/fisheries_dashboard_id.html" rel="next">
+<link href="../../pages/reference_files/reference_files_id.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_id.html">Bahasa Indonesia</a></li><li class="breadcrumb-item"><a href="../../pages/data_validation/data_validation_id.html">Validasi data</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/bv_logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/bv_logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://blueventures.org/" title="Blue Ventures Website" class="quarto-navigation-tool px-1" aria-label="Blue Ventures Website"><i class="bi bi-globe"></i></a>
+    <a href="https://youtube.com/playlist?list=PLwUVTxKktakVz45STRgXwoNwiUFIOQOaZ&amp;feature=shared" title="Youtube Training Videos" class="quarto-navigation-tool px-1" aria-label="Youtube Training Videos"><i class="bi bi-youtube"></i></a>
+    <a href="https://app.smartsheet.com/" title="Smartsheet" class="quarto-navigation-tool px-1" aria-label="Smartsheet"><i class="bi bi-check-circle-fill"></i></a>
+    <a href="https://blueventures.shinyapps.io/fisheries-dashboard/" title="Fisheries Data Dashboard" class="quarto-navigation-tool px-1" aria-label="Fisheries Data Dashboard"><i class="bi bi-bar-chart-fill"></i></a>
+    <a href="https://blueventures.shinyapps.io/social-economic-dashboard/" title="Social and Economic Dashboard" class="quarto-navigation-tool px-1" aria-label="Social and Economic Dashboard"><i class="bi bi-house-fill"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">English</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_collection/data_collection_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/management_ref/management_ref_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Management Ref</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fisheries Dashboard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/household_survey/household_survey_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Household Survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/socioeco_dashboard/socioeco_dashboard_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Socioeconomic Dashboard</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bahasa Indonesia</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panduan Cepat</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panduan Lengkap</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengaturan Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_collection/data_collection_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengumpulan Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">File Referensi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_id.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Validasi data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dasbor Perikanan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cebuano</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dali nga Giya</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bug-os nga Giya</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pag-setup sa Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mga Reperensya nga File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pagpamatuod sa Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard sa Pangisda</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tagalog</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mabilis na Gabay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Buong Gabay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pag-setup ng Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mga Reference File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pagpapatunay ng Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard ng Pangisdaan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Malagasy</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Torolalana haingana</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Torolalana feno</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fanamarinana angona</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard momba ny jono</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Français</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide rapide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide complet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuration Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fichiers de référence</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">La validation des données</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard des pêches</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Español</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guía rápida</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guía completa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuración de Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Archivos de referencia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validación de datos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panel de pesca</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Português</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guia rápido</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guia completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuração do Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Arquivos de referência</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data de validade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Painel de Pesca</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kiswahili</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mwongozo wa Haraka</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mwongozo Kamili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mpangilio wa Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Faili za Marejeleo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Uthibitishaji wa Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashibodi ya Uvuvi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tetun</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fisheries Dashboard</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species Guides</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_BLZ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Belize</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_CV.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cabo Verde</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_GMB.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Gambia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_MDG_MHJ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Madagascar - MHJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_SEN.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Senegal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_id.html">Bahasa Indonesia</a></li><li class="breadcrumb-item"><a href="../../pages/data_validation/data_validation_id.html">Validasi data</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Validasi data</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-right">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="panduan-validasi-data-perikanan" class="level2">
+<h2 class="anchored" data-anchor-id="panduan-validasi-data-perikanan">Panduan Validasi Data Perikanan</h2>
+<p>Semua data yang mengalir melalui sistem data perikanan divalidasi dalam Smartsheet. Data dikirim untuk validasi dalam tiga skenario; 1) nama baru atau informasi ‘lainnya’ ditambahkan secara manual di Kobo Collect, 2) nilai numerik melampaui ambang batas yang ditetapkan atau 3) nama dalam kumpulan data tidak memiliki kecocokan yang sesuai dalam file referensi. Setelah data divalidasi, kumpulan data dalam database dan tabel referensi diperbarui. Tabel referensi berfungsi sebagai input untuk daftar dropdown dalam formulir KoBoToolbox dan berisi data yang ditambahkan ke kumpulan data melalui proses penggabungan. Lihat pohon keputusan validasi data di bawah ini (Gambar 1).</p>
+<p>Data yang dipicu untuk validasi dikirim ke salah satu dari empat tabel: 1) Nama dan Alat Tangkap, 2) Peringatan Nilai, 3) Spesies, atau 4) Lainnya. Petunjuk di bawah ini merinci proses validasi data dalam Tampilan Dinamis Smartsheet untuk empat tabel validasi. Setiap tabel validasi akan memerlukan pemilihan nilai bidang yang benar dari daftar dropdown atau memasukkan nilai yang benar secara manual. Proses akan ditambahkan untuk kebutuhan validasi data di masa mendatang, sesuai kebutuhan.</p>
+<p>Tabel validasi ‘Nama dan Alat Tangkap’ berisi data baru dari semua survei Kobo termasuk nama baru nelayan, pembeli, pengumpul data, tempat penangkapan ikan, lokasi pendaratan, dan alat tangkap. ‘Peringatan Nilai’ berisi informasi numerik yang dikumpulkan dari survei Pemantauan Pendaratan atau Profil Pendaratan yang menandai nilai harga, bobot, atau panjang berdasarkan ambang batas yang telah ditetapkan sebelumnya. Ambang batas yang telah ditetapkan sebelumnya untuk peringatan bobot dan panjang berasal dari lw_ref; dan peringatan harga berasal dari min_max_ref. Tabel validasi ‘Spesies’ berisi foto dan nama lokal baru dari semua survei untuk memvalidasi spesies baru menggunakan proses verifikasi ganda. Terakhir, tabel validasi data ‘Lainnya’ berisi informasi ‘lainnya’ yang dikumpulkan dari Profil Pendaratan, Profil Komunitas, atau Survei Rumah Tangga dan terutama divalidasi untuk tujuan translasi.</p>
+<p>Pesan email harian dikirim dengan informasi dan tautan tentang cara menyelesaikan validasi data (lihat petunjuk terperinci di bawah). Pemberitahuan tambahan dari Smartsheet dapat dikirim melalui email untuk menindaklanjuti pilihan validasi data yang tidak lengkap, jika diperlukan.</p>
+<p>Langkah 1: Berikan kontak person, nama dan alamat email bagi mereka yang bertanggung jawab atas validasi data.</p>
+<ul>
+<li><p>Organisasi yang mengelola banyak mitra dapat memberikan semua informasi kontak person.</p></li>
+<li><p>Mitra individu dapat memberikan informasi kontak.</p></li>
+<li><p>Kontak person akan menerima pemberitahuan validasi data melalui email.</p></li>
+</ul>
+<p>Langkah 2: Periksa email Anda untuk permintaan validasi data.</p>
+<ul>
+<li><p>Anda akan menerima email dari “Smartsheet Automation” (Gambar 2)</p></li>
+<li><p>Email akan berisi pesan dengan tautan untuk melanjutkan validasi baik melalui “Dynamic view”atau”Open request”. Tampilan Dinamis (Dynamic view) adalah format tabel dan permintaan terbuka (Open request) akan mengarahkan Anda ke formulir validasi secara langsung.</p></li>
+<li><p>Untuk membuka dengan “Dynamic view” (Langkah 3, Opsi A), klik tautan yang dimulai dengan “https://dynamicview.smarthseet.com….”</p></li>
+<li><p>Untuk membuka formulir permintaan pembaruan (Langkah 3, Opsi B), klik tombol biru “Open request”</p></li>
+<li><p>Pratinjau entri yang perlu divalidasi akan muncul di bawah pesan ini, tetapi Anda tidak akan dapat memvalidasi data apa pun secara langsung di email</p></li>
+<li><p>Di bagian bawah email, ada tautan untuk “Go to the sheet”; namun, lembar yang mendasarinya memiliki akses terbatas. Harap tinjau validasi data Anda melalui Dynamic view, Open request, atau laporan khusus mitra Anda (segera hadir).</p></li>
+</ul>
+<p>Gambar 1: Pohon keputusan validasi data.</p>
+<p><img src="images/fig1.jpg" width="733" height="547"></p>
+<p>Gambar 2: Contoh Pesan Email Validasi Smartsheet</p>
+<p><img src="images/fig2.jpg" width="687" height="355"></p>
+<p>Langkah 3, Opsi A: Selesaikan validasi data Anda melalui Dynamic View (disarankan)</p>
+<ul>
+<li><p>Untuk opsi ini, Anda perlu membuat akun Smartsheet gratis. Anda akan diarahkan dari email untuk membuat akun.</p></li>
+<li><p>Klik tautan Dynamic View dalam permintaan email.</p></li>
+<li><p>Jendela browser internet baru akan terbuka dengan pengaturan seperti tabel untuk semua entri. Di sini, Anda dapat dengan mudah menelusuri semua entri yang memerlukan validasi.</p></li>
+<li><p>Klik satu baris untuk memulai validasi.</p></li>
+<li><p>Panel “Details” akan muncul di sebelah kanan.</p></li>
+<li><p>Tinjau bidang konteks dan isi bidang validasi. Bidang validasi berisi data yang akan ditransfer ke kumpulan data akhir (Tabel 1).</p></li>
+<li><p>Tinggalkan komentar, HANYA JIKA ada sesuatu yang perlu kita perhatikan. Staf Blue Ventures (BV) akan meninjau komentar dan merespons dengan tepat.</p></li>
+<li><p>Klik tombol biru “Save” untuk menyimpan pilihan Anda.</p></li>
+<li><p>Setelah divalidasi, baris tersebut akan hilang dari Dynamic View Anda.</p></li>
+<li><p>Klik pada baris berikutnya dan ulangi langkah-langkah untuk menyelesaikan validasi untuk semua entri.</p></li>
+<li><p>Anda dapat keluar dan masuk kembali dengan mengeklik tautan tampilan dinamis dari email Anda atau masuk ke akun Anda kapan saja. Anda tidak perlu memvalidasi semua entri dalam sekali duduk.</p></li>
+<li><p>Anda dapat menandai (bookmark) tautan ini dan kembali kapan saja.</p></li>
+</ul>
+<p>Tabel 1: Bidang atau kolom utama dalam tabel validasi. Bidang konteks memberikan informasi yang diperlukan untuk memvalidasi data. Bidang validasi diisi dengan data yang akan ditransfer ke kumpulan data master. Hanya bidang validasi yang dapat diedit. Beberapa bidang hanya terlihat di panel “Details” saat baris diklik di tabel Dynamic View.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 50%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Bidang tabel validasi</th>
+<th>Deskripsi bidang</th>
+<th>Jenis bidang</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>All Data Validation Tables</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>partner</td>
+<td>nama organisasi yang mengumpulkan data</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>admin3_landed</td>
+<td>Desa atau dusun tempat hasil tangkapan didaratkan dan dicatat</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>data_collector</td>
+<td>Nama orang yang mengumpulkan data di Kobo (pencacah)</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td><strong>Names and Gears</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>kobo_field</td>
+<td>Bidang dari formulir KoboCollect yang perlu divalidasi atau nama yang tidak memiliki kecocokan dalam file referensi.</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>new_data</td>
+<td>Nilai yang dimasukkan untuk kobo_ field yang sesuai</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>ref_match1</td>
+<td>Sangat cocok dengan nama yang sudah ada di database. Jika kosong, tidak ada nama yang cocok dengan nama di kolom “new_data”</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>ref_match2</td>
+<td>Sangat cocok dengan nama yang sudah ada di database. Jika kosong, tidak ada nama yang cocok dengan nama di kolom “new_data”</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>ref_match3</td>
+<td>Sangat cocok dengan nama yang sudah ada di database. Jika kosong, tidak ada nama yang cocok dengan nama di kolom “new_data”</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>validation_options</td>
+<td>Pilih bidang dengan data yang benar (new_data, ref_match1, ref_match2, ref_match3), masukkan nilai lain (other), atau hapus (hapus baris dari analisis karena data tidak dapat divalidasi). Diperlukan. Hanya terlihat di panel Details. Entri akan hilang setelah data divalidasi.</td>
+<td>validasi</td>
+</tr>
+<tr class="even">
+<td>other</td>
+<td>Masukkan nilai lain jika tidak ada opsi validasi yang benar. Diperlukan JIKA “other” dipilih dari validation_options. Hanya terlihat di panel Details.</td>
+<td>validasi</td>
+</tr>
+<tr class="odd">
+<td>landings_submission_ids</td>
+<td>Daftar id pengiriman asal nilai data baru ini muncul, dari formulir Kobo pemantauan pendaratan (Landing monitoring)</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>profiling_submission_ids</td>
+<td>Daftar id pengiriman asal nilai data baru ini muncul, dari formulir Kobo profil pendaratan (Landings profiling)</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>hhs_submission_ids</td>
+<td>Daftar id pengiriman asal nilai data baru ini muncul, dari formulir Kobo survei rumah tangga (Household survey).</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>species_group</td>
+<td>Kelompok spesies yang terkait dengan nama alat tangkap baru, seperti yang dikumpulkan dalam formulir Kobo. Ini hanya akan muncul jika “kobo_field” adalah kategori alat tangkap.</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>gear_type</td>
+<td>Diperlukan JIKA memvalidasi nama alat tangkap baru. Daftar dropdown list jenis alat tangkap yang akan dikaitkan dengan nama alat tangkap yang divalidasi.</td>
+<td>validasi</td>
+</tr>
+<tr class="even">
+<td>fisher_gender</td>
+<td>Jenis kelamin yang terkait dengan nelayan baru, seperti yang dikumpulkan dalam bentuk Kobo. Ini hanya akan muncul jika “kobo_field” adalah nama fisher.</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>buyer_gender</td>
+<td>Jenis kelamin yang terkait dengan pembeli baru, seperti yang dikumpulkan dalam formulir Kobo. Ini hanya akan muncul jika “kobo_field” adalah nama pembeli.</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td><strong>Value Warnings</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>fisher_name</td>
+<td>Nama nelayan yang mendaratkan hasil tangkapan</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>date_landed</td>
+<td>Tangkapan tanggal telah mendarat</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>local_name</td>
+<td>Nama lokal spesies</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>warning_calc</td>
+<td>Nilai satuan: berat/ individu, harga/berat, panjang/individu, lebar/individu</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>warning</td>
+<td>Jenis peringatan</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>numerator</td>
+<td>Nilai pembilang peringatan: berat, harga, panjang</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>numerator_unit</td>
+<td>Unit of numerator: kg, g, lb, ons, USD, IDR, PHP, cm</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>denominator</td>
+<td>Nilai penyebut: jumlah, berat</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>denominator_unit</td>
+<td>Satuan penyebut: bilangan, kg, g, lb, ons</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>correct</td>
+<td>Nilai Y = benar, nilai N=salah, Remove = hapus dari analisis karena nilai tidak dapat divalidasi. Diperlukan.</td>
+<td>validasi</td>
+</tr>
+<tr class="odd">
+<td>correct_numerator</td>
+<td>Jika benar = Y, nilai diisi secara otomatis, Jika benar = N, masukkan nilai yang benar</td>
+<td>validasi</td>
+</tr>
+<tr class="even">
+<td>correct_denominator</td>
+<td>Jika benar = Y, nilai diisi secara otomatis, Jika benar = N, masukkan nilai yang benar</td>
+<td>validasi</td>
+</tr>
+<tr class="odd">
+<td>correct_numerator_unit</td>
+<td>Jika numerator_units salah, pilih opsi yang benar dari menu dropdown list</td>
+<td>validasi</td>
+</tr>
+<tr class="even">
+<td>data_origin</td>
+<td>Asal kumpulan data (Pemantauan pendaratan atau profil pendaratan).</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>submission_id</td>
+<td>ID Pengiriman dari formulir Kobo. Gunakan ini untuk membandingkan dengan data mentah, jika perlu, untuk validasi.</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td><strong>Species</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>data_origin</td>
+<td>Asal atau sumber data: ‘landings’, ‘profiling’, ‘community_profiling’ atau ‘hhs’</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>admin1</td>
+<td>Admin1 tempat tangkapan didaratkan dan dicatat.</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>admin2</td>
+<td>Admin2 tempat tangkapan didaratkan dan dicatat.</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>fisher_name</td>
+<td>Nama nelayan yang terkait dengan data spesies baru ini.</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>new_species_photo</td>
+<td>Tautan ke foto yang dikirimkan di Kobo Collect</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>new_data</td>
+<td>Nilai yang dimasukkan sebagai nama lokal spesies baru di Kobo Collect ATAU nama lokal dan ID nama ilmiah (localname_scientificspecies) yang tidak lagi cocok dengan nama yang ditemukan di species_ref</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>ref_match1</td>
+<td>Sangat cocok dengan nama yang sudah ada di database. Jika kosong, tidak ada nama yang cocok dengan nama di kolom “new_data”</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>ref_match2</td>
+<td>Sangat cocok dengan nama yang sudah ada di database. Jika kosong, tidak ada nama yang cocok dengan nama di kolom “new_data”</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>ref_match3</td>
+<td>Sangat cocok dengan nama yang sudah ada di database. Jika kosong, tidak ada nama yang cocok dengan nama di kolom “new_data”</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>eng_common_name_new</td>
+<td>Nama umum bahasa Inggris untuk spesies baru. Harap berikan jika diketahui, jika tidak, kosongkan. (Tidak wajib)</td>
+<td>validasi</td>
+</tr>
+<tr class="odd">
+<td>scientific_family_new</td>
+<td>Nama ilimah famili spesies baru. Harap berikan jika diketahui, jika tidak, kosongkan. (Tidak wajib)</td>
+<td>validasi</td>
+</tr>
+<tr class="even">
+<td>scientific_species_new</td>
+<td>Nama ilmiah spesies dari spesies baru. Harap berikan jika diketahui, jika tidak, kosongkan. Wajib: Jika nama spesies tidak diketahui, harap cantumkan tingkat identifikasi taksonomi apa pun (mis. Nama famili, nama umum bahasa Inggris)</td>
+<td>validasi</td>
+</tr>
+<tr class="odd">
+<td>submission_id</td>
+<td>ID Pengiriman dari formulir Kobo. Gunakan ini untuk membandingkan dengan data mentah, jika perlu, untuk validasi.</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>validation_options</td>
+<td>Pilih bidang dengan data yang benar (local_name_new, ref_match1, ref_match2, ref_match3), masukkan nilai other (lainnya), atau remove (hapus baris dari analisis karena data tidak dapat divalidasi). Diperlukan. Hanya terlihat di panel Details. Entri akan hilang setelah data divalidasi.</td>
+<td>validasi</td>
+</tr>
+<tr class="odd">
+<td>other</td>
+<td>Masukkan nilai lain jika tidak ada opsi validasi yang benar. Diperlukan JIKA “other” dipilih dari validation_options. Hanya terlihat di panel Details.</td>
+<td>validasi</td>
+</tr>
+<tr class="even">
+<td>latest_comment</td>
+<td>Kolom ini menyimpan komentar terakhir yang dibuat untuk baris tersebut. Untuk melihat seluruh diskusi komentar untuk baris tersebut, cukup klik di mana saja pada baris tersebut. Panel details akan muncul dan klik tab “Comments” untuk melihat semua komentar untuk baris tersebut.</td>
+<td>otomatis</td>
+</tr>
+<tr class="odd">
+<td><strong>Other</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>kobo_field</td>
+<td>Bidang dari formulir KoBoToolbox yang perlu divalidasi. Ini bisa dari pertanyaan di Profil Pendaratan, Profil Komunitas, atau Survei Rumah Tangga.</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>new_data</td>
+<td>Nilai yang dimasukkan untuk kobo_field yang sesuai</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>data_origin</td>
+<td>Dataset data tersebut berasal dari (Landings profiling, Community profiling atau survei rumah tangga).</td>
+<td>konteks</td>
+</tr>
+<tr class="odd">
+<td>submission_id</td>
+<td>ID Pengiriman dari formulir Kobo. Gunakan ini untuk membandingkan dengan data mentah, jika perlu, untuk validasi.</td>
+<td>konteks</td>
+</tr>
+<tr class="even">
+<td>validation_options</td>
+<td>Pilih bidang dengan data yang benar (new_data), masukkan nilai other (lainnya), atau remove (hapus baris dari analisis karena data tidak dapat divalidasi). Diperlukan. Hanya terlihat di panel Details. Entri akan hilang setelah data divalidasi.</td>
+<td>validasi</td>
+</tr>
+<tr class="odd">
+<td>other</td>
+<td>Masukkan nilai lain jika tidak ada opsi validasi yang benar. Diperlukan JIKA “other” dipilih dari validation_options. Hanya terlihat di panel Details.</td>
+<td>validasi</td>
+</tr>
+<tr class="even">
+<td>validated_data_english</td>
+<td>Diperlukan. Masukkan terjemahan bahasa Inggris dari bidang new_data atau other jika ‘other’ dipilih sebagai opsi validasi. Hanya terlihat di panel Details.</td>
+<td>validasi</td>
+</tr>
+</tbody>
+</table>
+<p>Gambar 3: Contoh Dynamic View - Peringatan Nilai</p>
+<p><img src="images/fig3.jpg" class="img-fluid" width="673"></p>
+<p>Gambar 4: Contoh Dynamic View - Panel Details</p>
+<p><img src="images/fig4.jpg" class="img-fluid" width="907"></p>
+<p>Langkah 3, Opsi B: Selesaikan validasi data Anda melalui ‘Open request’</p>
+<ul>
+<li><p>Untuk opsi ini, Anda tidak perlu memiliki login akun Smartsheet.</p></li>
+<li><p>Klik tombol “Open request” di pesan email validasi.</p></li>
+<li><p>Jendela browser internet baru akan terbuka dengan pengaturan seperti formulir untuk setiap entri</p></li>
+<li><p>Tinjau bidang konteks dan isi bidang validasi. Bidang validasi berisi data yang akan ditransfer ke kumpulan data akhir (Tabel 1).</p></li>
+<li><p>Klik berikutnya di bagian bawah layar untuk menelusuri setiap entri yang perlu divalidasi.</p></li>
+<li><p>Untuk melewati entri (mis. jika Anda belum yakin jawaban mana yang harus dipilih) klik “Next” tanpa membuat pilihan di kolom ‘validation_options’. Entri validasi berikutnya akan muncul.</p></li>
+<li><p>Jika Anda perlu keluar dari halaman atau berhenti sebelum semua entri divalidasi, pilihan Anda akan disimpan saat berikutnya Anda membuka kembali permintaan. Saat membuka untuk melanjutkan, cukup klik “Next” hingga Anda menemukan entri yang memerlukan validasi.</p></li>
+<li><p>Saat Anda masuk ke entri terakhir, klik “Done”. Pesan pop-up akan muncul menanyakan apakah Anda ’ Siap mengirimkan pembaruan Anda?’:</p>
+<ul>
+<li><p>Klik “Go back” jika Anda perlu meninjau</p></li>
+<li><p>Klik “Submit update” untuk mengirimkan validasi</p></li>
+<li><p>Centang kotak “Kirimi saya salinan tanggapan saya” jika Anda ingin salinan tanggapan Anda dikirim ke email Anda</p></li>
+</ul></li>
+<li><p>Jika Anda mengklik “Kirimi saya salinan tanggapan saya”, Anda akan menerima email berjudul “Konfirmasi Pembaruan: Nama dan Alat Tangkap”.</p>
+<ul>
+<li><p>Akan ada tabel yang merangkum entri mana yang diperbarui. Entri di mana tidak ada opsi yang dipilih di ‘validation_options’ tidak akan disertakan.</p></li>
+<li><p>Email ini mungkin berisi tautan ke nama lembar “Data Validation - Names and Gears”; namun, akses ke lembar ini dikunci.</p></li>
+</ul></li>
+<li><p>Untuk melihat sisa validasi yang diperlukan, Anda harus menunggu email permintaan pembaruan berikutnya atau membuka Dynamic View.</p></li>
+</ul>
+<p>Gambar 5: Contoh format “Open request”</p>
+<p><img src="images/fig5.jpg" class="img-fluid" width="441"></p>
+<p>Pertanyaan yang Sering Diajukan:</p>
+<ol type="1">
+<li>Bisakah banyak orang mengerjakan validasi data secara bersamaan?</li>
+</ol>
+<ul>
+<li>Ya, bagaimanapun, setelah entri (baris) divalidasi dalam Dynamic View, entri tersebut tidak akan terlihat lagi.</li>
+</ul>
+<ol start="2" type="1">
+<li>Apakah saya memerlukan akun Smartsheet?</li>
+</ol>
+<ul>
+<li>Hanya untuk menyelesaikan validasi data melalui Dynamic View (yaitu tampilan tabel). Anda tidak memerlukan akun berbayar, dengan uji coba gratis atau versi gratis (setelah uji coba selesai), Anda akan dapat melihat dan berinteraksi dengan semua file Smartsheet.</li>
+</ul>
+<ol start="3" type="1">
+<li>Apa yang terjadi setelah data divalidasi?</li>
+</ol>
+<ul>
+<li>Dalam beberapa kasus, data akan menjalani tinjauan tambahan oleh tim data Blue Ventures. Data yang divalidasi akan diperbarui dalam database, dan jika sesuai, menu dropdwon list akan diperbarui dalam file dan formulir referensi Kobo (Gambar 6). Data yang belum divalidasi tidak akan muncul di visualisasi atau statistik dasbor, tetapi akan tersedia di unduhan data mentah.</li>
+</ul>
+<p>Jika sewaktu-waktu Anda menemukan kesalahan, memiliki pertanyaan, atau memerlukan dukungan untuk menyelesaikan validasi data, silakan hubungi kami di mary.mccabe@blueventures.org.</p>
+<p>Gambar 6: Alur Kerja Validasi Data terhadap File Referensi</p>
+<p><img src="images/qa_workflow.png" class="img-fluid" width="678"></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/barefoot-ocean\.github\.io\/Partner-Manual\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../../pages/reference_files/reference_files_id.html" class="pagination-link" aria-label="File Referensi">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">File Referensi</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../pages/fisheries_dashboard/fisheries_dashboard_id.html" class="pagination-link" aria-label="Dasbor Perikanan">
+        <span class="nav-page-text">Dasbor Perikanan</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© CC-By Blue Ventures, 2025</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

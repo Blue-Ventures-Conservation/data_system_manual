@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Buong Gabay – Community Fisheries Data System Manual</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../pages/kobo_setup/kobo_setup_fil.html" rel="next">
+<link href="../../pages/quick_guide/quick_guide_fil.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_fil.html">Tagalog</a></li><li class="breadcrumb-item"><a href="../../pages/full_guide/full_guide_fil.html">Buong Gabay</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/bv_logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/bv_logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://blueventures.org/" title="Blue Ventures Website" class="quarto-navigation-tool px-1" aria-label="Blue Ventures Website"><i class="bi bi-globe"></i></a>
+    <a href="https://youtube.com/playlist?list=PLwUVTxKktakVz45STRgXwoNwiUFIOQOaZ&amp;feature=shared" title="Youtube Training Videos" class="quarto-navigation-tool px-1" aria-label="Youtube Training Videos"><i class="bi bi-youtube"></i></a>
+    <a href="https://app.smartsheet.com/" title="Smartsheet" class="quarto-navigation-tool px-1" aria-label="Smartsheet"><i class="bi bi-check-circle-fill"></i></a>
+    <a href="https://blueventures.shinyapps.io/fisheries-dashboard/" title="Fisheries Data Dashboard" class="quarto-navigation-tool px-1" aria-label="Fisheries Data Dashboard"><i class="bi bi-bar-chart-fill"></i></a>
+    <a href="https://blueventures.shinyapps.io/social-economic-dashboard/" title="Social and Economic Dashboard" class="quarto-navigation-tool px-1" aria-label="Social and Economic Dashboard"><i class="bi bi-house-fill"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">English</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_collection/data_collection_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/management_ref/management_ref_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Management Ref</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fisheries Dashboard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/household_survey/household_survey_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Household Survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/socioeco_dashboard/socioeco_dashboard_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Socioeconomic Dashboard</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bahasa Indonesia</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panduan Cepat</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panduan Lengkap</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengaturan Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_collection/data_collection_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengumpulan Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">File Referensi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validasi data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dasbor Perikanan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cebuano</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dali nga Giya</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bug-os nga Giya</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pag-setup sa Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mga Reperensya nga File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pagpamatuod sa Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard sa Pangisda</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tagalog</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mabilis na Gabay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_fil.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Buong Gabay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pag-setup ng Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mga Reference File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pagpapatunay ng Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard ng Pangisdaan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Malagasy</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Torolalana haingana</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Torolalana feno</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fanamarinana angona</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard momba ny jono</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Français</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide rapide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide complet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuration Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fichiers de référence</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">La validation des données</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard des pêches</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Español</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guía rápida</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guía completa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuración de Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Archivos de referencia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validación de datos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panel de pesca</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Português</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guia rápido</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guia completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuração do Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Arquivos de referência</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data de validade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Painel de Pesca</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kiswahili</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mwongozo wa Haraka</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mwongozo Kamili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mpangilio wa Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Faili za Marejeleo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Uthibitishaji wa Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashibodi ya Uvuvi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tetun</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fisheries Dashboard</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species Guides</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_BLZ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Belize</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_CV.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cabo Verde</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_GMB.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Gambia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_MDG_MHJ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Madagascar - MHJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_SEN.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Senegal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_fil.html">Tagalog</a></li><li class="breadcrumb-item"><a href="../../pages/full_guide/full_guide_fil.html">Buong Gabay</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Buong Gabay</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-right">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="patnubay-sa-pagkolekta-ng-data-ng-pangisdaan" class="level1">
+<h1>Patnubay Sa Pagkolekta Ng Data Ng Pangisdaan</h1>
+<section id="isang-gabay-para-sa-pangangasiwa-ng-mga-survey-upang-makakuha-ng-data-ng-pangisdaan" class="level2">
+<h2 class="anchored" data-anchor-id="isang-gabay-para-sa-pangangasiwa-ng-mga-survey-upang-makakuha-ng-data-ng-pangisdaan">Isang gabay para sa pangangasiwa ng mga survey upang makakuha ng data ng pangisdaan</h2>
+<section id="panimula" class="level3">
+<h3 class="anchored" data-anchor-id="panimula">Panimula</h3>
+<p>Ang dokumentong ito ay nagbibigay ng patnubay at mga rekomendasyon para sa pangangasiwa ng tatlong instrumento sa pagsisiyasat upang makuha ang impormasyon tungkol sa mga komunidad ng pangingisda at ang mga pangingisda na kanilang pinagkakatiwalaan (hulagway 1). Ang mga survey ay idinisenyo upang ihanay ang nilalaman sa kung paano gagamitin ang data at inaasahang dalas ng pagbabago. Ang pinakamataas na antas ng survey, ang pag-profile ng komunidad, ay naglalaman ng mga katanungan na makakatulong upang makabuo ng isang mas mahusay na pag-unawa sa aktibidad ng pangingisda sa komunidad at mga kondisyon sa sosyoekonomiko. Ang pag-unawa sa socioeconomic landscape ay lalong mahalaga kapag ang trabaho ay unang nagsisimula sa isang komunidad. Ang impormasyong nakolekta sa panahon ng survey na ito ay mahalaga para sa pagdidisenyo ng mga diskarte sa pakikipag-ugnayan sa komunidad at mga plano sa pag-sample ng data. Ang mga landings Profiling at Monitoring survey ay nangongolekta ng data sa catch na nakalapag ng mga pangisdaan. Ang data ng pag-profile ng Mga Landing ay hindi gaanong madalas na kinokolekta at kinukuha ang impormasyon tungkol sa tirahan ng pangingisda, uri ng gear, pagsisikap, at haba ng mga indibidwal na isda. Ang Landings Monitoring survey, na may perpektong isinasagawa araw-araw, ay isang mabilis na survey ng pangisdaan na nangongolekta ng minimum na halaga ng impormasyon na kinakailangan upang subaybayan ang dami ng catch at mga pagbabago sa halaga, tulad ng mga species, timbang, bilang at presyo.</p>
+<p><img src="images/Fig1_en.png" class="img-fluid"></p>
+<p>Larawan 1: Timeline para sa pangangasiwa ng tatlong magkakaibang mga instrumento sa survey sa isang sukat ng isang taon.</p>
+</section>
+<section id="mga-detalye-ng-survey" class="level3">
+<h3 class="anchored" data-anchor-id="mga-detalye-ng-survey">Mga Detalye Ng Survey</h3>
+<section id="surbey-sa-pag-profile-ng-komunidad" class="level4">
+<h4 class="anchored" data-anchor-id="surbey-sa-pag-profile-ng-komunidad"><strong>Surbey Sa Pag-Profile Ng Komunidad</strong></h4>
+<p><strong><em>Layunin</em></strong></p>
+<p>Unawain ang pangkalahatang tanawin ng komunidad at ang mga pangisdaan na tumatakbo sa loob ng komunidad.</p>
+<p><strong><em>Nakolekta Ang Data</em></strong></p>
+<ul>
+<li><p>Bilang ng mga miyembro ng komunidad, mangingisda, mangangalakal ng isda, kababaihan</p></li>
+<li><p>Pangkalahatang tanawin ng mga pangingisda na nagpapatakbo sa loob ng komunidad</p></li>
+<li><p>Ginamit ang mga Gears; target na species; tirahan fished; panahon; mga sisidlan</p></li>
+<li><p>Impormasyon tungkol sa pagsisikap at gastos sa pangingisda</p></li>
+<li><p>Mga pananaw sa mga pangisdaan at mga kondisyon ng tirahan, pagbabanta</p></li>
+<li><p>Impormasyon sa kasalukuyang pamamahala/regulasyon ng pangisdaan</p></li>
+<li><p>Pagkilala (sa pamamagitan ng pagmamapa) ng mahahalagang lugar ng pangingisda, tirahan, mga landing site</p></li>
+</ul>
+<p><strong><em>Target Na Madla</em></strong></p>
+<p>10-20 pangunahing impormante sa loob ng komunidad, katulad ng mga lider ng komunidad, iginagalang na mangingisda, mangangalakal ng isda, at kababaihan.</p>
+<p><strong><em>Dalas at tiyempo</em></strong></p>
+<p>Kapag nagsimula ang trabaho sa isang bagong komunidad ng pangingisda, Ang pagsasagawa ng survey sa pag-profile ng komunidad at ang paunang pagsasanay sa pag-profile ay nagbibigay ng baseline na data at may kaugnayan na impormasyon upang mag-disenyo ng mga pagsisikap sa pag-iingat at pamamahala na pinakaangkop para sa komunidad. Ang pag-uulit ng survey sa pag-profile ng komunidad ay maaaring makatulong na idokumento ang mga makabuluhang pagbabago na nagaganap sa paglipas ng panahon.</p>
+<p><strong><em>Pamamaraan</em></strong></p>
+<p>Ang impormasyon ay maaaring mangolekta sa pamamagitan ng mga survey ng third-party (i.e., census, fisheries department records, atbp.), Mga focus group na binubuo ng 10-20 pangunahing miyembro ng komunidad o mga pangunahing tagapagbigay-alam. Ang mga pinuno ng komunidad pati na rin ang iba ’ t ibang mga may kaalaman at magkakaibang mga mangingisda at mangangalakal ng isda (kabilang ang mga kababaihan at kabataan) ay magiging perpektong mga kalahok na isama sa pangkat ng pokus. Sa pagpapadali ng mga focus group, inirerekomenda na magkaroon, sa pinakamaliit, ng isang facilitator at isang note-taker. Sa focus group, inirerekomenda din na ang mga kalahok ay magbigay ng listahan ng/impormasyon sa pakikipag-ugnay para sa mga mangingisda sa komunidad na maaaring makipag-ugnay upang pamahalaan ang mga survey sa sambahayan. Kung hindi posible na isagawa ang Community Profiling Survey sa isang format ng focus group, ang isang alternatibo ay ang pagbibigay ng parehong mga katanungan tulad ng mga indibidwal na survey na may mga pangunahing tagapagbigay-alam at pag-pool ng mga tugon. Ang mga tanong na kasama sa community profiling survey at mga rekomendasyon para sa pagsasagawa ng mga talakayan ng focus group ay matatagpuan sa Appendix A sa ibaba.</p>
+</section>
+<section id="pagsisiyasat-sa-pagsubaybay-sa-landings" class="level4">
+<h4 class="anchored" data-anchor-id="pagsisiyasat-sa-pagsubaybay-sa-landings"><strong>Pagsisiyasat Sa Pagsubaybay Sa Landings</strong></h4>
+<p><strong><em>Layunin</em></strong></p>
+<p>Kunin ang pangunahing data na kinakailangan upang makalkula ang mga simpleng tagapagpahiwatig na nakabatay sa Haba ng kalusugan ng palaisdaan at upang subaybayan ang mga pagbabago sa produksyon, halaga, at komposisyon ng pangisdaan.</p>
+<p><strong><em>Nakolekta Ang Data</em></strong></p>
+<ul>
+<li><p>Nakarating ang petsa</p></li>
+<li><p>Lokasyon ng Landing</p></li>
+<li><p>Pangalan ng negosyante ng isda</p></li>
+<li><p>Pangalan ng Fisher</p></li>
+<li><p>Pangingisda pagsisikap (araw pangingisda / gleaning)</p></li>
+<li><p>Pagkakakilanlan ng Species (lokal, karaniwan, pang-agham na pangalan)</p></li>
+<li><p>Kabuuang bilang</p></li>
+<li><p>Kabuuang timbang</p></li>
+<li><p>Kabuuang presyo</p></li>
+<li><p>Dahilan kabuuang catch hindi ibinebenta, kung naaangkop</p></li>
+</ul>
+<p><strong><em>Target Na Madla</em></strong></p>
+<p>Mga mangingisda habang nilalapag nila ang kanilang catch o sa bahay/palengke ng mga mamimili ng isda.</p>
+<p><strong><em>Dalas at tiyempo</em></strong></p>
+<p>Ang survey sa pagsubaybay sa Landings ay dapat isagawa araw-araw o nang madalas hangga ’ t maaari. Magsagawa ng mga survey sa pagsubaybay sa Landings bago at pagkatapos ng pagpapatupad upang suriin ang mga epekto ng pagsasara ng pangisdaan o iba pang mga diskarte sa pamamahala. Inirerekumenda namin ang pagkolekta ng data 30 araw bago at pagkatapos ng pansamantalang mga panahon ng pagsasara. Para sa unang pitong araw ng mga panahon ng sampling, inirerekumenda namin na ang mga Enumerator ay nagsasagawa ng mga survey sa pagsubaybay sa Landings araw-araw. Kung maaari, ipagpatuloy ang pang-araw-araw na pagsubaybay sa buong 30-araw na panahon. Kung hindi ito posible, survey ng hindi bababa sa 80% ng mga araw sa loob ng bawat 30 araw. Inirerekumenda rin namin ang pag-survey ng 80% o higit pa sa lahat ng mga Fishers landing catch sa isang partikular na araw pre o post-closure. Ipamahagi ang mga pagsisikap sa survey ng kinatawan sa pagitan ng mga mangingisda ng bangka at mga mangingisda na hindi bangka. Kolektahin ang data mula sa lahat ng mga mangingisda landing sa village, hindi alintana kung o hindi sila ay pangingisda sa loob ng pagsasara ng site.</p>
+<p>Para sa mas matagal na pagsasara, tiyakin na ang data ay nakolekta sa parehong buwan para sa bawat taon upang makuha ang pagbabago sa panahon ng pagsasara. Kung hindi iyon magagawa, inirerekumenda namin ang pangangalap ng data sa parehong buwan bago at pagkatapos ng pagsasara. Tulad ng nakasaad sa itaas, inirerekumenda namin ang pagsuri ng hindi bababa sa 80% ng araw sa loob ng buwan at 80% ng mga fishers landing catch sa bawat araw.</p>
+<p><strong><em>Pamamaraan</em></strong></p>
+<p>Gamit ang form na Kobo, matugunan ang mga mangingisda sa mga landing site/bahay ng mga mamimili upang maitala ang kanilang catch.</p>
+</section>
+<section id="survey-sa-pag-profile-ng-landings" class="level4">
+<h4 class="anchored" data-anchor-id="survey-sa-pag-profile-ng-landings"><strong>Survey Sa Pag-Profile Ng Landings</strong></h4>
+<p><strong><em>Layunin</em></strong></p>
+<p>Unawain ang sinusunod na mga trend ng catch.</p>
+<p><strong><em>Nakolekta Ang Data</em></strong></p>
+<ul>
+<li><p>Nakarating ang petsa</p></li>
+<li><p>Lokasyon ng Landing</p></li>
+<li><p>Pangunahing lugar ng pangingisda</p></li>
+<li><p>Pangalan ng negosyante ng isda</p></li>
+<li><p>Pangalan ng Fisher</p></li>
+<li><p>Pangingisda pagsisikap (oras at araw pangingisda/gleaning)</p></li>
+<li><p>Uri ng barko (numero ng pagpaparehistro ng bangka, numero ng crew)</p></li>
+<li><p>Pagkakakilanlan ng Species (lokal, karaniwan, pang-agham na pangalan)</p></li>
+<li><p>Ginamit ang mga Gears</p></li>
+<li><p>Ang Habitat fished</p></li>
+<li><p>Kabuuang bilang</p></li>
+<li><p>Kabuuang timbang</p></li>
+<li><p>Kabuuang presyo</p></li>
+<li><p>Dahilan kabuuang catch hindi ibinebenta, kung naaangkop</p></li>
+<li><p>Mga sample ng mga indibidwal na timbang at haba (figure 2-8)</p></li>
+<li><p>Ang data ng sample na partikular sa kasosyo (sex, kalidad ng catch, gonads, stylet, # traps, atbp.)</p></li>
+</ul>
+<p><strong><em>Target Na Madla</em></strong></p>
+<p>Isang kinatawan na sample ng catch sa loob ng komunidad. Mag-Record ng hindi bababa sa 50 mga sample (perpektong 100) para sa bawat target na species, na kumakatawan sa iba ’ t ibang mga uri ng gear at mga profile ng fisher.</p>
+<p><strong><em>Dalas at tiyempo</em></strong></p>
+<p>Ang survey na ito ay dapat na isagawa sa simula ng paglahok sa isang komunidad at pagkatapos ay isagawa bawat isa hanggang dalawang taon, bago at pagkatapos ipatupad ang diskarte sa pamamahala, o kung kinakailangan upang ipaliwanag ang mga pagtanggi na sinusunod sa pamamagitan ng data ng pagsubaybay. Gamit ang form na Kobo, matugunan ang mga mangingisda sa mga landing site upang mai-sample ang kanilang catch at maitala ang kanilang aktibidad sa pangingisda.</p>
+<p><strong><em>Pamamaraan</em></strong></p>
+<p>Gamit ang form na Kobo, matugunan ang mga mangingisda sa mga landing site upang mai-sample ang kanilang catch at maitala ang kanilang aktibidad sa pangingisda.</p>
+</section>
+<section id="pamantayan-sa-pagsukat-uri-ng-haba-upang-masukat-ayon-sa-pangkat-ng-species" class="level4">
+<h4 class="anchored" data-anchor-id="pamantayan-sa-pagsukat-uri-ng-haba-upang-masukat-ayon-sa-pangkat-ng-species"><strong>Pamantayan sa Pagsukat: Uri ng haba upang masukat ayon sa pangkat ng species</strong></h4>
+<p><img src="images/Fig2_en.jpg" class="img-fluid"></p>
+<p>Larawan 2: Ang kabuuang haba ay dapat gamitin upang masukat ang finfish, shark at eels (AFS).</p>
+<p><img src="images/Fig3_en.jpg" class="img-fluid"></p>
+<p>Larawan 3: Ang lapad ng disc ay dapat gamitin upang masukat ang mga sinag at skate.</p>
+<p><img src="images/Fig4_en.jpg" class="img-fluid"></p>
+<p>Larawan 4: Ang lapad ng Carapace ay dapat gamitin kapag sinusukat ang alimango (Suryandari et. al, 2018).</p>
+<p><img src="images/Fig5_en.jpg" class="img-fluid"></p>
+<p>Larawan 5: Ang haba ng Mantle ay dapat gamitin kapag sinusukat ang pugita at pusit (FAO).</p>
+<p><img src="images/Fig6_en.jpg" class="img-fluid"></p>
+<p>Larawan 6: Ang haba ng Carapace ay dapat gamitin kapag sinusukat ang hipon at lobster (Hart et al.&nbsp;2001).</p>
+<p><img src="images/Fig7_en.jpg" class="img-fluid"></p>
+<p>Larawan 7: Ang haba ay dapat gamitin kapag sinusukat ang mga bivalves at gastropods.</p>
+<p><img src="images/Fig8_en.jpg" class="img-fluid"></p>
+<p>Larawan 8: Ang kabuuang haba ay dapat gamitin kapag sinusukat ang mga pipino sa dagat. Ang lapad o diameter ng pagsubok ay dapat gamitin kapag sumusukat sa mga sea urchin.</p>
+</section>
+</section>
+<section id="pangkalahatang-ideya-ng-daloy-ng-data" class="level3">
+<h3 class="anchored" data-anchor-id="pangkalahatang-ideya-ng-daloy-ng-data">Pangkalahatang-Ideya Ng Daloy Ng Data</h3>
+<p>Ang pagkolekta ng Data, pagpapatunay, pagbabagong-anyo, at paggunita ay ang apat na pangunahing sangkap ng data system. Ang pangunahing mga application ng software na ginamit ay KoboToolBox, Smartsheet, PostgreSQL, at R.</p>
+<p>Ang KoboToolBox ay isang libre at open-source na software na isang malakas na toolkit para sa pagkolekta ng data na naa-access sa pamamagitan ng mapaghamong mga kapaligiran at maraming mga platform, tulad ng mga mobile device, computer, at papel. Kinokolekta ng mga Enumerator ang data sa mga kondisyon ng socioeconomic at ecological na mahalaga upang masuri ang mga komunidad ng pangisdaan at katayuan sa pamamagitan ng mga talatanungan sa survey ng KoBoToolbox. Ang Smartsheet ay isang collaborative work management platform na nagbibigay ng flexible at intuitive na interface para sa mga organisasyon na magplano, subaybayan, i-automate, at pamahalaan ang iba ’ t ibang proyekto at proseso sa real-time. Ang mga file ng sanggunian na ginagamit upang punan ang mga form ng survey at ikonekta ang karagdagang data sa mga master dataset ay pinamamahalaan sa Smartsheet. Bilang karagdagan, ang data ay napatunayan sa Smartsheet. Ang PostgreSQL ay isang libreng at open-source na sistema ng pamamahala ng database na ginagamit bilang isang bodega ng data para sa maraming mga Web, analytics, at geospatial na aplikasyon habang nag-iimbak ng hindi nakabalangkas at nakabalangkas na data sa isang solong produkto. R ay isang libre at open-source na kapaligiran ng software at programming language na malawakang ginagamit para sa data science, statistical computing, at visualization ng data. Ang mga dashboard ng Data ay binuo gamit ang makintab na pakete mula sa R programming language at naka-host sa shinyapps.io, isang platform bilang isang serbisyo (paas) para sa pagho-host ng Shiny web apps (applications).</p>
+<p><img src="images/Fig9_en.jpg" class="img-fluid"></p>
+<p>Larawan 9: diagram ng daloy ng data.</p>
+<p>Ang pagkolekta ng data ay nagsasangkot ng sistematikong pagkolekta at pagsukat ng impormasyon mula sa mga kaugnay na mapagkukunan sa mga variable ng interes para sa paggawa ng desisyon, estratehikong pagpaplano, mga pagsusuri sa kinalabasan, at iba pang mga layunin. Sa pamamagitan ng pagsasama ng dami at husay na data sa mga talatanungan sa survey, nagkakaroon tayo ng mas malalim na pag-unawa sa sosyo-ekonomiko at ekolohikal na mga kondisyon na nauugnay sa mga pamayanan ng pangingisda at mga diskarte sa pamamahala ng adaptive. Ang pagpapatunay ng Data ay tumutukoy sa paglalapat ng mga pamamaraan upang masukat ang mga kundisyon ng nakolektang data at matukoy kung natutugunan ng nakolektang data ang tinukoy na pamantayan sa kalidad, tulad ng kawastuhan, pagkakapare-pareho, kaugnayan, pagkakumpleto, at pagiging natatangi. Ang pagbabagong-anyo ng Data ay nagko-convert, naglilinis, at nagtatayo ng hilaw na data sa isang magagamit na format na maaaring masuri at masuri para sa paggawa ng desisyon. Ang pagsusuri at pagtingin sa Data ay nagsasangkot ng pagdidisenyo at paglikha ng mga naa-access na graphics o visual na pagpapakita ng impormasyon upang epektibong maipahayag ang kumplikadong kwalitatibong at pang-kuantitatibong data na dati nang nakolekta, na-verify, at binago sa mga target na madla. Inilarawan namin ang proseso ng daloy ng data sa ibaba:</p>
+<ol type="1">
+<li><p>Ang Data ay nakolekta sa pamamagitan ng mga form ng survey ng KoboToolBox.</p></li>
+<li><p>Ang Data ay nakuha sa database.</p></li>
+<li><p>Kung pinili ng enumerator ang mga pre-populated na pagpipilian ng sagot sa mga survey, ang data ay hindi kailangang mapatunayan at maaaring direktang dumaan sa proseso ng pagsusuri ng data at paggunita.</p></li>
+<li><p>Kung ang Enumerator ay manu-manong naglalagay ng data tulad ng isang bagong mangingisda, mamimili, kolektor ng data, landing site, o species, ang data ay napapatunayan sa Smartsheet bago isama sa huling talahanayan ng data at makita sa dashboard. Field team leads ay aabisuhan sa pamamagitan ng email kapag ang data ay handa na para sa pagpapatunay. Manu-manong susuriin ng Team leads ang mga talahanayan ng kontrol sa kalidad upang kumpirmahin na ang bagong idinagdag na impormasyon ay may bisa.</p></li>
+<li><p>Pagkatapos ng pagpapatunay, ang bagong data ay itinulak sa parehong mga file ng sanggunian at bumalik sa database para sa pangwakas na pagbabagong-anyo bago ang pagsusuri at paggunita.</p></li>
+<li><p>Kapag ang data ay itinulak sa mga file ng sanggunian, ang mga lead ng koponan ay aabisuhan sa pamamagitan ng email kung ang anumang karagdagang impormasyon ay kinakailangan sa mga file ng sanggunian.</p></li>
+<li><p>Ang mga na-update na mga file ng sanggunian ay pagkatapos ay na-upload sa platform ng KoboToolBox para isama sa mga form.</p></li>
+<li><p>Ang na-update na data mula sa mga file ng sanggunian ay ginagamit din sa proseso ng pagbabagong-anyo ng data upang sumali sa mga karagdagang patlang ng data tulad ng mga coordinate at kasarian.</p></li>
+<li><p>Ang pangwakas na mga hakbang ng proseso ng pagbabagong-anyo ng data ay nagreresulta sa mga talahanayan ng data ng master na ginagamit para sa pagsusuri ng data at paggunita sa mga dashboard ng data.</p></li>
+<li><p>Ang mga dashboard ng Data (ibig sabihin, makintab na apps) ay kumonekta nang direkta sa database, hinila ang pinaka-up-to-date na data na magagamit, sa gayon ay nagbibigay ng mga kasosyo na malapit sa agarang pag-access sa raw at summarized data.</p></li>
+</ol>
+<section id="seguridad-ng-data" class="level4">
+<h4 class="anchored" data-anchor-id="seguridad-ng-data"><strong>Seguridad Ng Data</strong></h4>
+<p>Nasa ibaba ang isang listahan ng mga platform ng software kung saan ang data ay maaaring maiimbak at ilipat sa transit mula sa database. Ang impormasyon sa seguridad ng Data para sa bawat panlabas na platform ay magagamit sa website na tukoy sa platform na naka-link dito.</p>
+<ol type="1">
+<li><p><a href="https://support.kobotoolbox.org/is_my_data_safe.html?highlight=security">Kobo software</a></p></li>
+<li><p><a href="https://www.postgresql.org/support/security/">PostgreSQL</a></p></li>
+<li><p><a href="https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/security-of-the-aws-infrastructure.html">Amazon Web Services</a></p></li>
+<li><p><a href="https://support.google.com/drive/answer/10375054?hl=en">Google drive</a></p></li>
+<li><p><a href="https://www.smartsheet.com/trust/security">Smartsheet</a></p></li>
+<li><p><a href="https://docs.posit.co/shinyapps.io/security-and-compliance.html">Shinyapps.io</a></p></li>
+<li><p><a href="https://github.com/security">Github</a></p></li>
+</ol>
+<p>Ipinatupad ang mga karagdagang pamamaraan sa seguridad, bilang karagdagan sa mga hakbang sa seguridad ng data na ibinigay ng mga platform ng software sa itaas. Lahat ng account sa lahat ng software platform na ginamit ay protektado ng password.</p>
+<p>Ginagamit namin ang Github bilang aming bersyon control system para sa mga naka-code na produkto. Bilang default, ang lahat ng mga folder at proyekto na may data ng pangisdaan at socioeconomic ay pribado at naa-access lamang sa mga kawani at kontratista.</p>
+<p>Makintab na Apps), Kinakailangan ang pagpapatunay ng gumagamit para sa pagtingin o pag-download ng data, depende sa kasunduan sa pagbabahagi ng data na pinili ng bawat samahan ng kasosyo. Kabilang dito ang pag-verify ng mga gumagamit bago payagan ang data na makita o ma-download, mga gumagamit na nag-log in sa mga platform ng pagtingin sa data, at regular na pamamahala ng mga na-verify na gumagamit.</p>
+<p>Ang pag-Access sa mga dokumento ng Smartsheet (hal.mga file ng sanggunian, mga sheet ng Pagpapatunay ng data) ay limitado sa mga tauhan na nakilala ng bawat organisasyon, at ang bawat kasosyo ay maaaring tingnan lamang ang kanilang sariling impormasyon na partikular sa kasosyo. Ang mga eksepsiyon dito ay kinabibilangan ng mga kawani na kumokontrol at tumutulong sa mga daloy ng trabaho sa kalidad ng data, at mga kawani ng Blue Ventures na tumutulong sa mga kasosyo sa mga daloy ng trabaho sa impormasyon sa Smartsheet.</p>
+</section>
+<section id="pagkapribado-ng-data" class="level4">
+<h4 class="anchored" data-anchor-id="pagkapribado-ng-data"><strong>Pagkapribado Ng Data</strong></h4>
+<p>Ang personal identifiable information (PII) at fisheries catch data ay pag-aari ng mga mangingisda at mamimili ng isda at hindi kailanman ibabahagi nang walang paunang pahintulot. Upang maprotektahan ang privacy ng fisher, mga mamimili, at mga kolektor ng data, ang lahat ng mga pangalan ay hindi nagpapakilala sa mga random na numero ng pagkakakilanlan. Samakatuwid, ang lahat ng bahagyang o ganap na magagamit na data sa publiko ay isasama lamang ang mga random, numerong numero ng id. Tingnan ang seksyon sa pagbabahagi ng data para sa isang buong paliwanag ng mga kasunduan sa pagbabahagi ng data.</p>
+<p>Ang Data na itinuturing na PII ay kinabibilangan ng:</p>
+<ul>
+<li><p>Mga pangalan ng mga mangingisda, mamimili, at mga kolektor ng data</p></li>
+<li><p>Mga pangalan ng mga sumasagot para sa anumang mga survey</p></li>
+</ul>
+</section>
+<section id="pagbabahagi-ng-data" class="level4">
+<h4 class="anchored" data-anchor-id="pagbabahagi-ng-data"><strong>Pagbabahagi Ng Data</strong></h4>
+<p>Ang fisheries data system ay idinisenyo upang i-streamline ang paggamit ng iyong data at magbigay ng isang platform para sa iyong aktibong pakikipag-ugnayan sa mas malawak na pamamahala ng pangisdaan at mga pagsisikap sa pag-iingat. Ang pinagsama-samang data na nakolekta nang sama-sama sa mga kasosyo ay maaaring magbunga ng malakas na pananaw para sa pagsubaybay sa palaisdaan, pagtatasa ng mga diskarte sa pamamahala, paggabay sa paggawa ng desisyon sa parehong lokal at pambansang antas, pag-unawa sa mga pagbabago sa rehiyon, at pagkilala sa mga potensyal na serbisyo sa pananalapi.</p>
+<p>Kinikilala namin ang kritikal na kahalagahan ng pagmamay-ari ng data at paggamit para sa lahat ng nag-aambag na kasosyo. Ang aming layunin ay upang bigyan ka ng kakayahang umangkop sa pamamahala at pagtukoy kung paano ginagamit ang iyong data. Sa pamamagitan ng pagpili ng isa sa tatlong mga antas ng pahintulot sa paggamit ng data, maaari mong ayusin ang lawak kung saan ibinabahagi ang iyong data sa ibang mga gumagamit. Maaari mong maiangkop ang mga antas ng pahintulot batay sa mga uri ng data, at mahalaga, mayroon kang kalayaan upang ayusin ang iyong antas ng pahintulot ng data sa anumang oras. Ang personal identifiable information (PII) at fisheries catch data ay pag-aari ng mga mangingisda at mamimili ng isda at hindi kailanman ibabahagi nang walang paunang pahintulot. Sa pamamagitan ng pagpili ng antas ng pahintulot sa paggamit ng data, kinukumpirma mo na ang mga indibidwal na pahintulot ay nakuha mula sa parehong mga mangingisda at mamimili ng isda.</p>
+<p>Ang lahat ng data ay kasalukuyang nakatakda sa antas 1 - pribado. Ang mga gumagamit ay magkakaroon ng pagkakataon na ayusin ang kanilang mga antas ng pahintulot kung kinakailangan.</p>
+<p><strong>Antas 1-Pribado</strong></p>
+<ul>
+<li><p>Ang data ay mahigpit para sa panloob na mga layunin ng orihinal na data contributor.</p></li>
+<li><p>Ang Data ay magagamit para sa pag-download ng orihinal na data contributor.</p></li>
+<li><p>Ang Data ay hindi isasama sa mga pagsusuri sa rehiyon na ibinigay sa dashboard.</p></li>
+<li><p>Mahigpit na ipinagbabawal ang hindi awtorisadong pagbabahagi o pamamahagi ng data sa mga panlabas na partido.</p></li>
+</ul>
+<p><strong>Antas 2-Ibahagi sa iba pang mga nag-aambag ng Data</strong></p>
+<ul>
+<li><p>Ang data ng antas ng biyahe ay magagamit para sa iba pang mga nag-aambag ng data upang i-download.</p></li>
+<li><p>Ang mga buod ng Data at visualization ay magagamit para sa iba pang mga nag-aambag ng data.</p></li>
+<li><p>Ang Data ay isasama sa mga pagsusuri sa rehiyon sa dashboard.</p></li>
+</ul>
+<p><strong>Antas 3-Ibahagi sa lahat ng mga gumagamit</strong></p>
+<ul>
+<li><p>Trip level data ay magagamit para sa lahat ng mga gumagamit upang i-download.</p></li>
+<li><p>Ang mga buod ng Data at visualization ay magagamit para sa lahat ng mga gumagamit.</p></li>
+<li><p>Ang Data ay isasama sa mga pagsusuri sa rehiyon sa dashboard.</p></li>
+<li><p>Ang orihinal na nag-aambag ng data ay maaaring tukuyin ang anumang mga limitasyon sa paggamit o kundisyon na naaangkop sa lahat ng mga gumagamit.</p></li>
+</ul>
+</section>
+<section id="pagpapatunay-ng-bago-at-naka-flag-na-data" class="level4">
+<h4 class="anchored" data-anchor-id="pagpapatunay-ng-bago-at-naka-flag-na-data"><strong>Pagpapatunay ng bago at naka-flag na Data</strong></h4>
+<p>Sa mga survey, ang ilang mga katanungan ay nagpapahintulot sa mga Enumerator na magdagdag ng isang bagong mangingisda, mamimili, kolektor ng data, landing site, species, o “iba pa.”Ang impormasyon mula sa mga pagpipiliang ito ay mga bagong puntos ng data at dapat sumailalim sa pag-verify bago itulak sa panghuling dataset, mailarawan sa dashboard, at idinagdag sa mga sanggunian na file. Mayroon ding mga hadlang na itinakda sa timbang, Presyo at haba ng isang species, at kung ang data na nakolekta ay nasa ibaba o sa itaas ng mga hadlang na ito, ang mga halagang ito ay na-flag para sa pagsusuri. Ang mga hadlang sa timbang at presyo ay itinakda ng mga kasosyo sa min_max_ref. Ang mga paghihigpit sa Haba ng mga Species ay itinakda ng team gamit ang mga biological parameter.</p>
+<p>Ang lahat ng data na dumadaloy sa sistema ng data ng pangisdaan ay napatunayan sa Smartsheet. Ang alinman sa mga bago o naka-flag na mga entry na ito ay ipinadala sa talahanayan ng pagpapatunay sa Smartsheet para mapatunayan ng mga koponan sa larangan. Ang mga talahanayan ng pagpapatunay ay partikular sa kasosyo at maaaring ma-access sa pamamagitan ng mga kahilingan sa pag-update na ipinadala sa iyong email o sa pamamagitan ng pagbisita sa mga link ng Dynamic View na ibinigay sa iyo. Ang mga lead ng Field team ay aabisuhan sa pamamagitan ng email kapag kailangang ma-validate ang data sa mga talahanayan. Kapag na-verify na ang data sa mga talahanayan ng pagpapatunay, maglalagay kami ng bagong impormasyon sa reference file at magbibigay ng mga kinakailangang pagwawasto sa master dataset.</p>
+<p>Ang mga tiyak, sunud-sunod na mga tagubilin para sa kung paano makumpleto ang pagpapatunay ng data sa Smartsheet ay matatagpuan sa pahina ng Pagpapatunay ng data.</p>
+</section>
+</section>
+<section id="pagkolekta-ng-data" class="level3">
+<h3 class="anchored" data-anchor-id="pagkolekta-ng-data">Pagkolekta Ng Data</h3>
+<p>Ang Blue Ventures ay namamahala sa lahat ng mga survey sa pamamagitan ng mga form ng Kobo Toolbox na maibabahagi sa pamamagitan ng isang Kobo Toolbox account. Maaari kang mag-set up ng isang account sa https://kf.kobotoolbox.org/accounts/signup/. mangyaring makipag-ugnay sa koponan gamit ang iyong username at mga detalye ng account. Kapag ibinahagi ang mga survey, i-access ang mga form ng Kobo sa pamamagitan ng kobocollect libreng Android mobile phone app o sa pamamagitan ng form ng web ng Enketo. Ang mga detalyadong tagubilin sa pag-set up ng isang kobo account, pagkolekta ng data, at pagsusumite ng data ay matatagpuan sa pahina ng pag-Setup ng Kobo. Gumamit ng isang QR code upang mai-configure ang lahat ng mga aparato pagkatapos ng manu-manong pag-set up ng unang telepono o tablet upang mag-set up ng maraming mga telepono o tablet sa ilalim ng isang account sa pagkolekta ng data. Ang manu-manong pag-setup ng unang aparato ay nangangailangan ng Kobo server URL, username, at password. Ang KOBO server URL ay https://kc.kobotoolbox.org. ang karagdagang impormasyon sa pag-set up ng koleksyon ng data kasama ang Kobo, kabilang ang kung paano i-configure ang maraming mga aparato sa pagkolekta ng data sa pamamagitan ng isang QR code, ay matatagpuan sa https://support.kobotoolbox.org/.</p>
+<p>Kapag na-download mo na ang KoboCollect, buksan ang app at ipasok ang URL ng server, username, at password upang ikonekta ang iyong kobocollect app sa KoBoToolbox server. Ang pagkonekta sa kobocollect app sa KoBoToolbox server ay nagbibigay-daan sa iyo upang mag-download ng mga naka-deploy na form mula sa KoboToolbox sa iyong mobile device at magpadala ng data na nakolekta sa pamamagitan ng app pabalik sa server. Sa home screen, piliin ang ” Kumuha ng blangko na Form.”Ang isang listahan ng lahat ng iyong mga naka-deploy na form ng survey ay dapat lumitaw. Pindutin ang” Piliin ang lahat ” upang maipadala ang lahat ng mga form ng survey sa app, o piliin ang mga nais mong magkaroon sa pamamagitan ng pagpili ng mga ito nang manu-mano. Pagkatapos ay i-click ang “Pumili.”Upang i-deploy ang survey, Piliin ang “Punan ang blangko na Form.”</p>
+<p>Habang ang webform ay awtomatikong na-update kapag magagamit ang isang bagong bersyon ng survey, dapat i-configure ng mga gumagamit ang “auto-update” sa kanilang sarili sa app. Ang regular na pag-update ng mga survey sa app ay nagsisiguro gamit ang pinakabagong bersyon ng form at hindi nagiging sanhi ng mga isyu sa pipeline ng data. Maaari kang mag-set up ng auto-update sa app sa pamamagitan ng pagpunta sa “mga setting” at “pamamahala ng Form.”Ang karagdagang impormasyon sa awtomatikong pag-update ng mga survey sa app ay matatagpuan sa pahina ng pag-Setup ng Kobo. Mahalagang tandaan na ang isang koneksyon ay kinakailangan para sa app na hilahin ang pinakabagong bersyon ng survey, kahit na naka-on ang mga setting ng auto-update. Samakatuwid, payuhan ang mga Enumerator na magkaroon ng koneksyon sa internet bago magsagawa ng gawaing bukid upang ang KoboCollect ay maaaring hilahin ang pinakabagong bersyon.</p>
+<p>Matapos mangolekta ng data, ang mga survey na isinumite sa pamamagitan ng web form ay Awtomatikong isusumite sa server sa sandaling ang kolektor ng data ay tumama sa pindutan ng “isumite”. Ang data na nakolekta sa pamamagitan ng kobocollect app ay unang nai-save sa app sa isang lugar na may hawak at pagkatapos ay itinulak sa server. Ang mga nakumpletong survey ay mananatiling naka-hold bago isumite sa server upang ang mga kolektor ng data ay maaaring gumawa ng mga pag-edit ng survey pagkatapos ng pagkolekta ng data, o kung walang koneksyon sa internet, Maaaring i-save ng app ang mga survey at pagkatapos ay itulak ang mga survey sa server sa sandaling may koneksyon sa internet. Partikular, kapag kumpleto ang survey, tatama ang gumagamit ng “I-Save ang form at exit,” tinitiyak na ang “Mark form bilang finalized” ay nasuri din. Ang” I-Edit ang naka-save na Form ” ay awtomatikong nag-iimbak ng naka-save na form. Ang kolektor ng data ay maaaring gumawa ng mga kinakailangang pagbabago at piliin ang “I-Save ang Form at Exit.”Ang home screen ay mayroon ding isang pindutan na tinatawag na “magpadala ng Finalized Form.”Pindutin ang Piliin ang lahat (o piliin ang mga nais mong i-upload) at pagkatapos ay pindutin ang “Ipadala ang napili.”Piliin ang” Tingnan ang ipinadala na Form ” upang matiyak na matagumpay na mai-upload ang mga form at dapat mo na ngayong matingnan ang lahat ng mga isinumite na form.</p>
+<p>Ang isang sentral na sistema ng imbakan ng data ay naka-link sa data ng Kobo, at ang mga awtomatikong pagsusuri at mga visualization ay magagamit sa pamamagitan ng isang pamantayang dashboard. Ang Raw data ay nai-back up sa database ng KoboToolbox at magagamit sa pamamagitan ng pag-download o direktang link sa isa pang database o bodega ng data.</p>
+</section>
+<section id="mga-salin" class="level3">
+<h3 class="anchored" data-anchor-id="mga-salin">Mga salin</h3>
+<p>Ang mga pagsasalin para sa lahat ng mga wika ay nakumpleto sa pamamagitan ng pag-edit ng mga sheet ng pagsasalin sa Smartsheet. Kung nalaman mong ang isang pagsasalin ay nangangailangan ng pag-update o mali sa mga survey, mangyaring direktang i-update ang kaukulang pagsasalin sa naaangkop na sheet ng Smartsheet. Kung kailangan ng team ng mga bagong pagsasalin, makakatanggap ang mga partner ng notification mula sa Smartsheet.</p>
+</section>
+<section id="mga-file-ng-sanggunian" class="level3">
+<h3 class="anchored" data-anchor-id="mga-file-ng-sanggunian">Mga File Ng Sanggunian</h3>
+<p>Ang mga reference file ay kasosyo o partikular sa bansa at naglalaman ng komprehensibong impormasyon sa mga antas ng administratibo ng mga komunidad ng pangingisda (bansa, lalawigan, distrito, nayon), mga landing site, mangingisda, mamimili, kolektor ng data, data ng species, mga lugar ng pamamahala, mga uri ng tirahan, mga uri ng gear, at mga organisasyon ng pakikipagsosyo. Ang ilang impormasyon ay pumupuno sa mga listahan ng pagbagsak sa mga survey, at ang ilan ay sumali sa master dataset pagkatapos makolekta ang data. Ang bagong impormasyon ay dapat idagdag nang direkta sa mga sheet ng sanggunian.</p>
+<p>Ang mga tiyak, sunud-sunod na mga tagubilin para sa kung paano i-update ang mga file ng sanggunian sa Smartsheet ay matatagpuan sa pahina ng mga file ng sanggunian.</p>
+</section>
+<section id="appendix-a-gabay-sa-talakayan-ng-pangkat-ng-pokus" class="level3">
+<h3 class="anchored" data-anchor-id="appendix-a-gabay-sa-talakayan-ng-pangkat-ng-pokus">Appendix A: Gabay Sa Talakayan Ng Pangkat Ng Pokus</h3>
+<p><strong>Mahalagang pagsasaalang-alang bago magsagawa ng fisheries profiling o survey</strong></p>
+<p><strong>Relasyon at tiwala</strong></p>
+<p>Ang pagbuo ng mga relasyon at pagkakaroon ng tiwala mula sa komunidad ay isang mahalagang paunang hakbang bago magtanong tungkol sa impormasyon sa pangisdaan. Ang unang hakbang sa pagbuo ng mga ugnayan at pagkakaroon ng tiwala sa pamayanan ay ang pagpapakilala sa iyong sarili, iyong samahan, at ang layunin ng pagsasagawa ng profiling ng pangisdaan.</p>
+<p><strong>Paghahanda</strong></p>
+<p>Mahalaga ang paghahanda sa pagsasagawa ng bawat pamamaraan ng survey, dahil ang mahusay na paghahanda ay magbibigay sa iyo ng kumpiyansa sa pagiging epektibo ng bawat pamamaraan na iyong inilalapat.</p>
+<p><strong>Oras para sa pagkolekta ng impormasyon</strong></p>
+<p>Ayusin ang oras ng pagsasagawa ng bawat pamamaraan sa oras ng prospective na tumutugon o naka-target na pangkat ng komunidad.</p>
+<p><strong>Respondent</strong></p>
+<p>Ang pag-unawa sa mga potensyal na respondent na matutugunan mo sa panahon ng fisheries profiling ay mahalaga sa pagsasagawa ng mga survey. Ang mga pangkat o indibidwal na nasa survey ay dapat makatanggap ng paunang abiso. Samakatuwid, ang pagpapakilala ng mga maimpluwensyang pinuno ng komunidad ay dapat na bahagi ng gawaing pre-survey.</p>
+<p><strong>Logistik</strong></p>
+<p>Ang bawat pamamaraan ay may logistic at materyal na pangangailangan. Siguraduhin na ang mga mapagkukunan at kagamitan na kinakailangan para sa bawat pamamaraan ng pag-profile ng pangisdaan ay inihanda.</p>
+<p><strong>Listahan ng contact ng pangunahing tao</strong></p>
+<p>I-Save ang isang pangunahing listahan ng contact ng tao sa iyong telepono at mayroon ding naka-print na bersyon para sa pag-back up.</p>
+<p><strong>Kalusugan at kaligtasan</strong></p>
+<p>Tiyaking nasa mabuting kalagayan ka upang magsagawa ng profiling ng pangisdaan. Magdala ng isang mahalagang first aid kit.</p>
+<section id="patnubay-sa-talakayan-ng-pangkat-ng-pokus" class="level4">
+<h4 class="anchored" data-anchor-id="patnubay-sa-talakayan-ng-pangkat-ng-pokus">Patnubay Sa Talakayan Ng Pangkat Ng Pokus</h4>
+<p>Ang sumusunod ay naglalaman ng patnubay at mga rekomendasyon sa pagsasagawa ng isang focus group upang makuha ang impormasyon sa pag-profile ng komunidad. Ang pagdaraos ng sesyon ng focus group ay inirerekomenda upang hikayatin ang diyalogo, makuha ang pagkakaiba-iba ng mga opinyon, at simulan ang pagbuo ng mga relasyon sa mga mahahalagang miyembro ng komunidad. Gayunman, sa kaso na ang isang focus group ay hindi posible, ang community profiling survey ay maaaring isagawa bilang mga indibidwal na pakikipanayam sa mga mahalagang stakeholder gamit ang “Community Profiling Survey” Kobo form. Sa pangkalahatan, ang layunin ng pagsasanay sa pag-profile ng komunidad, maging sa isang focus group o indibidwal na format ng pakikipanayam, ay upang maunawaan ang pangkalahatang tanawin ng komunidad at ang mga pangingisda na nagpapatakbo sa loob ng komunidad.</p>
+<p>I. Bago magsagawa ng isang focus group</p>
+<p>Bago mag-host ng pormal na grupo ng pokus sa pag-profile ng pangingisda, inirerekomenda na magsagawa ng mga di-pormal na pag-uusap at pagmamasid ng kalahok. Ang pamamaraang ito ay nangangahulugan ng paggugol ng oras, pagbuo ng mga relasyon, at pag-unawa sa palaisdaan gamit ang impormal na pag-uusap at pagmamasid ng kalahok.</p>
+<p>Ang impormal na pag-uusap ay mahalaga upang mas maunawaan ang pangkalahatang konteksto ng pangisdaan bago magsagawa ng talakayan ng grupo ng pokus. Gamitin ang pamamaraang ito bilang isa sa mga panimulang punto upang mabuo ang nilalaman ng talakayan ng pangkat ng pokus. Papayagan ka ng pamamaraang ito na makilala ang pamayanan ng pangisdaan, upang simulan ang pagbuo ng mga relasyon, at makakuha ng tiwala.</p>
+<p><em>Mga inirekumendang tip upang magsagawa ng impormal na pag-uusap:</em></p>
+<ul>
+<li><p>Igalang ang mga pagkakaiba sa kultura. Sundin ang mga pamantayan sa lipunan tulad ng mga katanggap-tanggap na pagbati, mga code ng damit, at igalang ang mga kasanayan sa relihiyon. Maging magalang, mapagpakumbaba, at makinig sa mga opinyon ng stakeholder nang hindi nagpapataw ng iyong sarili. Ang pananatili sa loob ng isang pamayanan, pagbuo ng isang ugnayan, at pagbabahagi ng mga pagkain ay makakatulong upang mabuo ang tiwala.</p></li>
+<li><p>Gumugol ng oras sa mga stakeholder. Walang shortcut sa pagkakaroon ng tiwala at suporta. Lalo na sa loob ng mga pamayanan ay Mabuting makita, gumugol ng oras sa mga nayon at makilala ang mga tao. Maging handa upang talakayin ang mas malawak na mga isyu sa loob ng komunidad. Huwag subukang itulak ang isang partikular na agenda.</p></li>
+<li><p>Gamitin ang lokal na wika kung maaari, maliban kung ang isang karaniwang wika ay naa-access. Kung hindi, gumamit ng interpreter. Maging maingat sa mga pagkakamali sa pagsasalin. Ang pagsasalin ng cross checking sa pagitan ng higit sa isang interpreter ay maaaring makatulong na mabawasan ang maling interpretasyon.</p></li>
+<li><p>Huwag gumawa ng mga pangako na hindi matutupad. Maging malinaw sa mga layunin at inaasahang kinalabasan nang hindi nagtataas ng mga inaasahan. Ito ay mahalaga upang bigyang-diin nang maaga upang ang mga komunidad ay magkaroon ng isang malinaw na pag-unawa sa papel na ginagampanan ng kasosyo sa teknikal, ibig sabihin upang mapadali ang pagsasara ng palaisdaan ng pugita, hindi upang maghukay ng mga balon o mag-ayos ng mga paaralan. Mahalagang matiyak na ang lahat ay may kamalayan sa kung ano ang magagawa at hindi magagawa ng samahan sa loob ng komunidad. Ang pagtiyak ng makatotohanang mga inaasahan ay nakakatulong upang mabawasan ang pagkabigo, reklamo, at mga salungatan habang umuusad ang proyekto.</p></li>
+<li><p>Malawak na makipag-usap sa mga plano at aktibidad. Tiyakin na ang anumang mga pagpupulong o aktibidad ay binalak nang maaga at sa kapwa nakalulugod na mga oras at lokasyon upang ma-maximize ang pagdalo. Tiyaking ang anumang mga pagbabago sa mga plano at aktibidad ay naiparating nang maaga hangga ’ t maaari. Ang pagiging nasa oras at nananatili sa mga kasunduan ay nakakatulong upang mabuo ang tiwala at tiwala sa pagitan ng mga stakeholder.</p></li>
+<li><p>Palaging kilalanin ang mga stakeholder sa mga output ng proyekto tulad ng mga ulat at paglabas ng media sa loob ng mga pagpupulong ng stakeholder at panlabas na pagtatanghal. Magkaroon ng kamalayan sa ‘pagmamay-ari’ ng impormasyon at igalang ang pagiging kompidensiyal at privacy.</p></li>
+</ul>
+<p>Ang mas mahusay na pag-unawa sa tanawin ng stakeholder sa komunidad ay isang mahalagang layunin sa pagsasagawa ng mga impormal na pag-uusap at pagmamasid ng kalahok. Ang mga stakeholder ay nakakaapekto o maaaring maapektuhan ng mga aksyon ng isang organisasyon. Ang kanilang suporta ay mahalaga para sa tagumpay ng isang organisasyon sa pagpapatupad ng mga plano sa pamamahala ng pangisdaan. Sa pamamagitan ng mas mahusay na pag-unawa sa mga stakeholder, mabisa mong matutukoy ang mga stakeholder na kasangkot sa hinaharap na pagsubaybay sa pangisdaan para sa pamamahala ng pangisdaan sa kanilang lugar.</p>
+<p><em>Mga halimbawa ng mga uri ng mga stakeholder upang isama:</em></p>
+<ul>
+<li><p>Mga mangingisda</p></li>
+<li><p>Pinuno ng nayon</p></li>
+<li><p>Pananampalataya/mga pinuno ng relihiyon</p></li>
+<li><p>Pangulo ng distrito</p></li>
+<li><p>Manggagawa sa kalusugan ng komunidad / practitioner sa kalusugan</p></li>
+<li><p>Mamimili/tagatustos ng nayon</p></li>
+<li><p>Pagproseso ng halaman</p></li>
+<li><p>Mga babae sa nayon/asawa ng mga mangingisda</p></li>
+</ul>
+<p><em>Impormasyon na makokolekta tungkol sa mga stakeholder:</em></p>
+<ul>
+<li>Ang impormasyon tungkol sa mga pangunahing stakeholder at ang kanilang mga posisyon na may kaugnayan sa mga layunin ng isang entidad (degree ng suporta, kapangyarihan, atbp.)). Ang impormasyong ito ay maaaring gamitin upang makilala kung aling mga stakeholder ang isasama sa Community profiling focus group.</li>
+</ul>
+<p>Matapos magsagawa ng impormal na pag-uusap, ang susunod na hakbang na maaari mong gawin ay ang pagmamasid ng kalahok. Ang pagmamasid ay isang pamamaraan na nagbibigay-daan sa iyo upang magamit ang mga kaganapan sa paligid mo upang makalikom ng mga pahiwatig at makabuo ng mga konklusyon tungkol sa mga tukoy na lokal o karanasan sa pamamagitan ng pagmamasid sa isang araw sa nayon ng pangingisda. Ang pamamaraang ito ay kinakailangan upang mangalap ng katibayan mula sa impormasyong ibinigay sa impormal na pag-uusap. Pinapayagan ka ng pamamaraang ito na maunawaan ang pang-araw-araw na mga aktibidad sa buhay ng nayon ng pangingisda.</p>
+<p>II. Mga Pamamaraan Ng Pangkat Ng Pokus</p>
+<p><strong>A.</strong> <strong>Pag-aayos ng pangkat ng pokus</strong></p>
+<ul>
+<li><p>Mahalaga na mapanatili ang mabuting ugnayan sa mga target na komunidad. Samakatuwid, kung saan posible ang mga nayon ay dapat ipagbigay-alam sa programa para sa pulong ng focus group ng hindi bababa sa dalawang linggo nang maaga.</p></li>
+<li><p>Kung ang nayon ay may pagtanggap ng mobile phone, tawagan ang pinuno ng nayon o iba pang(mga) lokal na contact.</p></li>
+<li><p>Kung ang nayon ay walang pagtanggap ng mobile phone, magsagawa ng pagbisita sa nayon upang makipagkita sa pinuno ng nayon o iba pang(mga) lokal na contact.</p></li>
+<li><p>Sa panahon ng tawag sa telepono o pagbisita sa Pangulo ng nayon o iba pang(mga) lokal na contact, ipaliwanag ang sumusunod:</p>
+<ul>
+<li><p>Layunin ng pagpupulong</p></li>
+<li><p>Lokasyon ng pagpupulong</p></li>
+<li><p>Petsa at oras ng pagpupulong</p></li>
+<li><p>Paraan ng pagpapaalam sa mga kalahok ng pulong</p></li>
+<li><p>Bilang ng mga kalahok</p>
+<ul>
+<li><p>Lahat ng mga tagabaryo o mga espesyal na tao batay sa pinakamahusay na mga mangingisda (2)</p></li>
+<li><p>Karamihan sa mga madalas na mangingisda (2)</p></li>
+<li><p>Mga mangingisda na madalas na maraming iba ’ t ibang mga site ng pangingisda (2)</p></li>
+<li><p>Mahusay na iginagalang fishers mas mabuti na may karanasan sa pagmamapa (2)</p></li>
+</ul></li>
+</ul></li>
+<li><p>Babae-suriin sa pinuno ng nayon kung ang focus group ay maaaring maganap sa parehong kasarian na magkasama nang maaga tulad ng sa ilang mga lugar, hindi ito laging posible.</p></li>
+<li><p>Subukang iwasan ang pagsasagawa ng(mga) pagpupulong sa panahon ng spring tides/mataas na panahon ng pangingisda, dahil marami sa mga kinakailangang mangingisda ay malamang na abala sa pangingisda.</p></li>
+<li><p>Siguraduhing suriin ang mga iskedyul ng iba pang mga proyekto na maaaring nagtatrabaho sa parehong lugar nang sabay upang maiwasan ang mga pag-aaway.</p></li>
+</ul>
+<p><strong>B.</strong> <strong>Koponan ng Focus group</strong></p>
+<p>Ang mga sumusunod ay ang inirerekomenda na mga tungkulin para sa koponan na nangunguna sa focus group. Sa pinakamaliit, ang isang focus group ay dapat magkaroon ng isang facilitator at isang note-taker.</p>
+<p><em>Lead facilitator: humahantong at moderates ang pulong</em></p>
+<ul>
+<li><p>Ipinakikilala ang pulong</p></li>
+<li><p>Pinapadali ang kaganapan</p></li>
+<li><p>Moderates ang proseso</p></li>
+<li><p>Gumaganap bilang isang katalista sa pagitan ng mga indibidwal ng pangkat</p></li>
+<li><p>Nakakahanap ng mga paraan ng pagsasama ng nangingibabaw at tahimik na mga tao at tinitiyak na ang lahat ng mga miyembro ng pangkat ay maaaring ipahayag ang kanilang mga opinyon</p></li>
+<li><p>Tinitiyak na ang grupo ay nagpapanatili sa paksa ngunit nababaluktot din sa paghawak ng karagdagang mahalagang impormasyon</p></li>
+<li><p>Inuulit sa sariling mga salita ang sinasabi ng mga tao upang makumpirma na mayroong isang mahusay na pag-unawa sa talakayan</p></li>
+<li><p>Alagaan ang pamamahala ng oras</p></li>
+</ul>
+<p><em>Katulong ng Facilitator: tumutulong sa nangungunang facilitator, lalo na sa pagpapakita ng mga visual aid</em></p>
+<ul>
+<li><p>Sinusuportahan ang tagakuha ng tala sa pangangalap ng lahat ng nauugnay na impormasyon</p></li>
+<li><p>Nangunguna sa pagpapakita ng mga visual aid at tumutulong sa iba pang mga interactive na bahagi ng pagpupulong tulad ng pag-tally ng mga boto, pagkuha ng mga tala na ipinapakita, pag-aalis ng mga materyales, atbp.</p></li>
+<li><p>Pinagsasama ang kinakailangang materyal</p></li>
+<li><p>Tumutulong sa facilitator sa isang hindi direktang paraan sa pamamagitan ng pagbibigay ng mga palatandaan (hal., pagturo sa mga nais magsalita).</p></li>
+<li><p>Sinusuportahan ang facilitator nang direkta sa pamamagitan ng pagtatanong, kung kinakailangan ito ng sitwasyon.</p></li>
+</ul>
+<p><em>Note-taker: idokumento ang pulong</em></p>
+<ul>
+<li><p>Obserbahan ang kaganapan mula sa background</p></li>
+<li><p>Kinukuha ang lahat ng mga tugon. Kapaki-pakinabang na mai-print ang listahan ng tanong upang maaari itong ma-annotate ng mga tala sa panahon ng pagpupulong.</p></li>
+<li><p>Isulat ang lahat ng mahalagang impormasyon</p></li>
+<li><p>Mga tala sino ang nagsasalita. Mayroon bang pantay na pakikilahok ng lahat o may ilang mga tao na nangingibabaw sa proseso? Nag-uusap ba ang mga kababaihan?</p></li>
+</ul>
+<p><strong>C.</strong> <strong>Mga kalahok sa pangkat ng pokus</strong></p>
+<p>Maingat na planuhin kung sino ang mag-imbita sa pulong ng focus group. Ang pagkilala sa 10-12 indibidwal ay inirerekomenda upang matiyak na ang laki ay mapapamahalaan, na nagbibigay-daan para sa sapat na representasyon ng iba ’ t ibang mga pananaw. Hangga ’ t maaari, isama ang mga kinatawan mula sa magkakaibang mga grupo ng stakeholder at mga sektor ng Komunidad (Tingnan ang mga halimbawa ng mga uri ng mga stakeholder sa seksyon sa itaas). Kapag pumipili ng mga kalahok, account para sa kanilang kaalaman at mga tungkulin sa komunidad. Ang pag-anyaya sa mga taong mas may kaalaman tungkol sa mga pangisdaan at pamayanan, tulad ng isang full-time na mangingisda kaysa sa isang paminsan-minsang libangan na mangingisda, ay magbibigay ng mas matatag at tumpak na impormasyon. Ang pagkilala at pag-anyaya sa mga taong iginagalang sa komunidad ay nakakatulong sa pagbuo ng tiwala.</p>
+<p><strong>D.</strong> <strong>Talakayan logistik at pamamaraan</strong></p>
+<p>Ang Data ay maaaring makuha sa form na “Community Profiling Survey” Kobo. Gayunpaman, maaaring mas madali para sa note-taker na makuha ang data sa pamamagitan ng nakasulat na mga tala upang mas madaling makuha ang mga nuances at impormasyon na nagmumula sa talakayan ng grupo, tulad ng magkakaibang mga sagot sa bawat respondent.</p>
+<p>Kung ang impormasyon ay nakolekta sa pamamagitan ng pagkuha ng mga tala. Matapos makumpleto ang pulong ng focus group, ang mga tugon ay dapat na ipasok sa form na “Community Profiling Survey” Kobo.</p>
+<p>Hikayatin ang lahat ng miyembro ng grupo na magsalita habang kinakatawan nila ang pinaghalong edad at katayuan sa lipunan na maaaring may iba ’ t ibang karanasan sa palaisdaan.</p>
+<p>Ang pag-post ng mga katanungan nang paisa-isa sa pangkat at paghihintay para sa mga boluntaryo na tumugon ay isang diskarte sa pamumuno ng isang talakayan. Gayunpaman, ang pag-iiba-iba kung paano humihingi ang facilitator ng mga tugon ay makakatulong na mapanatiling kawili-wili ang talakayan at matiyak din na ang lahat ng mga tinig ay naririnig at hindi gaanong mga kalahok sa boses ay maaaring lumahok. Bago simulan ang pangkat ng pokus, isipin kung paano mo nais na makakuha ng mga tugon para sa bawat nakaplanong tanong.</p>
+<ul>
+<li><p>Buksan ang forum-kahit sino ay maaaring tumugon sa tanong at magsalita.</p></li>
+<li><p>Tumawag sa mga tukoy na kalahok – makakatulong ito na matiyak na ang mas kaunting mga kalahok sa boses ay bibigyan ng pagkakataong magsalita. Maaari itong magamit sa ibang pagkakataon sa talakayan sa sandaling ang facilitator ay may kahulugan kung saan ang mga kalahok ay maaaring makinabang mula sa pagtawag. Bilang kahalili, maaaring gamitin ng isang facilitator ang pamamaraan na ito kapag alam nila na ang isang kalahok ay may mahalagang kaalaman o impormasyon na may kaugnayan sa isang katanungan.</p></li>
+<li><p>Mabilis na tugon - pumunta sa isang bilog at ang bawat tao ay napakaliit na nagbabahagi ng kanilang opinyon/tugon sa tanong. Maaari itong maging epektibo sa botohan ang madla dahil nagsasangkot ito sa lahat. Gayunpaman, tiyaking malinaw na makipag-usap at magpatupad ng mga limitasyon sa oras o ang pamamaraang ito ay maaaring magtapos sa pag-draining ng labis na oras ng talakayan.</p></li>
+<li><p>Bumoto-Poll ang madla sa pamamagitan ng pagtatanong at pagkakaroon ng mga tao na itaas ang kanilang kamay alinsunod sa iba ’ t ibang mga pagpipilian sa pagtugon. Maaari itong gawin nang bukas o hindi nagpapakilala sa mga mata na sarado o sa mga taong nagsusulat ng kanilang mga tugon sa mga nakatiklop na piraso ng papel na pagkatapos ay nakolekta.</p></li>
+<li><p>Mga pangkat-hatiin ang pangkat sa mas maliliit na pangkat na tumatalakay at nag-uulat pabalik sa pangunahing pangkat. Ang pamamaraan na ito ay lalong kapaki-pakinabang sa malalaking grupo kapag walang sapat na oras para sa lahat ng mga miyembro ng grupo na lumahok sa buong forum ng grupo. Sa sitwasyong ito, siguraduhin na ang bawat pangkat ay may mga stakeholder na kumakatawan sa iba ’ t ibang mga opinyon at pananaw.</p></li>
+</ul>
+<p>III. Mga Tanong Sa Pangkat Ng Pokus</p>
+<p>Simulan ang pangkat ng pokus sa pamamagitan ng pagpapakilala sa iyong sarili, ang proyekto, at ang layunin ng pagpupulong. Pagkatapos, ipakilala ang lahat sa silid. Planuhin ang pinakamahusay na mga pamamaraan para sa bawat tanong upang magtamo at mangolekta ng mga tugon muna (tingnan ang seksyon sa itaas para sa mga ideya). Mangyaring tingnan ang dokumento ng survey ng Profiling ng komunidad para sa buong listahan ng mga tanong sa grupo ng pokus upang maglakad.</p>
+<p>IV. Mga mapagkukunan ng pagpapadali (magagamit sa Ingles)</p>
+<ul>
+<li><p><a href="https://www.iaf-world.org/site/sites/default/files/Revised%20IAF%20Core%20%20Competencies%20-%20December%206%202021.pdf">Facilitator Core Competencies</a> – International Association of Facilitators (IAF)</p></li>
+<li><p><a href="http://stproject.org/wp-content/uploads/2014/11/facilitators-meeting-checklist.pdf">Facilitator’s Meeting Checklist</a> – Social Transformation Project, Tools for Transformation</p></li>
+<li><p><a href="https://reefresilience.org/pdf/Facilitation_Effective_Meetings.pdf">Introduction to Planning and Facilitating Effective Meetings</a> – Social Science Tools for Social Programs, NOAA Coastal Services Center</p></li>
+<li><p><a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation">Group Facilitation and Problem-Solving</a> – Community Tool Box, Center for Community Health and Development at the University of Kansas</p>
+<ul>
+<li><p>Section 1:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/main">Conducting Effective Meetings</a></p></li>
+<li><p>Section 2:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/facilitation-skills/main">Developing Facilitation Skills</a></p></li>
+<li><p>Section 3:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/record-meeting/main">Capturing What People Say: Tips for Recording a Meeting</a></p></li>
+<li><p>Section 4:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/group-discussions/main">Techniques for Leading Group Discussions</a></p></li>
+</ul></li>
+</ul>
+
+
+</section>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/barefoot-ocean\.github\.io\/Partner-Manual\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../../pages/quick_guide/quick_guide_fil.html" class="pagination-link" aria-label="Mabilis na Gabay">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Mabilis na Gabay</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../pages/kobo_setup/kobo_setup_fil.html" class="pagination-link" aria-label="Pag-setup ng Kobo">
+        <span class="nav-page-text">Pag-setup ng Kobo</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© CC-By Blue Ventures, 2025</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

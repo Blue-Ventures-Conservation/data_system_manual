@@ -1,5 +1,0 @@
----
-title: Dasbor Perikanan
----
-
-## Community Fisheries Data Dashboard page coming soon...

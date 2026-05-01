@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Torolalana feno – Community Fisheries Data System Manual</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../pages/kobo_setup/kobo_setup_mg.html" rel="next">
+<link href="../../pages/quick_guide/quick_guide_mg.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_mg.html">Malagasy</a></li><li class="breadcrumb-item"><a href="../../pages/full_guide/full_guide_mg.html">Torolalana feno</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/bv_logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/bv_logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://blueventures.org/" title="Blue Ventures Website" class="quarto-navigation-tool px-1" aria-label="Blue Ventures Website"><i class="bi bi-globe"></i></a>
+    <a href="https://youtube.com/playlist?list=PLwUVTxKktakVz45STRgXwoNwiUFIOQOaZ&amp;feature=shared" title="Youtube Training Videos" class="quarto-navigation-tool px-1" aria-label="Youtube Training Videos"><i class="bi bi-youtube"></i></a>
+    <a href="https://app.smartsheet.com/" title="Smartsheet" class="quarto-navigation-tool px-1" aria-label="Smartsheet"><i class="bi bi-check-circle-fill"></i></a>
+    <a href="https://blueventures.shinyapps.io/fisheries-dashboard/" title="Fisheries Data Dashboard" class="quarto-navigation-tool px-1" aria-label="Fisheries Data Dashboard"><i class="bi bi-bar-chart-fill"></i></a>
+    <a href="https://blueventures.shinyapps.io/social-economic-dashboard/" title="Social and Economic Dashboard" class="quarto-navigation-tool px-1" aria-label="Social and Economic Dashboard"><i class="bi bi-house-fill"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">English</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_collection/data_collection_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/management_ref/management_ref_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Management Ref</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fisheries Dashboard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/household_survey/household_survey_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Household Survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/socioeco_dashboard/socioeco_dashboard_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Socioeconomic Dashboard</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bahasa Indonesia</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panduan Cepat</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panduan Lengkap</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengaturan Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_collection/data_collection_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengumpulan Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">File Referensi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validasi data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dasbor Perikanan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cebuano</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dali nga Giya</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bug-os nga Giya</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pag-setup sa Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mga Reperensya nga File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pagpamatuod sa Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard sa Pangisda</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tagalog</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mabilis na Gabay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Buong Gabay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pag-setup ng Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mga Reference File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pagpapatunay ng Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard ng Pangisdaan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Malagasy</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Torolalana haingana</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_mg.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Torolalana feno</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fanamarinana angona</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard momba ny jono</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Français</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide rapide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide complet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuration Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fichiers de référence</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">La validation des données</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard des pêches</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Español</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guía rápida</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guía completa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuración de Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Archivos de referencia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validación de datos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panel de pesca</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Português</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guia rápido</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guia completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuração do Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Arquivos de referência</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data de validade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Painel de Pesca</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kiswahili</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mwongozo wa Haraka</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mwongozo Kamili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mpangilio wa Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Faili za Marejeleo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Uthibitishaji wa Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashibodi ya Uvuvi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tetun</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fisheries Dashboard</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species Guides</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_BLZ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Belize</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_CV.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cabo Verde</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_GMB.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Gambia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_MDG_MHJ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Madagascar - MHJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_SEN.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Senegal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_mg.html">Malagasy</a></li><li class="breadcrumb-item"><a href="../../pages/full_guide/full_guide_mg.html">Torolalana feno</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Torolalana feno</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-right">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="torolalana-momba-ny-fanangonana-antotanisa-momba-ny-jono" class="level1">
+<h1>Torolalana Momba Ny Fanangonana Antotan’isa Momba Ny Jono</h1>
+<section id="torolalana-aminny-fitantanana-fanadihadiana-hahazoana-antotanisa-momba-ny-jono" class="level2">
+<h2 class="anchored" data-anchor-id="torolalana-aminny-fitantanana-fanadihadiana-hahazoana-antotanisa-momba-ny-jono">Torolalana amin’ny fitantanana fanadihadiana hahazoana antotan’isa momba ny jono</h2>
+<section id="fampidirana" class="level3">
+<h3 class="anchored" data-anchor-id="fampidirana">Fampidirana</h3>
+<p>Ity antontan-taratasy ity dia manome torolàlana sy tolo-kevitra amin’ny fitantanana fitaovana fanadihadiana telo hisamborana vaovao momba ny vondrom-piarahamonina mpanjono sy ny jono ianteherany (Sary 1). Natao hampifanaraka ny votoaty amin’ny fomba hampiasana ny antotan’isa sy ny fahita matetika amin’ny fanovana ny fanadihadiana. Ny fanadihadiana avo lenta indrindra, Ny Famaritana ny Mombamomba ny Vondrom-piarahamonina, dia ahitana fanontaniana izay manampy amin’ny fananganana fahatakarana tsara kokoa ny asa fanjonoana ao amin’ny vondrom-piarahamonina sy ny toe-piainana ara-tsosialy sy ara-toekarena. Zava-dehibe indrindra ny fahatakarana ny tontolo ara-tsosialy sy ara-toekarena rehefa manomboka ny asa ao amin’ny vondrom-piarahamonina iray. Ny vaovao nangonina nandritra ity fanadihadiana ity dia tena ilaina amin’ny famolavolana paikady fandraisana anjaran’ny vondrom-piarahamonina sy drafitra fakana santionany. Ny Fanadihadiana momba ny Fipetrahana sy ny fanaraha-maso dia manangona angon-drakitra momba ny vokatra azon’ny jono. Tsy dia voangona matetika loatra ny antotan’isa momba ny Fipetrahana ary maka vaovao momba ny toeram-ponenan’ny trondro, ny karazana fitaovana, ny ezaka ary ny halavan’ny trondro tsirairay. Ny Fanadihadiana Momba ny Fanaraha-maso ny Fipetrahana, izay atao isan’andro, dia fanadihadiana haingana momba ny jono izay manangona ny fampahalalana farafahakeliny ilaina hanarahana ny habetsaky ny trondro sy ny fiovan’ny sanda, toy ny karazany, ny lanjany, ny isa ary ny vidiny.</p>
+<p><img src="images/Fig1_en.png" class="img-fluid"></p>
+<p>Sary 1: Fandaharam-potoana amin’ny fitantanana ireo fitaovana fanadihadiana telo samihafa amin’ny ambaratonga iray taona.</p>
+</section>
+<section id="antsipirihanny-fanadihadiana" class="level3">
+<h3 class="anchored" data-anchor-id="antsipirihanny-fanadihadiana">Antsipirihan’ny Fanadihadiana</h3>
+<section id="fanadihadiana-momba-ny-mombamomba-ny-vondrom-piarahamonina" class="level4">
+<h4 class="anchored" data-anchor-id="fanadihadiana-momba-ny-mombamomba-ny-vondrom-piarahamonina"><strong>Fanadihadiana Momba Ny Mombamomba Ny Vondrom-Piarahamonina</strong></h4>
+<p><strong><em>Tanjona</em></strong></p>
+<p>Fantaro ny tontolon’ny vondrom-piarahamonina sy ny jono miasa ao anatin’ny vondrom-piarahamonina.</p>
+<p><strong><em>Antotan’isa Nangonina</em></strong></p>
+<ul>
+<li><p>Isan’ny mpikambana ao amin’ny vondrom-piarahamonina, mpanjono, mpivarotra trondro, vehivavy</p></li>
+<li><p>Ny tontolon’ny jono miasa ao anatin’ny vondrom-piarahamonina</p></li>
+<li><p>Fitaovana ampiasaina; karazana vokatra kendrena; toeram-ponenana trondro; vanim-potoana; fitaovana fitaterana</p></li>
+<li><p>Fampahalalana momba ny ezaka fanjonoana sy ny vidin’ny jono</p></li>
+<li><p>Fomba fijery momba ny jono sy ny toetry ny toeram-ponenana, fandrahonana</p></li>
+<li><p>Fampahalalana momba ny fitantanana/fitsipika momba ny jono ankehitriny</p></li>
+<li><p>Famantarana (amin’ny alalan’ny sarintany) ny toerana fanjonoana manan-danja, toeram-ponenana, toerana fahatongavan’ny vokatra</p></li>
+</ul>
+<p><strong><em>Mpihaino Kendrena</em></strong></p>
+<p>10-20 ireo mpanome vaovao fototra ao anatin’ny vondrom-piarahamonina, dia ireo mpitarika ny vondrom-piarahamonina, ireo mpanjono hajaina, ireo mpivarotra trondro, ary ireo vehivavy.</p>
+<p><strong><em>Fiverenana sy Ny Fotoana</em></strong></p>
+<p>Rehefa manomboka ny asa ao amin’ny vondrom-piarahamonina mpanjono vaovao, ny Fanaovana Ny Fanadihadiana Mombamomba ny Vondrom-piarahamonina sy ny fampiharana ny mombamomba voalohany dia manome antotan’isa fototra sy fampahalalana mifandraika amin’ny famolavolana ny ezaka fiarovana sy fitantanana mety indrindra ho an’ny vondrom-piarahamonina. Ny famerenana ny Fanadihadiana ny Mombamomba ny Vondrom-piarahamonina dia afaka manampy amin’ny fandraketana ireo fiovana lehibe mitranga rehefa mandeha ny fotoana.</p>
+<p><strong><em>Fomba fiasa</em></strong></p>
+<p>Azo angonina amin’ny alalan’ny fanadihadiana ataon’ny antoko fahatelo (izany hoe, fanisam-bahoaka, rakitsoratry ny sampan-draharahan’ny jono, sns), vondrona mifantoka ahitana mpikambana fototra ao amin’ny vondrom-piarahamonina miisa 10-20 na mpanome vaovao fototra. Ireo mpitarika ny vondrom-piarahamonina ary koa ireo mpanjono sy mpivarotra trondro isan-karazany mahay (ao anatin’izany ny vehivavy sy ny tanora) no mpandray anjara tsara indrindra hampidirina ao amin’ny vondrona ifantohana. Amin’ny fanamorana ny vondrona ifantohana, dia asaina manana, farafaharatsiny, mpanamora sy mpandray naoty. Ao amin’ny vondrona ifantohana, asaina ihany koa ny mpandray anjara hanome lisitr’ireo/fampahalalana momba ny fifandraisana ho an’ireo mpanjono ao amin’ny vondrom-piarahamonina izay afaka mifandray amin’ny Fitantanana ny Fanadihadiana Ao an-tokantrano. Raha tsy azo atao ny manatanteraka Ny Fanadihadiana ny Mombamomba ny Vondrom-piarahamonina amin’ny endrika vondrona ifantohana, ny safidy iray dia ny fitantanana ireo fanontaniana mitovy amin’ny fanadihadiana tsirairay miaraka amin’ireo mpanome vaovao fototra ary manangona ny valiny. Ny fanontaniana tafiditra ao amin’ny fanadihadiana ny mombamomba ny vondrom-piarahamonina sy ny tolo-kevitra momba ny fanaovana fifanakalozan-kevitra amin’ny vondrona mifantoka dia hita ao amin’ny Tovana a etsy ambany.</p>
+</section>
+<section id="fanadihadiana-momba-ny-fanaraha-maso-ny-vokatra-tonga" class="level4">
+<h4 class="anchored" data-anchor-id="fanadihadiana-momba-ny-fanaraha-maso-ny-vokatra-tonga"><strong>Fanadihadiana Momba Ny Fanaraha-Maso Ny vokatra tonga</strong></h4>
+<p><strong><em>Tanjona</em></strong></p>
+<p>Raiso ny antotan’isa fototra ilaina amin’ny fikajiana ireo mari-pamantarana tsotra mifototra amin’ny halavan’ny fahasalaman’ny jono ary hanarahana ny fiovan’ny famokarana, ny sanda ary ny firafitry ny vokatra.</p>
+<p><strong><em>Antotan’isa Nangonina</em></strong></p>
+<ul>
+<li><p>Daty niantsona</p></li>
+<li><p>Toerana fiantsonana</p></li>
+<li><p>Anaran’ny mpivarotra trondro</p></li>
+<li><p>Anaran’ny mpanjono</p></li>
+<li><p>Ezaka fanjonoana (andro fanjonoana/fanangonana)</p></li>
+<li><p>Ny mombamomba ny vokatra (anarana eo an-toerana, mahazatra, siantifika)</p></li>
+<li><p>Isany totaly</p></li>
+<li><p>Lanja totaly</p></li>
+<li><p>Vidiny manontolo</p></li>
+<li><p>Antony tsy amidiana ny vokatra, raha azo atao</p></li>
+</ul>
+<p><strong><em>Mpihaino Kendrena</em></strong></p>
+<p>Mpanjono rehefa mampidina ny vokatsiny na any amin’ny tranon’ny mpividy trondro/tsena.</p>
+<p><strong><em>Fiverenana sy Ny Fotoana</em></strong></p>
+<p>Ny Fanadihadiana Fanaraha-maso Ny fiantsonana dia tokony hatao isan’andro na matetika araka izay azo atao. Manaova Fanadihadiana Fanaraha-maso Ny fiantsonana aloha sy aorian’ny fampiharana mba hanombanana ny vokatry ny fanakatonana ny jono na ny paikady fitantanana hafa. Manoro hevitra izahay hanangona antotan’isa 30 andro mialoha sy aorian’ny fotoana fanakatonana vonjimaika. Mandritra ny fito andro voalohany amin’ny vanim-potoana fakana santionany, dia manoro hevitra izahay fa ny mpanisa dia manao Fanadihadiana Fanaraha-maso ny fiantsonana isan’andro. Raha azo atao dia tohizo ny fanaraha-maso isan’andro mandritra ny 30 andro manontolo. Raha tsy azo atao izany dia manadihady farafahakeliny 80% amin’ny andro ao anatin’ny 30 andro. Manoro hevitra ihany koa izahay ny hanadihady 80% na mihoatra amin’ireo mpanjono rehetra tratra amin’ny andro iray mialoha na aorian’ny fanakatonana. Mizara ny ezaka fanadihadiana eo amin’ny mpanjono mitondra lakana sy ny mpanjono tsy mitondra. Angony ny antotan’isa avy amin’ireo mpanjono rehetra tonga ao an-tanàna, na inona na inona fanjonoana ao anatin’ny toerana fanakatonana na tsia.</p>
+<p>Ho an’ny fanakatonana maharitra kokoa, ataovy azo antoka fa angonina mandritra ny volana iray ihany ny antotan’isa isan-taona mba hijerena ny fiovana mandritra ny fe-potoana fanakatonana. Raha tsy azo atao izany dia manoro hevitra izahay hanangona antotan’isa mandritra ny volana iray mialoha sy aorian’ny fanakatonana. Araka ny voalaza etsy ambony, manoro hevitra izahay ny hanadihady farafahakeliny 80% amin’ny andro ao anatin’ny volana ary 80% amin’ny mpanjono isan’andro.</p>
+<p><strong><em>Fomba fiasa</em></strong></p>
+<p>Mampiasana ny Kobo, mihaona amin’ireo mpanjono any amin’ny toerana fiantsonana/tranon’ny mpividy mba hanoratra ny vokatra azony.</p>
+</section>
+<section id="fanadihadiana-ny-mombamomba-ny-vokatra-eny-aminny-fiantsonana" class="level4">
+<h4 class="anchored" data-anchor-id="fanadihadiana-ny-mombamomba-ny-vokatra-eny-aminny-fiantsonana"><strong>Fanadihadiana ny Mombamomba Ny vokatra eny amin’ny fiantsonana</strong></h4>
+<p><strong><em>Tanjona</em></strong></p>
+<p>Fahalalana ny antony fironan’ny vokatra.</p>
+<p><strong><em>Antotan’isa Nangonina</em></strong></p>
+<ul>
+<li><p>Daty niantsona</p></li>
+<li><p>Toerana niantsonana</p></li>
+<li><p>Toerana fanjonoana voalohany</p></li>
+<li><p>Anaran’ny mpivarotra trondro</p></li>
+<li><p>Anaran’ny mpanjono</p></li>
+<li><p>Ezaka fanjonoana (ora sy andro fanjonoana/fanangonana)</p></li>
+<li><p>Karazana fitaovana fitaterana (laharan’ny fanoratana ny fitaovana, Isan’ny mpiasa)</p></li>
+<li><p>Ny mombamomba ny vokatra (anarana eo an-toerana, mahazatra, siantifika)</p></li>
+<li><p>Fitaovana ampiasaina</p></li>
+<li><p>Toerana fanjonoana</p></li>
+<li><p>Isany totaly</p></li>
+<li><p>Lanja totaly</p></li>
+<li><p>Vidiny manontolo</p></li>
+<li><p>Antony tsy amidy ny totalin’ny trondro, raha azo atao</p></li>
+<li><p>Santionany amin’ny lanjan’ny tsirairay sy ny halavany (Tarehimarika 2-8)</p></li>
+<li><p>Antontan’isa santionany manokana ho an’ny mpiara-miasa (maha lahy na maha vavy, kalitaon’ny trondro, tsirin’atody, stylet, # fandrika, sns.)</p></li>
+</ul>
+<p><strong><em>Mpihaino Kendrena</em></strong></p>
+<p>Santionan’ny vokatra ao anatin’ny vondrom-piarahamonina. Raketo santionany 50 farafahakeliny (100 tsara indrindra) ho an’ny karazana vokatra kendrena tsirairay, maneho karazana fitaovana isan-karazany sy mombamomba an’i mpanjono.</p>
+<p><strong><em>Fiverenana sy Ny Fotoana</em></strong></p>
+<p>Ity fanadihadiana ity dia tokony hatao amin’ny fiandohan’ny fandraisana anjara amin’ny vondrom-piarahamonina iray ary avy eo atao isakin’ny ray ka hatramin’ny roa taona, alohan’ny sy aorian’ny fampiharana ny paikady fitantanana, na raha ilaina mba hanazavana ny fihenan’ny fanaraha-maso amin’ny alàlan’ny antotan’isa fanaraha-maso. Amin’ny fampiasana ny Kobo, mihaona amin’ireo mpanjono any amin’ny toerana fiantsonana mba hanoratra ny vokatra azony sy ny asa fanjonoana ataon’izy ireo.</p>
+<p><strong><em>Fomba fiasa</em></strong></p>
+<p>Amin’ny fampiasana ny Kobo, mihaona amin’ireo mpanjono any amin’ny toerana fiantsonana mba hazandranony sy hanoratra vokatra azony sy ny asa fanjonoana ataon’izy ireo.</p>
+</section>
+<section id="famaritana-ny-fandrefesana-karazana-halavany-ho-refesina" class="level4">
+<h4 class="anchored" data-anchor-id="famaritana-ny-fandrefesana-karazana-halavany-ho-refesina"><strong>Famaritana ny Fandrefesana: Karazana Halavany ho refesina</strong></h4>
+<p><img src="images/Fig2_en.jpg" class="img-fluid"></p>
+<p>Sary 2: ny halavany Manontolo dia tokony ampiasaina handrefesana ny trondro, antsantsa ary anmalona (AFS).</p>
+<p><img src="images/Fig3_en.jpg" class="img-fluid"></p>
+<p>Sary 3: Ny Sakan’ny kapila dia tokony hampiasaina handrefesana makoba.</p>
+<p><img src="images/Fig4_en.jpg" class="img-fluid"></p>
+<p>Sary 4: tokony hampiasaina ny Sakan’ny sarony Rehefa mandrefy ny drakaka (Suryandari et. al, 2018).</p>
+<p><img src="images/Fig5_en.jpg" class="img-fluid"></p>
+<p>Sary 5: ny halavan’ny Akanjo Dia tokony hampiasaina rehefa mandrefy horita sy angisy (FAO).</p>
+<p><img src="images/Fig6_en.jpg" class="img-fluid"></p>
+<p>Sary 6: tokony hampiasaina ny Halavan’ny Sarony rehefa mandrefy ny tsitsiky sy ny langosta (Hart et al.&nbsp;2001).</p>
+<p><img src="images/Fig7_en.jpg" class="img-fluid"></p>
+<p>Sary 7: Ny Halavany dia tokony hampiasaina rehefa mandrefy bivalves sy akoran-driaky.</p>
+<p><img src="images/Fig8_en.jpg" class="img-fluid"></p>
+<p>Sary 8: ny halavany Manontolo dia tokony hampiasaina rehefa mandrefy zanga. Tokony hampiasaina ny sakany na ny savaivony rehefa mandrefy ny oursins.</p>
+</section>
+</section>
+<section id="topimaso-momba-ny-antotanisa" class="level3">
+<h3 class="anchored" data-anchor-id="topimaso-momba-ny-antotanisa">Topimaso Momba Ny Antotan’isa</h3>
+<p>Ny fanangonana antotan’isa, ny fanamarinana, ny fanovana ary ny sary no singa efatra lehibe amin’ny Rafitry ny antotan’isa. Ny rindrambaiko voalohany ampiasaina Dia Ny KoboToolBox, Smartsheet, PostgreSQL, Ary R.</p>
+<p>Kobotoolbox dia rindrambaiko maimaimpoana sy loharano misokatra izay fitaovana matanjaka ho an’ny fanangonana antotan’isa azo idirana amin’ny alàlan’ny tontolo sarotra sy sehatra maro, toy ny fitaovana finday, solosaina ary taratasy. Manangona antotan’isa momba ny toe-piainana ara-tsosialy sy ara-toekarena ary ara-tontolo iainana ilaina amin’ny fanombanana ny vondrom-piarahamonina sy ny satan’ny jono amin’ny alàlan’ny Fanontaniana Momba ny fanadihadiana Kobotoolbox. Smartsheet dia sehatra fitantanana asa iaraha-miasa izay manome sehatra malefaka sy intuitive ho an’ny fikambanana handrafetana, hanarahana, hanamboatra ary hitantana tetikasa sy fizotrany isan-karazany amin’ny fotoana tena izy. Ny rakitra referansa izay ampiasaina hamenoana ny fanadihadiana sy hampifandray antotan’isa fanampiny amin’ny antotan’isa lehibe dia tantanana ao amin’ny Smartsheet. Ankoatra izany, ny antotan’isa dia voamarina ao Amin’ny Smartsheet. Postgresql dia rafitra fitantanana tahiry maimaimpoana sy loharano misokatra ampiasaina ho trano fitehirizana antotan’isa ho an’ny tranonkala, famakafakana ary fampiharana geospatial marobe raha mitahiry angona tsy voarafitra sy voarafitra ao anaty vokatra tokana. R dia rindrambaiko maimaimpoana ary ampiasaina betsaka amin’ny siansa momba ny angona, ny informatika statistika ary ny sary an-tsary. Ny dashboard Data dia natsangana tamin’ny fampiasana ny shiny package avy Amin’ny fiteny fandaharana R ary nampiantranoina tamin’ny shinyapps.io, sehatra ho toy ny tolotra (PaaS) ho an’ny fampiantranoana fampiharana Tranonkala Mamirapiratra (fampiharana).</p>
+<p><img src="images/Fig9_en.jpg" class="img-fluid"></p>
+<p>Sary 9: Sary An-Tsary Momba ny Fikorianan’ny Aantotan’isa.</p>
+<p>Ny fanangonana antontan’isa dia mitaky fanangonana sy fandrefesana vaovao avy amin’ny loharanom-baovao mifandraika amin’ny fiovana mahaliana amin’ny fandraisana fanapahan-kevitra, drafitra stratejika, fanombanana ny vokatra, ary tanjona hafa. Amin’ny fampidirana antontan’isa momba ny habetsahana sy ny kalitao ao amin’ny fanontanian’ny fanadihadiana, mamolavola fahatakarana lalindalina kokoa ny toe-karena sy ara-tontolo iainana mifandraika amin’ny vondrom-piarahamonina mpanjono sy ny fanovana paikady fitantanana. Ny fanamarinana ny antotan’isa dia manondro ny fampiharana ny fomba handrefesana ny fepetra momba ny antotan’isa voaangona ary hamaritana raha mahafeno ny fepetra momba ny kalitao voafaritra ny antotan’isa voaangona, toy ny fahamendrehana, ny tsy fitoviana, ny maha-zava-dehibe, ny fahafenoana ary ny maha-tokana azy. Ny fanovana ny antotan’isa dia manova, manadio ary manamboatra azy ho endrika azo ampiasaina izay azo dinihina sy ampiasaina amin’ny fandraisana fanapahan-kevitra. Ny famakafakana sy ny fijerena ny antotan’isa dia mitaky ny famolavolana sy ny famoronana sary na fampisehoana an-tsary ny fahalalana mba hampitana amin’ny fomba mahomby ny antotan’isa sarotra momba ny kalitao sy ny habetsahana nangonina, voamarina ary novaina teo aloha tamin’ny mpihaino kendrena. Nofaritanay eto ambany ny fizotry ny fikorianan’ny angona:</p>
+<ol type="1">
+<li><p>Angonina amin’ny alalan’ny fanadihadiana KoboToolBox ny antotan’isa.</p></li>
+<li><p>Voasarika ao amin’ny Tahirin-Kevitra ny antotan’isa.</p></li>
+<li><p>Raha ny mpanadihady no nifidy ny valiny safidy amin’ny fanadihadiana, ny antotan’isa dia tsy mila ho hamarinina ary afaka mivantana mandalo ny fanadihadiana sy ny sary fanehoana.</p></li>
+<li><p>Raha miditra amin’ny antontan’isa vaovao toy ny mpanjono vaovao, mpividy, mpanangona aantotan’isa, toerana fiantsonana, na karazany ny mpanisa, dia hamarinina ao amin’ny Smartsheet ny antontan’isa alohan’ny hampidirana azy ao amin’ny tabilao farany ary hita maso ao amin’ny dashboard. Ny mpitarika ny ekipa eny an-kianja dia ampandrenesina amin’ny alàlan’ny mailaka rehefa vonona ho hamarinina ny antotan’isa. Ny mpitarika ny ekipa dia hanamarina mba hanamafisana fa manan-kery ny fampahalalana vao nampiana.</p></li>
+<li><p>Aorian’ny fanamarinana, ny antontan’isa vaovao dia mankany any amin’ny rakitra referansa ary miverina any amin’ny tahiry ho an’ny fanovana farany alohan’ny famakafakana sy ny sary.</p></li>
+<li><p>Raha vao any amin’ny rakitra fanovozan-kevitra ny antontan’isa, dia hampandrenesina amin’ny alalan’ny mailaka ny mpitarika ny ekipa raha misy fampahalalana fanampiny ilaina ao amin’ny rakitra fanovozan-kevitra.</p></li>
+<li><p>Avy eo dia ampidirina ao amin’ny sehatra KoboToolBox ny rakitra referansa nohavaozina mba hampidirina ao amin’ireo “form”.</p></li>
+<li><p>Ny antontan’isa nohavaozina avy amin’ny rakitra referansa dia ampiasaina ihany koa amin’ny fizotry ny fanovana antontan’isa mba hanatevin-daharana ireo antotan’isa fanampiny toy ny “coordonnnées”, ny maha lahy sy ny vavy.</p></li>
+<li><p>Ny dingana farany amin’ny fizotry ny fanovana antotan’isa dia miteraka tabilao izay ampiasaina amin’ny famakafakana sy ny fanehoana sary ao amin’ny “dashboard”.</p></li>
+<li><p>Ny dashboard Data (izany hoe “Shiny apps”) dia mifandray mivantana amin’ny tahiry ary misintona ny antotan’isa farany misy, ka manome ny mpiara-miasa ny fidirana avy hatrany amin’ny antotan’isa rehetra sy voafintina.</p></li>
+</ol>
+<section id="fiarovana-ny-antotanisa" class="level4">
+<h4 class="anchored" data-anchor-id="fiarovana-ny-antotanisa"><strong>Fiarovana Ny antotan’isa</strong></h4>
+<p>Ity ambany ity ny lisitry ny rindrambaiko izay azo itehirizina sy amindrana ny antotan’isa avy any amin’ny banky angona. Azo jerena ao amin’ny tranonkala manokana mifandraika eto ny fampahalalana momba ny fiarovana ny antotan’isa ho an’ny sehatra tsirairay.</p>
+<ol type="1">
+<li><p><a href="https://support.kobotoolbox.org/is_my_data_safe.html?highlight=security">Kobo software</a></p></li>
+<li><p><a href="https://www.postgresql.org/support/security/">PostgreSQL</a></p></li>
+<li><p><a href="https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/security-of-the-aws-infrastructure.html">Amazon Web Services</a></p></li>
+<li><p><a href="https://support.google.com/drive/answer/10375054?hl=en">Google drive</a></p></li>
+<li><p><a href="https://www.smartsheet.com/trust/security">Smartsheet</a></p></li>
+<li><p><a href="https://docs.posit.co/shinyapps.io/security-and-compliance.html">Shinyapps.io</a></p></li>
+<li><p><a href="https://github.com/security">Github</a></p></li>
+</ol>
+<p>Napetraka ny fomba fiarovana fanampiny, ankoatra ny fepetra fiarovana ny angon-drakitra nomen’ireo sehatra rindrambaiko etsy ambony. Ny kaonty rehetra amin’ny sehatra rindrambaiko rehetra ampiasaina dia voaaro amin’ny tenimiafina.</p>
+<p>Mampiasa “github” izahay ho toy ny rafitra fanaraha-maso ny dikan-teny ho an’ny vokatra misy kaody. Ny lahatahiry sy ny tetikasa rehetra misy ny jono sy ny antotan’isa ara-tsosialy sy ara-toekarena dia miafina ary mpiasan’ny mpiantoka irery ihany no mahazo alalana amin’izany.</p>
+<p>Avy amin’ny sehatra angon-drakitra iraisana (ohatra Ny Shiny Apps), ny fanamarinana ny mpampiasa dia takiana amin’ny fijerena na fangalana angona, arakaraka ny fifanarahana fizarana angona nofidian’ny fikambanana mpiara-miasa tsirairay. Tafiditra ao anatin’izany ny fanamarinana ireo mpampiasa alohan’ny hamelana ny antotan’isa hojerena na alaina, ny fidiran’ireo mpampiasa amin’ny fijerena antotan’isa, ary ny fitantanana mitohy ireo mpampiasa voamarina.</p>
+<p>Ny fidirana amin’ny antontan-taratasy Smartsheet (ohatra ny rakitra referansa, ny takelaka fanamarinana antotan’isa) dia voafetra amin’ny mpiasa voafaritry ny fikambanana tsirairay, ary ny mpiara-miasa tsirairay dia afaka mijery ny fampahalalana manokana momba ny mpiara-miasa aminy ihany. Ankoatran’izay dia ahitana ireo mpiasa izay mifehy sy manampy amin’ny fizotry ny asa momba ny kalitaon’ny antotan’isa, ary Ireo mpiasan’ny Blue Ventures manampy ireo mpiara-miasa amin’ny fizotry ny asa momba ny fampahalalana ao amin’ny Smartsheet.</p>
+</section>
+<section id="tsiambaratelo-momba-ny-angona" class="level4">
+<h4 class="anchored" data-anchor-id="tsiambaratelo-momba-ny-angona"><strong>Tsiambaratelo Momba Ny Angona</strong></h4>
+<p>Ny fampahalalana azo fantarina manokana (PII) sy ny antotan’isa momba ny jono dia an’ny mpanjono sy ny mpividy trondro ary tsy hozaraina mihitsy raha tsy misy ny fanekena mialoha. Mba hiarovana ny fiainana manokan’ny mpanjono, mpividy, ary mpanangona antotan’isa, ny anarana rehetra dia tsy fantatra ho isa famantarana kisendrasendra. Noho izany, ny angon-drakitra rehetra azo alaina ampahibemaso amin’ny ampahany na tanteraka dia tsy ahitana afa-tsy ny isa kisendrasendra. Jereo ny sehatra momba ny fizarana antotan’isa raha mila fanazavana feno momba ny fifanarahana fizarana antotan’isa.</p>
+<p>Ny angon-drakitra heverina HO PII dia ahitana:</p>
+<ul>
+<li><p>Anaran’ny mpanjono, mpividy ary mpanangona antotan’isa</p></li>
+<li><p>Anaran’ny mpamaly amin’ny fanadihadiana rehetra</p></li>
+</ul>
+</section>
+<section id="fizarana-angona" class="level4">
+<h4 class="anchored" data-anchor-id="fizarana-angona"><strong>Fizarana Angona</strong></h4>
+<p>Ny “fisheries data system” dia natao hanatsarana ny fampiasana ny antotan’isa-nao ary hanome sehatra ho an’ny fandraisanao anjara mavitrika amin’ny fitantanana ny jono sy ny ezaka fiarovana. Ny antotan’isa voaangona miaraka amin’ny mpiara-miombon’antoka dia afaka manome fomba fijery matanjaka amin’ny fanaraha-maso ny jono, ny fanombanana ny paikady fitantanana, ny fitarihana ny fandraisana fanapahan-kevitra eo amin’ny sehatra eo an-toerana sy nasionaly, ny fahatakarana ny fiovan’ny faritra, ary ny famantarana ny tolotra ara-bola mety hitranga.</p>
+<p>Fantatsika ny maha-zava-dehibe ny fananana antotan’isa sy ny fampiasana ho an’ny mpiara-miombon’antoka rehetra mandray anjara. Ny tanjonay dia ny hanome anao fahalalahana amin’ny fitantanana sy famaritana ny fomba fampiasana ny angona-nao. Amin’ny fisafidianana ny iray amin’ireo ambaratonga fahazoan-dàlana fampiasana antotan’isa telo dia azonao atao ny mifehy ny halehiben’ny fizarana ny antotan’isa-nao amin’ireo mpampiasa hafa. Azonao atao ny mampifanaraka ny haavon’ny fahazoan-dàlana mifototra amin’ny karazana data, ary ny tena zava-dehibe dia manana fahalalahana hanitsy ny haavon’ny fahazoan-dàlana amin’ny fotoana rehetra ianao. Ny fahalalana azo fantarina manokana (PII) sy ny antotan’isa momba ny jono dia an’ny mpanjono sy ny mpividy trondro ary tsy hozaraina mihitsy raha tsy misy ny fanekena mialoha. Amin’ny fisafidianana ny haavon’ny fahazoan-dàlana amin’ny fampiasana antotan’isa, dia manamafy ianao fa ny fahazoan-dàlana tsirairay dia azo avy amin’ny mpanjono sy ny mpividy trondro.</p>
+<p>Ny antotan’isa rehetra dia napetraka amin’ny Ambaratonga 1-Private. Hanana fahafahana hanitsy ny ambaratonga fahazoan-dàlana araka izay ilaina ny mpampiasa.</p>
+<p><strong>Ambaratonga 1 Miafina</strong></p>
+<ul>
+<li><p>Ny antotan’isa dia natao ho an’ny tanjona anatiny amin’ny mpandray anjara tany am-boalohany.</p></li>
+<li><p>Ho azon’ny mpandray anjara amin’ny angona antotan’isa tany am-boalohany alaina ny antotan’isa.</p></li>
+<li><p>Tsy ho tafiditra ao anatin’ny fanadihadiana isam-paritra omena ao amin’ny dashboard ny angona.</p></li>
+<li><p>Voarara tanteraka ny fizarana tsy nahazoana alalana ny antotan’isa amin’ny antoko ivelany.</p></li>
+</ul>
+<p><strong>Ambaratonga 2-Zarao Amin’ireo Mpandray Anjara angona antotan’isa Hafa</strong></p>
+<ul>
+<li><p>Ny antontan’isa momba ny fandehanana dia afaka alain’ireo mpandray anjara amin’ny angona antontan’isa hafa.</p></li>
+<li><p>Ho hitan’ireo mpandray anjara amin’ny angona antotan’isa hafa ny famintinana sy ny sarin’ireo antotan’isa voaangona.</p></li>
+<li><p>Ny antotan’isa dia hampidirina amin’ny famakafakana isam-paritra ao amin’ny dashboard.</p></li>
+</ul>
+<p><strong>Ambaratonga 3-Zarao Amin’ny Mpampiasa Rehetra</strong></p>
+<ul>
+<li><p>Azo alaina ho an’ny mpampiasa rehetra ny antotan’isa momba ny dia.</p></li>
+<li><p>Ho hita ho an’ny mpampiasa rehetra ny famintinana sy ny sary an’ireo antotan’isa.</p></li>
+<li><p>Ny antotan’isa dia hampidirina amin’ny famakafakana isam-paritra ao amin’ny dashboard.</p></li>
+<li><p>Ny mpandray anjara amin’ny angona antotan’isa tany am-boalohany dia afaka mamaritra ny fetran’ny fampiasana na ny fepetra azo ampiharina ny antotan’isa amin’ny mpampiasa rehetra.</p></li>
+</ul>
+</section>
+<section id="fanamarinana-ny-antotanisa-vaovao-sy-voamarika" class="level4">
+<h4 class="anchored" data-anchor-id="fanamarinana-ny-antotanisa-vaovao-sy-voamarika"><strong>Fanamarinana Ny antotan’isa vaovao sy Voamarika</strong></h4>
+<p>Ao amin’ny fanadihadiana, ny fanontaniana sasany dia mamela ny mpanisa hanisy mpanjono vaovao, mpividy, mpanangona antotan’isa, toerana fahatongavana, karazany, na “hafa.”Ny fampahalalana avy amin’ireo safidy ireo dia antotan’isa vaovao ary tsy maintsy iharan’ny fanamarinana alohan’ny hampidirana azy ireo amin’ny antotan’isa farany, hita ao amin’ny dashboard, ary ampiana amin’ireo rakitra referansa. Misy ihany koa ny famerana ny lanjany, ny vidiny ary ny halavan’ny karazana tsirairay, ary raha ambany na mihoatra ireo famerana ireo ny antotan’isa nangonina, dia voamarika izany mba hojerena sy hamarinina. Ny famerana ny lanja sy ny vidiny dia napetraky ny mpiara-miasa ao amin’ny min_max_ref. Ny ekipa dia mametraka ny fetran’ny halavan’ny karazana amin’ny alàlan’ny mari-pamantarana biolojika.</p>
+<p>Ny antotan’isa rehetra izay mandeha amin’ny alalan’ny paikady angona antotan’isa momba ny jono dia voamarina ao amin’ny Smartsheet. Ny iray amin’ireo fidirana vaovao na misy sainam-pirenena ireo dia alefa any amin’ny latabatra fanamarinana ao amin’ny Smartsheet mba hanamarinana azy. Ny fanaraha-maso kalitao dia ho an’ny mpiara-miasa manokana ary azo idirana amin’ny alàlan’ny fangatahana fanavaozana alefa amin’ny mailakao na amin’ny fitsidihana ireo rohy “Dyamic View” omena anao. Ny mpitarika ny ekipa eny an-kianja dia hampandrenesina amin’ny alàlan’ny mailaka rehefa mila voamarina ao amin’ny tabilao ny angona. Raha vantany vao voamarina ao amin’ny tabilao ny antotan’isa, dia hampiditra fampahalalana vaovao amin’ny “reference file” izahay ary hanome fanitsiana ilaina amin’ny antotan’isa fototra.</p>
+<p>Azo jerena ao amin’ny pejy Fanamarinana Ny antotan’isa ny toromarika manokana mikasika ny fomba hamitana ny fanamarinana ny antotan’isa ao amin’ny “Smartsheet”.</p>
+</section>
+</section>
+<section id="fanangonana-antotanisa" class="level3">
+<h3 class="anchored" data-anchor-id="fanangonana-antotanisa">Fanangonana antotan’isa</h3>
+<p>Blue Ventures no mitantana ny fanadihadiana rehetra amin’ny alalan’ny “kobo Toolbox forms” azo zaraina amin’ny alalan’ny kaonty Kobo Toolbox. Azonao atao ny manangana kaonty amin’ny https://kf.kobotoolbox.org/accounts/signup/. Mankanesa Any amin’ny ekipa miaraka amin’ny anaranao sy ny antsipirian’ny kaontinao. Raha vao zaraina ny fanadihadiana, midira amin’ny “kobo” amin’ny alàlan’ny “application” Finday Android Maimaim-poana Kobocollect na amin’ny alàlan’ny endrika tranonkala Enketo. Ny torolàlana amin’ny antsipiriany momba ny fametrahana kaonty Kobo, fanangonana antotan’isa ary fandefasana azy dia hita ao amin’ny pejy Fananganana Kobo. Mampiasà kaody QR hanamboarana ny fitaovana rehetra aorian’ny fanaovana “configuration manuelle” finday iray raha toa ka hampiasa kaonty tokana ho an’ny fitaovana maro. Ny “configuration manuelle”ny fitaovana voalohany dia mitaky NY URL, ny anaran’ny mpampiasa Ary ny teny miafina kobo server. NY URL an’ny mpizara Kobo dia https://kc.kobotoolbox.org. Ny fampahalalana Bebe Kokoa Momba ny fametrahana fanangonana antotan’isa Miaraka Amin’i Kobo, ao anatin’izany ny fomba fanamboarana fitaovana fanangonana antotan’isa marobe amin’ny alàlan’ny kaody QR, dia azo jerena ao amin’ny https://support.kobotoolbox.org/.</p>
+<p>Raha vantany vao naka KoboCollect ianao dia sokafy ny fampiharana kobo (app. kobo) ary ampidiro ny URL mpizara, solonanarana ary teny miafina raha hampifandray ny fampiharana kobocollect anao amin’ny mpizara kobotoolbox. Ny fampifandraisana ny fampiharana kobocollect amin’ny mpizara kobotoolbox dia ahafahanao misintona “form” napetraka avy amin’ny KoboToolbox mankany amin’ny findainao ary mandefa antotan’isa voaangona amin’ny alàlan’ny fampiharana miverina any amin’ny mpizara. Ao amin’ny efijery efijery voalohany, safidio ny “Get Blank Form”. Tokony hiseho ny lisitry ny endrika fanadihadiana nataonao rehetra. Tsindrio “Safidio Ny Rehetra” mba handefasana ny endrika fanadihadiana rehetra amin’ny fampiharana, na safidio ireo tianao hananana amin’ny fisafidianana azy ireo amin’ny tanana. Avy eo tsindrio “Mifidiana.”Mba hameno ny fanadihadiana, safidio Ny” Fenoy Ny Endrika Banga.”</p>
+<p>havaozina ho azy ny endrika tranonkala rehefa misy ny endrika fanadihadiana vaovao, ny mpampiasa dia tsy maintsy manamboatra ny fanavaozana mandeha ho azy (“auto update”) ao amin’ny fampiharana. Ny fanavaozana tsy tapaka ny fanadihadiana ao amin’ny fampiharana dia miantoka ny fampiasana ny dikan-teny farany amin’ny endrika ary tsy miteraka olana amin’ny antotan’isa. Azonao atao ny manangana fanavaozana mandeha ho azy ao amin’ny fampiharana amin’ny alàlan’ny fandehanana any amin’ny “Settings” sy “Form Management.”Azo jerena ao amin’ny pejy Fananganana kobo ny fampahalalana bebe kokoa momba ny fanavaozana ho azy ny fanadihadiana ao amin’ny fampiharana. Zava-dehibe ny manamarika fa ilaina ny fifandraisana mba hisintonana nyendrika fanadihadiana farany indrindra ny fampiharana, na dia efa mandeha aza ny fanavaozana mandeha ho azy. Noho izany, manoro hevitra ireo mpanisa mba hanana fifandraisana aterineto alohan’ny hanaovana asa eny an-kianja mba Hahafahan’ny kobocollect misintona ny endrika farany.</p>
+<p>Aorian’ny fanangonana antotan’isa, ny fanadihadiana alefa amin’ny alàlan’ny endrika tranonkala dia halefa ho azy any amin’ny mpizara raha vao mahatratra ny bokotra “Alefaso” ny mpanangona antotan’isa. Ny antotan’isa nangonina tamin’ny alalan’ny kobocollect dia voatahiry tao amin’ny “application” aloha izay vao mandeha any amin’ny amin’ny mpizara. Mijanona eo am-piandrasana ao amin’ny “application” ny antotan’isa voaangona alohan’ny handefasana azy any amin’ny mpizara mba hahafahan’ny mpanangona antotan’isa manao fanovana aorian’ny fanangonana azy, na raha tsy misy fifandraisana aterineto, ny fampiharana kobocollect dia afaka mitahiry ny valin’ny fanadihadiana voaangona ary avy eo manosika izany any amin’ny mpizara raha vao misy fifandraisana aterineto. Raha ny marina, rehefa vita ny fanadihadiana, ny mpampiasa dia hanindry Ny “Save form and exit”, miantoka fa ny “Mark form as finalized” dia voamarina ihany koa. “Edit Saved Form” dia mitahiry ho azy ny endrika voatahiry. Afaka manao fanovana ilaina ny mpanangona angon-drakitra ary misafidy Ny “Save Form and Exit.”Ny efijery koa dia manana bokotra antsoina hoe “Send finalized form.”Tsindrio Ny Select All (na safidio Ireo tianao hampidirina) ary tsindrio avy eo “Sedn selected.”Safidio ny” View Sent Form ” mba hahazoana antoka fa mahomby amin’ny fampidinana ireo endrika ary tokony ho afaka hijery ireo endrika natolotra rehetra ianao izao.</p>
+<p>Ny rafitra fitehirizana antotan’isa foibe dia mampifandray amin’ny antotan’isa Kobo, ary ny famakafakana sy ny sary mandeha ho azy dia ho hita amin’ny alàlan’ny dashboard mahazatra. Ny antotan’isa mbola tsy voadio dia voatahiry ao amin’ny tahiry kobotoolbox ary ho azo alaina amin’ny alàlan’ny fampidinana na rohy mivantana mankany amin’ny tahiry hafa na trano fitehirizana angona.</p>
+</section>
+<section id="fandikan-teny" class="level3">
+<h3 class="anchored" data-anchor-id="fandikan-teny">Fandikan-teny</h3>
+<p>Ny fandikan-teny ho an’ny fiteny rehetra dia vita amin’ny fanitsiana ny takelaka amin’ny Smartsheet. Raha hitanao fa mila fanavaozana ny fandikan-teny na diso amin’ny fanadihadiana, azafady ovao mivantana ny fandikan-teny mifanaraka amin’izany ao amin’ny takelaka Smartsheet. Raha mila dikanteny vaovao ny ekipa dia hahazo fampandrenesana avy amin’ny Smartsheet ny mpiara-miasa.</p>
+</section>
+<section id="rakitra-fanovozan-kevitra" class="level3">
+<h3 class="anchored" data-anchor-id="rakitra-fanovozan-kevitra">Rakitra Fanovozan-Kevitra</h3>
+<p>Ireo rakitra fanondroana dia mpiara-miasa na firenena manokana ary misy fampahalalana feno momba ny ambaratonga fitantanana ny vondrom-piarahamonina mpanjono (firenena, faritany, distrika, tanàna), toerana fiantsonana, mpanjono, mpividy, mpanangona antotan’isa, angon-drakitra karazana, faritra fitantanana, karazana toeram-ponenana, karazana fitaovana ary fikambanana mpiara-miasa. Ny fampahalalana sasany dia mameno ny lisitra amin’ny fanadihadiana, ary ny sasany dia ampiarahina amin’ny antotan’isa fototra aorian’ny fanangonana. Ny fampahalalana vaovao dia tokony ampiana mivantana amin’ireo takelaka fanovozan-kevitra.</p>
+<p>Azo jerena ao amin’ny pejy Reference Files ny toromarika manokana sy tsikelikely momba ny fanavaozana ny rakitra referansa ao amin’ny Smartsheet.</p>
+</section>
+<section id="teny-fanampiny-a-torolalana-ho-anny-fifanakalozan-kevitra-ho-anny-focus-group" class="level3">
+<h3 class="anchored" data-anchor-id="teny-fanampiny-a-torolalana-ho-anny-fifanakalozan-kevitra-ho-anny-focus-group">Teny Fanampiny A: Torolalana Ho An’ny Fifanakalozan-Kevitra Ho An’ny “focus group”</h3>
+<p><strong>Ireo manan-danja dinihina alohan’ny hanaovana “fisheries profiling” na fanadihadiana momba ny jono</strong></p>
+<p><strong>Fifandraisana sy fahatokisana</strong></p>
+<p>Ny fananganana fifandraisana sy ny fahazoana fitokisana avy amin’ny vondrom-piarahamonina dia dingana voalohany manan-danja alohan’ny hanontaniany momba ny fampahalalana momba ny jono. Ny dingana voalohany hananganana fifandraisana sy hahazoana fahatokisan’ny vondrom-piarahamonina dia ny fampahafantarana ny tenanao, ny fikambananao ary ny tanjon’ny fanaovana “fisheries profiling”.</p>
+<p><strong>Fiomanana</strong></p>
+<p>Ny fiomanana dia zava-dehibe amin’ny fanatanterahana ny fomba fanadihadiana tsirairay, satria ny fiomanana tsara dia hanome anao fahatokisana ny fahombiazan’ny fomba tsirairay ampiharinao.</p>
+<p><strong>Fotoana hanangonana vaovao</strong></p>
+<p>Ampifanaraho amin’ny fotoanan’ny mpamaly na vondron’olona kendrena ny fotoana anaovana ny fomba tsirairay.</p>
+<p><strong>Namaly</strong></p>
+<p>Ny fahafantarana ireo mety ho valinteny ho hitanao mandritra ny mombamomba ny jono dia zava-dehibe amin’ny fanaovana fanadihadiana. Tokony hahazo fampandrenesana mialoha ireo vondrona na olona izay ho ao anatin’ny fanadihadiana. Noho izany, ny fampidirana ireo mpitarika vondrom-piarahamonina dia tsy maintsy tafiditra ao anatin’ny asa mialoha ny fanadihadiana.</p>
+<p><strong>Fitaovana</strong></p>
+<p>Ny paikady tsirairay dia manana filana ara-pitaovana sy ara-materialy. Ataovy azo antoka fa efa voaomana ny loharanon-karena sy ny fitaovana ilaina amin’ny fomba tsirairay amin’ny “fisheries profiling”.</p>
+<p><strong>Lisitry ny fifandraisana amin’ny olona manan-danja</strong></p>
+<p>Tehirizo ny lisitry ny fifandraisana amin’ny olona manan-danja amin’ny findainao ary manana dikan-teny vita pirinty ho an’ny backup.</p>
+<p><strong>Fahasalamana sy fiarovana</strong></p>
+<p>Ataovy azo antoka fa ao anatin’ny toe-javatra tsara ianao amin’ny fanaovana ny “fisheries profiling”. Mitondrà kitapo fanampiana voalohany tena ilaina.</p>
+<section id="torolalana-ho-anny-focus-group" class="level4">
+<h4 class="anchored" data-anchor-id="torolalana-ho-anny-focus-group">Torolalana Ho An’ny “focus group”</h4>
+<p>Ireto manaraka ireto dia ahitana torolàlana sy tolo-kevitra momba ny fitarihana “focu group” mba hangalana ny fahalalana mombamomba ny vondrom-piarahamonina. Ny fanaovana fivoriana “focus group” dia asaina mandrisika ny fifanakalozan-kevitra, hangala ny fahasamihafan’ny hevitra, ary hanomboka hanorina fifandraisana amin’ireo mpikambana manan-danja ao amin’ny fiarahamonina. Na izany aza, raha toa ka tsy azo atao ny “focus group”, ny fanadihadiana mombamomba ny vondrom-piarahamonina dia azo atao ho toy ny resadresaka manokana amin’ireo mpandray anjara manan-danja amin’ny fampiasana ny Kobo “Fanadihadiana Mombamomba ny Vondrom-piarahamonina”. Amin’ny ankapobeny, ny tanjona amin’ny fanaovana fanadihadiana mombamomba ny vondrom-piarahamonina, na amin’ny alalan’ny “focus group” na amin’ny endrika dinidinika isam-batan’olona, dia ny hahatakatra ny tontolo ankapobeny ao amin’ny vondrom-piarahamonina sy ny jono miasa ao anatin’ny vondrom-piarahamonina.</p>
+<p>I. Alohan’ny hanaovana “focus group”</p>
+<p>Alohan’ny hanaovana “focus group” amin’ny famaritana ny jono, dia asaina isika manao resaka tsy ara-potoana sy fanaraha-maso ny mpandray anjara. Midika izany fa mandany fotoana, manorina fifandraisana, ary mahatakatra ny jono amin’ny alalan’ny resaka tsy ara-potoana sy ny fanaraha-maso ataon’ny mpandray anjara.</p>
+<p>Zava-dehibe ny resaka tsy ara-potoana mba hahatakarana tsara kokoa ny tontolon’ny jono ankapobeny alohan’ny hanaovana fifanakalozan-kevitra amin’ny vondrona ifantohana. Ampiasao ity fomba ity ho iray amin’ireo teboka fanombohana hamolavolana ny atin’ny fifanakalozan-kevitra momba ny vondrona ifantohana. Ity fomba ity dia ahafahanao mahafantatra ny vondrom-piarahamonina mpanjono, manomboka manorina fifandraisana, ary mahazo fitokisana.</p>
+<p><em>Torohevitra raha hitarika resaka tsy ara-potoana:</em></p>
+<ul>
+<li><p>Hajao ny fahasamihafana ara-kolontsaina. Tandremo ny fenitra ara-tsosialy toy ny fiarahabana azo ekena, ny fomba fitafy ary ny fanajana ny fombafomba ara-pivavahana. Mahaiza manetry tena, manetry tena ary mihaino ny hevitry ny mpandray anjara nefa tsy mametraka ny anao manokana. Ny fijanonana ao anatin’ny vondrom-piarahamonina iray, ny fananganana fifandraisana ary ny fizarana sakafo dia afaka manampy amin’ny fananganana fitokisana.</p></li>
+<li><p>Mandania fotoana miaraka amin’ireo mpandray anjara. Tsy misy hitsin-dàlana hahazoana fitokisana sy fanohanana. Indrindra ao anatin’ny vondrom-piarahamonina dia tsara ny mahita, mandany fotoana any an-tanàna ary mihaona amin’ny olona. Miomàna hiresaka momba ireo olana midadasika kokoa ao anatin’ny fiarahamonina. Aza manandrana manosika fandaharam-potoana iray manokana.</p></li>
+<li><p>Ampiasao ny fiteny eo an-toerana raha azo atao, raha tsy misy fiteny iraisana azo idirana. Raha tsy izany dia ampiasao mpandika teny. Mitandrema amin’ny fahadisoana amin’ny fandikan-teny. Ny fanamarinana ny fandikan-teny eo amin’ny mpandika teny mihoatra ny iray dia afaka manampy amin’ny fampihenana ny fandikana diso.</p></li>
+<li><p>Aza manao fampanantenana izay tsy azo tazonina. Aza hadino ny tanjona sy ny vokatra andrasana nefa tsy mampiakatra ny andrasana. Zava-dehibe ny manantitrantitra aloha mba hananan’ny vondrom-piarahamonina fahatakarana mazava momba ny andraikitry ny mpiara-miasa ara-teknika, izany hoe hanamora ny fanakatonana ny jono horita, fa tsy handavaka lavadrano na hanamboatra sekoly. Zava-dehibe ny hahazoana antoka fa fantatry ny rehetra ny zavatra azon’ny fikambanana atao sy tsy azony atao ao anatin’ny fiarahamonina. Manampy amin’ny fampihenana ny fahadisoam-panantenana, ny fitarainana, ary ny fifandirana ny fiantohana ny fanantenana azo tanterahina rehefa mandroso ny tetikasa.</p></li>
+<li><p>Mampita drafitra sy hetsika betsaka. Hamarino tsara fa misy fivoriana na hetsika kasaina hatao mialoha sy amin’ny fotoana sy toerana mifanaraka mba hampitomboana ny fanatrehana. Ataovy azo antoka fa ny fiovana rehetra amin’ny drafitra sy ny hetsika dia ampitaina haingana araka izay azo atao. Ny fahatongavana ara-potoana sy ny fifikirana amin’ny fifanarahana dia manampy amin’ny fananganana fifampitokisana sy fahatokisana eo amin’ireo mpandray anjara.</p></li>
+<li><p>Manaiky hatrany ireo mpandray anjara amin’ny famoahana tetikasa toy ny tatitra sy ny famoahana haino aman-jery ao anatin’ny fivorian’ny mpandray anjara sy ny famelabelarana ivelany. Tandremo ny fampahalalana ‘fananan’olo tokana’ ary hajao ny tsiambaratelo.</p></li>
+</ul>
+<p>Ny fahatakarana tsara kokoa ny tontolon’ny mpandray anjara eo amin’ny fiaraha-monina dia tanjona lehibe amin’ny fanaovana resaka tsy ara-potoana sy ny fandinihana ny mpandray anjara. Misy fiantraikany na mety hisy fiantraikany amin’ny hetsika ataon’ny fikambanana ny mpandray anjara. Tena ilaina ny fanohanan’izy ireo amin’ny fahombiazan’ny fikambanana iray amin’ny fanatanterahana ny drafitra fitantanana ny jono. Amin’ny fahatakarana tsara kokoa ireo mpandray anjara dia hamantatra tsara ireo mpandray anjara mandray anjara amin’ny fanaraha-maso ny jono ho avy amin’ny fitantanana ny jono ao amin’ny faritra misy azy ianao.</p>
+<p><em>Ohatra amin’ny karazana mpandray anjara ahitana:</em></p>
+<ul>
+<li><p>Mpanjono</p></li>
+<li><p>Lehiben’ny tanàna</p></li>
+<li><p>Finoana / mpitondra fivavahana</p></li>
+<li><p>Lehiben’ny distrika</p></li>
+<li><p>Mpiasa ara-pahasalamana ao amin’ny vondrom-piarahamonina/mpitsabo</p></li>
+<li><p>Mpividy/mpamatsy tanàna</p></li>
+<li><p>Orinasa fanodinana</p></li>
+<li><p>Vehivavy ao an-tanàna / vadin’ny mpanjono</p></li>
+</ul>
+<p><em>Fampahalalana azo angonina momba ireo mpandray anjara:</em></p>
+<ul>
+<li>Fampahalalana momba ireo mpandray anjara fototra sy ny toerany mifandraika amin’ny tanjon’ny orinasa (haavon’ny fanohanana, fahefana, sns). Azo ampiasaina io vaovao io mba hamantarana izay mpandray anjara hampidirina ao amin’ny vondrona ifantohan’ny vondrom-piarahamonina.</li>
+</ul>
+<p>Aorian’ny fanaovana resaka tsy ara-potoana, ny dingana manaraka azonao atao dia ny fandinihana ny mpandray anjara. Ny fandinihana dia fomba iray ahafahanao mampiasa ny zava-mitranga manodidina anao hanangonana famantarana sy hamoahana fehin-kevitra momba ny toerana na traikefa manokana amin’ny andro fanjonoana eo @ tanàna. Ilaina io fomba io mba hanangonana porofo avy amin’ny vaovao omena amin’ny resaka tsy ara-potoana. Ity fomba ity dia ahafahanao mahatakatra ny asan’ny fiainana andavanandron’ny fanjonoana eo aùin’ny tanàna.</p>
+<p>II. Fomba Fiasa Amin’ny “focus group”</p>
+<p><strong>A.</strong> <strong>Fandaminana ny “focus group”</strong></p>
+<ul>
+<li><p>Zava-dehibe ny fitazonana fifandraisana tsara amin’ireo vondrom-piarahamonina kendrena. Noho izany, raha azo atao dia tokony hampahafantarina ny eo amin’ny tanàna ny fandaharan’asa ho an’ny fivorian’ny vondrona farafahakeliny tapa-bolana mialoha.</p></li>
+<li><p>Raha misy manana fifandraisana amin’ny finday ny tanàna, antsoy ny lehiben’ny tanàna na ny fifandraisana hafa eo an-toerana.</p></li>
+<li><p>Raha tsy manana fandraisana finday ny tanàna, dia mitsidiha ny tanàna mba hihaona amin’ny lehiben’ny tanàna na ny fifandraisana hafa eo an-toerana.</p></li>
+<li><p>Mandritra ity antso an-tariby ity na fitsidihana miaraka amin’ny filohan’ny tanàna na fifandraisana hafa eo an-toerana, hazavao izao manaraka izao:</p>
+<ul>
+<li><p>Tanjon’ny fivoriana</p></li>
+<li><p>Toerana fihaonana</p></li>
+<li><p>Daty sy ora fihaonana</p></li>
+<li><p>Fomba fampahafantarana ireo mpandray anjara amin’ny fivoriana</p></li>
+<li><p>Isan’ny mpandray anjara</p>
+<ul>
+<li><p>Ny mponina rehetra na ny olona manokana mifototra amin’ny mpanjono tsara indrindra (2)</p></li>
+<li><p>Mpanjono matetika indrindra (2)</p></li>
+<li><p>Mpanjono izay matetika mandeha amin’ny toerana fanjonoana maro samihafa (2)</p></li>
+<li><p>Mpanjono hajaina tsara indrindra amin’ny traikefa amin’ny sarintany (2)</p></li>
+</ul></li>
+</ul></li>
+<li><p>Vehivavy- zahao miaraka amin’ny lehiben’ny tanàna raha toa ka misy ny “ficus group” miaraka amin’ny lahy sy ny vavy miaraka mialoha toy ny any amin’ny faritra sasany, tsy azo atao foana izany.</p></li>
+<li><p>Miezaha tsy hanao ny fivoriana mandritra ny vanim-potoanan’ny lohataona/vanim-potoanan’ny jono, satria maro amin’ireo mpanjono takiana no mety ho sahirana amin’ny jono.</p></li>
+<li><p>Aza hadino ny manamarina ny fandaharam-potoanan’ny tetikasa hafa izay mety miasa amin’ny faritra iray ihany amin’ny fotoana iray mba hisorohana ny fifandonana.</p></li>
+</ul>
+<p><strong>B.</strong> <strong>Ekipa “focus group”</strong></p>
+<p>Ireto manaraka ireto ny anjara asa natolotry ny ekipa mitarika ny “focus group”. Raha kely indrindra, ny vondrona mifantoka dia tokony hanana mpanamora sy mpandray naoty.</p>
+<p><em>Mpanamora ny fitarihana: Mitarika sy manelanelana ny fivoriana</em></p>
+<ul>
+<li><p>Mampahafantatra ny fivoriana</p></li>
+<li><p>Manamora ny hetsika</p></li>
+<li><p>Mandamina ny fizotrany</p></li>
+<li><p>Miasa ho toy ny mpanentana eo amin’ny olona ao amin’ny vondrona</p></li>
+<li><p>Mahita fomba fampidirana olona manjaka sy mangina ary manome antoka fa afaka maneho ny heviny ny mpikambana rehetra ao amin’ny vondrona</p></li>
+<li><p>Ataovy azo antoka fa mitazona ny lohahevitra ny vondrona saingy malefaka ihany koa amin’ny fametrahana fampahalalana manan-danja fanampiny</p></li>
+<li><p>Avereno amin’ny teniny manokana izay lazain’ny olona mba hanamafisana fa misy fahatakarana tsara ny fifanakalozan-kevitra</p></li>
+<li><p>Fitantanana fotoana</p></li>
+</ul>
+<p><em>Mpanampy mpanamora: Manampy ny mpitarika mpanamora, indrindra amin’ny fampisehoana fitaovana hita maso</em></p>
+<ul>
+<li><p>Manohana ny mpandray naoty amin’ny fanangonana ny fampahalalana rehetra mifandraika amin’izany</p></li>
+<li><p>Mitarika ny fampisehoana ireo fitaovana hita maso ary manampy amin’ny singa hafa ifandraisana amin’ny fivoriana toy ny fanisana ny vato, ny fandraisana an-tsoratra izay aseho, ny fizarana fitaovana, sns.</p></li>
+<li><p>Mitondra ny fitaovana ilaina</p></li>
+<li><p>Manampy ny mpanamora amin’ny fomba tsy mivantana amin’ny fanomezana famantarana (ohatra, manondro ireo izay maniry hiteny).</p></li>
+<li><p>Manohana mivantana ny mpanamora amin’ny fametrahana fanontaniana, raha mitaky izany ny toe-javatra.</p></li>
+</ul>
+<p><em>Fanamarihana: Manoratra Ny fivoriana</em></p>
+<ul>
+<li><p>Mijery ny hetsika avy any aoriana</p></li>
+<li><p>Mangala ny valiny rehetra. Manampy ny fanontana ny lisitry ny fanontaniana mba hahafahana manamarika azy amin’ny fanamarihana mandritra ny fivoriana.</p></li>
+<li><p>Manoratra ny fampahalalana manan-danja rehetra</p></li>
+<li><p>Fanamarihana izay miresaka. Misy fandraisana anjara mitovy amin’ny rehetra ve sa misy olona manjaka amin’ny fizotrany? Miresaka ve ny vehivavy?</p></li>
+</ul>
+<p><strong>C.</strong> <strong>Mpandray anjara amin’ny “focus group”</strong></p>
+<p>Omano tsara hoe izay avo no hasaina amin’ny fivorian’ny vondrona mifantoka. Ny famantarana olona 10-12 dia asaina miantoka ny habeny azo tantanana, mamela ny fanehoana tsara ny fomba fijery samihafa. Araka izay azo atao, ampidiro ny solontena avy amin’ny vondrona mpandray anjara isan-karazany sy ny sehatry ny vondrom-piarahamonina (jereo ohatra amin’ny karazana mpandray anjara ao amin’ny fizarana etsy ambony). Rehefa mifidy mpandray anjara, dia jereo tsara ny fahalalany sy ny anjara asany eo amin’ny fiarahamonina. Ny fanasana olona manam-pahalalana bebe kokoa momba ny jono sy ny fiaraha-monina, toy ny mpanjono manontolo andro fa tsy mpanjono fialamboly tsindraindray, dia hanome fampahalalana matanjaka sy marina kokoa. Manampy amin’ny fananganana fitokisana ny famantarana sy fanasana olona hajaina tsara eo amin’ny fiaraha-monina.</p>
+<p><strong>D.</strong> <strong>Fifanakalozan-kevitra momba ny lojistika sy ny paik’ady</strong></p>
+<p>Azo alaina ao amin’ny endrika Kobo “Fanadihadiana ny Mombamomba ny Vondrom-piarahamonina” ny angona. Na izany aza, mety ho mora kokoa ho an’ny mpandray naoty ny maka ny antotan’isa amin’ny alàlan’ny naoty an-tsoratra mba hangalana mora kokoa ny tsy fitoviana sy ny fampahalalana izay mipoitra avy amin’ny fifanakalozan-kevitra amin’ny vondrona, toy ny valiny samihafa isaky ny mpamaly.</p>
+<p>Raha angonina amin’ny alalan’ny fandraisana an-tsoratra ny vaovao. Rehefa vita ny fivorian’ny vondrona mifantoka, tokony hampidirina ao amin’ny endrika Kobo “Fanadihadiana ny Mombamomba ny Vondrom-piarahamonina” ny valiny.</p>
+<p>Amporisiho ny mpikambana rehetra ao amin’ny vondrona hiteny satria izy ireo dia avy amin’ny fifangaroan’ny taona sy ny toerana ara-tsosialy izay mety manana traikefa samihafa amin’ny jono.</p>
+<p>Ny fametrahana fanontaniana tsirairay amin’ny vondrona sy ny fiandrasana ireo hamaly an-tsitrapo dia fomba iray hitarika fifanakalozan-kevitra. Na izany aza, ny fiovaovan’ny fomba angatahan’ny mpanamora ny valiny dia afaka manampy amin’ny fitazonana ny fifanakalozan-kevitra mahaliana ary koa miantoka fa re ny feo rehetra ary ireo mpandray anjara tsy marisika dia afaka mandraya anjara. Alohan’ny hanombohan’ny vondrona ifantohana dia eritrereto ny fomba tianao hamaliana ny fanontaniana kasaina hatao.</p>
+<ul>
+<li><p>Sehatra malalaka-Na iza na iza afaka mamaly ny fanontaniana sy miteny.</p></li>
+<li><p>Antsoy ny mpandray anjara manokana – izany dia afaka manampy amin’ny fiantohana fa ny mpandray anjara kely kokoa dia omena fahafahana hiteny. Azo ampiasaina izany any aoriana any amin’ny fifanakalozan-kevitra raha vao mahatsapa ny mpandray anjara izay mety handray soa amin’ny fiantsoana azy ny mpanamora. Raha tsy izany, ny mpanamora dia afaka mampiasa io teknika io rehefa fantany fa misy mpandray anjara iray manana fahalalana na fampahalalana manan-danja mifandraika amin’ny fanontaniana iray.</p></li>
+<li><p>Valiny haingana-Mandehana anaty faribolana ary ny olona tsirairay dia mizara fohifohy ny heviny/valiny amin’ilay fanontaniana. Mety hahomby amin’ny fandatsaham-bato ny mpihaino izany satria mahakasika ny rehetra. Na izany aza, aza hadino ny mifampiresaka mazava sy mampihatra ny fetran’ny fotoana na ity fomba ity dia mety hiafara amin’ny fandaniam-potoana fifanakalozan-kevitra be loatra.</p></li>
+<li><p>Fifidianana-Akao hevitra ny mpihaino amin’ny fametrahana fanontaniana ary asaivo manangana ny tanany ny olona arakaraka ny safidiny ny valiny samihafa. Izany dia azo atao an-karihary na tsy mitonona anarana amin’ny amin’ny alalan’ny maso mikipy na amin’ny olona manoratra ny valinteniny amin’ny taratasy mivalona izay angonina avy eo.</p></li>
+<li><p>Vondrona-Zarao ny vondrona ho vondrona kely kokoa izay mifanakalo hevitra sy manao tatitra amin’ny vondrona lehibe. Ity teknika ity dia manampy indrindra amin’ny vondrona lehibe rehefa tsy ampy ny fotoana handraisan’ny mpikambana rehetra ao amin’ny vondrona anjara feno. Amin’ity toe-javatra ity, alao antoka fa ny vondrona tsirairay dia manana mpandray anjara misolo tena ny hevitra sy ny fomba fijery samihafa.</p></li>
+</ul>
+<p>III. Fanontaniana Momba Ny Vondrona Mifantoka</p>
+<p>Atombohy ny fivoriana amin’ny fampahafantarana ny tenanao, ny tetikasa ary ny tanjon’ny fivoriana. Avy eo, asaivo mampahafantatra ny tenany ny olona rehetra ao amin’ny efitrano. Jerevo ny fomba tsara indrindra ho an’ny fanontaniana tsirairay mba hiteraka sy hanangona valiny mialoha (jereo ny fizarana etsy ambony ho an’ny hevitra). Azafady mba jereo ny antontan-Taratasy Fanadihadiana ny Mombamomba ny Vondrom-piarahamonina mba ahazoana ny lisitra feno an’ireo fanontaniana hapetraka amin’ny mpandray anjara.</p>
+<p>IV. Fitaovana fanamorana (misy amin’ny teny anglisy)</p>
+<ul>
+<li><p><a href="https://www.iaf-world.org/site/sites/default/files/Revised%20IAF%20Core%20%20Competencies%20-%20December%206%202021.pdf">Facilitator Core Competencies</a> – International Association of Facilitators (IAF)</p></li>
+<li><p><a href="http://stproject.org/wp-content/uploads/2014/11/facilitators-meeting-checklist.pdf">Facilitator’s Meeting Checklist</a> – Social Transformation Project, Tools for Transformation</p></li>
+<li><p><a href="https://reefresilience.org/pdf/Facilitation_Effective_Meetings.pdf">Introduction to Planning and Facilitating Effective Meetings</a> – Social Science Tools for Social Programs, NOAA Coastal Services Center</p></li>
+<li><p><a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation">Group Facilitation and Problem-Solving</a> – Community Tool Box, Center for Community Health and Development at the University of Kansas</p>
+<ul>
+<li><p>Section 1:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/main">Conducting Effective Meetings</a></p></li>
+<li><p>Section 2:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/facilitation-skills/main">Developing Facilitation Skills</a></p></li>
+<li><p>Section 3:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/record-meeting/main">Capturing What People Say: Tips for Recording a Meeting</a></p></li>
+<li><p>Section 4:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/group-discussions/main">Techniques for Leading Group Discussions</a></p></li>
+</ul></li>
+</ul>
+
+
+</section>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/barefoot-ocean\.github\.io\/Partner-Manual\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../../pages/quick_guide/quick_guide_mg.html" class="pagination-link" aria-label="Torolalana haingana">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Torolalana haingana</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../pages/kobo_setup/kobo_setup_mg.html" class="pagination-link" aria-label="Kobo Setup">
+        <span class="nav-page-text">Kobo Setup</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© CC-By Blue Ventures, 2025</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

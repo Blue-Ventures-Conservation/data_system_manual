@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Household Survey – Community Fisheries Data System Manual</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../pages/socioeco_dashboard/socioeco_dashboard_en.html" rel="next">
+<link href="../../pages/fisheries_dashboard/fisheries_dashboard_en.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_en.html">English</a></li><li class="breadcrumb-item"><a href="../../pages/household_survey/household_survey_en.html">Household Survey</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/bv_logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/bv_logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://blueventures.org/" title="Blue Ventures Website" class="quarto-navigation-tool px-1" aria-label="Blue Ventures Website"><i class="bi bi-globe"></i></a>
+    <a href="https://youtube.com/playlist?list=PLwUVTxKktakVz45STRgXwoNwiUFIOQOaZ&amp;feature=shared" title="Youtube Training Videos" class="quarto-navigation-tool px-1" aria-label="Youtube Training Videos"><i class="bi bi-youtube"></i></a>
+    <a href="https://app.smartsheet.com/" title="Smartsheet" class="quarto-navigation-tool px-1" aria-label="Smartsheet"><i class="bi bi-check-circle-fill"></i></a>
+    <a href="https://blueventures.shinyapps.io/fisheries-dashboard/" title="Fisheries Data Dashboard" class="quarto-navigation-tool px-1" aria-label="Fisheries Data Dashboard"><i class="bi bi-bar-chart-fill"></i></a>
+    <a href="https://blueventures.shinyapps.io/social-economic-dashboard/" title="Social and Economic Dashboard" class="quarto-navigation-tool px-1" aria-label="Social and Economic Dashboard"><i class="bi bi-house-fill"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">English</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_collection/data_collection_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/management_ref/management_ref_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Management Ref</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fisheries Dashboard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/household_survey/household_survey_en.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Household Survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/socioeco_dashboard/socioeco_dashboard_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Socioeconomic Dashboard</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bahasa Indonesia</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panduan Cepat</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panduan Lengkap</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengaturan Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_collection/data_collection_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengumpulan Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">File Referensi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validasi data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dasbor Perikanan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cebuano</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dali nga Giya</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bug-os nga Giya</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pag-setup sa Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mga Reperensya nga File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pagpamatuod sa Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard sa Pangisda</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tagalog</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mabilis na Gabay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Buong Gabay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pag-setup ng Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mga Reference File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pagpapatunay ng Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard ng Pangisdaan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Malagasy</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Torolalana haingana</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Torolalana feno</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fanamarinana angona</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard momba ny jono</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Français</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide rapide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide complet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuration Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fichiers de référence</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">La validation des données</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard des pêches</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Español</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guía rápida</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guía completa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuración de Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Archivos de referencia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validación de datos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panel de pesca</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Português</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guia rápido</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guia completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuração do Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Arquivos de referência</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data de validade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Painel de Pesca</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kiswahili</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mwongozo wa Haraka</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mwongozo Kamili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mpangilio wa Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Faili za Marejeleo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Uthibitishaji wa Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashibodi ya Uvuvi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tetun</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fisheries Dashboard</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species Guides</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_BLZ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Belize</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_CV.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cabo Verde</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_GMB.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Gambia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_MDG_MHJ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Madagascar - MHJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_SEN.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Senegal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_en.html">English</a></li><li class="breadcrumb-item"><a href="../../pages/household_survey/household_survey_en.html">Household Survey</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Household Survey</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-right">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="household-survey-guidance" class="level2">
+<h2 class="anchored" data-anchor-id="household-survey-guidance">Household Survey Guidance</h2>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">1. Introduction</h3>
+<p>A core part of our work is the regular collection of fisheries data and feedback to communities so that they can make informed management decisions. For communities to better understand changes to their fishery (i.e.&nbsp;if they are stable, increasing or decreasing), we must also understand changes in socio-economic factors and perceptions of fisheries management. Additionally, we must monitor the outcomes of projects in the communities where we work, so that we can make informed decisions on the next iterations of project activities.&nbsp;</p>
+<p>We recommend our partners to capture this information using a standardised Household survey (HHS). By collecting this data over time, we can better understand the impact of our work and support communities to create adaptive management plans that incorporate socioeconomic considerations.</p>
+<p>The data collected in the HHS can provide evidence of impacts following activities across all pillars of our work: community-based fisheries management, secure rights, food security and financial inclusion (Figure 1).&nbsp;</p>
+<p>Figure 1. Blue Ventures’ four-pillar model: community-based fisheries management, secure rights, food security and financial inclusion, all anchored by community data. The HHS forms a core part of the community data piece.</p>
+<p>This document is designed for Blue Ventures colleagues and partners conducting the HHS. It outlines what the HHS is, how to prepare for data collection, how to collect this data ethically, the safeguarding reporting processes to follow, how to calculate sample sizes, and some tips on interview techniques.&nbsp;</p>
+<p>A key piece of additional reading is the “<a href="https://docs.google.com/document/d/17kfhMpF3xkUxH1xQCHo2lez71nEQoOu13NhcJoC_6xU/edit?tab=t.0">Guidance on ethical data collection</a>”, which outlines the expected behaviours of those interacting with community members during the HHS. It is essential that everyone involved in the data collection process abides by these guidelines. This includes acting with respect and integrity, capturing free, prior and informed consent (FPIC), and having clear safeguarding reporting processes in place. More information can be found in section 4 of this guidance.</p>
+</section>
+<section id="what-is-the-hhs" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-hhs">2. What is the HHS?</h3>
+<p>The HHS is a KoboToolbox based survey form designed to collect responses from individual households in a community. The questionnaire method uses a randomised design to select households (sample population) in a community to answer a fixed set of questions that can be used to establish baselines and provide evidence of positive (or negative) social outcomes following an intervention at the household level. This information is collated and the results are used as an estimate of the wider community context and perception. These data are sex disaggregated with a sample design aiming for a 50:50 split between male and female respondents among households. The survey should be repeated after 3 years of programme support to measure change.&nbsp;</p>
+<p>The household survey aims to provide basic information about a community’s livelihoods, dependence on the local fishery, economic resilience, social capital, knowledge of fishing regulations, attitudes and participation toward fisheries management, trust in different stakeholder groups and perceptions of their future food and economic security. The survey is used to evaluate existing conditions relevant to community-based fisheries management, especially in respect to trust and perceptions / engagement with management and how that links to their own perceptions of resource status, income and food security.&nbsp;</p>
+<p><strong>Why do we need to do it?</strong></p>
+<p>These data set a baseline and can be used to design and focus programme priorities as well as inform management suggestions and strategies. This is critical programme information to understand if engagement in community based management is resulting in measurable change.</p>
+<p>Importantly, this data should inform data feedback sessions with the community so that they can better understand their social dynamics to adaptively manage the fishery. For example, if trust in management and engagement in management activities has increased, then this may signal a positive result which can be championed. Comparatively, if trust with the government remains low , then that can inform potential strategies to improve those relationships. Additionally, the results from the HHS should be supplemented with the fisheries monitoring when necessary to improve our understanding of both community and ecological dynamics at play.</p>
+<p>The Data Science team has developed an interactive Social and Economic dashboard to present this information. For support in interpreting the results of the dashboard and designing data feedback sessions, please refer to the Social and Economic guidance page.</p>
+</section>
+<section id="preparing-for-data-collection" class="level3">
+<h3 class="anchored" data-anchor-id="preparing-for-data-collection">3. Preparing for data collection</h3>
+<section id="i.-contextualising-the-hhs" class="level4">
+<h4 class="anchored" data-anchor-id="i.-contextualising-the-hhs">i. Contextualising the HHS</h4>
+<p>It is essential that you spend time reviewing the HHS and contextualising it for the communities you are surveying. Where possible this may include hiding questions in the Kobo survey that may be inappropriate to ask, adding options for the drop down lists, adapting existing questions to capture local dynamics, and importantly, translating the survey into your local dialect. Please reach out to a member of the Data Science team to support you in this process.</p>
+</section>
+<section id="ii.-create-or-update-reference-information" class="level4">
+<h4 class="anchored" data-anchor-id="ii.-create-or-update-reference-information">ii. Create or update reference information</h4>
+<p>A core part of preparing for the HHS is ensuring that all reference file data is updated and managed in SmartSheet. Reference files are pre-filled lists of information that are used in surveys to standardise data entry. Populating the reference files in Smartsheets is time consuming so please ensure you give at least 2 weeks to complete this process. You can reach out to a member of the Data Science team to support you in Smartsheet, or visit the Reference files guidance page. Reference files &amp; information that should be reviewed in advance of data collection include:</p>
+<ul>
+<li><p>Locations (admin1_ref, admin2_ref, admin3_ref)</p></li>
+<li><p>Partner organization names (org_ref)</p></li>
+<li><p>Data collector names (data_collector_ref)</p></li>
+<li><p>Gear names and types (gear_ref)</p></li>
+<li><p>Local names of species fished (species_ref)</p></li>
+</ul>
+</section>
+<section id="iii.-defining-the-area-of-interest" class="level4">
+<h4 class="anchored" data-anchor-id="iii.-defining-the-area-of-interest">iii. Defining the area of interest</h4>
+<p>From the beginning, it’s important to define the area of interest (AOI)&nbsp; for the Household survey in order to create a data collection plan and sampling design. The AOI should be the population that you wish to learn about and be able to detect changes in responses. Typically, this would be the communities associated with a management unit or within a certain administrative district. For the purposes of this guidance, we will use ‘management unit’ as the area of interest in the below examples.</p>
+</section>
+<section id="iv.-sensitising-the-community-to-data-collection-plans" class="level4">
+<h4 class="anchored" data-anchor-id="iv.-sensitising-the-community-to-data-collection-plans">iv. Sensitising the community to data collection plans</h4>
+<p>Before collecting data you must allocate appropriate time and resources in sensitising the community to your data collection plans. This includes:&nbsp;</p>
+<ul>
+<li><p>Why are we collecting data with the community, including the benefits of being involved in the data collection in terms of increased knowledge on their fisheries for project activities.</p></li>
+<li><p>Any anticipated costs (e.g.&nbsp;time, energy and potentially challenging conversations) - as well as how we will mitigate these risks.</p></li>
+<li><p>When and where data collection will take place (e.g.&nbsp;time/dates and location).</p></li>
+<li><p>When and where the data will be provided back to them (e.g.&nbsp;when you anticipate to do the first data feedback session).</p></li>
+<li><p>Who will be involved in the data collection</p></li>
+<li><p>Where their data will go, how it is protected and anonymised (e.g.&nbsp;see <a href="https://docs.google.com/document/d/1YWhpG6WfROorKc-ZojPuHaxiSwS27WNXkVUrNzXAfAw/edit?tab=t.0#heading=h.s592ecw8zsr5">Data sharing and privacy agreements</a>).</p></li>
+<li><p>The expected behaviours of data collectors and those involved with the data collection (e.g.&nbsp;as outlined in the <a href="https://docs.google.com/document/d/17kfhMpF3xkUxH1xQCHo2lez71nEQoOu13NhcJoC_6xU/edit?tab=t.0">Guidance for ethical data collection</a>), so that they may raise grievances if they are unhappy with any behaviour.</p></li>
+<li><p>How community members can raise grievances if they are unhappy with any part of the data collection process or if they have safeguarding concerns (see next step on Ethical data collection and safeguarding).</p></li>
+<li><p>That this is an optional process and each household has the right to refuse participation (see section on capturing FPIC below).</p></li>
+</ul>
+</section>
+</section>
+<section id="guidance-on-ethical-data-collection-and-safeguarding" class="level3">
+<h3 class="anchored" data-anchor-id="guidance-on-ethical-data-collection-and-safeguarding">4. Guidance on ethical data collection and safeguarding</h3>
+<p>We strive to ensure that we collect data with the communities responsibly, with integrity, and in a way that respects the dignity and rights of all participants. It is essential that all data collectors behave in a respectful and responsible manner with the community. It is the responsibility of Blue Ventures staff to ensure that your data collectors have received appropriate training on how to behave responsibly.&nbsp;</p>
+<section id="i.-guidance-on-ethical-data-collection" class="level4">
+<h4 class="anchored" data-anchor-id="i.-guidance-on-ethical-data-collection">i. Guidance on ethical data collection&nbsp;</h4>
+<p>Our <a href="https://docs.google.com/document/d/17kfhMpF3xkUxH1xQCHo2lez71nEQoOu13NhcJoC_6xU/edit?tab=t.0">Guidance for ethical data collection</a> outlines the expected behaviours of all data collectors (and those involved in the process) to follow throughout the data collection project. This includes behaving respectfully to all participants they are interacting with, capturing Free, Prior and Informed Consent (FPIC), and abiding by safeguarding principles and processes. It is essential that data collectors have received training on this from Blue Ventures staff and/or partners <strong>prior to starting data collection</strong>. This training ensures that our data collection activities contribute positively to both conservation outcomes and community well-being, while minimising any risks to participants.</p>
+</section>
+<section id="ii.-safeguarding-vulnerable-groups-of-people" class="level4">
+<h4 class="anchored" data-anchor-id="ii.-safeguarding-vulnerable-groups-of-people">ii. Safeguarding vulnerable groups of people</h4>
+<p>An important aspect of ethical data collection is safeguarding vulnerable groups of people. Vulnerable groups of people are included but not limited to: those facing exclusion or stigmatisation from social differences such as race, gender, ethnicity, sexuality, class or caste, social status, level of education, access to social networks, proximity to degraded environments, and resource dependence.&nbsp;</p>
+<p>Safeguarding refers to the practices, policies, and actions taken to protect individuals from harm, abuse, neglect, exploitation, or discrimination. It involves creating environments, systems, and procedures that ensure the safety, well-being, and rights of individuals are upheld, both in personal and organizational contexts. We must ensure our work throughout data collection, data feedback and reporting follows safeguarding principles, and does not perpetuate any existing inequalities within the communities. This includes some of the following principles:</p>
+<ul>
+<li><p>Obtaining <strong>FPIC</strong> and ensuring participation is genuinely voluntary.</p></li>
+<li><p>Ensuring there are clear <strong>safeguarding reporting mechanisms</strong> in place, including a designated data collection safeguarding focal point (see Box 1 below).</p></li>
+<li><p>Special care must be taken to ensure that their <strong>involvement does not place anyone at risk of harm, discrimination, or abuse</strong>.&nbsp;</p></li>
+<li><p>Data collection <strong>must not exploit vulnerable participants or communities for personal, organisational, or financial gain.</strong></p></li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Box 1. Reporting safeguarding concerns</strong></p>
+<p>You should identify a <strong>data collection safeguarding focal point</strong> when you roll out the HHS. This person is responsible for processing any concern or issues raised throughout the data collection project via the Blue Ventures safeguarding reporting channels. Please reach out to your regional safeguarding lead to receive appropriate training on how to identify and handle safeguarding concerns.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="sampling-households" class="level3">
+<h3 class="anchored" data-anchor-id="sampling-households">5. Sampling households</h3>
+<p>Now we understand how to conduct the HHS ethically, the next step is to choose the households to survey. Sampling design is based around the area of interest (AOI), typically a management unit. The management units we work with can be very large, sometimes spanning many hundreds of households. Therefore, it is not always possible to collect data from every household within the management unit, so we often collect data from a representative sample of households. This is called the sample size.</p>
+<section id="i.-sample-size" class="level4">
+<h4 class="anchored" data-anchor-id="i.-sample-size">i. Sample size</h4>
+<p>The ideal sample size (number of households) that we should survey across an AOI (such as a management unit) of any size is <strong>162 households</strong>. This means that your survey should aim to collect at <strong>least 162 household</strong> <strong>responses</strong> across the <strong>whole</strong> management unit. For example, if you are only surveying ½ of the management unit, you need to only survey a minimum of 81 households. You can then complete the remaining 81 households at an alternative time.&nbsp;</p>
+<p>You can of course do more samples than the minimum 162 households, if you so wish and as resources allow.</p>
+<p>Why this recommendation?</p>
+<p>This approach to sample size calculation is <strong>focused on optimising data collection for detecting real, meaningful change in the data</strong>. We use statistical concepts such as power and effect size to determine how much data should be collected to confidently detect a change. This approach is scientifically rigorous and reduces the risk of sampling too few or too many households.&nbsp;</p>
+<p>There may be cases when sampling 162 households across your management unit is not appropriate, and you may want to sample more or less households than this. If this is the case, please speak directly with the Data Science and Global/Regional Technical teams for support in deciding an appropriate sample size number based on your needs.</p>
+</section>
+<section id="ii.-sampling-design" class="level4">
+<h4 class="anchored" data-anchor-id="ii.-sampling-design">ii. Sampling design</h4>
+<p>The next step is to choose which 162 households to survey within your AOI. If your management unit has multiple communities, surveys should be conducted proportional to the number of households in each community. For example, more surveys should be completed in communities with a higher number of households. Less surveys will be completed in the communities with a lower number of households. The total number of households surveyed across all communities in the management unit will still equal 162.&nbsp;</p>
+<p><strong>For example:</strong></p>
+<p>This AOI, let’s call it Management Unit 1, comprises 3 communities (A, B and C), totalling to 2600 households across the whole AOI.</p>
+<p>We must split 162 proportionately across the three communities so that we complete more surveys in communities that are larger, and less surveys in communities that are smaller:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 18%">
+<col style="width: 23%">
+<col style="width: 19%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Name of AOI</strong></td>
+<td></td>
+<td><strong>Management Unit 1</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Name of community</strong></td>
+<td><strong>Community A</strong></td>
+<td><strong>Community B</strong></td>
+<td><strong>Community C</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Number of households in community</strong></td>
+<td>100</td>
+<td>500</td>
+<td>2000</td>
+</tr>
+<tr class="even">
+<td><strong>Proportional number of households to sample</strong></td>
+<td>100/2600*100 = <strong>4%</strong></td>
+<td>500/2600*100 = <strong>19%</strong></td>
+<td>2000/2600*100 = <strong>77%</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Number of households to sample</strong></td>
+<td><strong>4%</strong> of 162 = <strong>7</strong></td>
+<td><strong>19%</strong> of 162 = <strong>31</strong></td>
+<td><strong>77%</strong> of 162 = <strong>124</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>If your AOI is very large</strong> e.g.&nbsp;spread across multiple regions/districts with multiple communities (e.g.&nbsp;UKB MPA in Senegal) you will need to proportionately split the 162 at two levels: firstly across the regions/districts, and then secondly across the communities.</p>
+<p><strong>For example:</strong></p>
+<p>In the UKB management area there are 3 regions (Region A, Region B and Region C). The total number of households across the entire AOI (e.g.&nbsp;all 3 regions) is 3000. Region A = 2000 households split across 3 communities, Region B&nbsp; = 250 households split across 1 community, and Region C = 750 households split across 3 communities. You must split the 162 proportionately across the regions first, and then the communities. For example:</p>
+<ol type="1">
+<li><p>Proportionately split the 162 households across the three regions in the AOI, so that the larger regions are attributed a larger number of samples</p></li>
+<li><p>Proportionately split the samples in each region across communities, so that larger communities are attributed a larger number of samples</p></li>
+</ol>
+<p>Please reach out to a member of Data Science or Global Technical Knowledge for support in calculating your sample size if needed.</p>
+</section>
+<section id="iii.-household-selection" class="level4">
+<h4 class="anchored" data-anchor-id="iii.-household-selection">iii. Household selection</h4>
+<p>Once the sample size has been calculated and you know how many households you should sample per village - you must <strong>randomly</strong> select households across the area to collect data from. You can do this by giving each household a number and then choosing numbers randomly to survey, for example.</p>
+<p>This is important to maintain scientific rigour. You must:</p>
+<ul>
+<li><p>Do not focus data collection in only one area of the village.</p></li>
+<li><p>Move between different households. You should not collect data from only a few similar households.</p></li>
+<li><p>Stick to the random survey selection as above.&nbsp;</p></li>
+<li><p>Do not be influenced by others when choosing households.&nbsp;</p></li>
+</ul>
+</section>
+<section id="iv.-respondent-selection" class="level4">
+<h4 class="anchored" data-anchor-id="iv.-respondent-selection">iv. Respondent selection</h4>
+<p>A critical goal of the HHS is to obtain information that is representative of the entire household from both men and women. The following best practices are recommended for obtaining survey responses that accurately represent the entire household and ensure equal inclusion of both men and women as the primary respondents.</p>
+<p><strong>Gender stratification</strong></p>
+<p>Use a random number generator (e.g.&nbsp;Microsoft Excel RAND function or www.numbergenerator.org) to assign half of the households to a male respondent and half to a female respondent. If you are selecting every fifth house with a total sample size of 20, randomly assign 10 as a female respondent and 10 as a male respondent. An example could be assigning female respondent to household number 1, 3, 6, 7, 8, 13, 15, 18, 9, 10 and male respondent to household number 2, 4, 5, 11, 12, 14, 16, 17, 19, 20. Select a time of day for the survey when you believe either the respondent will be available (this is particularly important for ensuring a representative sample of female respondents).</p>
+<p>For example: 100 households -&gt; 50 male, 50 female respondents&nbsp;</p>
+<p>Choose a respondent in the household that is capable of providing accurate answers for the entire household. If the primary respondent is unsure or unable to confidently address the questions for the entire household, consider consulting other individuals present in the household.</p>
+</section>
+</section>
+<section id="free-prior-and-informed-consent-fpic" class="level3">
+<h3 class="anchored" data-anchor-id="free-prior-and-informed-consent-fpic">6. Free prior and informed consent (FPIC)</h3>
+<p>Now you know what households you are going to survey, you must be ready to capture FPIC from each household that you speak with. We have a standardised FPIC oral consent script which can be found in the Annex of this guidance.&nbsp;</p>
+<p>Capturing FPIC is different to just simply asking for “consent”. It is more thorough, and matches international guidelines on how to capture consent across social science conservation programmes. FPIC stands for:</p>
+<p><strong>Free</strong> means we use no coercion, intimidation, inducement or manipulation to obtain consent from participants.&nbsp;</p>
+<p><strong>Prior</strong> means that we seek consent far enough in advance of any authorisation or commencement of activities, and we respect the time requirements of community consultation and consensus processes.&nbsp;</p>
+<p><strong>Informed</strong> means that we provide all information relating to the activity to communities in advance, including how their personal data will be collected, used and stored. We ensure the information is objective, accurate and presented in a manner or form that is understandable to communities.&nbsp;</p>
+<p>Relevant information includes:&nbsp;</p>
+<ol type="1">
+<li><p>The nature, size, pace, duration, reversibility and scope of any proposed data collection;&nbsp;</p></li>
+<li><p>The reason(s) or purpose of the data collection;&nbsp;</p></li>
+<li><p>The location of areas that will be affected;&nbsp;</p></li>
+<li><p>The possible economic, social, cultural and environmental impacts on the community and their lands and resources, including potential risks and realistic benefits;&nbsp;</p></li>
+<li><p>Personnel likely to be involved in the implementation of the project;</p></li>
+</ol>
+<p><strong>Consent</strong> means that data collection can only proceed if the household has agreed to continue. Households have the right to refuse their consent or to give consent on conditions that meet their needs, priorities and concerns.&nbsp;</p>
+<p>You may print a physical copy of this consent script for your data collectors so that they can read it <strong>aloud to each household that they interact with</strong>. The data collectors will then record whether the household provides consent or not directly in the Kobo form as a Y/N response. It is important that we also record the households that do not provide consent (i.e.&nbsp;N), as this allows us to calculate a “refuse response ratio”.&nbsp;</p>
+<p>If a household refuses to continue with the interview, that is OK! Simply thank them for their time and move to the next nearest house. <strong>Never force or persuade a household to participate in the data collection survey</strong> - this would not mean the consent was “free”!</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Please refer to Annex 1 for the Oral consent script that should be printed and read aloud to every household you interview.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="interview-techniques" class="level3">
+<h3 class="anchored" data-anchor-id="interview-techniques">6. Interview techniques</h3>
+<p>Once you have obtained FPIC, the data collectors can conduct the survey with the household.&nbsp;</p>
+<p>Here is some advice on the interview techniques, adapted from Willis, Desai and Potter (2006).</p>
+<p><strong>Where and when to interview</strong></p>
+<ul>
+<li><p>On average, it takes data collectors 45 minutes - 1 hour to complete the survey of one household (varying with data collector capacity and skills)</p></li>
+<li><p>You will deliver thesurvey <strong>ONLY</strong> to households. You should not travel elsewhere in the community to interview people. You must only knock on households doors that have been selected during the sampling strategy.</p></li>
+<li><p>You must follow the sampling strategy. You should not choose only your friends and family to sample, for example.</p></li>
+<li><p>You will capture FPIC from each household you interview.</p></li>
+<li><p>If the household does not provide consent, you may thank them and move to the next closest household. You should continue to do this until a household provides consent. You should then return to the sampling strategy.&nbsp;</p></li>
+<li><p>You will never persuade or force a household to participate if they do not want to.</p></li>
+<li><p>You should choose a time and day where fishers, or members of the household who would be able to confidently answer questions relating to the fishery, will be in the house.</p></li>
+<li><p>If there is no one in the household able to answer questions on the fishery, you should thank them and move to the next closest household. You should then resume the normal sampling procedure.&nbsp;</p></li>
+<li><p>You should ideally alternate between asking for a male and female respondent across the households.</p></li>
+</ul>
+<p><strong>Asking questions</strong></p>
+<ul>
+<li><p>You should ask your questions in a friendly, open manner.</p></li>
+<li><p>You should try to build some level of rapport with the interviewee prior to starting the survey.</p></li>
+<li><p>You should ask how long the interviewee has to answer questions and stick to that time.</p></li>
+<li><p>The survey is <strong>not</strong> an interrogation - you should avoid asking your questions quickly and/or in an assertive manner.&nbsp;</p></li>
+<li><p>You should <strong>not</strong> persuade or influence the interviewee’s response.</p></li>
+<li><p>You should give your respondent time to develop their ideas and ask for clarification.</p></li>
+<li><p>You should listen carefully to the respondents’ answers and ensure they have interpreted your questions correctly.</p></li>
+<li><p>You will provide the interviewee the opportunity to reject answering a question if they are uncomfortable.&nbsp;</p></li>
+<li><p>You will never force or persuade the respondent to answer questions they are not comfortable in answering.</p>
+<ul>
+<li>We encourage you to take particular care when asking interviewers questions regarding financial income and expenditure. It is also important to consider the family dynamics and how revealing information during the survey may result in potential conflict. We encourage data collectors to “read the room” on whether these questions are appropriate or not, and adapt accordingly.</li>
+</ul></li>
+</ul>
+<p><strong>Accuracy</strong></p>
+<ul>
+<li><p>You will choose a person in the household who can accurately answer questions on the fishery (alternating by male and female for each household).</p></li>
+<li><p>If the person in the household cannot answer questions on the fishery, you may want to return to the household at an alternative time.</p></li>
+<li><p>Some countries prefer to provide incentives for households to participate in the survey such as a very small prize e.g.&nbsp;a sticker, bar of soap, small financial incentive.</p></li>
+</ul>
+</section>
+<section id="practical-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="practical-considerations">7. Practical considerations</h3>
+<p>For more practical guidance on how to prepare for the HHS please refer to this presentation <a href="https://docs.google.com/presentation/d/1PxXpZkOa_yAiLMxksHJT65oEmx4sAoAS49n6Kp0rEYQ/edit#slide=id.g2f68f927de7_0_34">here.</a></p>
+</section>
+<section id="references-and-additional-reading" class="level3">
+<h3 class="anchored" data-anchor-id="references-and-additional-reading">References and additional reading</h3>
+<p><strong>References</strong></p>
+<p>Hay, I. (2010) ‘Ethical Practice in Geographical Research’, in Clifford, N., French, S., and Valentine, G. (eds) Key Methods in Geography, p.&nbsp;35.</p>
+<p>Willis, K., Desai, V. and Potter, R. (2006) ‘Interviews’, in Doing Development Research. SAGE Publications Ltd, p.&nbsp;144.</p>
+<p><strong>Additional reading list (if of interest)</strong></p>
+<p><a href="https://consosci.org/en-us/Resources/Training-Library">ConSoSci</a>- The Conservation Social Science Partnership is a collaborative group of social science researchers and conservation practitioners. The website houses an array of training resources and general guidance on how to conduct social science research ethically within international conservation organisations.</p>
+<p>The Conservation Social Science Partnership has created a <a href="https://consosci.org/en-us/Research-Ethics/Ethical-Concepts">30 minute video on ethical concepts for research involving people</a>.</p>
+<p><a href="https://www.forestpeoples.org/en/topics/agribusiness/training/2016/liberia-fpic-training-materials-communities-driving-seat">A manual on Free, Prior and Informed Consent (FPIC)</a> - a manual written by the Sustainable Development Institute&nbsp;</p>
+<p><a href="https://www.forestpeoples.org/en/topics/agribusiness/training/2016/liberia-fpic-training-materials-communities-driving-seat">“Communities in the Driving Seat: A Manual on Free Prior and Informed Consent”</a> by the Sustainable Development Institute.</p>
+<p><a href="https://library.sprep.org/content/toolkit-support-conservation-indigenous-peoples-and-local-communities-building-capacity-and">A toolkit to support conservation by indigenous peoples and local communities</a> - ICCA / ICUN guidelines</p>
+</section>
+<section id="appendices" class="level3">
+<h3 class="anchored" data-anchor-id="appendices">Appendices</h3>
+<p>Appendix 1: Oral consent script (adapted from <a href="https://drive.google.com/file/d/1FEcbteg1tgWrV88tNjPmVlRtBdVgR7uJ/view">ConSoSci</a>)</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Oral consent script</strong></p>
+<p><strong>Introduction</strong></p>
+<p>Hello, my name is [name of surveyor]. I am from [name of the organisation], an organisation that works in [focus of activities, e.g.&nbsp;marine management]. I’m doing some data collection on the households in this area so we can learn more about livelihoods to improve our programmes. I wondered if you’d be interested in being involved?</p>
+<p><strong>[Await confirmation and record response]</strong></p>
+<p><strong>[If the subject confirmed yes]</strong> We are a marine conservation organisation that works with local fishers to help improve their fish catch, so that they may fish sustainably long into the future. We are working in [name of the area] and are collecting household information to support our programmes.</p>
+<p><strong>Survey details</strong></p>
+<ul>
+<li>The aim of the survey is to capture fisher household information such as perceptions of fishing-related activities, income sources, daily activities, main fish species caught, reliance on fish for food, and fishing that can be used to establish social baselines and provide evidence of positive social outcomes following project activities.</li>
+</ul>
+<!-- -->
+<ul>
+<li>If you are happy to proceed, I would have a conversation with you and talk you through the survey questions. It may take up to 45 minutes, but hopefully we can get through the questions faster. For this household, it would be great to speak with [a male/female] representative <strong>[depending on gender stratification of the household - see Sampling Households section of this guidance for more information]</strong>, however if they are not available to answer, we can speak to the next oldest person available.</li>
+</ul>
+<!-- -->
+<ul>
+<li>I will record your answers directly in KoboToolbox. I may also take some additional written notes for clarity.</li>
+</ul>
+<!-- -->
+<ul>
+<li>This study is in partnership with Blue Ventures. The personal information you share with me will not be passed to any third party apart from [name of the organisation] and Blue Ventures.</li>
+</ul>
+<!-- -->
+<ul>
+<li><p>What is said during this meeting is private. I will not be collecting personal or identifiable information from you like your name/age. All data will be kept confidential and anonymous and you will not be able to be traced back to your answers.</p></li>
+<li><p>We will record the GPS coordinates of the location of this interview which may be used to understand locations where the HHS has taken place. GPS coordinates will be made anonymous.</p></li>
+</ul>
+<!-- -->
+<ul>
+<li><p>The data from this survey will be published in Blue Ventures online dashboards, and only the in-country teams and [name of the organisation] will be able to view this data.</p></li>
+<li><p>The data may contribute to scientific studies, however the information you provide will remain confidential and anonymous and will not be identifiable to you.</p></li>
+<li><p>We will plan to share this data back to your community in &nbsp;[time period]</p></li>
+</ul>
+<p><strong>Risks</strong></p>
+<p>This survey may cover some potentially sensitive issues for you to discuss, including:</p>
+<ul>
+<li><p>Monthly income amounts in the household</p></li>
+<li><p>Differences between men and women in the household</p></li>
+</ul>
+<p>To reduce any potential risks we support you in not answering any questions if they are too sensitive.</p>
+<p>Whilst there are no direct benefits of you contributing to this survey, the results of this survey will support the&nbsp; [name of the organisation] to work with local fishers with the goal of improving fish catch for the community.</p>
+<p>Your participation in this research is completely voluntary:</p>
+<ul>
+<li><p>You don’t have to agree to take part.</p></li>
+<li><p>You can ask me any questions you want before or throughout.</p></li>
+<li><p>You can also withdraw at any stage during the interview without giving a reason.</p></li>
+<li><p>If you withdraw, all of the data we collected related to you will be destroyed.</p></li>
+</ul>
+<p><br>
+</p>
+<p>If you have any complaints or concerns, please feel free to contact directly [name of the focal point] (please provide contact details)</p>
+<p><strong>Oral consent</strong></p>
+<p>Do you have questions or concerns so far, or need me to clarify any point?</p>
+<p><strong>[Pause here to give participant enough time to think and comment]</strong></p>
+<p>Are you happy to take part in this research?</p>
+<p><strong>[Await a response and record the response in the KoboToolbox survey]</strong></p></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/barefoot-ocean\.github\.io\/Partner-Manual\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../../pages/fisheries_dashboard/fisheries_dashboard_en.html" class="pagination-link" aria-label="Fisheries Dashboard">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Fisheries Dashboard</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../pages/socioeco_dashboard/socioeco_dashboard_en.html" class="pagination-link" aria-label="Socioeconomic Dashboard">
+        <span class="nav-page-text">Socioeconomic Dashboard</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© CC-By Blue Ventures, 2025</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

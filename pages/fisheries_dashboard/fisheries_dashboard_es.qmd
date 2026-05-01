@@ -1,5 +1,0 @@
----
-title: Panel de pesca
----
-
-## Community Fisheries Data Dashboard page coming soon...

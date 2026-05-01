@@ -1,5 +1,0 @@
----
-title:  Dashboard des pêches
----
-
-## Community Fisheries Data Dashboard page coming soon...

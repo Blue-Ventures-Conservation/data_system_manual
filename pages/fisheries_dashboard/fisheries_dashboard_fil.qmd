@@ -1,5 +1,0 @@
----
-title: Dashboard ng Pangisdaan
----
-
-## Community Fisheries Data Dashboard page coming soon...

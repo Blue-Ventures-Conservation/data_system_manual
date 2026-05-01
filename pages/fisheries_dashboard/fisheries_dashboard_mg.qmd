@@ -1,5 +1,0 @@
----
-title: Dashboard momba ny jono
----
-
-## Community Fisheries Data Dashboard page coming soon...

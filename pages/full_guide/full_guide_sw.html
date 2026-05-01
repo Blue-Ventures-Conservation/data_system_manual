@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Mwongozo Kamili – Community Fisheries Data System Manual</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../pages/kobo_setup/kobo_setup_sw.html" rel="next">
+<link href="../../pages/quick_guide/quick_guide_sw.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-7c6ca8cc4bfd04bc436576d66b671976.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_sw.html">Kiswahili</a></li><li class="breadcrumb-item"><a href="../../pages/full_guide/full_guide_sw.html">Mwongozo Kamili</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/bv_logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/bv_logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://blueventures.org/" title="Blue Ventures Website" class="quarto-navigation-tool px-1" aria-label="Blue Ventures Website"><i class="bi bi-globe"></i></a>
+    <a href="https://youtube.com/playlist?list=PLwUVTxKktakVz45STRgXwoNwiUFIOQOaZ&amp;feature=shared" title="Youtube Training Videos" class="quarto-navigation-tool px-1" aria-label="Youtube Training Videos"><i class="bi bi-youtube"></i></a>
+    <a href="https://app.smartsheet.com/" title="Smartsheet" class="quarto-navigation-tool px-1" aria-label="Smartsheet"><i class="bi bi-check-circle-fill"></i></a>
+    <a href="https://blueventures.shinyapps.io/fisheries-dashboard/" title="Fisheries Data Dashboard" class="quarto-navigation-tool px-1" aria-label="Fisheries Data Dashboard"><i class="bi bi-bar-chart-fill"></i></a>
+    <a href="https://blueventures.shinyapps.io/social-economic-dashboard/" title="Social and Economic Dashboard" class="quarto-navigation-tool px-1" aria-label="Social and Economic Dashboard"><i class="bi bi-house-fill"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">English</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_collection/data_collection_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Collection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/management_ref/management_ref_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Management Ref</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fisheries Dashboard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/household_survey/household_survey_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Household Survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/socioeco_dashboard/socioeco_dashboard_en.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Socioeconomic Dashboard</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bahasa Indonesia</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panduan Cepat</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panduan Lengkap</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengaturan Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_collection/data_collection_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengumpulan Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">File Referensi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validasi data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_id.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dasbor Perikanan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cebuano</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dali nga Giya</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bug-os nga Giya</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pag-setup sa Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mga Reperensya nga File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pagpamatuod sa Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_ceb.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard sa Pangisda</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tagalog</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mabilis na Gabay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Buong Gabay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pag-setup ng Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mga Reference File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pagpapatunay ng Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_fil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard ng Pangisdaan</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Malagasy</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Torolalana haingana</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Torolalana feno</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fanamarinana angona</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_mg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard momba ny jono</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Français</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide rapide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guide complet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuration Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fichiers de référence</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">La validation des données</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_fr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashboard des pêches</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Español</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guía rápida</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guía completa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuración de Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Archivos de referencia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validación de datos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Panel de pesca</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Português</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guia rápido</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guia completo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Configuração do Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Arquivos de referência</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data de validade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_pt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Painel de Pesca</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kiswahili</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mwongozo wa Haraka</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_sw.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Mwongozo Kamili</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mpangilio wa Kobo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Faili za Marejeleo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Uthibitishaji wa Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_sw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dashibodi ya Uvuvi</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tetun</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/quick_guide/quick_guide_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quick Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/full_guide/full_guide_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Full Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/kobo_setup/kobo_setup_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kobo Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_monitoring/landings_monitoring_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Monitoring</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/landings_profiling/landings_profiling_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Landings Profiling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/reference_files/reference_files_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reference Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/data_validation/data_validation_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/fisheries_dashboard/fisheries_dashboard_tet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fisheries Dashboard</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Species Guides</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_BLZ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Belize</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_CV.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cabo Verde</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_GMB.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Gambia</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_MDG_MHJ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Madagascar - MHJ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/species_guides/guide_SEN.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Senegal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_sw.html">Kiswahili</a></li><li class="breadcrumb-item"><a href="../../pages/full_guide/full_guide_sw.html">Mwongozo Kamili</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Mwongozo Kamili</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-right">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="mwongozo-wa-ukusanyaji-wa-takwimu-za-uvuvi" class="level1">
+<h1>Mwongozo Wa Ukusanyaji Wa Takwimu Za Uvuvi</h1>
+<section id="mwongozo-wa-kusimamiakufanya-tafiti-ili-kupata-takwimu-za-uvuvi" class="level2">
+<h2 class="anchored" data-anchor-id="mwongozo-wa-kusimamiakufanya-tafiti-ili-kupata-takwimu-za-uvuvi">Mwongozo wa kusimamia/kufanya tafiti ili kupata takwimu za uvuvi</h2>
+<section id="utangulizi" class="level3">
+<h3 class="anchored" data-anchor-id="utangulizi">Utangulizi</h3>
+<p>Nakala hii inatoa mwongozo na mapendekezo kwa ajili ya kusimamia fomu tatu za utafiti ili kukusanya taarifa kuhusu jamii za uvuvi na uvuvi wanaotegemea (Mchoro 1). Fomu hizi zilibuniwa/zilitengenezwa ili kuendana na jinsi takwimu zitakavyotumika na mabadiliko yanayotarajiwa mara kwa mara. Utafiti wa juu zaidi, Utafiti wa Kijamii, una maswali yanayosaidia kujenga uelewa bora wa shughuli za uvuvi katika jamii na hali za kiuchumi. Kuelewa hali ya kiuchumi ni muhimu sana wakati kazi inaanza kwa mara ya kwanza katika jamii. Taarifa zinazokusanywa wakati wa utafiti huu ni muhimu kwa kubuni mikakati ya jinsi ya kushirikisha jamii na mipango ya kuchukuwa sampuli za takwimu. Tafiti za Ufuatiliaji wa Kutua na Ufuatiliaji wa Uvuvi hukusanya takwimu kuhusu samaki wanaotua na uvuvi. Takwimu ya kuprofaili Ufuatiliaji wa Kutua hukusanywa kwa nadra na hutoa taarifa kuhusu makazi ya samaki, aina ya vifaa/zana, jitihada, na urefu binafsi wa samaki. Utafiti wa Ufuatiliaji wa Uvuvi, ambao unapaswa kufanyika kila siku, ni utafiti wa haraka wa uvuvi unaokusanya kiwango kidogo cha taarifa zinazohitajika kufuatilia mabadiliko ya kiasi na thamani ya samaki, kama vile aina, uzito, idadi na bei.</p>
+<p><img src="images/Fig1_en.png" class="img-fluid"></p>
+<p>Mchoro 1: Ratiba Ya wakati wa kusimamia/kufanya fomu tatu tofauti za uchunguzi kwa kiwango cha mwaka mmoja.</p>
+</section>
+<section id="maelezo-ya-utafiti" class="level3">
+<h3 class="anchored" data-anchor-id="maelezo-ya-utafiti">Maelezo Ya Utafiti</h3>
+<section id="utafiti-wa-profaili-ya-jamii" class="level4">
+<h4 class="anchored" data-anchor-id="utafiti-wa-profaili-ya-jamii"><strong>Utafiti Wa Profaili Ya Jamii</strong></h4>
+<p><strong><em>Lengo</em></strong></p>
+<p>Elewa mandhari ya jumla ya jamii na uvuvi unaofanyika ndani ya jamii</p>
+<p><strong><em>Takwimu Zilizokusanywa</em></strong></p>
+<ul>
+<li><p>Idadi ya wanajamii, wavuvi, wafanyabiashara wa samaki, wanawake</p></li>
+<li><p>Mandhari/mazingira ya jumla ya uvuvi unaofanyika ndani ya jamii</p></li>
+<li><p>Zana/nyenzo zinazotumika; aina samaki zinazolengwa; makazi ya samaki; misimu; vyombo</p></li>
+<li><p>Habari juu ya juhudi za uvuvi na gharama</p></li>
+<li><p>Maoni/mitazamo juu ya uvuvi na hali ya makazi, vitisho/tishio</p></li>
+<li><p>Taarifa kuhusu usimamizi/sheria za sasa za uvuvi</p></li>
+<li><p>Tambua (kupitia ramani) ya maeneo muhimu ya uvuvi, makazi, maeneo ya kutua</p></li>
+</ul>
+<p><strong><em>Kundi lengwa</em></strong></p>
+<p>10-20 watoa habari muhimu ndani ya jamii, yaani, viongozi wa jamii, wavuvi wanaoheshimiwa, wafanyabiashara wa samaki, na wanawake.</p>
+<p><strong><em>Mara na Wakati</em></strong></p>
+<p>Wakati kazi inaanza katika jamii mpya ya uvuvi, kufanya Utafiti wa kuprofaili jamii na zoezi la awali la utambuzi hutoa takwimu za msingi na taarifa husika za kubuni juhudi za uhifadhi na usimamizi zinazofaa zaidi kwa jamii hiyo. Kurudia Utafiti huu unaweza kusaidia kuandika mabadiliko makubwa yanayotokea kwa muda.</p>
+<p><strong><em>Mbinu</em></strong></p>
+<p>Taarifa zinaweza kukusanywa kupitia tafiti za wahusika tofauti (kwa mfano, sensa, rekodi za idara ya uvuvi, n.k.), vikundi vya majadiliano vinavyoundwa na wanajamii muhimu 10-20 au watoa taarifa muhimu. Viongozi wa jamii pamoja na wavuvi mbalimbali na wafanyabiashara wa samaki wenye ujuzi na anuwai (ikiwemo wanawake na vijana) ndio washiriki bora wa kujumuishwa katika kikundi majadiliano/mahojiano. Katika kuwezesha vikundi vya majadiliano, inashauriwa kuwa na, angalau, kiongozi wa majadaliano na mwandishi wa majadiliano. Katika kikundi cha majadiliano, pia inashauriwa washiriki kutoa orodha ya/mawasiliano ya wavuvi katika jamii ambao wanaweza kuwasiliana nao ili kufanya Tafiti za Kaya. Ikiwa haiwezekani kufanya Utafiti wa Kijamii katika mfumo wa kikundi cha majadiliano/mahojiano, njia mbadala ni kufanya maswali hayo hayo kama tafiti za mtu binafsi na watoa taarifa muhimu na kujumuisha majibu. Maswali yanayojumuishwa katika utafiti wa kijamii na mapendekezo ya kufanya majadiliano ya vikundi yanaweza kupatikana katika Kiambatisho hapa chini.</p>
+</section>
+<section id="utafiti-wa-ufuatiliaji-wa-kutua" class="level4">
+<h4 class="anchored" data-anchor-id="utafiti-wa-ufuatiliaji-wa-kutua"><strong>Utafiti wa Ufuatiliaji wa Kutua</strong></h4>
+<p><strong><em>Lengo</em></strong></p>
+<p>Kukusanya taarifa muhimu zinazohitajika kuhesabu viashiria rahisi vya afya ya uvuvi kulingana na urefu na kufuatilia mabadiliko katika uzalishaji wa uvuvi, thamani, na muundo wake.</p>
+<p><strong><em>Takwimu Zilizokusanywa</em></strong></p>
+<ul>
+<li><p>Tarehe imefika/imetua</p></li>
+<li><p>Mahali pa kutua</p></li>
+<li><p>Jina la mfanyabiashara wa samaki</p></li>
+<li><p>Jina la Mvuvi</p></li>
+<li><p>Jitihada za uvuvi (siku za uvuvi/wavunaji)</p></li>
+<li><p>Utambulisho wa spishi (majina ya kawaida, ya kawaida, ya kisayansi)</p></li>
+<li><p>Jumla ya hesabu</p></li>
+<li><p>Jumla ya uzito</p></li>
+<li><p>Jumla ya bei</p></li>
+<li><p>Sababu jumla ya pato halikuuzwa, kama inawezekana</p></li>
+</ul>
+<p><strong><em>Kundi lengwa</em></strong></p>
+<p>Wavuvi wanapotua samaki wao au kwenye nyumba ya wanunuzi wa samaki/soko.</p>
+<p><strong><em>Mara na Wakati</em></strong></p>
+<p>Utafiti wa Ufuatiliaji wa Kutua unapaswa kufanywa kila siku au mara nyingi iwezekanavyo. Fanya Utafiti wa Ufuatiliaji wa Kutua kabla na baada ya utekelezaji ili kutathmini athari za kufunga eneo/maeneo ya uvuvi au mikakati mingine ya usimamizi. Tunapendekeza kukusanya data siku 30 kabla na baada ya kipindi cha kufungwa cha muda. Katika siku saba za mwanzo za vya kuchukuwa sampuli, tunapendekeza wachukuwa takwimu kufanya Utafiti wa Ufuatiliaji wa Kutua kila siku. Ikiwezekana, endelea na ufuatiliaji wa kila siku kwa kipindi cha siku 30 nzima. Ikiwa hii haiwezekani, fanya utafiti angalau 80% ya siku ndani ya kila siku 30. Pia tunapendekeza kufanya utafiti wa angalau 80% au zaidi ya wavuvi wote wanaotua samaki siku fulani kabla au baada ya kufungwa. Gawa kwa usawa wanaosaidia katika utafiti kati ya wavuvi wa mashua na wasio wa mashua. Kusanya takwimu kutoka kwa wavuvi wote wanaotua katika kijiji, bila kujali ikiwa walikuwa wanavua ndani ya eneo lililofungwa au la</p>
+<p>Kwa ajili ya kufunga kwa muda mrefu, hakikisha kwamba takwimu inakusanywa wakati wa mwezi uleule kila mwaka ili kuona mabadiliko katika kipindi cha kufungwa. Ikiwa hilo halitawezekana, tunapendekeza kukusanya takwimu wakati wa mwezi uleule kabla na baada ya kufungwa. Kama ilivyotajwa hapo juu, tunapendekeza kufanya utafiti angalau 80% ya siku ndani ya mwezi na 80% ya wavuvi wanaopatua samaki kila siku</p>
+<p><strong><em>Mbinu</em></strong></p>
+<p>Kutumia Fomu Ya Kobo, kutana na wavuvi kwenye maeneo ya kutua/nyumba za wanunuzi kurekodi mapato yao.</p>
+</section>
+<section id="utafiti-wa-profaili-ya-kutua" class="level4">
+<h4 class="anchored" data-anchor-id="utafiti-wa-profaili-ya-kutua"><strong>Utafiti wa Profaili ya Kutua</strong></h4>
+<p><strong><em>Lengo</em></strong></p>
+<p>Kuelewa mwelekeo wa mapato ya samaki waliorekodiwa.</p>
+<p><strong><em>Takwimu Zilizokusanywa</em></strong></p>
+<ul>
+<li><p>Tarehe imefika/imetua</p></li>
+<li><p>Mahali pa kutua</p></li>
+<li><p>Maeneo Msingi ya uvuvi</p></li>
+<li><p>Jina la mfanyabiashara wa samaki</p></li>
+<li><p>Jina la Fisher</p></li>
+<li><p>Jitihada za uvuvi (masaa na siku za uvuvi/kuvuna)</p></li>
+<li><p>Aina ya chombo (nambari ya usajili ya chombo, nambari ya wafanyakazi)</p></li>
+<li><p>Utambulisho wa spishi (majina ya kawaida, ya kawaida, ya kisayansi)</p></li>
+<li><p>Zana/nyenzo iliyotumika</p></li>
+<li><p>Mazingira ya uvuvi</p></li>
+<li><p>Jumla ya hesabu</p></li>
+<li><p>Jumla ya uzito</p></li>
+<li><p>Jumla ya bei</p></li>
+<li><p>Sababu pato lote la samaki halikuuzwa, kama inawezekana</p></li>
+<li><p>Sampuli za uzito na urefu binafsi (Mchoro 2-8)</p></li>
+<li><p>Takwimu ya sampuli maalum ya shirika (jinsia, ubora wa pato, gonads, stylet, # mitego, nk.)</p></li>
+</ul>
+<p><strong><em>Kundi lengwa</em></strong></p>
+<p>Sampuli ya uwakilishi wa mapato ndani ya jamii. Rekodi angalau sampuli 50 (ikiwezekana sampuli 100) kwa kila spishi lengwa, ikiwakilisha aina mbalimbali za zana na profaili za wavuvi</p>
+<p><strong><em>Mara na Wakati</em></strong></p>
+<p>Utafiti huu unapaswa kufanyika mwanzoni mwa ushiriki katika jamii na baadaye kufanywa kila baada ya miaka miwili, kabla na baada ya kutekeleza mkakati wa usimamizi, au kama inahitajika kuelezea kupungua kwa kuchunguza kupitia data ya ufuatiliaji. Kwa kutumia Fomu Ya Kobo, kutana na wavuvi kwenye maeneo ya kutua ili kuchukua sampuli ya samaki wao na kurekodi shughuli zao za uvuvi.</p>
+<p><strong><em>Mbinu</em></strong></p>
+<p>Kwa kutumia Fomu Ya Kobo, kutana na wavuvi kwenye maeneo ya kutua ili kuchukua sampuli ya samaki wao na kurekodi shughuli zao za uvuvi.</p>
+</section>
+<section id="usawasishaji-wa-kipimo-aina-ya-urefu-wa-kupima-kwa-kikundi-cha-spishi" class="level4">
+<h4 class="anchored" data-anchor-id="usawasishaji-wa-kipimo-aina-ya-urefu-wa-kupima-kwa-kikundi-cha-spishi"><strong>Usawasishaji wa kipimo: Aina Ya Urefu wa kupima kwa kikundi cha spishi</strong></h4>
+<p><img src="images/Fig2_en.jpg" class="img-fluid"></p>
+<p>Kielezo 2: Urefu wa jumla unapaswa kutumika kupima samaki wa mapezi, papa na mikunga (AFS).</p>
+<p><img src="images/Fig3_en.jpg" class="img-fluid"></p>
+<p>Kielelezo 3: Upana wa diski unapaswa kutumika kupima taa na sketi</p>
+<p><img src="images/Fig4_en.jpg" class="img-fluid"></p>
+<p>Kielelezo 4: Upana wa gamba unapaswa kutumika wakati wa kupima kaa (Suryandari et. al, 2018).</p>
+<p><img src="images/Fig5_en.jpg" class="img-fluid"></p>
+<p>Kielelezo 5: Urefu Wa Vazi unapaswa kutumika wakati wa kupima pweza na ngisi (FAO).</p>
+<p><img src="images/Fig6_en.jpg" class="img-fluid"></p>
+<p>Kielelezo 6: urefu Wa Gamba unapaswa kutumika wakati wa kupima kamba na kamba mawe (Hart et al.&nbsp;2001).</p>
+<p><img src="images/Fig7_en.jpg" class="img-fluid"></p>
+<p>Kielelezo 7: Urefu unapaswa kutumika wakati wa kupima samakigamba na konokono.</p>
+<p><img src="images/Fig8_en.jpg" class="img-fluid"></p>
+<p>Kielelezo 8: Urefu wa jumla unapaswa kutumika wakati wa kupima jongoo. Upana au kipenyo cha gamba kinapaswa kutumika wakati wa kupima mapoe</p>
+</section>
+</section>
+<section id="muhtasari-wa-mtiririko-wa-takwimu" class="level3">
+<h3 class="anchored" data-anchor-id="muhtasari-wa-mtiririko-wa-takwimu">Muhtasari Wa Mtiririko Wa Takwimu</h3>
+<p>Ukusanyaji wa takwimu, uthibitishaji, mabadiliko, na muonekano/taswira ni vipengele vinne vikuu vya mfumo wa takwimu. Programu kuu zinazotumika ni KoboToolBox, Smartsheet, PostgreSQL, na R.</p>
+<p>KoboToolBox ni programu huru na ya chanzo huria ambayo ni zana yenye nguvu kwa ukusanyaji wa takwimu inayopatikana kupitia mazingira magumu na majukwaa mengi, kama vile rununu, tarakilishi, na karatasi. Wakusanyaji takwimu hukusanya data kuhusu hali za kijamii na kiikolojia muhimu kwa kutathmini jamii za wavuvi na hali kupitia maswali ya uchunguzi ya kwenye KoboToolBox. Smartsheet ni jukwaa la usimamizi wa kazi kwa kushirikiana ambalo hutoa njia rahisi na angavu kwa mashirika kupanga, kufuatilia, kuendesha kiotomatiki, na kusimamia miradi na michakato mbalimbali kwa wakati halisi. Faili za marejeleo/kumbukumbu zinazotumika kujaza fomu za uchunguzi na kuunganisha takwimu za ziada kwenye seti kuu za data zinafanyika katika Smartsheet. Zaidi ya hayo, data inathibitishwa katika Smartsheet. PostgreSQL ni mfumo wa usimamizi wa hifadhidata wa bure unaotumika kama ghala la takwimu kwa programu nyingi za tuvuti, uchambuzi, na geospatial huku ukihifadhi data isiyosafishwa na iliyosafishwa katika sehemu moja. R ni mazingira ya programu ya chanzo na lugha ya programu inayotumika sana kwa sayansi ya takwimu, hesabu za takwimu, na taswira/muonekano wa takwimu. Dashibodi za takwimu zinajengwa kwa kutumia kifurushi cha Shiny kutoka lugha ya programu ya R na kuhifadhiwa kwenye shinyapps.io, jukwaa kama huduma (PaaS) kwa ajili ya kuweka programu za wavuti za Shiny</p>
+<p><img src="images/Fig9_en.jpg" class="img-fluid"></p>
+<p>Kielelezo 9: Mchoro Wa Mtiririko Wa Takwimu</p>
+<p>Ukusanyaji wa data unahusisha kukusanya na kupima taarifa kutoka kwa vyanzo husika kuhusu vipengele vinavyovutia kwa ajili ya kufanya maamuzi, upangaji wa mikakati, tathmini za matokeo, na madhumuni mengine. Kwa kuingiza data za kiasi na za ubora kwenye maswali ya uchunguzi, tunakuza uelewa wa kina wa hali ya kiuchumi na ikolojia inayohusishwa na jumuiya za wavuvi na kubadilisha mikakati ya usimamizi. Uthibitishaji wa takwimu unarejelea matumizi ya mbinu za kupima hali ya takwimu iliyokusanywa na kuamua ikiwa takwimu iliyokusanywa inakidhi vigezo vya ubora vilivyobainishwa, kama vile usahihi, uthabiti, umuhimu, ukamilifu, na upekee. Ubadilishaji wa takwimu hubadilisha, kusafisha, na kupanga takwimu katika muundo unaoweza kutumika kuchambuliwa na kutathminiwa kwa ajili ya kufanya maamuzi. Uchambuzi na taswira ya takwimu inahusisha kubuni na kuunda michoro inayopatikana au maonyesho ya taarifa kwa ufanisi ili kuwasilisha takwimu za kiasi na ubora changamano zilizokusanywa, kuthibitishwa, na kubadilishwa hapo awali kwa hadhira lengwa. Tumeielezea mchakato wa mtiririko wa data hapa chini:</p>
+<ol type="1">
+<li><p>Takwimu hukusanywa kupitia fomu Za utafiti kwa KoboToolBox.</p></li>
+<li><p>Takwimu huvutwa kwenye hifadhidata</p></li>
+<li><p>Ikiwa mkusanya takwimu alichagua majibu yaliyotangulia kujazwa katika uchunguzi, data haihitaji kuthibitishwa na inaweza kwenda moja kwa moja kwenye mchakato wa uchambuzi na taswira ya takwimu</p></li>
+<li><p>Mkusanya takwimu akiongeza takwimu kama vile mvuvi mpya, mnunuzi, mkusanyaji wa takwimu, mahali pa kutua, au spishi, takwimu inathibitishwa katika Smartsheet kabla ya kuwekwa kwenye jedwali ya mwisho ya takwimu na kuonyeshwa kwenye dashibodi. Viongozi wa wanaokusanya takwimu wanapewa taarifa kupitia barua pepe wakati takwimu inapokuwa tayari kwa uthibitishaji. Viongozi watathmini jedwali ya udhibiti wa ubora ili kuhakikisha kuwa habari mpya iliyowekwa ni sahihi.</p></li>
+<li><p>Baada ya kuthibitisha, takwimu mpya inapelekwa kwenye faili za marejeleo na kurudishwa kwenye hifadhidata kwa ajili ya ubadilishaji wa mwisho kabla ya uchambuzi na taswira</p></li>
+<li><p>Baada ya takwimu kupelekwa kwenye faili za marejeleo, viongozi wa timu watapewa taarifa kupitia barua pepe ikiwa kuna habari zaidi inayohitajika kwenye faili za marejeleo</p></li>
+<li><p>Faili za marejeleo zilizosasishwa kisha huwekwa kwenye jukwaa la KoboToolBox ili ziweze kujumuishwa katika fomu</p></li>
+<li><p>Takwimu iliyosasishwa kutoka kwenye faili za marejeleo pia hutumiwa katika mchakato wa kubadilisha data ili kuunganisha uga wa ziada wa takwimu kama vile vipimo na jinsia..</p></li>
+<li><p>Hatua za mwisho za mchakato wa ubadilishaji wa takwimu huleta jedwali kuu la matokeo ambayo hutumiwa kwa uchambuzi wa takwimu na taswira katika dashibodi za takwimu.</p></li>
+<li><p>Dashibodi ya takwimu (yaani programu za Shiny) huunganishwa moja kwa moja na hifadhidata, zikitoa takwimu iliyosasishwa zaidi inayopatikana, hivyo kutoa washirika ufikiaji karibu wa takwimu halisi na takwimu iliyotolewa kwa muhtasari.</p></li>
+</ol>
+<section id="usalama-wa-takwimu" class="level4">
+<h4 class="anchored" data-anchor-id="usalama-wa-takwimu"><strong>Usalama Wa takwimu</strong></h4>
+<p>Hapa chini ni orodha ya majukwaa ya programu ambapo takwimu inaweza kuhifadhiwa na kusafirishwa wakati inapotoka kwenye hifadhidata. Taarifa za usalama wa takwimu kwa kila jukwaa la nje zinapatikana kwenye tovuti maalum ya jukwaa iliyounganishwa hapa.</p>
+<ol type="1">
+<li><p><a href="https://support.kobotoolbox.org/is_my_data_safe.html?highlight=security">Kobo software</a></p></li>
+<li><p><a href="https://www.postgresql.org/support/security/">PostgreSQL</a></p></li>
+<li><p><a href="https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/security-of-the-aws-infrastructure.html">Amazon Web Services</a></p></li>
+<li><p><a href="https://support.google.com/drive/answer/10375054?hl=en">Google drive</a></p></li>
+<li><p><a href="https://www.smartsheet.com/trust/security">Smartsheet</a></p></li>
+<li><p><a href="https://docs.posit.co/shinyapps.io/security-and-compliance.html">Shinyapps.io</a></p></li>
+<li><p><a href="https://github.com/security">Github</a></p></li>
+</ol>
+<p>Taratibu za ziada za usalama zilitekelezwa, pamoja na hatua za usalama za data zilizotolewa na majukwaa ya programu hapo juu. Akaunti zote kwenye mifumo yote ya programu zinazotumiwa zinalindwa kwa nenosiri.</p>
+<p>Tunatumia Github kama mfumo wetu wa udhibiti wa toleo kwa bidhaa zetu zilizoprogramiwa. Kwa chaguo-msingi, folda na miradi yote yenye takwimu za uvuvi na kiuchumi zinapatikana kwa faragha hufikiwa tu na wafanyakazi na wakandarasi.</p>
+<p>Kutoka kwenye majukwaa yoyote ya takwimu yaliyosambazwa (k.m. Programu za Shiny), uthibitisho wa mtumiaji unahitajika ili kuona au kupakua takwimu, kulingana na makubaliano ya kushirikisha takwimu yaliyochaguliwa na kila shirika. Hii ni pamoja na kuthibitisha watumiaji kabla ya kuruhusu takwimu kuonekana au kupakuliwa, watumiaji kuingia kwenye majukwaa ya taswira ya data, na usimamizi wa kawaida wa watumiaji waliothibitishwa.</p>
+<p>Upatikanaji wa nyaraka za Smartsheet (k.m. faili za marejeleo, jedwali uthibitishaji wa takwimu) umeruhusiwa tu kwa wafanyakazi waliothibitishwa na kila shirika, na kila mshirika anaweza kuona taarifa yao maalum ya mshirika pekee. Walioruhisiwa tena ni wafanyakazi ambao wanadhibiti na kusaidia mchakato wa ubora wa takwimu, na wafanyakazi wa Blue Ventures ambao wanaisaidia washirika na mchakato wa taarifa kwenye Smartsheet.</p>
+</section>
+<section id="faragha-ya-takwimu" class="level4">
+<h4 class="anchored" data-anchor-id="faragha-ya-takwimu"><strong>Faragha Ya Takwimu</strong></h4>
+<p>Maelezo ya kibinafsi yanayotambulika na takwimu ya mapato ya uvuvi inamilikiwa na wavuvi na wanunuzi wa samaki na kamwe haitashirikishwa bila idhini ya awali. Ili kulinda faragha ya wavuvi, wanunuzi, na wakusanyaji wa takwimu, majina yote huwekwa kuwa nambari za kitambulisho zisizojulikana. Hivyo basi, takwimu yote iliyo kwa sehemu au kwa jumla itajumuisha nambari za kitambulisho zisizo na mpangilio. Tafadhali angalia sehemu kuhusu makubaliano ya kushiriki data kwa maelezo kamili kuhusu makubaliano ya kushiriki takwimu</p>
+<p>Data inayohesabiwa kuwa Maelezo ya kibinafsi yanayotambulika (PII) ni pamoja NA:</p>
+<ul>
+<li><p>Majina ya wavuvi, wanunuzi, na wachukua takwimu</p></li>
+<li><p>Majina ya waliohojiwa kwa tafiti zozote</p></li>
+</ul>
+</section>
+<section id="kushiriki-data" class="level4">
+<h4 class="anchored" data-anchor-id="kushiriki-data"><strong>Kushiriki Data</strong></h4>
+<p>Mfumo wa data ya uvuvi umetengenezwa ili kuboresha matumizi ya takwimu yako na kutoa jukwaa kwa ushiriki wako wa moja kwa moja katika juhudi za usimamizi wa uvuvi na uhifadhi wa kina. Takwimu iliyokusanywa kwa ushirikiano kutoka kwa washirika inaweza kutoa ufahamu mkubwa kwa ufuatiliaji wa uvuvi, kutathmini mikakati ya usimamizi, kusaidia katika kufanya maamuzi kwenye viwango vya kijamii na kitaifa, kuelewa mabadiliko ya kikanda, na kutambua huduma za kifedha zinazowezekana.</p>
+<p>Tunatambua umuhimu mkubwa wa umiliki na matumizi ya takwimu kwa washirika wote wanaochangia. Lengo letu ni kukupa uhuru wa kusimamia na kuamua jinsi takwimu yako inavyotumiwa. Kwa kuchagua moja ya viwango vitatu vya idhini ya matumizi ya takwimu, unaweza kusimamia kiwango ambacho takwimu yako inashirikishwa na watumiaji wengine. Unaweza kubadilisha viwango vya idhini kulingana na aina za takwimu, na muhimu zaidi, una uhuru wa kurekebisha kiwango cha idhini ya takwimu wakati wowote. Maelezo ya kibinafsi yanayotambulika (PII) na takwimu ya mapato ya uvuvi inamilikiwa na wavuvi na wanunuzi wa samaki na kamwe haitashirikishwa bila idhini ya awali. Kwa kuchagua kiwango cha idhini ya matumizi ya takwimu, unathibitisha kuwa idhini binafsi imetolewa na wavuvi na wanunuzi wa samaki.</p>
+<p>Data yote kwa sasa imewekwa kwenye Kiwango 1 - Binafsi. Watumiaji watapata fursa ya kurekebisha viwango vyao vya idhini kama inavyohitajika</p>
+<p><strong>Kiwango Cha 1-Binafsi</strong></p>
+<ul>
+<li><p>Takwimu ni kwa matumizi ya ndani tu ya mtoaji wa awali wa takwimu</p></li>
+<li><p>Takwimu zitapatikana kwa kupakuliwa na mtoaji wa awali wa takwimu.</p></li>
+<li><p>Takwimu hazitajumuishwa katika uchambuzi wa kikanda uliotolewa kwenye dashibodi.</p></li>
+<li><p>Kugawana au usambazaji usioidhinishwa wa takwimu kwa watu/mashirika ya nje ni marufuku kabisa.</p></li>
+</ul>
+<p><strong>Kiwango cha 2-Shiriki Na Wachangiaji Wengine Wa Takwimu</strong></p>
+<ul>
+<li><p>Takwimu ya ngazi inapatikana kwa washiriki wengine wa takwimu kupakua</p></li>
+<li><p>Muhtasari wa Takwimu na taswira zitapatikana kwa wachangiaji wengine.</p></li>
+<li><p>Takwimu zitajumuishwa katika uchambuzi wa kikanda kwenye dashibodi.</p></li>
+</ul>
+<p><strong>Kiwango cha 3-Shiriki Na Watumiaji Wote</strong></p>
+<ul>
+<li><p>Takwimu ya kiwango inapatikana kwa watumiaji wote kupakua.</p></li>
+<li><p>Muhtasari wa Takwimu na taswira zitapatikana kwa watumiaji wote.</p></li>
+<li><p>Takwimu zitajumuishwa katika uchambuzi wa kikanda kwenye dashibodi.</p></li>
+<li><p>Mtoaji halisi wa takwimu anaweza kubainisha vikwazo au masharti yoyote ya matumizi yanayofaa kwa watumiaji wote</p></li>
+</ul>
+</section>
+<section id="kuthibitisha-takwimu-mpya-na-iliyobainishwa" class="level4">
+<h4 class="anchored" data-anchor-id="kuthibitisha-takwimu-mpya-na-iliyobainishwa"><strong>Kuthibitisha Takwimu Mpya na Iliyobainishwa</strong></h4>
+<p>Katika tafiti, baadhi ya maswali huruhusu wakusanyaji takwimu kuongeza mvuvi mpya, mnunuzi, mkusanyaji wa takwimu, mahali pa kutua, spishi, au “nyingine.” Taarifa kutoka chaguo hizi ni hatua mpya za takwimu na lazima zithibitishwe kabla ya kujumuishwa kwenye seti ya mwisho ya takwimu, kuonyeshwa kwenye dashibodi, na kuongezwa kwenye faili za marejeleo. Pia kuna vikwazo vilivyowekwa kuhusu uzito, bei, na urefu wa spishi, na ikiwa data iliyokusanywa iko chini au juu ya vikwazo hivi, nambari hizi zinabandikwa kwa ajili ya kuangaliwa. Vikwazo vya uzito na bei vinawekwa na washirika katika min_max_ref. Vikwazo vya urefu wa spishi huthibitishwa na timu kwa kutumia vigezo vya kibayolojia.</p>
+<p>Takwimu yote inayopitia mfumo wa data za uvuvi inathibitishwa katika Smartsheet. Kuingizwa kwa vipengele vipya au vilivyobainishwa hivyo huchukuliwa kwenye jedwali la uthibitisho katika Smartsheet ili timu za uwanjani zithibitishe. jedwali la uthibitisho wa ubora ni maalum kwa washirika na inaweza kupatikana kupitia ombi la sasisho lililotumwa kwa barua pepe yako au kwa kutembelea viungo vya Maoni ya Dynamic View uliyopewa. Viongozi wa timu za uwanjani watapewa taarifa kupitia barua pepe wakati data inahitaji kuthibitishwa katika Jedwali ya udhibiti na ubora. Baada ya takwimu kuthibitishwa katika jedwali la uthibitisho, tutaweka taarifa mpya kwenye faili za marejeleo na kutoa marekebisho muhimu kwenye seti kuu ya takwimu.</p>
+<p>Maagizo maalum, ya hatua kwa hatua ya jinsi ya kukamilisha uthibitishaji wa takwimu Katika Smartsheet yanaweza kupatikana kwenye ukurasa wa Uthibitishaji Wa takwimu.</p>
+</section>
+</section>
+<section id="ukusanyaji-wa-takwimu" class="level3">
+<h3 class="anchored" data-anchor-id="ukusanyaji-wa-takwimu">Ukusanyaji Wa Takwimu</h3>
+<p>Blue Ventures inasaidia kufanya utafiti wote kupitia fomu za Kobo Toolbox ambazo zinaweza kushirikishwa kupitia akaunti ya Kobo Toolbox. Unaweza kuunda akaunti kwenye https://kf.kobotoolbox.org/accounts/signup/. Tafadhali wasiliana na timu na jina lako la mtumiaji na maelezo ya akaunti yako. Mara baada ya kushirikishwa katika utafiti, unaweza kupata fomu za Kobo kupitia programu ya bure ya simu ya Android ya KoboCollect au kupitia fomu ya mtandao ya Enketo. Maelekezo ya kina kuhusu jinsi ya kuunda akaunti ya Kobo, kukusanya data, na kuwasilisha takwimu yanapatikana kwenye ukurasa wa Kuweka Kobo. Tumia nambari ya QR kuweka mipangilio ya vifaa vyote baada ya kuweka kwa simu ya kwanza ili kuweka vifaa vingi chini ya akaunti moja ya ukusanyaji wa data. Kuweka kifaa cha kwanza kunahitaji URL ya seva ya Kobo, jina la mtumiaji, na nambari ya siri. URL ya seva ya Kobo ni https://kc.kobotoolbox.org. Taarifa zaidi kuhusu kuweka ukusanyaji wa data na Kobo, ikiwa ni pamoja na jinsi ya kuweka vifaa vingi vya ukusanyaji wa takwimu kupitia nambari ya QR, zinapatikana kwenye https://support.kobotoolbox.org/.</p>
+<p>Baada ya kupakua KoboCollect, fungua programu na ingiza URL ya seva, jina la mtumiaji, na nambari ya siri ili kuunganisha programu yako ya KoboCollect na seva ya KoboToolbox. Kuunganisha programu ya KoboCollect na seva ya KoboToolbox kunaruhusu kupakua fomu zilizotekelezwa kutoka KoboToolbox kwenye kifaa chako cha simu na kutuma takwimu iliyokusanywa kupitia programu kurudi kwenye seva. Kwenye skrini, chagua “Pata Fomu Tupu.” Orodha ya fomu zako zilizotekelezwa zinapaswa kuonekana. Bonyeza “Chagua Zote” ili kupata fomu zote za utafiti kutumwa kwenye programu, au chagua zile unazotaka kwa kubonyeza moja moja. Kisha bonyeza “Pata zilizochaguliwa.” Kwa kufanya utafiti, chagua “Jaza Fomu Tupu.”</p>
+<p>Wakati fomu ya mtandao inasasishwa moja kwa moja wakati toleo jipya la utafiti linapopatikana, watumiaji wanapaswa kuchagua “sasisho moja kwa moja” wenyewe kwenye program za simu zao. Kusasisha mara kwa mara utafiti kwenye programu huhakikisha matumizi ya toleo jipya la fomu na kuepuka matatizo katika mtiririko wa takwimu. Unaweza kuweka sasisho ya moja kwa moja kwenye programu kwa kwenda kwenye “Vipimo” na “Usimamizi wa Fomu.” Maelezo zaidi kuhusu kusasisha uchunguzi moja kwa moja kwenye programu yanapatikana kwenye ukurasa wa Kuweka Kobo. Ni muhimu kuzingatia kuwa mtandao unahitajika ili programu ipate toleo karibuni la utafiti, hata kama mipangilio ya sasisho ya moja kwa moja imesajiliwa. Hivyo basi, wahimize wakusanyaji takwimu kuwa na intaneti kabla ya kuanza kazi za uwanjani ili KoboCollect iweze kupata toleo la hivi karibuni.</p>
+<p>Baada ya kukusanya takwimu, utafiti uliotumwa kupitia fomu ya mtandao utatumwa moja kwa moja kwenye seva mara tu mkusanyaji wa data atakapobonyeza kitufe cha “Wasilisha.” Takwimu iliyokusanywa kupitia programu ya KoboCollect kwanza huokolewa kwenye programu katika sehemu ya kuhifadhi na kisha kutumwa kwenye seva. Fomu zilizokamilika zinasalia kwenye hifadhi kabla ya kuwasilishwa kwenye seva ili wakusanyaji wa takwimu waweze kufanya marekebisho ya uchunguzi baada ya kukusanya takwimu, au ikiwa hakuna intaneti, programu inaweza kuhifadhi utafiti na kisha kuwasilisha kwenye seva mara tu intaneti unapopatikana. Hasa, baada ya kukamilisha utafiti, mtumiaji atabonyeza “Hifadhi fomu na toka,” kuhakikisha kwamba “Alama ya kuonyesha fomu imekamilika” pia imethibitishwa. “Hariri Fomu Iliyohifadhiwa” huhifadhi fomu iliyohifadhiwa kiotomatiki. Mkusanyaji wa Takwimu anaweza kufanya mabadiliko muhimu na kuchagua “Hifadhi Fomu na Toka.” Kwenye Skrini ina kitufe kinachoitwa “Tuma Fomu Iliyokamilika.” Bonyeza Chagua Zote (au chagua zile unazotaka kupakia) kisha bonyeza “Tuma Ilivyochaguliwa.” Chagua “Tazama Fomu Zilizotumwa” kuhakikisha kuwa fomu zimefanikiwa kupakiwa na sasa unapaswa kuweza kuona fomu zote zilizowasilishwa.</p>
+<p>Mfumo wa kati wa kuhifadhi takwimu unajumuisha takwimu kwenye Kobo, na uchanganuzi na taswira za kiotomatiki zitapatikana kupitia dashibodi ya kiwango cha kawaida. Takwimu halisi imehifadhiwa kwenye hifadhidata ya KoboToolbox na itapatikana kwa kupakua au kutumia kiungo cha moja kwa moja kwenye hifadhidata nyingine au ghala la takwimu.</p>
+</section>
+<section id="tafsiri" class="level3">
+<h3 class="anchored" data-anchor-id="tafsiri">Tafsiri</h3>
+<p>Tafsiri za lugha zote zinakamilishwa kwa kuhariri karatasi za tafsiri katika Smartsheet. Ikiwa utagundua kuwa tafsiri inahitaji kusasishwa au si sahihi katika utafiti, tafadhali sasisha moja kwa moja tafsiri husika katika karatasi inayofaa ya Smartsheet. Ikiwa timu inahitaji tafsiri mpya, washirika watapokea arifa kutoka Smartsheet.</p>
+</section>
+<section id="faili-za-kumbukumbumarejeleo" class="level3">
+<h3 class="anchored" data-anchor-id="faili-za-kumbukumbumarejeleo">Faili Za Kumbukumbu/Marejeleo</h3>
+<p>Faili za marejeleo ni maalum kwa washirika au nchi husika na zina taarifa za kina kuhusu ngazi za kiutawala za jamii za uvuvi (nchi, mkoa, wilaya, kijiji), maeneo ya kutua, wavuvi, wanunuzi, wakusanyaji wa takwimu, data za spishi, maeneo ya usimamizi, aina za makazi, aina za zana, na mashirika ya washirika. Baadhi ya taarifa hujaza orodha za kushuka chini katika uchunguzi, na baadhi huunganishwa na seti kuu ya takwimu baada ya takwimu kukusanywa. Taarifa mpya zinapaswa kuongezwa moja kwa moja kwenye karatasi za marejeleo..</p>
+<p>Maagizo mahususi, ya hatua kwa hatua ya jinsi ya kusasisha faili za marejeleo Katika Smartsheet yanaweza kupatikana katika ukurasa wa Faili Za Marejeleo.</p>
+</section>
+<section id="kiambatisho-a-mwongozo-wa-kikundi-cha-majadiliano" class="level3">
+<h3 class="anchored" data-anchor-id="kiambatisho-a-mwongozo-wa-kikundi-cha-majadiliano">Kiambatisho A: Mwongozo Wa kikundi cha majadiliano</h3>
+<p><strong>Mambo Muhimu ya Kuzingatia Kabla ya Kufanya utafiti au kuprofaili Uvuvi</strong></p>
+<p><strong>Uhusiano na uaminifu</strong></p>
+<p>Kujenga mahusiano na kupata uaminifu kutoka kwa jamii ni hatua muhimu ya kwanza kabla ya kuuliza kuhusu taarifa za uvuvi. Hatua ya kwanza ya kujenga mahusiano na kupata uaminifu wa jamii ni kujitambulisha, shirika lako, na madhumuni ya kufanya utafiti wa uvuvi.</p>
+<p><strong>Maandalizi</strong></p>
+<p>Maandalizi ni muhimu katika kufanya kila mbinu ya utafiti, kwani maandalizi mazuri yatakupa ujasiri katika ufanisi wa kila mbinu unayotumia</p>
+<p><strong>Wakati wa kukusanya habari</strong></p>
+<p>Rekebisha muda wa kufanya kila mbinu ili ulingane na muda wa mhojiwa mtarajiwa au kikundi cha jamii lengwa</p>
+<p><strong>Mhojiwa</strong></p>
+<p>Kuelewa wahojiwa watarajiwa utakaokutana nao wakati wa utafiti wa kuprofaili uvuvi ni muhimu kwa kufanya uchunguzi. Makundi au watu binafsi watakaoshiriki katika mahojiano wanapaswa kupokea taarifa mapema. Kwa hivyo, kujitambulisha kwa viongozi wenye ushawishi katika jamii ni lazima kabla ya uchunguzi kuanza.</p>
+<p><strong>Mipango ya Usafiri</strong></p>
+<p>Kila mbinu ina mahitaji ya usafirishaji na vifaa. Hakikisha kuwa rasilimali na vifaa vinavyohitajika kwa kila mbinu ya utafiti wa kuprofaili uvuvi vimeandaliwa.</p>
+<p><strong>Orodha ya Mawasiliano ya Watu Muhimu</strong></p>
+<p>Hifadhi orodha ya mawasiliano ya watu muhimu kwenye simu yako na pia uwe na toleo lililochapishwa.</p>
+<p><strong>Afya na usalama</strong></p>
+<p>Hakikisha kuwa uko katika hali nzuri ya kufanya profaili uvuvi. Leta kitanda muhimu cha huduma ya kwanza. Hakikisha uko katika hali nzuri ya kufanya uchambuzi wa kuprofaili uvuvi. Chukua mfuko kutoa huduma ya kwanza wakati wa hatari.</p>
+<section id="mwongozo-wa-majadiliano-ya-kikundi" class="level4">
+<h4 class="anchored" data-anchor-id="mwongozo-wa-majadiliano-ya-kikundi">Mwongozo Wa Majadiliano Ya Kikundi</h4>
+<p>Maelezo yafuatayo yana mwongozo na mapendekezo kuhusu jinsi ya kufanya kikundi cha majadiliano kupata habari za uchambuzi wa jamii. Kufanya kikao cha majadiliano hupendekezwa ili kuchochea mazungumzo, kupata maoni anuwai, na kuanza kujenga mahusiano na wanajamii muhimu. Hata hivyo, katika hali ambapo kikundi cha majadiliano si rahisi, uchunguzi wa jamii unaweza kufanywa kama mahojiano binafsi na wadau muhimu kwa kutumia fomu ya Kobo ya “Uchambuzi wa profaili ya Jamii”. Kwa ujumla, lengo la zoezi la uchambuzi wa jamii, iwe ni kikundi cha majadiliano au mahojiano binafsi, ni kuelewa mandhari ya jumla ya jamii na shughuli za uvuvi zinazoendeshwa ndani ya jamii.</p>
+<p>I. Kabla ya kufanya kikundi cha majadiliano</p>
+<p>Kabla ya kuandaa kikundi rasmi cha kuzingatia utafiti wa kuprofaili uvuvi, inapendekezwa kufanya mazungumzo yasiyo rasmi na uchunguzi wa washiriki. Mbinu hii inamaanisha kutumia muda, kujenga mahusiano, na kuelewa shughuli za uvuvi kwa kutumia mazungumzo yasiyo rasmi na uchunguzi wa washiriki.</p>
+<p>Mazungumzo yasiyo rasmi ni muhimu kuelewa muktadha wa jumla wa uvuvi kabla ya kufanya mjadala wa kikundi cha kuzingatia. Tumia mbinu hii kama moja ya hatua za kuanza kuandaa mada ya mjadala wa kikundi cha majadiliano. Mbinu hii itakuruhusu kujifunza jamii ya uvuvi, kuanza kujenga mahusiano, na kupata uaminifu.</p>
+<p><em>Vidokezo vilivyopendekezwa vya kufanya mazungumzo yasiyo rasmi:</em></p>
+<ul>
+<li><p>Heshimu tofauti za kitamaduni. Fuata sheria za kijamii kama salamu za kukubalika, mavazi, na heshimu mila za kidini. Kuwa na adabu, unyenyekevu, na sikiliza maoni ya wadau bila kusimamia yako mwenyewe. Kukaa ndani ya jamii, kujenga uhusiano mzuri, na kushiriki milo kunaweza kusaidia kujenga uaminifu.</p></li>
+<li><p>Tumia muda na wadau. Hakuna njia ya mkato ya kupata imani na uungaji mkono. Hasa ndani ya jamii ni vizuri kuonekana, kutumia muda katika vijiji na kukutana na watu. Kuwa tayari kujadili masuala makuu ndani ya jamii. Usijaribu kusukuma ajenda moja maalum.</p></li>
+<li><p>Tumia lugha ya kienyeji ikiwezekana, isipokuwa kama kuna lugha ya pamoja inayopatikana. Vinginevyo, tumia mkalimani. Kuwa makini na makosa katika tafsiri. Kuhakiki tafsiri kati ya mkalimani zaidi ya mmoja kunaweza kupunguza makosa ya uelewa</p></li>
+<li><p>Usitoa ahadi ambazo haziwezi kutimizwa. Weka wazi malengo na matokeo yanayotarajiwa bila kuongeza matarajio. Hii ni muhimu kusisitiza mapema ili jamii iwe na uelewa wazi juu ya jukumu la mshirika wa kiufundi, kwa mfano kuwezesha kufunga uvuvi wa pweza, si kuchimba visima au kurekebisha shule. Ni muhimu kuhakikisha kila mtu anafahamu ni nini shirika linaweza na halwezi kufanya ndani ya jamii. Kuhakikisha matarajio ya kweli husaidia kupunguza huzuni, malalamiko, na migogoro wakati mradi unapoendelea.</p></li>
+<li><p>Tangaza mipango na shughuli kwa watu wote. Hakikisha mikutano au shughuli zozote zimepangwa mapema na katika nyakati na maeneo yanayokubalika kwa pande zote ili kuongeza idadi ya washiriki. Hakikisha mabadiliko yoyote katika mipango na shughuli yanatangazwa mapema iwezekanavyo. Kuwa kwa wakati na kuzingatia makubaliano husaidia kujenga imani na ujasiri kati ya wadau.</p></li>
+<li><p>Kila wakati tambua wadau katika matokeo ya miradi kama ripoti na kutolewa kwa vyombo vya habari ndani ya mikutano na maonyesho ya nje kwa wadau. Kuwa makini na ‘umiliki’ wa habari na heshimu usiri na faragha</p></li>
+</ul>
+<p>Kuelewa vyema mandhari ya washikadau katika jamii ni lengo muhimu katika kufanya mazungumzo yasiyo rasmi na uchunguzi wa washiriki. Wadau huathiri au wanaweza kuathiriwa na vitendo vya shirika. Msaada wao ni muhimu kwa mafanikio ya shirika katika kutekeleza mipango ya usimamizi wa uvuvi. Kwa kuwaelewa vyema wadau, utawatambua vyema wadau wanaohusika katika ufuatiliaji wa uvuvi siku zijazo kwa ajili ya usimamizi wa uvuvi katika maeneo yao.</p>
+<p><em>Mifano ya aina ya wadau wa kujumuishwa:</em></p>
+<ul>
+<li><p>Wavuvi</p></li>
+<li><p>Mkuu wa kijiji</p></li>
+<li><p>viongozi wa dini</p></li>
+<li><p>Mkuu wa wilaya</p></li>
+<li><p>Mfanyakazi wa afya kwenye jamii/mtaalamu wa afya</p></li>
+<li><p>Mnunuzi/Msambazaji kwa Kijiji</p></li>
+<li><p>Kiwanda cha uchakataji</p></li>
+<li><p>Wanawake katika kijiji / wake wa wavuvi</p></li>
+</ul>
+<p><em>Taarifa kuhusu wadau zikusanywe:</em></p>
+<ul>
+<li>Taarifa kuhusu wadau muhimu na nafasi zao kuhusiana na malengo ya taasisi (kiwango cha msaada, mamlaka, n.k.). Taarifa hii inaweza kutumika kubaini ni wadau gani wa kujumuishwa katika kundi la majadiliano/mahojiano ya kuprofaili jamii</li>
+</ul>
+<p>Baada ya kufanya mazungumzo yasiyo rasmi, hatua inayofuata unayoweza kufanya ni uchunguzi wa washiriki. Uchunguzi ni mbinu inayokuruhusu kutumia matukio yanayokuzunguka kukusanya dalili na kutoa hitimisho kuhusu maeneo maalum au uzoefu kwa kuchunguza siku moja katika kijiji cha uvuvi. Mbinu hii ni muhimu kukusanya ushahidi kutoka kwa taarifa zilizotolewa katika mazungumzo yasiyo rasmi. Mbinu hii inakuruhusu kuelewa shughuli za maisha ya kila siku katika kijiji cha uvuvi</p>
+<p>II. Taratibu Za Kikundi Cha majadiliano/mahojiano</p>
+<p><strong>A.</strong> <strong>Kuandaa kikundi cha majadiliano/mahojiano</strong></p>
+<ul>
+<li><p>Ni muhimu kudumisha mahusiano mazuri na jamii lengwa. Kwa hiyo, popote inapowezekana vijiji vinapaswa kuarifiwa kuhusu mpango wa mkutano wa kundi la majadiliano wiki mbili kabla.</p></li>
+<li><p>Ikiwa kijiji kina mpokeaji wa simu ya mkononi, piga simu kwa kiongozi wa kijiji au mtu mwingine tofauti wa mawasiliano.</p></li>
+<li><p>Ikiwa kijiji hakina mpokezi wa simu ya mkononi, fanya ziara katika kijiji ili kukutana na kiongozi wa kijiji au mtu mwengine wa kuwasiliana naye</p></li>
+<li><p>Wakati wa simu hii au kutembelea kiongozi wa kijiji au mtu mwengine wa mawasiliano, eleza yafuatayo:</p>
+<ul>
+<li><p>Lengo la mkutano</p></li>
+<li><p>Mahali pa mkutano</p></li>
+<li><p>Tarehe na wakati wa mkutano</p></li>
+<li><p>Njia ya kuwajulisha washiriki wa mkutano</p></li>
+<li><p>Idadi ya washiriki</p>
+<ul>
+<li><p>Wanakijiji wote au watu maalum kulingana na wavuvi bora (2)</p></li>
+<li><p>Wavuvi wa mara kwa mara (2)</p></li>
+<li><p>Wavuvi wanaotembelea maeneo mbalimbali ya kuvua (2)</p></li>
+<li><p>Wavuvi wanaoheshimiwa vyema ikiwezekana na wenye uzoefu katika ramani (2)</p></li>
+</ul></li>
+</ul></li>
+<li><p>Wanawake - wasiliana na kiongozi wa kijiji mapema ili kuhakikisha kama kundi la majadiliano linaweza kufanyika kama jinsia zote mbili ziko pamoja, kwani katika baadhi ya maeneo, hili haliwezekani kila wakati</p></li>
+<li><p>Jaribu kuepuka kufanya mkutano/mikutano wakati wa mawimbi makubwa/msimu wa juu wa uvuvi, kwani wavuvi wengi wanaohitajika watakuwa na shughuli nyingi za uvuvi.</p></li>
+<li><p>Hakikisha kuangalia ratiba za miradi mingine ambayo inaweza kuwa inafanya kazi katika eneo moja kwa wakati huo ili kuepuka migongano.</p></li>
+</ul>
+<p><strong>B.</strong> <strong>Timu ya kikundi cha majadiliano/mahojiano</strong></p>
+<p>Yafuatayo ni majukumu yanayopendekezwa kwa kiongozi anayeongoza kikundi cha majadiliano. Kwa kiwango cha chini, kundi la majadiliano linapaswa kuwa na anayeongoza majadiliano na mwandishi wa kumbukumbu</p>
+<p><em>Mwendeshaji mkuu wa majadiliano: Anaongoza na kudhibiti mkutano</em></p>
+<ul>
+<li><p>Huanzisha mkutano</p></li>
+<li><p>Anaendesha mkutano</p></li>
+<li><p>Anadhibiti mchakato wa mazungumzo</p></li>
+<li><p>Anakuwa kama kichocheo kati ya watu wa kundi</p></li>
+<li><p>Hupata njia za kuunganisha watu wenye usemi mkubwa na wale walio kimya na kuhakikisha kuwa wanachama wote wa kundi wanaweza kutoa maoni yao</p></li>
+<li><p>Hakikisha kuwa kundi linabaki kwenye mada lakini pia ni mwenye ni rahisi kubadilika ili kushughulikia taarifa muhimu zaidi</p></li>
+<li><p>Anarudia kwa maneno yake mwenyewe kile watu wanachosema ili kuhakikisha kuna uelewa mzuri wa mjadala</p></li>
+<li><p>Anahakikisha usimamizi mzuri wa saa/muda</p></li>
+</ul>
+<p><em>Msaidizi wa mwendeshaji wa majadiliano: Husaidia mwendeshaji mkuu, hasa katika kuonyesha vifaa vya kuona.</em></p>
+<ul>
+<li><p>Anasaidia anayechukuwa kumbukumbu katika kukusanya taarifa zote muhimu</p></li>
+<li><p>Anasaidia kuonyesha vifaa vya kuona na husaidia na vipengele vingine shirikishi vya mkutano kama vile kuhesabu kura, kuchukua kumbukumbu ambazo zinaonyeshwa, kugawa vifaa, n.k.</p></li>
+<li><p>Aleta vifaa vinavyohitajika</p></li>
+<li><p>Huwasaidia anayeongoza majadiliano kwa njia isiyo ya moja kwa moja kwa kutoa ishara (kwa mfano, kuonyesha wale wanaotaka kuzungumza)</p></li>
+<li><p>Anasaidia anayeongoza majadiliano moja kwa moja kwa kuuliza maswali, ikiwa hali inahitaji.</p></li>
+</ul>
+<p><em>Mchukuaji wa Kumbukumbu: Ananukuu mkutano</em></p>
+<ul>
+<li><p>Analifuatilia tukio kimya kimya</p></li>
+<li><p>Ananakili majibu yote. Ni muhimu kuwa na orodha ya maswali iliyochapishwa ili iweze kuambatanishwa na maelezo wakati wa mkutano.</p></li>
+<li><p>Ananakili habari zote muhimu</p></li>
+<li><p>Anaandika ni nani anazungumza. Je, kuna ushiriki sawa wa watu wote au baadhi wanadhibiti mchakato? Je, wanawake wanazungumza?</p></li>
+</ul>
+<p><strong>C.</strong> <strong>Washiriki wa kikundi cha majadiliano/mahojiano</strong></p>
+<p>Fanya upangaji wa makini kuhusu nani wa kualika kwenye mkutano wa kikundi cha mwelekeo. Kutambua watu 10-12 kunapendekezwa ili kuhakikisha kuwa ukubwa unaweza kudhibitiwa, kuruhusu uwakilishi wa kutosha wa mitazamo tofauti. Iwezekanavyo, jumuishe wawakilishi kutoka kwa vikundi mbalimbali vya wadau na sekta za jamii (tazama mifano ya aina za wadau katika sehemu iliyo hapo juu). Wakati wa kuchagua washiriki, zingatia ujuzi wao na majukumu katika jamii. Kuwakaribisha watu wenye ujuzi zaidi kuhusu uvuvi na jamii, kama vile mvuvi wa muda wote badala ya mvuvi wa burudani wa mara kwa mara, itatoa maelezo thabiti na sahihi zaidi. Kutambua na kualika watu ambao wanaheshimiwa sana katika jamii kunasaidia kujenga uaminifu.</p>
+<p><strong>D.</strong> <strong>Majadiliano vifaa na mbinu</strong></p>
+<p>Takwimu inaweza kukusanywa katika fomu ya “Uchunguzi kuprofaili jamii” kwa fomu ya kobo. Hata hivyo, inaweza kuwa rahisi zaidi kwa mchukuaji wa kumbukumbu kuhifadhi takwimu kupitia maelezo yaliyoandikwa ili kunasa kwa urahisi zaidi vivumbe na taarifa zinazotokana na majadiliano ya kikundi, kama vile majibu tofauti kwa kila mhojiwa</p>
+<p>Ikiwa habari inakusanywa kwa kuchukua maelezo. Baada ya mkutano wa kikundi kukamilika, majibu yanapaswa kuingizwa katika fomu Ya Kobo Ya “Utafiti wa Profaili ya Jamii”.</p>
+<p>Wahimize washiriki wote wa kikundi kuzungumza kwani wanawakilisha mchanganyiko wa umri na msimamo wa kijamii ambao unaweza kuwa na uzoefu tofauti wa uvuvi.</p>
+<p>Kuuliza maswali moja kwa moja kwa kikundi na kusubiri wanaojitolea kujibu ni njia moja ya kuongoza mjadala. Hata hivyo, kubadilisha jinsi kiongozi anavyotaka majibu kunaweza kusaidia kuweka mjadala kuwa wa kuvutia na pia kuhakikisha kuwa sauti zote zinasikilizwa na washiriki wasiozungumza sana wanaweza kushiriki. Kabla ya kuanza kikundi cha mwelekeo, fikiria jinsi ungependa kuchochea majibu kwa kila swali lililopangwa</p>
+<ul>
+<li><p>Fungua jukwaa-Mtu yeyote anaweza kujibu swali na kuzungumza.</p></li>
+<li><p>Waite washiriki mahususi - Hii inaweza kusaidia kuhakikisha kuwa washiriki wasiozungumza sana wanapata nafasi ya kuzungumza. Hii inaweza kutumika baadaye katika mjadala mara baada ya kiongozi wa majadiliano kutambua ni washiriki gani wanaoweza kufaidika na kuitwa kuzungumza. Vinginevyo, kiongozi wa mazungumzo anaweza kutumia mbinu hii wakati anapojua kuwa mshiriki fulani ana ujuzi muhimu au habari zinazohusiana na swali.</p></li>
+<li><p>Majibu ya haraka - Enda katika mduara na kila mtu kwa kifupi anachangia maoni/yake kuhusu swali. Hii inaweza kuwa na ufanisi katika kuhakikisha inahusisha kila mtu. Hata hivyo, hakikisha kuwasilisha wazi na kutekeleza vizuri mipaka ya wakati, vinginevyo mbinu hii inaweza kutumia muda mwingi sana wa majadiliano</p></li>
+<li><p>Piga kura - Uliza swali kwa hadhira na watu wainue mikono yao kulingana na chaguzi tofauti wa majibu. Hii inaweza kufanyika kwa uwazi au kwa siri na macho yakiwa yamefungwa au watu wakiandika majibu yao kwenye karatasi zilizokunjwa ambazo baadaye zinakusanywa.</p></li>
+<li><p>Vikundi - Gawa kundi katika vikundi vidogo ambavyo vinajadili na kutoa ripoti kwa kundi kuu. Mbinu hii husaidia sana na vikundi vikubwa ambapo hakuna muda wa kutosha kwa wanachama wote wa kundi kushiriki katika jukwaa la kundi zima. Katika hali hii, hakikisha kila kundi lina wadau wanaowakilisha maoni na mitazamo tofauti.</p></li>
+</ul>
+<p>III. Maswali ya mjadala wa kikundi</p>
+<p>Anza kundi la majadiliano kwa kujitambulisha, kueleza mradi, na lengo la mkutano. Kisha, wawezeshe kila mtu katika chumba kujitambulisha. Panga njia bora za kila swali la kuchochea na kukusanya majibu mapema (angalia sehemu hapo juu kwa mawazo). Tafadhali angalia nakala ya Utafiti wa Profaili ya Jamii kwa orodha kamili ya maswali ya kundi la majadiliano kufuatilia</p>
+<p>IV. Vifaa vya Kuongoza majadiliano (vinapatikana kwa Kiingereza))</p>
+<ul>
+<li><p><a href="https://www.iaf-world.org/site/sites/default/files/Revised%20IAF%20Core%20%20Competencies%20-%20December%206%202021.pdf">Facilitator Core Competencies</a> – International Association of Facilitators (IAF)</p></li>
+<li><p><a href="http://stproject.org/wp-content/uploads/2014/11/facilitators-meeting-checklist.pdf">Facilitator’s Meeting Checklist</a> – Social Transformation Project, Tools for Transformation</p></li>
+<li><p><a href="https://reefresilience.org/pdf/Facilitation_Effective_Meetings.pdf">Introduction to Planning and Facilitating Effective Meetings</a> – Social Science Tools for Social Programs, NOAA Coastal Services Center</p></li>
+<li><p><a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation">Group Facilitation and Problem-Solving</a> – Community Tool Box, Center for Community Health and Development at the University of Kansas</p>
+<ul>
+<li><p>Section 1:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/main">Conducting Effective Meetings</a></p></li>
+<li><p>Section 2:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/facilitation-skills/main">Developing Facilitation Skills</a></p></li>
+<li><p>Section 3:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/record-meeting/main">Capturing What People Say: Tips for Recording a Meeting</a></p></li>
+<li><p>Section 4:<a href="https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/group-discussions/main">Techniques for Leading Group Discussions</a></p></li>
+</ul></li>
+</ul>
+
+
+</section>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/barefoot-ocean\.github\.io\/Partner-Manual\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../../pages/quick_guide/quick_guide_sw.html" class="pagination-link" aria-label="Mwongozo wa Haraka">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Mwongozo wa Haraka</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../pages/kobo_setup/kobo_setup_sw.html" class="pagination-link" aria-label="Mpangilio wa Kobo">
+        <span class="nav-page-text">Mpangilio wa Kobo</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© CC-By Blue Ventures, 2025</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
