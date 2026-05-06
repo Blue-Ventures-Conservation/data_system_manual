@@ -95,22 +95,59 @@ point34,"Mga pangalan ng mga mangingisda, mamimili, at mga kolektor ng data"
 point35,Mga pangalan ng mga sumasagot para sa anumang mga survey
 datasharing,Pagbabahagi Ng Data
 p26,"Ang fisheries data system ay idinisenyo upang i-streamline ang paggamit ng iyong data at magbigay ng isang platform para sa iyong aktibong pakikipag-ugnayan sa mas malawak na pamamahala ng pangisdaan at mga pagsisikap sa pag-iingat. Ang pinagsama-samang data na nakolekta nang sama-sama sa mga kasosyo ay maaaring magbunga ng malakas na pananaw para sa pagsubaybay sa palaisdaan, pagtatasa ng mga diskarte sa pamamahala, paggabay sa paggawa ng desisyon sa parehong lokal at pambansang antas, pag-unawa sa mga pagbabago sa rehiyon, at pagkilala sa mga potensyal na serbisyo sa pananalapi."
-p27,"Kinikilala namin ang kritikal na kahalagahan ng pagmamay-ari ng data at paggamit para sa lahat ng nag-aambag na kasosyo. Ang aming layunin ay upang bigyan ka ng kakayahang umangkop sa pamamahala at pagtukoy kung paano ginagamit ang iyong data. Sa pamamagitan ng pagpili ng isa sa tatlong mga antas ng pahintulot sa paggamit ng data, maaari mong ayusin ang lawak kung saan ibinabahagi ang iyong data sa ibang mga gumagamit. Maaari mong maiangkop ang mga antas ng pahintulot batay sa mga uri ng data, at mahalaga, mayroon kang kalayaan upang ayusin ang iyong antas ng pahintulot ng data sa anumang oras. Ang personal identifiable information (PII) at fisheries catch data ay pag-aari ng mga mangingisda at mamimili ng isda at hindi kailanman ibabahagi nang walang paunang pahintulot. Sa pamamagitan ng pagpili ng antas ng pahintulot sa paggamit ng data, kinukumpirma mo na ang mga indibidwal na pahintulot ay nakuha mula sa parehong mga mangingisda at mamimili ng isda."
-p28,Ang lahat ng data ay kasalukuyang nakatakda sa antas 1 - pribado. Ang mga gumagamit ay magkakaroon ng pagkakataon na ayusin ang kanilang mga antas ng pahintulot kung kinakailangan.
-level1,Antas 1-Pribado
-point36,Ang data ay mahigpit para sa panloob na mga layunin ng orihinal na data contributor.
-point37,Ang Data ay magagamit para sa pag-download ng orihinal na data contributor.
-point38,Ang Data ay hindi isasama sa mga pagsusuri sa rehiyon na ibinigay sa dashboard.
-point39,Mahigpit na ipinagbabawal ang hindi awtorisadong pagbabahagi o pamamahagi ng data sa mga panlabas na partido.
-level2,Antas 2-Ibahagi sa iba pang mga nag-aambag ng Data
-point40,Ang data ng antas ng biyahe ay magagamit para sa iba pang mga nag-aambag ng data upang i-download.
-point41,Ang mga buod ng Data at visualization ay magagamit para sa iba pang mga nag-aambag ng data.
-point42,Ang Data ay isasama sa mga pagsusuri sa rehiyon sa dashboard.
-level3,Antas 3-Ibahagi sa lahat ng mga gumagamit
-point43,Trip level data ay magagamit para sa lahat ng mga gumagamit upang i-download.
-point44,Ang mga buod ng Data at visualization ay magagamit para sa lahat ng mga gumagamit.
-point45,Ang Data ay isasama sa mga pagsusuri sa rehiyon sa dashboard.
-point46,Ang orihinal na nag-aambag ng data ay maaaring tukuyin ang anumang mga limitasyon sa paggamit o kundisyon na naaangkop sa lahat ng mga gumagamit.
+dataaccess,Diskarte sa Pag-access at Paggamit ng Data
+level1,Bakit Kami Nangongolekta at Gumagamit ng Data
+p27,"Ang Blue Ventures ay nakikipagtulungan sa mga komunidad sa baybayin upang mapabuti ang pamamahala sa pangisdaan, palakasin ang kabuhayan, at protektahan ang yamang dagat. Ang mga datos—tulad ng mga talaan ng huli, mga sarbey sa tirahan, sosyo-ekonomiko, at mga obserbasyon mula sa mga mangingisda—ay tumutulong sa mga komunidad at mga katuwang:"
+point36,Maunawaan ang mga uso sa pangingisda at mga ecosystem
+point37,Gumawa ng matalinong mga desisyon tungkol sa pamamahala ng mapagkukunan
+point38,Subaybayan ang pag-unlad at sukatin ang epekto ng mga lokal na aksyon
+point39,Palakasin ang pagpaplano sa pananalapi at katatagan para sa mga sambahayan at maliliit na negosyo
+p28,"Ang data ay palaging kinokolekta nang may paggalang sa mga karapatan, kaalaman, at mga priyoridad ng mga taong gumagawa nito."
+level2,Sino ang Nagmamay-ari ng Data?
+p28.1,"Ang mga mangingisda, mamimili ng isda, kabahayan ng mga mangingisda, at mga grupo ng yamang komunidad ang nagmamay-ari ng lahat ng datos na kanilang ibinibigay. Ang Blue Ventures at mga kasosyo ay hindi nagmamay-ari ng datos—kami ay nagsisilbing mga tagapangalaga, tumutulong sa mga komunidad na mangolekta ng datos nang ligtas at etikal, maunawaan at magamit ang kanilang sariling datos, magpasya kung paano dapat ibahagi ang kanilang datos, at protektahan ang kanilang privacy at mga karapatan. Tinitiyak ng pamamaraang ito na sinusuportahan ng datos ang kapakanan at paggawa ng desisyon ng komunidad."
+level3,Pahintulot: Kung Paano Namin Tinitiyak na Kusang-loob ang Paglahok
+p28.2,"Ang lahat ng pangongolekta ng data ay sumusunod sa Libre, Nauna, at May Kaalamang Pahintulot (FPIC):"
+point40,Libre – Walang pressure o pamimilit
+point41,Nauna – Ibinibigay ang pahintulot bago ang anumang pangongolekta ng data
+point42,"May Kaalaman – Naiintindihan ng mga tao ang layunin, mga panganib, at mga benepisyo"
+p28.3,"Ibinabahagi ang impormasyon sa mga lokal na wika gamit ang simple at madaling ma-access na mga format. Maaaring bawiin ng mga tao ang pahintulot anumang oras, at aalisin ang kanilang nakakapagpakilalang impormasyon mula sa mga aktibong dataset. Upang maprotektahan ang privacy habang isinusulong ang sama-samang pagkatuto, kinikilala namin ang dalawang kategorya:"
+level4,"A. Pinaghihigpitang Data - Pribado o sensitibong impormasyon, gaya ng:"
+point43,Mga pangalan o mga detalye sa pagkakakilanlan
+point44,Mga indibidwal na talaan ng transaksyon
+point45,Data ng kita sa antas ng sambahayan
+point46,Mga tiyak na lokasyon ng lugar ng pangingisda
+p28.4,"Ang mga datos na ito ay nakatago sa mga ligtas na sistema na nangangailangan ng pag-log in, na tanging mga awtorisadong kawani lamang ng BV at kasosyo ang makaka-access. Ang restricted data ay hindi kailanman ibinabahagi sa publiko at ginagamit lamang para sa balidasyon ng datos, pagsubaybay sa programa, at mga layuning panloob na pag-uulat."
+level5,"B. Collaborative Data - Anonymous, pinagsama-samang impormasyon gaya ng:"
+point48,Kabuuang o average na dumarating bawat nayon
+point49,Mga uso sa komposisyon ng mga species
+point50,Mga indicator ng pagsisikap at produksyon
+point51,Mga buod na hindi maaaring matukoy ang mga indibidwal
+p28.5,"Ang mga datos na ito ay ibinabahagi sa mga open dashboard na hindi nangangailangan ng pag-log in, na maa-access ng sinumang may link (mga mangingisda, mga kasosyo, mga tagagawa ng patakaran, mga komunidad, at ang publiko). Ibinabahagi ang collaborative data sa pamamagitan ng mga open dashboard upang suportahan ang transparency, sama-samang pagkatuto, at mas mahusay na mga desisyon sa pamamahala."
+p28.6,Ang lahat ng collaborative data ay ibinabahagi sa ilalim ng lisensya ng Creative Commons Attribution–NonCommercial (CC BY-NC 4.0). Pinoprotektahan nito ang privacy ng mga indibidwal habang tinitiyak ang pagkilala sa mga komunidad bilang mga may hawak ng kaalaman. Nangangahulugan ito:
+point52,Ang data ay maaaring magamit para sa hindi pang-komersyal na mga layunin
+point53,"Ang anumang mga buod o muling paggamit ay dapat magbigay ng kredito sa “mga mangingisda, mamimili ng isda, at mga kalahok na komunidad, na suportado ng mga nag-aambag na kasosyo”"
+point54,"Walang mga personal na pangalan ang ginagamit, dahil ang pribadong impormasyon ay hindi kasama"
+level6,Paano Namin Pinoprotektahan ang Data
+p28.7,"Ang Blue Ventures ay gumagamit ng secure, naka-encrypt na mga server (AWS) at mga kasanayan sa seguridad na pamantayan sa industriya."
+point55,Role-based na kontrol sa pag-access
+point56,Ligtas na imbakan ng data
+point57,Mga regular na backup at pagsubaybay
+point58,Mabilis na pagtugon sa anumang potensyal na paglabag
+level7,Mga Karapatan ng Komunidad
+p28.8,Regular na ginaganap ang mga pulong sa feedback para mabe-verify ng mga komunidad ang mga natuklasan bago sila ibahagi. Ang mga komunidad ay may karapatang:
+point59,Magtanong tungkol sa kung paano ginagamit ang data
+point60,Humingi ng mga buod o paliwanag
+point61,Suriin ang mga indicator na nakaharap sa publiko
+point62,Hamunin ang maling data
+point63,Magtaas ng mga alalahanin o reklamo
+level8,Ang Aming Pangako
+level9,Ang diskarte ng Blue Ventures sa pag-access at paggamit ng data ay nakabatay sa:
+point64,Etika – paggalang sa privacy at pagmamay-ari ng komunidad
+point65,Transparency – malinaw na mga panuntunan sa kung sino ang makaka-access sa kung anong data
+point66,Equity – tinitiyak na ang data ay nagdadala ng halaga pabalik sa mga komunidad
+point67,Pakikipagtulungan – pagsuporta sa nakabahaging paggawa ng desisyon
+point68,Proteksyon – pag-iingat ng sensitibong impormasyon
+p28.9,"Ang aming layunin ay tiyaking pinapalakas ng data ang pamumuno ng komunidad, sinusuportahan ang napapanatiling pangisdaan, at nag-aambag sa mas malusog na ecosystem ng karagatan—nang hindi inilalagay sa panganib ang mga indibidwal o komunidad."
 newdata,Pagpapatunay ng bago at naka-flag na Data
 p29,"Sa mga survey, ang ilang mga katanungan ay nagpapahintulot sa mga Enumerator na magdagdag ng isang bagong mangingisda, mamimili, kolektor ng data, landing site, species, o ""iba pa.""Ang impormasyon mula sa mga pagpipiliang ito ay mga bagong puntos ng data at dapat sumailalim sa pag-verify bago itulak sa panghuling dataset, mailarawan sa dashboard, at idinagdag sa mga sanggunian na file. Mayroon ding mga hadlang na itinakda sa timbang, Presyo at haba ng isang species, at kung ang data na nakolekta ay nasa ibaba o sa itaas ng mga hadlang na ito, ang mga halagang ito ay na-flag para sa pagsusuri. Ang mga hadlang sa timbang at presyo ay itinakda ng mga kasosyo sa min_max_ref. Ang mga paghihigpit sa Haba ng mga Species ay itinakda ng team gamit ang mga biological parameter."
 p30,"Ang lahat ng data na dumadaloy sa sistema ng data ng pangisdaan ay napatunayan sa Smartsheet. Ang alinman sa mga bago o naka-flag na mga entry na ito ay ipinadala sa talahanayan ng pagpapatunay sa Smartsheet para mapatunayan ng mga koponan sa larangan. Ang mga talahanayan ng pagpapatunay ay partikular sa kasosyo at maaaring ma-access sa pamamagitan ng mga kahilingan sa pag-update na ipinadala sa iyong email o sa pamamagitan ng pagbisita sa mga link ng Dynamic View na ibinigay sa iyo. Ang mga lead ng Field team ay aabisuhan sa pamamagitan ng email kapag kailangang ma-validate ang data sa mga talahanayan. Kapag na-verify na ang data sa mga talahanayan ng pagpapatunay, maglalagay kami ng bagong impormasyon sa reference file at magbibigay ng mga kinakailangang pagwawasto sa master dataset."

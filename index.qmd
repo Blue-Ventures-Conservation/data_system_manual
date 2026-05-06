@@ -3,8 +3,6 @@ title: "Community Fisheries Data System Manual"
 subtitle: "Guidance for data collection, management, validation and interpretation"
 ---
 
-This is a test!
-
 ![](images/BV_wide_photo.jpg)
 
 ::: {layout-nrow="2"}

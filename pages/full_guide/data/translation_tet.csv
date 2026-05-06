@@ -95,22 +95,59 @@ point34,"Naran peskadór, sosa-nain no koletor dadus"
 point35,Naran husi respondente sira ba kualkér levantamentu
 datasharing,Fahe dadus
 p26,"Sistema dadus peska nian ne'e dezeña atu fasilita utilizasaun dadus no fornese plataforma ida ba envolvimentu ativu iha esforsu jestaun no konservasaun peska nian ne'ebé luan liu. Dadus ne'ebé halibur hamutuk iha parseiru sira-nia leet bele fó informasaun ne'ebé forte ba monitorizasaun peska, avaliasaun estratéjia jestaun, foti desizaun orientasaun iha nivel lokál no nasionál, kompriende mudansa rejionál sira, no identifika servisu finanseiru potensiál sira."
-p27,"Ami rekoñese importánsia krítiku husi na'in dadus no utilizasaun ba parseiru kontributivu hotu-hotu. Ami nia objetivu mak atu fó fleksibilidade ba ita-boot sira hodi jere no determina oinsá ita-boot sira-nia dadus uza. Hodi hili dadus tolu ida uza nivel lisensa, ita bele regula to'o iha ne'ebé ita-nia dadus fahe ho utilizadór sira seluk. Ita bele adapta nivel lisensa bazeia ba tipu dadus, no importante liu, ita iha liberdade atu ajusta ita-nia nivel lisensa dadus iha kualkér tempu. Informasaun pesoál ne'ebé bele identifika (PII) no dadus kona-ba peska ne'e na'in ba peskadór no sosa ikan no sei nunka fahe sein konsentimentu antes. Hodi hili nivel lisensa uza dadus, ita konfirma katak lisensa individuál sira hetan ona husi peskadór no sosa ikan."
-p28,Dadus hotu-hotu oras ne'e estabelese ona iha nivel 1 - Privadu. Utilizadór sira sei iha oportunidade atu ajusta sira-nia nivel lisensa tuir nesesidade.
-level1,Nivel 1 - Privadu
-point36,Dadus sira-ne'e maka ba objetivu internu husi kontribuinte dadus orijinál.
-point37,Dadus sei disponivel atu download husi kontribuinte dadus orijinál.
-point38,Dadus sei la inklui iha análize rejionál ne'ebé fornese iha dashboard.
-point39,Bandu maka'as atu fahe ka fahe dadus ba parte esternu sira.
-level2,Nivel 2 - Share ho Kontribuinte Dadus sira seluk
-point40,Dadus nivel viajen nian disponivel ba kontribuinte dadus sira seluk atu download.
-point41,Sumáriu dadus no vizualizasaun sei disponivel ba kontribuinte dadus seluk.
-point42,Dadus sei inklui iha análize rejionál iha dashboard.
-level3,Nivel 3 - Fahe ho Uzu hotu
-point43,Dadus nivel viajen disponivel ba utilizadór hotu-hotu atu download.
-point44,Sumáriu dadus no vídeo sei disponivel ba utilizadór hotu-hotu.
-point45,Dadus sei inklui iha análize rejionál iha dashboard.
-point46,Kontribuinte dadus orijinál bele espesífika kualkér limitasaun ka kondisaun utilizasaun ne'ebé aplika ba utilizadór hotu-hotu.
+dataaccess,Aprosimasaun Asesu & Uzu Dadus
+level1,Tansá Ami Halibur no Uza Dadus
+p27,"Blue Ventures servisu hamutuk ho komunidade kosteira sira atu hadi'ak jestaun peska, hametin moris, no proteje ambiente tasi. Dadus—hanesan rejistu peska, peskiza abitát, sosioekonómiku, no observasaun husi peskadór sira—ajuda komunidade no parseiru sira:"
+point36,Komprende tendénsia sira iha peskas no ekosistema
+point37,Foti desizaun ne'ebé bazeia ba informasaun kona-ba jestaun rekursu
+point38,Akonpaña progresu no sukat impaktu husi asaun lokál sira
+point39,Hametin planamentu finanseiru no reziliénsia ba uma-kain no negósiu ki'ik sira
+p28,"Dadus sempre halibur ho respeitu ba direitu, koñesimentu, no prioridade husi ema ne'ebé prodúz."
+level2,Sé Mak Na'in ba Dadus?
+p28.1,"Peskadór, sosa-na'in ikan, uma-kain peskadór, no grupu rekursu komunidade sira mak na'in ba dadus hotu ne'ebé sira fó. Blue Ventures no parseiru sira la'ós na'in ba dadus ne'e—ami sai nu'udar kordenadór, ajuda komunidade sira halibur dadus ho seguru no étika, komprende no uza sira-nia dadus rasik, deside oinsá sira-nia dadus tenke fahe, no proteje sira-nia privasidade no direitu sira. Aprosimasaun ida-ne'e garante katak dadus apoia di'ak-moris komunidade nian no foti desizaun."
+level3,Konsentimentu: Oinsá Ami Garante Partisipasaun mak Voluntáriu
+p28.2,"Halibur dadus hotu tuir Konsentimentu Livre, Previu, no Informadu (FPIC):"
+point40,Livre – Laiha presaun ka koersaun
+point41,Previu – Fó konsentimentu antes halibur dadus ruma
+point42,"Informadu – Ema komprende objetivu, risku, no benefísiu sira"
+p28.3,"Informasaun fahe iha lian lokál uza formatu ne'ebé simples no fasil atu asesu. Ema bele dada fali konsentu iha de'it tempu naran de'it, no sira-nia informasaun identidade sei hamos tiha husi dadus ativu sira. Atu proteje privasidade no mós promove aprendizajen hamutuk, ami halo distinsaun entre kategoria rua:"
+level4,"A. Dadus Restritu - Informasaun privadu ka sensitivu, hanesan:"
+point43,Naran ka detálle identifikasaun
+point44,Rejistu tranzasaun individuál
+point45,Dadus rendimentu nivel uma-kain nian
+point46,Lokalizasaun fatin peskas nian ne'ebé espesífiku
+p28.4,"Dadus sira-ne'e rai iha sistema seguru sira ne'ebé presiza login, ne'ebé bele asesu de'it husi funsionáriu BV no parseiru ne'ebé autorizadu. Dadus restritu nunka fahe ba públiku no uza de'it ba validasaun dadus, monitorizasaun programa, no fins relatóriu internu nian."
+level5,"B. Dadus Kolaborativu - Informasaun anónimu, agregadu hanesan:"
+point48,Totál ka média ikan ne'ebé tula iha kada aldeia
+point49,Tendénsia kompozisaun espésie
+point50,Indikadór esforsu no produsaun nian
+point51,Sumáriu sira ne'ebé la bele identifika ema
+p28.5,"Dadus sira-ne'e fahe iha painél nakloke sira ne'ebé la presiza login, ne'ebé bele asesu husi ema naran de'it ne'ebé iha ligasaun (peskadór sira, parseiru sira, formuladór polítika sira, komunidade sira, no públiku). Dadus kolaborativu fahe liuhusi painél nakloke atu apoia transparénsia, aprendizajen hamutuk, no desizaun jestaun ne'ebé di'ak liután."
+p28.6,Dadus kolaborativu hotu fahe iha lisensa Creative Commons Attribution–NonCommercial (CC BY-NC 4.0) nia okos. Ne'e proteje ema nia privasidade no asegura rekoñesimentu ba komunidade sira nu'udar detentór koñesimentu. Ne'e katak:
+point52,Dadus bele uza ba fins la'ós komersiál
+point53,"Kualkér sumáriu ka reuzar tenke fó kréditu ba “peskadór, sosa-na'in ikan, no komunidade partisipante sira, suporta husi parseiru kontribuente sira”"
+point54,"Laiha naran pesóal ne'ebé uza, tanba informasaun privadu la inklui"
+level6,Oinsá Ami Proteje Dadus
+p28.7,Blue Ventures uza servidór ne'ebé seguru no encriptadu (AWS) no prátika seguransa padraun indústria nian.
+point55,Kontrolu asesu bazeia ba knaar
+point56,Rai dadus ho seguru
+point57,Backup no monitorizasaun regulár
+point58,Resposta lalais ba kualkér violasaun poténsiál
+level7,Direitu Komunidade nian
+p28.8,Reuniaun feedback halao regulármente atu komunidade sira bele valida rezultadu sira antes fahe. Komunidade sira iha direitu atu:
+point59,Husu pergunta kona-ba oinsá dadus uza
+point60,Husu sumáriu ka esplikasaun
+point61,Revé indikadór sira ne'ebé fó sai ba públiku
+point62,Kontesta dadus ne'ebé sala
+point63,Hato'o preokupasaun ka keixa
+level8,Ami-nia Kompromisu
+level9,Blue Ventures nia aprosimasaun ba asesu no uzu dadus bazeia ba:
+point64,Étika – respeita privasidade no propriedade komunidade nian
+point65,Transparénsia – regra ne'ebé klaru kona-ba sé mak bele asesu dadus saida
+point66,Ekuidade – garante katak dadus lori valór fila fali ba komunidade sira
+point67,Kolaborasaun – suporta foti desizaun hamutuk
+point68,Protesaun – salvaguarda informasaun sensitivu
+p28.9,"Ami-nia objetivu mak atu garante katak dadus hametin lideransa komunidade nian, suporta peskas sustentável, no kontribui ba ekosistema oseanu ne'ebé saudavel liu—lahó tau ema individuál ka komunidade sira iha risku laran."
 newdata,Validasaun Dadus Foun no bandeira
 p29,"Iha peskiza sira-ne'e, ema balu ne'ebé hanoin kona-ba buat ne'ebé sira hakarak atu halo, sira mós bele aumenta tan peskadór foun, sosa-nain, koletor dadus, fatin ba rai, espésie, ka ""seluk tan"". Informasaun hosi opsaun hirak-ne'e mak pontu dadus foun no tenke halo verifikasaun molok dudu ba iha set dadus finál, haree iha dashboard, no aumenta ba arkivu referénsia sira. Iha mós limitasaun sira ne'ebé estabelese ba espésie ida nia todan, folin no naruk, no se dadus ne'ebé halibur ona mak ki'ik liu ka aas liu husi limitasaun hirak-ne'e, valór hirak-ne'e sei marka ba revizaun. Limitasaun ba todan no folin estabelese husi parseiru sira iha min_max_ref. Espésie sira-nia naruk limitasaun sira-ne'e mak ekipa ne'ebé uza parámetru biolojiku sira."
 p30,"Dadus hotu-hotu ne'ebé suli liu husi sistema dadus peska nian hetan validasaun iha Smartsheet. Kualkér tama foun ka bandeira ne'e haruka ba tabela validasaun iha Smartsheet atu ekipa kampu sira bele omologa. Tabela validasaun ne'e espesífiku ba parseiru no bele hetan asesu liu husi pedidu atualizasaun ne'ebé haruka ba ita-nia e-mail ka liu husi vizita ligasaun ba Vizaun dinámika ne'ebé fornese ba ita. Lideransa ekipa kampu nian sei hetan notifikasaun liuhosi email bainhira presiza hetan validasaun dadus iha tabela sira. Bainhira verifika tiha ona dadus iha tabela validasaun, ita sei aplika informasaun foun ba arkivu referénsia no fornese korretu nesesáriu ba dadus master."

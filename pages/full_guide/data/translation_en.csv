@@ -95,22 +95,59 @@ point34,"Names of fishers, buyers, and data collectors"
 point35,Names of respondents for any surveys
 datasharing,Data Sharing
 p26,"The fisheries data system is designed to streamline the utilization of your data and provide a platform for your active engagement in broader fisheries management and conservation efforts. Aggregated data collected collaboratively across partners can yield powerful insights for monitoring the fishery, assessing management strategies, guiding decision-making at both local and national levels, understanding regional changes, and identifying potential financial services."
-p27,"We recognize the critical importance of data ownership and usage for all contributing partners. Our goal is to provide you with flexibility in managing and determining how your data is used. By selecting one of the three data use permission levels, you can regulate the extent to which your data is shared with other users. You can tailor permission levels based on data types, and importantly, you have the freedom to adjust your data permission level at any time. Personal identifiable information (PII) and fisheries catch data is owned by fishers and fish buyers and will never be shared without prior consent. By choosing a data use permission level, you are confirming that individual permissions have been obtained from both fishers and fish buyers."
-p28,All data is currently set to Level 1 - Private. Users will have the opportunity to adjust their permission levels as needed.
-level1,Level 1- Private
-point36,The data is strictly for the internal purposes of the original data contributor.
-point37,Data will be available for download by the original data contributor.
-point38,Data will not be included in regional analyses provided on the dashboard.
-point39,Unauthorized sharing or distribution of the data to external parties is strictly prohibited.
-level2,Level 2 - Share with Other Data Contributors
-point40,Trip level data is available for other data contributors to download.
-point41,Data summaries and visualizations will be available for other data contributors.
-point42,Data will be included in regional analyses on the dashboard.
-level3,Level 3 - Share with All Users
-point43,Trip level data is available for all users to download.
-point44,Data summaries and visualizations will be available for all users.
-point45,Data will be included in regional analyses on the dashboard.
-point46,The original data contributor may specify any usage limitations or conditions applicable to all users.
+dataaccess,Data Access & Use Approach
+level1,Why We Collect and Use Data
+p27,"Blue Ventures works with coastal communities to improve fisheries management, strengthen livelihoods, and protect marine environments. Data—such as catch records, habitat surveys, socioeconomic, and observations from fishers—helps communities and partners:"
+point36,Understand trends in fishing and ecosystems
+point37,Make informed decisions about resource management
+point38,Track progress and measure the impact of local actions
+point39,Strengthen financial planning and resilience for households and small businesses
+p28,"Data is always collected with respect for the rights, knowledge, and priorities of the people who generate it."
+level2,Who Owns the Data?
+p28.1,"Fishers, fish buyers, fisher households, and community resource groups own all the data they provide. Blue Ventures and partners do not own the data—we act as stewards, helping communities collect data safely and ethically, understand and use their own data, decide how their data should be shared, and protect their privacy and rights. This approach ensures that data supports community wellbeing and decision making."
+level3,Consent: How We Ensure Participation is Voluntary
+p28.2,"All data collection follows Free, Prior, and Informed Consent (FPIC):"
+point40,Free – No pressure or coercion
+point41,Prior – Consent is given before any data collection
+point42,"Informed – People understand the purpose, risks, and benefits"
+p28.3,"Information is shared in local languages using simple and accessible formats. People may withdraw consent at any time, and their identifiable information will be removed from active datasets. To protect privacy while promoting shared learning, we distinguish between two categories:"
+level4,"A. Restricted Data - Private or sensitive information, such as:"
+point43,Names or identifying details
+point44,Individual transaction records
+point45,Household-level income data
+point46,Specific fishing ground locations
+p28.4,"These data are stored in secure systems that require login, which is only accessible by authorised BV and partner staff. Restricted data are never shared publicly and only used for data validation, programme monitoring, and internal reporting purposes."
+level5,"B. Collaborative Data - Anonymous, aggregated information such as:"
+point48,Total or average landings per village
+point49,Species composition trends
+point50,Effort and production indicators
+point51,Summaries that cannot identify individuals
+p28.5,"These data are shared in open dashboards that do not require login, which is accessible by anyone with the link (fishers, partners, policymakers, communities, and the public). Collaborative data is shared through open dashboards to support transparency, collective learning, and better management decisions."
+p28.6,All collaborative data is shared under a Creative Commons Attribution–NonCommercial (CC BY-NC 4.0) licence. This protects individuals’ privacy while ensuring recognition of communities as knowledge holders. This means:
+point52,The data can be used for non-commercial purposes
+point53,"Any summaries or reuse must credit “fishers, fish buyers, and participating communities, supported by contributing partners”"
+point54,"No personal names are used, as private information is not included"
+level6,How We Protect Data
+p28.7,"Blue Ventures uses secure, encrypted servers (AWS) and industry-standard security practices. Partners must follow the same safeguards. We ensure:"
+point55,Role-based access control
+point56,Secure data storage
+point57,Regular backups and monitoring
+point58,Rapid response to any potential breaches
+level7,Community Rights
+p28.8,Feedback meetings are held regularly so communities can validate findings before they are shared. Communities have the right to:
+point59,Ask questions about how data is used
+point60,Request summaries or explanations
+point61,Review public-facing indicators
+point62,Challenge incorrect data
+point63,Raise concerns or complaints
+level8,Our Commitment
+level9,Blue Ventures’ approach to data access and use is grounded in:
+point64,Ethics – respecting privacy and community ownership
+point65,Transparency – clear rules on who can access what data
+point66,Equity – ensuring data brings value back to communities
+point67,Collaboration – supporting shared decision making
+point68,Protection – safeguarding sensitive information
+p28.9,"Our goal is to ensure data strengthens community leadership, supports sustainable fisheries, and contributes to healthier ocean ecosystems—without putting individuals or communities at risk."
 newdata,Validating New and Flagged Data
 p29,"In the surveys, some questions allow enumerators to add a new fisher, buyer, data collector, landing site, species, or “other.” Information from these options are new data points and must undergo verification before being pushed to the final dataset, visualized in the dashboard, and added to the reference files. There are also constraints set on weight, price and length of a species, and if the data collected is below or above these constraints, these values are flagged for review. Constraints on weight and price are set by partners in the min_max_ref. Species length constraints are set by the team using biological parameters."
 p30,"All data that flows through the fisheries data system is validated in Smartsheet. Any of these new or flagged entries are sent to the validation table in Smartsheet for field teams to validate. The validation tables are partner-specific and can be accessed via update requests sent to your email or by visiting the Dynamic View links provided to you. Field team leads will be notified via email when data needs to be validated in the tables. Once the data have been verified in the validation tables, we will append new information to the reference file and provide necessary corrections to the master dataset."

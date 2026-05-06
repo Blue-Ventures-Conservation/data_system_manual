@@ -95,22 +95,59 @@ point34,"Ang mga ngalan sa mga mangingisda, buyers, ug data collectors"
 point35,Ngalan sa mga respondents alang sa bisan unsang survey
 datasharing,Data Pagpakigbahin
 p26,"Ang fisheries data system gilaraw aron mapadali ang paggamit sa imong datos ug maghatag usa ka plataporma alang sa imong aktibo nga pakiglambigit sa labi ka halapad nga pagdumala sa pangisda ug mga paningkamot sa pagtipig. Ang nakolekta nga datos nga nagtinabangay sa tibuuk nga mga kasosyo makahatag kusog nga mga panan-aw alang sa pag-monitor sa pangisda, pagsusi sa mga estratehiya sa pagdumala, paggiya sa paghimo og desisyon sa lokal ug nasudnon nga lebel, pagsabut sa mga pagbag-o sa rehiyon, ug pag-ila sa potensyal nga serbisyo sa pinansya."
-p27,"Giila namon ang hinungdanon nga kahinungdanon sa pagpanag-iya sa datos ug paggamit alang sa tanan nga nag-amot nga mga kauban. Ang among katuyoan mao ang paghatag kanimo sa pagka-flexible sa pagdumala ug pagtino kung giunsa gigamit ang imong datos. Pinaagi sa pagpili sa usa sa tulo nga lebel sa pagtugot sa paggamit sa datos, mahimo nimong makontrol ang gilapdon diin gipaambit ang imong datos sa ubang mga ninggamit. Mahimo nimo ipasibo ang lebel sa pagtugot pinahiuyon sa mga lahi sa datos, ug labi ka hinungdan, adunay ka kagawasan sa pag-adjust sa lebel sa pagtugot sa imong datos bisan unsang orasa. Ang Personal identifiable information (PII) ug fisheries catch data gipanag-iya sa mga mangingisda ug mga mamalitay sa isda ug dili gayud ipaambit nga walay una nga pagtugot. Pinaagi sa pagpili sa lebel sa pagtugot sa paggamit sa datos, imong gikumpirma nga ang mga indibidwal nga pagtugot nakuha gikan sa mga namalit sa isda ug isda."
-p28,Ang tanan nga mga numero gibutang Sa Lebel Nga 1 - Pribado. Ang mga mogamit adunay higayon nga ayohon ang ilang lebel sa pagtugot kung kinahanglan.
-level1,Day 1 - Private
-point36,Ang data mao ang hugot nga alang sa internal nga mga katuyoan sa mga orihinal nga data contributor.
-point37,Ang datos mahimong ma-download sa orihinal nga magtatampo sa datos.
-point38,Ang datos dili iapil sa mga rehiyonal nga pagtuki nga gihatag sa dashboard.
-point39,Ang dili awtorisado nga pagpakigbahin o pag-apod-apod sa datos ngadto sa mga panggawas nga partido hugot nga gidili.
-level2,Level 2-Pagpakigbahin sa Uban Nga Mga Data Contributors
-point40,Ang datos sa lebel sa pagbiyahe magamit alang sa ubang mga magtatampo sa datos nga ma-download.
-point41,Ang mga katingbanan sa datos ug mga panan-aw magamit alang sa ubang mga magtatampo sa datos.
-point42,Ang mga datos sa rehiyonal nga pagtuki sa dashboard.
-level3,Level 3-Share uban Sa Tanan Nga Mga Tiggamit
-point43,Ang datos sa lebel sa pagbiyahe magamit alang sa tanan nga mga ninggamit sa pag-download.
-point44,Ang mga summary ug visualization sa datos magamit alang sa tanan nga mga ninggamit.
-point45,Ang mga datos sa rehiyonal nga pagtuki sa dashboard.
-point46,Ang orihinal nga tigtampo sa datos mahimong magtino sa bisan unsang mga limitasyon sa paggamit o mga kondisyon nga magamit sa tanan nga tiggamit.
+dataaccess,Pamaagi sa Pag-access ug Paggamit sa Data
+level1,Nganong Nangolekta ug Naggamit Kami ug Data
+p27,"Ang Blue Ventures nakigtambayayong sa mga komunidad sa baybayon aron mapalambo ang pagdumala sa pangisdaan, mapalig-on ang panginabuhian, ug mapanalipdan ang kalikopan sa kadagatan. Ang datos—sama sa mga rekord sa kuha, mga surbey sa puy-anan, sosyo-ekonomiko, ug mga obserbasyon gikan sa mga mangingisda—makatabang sa mga komunidad ug mga kauban:"
+point36,Masabtan ang mga uso sa pagpangisda ug mga ekosistema
+point37,Paghimo og mga desisyon nga may kasayuran bahin sa pagdumala sa kapanguhaan
+point38,Pagsubay sa pag-uswag ug pagsukod sa epekto sa mga lokal nga aksyon
+point39,Pagpalig-on sa pagplano sa pinansyal ug kalig-on alang sa mga panimalay ug gagmay nga negosyo
+p28,"Ang data kanunay nga gikolekta uban ang pagtahod sa mga katungod, kahibalo, ug mga prayoridad sa mga tawo nga naghimo niini."
+level2,Kinsa ang Tag-iya sa Data?
+p28.1,"Ang mga mangingisda, namalitay og isda, panimalay sa mga mangingisda, ug mga grupo sa kahinguhaan sa komunidad ang tag-iya sa tanang datos nga ilang gihatag. Ang Blue Ventures ug mga kauban dili tag-iya sa datos—kami naglihok isip mga tigdumala, nagtabang sa mga komunidad sa pagkolekta sa datos nga luwas ug etikal, pagsabot ug paggamit sa ilang kaugalingong datos, pagdesisyon kon unsaon pagpaambit ang ilang datos, ug pagpanalipod sa ilang pribasiya ug mga katungod. Kini nga pamaagi nagsiguro nga ang datos nagsuporta sa kaayohan ug paghimo og desisyon sa komunidad."
+level3,Pagtugot: Giunsa Nato Pagsiguro nga Ang Pag-apil Boluntaryo
+p28.2,"Ang tanang pagkolekta sa datos nagsunod sa Libre, Nauna, ug May Kasayuran nga Pagtugot (FPIC):"
+point40,Libre – Walang pagpamugos o pagpamugos
+point41,Nauna - Ang pagtugot gihatag sa wala pa ang bisan unsang pagkolekta sa datos
+point42,"Nahibal-an - Nasabtan sa mga tawo ang katuyoan, mga peligro, ug mga benepisyo"
+p28.3,"Ang impormasyon gipaambit sa lokal nga mga pinulongan gamit ang yano ug dali ma-access nga mga pormat. Ang mga tawo mahimong bawion ang ilang pagtugot bisan unsang orasa, ug ang ilang personal nga impormasyon tangtangon gikan sa aktibong mga dataset. Aron mapanalipdan ang pribasiya samtang nagpasiugda sa dungan nga pagkat-on, nag-ila kami og duha ka kategoriya:"
+level4,"A. Gidili nga Data - Pribado o sensitibo nga impormasyon, sama sa:"
+point43,Mga ngalan o makapailang detalye
+point44,Indibidwal nga mga rekord sa transaksyon
+point45,Data sa kita sa lebel sa panimalay
+point46,Espesipiko nga mga lokasyon sa pangisda
+p28.4,"Kini nga mga datos gitipigan sa luwas nga mga sistema nga nagkinahanglan og pag-login, nga ma-access lamang sa mga awtorisadong kawani sa BV ug mga kauban. Ang restricted nga datos dili gayud ipaambit sa publiko ug gamiton lamang alang sa validation sa datos, pag-monitor sa programa, ug internal nga pagtaho."
+level5,"B. Collaborative nga Data - Anonymous, aggregated nga impormasyon sama sa:"
+point48,Total o kasagaran nga pag-abot matag baryo
+point49,Trend sa komposisyon sa espisye
+point50,Mga indikasyon sa paningkamot ug produksiyon
+point51,Mga summary nga dili makapaila sa mga indibidwal
+p28.5,"Kini nga mga datos gipaambit sa mga open dashboard nga wala nagkinahanglan og pag-login, nga ma-access sa bisan kinsa nga adunay link (mga mangingisda, mga kauban, mga tighimo og polisiya, mga komunidad, ug ang publiko). Ang collaborative nga datos gipaambit pinaagi sa mga open dashboard aron suportahan ang transparency, dungan nga pagkat-on, ug mas maayong mga desisyon sa pagdumala."
+p28.6,Ang tanan nga kolaborasyon nga datos gipaambit ubos sa usa ka lisensya sa Creative Commons Attribution–NonCommercial (CC BY-NC 4.0). Gipanalipdan niini ang pribasiya sa mga indibidwal samtang gisiguro ang pag-ila sa mga komunidad isip mga naghupot sa kahibalo. Kini nagpasabot:
+point52,Ang datos mahimong gamiton alang sa dili komersyal nga mga katuyoan
+point53,"Ang bisan unsang mga summary o paggamit pag-usab kinahanglan nga mag-kredito sa ""mga mangingisda, namalit og isda, ug mga komunidad nga miapil, gisuportahan sa nag-ambag nga mga kasosyo"""
+point54,"Walay personal nga mga ngalan nga gigamit, tungod kay ang pribadong impormasyon wala gilakip"
+level6,Giunsa Nato Pagpanalipod sa Data
+p28.7,"Naggamit ang Blue Ventures og luwas, naka-encrypt nga mga server (AWS) ug mga gawi sa seguridad nga sumbanan sa industriya."
+point55,Base sa papel nga kontrol sa pag-access
+point56,Luwas nga pagtipig sa datos
+point57,Kanunay nga backup ug pag-monitor
+point58,Paspas nga tubag sa bisan unsang posibleng mga kalapasan
+level7,Mga Katungod sa Komunidad
+p28.8,Ang mga miting sa feedback kanunay nga gihimo aron ang mga komunidad maka-validate sa mga nahibal-an sa dili pa kini ipaambit. Ang mga komunidad adunay katungod sa:
+point59,Pangutana mahitungod sa unsaon paggamit ang datos
+point60,Paghangyo og mga summary o pagpasabot
+point61,Repasuhin ang mga indicator nga nag-atubang sa publiko
+point62,Hagiton ang sayop nga datos
+point63,Ipataas ang mga kabalaka o reklamo
+level8,Ang Among Pasalig
+level9,Ang pamaagi sa Blue Ventures sa pag-access ug paggamit sa datos gibase sa:
+point64,Pamatasan – pagtahod sa pribasiya ug pagpanag-iya sa komunidad
+point65,Transparency - tin-aw nga mga lagda kung kinsa ang maka-access sa unsa nga datos
+point66,Kaangayan - pagsiguro nga ang datos nagdala og bili balik sa mga komunidad
+point67,Pagtinabangay - pagsuporta sa gipaambit nga paghimog desisyon
+point68,Proteksyon – pagpanalipod sa sensitibong impormasyon
+p28.9,"Ang among tumong mao ang pagsiguro nga ang datos makapalig-on sa pagpangulo sa komunidad, nagsuporta sa malungtarong pagpangisda, ug nakatampo sa mas himsog nga ekosistema sa kadagatan—nga walay pagbutang sa mga indibidwal o komunidad sa peligro."
 newdata,Bag-o ug Flagged Data
 p29,"Sa mga survey, ang pila ka mga pangutana nagtugot sa mga enumerator nga magdugang usa ka bag-ong mangingisda, pumapalit, data collector, landing site, species, o ""uban pa.""""Ang kasayuran gikan sa kini nga mga kapilian mga bag-ong puntos sa datos ug kinahanglan nga ipailalom sa pagpanghimatuud sa wala pa iduso sa katapusang dataset, nga makita sa dashboard, ug idugang sa mga file sa pakisayran. Adunay usab mga pagpugong nga gitakda sa gibug-aton, presyo ug gitas-on sa usa ka species, ug kung ang datos nga nakolekta sa ubos o sa ibabaw niini nga mga limitasyon, kini nga mga kantidad gibandera alang sa pagrepaso. Ang mga limitasyon sa gibug-aton ug presyo gitakda sa mga kauban sa min_max_ref."
 p30,"Ang tanan nga datos nga nag-agos pinaagi sa sistema sa datos sa pangisda gipamatud-an Sa Smartsheet. Ang bisan kinsa sa kini nga mga bag-o o gi-flag nga mga entry gipadala sa lamesa sa validation sa Smartsheet alang sa mga koponan sa uma aron mapamatud-an. Ang mga lamesa sa validation piho nga kauban ug mahimong ma-access pinaagi sa mga hangyo sa pag-update nga gipadala sa imong email o pinaagi sa pagbisita sa Dinamikong mga link sa Pagtan-aw nga gihatag kanimo. Ang mga lead sa Field team ipahibalo pinaagi sa email kung ang datos kinahanglan nga mapamatud-an sa MGA lamesa. Sa higayon nga ang datos mapamatud-an sa MGA lamesa sa validation, maghimo kami bag-ong kasayuran sa pakisayran nga file ug maghatag mga kinahanglan nga pagtul-id sa master dataset."

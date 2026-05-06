@@ -14,7 +14,6 @@ i18n
 
 
 ```
-
 # `r i18n$t("title")`
 
 ## `r { i18n$t("subtitle") }`
@@ -245,7 +244,6 @@ i18n
 
 `r { i18n$t("p22") }`
 
-
 #### **`r { i18n$t("dp") }`**
 
 `r { i18n$t("p24") }`
@@ -260,11 +258,11 @@ i18n
 
 `r { i18n$t("p26") }`
 
-`r { i18n$t("p27") }`
-
-`r { i18n$t("p28") }`
+#### **`r { i18n$t("dataaccess") }`**
 
 **`r { i18n$t("level1") }`**
+
+`r { i18n$t("p28") }`
 
 -   `r { i18n$t("point36") }`
 
@@ -274,7 +272,15 @@ i18n
 
 -   `r { i18n$t("point39") }`
 
+`r { i18n$t("p28") }`
+
 **`r { i18n$t("level2") }`**
+
+`r { i18n$t("p28.1") }`
+
+**`r { i18n$t("level3") }`**
+
+`r { i18n$t("p28.2") }`
 
 -   `r { i18n$t("point40") }`
 
@@ -282,7 +288,9 @@ i18n
 
 -   `r { i18n$t("point42") }`
 
-**`r { i18n$t("level3") }`**
+`r { i18n$t("p28.3") }`
+
+**`r { i18n$t("level4") }`**
 
 -   `r { i18n$t("point43") }`
 
@@ -291,6 +299,70 @@ i18n
 -   `r { i18n$t("point45") }`
 
 -   `r { i18n$t("point46") }`
+
+`r { i18n$t("p28.4") }`
+
+**`r { i18n$t("level5") }`**
+
+-   `r { i18n$t("point48") }`
+
+-   `r { i18n$t("point49") }`
+
+-   `r { i18n$t("point50") }`
+
+-   `r { i18n$t("point51") }`
+
+`r { i18n$t("p28.5") }`
+
+`r { i18n$t("p28.6") }`
+
+-   `r { i18n$t("point52") }`
+
+-   `r { i18n$t("point53") }`
+
+-   `r { i18n$t("point54") }`
+
+**`r { i18n$t("level6") }`**
+
+`r { i18n$t("p28.7") }`
+
+-   `r { i18n$t("point55") }`
+
+-   `r { i18n$t("point56") }`
+
+-   `r { i18n$t("point57") }`
+
+-   `r { i18n$t("point58") }`
+
+**`r { i18n$t("level7") }`**
+
+`r { i18n$t("p28.8") }`
+
+-   `r { i18n$t("point59") }`
+
+-   `r { i18n$t("point60") }`
+
+-   `r { i18n$t("point61") }`
+
+-   `r { i18n$t("point62") }`
+
+-   `r { i18n$t("point63") }`
+
+**`r { i18n$t("level8") }`**
+
+**`r { i18n$t("level9") }`**
+
+-   `r { i18n$t("point64") }`
+
+-   `r { i18n$t("point65") }`
+
+-   `r { i18n$t("point66") }`
+
+-   `r { i18n$t("point67") }`
+
+-   `r { i18n$t("point68") }`
+
+`r { i18n$t("p28.9") }`
 
 #### **`r { i18n$t("newdata") }`**
 
@@ -522,10 +594,11 @@ IV\. `r { i18n$t("p76") }`
 
 -   [Group Facilitation and Problem-Solving](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation) – Community Tool Box, Center for Community Health and Development at the University of Kansas
 
-    -   Section 1:[ Conducting Effective Meetings](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/main)
+    -   Section 1:[Conducting Effective Meetings](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/main)
 
-    -   Section 2:[ Developing Facilitation Skills](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/facilitation-skills/main)
+    -   Section 2:[Developing Facilitation Skills](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/facilitation-skills/main)
 
-    -   Section 3:[ Capturing What People Say: Tips for Recording a Meeting](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/record-meeting/main)
+    -   Section 3:[Capturing What People Say: Tips for Recording a Meeting](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/record-meeting/main)
 
-    -   Section 4:[ Techniques for Leading Group Discussions](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/group-discussions/main)
+    -   Section 4:[Techniques for Leading Group Discussions](https://ctb.ku.edu/en/table-of-contents/leadership/group-facilitation/group-discussions/main)
+

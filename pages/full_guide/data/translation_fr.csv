@@ -95,22 +95,59 @@ point34,"Noms des pêcheurs, des acheteurs et des collecteurs de données"
 point35,Noms des répondants pour toutes les enquêtes
 datasharing,Partage des Données
 p26,"Le système de données sur les pêches est conçu pour rationaliser l'utilisation de vos données et fournir une plate-forme pour votre engagement actif dans des efforts plus larges de gestion et de conservation des pêches. Les données agrégées recueillies en collaboration entre les partenaires peuvent fournir des informations puissantes pour surveiller la pêche, évaluer les stratégies de gestion, guider la prise de décision aux niveaux local et national, comprendre les changements régionaux et identifier les services financiers potentiels."
-p27,"Nous reconnaissons l'importance cruciale de la propriété et de l'utilisation des données pour tous les partenaires contributeurs. Notre objectif est de vous offrir une flexibilité dans la gestion et la détermination de la manière dont vos données sont utilisées. En sélectionnant l'un des trois niveaux d'autorisation d'utilisation des données, vous pouvez réguler la mesure dans laquelle vos données sont partagées avec d'autres utilisateurs. Vous pouvez personnaliser les niveaux d'autorisation en fonction des types de données et, surtout, vous avez la liberté d'ajuster votre niveau d'autorisation de données à tout moment. Les informations personnelles identifiables (IPI) et les données sur les prises de pêche appartiennent aux pêcheurs et aux acheteurs de poisson et ne seront jamais partagées sans consentement préalable. En choisissant un niveau d'autorisation d'utilisation des données, vous confirmez que des autorisations individuelles ont été obtenues à la fois des pêcheurs et des acheteurs de poisson."
-p28,Toutes les données sont actuellement définies sur le niveau 1-Privé. Les utilisateurs auront la possibilité d'ajuster leurs niveaux d'autorisation au besoin.
-level1,Niveau 1-Privé
-point36,Les données sont strictement destinées aux fins internes du contributeur de données d'origine.
-point37,Les données pourront être téléchargées par le contributeur de données d'origine.
-point38,Les données ne seront pas incluses dans les analyses régionales fournies sur le tableau de bord.
-point39,Le partage ou la distribution non autorisés des données à des parties externes est strictement interdit.
-level2,Niveau 2-Partager avec d'autres contributeurs de données
-point40,Les données au niveau du trajet sont disponibles pour téléchargement par d'autres contributeurs de données.
-point41,Des résumés de données et des visualisations seront disponibles pour les autres contributeurs de données.
-point42,Les données seront incluses dans les analyses régionales sur le tableau de bord.
-level3,Niveau 3-Partager avec tous les utilisateurs
-point43,Les données de niveau de trajet sont disponibles pour tous les utilisateurs à télécharger.
-point44,Des résumés de données et des visualisations seront disponibles pour tous les utilisateurs.
-point45,Les données seront incluses dans les analyses régionales sur le tableau de bord.
-point46,Le contributeur de données d'origine peut spécifier toute limitation ou condition d'utilisation applicable à tous les utilisateurs.
+dataaccess,Approche d'accès et d'utilisation des données
+level1,Pourquoi nous collectons et utilisons des données
+p27,"Blue Ventures travaille avec les communautés côtières pour améliorer la gestion des pêcheries, renforcer les moyens de subsistance et protéger les environnements marins. Les données — telles que les registres de capture, les études d'habitat, les données socio-économiques et les observations des pêcheurs — aident les communautés et les partenaires :"
+point36,Comprendre les tendances de la pêche et des écosystèmes
+point37,Prendre des décisions éclairées sur la gestion des ressources
+point38,Suivre les progrès et mesurer l'impact des actions locales
+point39,Renforcer la planification financière et la résilience des ménages et des petites entreprises
+p28,"Les données sont toujours collectées dans le respect des droits, des connaissances et des priorités des personnes qui les génèrent."
+level2,À qui appartiennent les données ?
+p28.1,"Les pêcheurs, les acheteurs de poisson, les ménages de pêcheurs et les groupes de ressources communautaires possèdent toutes les données qu'ils fournissent. Blue Ventures et ses partenaires ne possèdent pas les données — nous agissons en tant que gestionnaires, aidant les communautés à collecter des données de manière sûre et éthique, à comprendre et utiliser leurs propres données, à décider comment leurs données doivent être partagées, et à protéger leur vie privée et leurs droits. Cette approche garantit que les données soutiennent le bien-être et la prise de décision de la communauté."
+level3,Consentement : Comment nous nous assurons que la participation est volontaire
+p28.2,"Toute collecte de données suit le principe du Consentement Libre, Préalable et Éclairé (CLIP) :"
+point40,Libre : Aucune pression ni coercition
+point41,Préalable : Le consentement est donné avant toute collecte de données
+point42,"Éclairé : Les personnes comprennent l'objectif, les risques et les avantages"
+p28.3,"Les informations sont partagées dans les langues locales en utilisant des formats simples et accessibles. Les personnes peuvent retirer leur consentement à tout moment, et leurs informations identifiables seront supprimées des ensembles de données actifs. Pour protéger la vie privée tout en favorisant l'apprentissage partagé, nous distinguons deux catégories :"
+level4,"A. Données restreintes - Informations privées ou sensibles, telles que :"
+point43,Noms ou détails d'identification
+point44,Relevés de transactions individuelles
+point45,Données sur les revenus au niveau des ménages
+point46,Emplacements spécifiques des zones de pêche
+p28.4,"Ces données sont stockées dans des systèmes sécurisés nécessitant une connexion, accessibles uniquement au personnel autorisé de BV et de ses partenaires. Les données restreintes ne sont jamais partagées publiquement et ne sont utilisées qu'à des fins de validation des données, de suivi des programmes et de rapports internes."
+level5,B. Données collaboratives - Informations anonymes et agrégées telles que :
+point48,Débarquements totaux ou moyens par village
+point49,Tendances de la composition des espèces
+point50,Indicateurs d'effort et de production
+point51,Résumés qui ne permettent pas d'identifier des individus
+p28.5,"Ces données sont partagées dans des tableaux de bord ouverts qui ne nécessitent pas de connexion, accessibles à toute personne disposant du lien (pêcheurs, partenaires, décideurs politiques, communautés et public). Les données collaboratives sont partagées via des tableaux de bord ouverts pour soutenir la transparence, l'apprentissage collectif et de meilleures décisions de gestion."
+p28.6,Toutes les données collaboratives sont partagées sous une licence Creative Commons Attribution - Pas d'Utilisation Commerciale (CC BY-NC 4.0). Cela protège la vie privée des individus tout en assurant la reconnaissance des communautés en tant que détentrices du savoir. Cela signifie que :
+point52,Les données peuvent être utilisées à des fins non commerciales
+point53,"Tout résumé ou réutilisation doit créditer « les pêcheurs, les acheteurs de poisson et les communautés participantes, soutenus par les partenaires contributeurs »"
+point54,"Aucun nom personnel n'est utilisé, car les informations privées ne sont pas incluses"
+level6,Comment nous protégeons les données
+p28.7,Blue Ventures utilise des serveurs sécurisés et cryptés (AWS) et des pratiques de sécurité conformes aux normes de l'industrie.
+point55,Contrôle d'accès basé sur les rôles
+point56,Stockage sécurisé des données
+point57,Sauvegardes et surveillance régulières
+point58,Réponse rapide à toute violation potentielle
+level7,Droits de la communauté
+p28.8,Des réunions de restitution sont organisées régulièrement afin que les communautés puissent valider les résultats avant qu'ils ne soient partagés. Les communautés ont le droit de :
+point59,Poser des questions sur l'utilisation des données
+point60,Demander des résumés ou des explications
+point61,Examiner les indicateurs destinés au public
+point62,Contester les données incorrectes
+point63,Soulever des préoccupations ou des plaintes
+level8,Notre engagement
+level9,L'approche de Blue Ventures en matière d'accès et d'utilisation des données repose sur :
+point64,Éthique : respecter la vie privée et l'appropriation communautaire
+point65,Transparence : des règles claires sur qui peut accéder à quelles données
+point66,Équité : veiller à ce que les données apportent une valeur ajoutée aux communautés
+point67,Collaboration : soutenir la prise de décision partagée
+point68,Protection : sauvegarde des informations sensibles
+p28.9,"Notre objectif est de veiller à ce que les données renforcent le leadership communautaire, soutiennent la pêche durable et contribuent à des écosystèmes océaniques plus sains — sans mettre les individus ou les communautés en danger."
 newdata,Validation des Données Nouvelles et marquées
 p29,"Dans les enquêtes, certaines questions permettent aux enquêteurs d'ajouter un nouveau pêcheur, acheteur, collecteur de données, site de débarquement, espèce ou “autre.” Les informations de ces options sont de nouveaux points de données et doivent être vérifiées avant d'être poussées vers l'ensemble de données final, visualisées dans le tableau de bord et ajoutées aux fichiers de référence. Il existe également des contraintes sur le poids, le prix et la longueur d'une espèce, et si les données collectées sont inférieures ou supérieures à ces contraintes, ces valeurs sont signalées pour examen. Les contraintes de poids et de prix sont définies par les partenaires dans le min_max_ref. Les contraintes de longueur des espèces sont fixées par l'équipe à l'aide de paramètres biologiques."
 p30,"Toutes les données qui transitent par le système de données sur les pêches sont validées dans Smartsheet. Toutes ces entrées nouvelles ou signalées sont envoyées au tableau de validation de Smartsheet pour que les équipes de terrain les valident. Les tableaux de validation sont spécifiques aux partenaires et sont accessibles via des demandes de mise à jour envoyées par e-mail ou en visitant les liens d'affichage dynamique qui vous sont fournis. Les chefs d'équipe sur le terrain seront informés par e-mail lorsque les données doivent être validées dans les tableaux de validation. Une fois les données vérifiées dans les tableaux, nous ajouterons de nouvelles informations au fichier de référence et apporterons les corrections nécessaires à l'ensemble de données maître."

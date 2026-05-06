@@ -95,22 +95,59 @@ point34,"Nomes dos Pescadores, compradores e colectores de dados"
 point35,Nomes dos inquiridos para quaisquer inquéritos
 datasharing,Partilha De Dados
 p26,"O fisheries data system foi concebido para simplificar a utilização dos seus dados e fornecer uma plataforma para o seu envolvimento ativo em esforços mais amplos de gestão e conservação das pescas. Os dados agregados recolhidos de forma colaborativa entre os parceiros podem fornecer informações poderosas para monitorizar a pesca, avaliar estratégias de gestão, orientar a tomada de decisões a nível local e nacional, compreender as mudanças regionais e identificar potenciais serviços financeiros."
-p27,"Reconhecemos a importância crítica da propriedade e utilização dos dados para todos os parceiros contribuintes. O nosso objectivo é proporcionar-lhe flexibilidade na gestão e determinação da forma como os seus dados são utilizados. Ao selecionar um dos três níveis de permissão de uso de dados, você pode regular até que ponto seus dados são compartilhados com outros usuários. Você pode adaptar os níveis de permissão com base nos tipos de dados e, mais importante, você tem a liberdade de ajustar seu nível de permissão de dados a qualquer momento. As informações pessoais identificáveis (PII) e os dados relativos às capturas de pesca são propriedade de pescadores e compradores de peixe e nunca serão partilhados sem o consentimento prévio. Ao escolher um nível de autorização de utilização de dados, confirma que foram obtidas autorizações individuais tanto de pescadores como de compradores de peixe."
-p28,Todos os dados estão actualmente definidos para o Nível 1 - Privado. Os usuários terão a oportunidade de ajustar seus níveis de permissão conforme necessário.
-level1,Nível 1-Privado
-point36,Os dados são estritamente para fins internos do Contribuinte de dados original.
-point37,Os dados estarão disponíveis para download pelo contribuinte de dados original.
-point38,Os dados não serão incluídos nas análises regionais fornecidas no painel.
-point39,A partilha ou distribuição não autorizada dos dados a terceiros é estritamente proibida.
-level2,Nível 2-Partilha com outros contribuintes de dados
-point40,Os dados de nível de viagem estão disponíveis para download por outros contribuintes de dados.
-point41,Resumos e visualizações de dados estarão disponíveis para outros contribuidores de dados.
-point42,Os dados serão incluídos nas análises regionais no painel.
-level3,Nível 3-partilhar com todos os utilizadores
-point43,Os dados de nível de viagem estão disponíveis para download por todos os utilizadores.
-point44,Resumos e visualizações de dados estarão disponíveis para todos os utilizadores.
-point45,Os dados serão incluídos nas análises regionais no painel.
-point46,O contribuinte dos dados originais pode especificar quaisquer limitações ou condições de Utilização aplicáveis a todos os utilizadores.
+dataaccess,Abordagem de Acesso e Uso de Dados
+level1,Por que coletamos e usamos dados
+p27,"A Blue Ventures trabalha com comunidades costeiras para melhorar a gestão das pescas, reforçar os meios de subsistência e proteger os ambientes marinhos. Os dados — como registos de capturas, inquéritos de habitat, dados socioeconómicos e observações dos pescadores — ajudam as comunidades e parceiros:"
+point36,Compreender as tendências na pesca e nos ecossistemas
+point37,Tomar decisões informadas sobre a gestão de recursos
+point38,Acompanhar o progresso e medir o impacto das ações locais
+point39,Fortalecer o planeamento financeiro e a resiliência para agregados familiares e pequenas empresas
+p28,"Os dados são sempre recolhidos com respeito pelos direitos, conhecimento e prioridades das pessoas que os geram."
+level2,A quem pertencem os dados?
+p28.1,"Os pescadores, compradores de peixe, agregados familiares de pescadores e grupos de recursos comunitários são proprietários de todos os dados que fornecem. A Blue Ventures e os seus parceiros não são proprietários dos dados — atuamos como gestores, ajudando as comunidades a recolher dados de forma segura e ética, a compreender e utilizar os seus próprios dados, a decidir como os seus dados devem ser partilhados e a proteger a sua privacidade e direitos. Esta abordagem garante que os dados apoiem o bem-estar e a tomada de decisões da comunidade."
+level3,Consentimento: Como Garantimos que a Participação é Voluntária
+p28.2,"Toda a recolha de dados segue o Consentimento Livre, Prévio e Informado (CLPI):"
+point40,Livre – Sem pressão ou coerção
+point41,Prévio – O consentimento é dado antes de qualquer recolha de dados
+point42,"Informado – As pessoas compreendem o propósito, os riscos e os benefícios"
+p28.3,"A informação é partilhada em línguas locais utilizando formatos simples e acessíveis. As pessoas podem retirar o consentimento a qualquer momento, e as suas informações de identificação serão removidas dos conjuntos de dados ativos. Para proteger a privacidade e, ao mesmo tempo, promover a aprendizagem partilhada, distinguimos entre duas categorias:"
+level4,"A. Dados Restritos - Informação privada ou sensível, tal como:"
+point43,Nomes ou detalhes de identificação
+point44,Registos de transações individuais
+point45,Dados de rendimentos ao nível do agregado familiar
+point46,Localizações específicas de zonas de pesca
+p28.4,"Estes dados são armazenados em sistemas seguros que requerem início de sessão, sendo apenas acessíveis por funcionários autorizados da BV e parceiros. Os dados restritos nunca são partilhados publicamente e são utilizados apenas para fins de validação de dados, monitorização de programas e relatórios internos."
+level5,"B. Dados Colaborativos - Informação anónima e agregada, tal como:"
+point48,Desembarques totais ou médios por aldeia
+point49,Tendências da composição de espécies
+point50,Indicadores de esforço e produção
+point51,Resumos que não podem identificar indivíduos
+p28.5,"Estes dados são partilhados em painéis abertos que não requerem início de sessão, sendo acessíveis a qualquer pessoa com a ligação (pescadores, parceiros, decisores políticos, comunidades e o público). Os dados colaborativos são partilhados através de painéis abertos para apoiar a transparência, a aprendizagem coletiva e melhores decisões de gestão."
+p28.6,"Todos os dados colaborativos são partilhados sob uma licença Creative Commons Atribuição-NãoComercial (CC BY-NC 4.0). Isto protege a privacidade dos indivíduos, garantindo o reconhecimento das comunidades como detentores de conhecimento. Isto significa:"
+point52,Os dados podem ser utilizados para fins não comerciais
+point53,"Quaisquer resumos ou reutilizações devem creditar ""pescadores, compradores de peixe e comunidades participantes, apoiados por parceiros contribuintes"""
+point54,"Não são utilizados nomes pessoais, uma vez que informações privadas não estão incluídas"
+level6,Como Protegemos os Dados
+p28.7,A Blue Ventures utiliza servidores seguros e encriptados (AWS) e práticas de segurança padrão da indústria.
+point55,Controlo de acesso baseado em funções
+point56,Armazenamento seguro de dados
+point57,Cópias de segurança e monitorização regulares
+point58,Resposta rápida a quaisquer potenciais violações
+level7,Direitos da Comunidade
+p28.8,Reuniões de feedback são realizadas regularmente para que as comunidades possam validar os resultados antes de serem partilhados. As comunidades têm o direito de:
+point59,Fazer perguntas sobre como os dados são utilizados
+point60,Solicitar resumos ou explicações
+point61,Rever indicadores voltados para o público
+point62,Contestar dados incorretos
+point63,Levantar preocupações ou reclamações
+level8,O Nosso Compromisso
+level9,A abordagem da Blue Ventures ao acesso e uso de dados baseia-se em:
+point64,Ética – respeitar a privacidade e a propriedade da comunidade
+point65,Transparência – regras claras sobre quem pode aceder a que dados
+point66,Equidade – garantir que os dados trazem valor de volta às comunidades
+point67,Colaboração – apoiar a tomada de decisões partilhada
+point68,Proteção – salvaguardar informações sensíveis
+p28.9,"O nosso objetivo é garantir que os dados fortalecem a liderança da comunidade, apoiam pescarias sustentáveis e contribuem para ecossistemas oceânicos mais saudáveis — sem colocar indivíduos ou comunidades em risco."
 newdata,Validação de dados novos e sinalizados
 p29,"Nas pesquisas, algumas perguntas permitem que os enumeradores adicionem um novo pescador, comprador, coletor de dados, local de pouso, espécie ou ""outro.""As informações dessas opções são novos pontos de dados e devem passar por verificação antes de serem enviadas para o conjunto de dados final, visualizadas no painel e adicionadas aos arquivos de referência. Existem também restrições relativas ao peso, preço e comprimento de uma espécie e, se os dados recolhidos forem inferiores ou superiores a essas restrições, esses valores são sinalizados para revisão. As restrições relativas ao peso e ao preço são definidas pelos parceiros no min_max_ref. As restrições de comprimento das espécies são definidas pela equipa utilizando parâmetros biológicos."
 p30,"Todos os dados que fluem através do sistema de dados das pescas são validados no Smartsheet. Qualquer uma dessas entradas novas ou sinalizadas é enviada para a tabela de validação no Smartsheet para que as equipes de campo validem. As tabelas de controlo de qualidade são específicas do parceiro e podem ser acedidas através de pedidos de atualização enviados para o seu e-mail ou visitando as ligações de visualização dinâmica que lhe são fornecidas. Os líderes da equipa de campo serão notificados por e-mail quando os dados precisarem de ser validados nas tabelas. Uma vez verificados os dados nas tabelas de validação, acrescentaremos novas informações ao ficheiro de referência e forneceremos as correcções necessárias ao conjunto de dados principal."

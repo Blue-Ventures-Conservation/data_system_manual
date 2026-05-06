@@ -95,22 +95,59 @@ point34,"Anaran'ny mpanjono, mpividy ary mpanangona antotan'isa"
 point35,Anaran'ny mpamaly amin'ny fanadihadiana rehetra
 datasharing,Fizarana Angona
 p26,"Ny ""fisheries data system"" dia natao hanatsarana ny fampiasana ny antotan'isa-nao ary hanome sehatra ho an'ny fandraisanao anjara mavitrika amin'ny fitantanana ny jono sy ny ezaka fiarovana. Ny antotan'isa voaangona miaraka amin'ny mpiara-miombon'antoka dia afaka manome fomba fijery matanjaka amin'ny fanaraha-maso ny jono, ny fanombanana ny paikady fitantanana, ny fitarihana ny fandraisana fanapahan-kevitra eo amin'ny sehatra eo an-toerana sy nasionaly, ny fahatakarana ny fiovan'ny faritra, ary ny famantarana ny tolotra ara-bola mety hitranga."
-p27,"Fantatsika ny maha-zava-dehibe ny fananana antotan'isa sy ny fampiasana ho an'ny mpiara-miombon'antoka rehetra mandray anjara. Ny tanjonay dia ny hanome anao fahalalahana amin'ny fitantanana sy famaritana ny fomba fampiasana ny angona-nao. Amin'ny fisafidianana ny iray amin'ireo ambaratonga fahazoan-dàlana fampiasana antotan'isa telo dia azonao atao ny mifehy ny halehiben'ny fizarana ny antotan'isa-nao amin'ireo mpampiasa hafa. Azonao atao ny mampifanaraka ny haavon'ny fahazoan-dàlana mifototra amin'ny karazana data, ary ny tena zava-dehibe dia manana fahalalahana hanitsy ny haavon'ny fahazoan-dàlana amin'ny fotoana rehetra ianao. Ny fahalalana azo fantarina manokana (PII) sy ny antotan'isa momba ny jono dia an'ny mpanjono sy ny mpividy trondro ary tsy hozaraina mihitsy raha tsy misy ny fanekena mialoha. Amin'ny fisafidianana ny haavon'ny fahazoan-dàlana amin'ny fampiasana antotan'isa, dia manamafy ianao fa ny fahazoan-dàlana tsirairay dia azo avy amin'ny mpanjono sy ny mpividy trondro."
-p28,Ny antotan'isa rehetra dia napetraka amin'ny Ambaratonga 1-Private. Hanana fahafahana hanitsy ny ambaratonga fahazoan-dàlana araka izay ilaina ny mpampiasa.
-level1,Ambaratonga 1 Miafina
-point36,Ny antotan'isa dia natao ho an'ny tanjona anatiny amin'ny mpandray anjara tany am-boalohany.
-point37,Ho azon'ny mpandray anjara amin'ny angona antotan'isa tany am-boalohany alaina ny antotan'isa.
-point38,Tsy ho tafiditra ao anatin'ny fanadihadiana isam-paritra omena ao amin'ny dashboard ny angona.
-point39,Voarara tanteraka ny fizarana tsy nahazoana alalana ny antotan'isa amin'ny antoko ivelany.
-level2,Ambaratonga 2-Zarao Amin'ireo Mpandray Anjara angona antotan'isa Hafa
-point40,Ny antontan'isa momba ny fandehanana dia afaka alain'ireo mpandray anjara amin'ny angona antontan'isa hafa.
-point41,Ho hitan'ireo mpandray anjara amin'ny angona antotan'isa hafa ny famintinana sy ny sarin'ireo antotan'isa voaangona.
-point42,Ny antotan'isa dia hampidirina amin'ny famakafakana isam-paritra ao amin'ny dashboard.
-level3,Ambaratonga 3-Zarao Amin'ny Mpampiasa Rehetra
-point43,Azo alaina ho an'ny mpampiasa rehetra ny antotan'isa momba ny dia.
-point44,Ho hita ho an'ny mpampiasa rehetra ny famintinana sy ny sary an'ireo antotan'isa.
-point45,Ny antotan'isa dia hampidirina amin'ny famakafakana isam-paritra ao amin'ny dashboard.
-point46,Ny mpandray anjara amin'ny angona antotan'isa tany am-boalohany dia afaka mamaritra ny fetran'ny fampiasana na ny fepetra azo ampiharina ny antotan'isa amin'ny mpampiasa rehetra.
+dataaccess,Fomba Fidirana sy Fampiasana ny Angon-drakitra
+level1,Nahoana Isika no Manangona sy Mampiasa Angon-drakitra
+p27,"Ny Blue Ventures dia miara-miasa amin'ny vondrom-piarahamonina amorontsiraka hanatsarana ny fitantanana ny jono, hanamafisana ny fivelomana ary hiarovana ny tontolo iainana an-dranomasina. Ny angon-drakitra—toy ny firaketam-bokatra, fanadihadiana ny toeram-ponenana, ara-tsosialy sy ara-toekarena, ary ny fanamarihana avy amin'ny mpanjono—dia manampy ny vondrom-piarahamonina sy ny mpiara-miombon'antoka:"
+point36,Mahatakatra ny fironana amin'ny jono sy ny tontolo iainana
+point37,Handray fanapahan-kevitra voahevitra tsara momba ny fitantanana ny loharanon-karena
+point38,Hanara-maso ny fivoarana sy handrefy ny fiantraikan'ny hetsika eo an-toerana
+point39,Hanamafy ny drafitra ara-bola sy ny faharetana ho an'ny tokantrano sy ny orinasa madinika
+p28,"Ny angon-drakitra dia angonina foana amim-panajana ny zo, ny fahalalana ary ny laharam-pahamehan'ny olona namokatra izany."
+level2,Iza no Tompon'ny Angon-drakitra?
+p28.1,"Ny mpanjono, ny mpividy trondro, ny tokantranon'ny mpanjono, ary ny vondrona misahana ny harena eo an-toerana dia tompon'ny angon-drakitra rehetra omeny. Ny Blue Ventures sy ny mpiara-miombon'antoka dia tsy tompon'ny angon-drakitra—miasa ho mpitantana izahay, manampy ny vondrom-piarahamonina hanangona angon-drakitra amin'ny fomba azo antoka sy ara-drariny, mahatakatra sy mampiasa ny angon-drakitra ananany, manapa-kevitra ny fomba tokony hizarana ny angon-drakitra, ary miaro ny fiainany manokana sy ny zony. Io fomba fiasa io dia miantoka fa ny angon-drakitra dia manohana ny mahasoa ny fiarahamonina sy ny fandraisana fanapahan-kevitra."
+level3,Fanekena: Ahoana no hiantohana fa an-tsitrapo ny fandraisana anjara
+p28.2,"Ny fanangonana angon-drakitra rehetra dia manaraka ny Fanekena Malalaka, Mialoha ary Voahevitra (FPIC):"
+point40,Malalaka – Tsy misy fanerena na fampihorohoroana
+point41,Mialoha – Omena ny fanekena alohan'ny hanangonana angon-drakitra
+point42,"Voahevitra – Mahatakatra ny tanjona, ny loza mety haterany, ary ny tombontsoa ny olona"
+p28.3,"Zaraina amin'ny fiteny eo an-toerana ny vaovao amin'ny alalan'ny endrika tsotra sy mora azo. Azo esorina amin'ny fotoana rehetra ny fanekena, ary hofafana ao amin'ny angon-drakitra mavitrika ny mombamomba azy ireo. Mba hiarovana ny fiainana manokana sady hampiroboroboana ny fianarana miaraka, dia manavaka sokajy roa izahay:"
+level4,"A. Angon-drakitra Voafetra - Fampahalalana manokana na saro-pady, toy ny:"
+point43,Anarana na antsipiriany ahafantarana
+point44,Firaketana an-tsoratra momba ny fifampivarotana isam-batan'olona
+point45,Angon-drakitra momba ny fidiram-bolan'ny tokantrano
+point46,Toerana manokana anjonoana
+p28.4,"Ireo angon-drakitra ireo dia tehirizina anaty rafitra azo antoka mila fidirana, izay tsy azon'ny mpiasan'ny BV sy ny mpiara-miombon'antoka nahazo lalana ihany idirana. Ny angon-drakitra voafetra dia tsy zaraina ampahibemaso na rahoviana na rahoviana ary ampiasaina fotsiny amin'ny fanamarinana angon-drakitra, fanaraha-maso ny fandaharana, ary tatitra anatiny."
+level5,"B. Angon-drakitra Iombonana - Tsy mitonona anarana, fampahalalana natambatra toy ny:"
+point48,Fitambaran na salan'isan'ny trondro azo isaky ny tanàna
+point49,Fironana amin'ny firafitry ny karazan-trondro
+point50,Tondro momba ny ezaka sy ny famokarana
+point51,Famintinana izay tsy ahafahana mamantatra ny isam-batan'olona
+p28.5,"Ireo angon-drakitra ireo dia zaraina amin'ny alalan'ny sehatra malalaka izay tsy mila fidirana, ary azon'ny rehetra manana ny rohy idirana (mpanjono, mpiara-miombon'antoka, mpanao politika, vondrom-piarahamonina, ary ny vahoaka). Ny angon-drakitra iraisana dia zaraina amin'ny alalan'ny sehatra malalaka mba hanohanana ny mangarahara, ny fianarana miaraka, ary ny fanapahan-kevitra tsara kokoa amin'ny fitantanana."
+p28.6,Ny angon-drakitra iombonana rehetra dia zaraina eo ambanin'ny fahazoan-dàlana Creative Commons Attribution-NonCommercial (CC BY-NC 4.0). Miaro ny fiainan'ny isam-batan'olona izany sady miantoka ny fankatoavana ny fiarahamonina ho mpihazona fahalalana. Izany dia midika hoe:
+point52,Azo ampiasaina amin'ny tanjona tsy ara-barotra ny angon-drakitra
+point53,"Ny famintinana na fampiasana indray dia tsy maintsy manome fankasitrahana ny “mpanjono, mpividy trondro, ary ny vondrom-piarahamonina mandray anjara, tohanan'ny mpiara-miombon'antoka mpandray anjara”"
+point54,"Tsy misy anarana manokana ampiasaina, satria tsy ampidirina ny fampahalalana manokana"
+level6,Ahoana no Fiarovanay ny Angon-drakitra
+p28.7,"Ny Blue Ventures dia mampiasa mpizara voaaro, voahidy (AWS) ary fomba fanao fiarovana manara-penitra eo amin'ny sehatry ny asa."
+point55,Fanaraha-maso ny fidirana mifototra amin'ny anjara asa
+point56,Fitehirizana angon-drakitra voaaro
+point57,Fanaovana dika mitovy sy fanaraha-maso tsy tapaka
+point58,Famaliana haingana izay mety ho fanitsakitsahana
+level7,Zon'ny Fiarahamonina
+p28.8,Atao tsy tapaka ny fivoriana fanehoan-kevitra mba hahafahan'ny fiarahamonina manamarina ny valiny alohan'ny hizarana izany. Manana zo ny fiarahamonina:
+point59,Hametraka fanontaniana momba ny fomba fampiasana ny angon-drakitra
+point60,Mangataka famintinana na fanazavana
+point61,Hijery ireo tondro ho an'ny besinimaro
+point62,Hanohitra ny angon-drakitra diso
+point63,Haneho ahiahy na fitarainana
+level8,Ny Fanoloran-tenanay
+level9,Ny fomba fiasan'ny Blue Ventures manoloana ny fidirana sy ny fampiasana angon-drakitra dia mifototra amin'ny:
+point64,Etika – manaja ny fiainana manokana sy ny fananan'ny fiarahamonina
+point65,Fangaraharana – fitsipika mazava momba izay afaka miditra amin'ny angon-drakitra inona
+point66,Fitoviana – miantoka fa mitondra lanja miverina ho an'ny fiarahamonina ny angon-drakitra
+point67,Fiaraha-miasa – manohana ny fandraisana fanapahan-kevitra iombonana
+point68,Fiarovana – fiarovana ny fampahalalana saro-pady
+p28.9,"Ny tanjonay dia ny miantoka fa ny angon-drakitra dia manamafy ny fitarihana eo anivon'ny fiarahamonina, manohana ny jono maharitra, ary mitondra anjara biriky amin'ny tontolo iainana an-dranomasina salama kokoa—tsy misy fampidirana loza ho an'ny isam-batan'olona na ny fiarahamonina."
 newdata,Fanamarinana Ny antotan'isa vaovao sy Voamarika
 p29,"Ao amin'ny fanadihadiana, ny fanontaniana sasany dia mamela ny mpanisa hanisy mpanjono vaovao, mpividy, mpanangona antotan'isa, toerana fahatongavana, karazany, na ""hafa.""Ny fampahalalana avy amin'ireo safidy ireo dia antotan'isa vaovao ary tsy maintsy iharan'ny fanamarinana alohan'ny hampidirana azy ireo amin'ny antotan'isa farany, hita ao amin'ny dashboard, ary ampiana amin'ireo rakitra referansa. Misy ihany koa ny famerana ny lanjany, ny vidiny ary ny halavan'ny karazana tsirairay, ary raha ambany na mihoatra ireo famerana ireo ny antotan'isa nangonina, dia voamarika izany mba hojerena sy hamarinina. Ny famerana ny lanja sy ny vidiny dia napetraky ny mpiara-miasa ao amin'ny min_max_ref. Ny ekipa dia mametraka ny fetran'ny halavan'ny karazana amin'ny alàlan'ny mari-pamantarana biolojika."
 p30,"Ny antotan'isa rehetra izay mandeha amin'ny alalan'ny paikady angona antotan'isa momba ny jono dia voamarina ao amin'ny Smartsheet. Ny iray amin'ireo fidirana vaovao na misy sainam-pirenena ireo dia alefa any amin'ny latabatra fanamarinana ao amin'ny Smartsheet mba hanamarinana azy. Ny fanaraha-maso kalitao dia ho an'ny mpiara-miasa manokana ary azo idirana amin'ny alàlan'ny fangatahana fanavaozana alefa amin'ny mailakao na amin'ny fitsidihana ireo rohy ""Dyamic View"" omena anao. Ny mpitarika ny ekipa eny an-kianja dia hampandrenesina amin'ny alàlan'ny mailaka rehefa mila voamarina ao amin'ny tabilao ny angona. Raha vantany vao voamarina ao amin'ny tabilao ny antotan'isa, dia hampiditra fampahalalana vaovao amin'ny ""reference file"" izahay ary hanome fanitsiana ilaina amin'ny antotan'isa fototra."

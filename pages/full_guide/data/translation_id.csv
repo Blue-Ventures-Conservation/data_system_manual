@@ -95,22 +95,59 @@ point34,"Nama nelayan, pembeli, dan pencacah data"
 point35,Nama responden untuk survei apa pun
 datasharing,Berbagi Data
 p26,"Sistem data perikanan dirancang untuk merampingkan pemanfaatan data Anda dan menyediakan platform untuk keterlibatan aktif Anda dalam upaya pengelolaan dan konservasi perikanan yang lebih luas. Data gabungan yang dikumpulkan secara kolaboratif di seluruh mitra dapat menghasilkan wawasan yang kuat untuk memantau perikanan, menilai strategi pengelolaan, memandu pengambilan keputusan di tingkat lokal dan nasional, memahami perubahan regional, dan mengidentifikasi layanan keuangan potensial."
-p27,"Kami menyadari pentingnya kepemilikan dan penggunaan data untuk semua mitra yang berkontribusi. Tujuan kami adalah memberi Anda fleksibilitas dalam mengelola dan menentukan bagaimana data Anda digunakan. Dengan memilih salah satu dari tiga tingkat izin penggunaan data, Anda dapat mengatur sejauh mana data Anda dibagikan dengan pengguna lain. Anda dapat menyesuaikan tingkat izin berdasarkan tipe data, dan yang terpenting, Anda memiliki kebebasan untuk menyesuaikan tingkat izin data Anda kapan saja. Informasi identitas pribadi (IIP) dan data tangkapan ikan dimiliki oleh nelayan dan pembeli ikan dan tidak akan pernah dibagikan tanpa persetujuan sebelumnya. Dengan memilih tingkat izin penggunaan data, Anda mengonfirmasi bahwa izin individual telah diperoleh dari nelayan dan pembeli ikan."
-p28,Semua data saat ini disetel ke Level 1-Pribadi. Pengguna akan memiliki kesempatan untuk menyesuaikan tingkat izin mereka sesuai kebutuhan.
-level1,Tingkat 1-Pribadi
-point36,Data hanya untuk tujuan internal kontributor asli dari data.
-point37,Data akan tersedia untuk diunduh oleh kontributor asli dari data.
-point38,Data tidak akan disertakan dalam analisis regional yang disediakan di dasbor.
-point39,Dilarang keras membagikan atau mendistribusikan data secara tidak sah kepada pihak eksternal.
-level2,Level 2-Berbagi dengan Kontributor Data Lainnya
-point40,Data tingkat trip (perjalanan penangkapan ikan) tersedia untuk diunduh oleh kontributor data lainnya.
-point41,Ringkasan dan visualisasi data akan tersedia untuk kontributor data lainnya.
-point42,Data akan dimasukkan dalam analisis regional di dasbor.
-level3,Level 3-Berbagi dengan Semua Pengguna
-point43,Data tingkat trip (perjalanan penangkapan ikan) tersedia untuk diunduh semua pengguna.
-point44,Ringkasan dan visualisasi data akan tersedia untuk semua pengguna.
-point45,Data akan dimasukkan dalam analisis regional di dasbor.
-point46,Kontributor asli dari data dapat menentukan batasan atau ketentuan penggunaan apa pun yang berlaku untuk semua pengguna.
+dataaccess,Pendekatan Akses & Penggunaan Data
+level1,Mengapa Kami Mengumpulkan dan Menggunakan Data
+p27,"Blue Ventures bekerja sama dengan masyarakat pesisir untuk memperbaiki pengelolaan perikanan, memperkuat mata pencaharian, dan melindungi lingkungan laut. Data—seperti catatan hasil tangkapan, survei habitat, sosial ekonomi, dan observasi dari nelayan—membantu masyarakat dan mitra:"
+point36,Memahami tren dalam perikanan dan ekosistem
+point37,Membuat keputusan yang terinformasi tentang pengelolaan sumber daya
+point38,Melacak kemajuan dan mengukur dampak dari tindakan lokal
+point39,Memperkuat perencanaan keuangan dan ketahanan untuk rumah tangga dan usaha kecil
+p28,"Data selalu dikumpulkan dengan menghormati hak, pengetahuan, dan prioritas orang-orang yang menghasilkannya."
+level2,Siapa Pemilik Data?
+p28.1,"Nelayan, pembeli ikan, rumah tangga nelayan, dan kelompok sumber daya masyarakat memiliki semua data yang mereka berikan. Blue Ventures dan para mitra tidak memiliki data tersebut—kami bertindak sebagai pengelola, membantu masyarakat mengumpulkan data secara aman dan etis, memahami dan menggunakan data mereka sendiri, memutuskan bagaimana data mereka harus dibagikan, dan melindungi privasi serta hak-hak mereka. Pendekatan ini memastikan bahwa data mendukung kesejahteraan masyarakat dan pengambilan keputusan."
+level3,Persetujuan: Bagaimana Kami Memastikan Partisipasi Bersifat Sukarela
+p28.2,Semua pengumpulan data mengikuti Prinsip Persetujuan Atas Dasar Informasi Awal Tanpa Paksaan (FPIC):
+point40,Tanpa Paksaan (Free) – Tidak ada tekanan atau paksaan
+point41,Di Awal (Prior) – Persetujuan diberikan sebelum pengumpulan data apa pun
+point42,"Informasi (Informed) – Orang memahami tujuan, risiko, dan manfaatnya"
+p28.3,"Informasi dibagikan dalam bahasa lokal menggunakan format yang sederhana dan mudah diakses. Orang-orang dapat menarik persetujuan kapan saja, dan informasi identitas mereka akan dihapus dari kumpulan data aktif. Untuk melindungi privasi sekaligus mendorong pembelajaran bersama, kami membedakan dua kategori:"
+level4,"A. Data Terbatas - Informasi pribadi atau sensitif, seperti:"
+point43,Nama atau rincian identitas
+point44,Catatan transaksi individu
+point45,Data pendapatan tingkat rumah tangga
+point46,Lokasi daerah penangkapan ikan yang spesifik
+p28.4,"Data ini disimpan dalam sistem aman yang memerlukan login, yang hanya dapat diakses oleh staf BV dan mitra yang berwenang. Data terbatas tidak pernah dibagikan secara publik dan hanya digunakan untuk tujuan validasi data, pemantauan program, dan pelaporan internal."
+level5,B. Data Kolaboratif - Informasi anonim yang digabungkan seperti:
+point48,Total atau rata-rata pendaratan tangkapan per desa
+point49,Tren komposisi spesies
+point50,Indikator upaya dan produksi
+point51,Ringkasan yang tidak dapat mengidentifikasi individu
+p28.5,"Data ini dibagikan di dasbor terbuka yang tidak memerlukan login, yang dapat diakses oleh siapa saja yang memiliki tautannya (nelayan, mitra, pembuat kebijakan, masyarakat, dan publik). Data kolaboratif dibagikan melalui dasbor terbuka untuk mendukung transparansi, pembelajaran bersama, dan keputusan pengelolaan yang lebih baik."
+p28.6,Semua data kolaboratif dibagikan di bawah lisensi Creative Commons Attribution–NonCommercial (CC BY-NC 4.0). Hal ini melindungi privasi individu sambil memastikan pengakuan masyarakat sebagai pemegang pengetahuan. Ini berarti:
+point52,Data tersebut dapat digunakan untuk tujuan non-komersial
+point53,"Segala ringkasan atau penggunaan kembali harus mencantumkan penghargaan kepada “nelayan, pembeli ikan, dan masyarakat yang berpartisipasi, didukung oleh mitra kontributor”"
+point54,"Tidak ada nama pribadi yang digunakan, karena informasi pribadi tidak disertakan"
+level6,Bagaimana Kami Melindungi Data
+p28.7,Blue Ventures menggunakan peladen yang aman dan terenkripsi (AWS) serta praktik keamanan standar industri.
+point55,Kontrol akses berbasis peran
+point56,Penyimpanan data yang aman
+point57,Pencadangan dan pemantauan rutin
+point58,Respons cepat terhadap potensi pelanggaran keamanan
+level7,Hak-hak Masyarakat
+p28.8,Pertemuan umpan balik diadakan secara rutin agar masyarakat dapat memvalidasi temuan sebelum dibagikan. Masyarakat memiliki hak untuk:
+point59,Bertanya tentang bagaimana data digunakan
+point60,Meminta ringkasan atau penjelasan
+point61,Meninjau indikator yang ditujukan untuk publik
+point62,Menyanggah data yang tidak benar
+point63,Menyampaikan kekhawatiran atau keluhan
+level8,Komitmen Kami
+level9,Pendekatan Blue Ventures terhadap akses dan penggunaan data berlandaskan pada:
+point64,Etika – menghormati privasi dan kepemilikan masyarakat
+point65,Transparansi – aturan yang jelas tentang siapa yang dapat mengakses data apa
+point66,Kesetaraan – memastikan data memberikan nilai kembali kepada masyarakat
+point67,Kolaborasi – mendukung pengambilan keputusan bersama
+point68,Perlindungan – menjaga informasi sensitif
+p28.9,"Tujuan kami adalah memastikan bahwa data memperkuat kepemimpinan masyarakat, mendukung perikanan berkelanjutan, dan berkontribusi pada ekosistem laut yang lebih sehat—tanpa membahayakan individu atau masyarakat."
 newdata,Memvalidasi Data Baru dan yang Ditandai
 p29,"Dalam survei, beberapa pertanyaan memungkinkan pencacah untuk menambahkan nelayan baru, pembeli, pencacah data, lokasi pendaratan, spesies, atau ""lainnya"". Informasi dari opsi ini adalah data baru dan harus menjalani verifikasi sebelum diteruskan ke kumpulan data akhir, divisualisasikan di dasbor, dan ditambahkan ke file referensi. Ada juga ambang batas yang ditetapkan pada berat, harga, dan panjang suatu spesies, dan jika data yang dikumpulkan di bawah atau di atas ambang batas ini, nilai-nilai ini ditandai untuk ditinjau. Ambang batas berat dan harga ditetapkan oleh mitra dalam min_max_ref. Ambang batas panjang spesies ditetapkan oleh tim menggunakan parameter biologis."
 p30,"Semua data yang mengalir melalui sistem data perikanan divalidasi dalam Smartsheet. Salah satu entri baru atau yang ditandai ini dikirim ke tabel validasi di Smartsheet untuk divalidasi oleh tim lapangan. Tabel validasi bersifat mitra spesifik dan dapat diakses melalui permintaan pembaruan yang dikirim ke email Anda atau dengan mengunjungi tautan Tampilan Dinamis yang disediakan untuk Anda. Pimpinan tim lapangan akan diberi tahu melalui email saat data perlu divalidasi dalam tabel. Setelah data diverifikasi dalam tabel validasi, kami akan menambahkan informasi baru ke file referensi dan memberikan koreksi yang diperlukan pada kumpulan data master."

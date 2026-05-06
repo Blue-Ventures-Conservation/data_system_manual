@@ -95,22 +95,59 @@ point34,"Majina ya wavuvi, wanunuzi, na wachukua takwimu"
 point35,Majina ya waliohojiwa kwa tafiti zozote
 datasharing,Kushiriki Data
 p26,"Mfumo wa data ya uvuvi umetengenezwa ili kuboresha matumizi ya takwimu yako na kutoa jukwaa kwa ushiriki wako wa moja kwa moja katika juhudi za usimamizi wa uvuvi na uhifadhi wa kina. Takwimu iliyokusanywa kwa ushirikiano kutoka kwa washirika inaweza kutoa ufahamu mkubwa kwa ufuatiliaji wa uvuvi, kutathmini mikakati ya usimamizi, kusaidia katika kufanya maamuzi kwenye viwango vya kijamii na kitaifa, kuelewa mabadiliko ya kikanda, na kutambua huduma za kifedha zinazowezekana."
-p27,"Tunatambua umuhimu mkubwa wa umiliki na matumizi ya takwimu kwa washirika wote wanaochangia. Lengo letu ni kukupa uhuru wa kusimamia na kuamua jinsi takwimu yako inavyotumiwa. Kwa kuchagua moja ya viwango vitatu vya idhini ya matumizi ya takwimu, unaweza kusimamia kiwango ambacho takwimu yako inashirikishwa na watumiaji wengine. Unaweza kubadilisha viwango vya idhini kulingana na aina za takwimu, na muhimu zaidi, una uhuru wa kurekebisha kiwango cha idhini ya takwimu wakati wowote. Maelezo ya kibinafsi yanayotambulika (PII) na takwimu ya mapato ya uvuvi inamilikiwa na wavuvi na wanunuzi wa samaki na kamwe haitashirikishwa bila idhini ya awali. Kwa kuchagua kiwango cha idhini ya matumizi ya takwimu, unathibitisha kuwa idhini binafsi imetolewa na wavuvi na wanunuzi wa samaki."
-p28,Data yote kwa sasa imewekwa kwenye Kiwango 1 - Binafsi. Watumiaji watapata fursa ya kurekebisha viwango vyao vya idhini kama inavyohitajika
-level1,Kiwango Cha 1-Binafsi
-point36,Takwimu ni kwa matumizi ya ndani tu ya mtoaji wa awali wa takwimu
-point37,Takwimu zitapatikana kwa kupakuliwa na mtoaji wa awali wa takwimu.
-point38,Takwimu hazitajumuishwa katika uchambuzi wa kikanda uliotolewa kwenye dashibodi.
-point39,Kugawana au usambazaji usioidhinishwa wa takwimu kwa watu/mashirika ya nje ni marufuku kabisa.
-level2,Kiwango cha 2-Shiriki Na Wachangiaji Wengine Wa Takwimu
-point40,Takwimu ya ngazi inapatikana kwa washiriki wengine wa takwimu kupakua
-point41,Muhtasari wa Takwimu na taswira zitapatikana kwa wachangiaji wengine.
-point42,Takwimu zitajumuishwa katika uchambuzi wa kikanda kwenye dashibodi.
-level3,Kiwango cha 3-Shiriki Na Watumiaji Wote
-point43,Takwimu ya kiwango inapatikana kwa watumiaji wote kupakua.
-point44,Muhtasari wa Takwimu na taswira zitapatikana kwa watumiaji wote.
-point45,Takwimu zitajumuishwa katika uchambuzi wa kikanda kwenye dashibodi.
-point46,Mtoaji halisi wa takwimu anaweza kubainisha vikwazo au masharti yoyote ya matumizi yanayofaa kwa watumiaji wote
+dataaccess,Mbinu ya Ufikiaji na Matumizi ya Data
+level1,Kwa Nini Tunakusanya na Kutumia Data
+p27,"Blue Ventures inafanya kazi na jamii za pwani ili kuboresha usimamizi wa uvuvi, kuimarisha maisha, na kulinda mazingira ya bahari. Data—kama vile rekodi za samaki waliovuliwa, tafiti za makazi, uchumi wa kijamii, na uchunguzi kutoka kwa wavuvi—husaidia jamii na washirika:"
+point36,Kuelewa mienendo katika uvuvi na mifumo ikolojia
+point37,Kufanya maamuzi sahihi kuhusu usimamizi wa rasilimali
+point38,Kufuatilia maendeleo na kupima athari za vitendo vya ndani
+point39,Kuimarisha mipango ya kifedha na ustahimilivu kwa kaya na biashara ndogo ndogo
+p28,"Data daima hukusanywa kwa kuheshimu haki, ujuzi, na vipaumbele vya watu wanaoizalisha."
+level2,Nani Anamiliki Data?
+p28.1,"Wavuvi, wanunuzi wa samaki, kaya za wavuvi, na vikundi vya rasilimali za jamii wanamiliki data zote wanazotoa. Blue Ventures na washirika hawamiliki data hiyo—tunafanya kazi kama wasimamizi, kusaidia jamii kukusanya data kwa usalama na kimaadili, kuelewa na kutumia data zao wenyewe, kuamua jinsi data zao zinapaswa kushirikiwa, na kulinda faragha na haki zao. Mbinu hii inahakikisha kwamba data inasaidia ustawi wa jamii na ufanyaji maamuzi."
+level3,Idhini: Jinsi Tunavyohakikisha Ushiriki ni wa Hiari
+p28.2,"Ukusanyaji wote wa data hufuata Idhini ya Hiari, ya Awali na ya Kujulishwa (FPIC):"
+point40,Hiari - Hakuna shinikizo au shuruti
+point41,Awali - Idhini hutolewa kabla ya ukusanyaji wa data yoyote
+point42,"Kujulishwa - Watu wanaelewa madhumuni, hatari, na faida"
+p28.3,"Taarifa hutolewa kwa lugha za kienyeji kwa kutumia miundo rahisi na inayofikika. Watu wanaweza kuondoa idhini wakati wowote, na taarifa zao za utambulisho zitaondolewa kutoka kwenye hifadhidata amilifu. Ili kulinda faragha huku tukikuza ujifunzaji wa pamoja, tunatofautisha kati ya makundi mawili:"
+level4,"A. Data Iliyo na Mipaka - Taarifa za kibinafsi au nyeti, kama vile:"
+point43,Majina au maelezo ya utambulisho
+point44,Rekodi za miamala ya mtu binafsi
+point45,Data ya mapato ya ngazi ya kaya
+point46,Maeneo maalum ya uvuvi
+p28.4,"Data hizi huhifadhiwa katika mifumo salama inayohitaji kuingia, ambayo inafikiwa tu na wafanyakazi walioidhinishwa wa BV na washirika. Data zilizozuiliwa hazishirikiwi hadharani kamwe na hutumiwa tu kwa uthibitishaji wa data, ufuatiliaji wa programu, na madhumuni ya ripoti za ndani."
+level5,"B. Data Shirikishi - Taarifa za bila majina, zilizojumlishwa kama vile:"
+point48,Jumla au wastani wa samaki waliovuliwa kwa kila kijiji
+point49,Mienendo ya utungaji wa spishi
+point50,Viashiria vya juhudi na uzalishaji
+point51,Muhtasari ambao hauwezi kuwatambua watu binafsi
+p28.5,"Data hizi zinashirikiwa kwenye dashibodi wazi ambazo hazihitaji kuingia, na zinaweza kufikiwa na yeyote aliye na kiungo (wavuvi, washirika, watunga sera, jamii, na umma). Data za ushirikiano zinashirikiwa kupitia dashibodi wazi ili kusaidia uwazi, kujifunza kwa pamoja, na maamuzi bora ya usimamizi."
+p28.6,Data zote shirikishi zinashirikiwa chini ya leseni ya Creative Commons Attribution–NonCommercial (CC BY-NC 4.0). Hii hulinda faragha ya watu binafsi huku ikihakikisha kutambuliwa kwa jamii kama wamiliki wa maarifa. Hii inamaanisha:
+point52,Data inaweza kutumika kwa madhumuni yasiyo ya kibiashara
+point53,"Muhtasari wowote au utumiaji tena lazima uwatambue ""wavuvi, wanunuzi wa samaki, na jamii zinazoshiriki, zikisaidiwa na washirika wanaochangia"""
+point54,"Hakuna majina ya kibinafsi yanayotumiwa, kwani habari za kibinafsi hazijumuishwi"
+level6,Jinsi Tunavyolinda Data
+p28.7,"Blue Ventures hutumia seva salama, zilizosimbwa kwa njia fiche (AWS) na mazoea ya kiusalama ya kiwango cha sekta."
+point55,Udhibiti wa ufikiaji kulingana na jukumu
+point56,Hifadhi salama ya data
+point57,Hifadhi rudufu na ufuatiliaji wa mara kwa mara
+point58,Majibu ya haraka kwa ukiukaji wowote unaowezekana
+level7,Haki za Jamii
+p28.8,Mikutano ya maoni hufanyika mara kwa mara ili jamii ziweze kuthibitisha matokeo kabla ya kushirikiwa. Jamii zina haki ya:
+point59,Kuuliza maswali kuhusu jinsi data inavyotumika
+point60,Kuomba muhtasari au maelezo
+point61,Kukagua viashiria vinavyoonekana kwa umma
+point62,Kupinga data isiyo sahihi
+point63,Kutoa wasiwasi au malalamiko
+level8,Ahadi Yetu
+level9,Mbinu ya Blue Ventures ya upatikanaji na matumizi ya data imejikita katika:
+point64,Maadili - kuheshimu faragha na umiliki wa jamii
+point65,Uwazi - sheria wazi za nani anaweza kupata data gani
+point66,Usawa - kuhakikisha data inarudisha thamani kwa jamii
+point67,Ushirikiano - kusaidia maamuzi ya pamoja
+point68,Ulinzi - kulinda habari nyeti
+p28.9,"Lengo letu ni kuhakikisha data inaimarisha uongozi wa jamii, inasaidia uvuvi endelevu, na inachangia katika mifumo ikolojia ya bahari yenye afya—bila kuweka watu binafsi au jamii hatarini."
 newdata,Kuthibitisha Takwimu Mpya na Iliyobainishwa
 p29,"Katika tafiti, baadhi ya maswali huruhusu wakusanyaji takwimu kuongeza mvuvi mpya, mnunuzi, mkusanyaji wa takwimu, mahali pa kutua, spishi, au ""nyingine."" Taarifa kutoka chaguo hizi ni hatua mpya za takwimu na lazima zithibitishwe kabla ya kujumuishwa kwenye seti ya mwisho ya takwimu, kuonyeshwa kwenye dashibodi, na kuongezwa kwenye faili za marejeleo. Pia kuna vikwazo vilivyowekwa kuhusu uzito, bei, na urefu wa spishi, na ikiwa data iliyokusanywa iko chini au juu ya vikwazo hivi, nambari hizi zinabandikwa kwa ajili ya kuangaliwa. Vikwazo vya uzito na bei vinawekwa na washirika katika min_max_ref. Vikwazo vya urefu wa spishi huthibitishwa na timu kwa kutumia vigezo vya kibayolojia."
 p30,"Takwimu yote inayopitia mfumo wa data za uvuvi inathibitishwa katika Smartsheet. Kuingizwa kwa vipengele vipya au vilivyobainishwa hivyo huchukuliwa kwenye jedwali la uthibitisho katika Smartsheet ili timu za uwanjani zithibitishe. jedwali la uthibitisho wa ubora ni maalum kwa washirika na inaweza kupatikana kupitia ombi la sasisho lililotumwa kwa barua pepe yako au kwa kutembelea viungo vya Maoni ya Dynamic View uliyopewa. Viongozi wa timu za uwanjani watapewa taarifa kupitia barua pepe wakati data inahitaji kuthibitishwa katika Jedwali ya udhibiti na ubora. Baada ya takwimu kuthibitishwa katika jedwali la uthibitisho, tutaweka taarifa mpya kwenye faili za marejeleo na kutoa marekebisho muhimu kwenye seti kuu ya takwimu."
