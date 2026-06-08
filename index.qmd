@@ -14,7 +14,7 @@ subtitle: "Guidance for data collection, management, validation and interpretati
 
 [![🏠🌏💹 Social and Economic Dashboard](images/socialdashboard.png)](https://blueventures.shinyapps.io/social-economic-dashboard/)
 
-[![🔢🐠📊 Fisheries Data Dashboard](images/fishdashboard.png)](https://blueventures.shinyapps.io/fisheries-dashboard/)
+[![🔢🐠📊 Fisheries Data Dashboard](images/fishdashboard.png)](https://blueventures.shinyapps.io/fisheries-dashboard-v2/)
 
 [![📆📓🎏Community Feedback Dashboard](images/communityfeedback.png)](https://blueventures.shinyapps.io/community-feedback/)
 :::
