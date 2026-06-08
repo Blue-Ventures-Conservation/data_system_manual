@@ -28,7 +28,7 @@ i18n
 
 [![🏠🌏💹 `r { i18n$t("p4") }`](images/socialdashboard.png)](https://blueventures.shinyapps.io/social-economic-dashboard/)
 
-[![🔢🐠📊 `r { i18n$t("p5") }`](images/fishdashboard.png)](https://blueventures.shinyapps.io/fisheries-dashboard/)
+[![🔢🐠📊 `r { i18n$t("p5") }`](images/fishdashboard.png)](https://blueventures.shinyapps.io/fisheries-dashboard-v2/)
 
 [![📆📓🎏 `r { i18n$t("p6") }`](images/communityfeedback.png)](https://blueventures.shinyapps.io/community-feedback/)
 :::
