@@ -154,7 +154,6 @@ website:
           - pages/species_guides/guide_GMB.qmd
           - pages/species_guides/guide_MDG_MHJ.qmd
           - pages/species_guides/guide_SEN.qmd
-    logo: "images/bv_logo.png"
 
 
 
