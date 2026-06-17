@@ -167,6 +167,11 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: false
+    grid: 
+      sidebar-width: 250px
+      body-width: 800px
+      margin-width: 250px
+      gutter-width: 1.5em
 
 
 filters:
