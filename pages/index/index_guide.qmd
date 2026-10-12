@@ -1,3 +1,246 @@
 ---
-title: Species Guides
+title: "Downloaded Data in R"
+subtitle: "Data Ingestion, Summarisation, Wrangling, and Visualisation in R"
+author: "Data Science"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    theme: cosmo
+    code-fold: false
+    df-print: paged
+execute:
+  warning: false
+  message: false
 ---
+
+## Executive Summary
+
+This report documents the workflow for importing, inspecting, cleaning, aggregating, and visualizing small-scale fisheries landings monitoring datasets. The workflow utilises the `readr`, `janitor`, `dplyr`, `tidyr`, and `ggplot2` packages.
+
+NOTE: If this is your first time using R or these packages, you'll need to install these packages. See 'Install Packages...' under 'Tools'.
+
+## Environment Setup
+
+First, we load the standard data science libraries (packages) required for data manipulation and visualization.
+
+```{r setup}
+library(readxl)
+library(janitor)
+library(skimr)
+library(tidyverse)
+library(knitr)
+```
+
+|  |  |  |
+|------------------------|------------------------|------------------------|
+| **Package** | **Key Functions** | **Primary Purpose** |
+| **`readr` / `readxl`** | `read_csv()`, `read_excel()` | Efficient data import with automatic type inference |
+| **`janitor`** | `clean_names()`, `tabyl()`, `get_dupes()`, `remove_empty()` | Fast data cleaning, snake_case conversion, and frequency tables |
+| **`skimr`** | `skim()`, `skim_without_charts()` | Comprehensive dataset auditing, missing value profiling, and inline sparkline distributions |
+| **`dplyr` / `tidyr`** | `filter()`, `mutate()`, `group_by()`, `summarize()`, `pivot_longer()` | Data transformation, aggregation, and reshaping |
+| **`ggplot2`** | `ggplot()`, `geom_bar()`, `geom_point()`, `geom_histogram()`, `theme_minimal()` | Layered publication-quality data visualization |
+
+## Data Import
+
+We import landings monitoring data file after setting the working directory (wd). The working directory is the default folder on your computer where R looks for files to import (like our downloaded data) and saves files you export (like plots or manipulated data).
+
+For example, if your data file was located in 'data' folder of the project '' in your C: Drive, you would set your wd to the following and run the following code first before loading in your data file: setwd()
+
+```{r data-import}
+# Set working directory set
+# setwd()
+
+# Load landings dataset
+landings_raw <- read_excel("data/data_request_from_Oct26.xlsx")
+
+```
+
+## Data Cleaning & Summarizing with `janitor` and `skimr`
+
+Raw data sets often contain inconsistent capitalization, spaces, or duplicate records. The 'janitor' package provides simple functions to solve these common data quality issues:
+
+**`clean_names()`**: Standardizes column names into consistent snake_case (e.g., Field Name becomes field_name).
+
+**`get_dupes()`**: Identifies duplicated rows based on specified key variables.
+
+NOTE: Think of the pipe operator (%\>%) as translating to "and then" in plain English. Allows you to write and read code from left to right or top to bottom, matching the natural chronological workflow of data analysis.
+
+The 'skimr' package
+
+**`skim()`**:
+
+```{r janitor-summary}
+# Clean column names
+landings <- landings_raw %>%
+  clean_names() %>%
+  remove_empty(c("rows", "cols"))
+
+# Identify any duplicate rows
+# get_dupes(landings)
+
+# Data summary using skimr
+skim(landings)
+
+```
+
+NOTE: The four core column types handle distinct data needs in R:
+
+1\. character (<chr>) columns store text strings like names and IDs as literal, uncalculable text labels.
+
+2\. logical (<lgl>) columns hold binary TRUE/FALSE flags that evaluate conditional logic and convert mathematically to 1 or 0.
+
+3\. numeric (<dbl>) columns process real numbers with or without decimals to support statistical calculations.
+
+4\. POSIXct (<dttm>) stands for Portable Operating System Interface Calendar Time. This type stores exact dates and timestamps and is the recommended column type for date columns.
+
+## Data Manipulation with `tidyverse`
+
+We group catch landings by species group to calculate total catch weight, total monetary value in USD, and mean length.
+
+Data wrangling involves filtering rows, selecting columns, computing aggregate metrics, and creating calculated fields:
+
+-   **`filter()`**: Subsets rows matching specific logical conditions (e.g., species groups or non-null values).
+
+-   **`select()`**: Keeps or drops specific columns.
+
+-   **`mutate()`**: Creates new calculated variables (e.g., total value in local currency vs. USD, catch weight per trip).
+
+-   **`group_by()` + `summarize()`**: Aggregates metrics (e.g., total weight landed, mean length) across categorical groups.
+
+```{r data-wrangling}
+site_species_summary <- landings %>%
+  group_by(species_group) %>%
+  summarize(
+    total_landings = n(),
+    total_weight_kg = sum(total_weight_landed_kg, na.rm = TRUE),
+    total_value_usd = sum(total_purchase_price_usd, na.rm = TRUE),
+    mean_length_cm = mean(mean_length_cm, na.rm = TRUE),
+    .groups = "drop") %>% #remove all grouping attributes from the data frame
+  mutate(price_per_kg_usd = if_else(total_weight_kg > 0, total_value_usd / total_weight_kg, 0)) %>%
+  arrange(desc(total_weight_kg))
+
+site_species_summary
+```
+
+## Data Visualization with `ggplot2`
+
+`ggplot2` implements the Grammar of Graphics, combining data, aesthetic mappings (`aes`), and geometric objects (`geom_*`):
+
+-   **Bar Charts (`geom_col()`)**: Compare catch totals across species groups, landing sites, etc.
+
+-   **Histograms / Density Plots (`geom_histogram()`)**: Examine fish length or weight distributions.
+
+-   **Scatter Plots (`geom_point()`)**: Analyze length-weight relationships.
+
+-   **Faceting (`facet_wrap()`)**: Split plots across subgroup categories (e.g., buyer gender, habitat type).
+
+### Total Catch Weight by Species Group
+
+We evaluate total landed weight across species categories to determine dominant targeted species groups.
+
+```{r plot-species-weight, fig.width=9, fig.height=5}
+landings %>%
+  filter(!is.na(species_group)) %>%
+  group_by(species_group) %>%
+  summarize(total_kg = sum(total_weight_landed_kg, na.rm = TRUE), .groups = "drop") %>%
+  ggplot(aes(x = reorder(species_group, total_kg), y = total_kg, fill = species_group)) +
+  geom_col(show.legend = FALSE) +
+  coord_flip() +
+  scale_fill_viridis_d(option = "viridis") +
+  labs(
+    title = "Total Landed Weight by Species Group",
+    subtitle = "Aggregated landings monitoring dataset",
+    x = "Species Group",
+    y = "Total Weight Landed (kg)"
+  ) +
+  theme_minimal(base_size = 12)
+```
+
+### Length Distribution across Species Groups
+
+We analyze the distribution of mean fish body lengths to assess catch size dynamics.
+
+```{r plot-length-dist, fig.width=10, fig.height=6}
+landings %>%
+  filter(!is.na(species_group), !is.na(mean_length_cm), mean_length_cm > 0) %>%
+  ggplot(aes(x = mean_length_cm, fill = species_group)) +
+  geom_histogram(bins = 25, alpha = 0.75, color = "white") +
+  facet_wrap(~ species_group, scales = "free_y") +
+  scale_fill_viridis_d(option = "turbo") +
+  labs(
+    title = "Fish Length Distribution by Species Group",
+    x = "Mean Length (cm)",
+    y = "Count of Observations"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+### Catch Weight vs. Price per Landing Event
+
+We evaluate the relationship between landing weight and total purchase price in USD.
+
+```{r plot-weight-vs-price, fig.width=8, fig.height=5}
+landings %>%
+  filter(!is.na(total_weight_landed_kg), !is.na(total_purchase_price_usd), total_weight_landed_kg > 0) %>%
+  ggplot(aes(x = total_weight_landed_kg, y = total_purchase_price_usd, color = species_group)) +
+  geom_point(alpha = 0.6, size = 2) +
+  geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
+  scale_x_log10() +
+  scale_y_log10() +
+  labs(
+    title = "Landings Weight vs. Purchase Price (Log Scale)",
+    x = "Total Weight Landed (kg)",
+    y = "Total Purchase Price (USD)",
+    color = "Species Group"
+  ) +
+  theme_minimal()
+```
+
+## Resources
+
+-   [R for Data Science](https://r4ds.hadley.nz/)
+
+## Training
+
+1.  **Install & Setup the software**
+
+    1.  Follow the instructions at <https://swirlstats.com/students.html> to install R, RStudio, and the swirl() package in R
+
+    2.  Check-in meeting to review & troubleshoot, if needed
+
+2.  **Introduction to programming**
+
+    1.  Using the swirl() package in R, complete the “R programming” lesson
+
+        1.  All the chapters are helpful, but you can skip #10 (lapply/sapply), #11 (vapply/tapply), #13 (Simulation), and #15 (Base graphs)
+
+    2.  Complete [Introduction to R and RStudio](https://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro.html) in the Data Carpentry course
+
+    3.  Complete [Project Management with RStudio](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro.html) in the Data Carpentry course
+
+    4.  Understanding troubleshooting & how to get help:
+
+        1.  Coding Club: [Troubleshooting and how to find help](https://ourcodingclub.github.io/tutorials/troubleshooting/)
+
+        2.  Data Carpentry Chapter 3: [Seeking Help](https://swcarpentry.github.io/r-novice-gapminder/03-seeking-help.html)
+
+The next two sections are interchangeable and could be done in either order.
+
+3.  **Data manipulation** - focus on tidyverse packages
+
+    1.  Background reading: <https://openscapes.org/blog/2020-10-12-tidy-data/> 
+
+    2.  Swirl course: Getting and Cleaning data
+
+    3.  Coding Club: [Advanced Data Manipulation](https://ourcodingclub.github.io/tutorials/data-manip-creative-dplyr/)
+
+    4.  Data Carpentry chapters on [dplyr ](https://swcarpentry.github.io/r-novice-gapminder/12-dplyr.html)and [tidyr](https://swcarpentry.github.io/r-novice-gapminder/13-tidyr.html)
+
+4.  **Data visualization**
+
+    1.  Coding Club: [Beautiful and informative data visualization](https://ourcodingclub.github.io/tutorials/datavis/) → recommend this one first because of it’s great explanation of plot layering
+
+    2.  Data carpentry chapter on [ggplot2](https://swcarpentry.github.io/r-novice-gapminder/08-plot-ggplot2.html#layers)

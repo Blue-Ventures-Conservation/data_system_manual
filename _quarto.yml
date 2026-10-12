@@ -148,12 +148,6 @@ website:
           - pages/data_validation/data_validation_tet.qmd
           - pages/fisheries_dashboard/fisheries_dashboard_tet.qmd
       - section: pages/index/index_guide.qmd
-        contents:
-          - pages/species_guides/guide_BLZ.qmd
-          - pages/species_guides/guide_CV.qmd
-          - pages/species_guides/guide_GMB.qmd
-          - pages/species_guides/guide_MDG_MHJ.qmd
-          - pages/species_guides/guide_SEN.qmd
 
 
 
