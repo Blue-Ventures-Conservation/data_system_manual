@@ -2,26 +2,65 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Data Science">
 
-<title>Species Guides – Community Fisheries Data System Manual</title>
+<title>Downloaded Data in R – Community Fisheries Data System Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -32,7 +71,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../pages/species_guides/guide_BLZ.html" rel="next">
 <link href="../../pages/fisheries_dashboard/fisheries_dashboard_tet.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -40,14 +78,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-841e33f8356813b006a3deb504272060.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-841e33f8356813b006a3deb504272060.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-841e33f8356813b006a3deb504272060.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-7379de297ef0970ae344f8f67dfe4a3e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-7379de297ef0970ae344f8f67dfe4a3e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-7379de297ef0970ae344f8f67dfe4a3e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -75,6 +113,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -89,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_guide.html">Species Guides</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/index/index_guide.html">Downloaded Data in R</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -749,64 +789,54 @@ ul.task-list li input[type="checkbox"] {
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../pages/index/index_guide.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Species Guides</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../pages/species_guides/guide_BLZ.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Belize</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../pages/species_guides/guide_CV.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Cabo Verde</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../pages/species_guides/guide_GMB.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The Gambia</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../pages/species_guides/guide_MDG_MHJ.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Madagascar - MHJ</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../pages/species_guides/guide_SEN.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Senegal</span></a>
-  </div>
-</li>
-      </ul>
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Downloaded Data in R</span></span>
   </li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#executive-summary" id="toc-executive-summary" class="nav-link active" data-scroll-target="#executive-summary"><span class="header-section-number">1</span> Executive Summary</a></li>
+  <li><a href="#environment-setup" id="toc-environment-setup" class="nav-link" data-scroll-target="#environment-setup"><span class="header-section-number">2</span> Environment Setup</a></li>
+  <li><a href="#data-import" id="toc-data-import" class="nav-link" data-scroll-target="#data-import"><span class="header-section-number">3</span> Data Import</a></li>
+  <li><a href="#data-cleaning-summarizing-with-janitor-and-skimr" id="toc-data-cleaning-summarizing-with-janitor-and-skimr" class="nav-link" data-scroll-target="#data-cleaning-summarizing-with-janitor-and-skimr"><span class="header-section-number">4</span> Data Cleaning &amp; Summarizing with <code>janitor</code> and <code>skimr</code></a></li>
+  <li><a href="#data-manipulation-with-tidyverse" id="toc-data-manipulation-with-tidyverse" class="nav-link" data-scroll-target="#data-manipulation-with-tidyverse"><span class="header-section-number">5</span> Data Manipulation with <code>tidyverse</code></a></li>
+  <li><a href="#data-visualization-with-ggplot2" id="toc-data-visualization-with-ggplot2" class="nav-link" data-scroll-target="#data-visualization-with-ggplot2"><span class="header-section-number">6</span> Data Visualization with <code>ggplot2</code></a>
+  <ul class="collapse">
+  <li><a href="#total-catch-weight-by-species-group" id="toc-total-catch-weight-by-species-group" class="nav-link" data-scroll-target="#total-catch-weight-by-species-group"><span class="header-section-number">6.1</span> Total Catch Weight by Species Group</a></li>
+  <li><a href="#length-distribution-across-species-groups" id="toc-length-distribution-across-species-groups" class="nav-link" data-scroll-target="#length-distribution-across-species-groups"><span class="header-section-number">6.2</span> Length Distribution across Species Groups</a></li>
+  <li><a href="#catch-weight-vs.-price-per-landing-event" id="toc-catch-weight-vs.-price-per-landing-event" class="nav-link" data-scroll-target="#catch-weight-vs.-price-per-landing-event"><span class="header-section-number">6.3</span> Catch Weight vs.&nbsp;Price per Landing Event</a></li>
+  </ul></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources"><span class="header-section-number">7</span> Resources</a></li>
+  <li><a href="#training" id="toc-training" class="nav-link" data-scroll-target="#training"><span class="header-section-number">8</span> Training</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Species Guides</h1>
+<h1 class="title">Downloaded Data in R</h1>
+<p class="subtitle lead">Data Ingestion, Summarisation, Wrangling, and Visualisation in R</p>
 </div>
 
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta column-body">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Data Science </p>
+          </div>
+  </div>
     
   
     
@@ -817,8 +847,1244 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="executive-summary" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="executive-summary"><span class="header-section-number">1</span> Executive Summary</h2>
+<p>This report documents the workflow for importing, inspecting, cleaning, aggregating, and visualizing small-scale fisheries landings monitoring datasets. The workflow utilises the <code>readr</code>, <code>janitor</code>, <code>dplyr</code>, <code>tidyr</code>, and <code>ggplot2</code> packages.</p>
+<p>NOTE: If this is your first time using R or these packages, you’ll need to install these packages. See ‘Install Packages…’ under ‘Tools’.</p>
+</section>
+<section id="environment-setup" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="environment-setup"><span class="header-section-number">2</span> Environment Setup</h2>
+<p>First, we load the standard data science libraries (packages) required for data manipulation and visualization.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(skimr)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Package</strong></td>
+<td><strong>Key Functions</strong></td>
+<td><strong>Primary Purpose</strong></td>
+</tr>
+<tr class="even">
+<td><strong><code>readr</code> / <code>readxl</code></strong></td>
+<td><code>read_csv()</code>, <code>read_excel()</code></td>
+<td>Efficient data import with automatic type inference</td>
+</tr>
+<tr class="odd">
+<td><strong><code>janitor</code></strong></td>
+<td><code>clean_names()</code>, <code>tabyl()</code>, <code>get_dupes()</code>, <code>remove_empty()</code></td>
+<td>Fast data cleaning, snake_case conversion, and frequency tables</td>
+</tr>
+<tr class="even">
+<td><strong><code>skimr</code></strong></td>
+<td><code>skim()</code>, <code>skim_without_charts()</code></td>
+<td>Comprehensive dataset auditing, missing value profiling, and inline sparkline distributions</td>
+</tr>
+<tr class="odd">
+<td><strong><code>dplyr</code> / <code>tidyr</code></strong></td>
+<td><code>filter()</code>, <code>mutate()</code>, <code>group_by()</code>, <code>summarize()</code>, <code>pivot_longer()</code></td>
+<td>Data transformation, aggregation, and reshaping</td>
+</tr>
+<tr class="even">
+<td><strong><code>ggplot2</code></strong></td>
+<td><code>ggplot()</code>, <code>geom_bar()</code>, <code>geom_point()</code>, <code>geom_histogram()</code>, <code>theme_minimal()</code></td>
+<td>Layered publication-quality data visualization</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-import" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="data-import"><span class="header-section-number">3</span> Data Import</h2>
+<p>We import landings monitoring data file after setting the working directory (wd). The working directory is the default folder on your computer where R looks for files to import (like our downloaded data) and saves files you export (like plots or manipulated data).</p>
+<p>For example, if your data file was located in ‘data’ folder of the project ’’ in your C: Drive, you would set your wd to the following and run the following code first before loading in your data file: setwd()</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set working directory set</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># setwd()</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load landings dataset</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>landings_raw <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/data_request_from_Oct26.xlsx"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="data-cleaning-summarizing-with-janitor-and-skimr" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="data-cleaning-summarizing-with-janitor-and-skimr"><span class="header-section-number">4</span> Data Cleaning &amp; Summarizing with <code>janitor</code> and <code>skimr</code></h2>
+<p>Raw data sets often contain inconsistent capitalization, spaces, or duplicate records. The ‘janitor’ package provides simple functions to solve these common data quality issues:</p>
+<p><strong><code>clean_names()</code></strong>: Standardizes column names into consistent snake_case (e.g., Field Name becomes field_name).</p>
+<p><strong><code>get_dupes()</code></strong>: Identifies duplicated rows based on specified key variables.</p>
+<p>NOTE: Think of the pipe operator (%&gt;%) as translating to “and then” in plain English. Allows you to write and read code from left to right or top to bottom, matching the natural chronological workflow of data analysis.</p>
+<p>The ‘skimr’ package</p>
+<p><strong><code>skim()</code></strong>:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean column names</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>landings <span class="ot">&lt;-</span> landings_raw <span class="sc">%&gt;%</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">remove_empty</span>(<span class="fu">c</span>(<span class="st">"rows"</span>, <span class="st">"cols"</span>))</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Identify any duplicate rows</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># get_dupes(landings)</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Data summary using skimr</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">skim</span>(landings)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Data summary</caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">landings</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Number of rows</td>
+<td style="text-align: left;">15530</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Number of columns</td>
+<td style="text-align: left;">75</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">_______________________</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Column type frequency:</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">character</td>
+<td style="text-align: left;">44</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">logical</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">numeric</td>
+<td style="text-align: left;">27</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">POSIXct</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">________________________</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Group variables</td>
+<td style="text-align: left;">None</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: character</strong></p>
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 11%">
+<col style="width: 16%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 7%">
+<col style="width: 10%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">country</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">country_name</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">partner</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">admin1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">admin2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">admin3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">admin3_label</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">admin3_lat</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">admin3_long</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">buyer_id</td>
+<td style="text-align: right;">7785</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">249</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">buyer_gender</td>
+<td style="text-align: right;">7785</td>
+<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">landing_site</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">fisher_id</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">688</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fisher_gender</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">trip_id</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5495</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">local_name</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">341</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">local_name_only</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">341</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">scientific_species</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">261</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">common_english</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">254</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">scientific_family</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">species_group</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">purchase_price_unit</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">management_unit_name</td>
+<td style="text-align: right;">3237</td>
+<td style="text-align: right;">0.79</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fisher_admin1</td>
+<td style="text-align: right;">10299</td>
+<td style="text-align: right;">0.34</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">fisher_admin2</td>
+<td style="text-align: right;">10273</td>
+<td style="text-align: right;">0.34</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">fisher_admin3</td>
+<td style="text-align: right;">10273</td>
+<td style="text-align: right;">0.34</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sci_local_name</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">442</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">total_weight_landed</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6023</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">total_weight_purchased</td>
+<td style="text-align: right;">616</td>
+<td style="text-align: right;">0.96</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2586</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">reason_not_sold_badquality</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">reason_not_sold_small</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">reason_not_sold_big</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">reason_not_sold_kept</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">reason_not_sold_other</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">reason_not_sold_other_text</td>
+<td style="text-align: right;">15509</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mixed_single</td>
+<td style="text-align: right;">2115</td>
+<td style="text-align: right;">0.86</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">submitted_by</td>
+<td style="text-align: right;">2115</td>
+<td style="text-align: right;">0.86</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">entirecatch_or_share</td>
+<td style="text-align: right;">3637</td>
+<td style="text-align: right;">0.77</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pelagic_size</td>
+<td style="text-align: right;">14042</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">a</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">173</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">b</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">163</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">buyer_type</td>
+<td style="text-align: right;">8228</td>
+<td style="text-align: right;">0.47</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">data_origin</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">weight_unit</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: logical</strong></p>
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: left;">count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ismature</td>
+<td style="text-align: right;">220</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">0.52</td>
+<td style="text-align: left;">TRU: 8034, FAL: 7276</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: numeric</strong></p>
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 7%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 5%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 4%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">days_fishing</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▁▁▇▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">total_number_landed</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">9.12</td>
+<td style="text-align: right;">28.30</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">3.00</td>
+<td style="text-align: right;">8.00</td>
+<td style="text-align: right;">1505.00</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">total_weight_landed_kg</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">1.67</td>
+<td style="text-align: right;">12.42</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.22</td>
+<td style="text-align: right;">0.58</td>
+<td style="text-align: right;">1.47</td>
+<td style="text-align: right;">1059.00</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">total_weight_purchased_kg</td>
+<td style="text-align: right;">7432</td>
+<td style="text-align: right;">0.52</td>
+<td style="text-align: right;">2.19</td>
+<td style="text-align: right;">18.66</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.18</td>
+<td style="text-align: right;">0.59</td>
+<td style="text-align: right;">1.81</td>
+<td style="text-align: right;">1250.00</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">total_purchase_price</td>
+<td style="text-align: right;">1953</td>
+<td style="text-align: right;">0.87</td>
+<td style="text-align: right;">5.53</td>
+<td style="text-align: right;">17.32</td>
+<td style="text-align: right;">0.02</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">2.31</td>
+<td style="text-align: right;">5.71</td>
+<td style="text-align: right;">1500.00</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">total_purchase_price_usd</td>
+<td style="text-align: right;">1951</td>
+<td style="text-align: right;">0.87</td>
+<td style="text-align: right;">5.53</td>
+<td style="text-align: right;">17.32</td>
+<td style="text-align: right;">-1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">2.31</td>
+<td style="text-align: right;">5.71</td>
+<td style="text-align: right;">1500.00</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">length_mature_cm</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">24.14</td>
+<td style="text-align: right;">13.44</td>
+<td style="text-align: right;">0.86</td>
+<td style="text-align: right;">16.43</td>
+<td style="text-align: right;">19.15</td>
+<td style="text-align: right;">30.05</td>
+<td style="text-align: right;">151.40</td>
+<td style="text-align: left;">▇▂▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mean_length_cm</td>
+<td style="text-align: right;">222</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">23.34</td>
+<td style="text-align: right;">12.78</td>
+<td style="text-align: right;">0.90</td>
+<td style="text-align: right;">17.60</td>
+<td style="text-align: right;">20.90</td>
+<td style="text-align: right;">25.33</td>
+<td style="text-align: right;">342.20</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">landings_id</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">428243184.16</td>
+<td style="text-align: right;">192425433.06</td>
+<td style="text-align: right;">148.00</td>
+<td style="text-align: right;">352870619.25</td>
+<td style="text-align: right;">528040093.00</td>
+<td style="text-align: right;">559540173.75</td>
+<td style="text-align: right;">603943723.00</td>
+<td style="text-align: left;">▂▁▁▁▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">kobo_landings_id</td>
+<td style="text-align: right;">2115</td>
+<td style="text-align: right;">0.86</td>
+<td style="text-align: right;">313736.69</td>
+<td style="text-align: right;">205481.76</td>
+<td style="text-align: right;">6201.00</td>
+<td style="text-align: right;">142227.50</td>
+<td style="text-align: right;">339737.00</td>
+<td style="text-align: right;">468763.00</td>
+<td style="text-align: right;">712364.00</td>
+<td style="text-align: left;">▇▆▆▆▃</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">profiling_kobo_id</td>
+<td style="text-align: right;">13415</td>
+<td style="text-align: right;">0.14</td>
+<td style="text-align: right;">40630.13</td>
+<td style="text-align: right;">31534.50</td>
+<td style="text-align: right;">1875.00</td>
+<td style="text-align: right;">2805.50</td>
+<td style="text-align: right;">37739.00</td>
+<td style="text-align: right;">62205.50</td>
+<td style="text-align: right;">152159.00</td>
+<td style="text-align: left;">▇▅▅▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">habitat_deepwater</td>
+<td style="text-align: right;">1783</td>
+<td style="text-align: right;">0.89</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▁▁▇▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">habitat_reef</td>
+<td style="text-align: right;">1493</td>
+<td style="text-align: right;">0.90</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▁▁▇▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">habitat_mangrove</td>
+<td style="text-align: right;">6947</td>
+<td style="text-align: right;">0.55</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▁▁▇▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">habitat_seagrass</td>
+<td style="text-align: right;">3704</td>
+<td style="text-align: right;">0.76</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▁▁▇▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">habitat_mud</td>
+<td style="text-align: right;">10094</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▁▁▇▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">habitat_sand</td>
+<td style="text-align: right;">6705</td>
+<td style="text-align: right;">0.57</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▁▁▇▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">habitat_estuary</td>
+<td style="text-align: right;">5108</td>
+<td style="text-align: right;">0.67</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: left;">▁▁▇▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">trophic_level</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">3.26</td>
+<td style="text-align: right;">0.65</td>
+<td style="text-align: right;">2.00</td>
+<td style="text-align: right;">2.76</td>
+<td style="text-align: right;">3.48</td>
+<td style="text-align: right;">3.67</td>
+<td style="text-align: right;">4.50</td>
+<td style="text-align: left;">▅▁▅▇▂</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">calcium_mg</td>
+<td style="text-align: right;">284</td>
+<td style="text-align: right;">0.98</td>
+<td style="text-align: right;">67.17</td>
+<td style="text-align: right;">50.86</td>
+<td style="text-align: right;">4.56</td>
+<td style="text-align: right;">38.35</td>
+<td style="text-align: right;">44.47</td>
+<td style="text-align: right;">74.76</td>
+<td style="text-align: right;">485.19</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">iron_mg</td>
+<td style="text-align: right;">284</td>
+<td style="text-align: right;">0.98</td>
+<td style="text-align: right;">0.98</td>
+<td style="text-align: right;">0.83</td>
+<td style="text-align: right;">0.14</td>
+<td style="text-align: right;">0.62</td>
+<td style="text-align: right;">0.75</td>
+<td style="text-align: right;">0.89</td>
+<td style="text-align: right;">4.79</td>
+<td style="text-align: left;">▇▂▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">omega3_g</td>
+<td style="text-align: right;">284</td>
+<td style="text-align: right;">0.98</td>
+<td style="text-align: right;">0.18</td>
+<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">0.12</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">0.21</td>
+<td style="text-align: right;">0.60</td>
+<td style="text-align: left;">▇▃▂▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">protein_g</td>
+<td style="text-align: right;">284</td>
+<td style="text-align: right;">0.98</td>
+<td style="text-align: right;">19.01</td>
+<td style="text-align: right;">1.10</td>
+<td style="text-align: right;">14.05</td>
+<td style="text-align: right;">18.49</td>
+<td style="text-align: right;">18.80</td>
+<td style="text-align: right;">19.78</td>
+<td style="text-align: right;">23.06</td>
+<td style="text-align: left;">▁▁▇▃▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">selenium_ug</td>
+<td style="text-align: right;">284</td>
+<td style="text-align: right;">0.98</td>
+<td style="text-align: right;">38.46</td>
+<td style="text-align: right;">16.40</td>
+<td style="text-align: right;">8.35</td>
+<td style="text-align: right;">24.10</td>
+<td style="text-align: right;">33.56</td>
+<td style="text-align: right;">48.30</td>
+<td style="text-align: right;">279.16</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">vitamin_a_ug</td>
+<td style="text-align: right;">953</td>
+<td style="text-align: right;">0.94</td>
+<td style="text-align: right;">56.69</td>
+<td style="text-align: right;">43.00</td>
+<td style="text-align: right;">0.88</td>
+<td style="text-align: right;">29.08</td>
+<td style="text-align: right;">41.68</td>
+<td style="text-align: right;">80.04</td>
+<td style="text-align: right;">291.99</td>
+<td style="text-align: left;">▇▂▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">zinc_mg</td>
+<td style="text-align: right;">284</td>
+<td style="text-align: right;">0.98</td>
+<td style="text-align: right;">1.35</td>
+<td style="text-align: right;">0.61</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">0.92</td>
+<td style="text-align: right;">1.27</td>
+<td style="text-align: right;">1.79</td>
+<td style="text-align: right;">5.76</td>
+<td style="text-align: left;">▇▆▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">total_nutrient_content</td>
+<td style="text-align: right;">113</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">179.34</td>
+<td style="text-align: right;">64.74</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">132.22</td>
+<td style="text-align: right;">174.15</td>
+<td style="text-align: right;">222.85</td>
+<td style="text-align: right;">631.37</td>
+<td style="text-align: left;">▂▇▁▁▁</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: POSIXct</strong></p>
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 9%">
+<col style="width: 12%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: left;">min</th>
+<th style="text-align: left;">max</th>
+<th style="text-align: left;">median</th>
+<th style="text-align: right;">n_unique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">date_landed</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2023-09-26 00:00:00</td>
+<td style="text-align: left;">2026-10-10 00:00:00</td>
+<td style="text-align: left;">2025-06-28 00:00:00</td>
+<td style="text-align: right;">672</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">submission_date</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2023-09-26 12:37:00</td>
+<td style="text-align: left;">2026-10-10 05:20:56</td>
+<td style="text-align: left;">2025-07-21 22:46:42</td>
+<td style="text-align: right;">5356</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">last_refresh_ts</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2026-10-11 15:53:02</td>
+<td style="text-align: left;">2026-10-11 15:53:02</td>
+<td style="text-align: left;">2026-10-11 15:53:02</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>NOTE: The four core column types handle distinct data needs in R:</p>
+<p>1. character (<chr>) columns store text strings like names and IDs as literal, uncalculable text labels.</chr></p>
+<p>2. logical (<lgl>) columns hold binary TRUE/FALSE flags that evaluate conditional logic and convert mathematically to 1 or 0.</lgl></p>
+<p>3. numeric (<dbl>) columns process real numbers with or without decimals to support statistical calculations.</dbl></p>
+<p>4. POSIXct (<dttm>) stands for Portable Operating System Interface Calendar Time. This type stores exact dates and timestamps and is the recommended column type for date columns.</dttm></p>
+</section>
+<section id="data-manipulation-with-tidyverse" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="data-manipulation-with-tidyverse"><span class="header-section-number">5</span> Data Manipulation with <code>tidyverse</code></h2>
+<p>We group catch landings by species group to calculate total catch weight, total monetary value in USD, and mean length.</p>
+<p>Data wrangling involves filtering rows, selecting columns, computing aggregate metrics, and creating calculated fields:</p>
+<ul>
+<li><p><strong><code>filter()</code></strong>: Subsets rows matching specific logical conditions (e.g., species groups or non-null values).</p></li>
+<li><p><strong><code>select()</code></strong>: Keeps or drops specific columns.</p></li>
+<li><p><strong><code>mutate()</code></strong>: Creates new calculated variables (e.g., total value in local currency vs.&nbsp;USD, catch weight per trip).</p></li>
+<li><p><strong><code>group_by()</code> + <code>summarize()</code></strong>: Aggregates metrics (e.g., total weight landed, mean length) across categorical groups.</p></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>site_species_summary <span class="ot">&lt;-</span> landings <span class="sc">%&gt;%</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(species_group) <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_landings =</span> <span class="fu">n</span>(),</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_weight_kg =</span> <span class="fu">sum</span>(total_weight_landed_kg, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_value_usd =</span> <span class="fu">sum</span>(total_purchase_price_usd, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean_length_cm =</span> <span class="fu">mean</span>(mean_length_cm, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">%&gt;%</span> <span class="co">#remove all grouping attributes from the data frame</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">price_per_kg_usd =</span> <span class="fu">if_else</span>(total_weight_kg <span class="sc">&gt;</span> <span class="dv">0</span>, total_value_usd <span class="sc">/</span> total_weight_kg, <span class="dv">0</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total_weight_kg))</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>site_species_summary</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["species_group"],"name":[1],"type":["chr"],"align":["left"]},{"label":["total_landings"],"name":[2],"type":["int"],"align":["right"]},{"label":["total_weight_kg"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["total_value_usd"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["mean_length_cm"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["price_per_kg_usd"],"name":[6],"type":["dbl"],"align":["right"]}],"data":[{"1":"finfish","2":"14437","3":"2.454304e+04","4":"70867.539512","5":"23.757013","6":"2.8874799"},{"1":"octopus","2":"323","3":"4.017008e+02","4":"1787.747878","5":"7.247059","6":"4.4504460"},{"1":"shark","2":"49","3":"2.101477e+02","4":"320.240425","5":"77.314286","6":"1.5238829"},{"1":"ray","2":"61","3":"1.979449e+02","4":"177.887570","5":"32.177966","6":"0.8986723"},{"1":"crab","2":"268","3":"1.956182e+02","4":"688.951367","5":"9.393208","6":"3.5219190"},{"1":"squid","2":"150","3":"1.099147e+02","4":"652.674822","5":"21.444966","6":"5.9380135"},{"1":"unknown","2":"113","3":"5.525994e+01","4":"179.463961","5":"NaN","6":"3.2476324"},{"1":"eel","2":"29","3":"4.619018e+01","4":"151.712808","5":"73.950000","6":"3.2845248"},{"1":"lobster","2":"72","3":"3.503204e+01","4":"194.579223","5":"6.192958","6":"5.5543216"},{"1":"bivalve","2":"15","3":"1.803560e+01","4":"49.594978","5":"6.628571","6":"2.7498374"},{"1":"cuttlefish","2":"6","3":"4.780551e+00","4":"14.538462","5":"13.883333","6":"3.0411684"},{"1":"NA","2":"1","3":"2.000000e+00","4":"0.000000","5":"32.800000","6":"0.0000000"},{"1":"gastropod","2":"1","3":"1.030000e+00","4":"0.000000","5":"18.300000","6":"0.0000000"},{"1":"shrimp","2":"5","3":"9.584944e-01","4":"2.730075","5":"49.040000","6":"2.8482955"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+</section>
+<section id="data-visualization-with-ggplot2" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="data-visualization-with-ggplot2"><span class="header-section-number">6</span> Data Visualization with <code>ggplot2</code></h2>
+<p><code>ggplot2</code> implements the Grammar of Graphics, combining data, aesthetic mappings (<code>aes</code>), and geometric objects (<code>geom_*</code>):</p>
+<ul>
+<li><p><strong>Bar Charts (<code>geom_col()</code>)</strong>: Compare catch totals across species groups, landing sites, etc.</p></li>
+<li><p><strong>Histograms / Density Plots (<code>geom_histogram()</code>)</strong>: Examine fish length or weight distributions.</p></li>
+<li><p><strong>Scatter Plots (<code>geom_point()</code>)</strong>: Analyze length-weight relationships.</p></li>
+<li><p><strong>Faceting (<code>facet_wrap()</code>)</strong>: Split plots across subgroup categories (e.g., buyer gender, habitat type).</p></li>
+</ul>
+<section id="total-catch-weight-by-species-group" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="total-catch-weight-by-species-group"><span class="header-section-number">6.1</span> Total Catch Weight by Species Group</h3>
+<p>We evaluate total landed weight across species categories to determine dominant targeted species groups.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>landings <span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(species_group)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(species_group) <span class="sc">%&gt;%</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">total_kg =</span> <span class="fu">sum</span>(total_weight_landed_kg, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(species_group, total_kg), <span class="at">y =</span> total_kg, <span class="at">fill =</span> species_group)) <span class="sc">+</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_d</span>(<span class="at">option =</span> <span class="st">"viridis"</span>) <span class="sc">+</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Total Landed Weight by Species Group"</span>,</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Aggregated landings monitoring dataset"</span>,</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Species Group"</span>,</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Total Weight Landed (kg)"</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_guide_files/figure-html/plot-species-weight-1.png" class="img-fluid figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="length-distribution-across-species-groups" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="length-distribution-across-species-groups"><span class="header-section-number">6.2</span> Length Distribution across Species Groups</h3>
+<p>We analyze the distribution of mean fish body lengths to assess catch size dynamics.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>landings <span class="sc">%&gt;%</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(species_group), <span class="sc">!</span><span class="fu">is.na</span>(mean_length_cm), mean_length_cm <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> mean_length_cm, <span class="at">fill =</span> species_group)) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">25</span>, <span class="at">alpha =</span> <span class="fl">0.75</span>, <span class="at">color =</span> <span class="st">"white"</span>) <span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> species_group, <span class="at">scales =</span> <span class="st">"free_y"</span>) <span class="sc">+</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_d</span>(<span class="at">option =</span> <span class="st">"turbo"</span>) <span class="sc">+</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Fish Length Distribution by Species Group"</span>,</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Mean Length (cm)"</span>,</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Count of Observations"</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_guide_files/figure-html/plot-length-dist-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="catch-weight-vs.-price-per-landing-event" class="level3" data-number="6.3">
+<h3 data-number="6.3" class="anchored" data-anchor-id="catch-weight-vs.-price-per-landing-event"><span class="header-section-number">6.3</span> Catch Weight vs.&nbsp;Price per Landing Event</h3>
+<p>We evaluate the relationship between landing weight and total purchase price in USD.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>landings <span class="sc">%&gt;%</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(total_weight_landed_kg), <span class="sc">!</span><span class="fu">is.na</span>(total_purchase_price_usd), total_weight_landed_kg <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> total_weight_landed_kg, <span class="at">y =</span> total_purchase_price_usd, <span class="at">color =</span> species_group)) <span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.6</span>, <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_log10</span>() <span class="sc">+</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_log10</span>() <span class="sc">+</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Landings Weight vs. Purchase Price (Log Scale)"</span>,</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Total Weight Landed (kg)"</span>,</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Total Purchase Price (USD)"</span>,</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Species Group"</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_guide_files/figure-html/plot-weight-vs-price-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="resources" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="resources"><span class="header-section-number">7</span> Resources</h2>
+<ul>
+<li><a href="https://r4ds.hadley.nz/">R for Data Science</a></li>
+</ul>
+</section>
+<section id="training" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="training"><span class="header-section-number">8</span> Training</h2>
+<ol type="1">
+<li><p><strong>Install &amp; Setup the software</strong></p>
+<ol type="1">
+<li><p>Follow the instructions at <a href="https://swirlstats.com/students.html" class="uri">https://swirlstats.com/students.html</a> to install R, RStudio, and the swirl() package in R</p></li>
+<li><p>Check-in meeting to review &amp; troubleshoot, if needed</p></li>
+</ol></li>
+<li><p><strong>Introduction to programming</strong></p>
+<ol type="1">
+<li><p>Using the swirl() package in R, complete the “R programming” lesson</p>
+<ol type="1">
+<li>All the chapters are helpful, but you can skip #10 (lapply/sapply), #11 (vapply/tapply), #13 (Simulation), and #15 (Base graphs)</li>
+</ol></li>
+<li><p>Complete <a href="https://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro.html">Introduction to R and RStudio</a> in the Data Carpentry course</p></li>
+<li><p>Complete <a href="https://swcarpentry.github.io/r-novice-gapminder/02-project-intro.html">Project Management with RStudio</a> in the Data Carpentry course</p></li>
+<li><p>Understanding troubleshooting &amp; how to get help:</p>
+<ol type="1">
+<li><p>Coding Club: <a href="https://ourcodingclub.github.io/tutorials/troubleshooting/">Troubleshooting and how to find help</a></p></li>
+<li><p>Data Carpentry Chapter 3: <a href="https://swcarpentry.github.io/r-novice-gapminder/03-seeking-help.html">Seeking Help</a></p></li>
+</ol></li>
+</ol></li>
+</ol>
+<p>The next two sections are interchangeable and could be done in either order.</p>
+<ol start="3" type="1">
+<li><p><strong>Data manipulation</strong> - focus on tidyverse packages</p>
+<ol type="1">
+<li><p>Background reading: <a href="https://openscapes.org/blog/2020-10-12-tidy-data/" class="uri">https://openscapes.org/blog/2020-10-12-tidy-data/</a>&nbsp;</p></li>
+<li><p>Swirl course: Getting and Cleaning data</p></li>
+<li><p>Coding Club: <a href="https://ourcodingclub.github.io/tutorials/data-manip-creative-dplyr/">Advanced Data Manipulation</a></p></li>
+<li><p>Data Carpentry chapters on <a href="https://swcarpentry.github.io/r-novice-gapminder/12-dplyr.html">dplyr</a>and <a href="https://swcarpentry.github.io/r-novice-gapminder/13-tidyr.html">tidyr</a></p></li>
+</ol></li>
+<li><p><strong>Data visualization</strong></p>
+<ol type="1">
+<li><p>Coding Club: <a href="https://ourcodingclub.github.io/tutorials/datavis/">Beautiful and informative data visualization</a> → recommend this one first because of it’s great explanation of plot layering</p></li>
+<li><p>Data carpentry chapter on <a href="https://swcarpentry.github.io/r-novice-gapminder/08-plot-ggplot2.html#layers">ggplot2</a></p></li>
+</ol></li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -894,7 +2160,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/barefoot-ocean\.github\.io\/Partner-Manual\/");
+        var filterRegex = new RegExp("https:\/\/blue-ventures-conservation\.github\.io\/data_system_manual\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1221,16 +2487,13 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation column-page-right">
+<nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
       <a href="../../pages/fisheries_dashboard/fisheries_dashboard_tet.html" class="pagination-link" aria-label="Fisheries Dashboard">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Fisheries Dashboard</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../pages/species_guides/guide_BLZ.html" class="pagination-link" aria-label="Belize">
-        <span class="nav-page-text">Belize</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
