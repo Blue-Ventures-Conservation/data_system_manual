@@ -146,7 +146,8 @@ website:
           - pages/data_validation/data_validation_tet.qmd
           - pages/fisheries_dashboard/fisheries_dashboard_tet.qmd
       - section: pages/index/index_guide.qmd
-
+        contents:
+          - pages/index/index_training.qmd
 
 
 css: styles.css

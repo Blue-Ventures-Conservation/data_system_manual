@@ -49,7 +49,7 @@ We import landings monitoring data file after setting the working directory (wd)
 For example, if your data file was located in 'data' folder of the project '' in your C: Drive, you would set your wd to the following and run the following code first before loading in your data file: setwd()
 
 ```{r data-import}
-# Set working directory set
+# Set working directory
 # setwd()
 
 # Load landings dataset
@@ -87,13 +87,13 @@ skim(landings)
 
 NOTE: The four core column types handle distinct data needs in R:
 
-1\. character (<chr>) columns store text strings like names and IDs as literal, uncalculable text labels.
+1. character (<chr>) columns store text strings like names and IDs as literal, uncalculable text labels.
 
-2\. logical (<lgl>) columns hold binary TRUE/FALSE flags that evaluate conditional logic and convert mathematically to 1 or 0.
+2. logical (<lgl>) columns hold binary TRUE/FALSE flags that evaluate conditional logic and convert mathematically to 1 or 0.
 
-3\. numeric (<dbl>) columns process real numbers with or without decimals to support statistical calculations.
+3. numeric (<dbl>) columns process real numbers with or without decimals to support statistical calculations.
 
-4\. POSIXct (<dttm>) stands for Portable Operating System Interface Calendar Time. This type stores exact dates and timestamps and is the recommended column type for date columns.
+4. POSIXct (<dttm>) stands for Portable Operating System Interface Calendar Time. This type stores exact dates and timestamps and is the recommended column type for date columns.
 
 ## Data Manipulation with `tidyverse`
 
@@ -198,49 +198,3 @@ landings %>%
   ) +
   theme_minimal()
 ```
-
-## Resources
-
--   [R for Data Science](https://r4ds.hadley.nz/)
-
-## Training
-
-1.  **Install & Setup the software**
-
-    1.  Follow the instructions at <https://swirlstats.com/students.html> to install R, RStudio, and the swirl() package in R
-
-    2.  Check-in meeting to review & troubleshoot, if needed
-
-2.  **Introduction to programming**
-
-    1.  Using the swirl() package in R, complete the “R programming” lesson
-
-        1.  All the chapters are helpful, but you can skip #10 (lapply/sapply), #11 (vapply/tapply), #13 (Simulation), and #15 (Base graphs)
-
-    2.  Complete [Introduction to R and RStudio](https://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro.html) in the Data Carpentry course
-
-    3.  Complete [Project Management with RStudio](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro.html) in the Data Carpentry course
-
-    4.  Understanding troubleshooting & how to get help:
-
-        1.  Coding Club: [Troubleshooting and how to find help](https://ourcodingclub.github.io/tutorials/troubleshooting/)
-
-        2.  Data Carpentry Chapter 3: [Seeking Help](https://swcarpentry.github.io/r-novice-gapminder/03-seeking-help.html)
-
-The next two sections are interchangeable and could be done in either order.
-
-3.  **Data manipulation** - focus on tidyverse packages
-
-    1.  Background reading: <https://openscapes.org/blog/2020-10-12-tidy-data/> 
-
-    2.  Swirl course: Getting and Cleaning data
-
-    3.  Coding Club: [Advanced Data Manipulation](https://ourcodingclub.github.io/tutorials/data-manip-creative-dplyr/)
-
-    4.  Data Carpentry chapters on [dplyr](https://swcarpentry.github.io/r-novice-gapminder/12-dplyr.html)and [tidyr](https://swcarpentry.github.io/r-novice-gapminder/13-tidyr.html)
-
-4.  **Data visualization**
-
-    1.  Coding Club: [Beautiful and informative data visualization](https://ourcodingclub.github.io/tutorials/datavis/) → recommend this one first because of it’s great explanation of plot layering
-
-    2.  Data carpentry chapter on [ggplot2](https://swcarpentry.github.io/r-novice-gapminder/08-plot-ggplot2.html#layers)
