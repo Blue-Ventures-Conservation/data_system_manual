@@ -923,7 +923,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># setwd()</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load landings dataset</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>landings_raw <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/data_request_from_Oct26.xlsx"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>landings_raw <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/data_request_20261012.xlsx"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="data-cleaning-summarizing-with-janitor-and-skimr" class="level2" data-number="4">
@@ -955,11 +955,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td style="text-align: left;">Number of rows</td>
-<td style="text-align: left;">15530</td>
+<td style="text-align: left;">3472</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Number of columns</td>
-<td style="text-align: left;">75</td>
+<td style="text-align: left;">67</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">_______________________</td>
@@ -971,7 +971,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td style="text-align: left;">character</td>
-<td style="text-align: left;">44</td>
+<td style="text-align: left;">36</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">logical</td>
@@ -1024,8 +1024,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">country</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
@@ -1034,8 +1034,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">country_name</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">11</td>
-<td style="text-align: right;">11</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
@@ -1044,8 +1044,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">partner</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">16</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
@@ -1054,76 +1054,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">admin1</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
 <td style="text-align: right;">8</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">admin2</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">11</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">admin3</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">23</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">22</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">14</td>
+<td style="text-align: right;">4</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">admin3_label</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">4</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">admin3_lat</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1.00</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">admin3_long</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1.00</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">14</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">buyer_id</td>
-<td style="text-align: right;">7785</td>
-<td style="text-align: right;">0.50</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">19</td>
+<td style="text-align: right;">2714</td>
+<td style="text-align: right;">0.22</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">249</td>
+<td style="text-align: right;">26</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">buyer_gender</td>
-<td style="text-align: right;">7785</td>
-<td style="text-align: right;">0.50</td>
+<td style="text-align: right;">2714</td>
+<td style="text-align: right;">0.22</td>
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">7</td>
 <td style="text-align: right;">0</td>
@@ -1142,17 +1122,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td style="text-align: left;">fisher_id</td>
-<td style="text-align: right;">19</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
 <td style="text-align: right;">9</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">688</td>
+<td style="text-align: right;">184</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">fisher_gender</td>
-<td style="text-align: right;">19</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">6</td>
@@ -1167,67 +1147,67 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">9</td>
 <td style="text-align: right;">9</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">5495</td>
+<td style="text-align: right;">1719</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">local_name</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1.00</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">37</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">341</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">local_name_only</td>
-<td style="text-align: right;">1</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">36</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">341</td>
+<td style="text-align: right;">159</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">local_name_only</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">159</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">scientific_species</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">7</td>
-<td style="text-align: right;">31</td>
+<td style="text-align: right;">29</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">261</td>
+<td style="text-align: right;">135</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">common_english</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">32</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">254</td>
+<td style="text-align: right;">133</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">scientific_family</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">7</td>
 <td style="text-align: right;">16</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">82</td>
+<td style="text-align: right;">48</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">species_group</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">3</td>
-<td style="text-align: right;">10</td>
+<td style="text-align: right;">7</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">13</td>
+<td style="text-align: right;">10</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
@@ -1241,73 +1221,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">management_unit_name</td>
-<td style="text-align: right;">3237</td>
-<td style="text-align: right;">0.79</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">11</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">fisher_admin1</td>
-<td style="text-align: right;">10299</td>
-<td style="text-align: right;">0.34</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">fisher_admin2</td>
-<td style="text-align: right;">10273</td>
-<td style="text-align: right;">0.34</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">11</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">fisher_admin3</td>
-<td style="text-align: right;">10273</td>
-<td style="text-align: right;">0.34</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">23</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">17</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">sci_local_name</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">7</td>
-<td style="text-align: right;">56</td>
+<td style="text-align: right;">50</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">442</td>
+<td style="text-align: right;">182</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">total_weight_landed</td>
-<td style="text-align: right;">84</td>
-<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">20</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">6023</td>
+<td style="text-align: right;">2105</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">total_weight_purchased</td>
-<td style="text-align: right;">616</td>
-<td style="text-align: right;">0.96</td>
+<td style="text-align: right;">162</td>
+<td style="text-align: right;">0.95</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">20</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">2586</td>
+<td style="text-align: right;">1433</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
@@ -1361,39 +1301,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">reason_not_sold_other_text</td>
-<td style="text-align: right;">15509</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
 <td style="text-align: left;">mixed_single</td>
-<td style="text-align: right;">2115</td>
-<td style="text-align: right;">0.86</td>
+<td style="text-align: right;">553</td>
+<td style="text-align: right;">0.84</td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">14</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">submitted_by</td>
-<td style="text-align: right;">2115</td>
-<td style="text-align: right;">0.86</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0</td>
-</tr>
 <tr class="even">
 <td style="text-align: left;">entirecatch_or_share</td>
-<td style="text-align: right;">3637</td>
-<td style="text-align: right;">0.77</td>
+<td style="text-align: right;">553</td>
+<td style="text-align: right;">0.84</td>
 <td style="text-align: right;">12</td>
 <td style="text-align: right;">13</td>
 <td style="text-align: right;">0</td>
@@ -1402,8 +1322,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td style="text-align: left;">pelagic_size</td>
-<td style="text-align: right;">14042</td>
-<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">3004</td>
+<td style="text-align: right;">0.13</td>
 <td style="text-align: right;">7</td>
 <td style="text-align: right;">13</td>
 <td style="text-align: right;">0</td>
@@ -1412,32 +1332,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td style="text-align: left;">a</td>
-<td style="text-align: right;">114</td>
+<td style="text-align: right;">21</td>
 <td style="text-align: right;">0.99</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
 <td style="text-align: right;">18</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">173</td>
+<td style="text-align: right;">95</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">b</td>
-<td style="text-align: right;">114</td>
+<td style="text-align: right;">21</td>
 <td style="text-align: right;">0.99</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
 <td style="text-align: right;">18</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">163</td>
+<td style="text-align: right;">88</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">buyer_type</td>
-<td style="text-align: right;">8228</td>
-<td style="text-align: right;">0.47</td>
+<td style="text-align: right;">2911</td>
+<td style="text-align: right;">0.16</td>
 <td style="text-align: right;">6</td>
-<td style="text-align: right;">19</td>
+<td style="text-align: right;">12</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
@@ -1454,10 +1374,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">weight_unit</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
 </tr>
 </tbody>
@@ -1476,26 +1396,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">ismature</td>
-<td style="text-align: right;">220</td>
+<td style="text-align: right;">28</td>
 <td style="text-align: right;">0.99</td>
-<td style="text-align: right;">0.52</td>
-<td style="text-align: left;">TRU: 8034, FAL: 7276</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: left;">TRU: 1737, FAL: 1707</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Variable type: numeric</strong></p>
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
-<col style="width: 18%">
-<col style="width: 7%">
+<col style="width: 17%">
+<col style="width: 6%">
 <col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 5%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
 <col style="width: 4%">
 </colgroup>
 <thead>
@@ -1521,7 +1441,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">0.00</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00000e+00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
@@ -1529,142 +1449,142 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td style="text-align: left;">total_number_landed</td>
-<td style="text-align: right;">108</td>
-<td style="text-align: right;">0.99</td>
-<td style="text-align: right;">9.12</td>
-<td style="text-align: right;">28.30</td>
+<td style="text-align: right;">8</td>
 <td style="text-align: right;">1.00</td>
+<td style="text-align: right;">10.65</td>
+<td style="text-align: right;">29.69</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">3.00</td>
-<td style="text-align: right;">8.00</td>
+<td style="text-align: right;">2.00000e+00</td>
+<td style="text-align: right;">5.00</td>
+<td style="text-align: right;">12.00</td>
 <td style="text-align: right;">1505.00</td>
 <td style="text-align: left;">▇▁▁▁▁</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">total_weight_landed_kg</td>
-<td style="text-align: right;">95</td>
-<td style="text-align: right;">0.99</td>
-<td style="text-align: right;">1.67</td>
-<td style="text-align: right;">12.42</td>
-<td style="text-align: right;">0.00</td>
-<td style="text-align: right;">0.22</td>
-<td style="text-align: right;">0.58</td>
-<td style="text-align: right;">1.47</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">2.48</td>
+<td style="text-align: right;">22.04</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">3.70000e-01</td>
+<td style="text-align: right;">0.95</td>
+<td style="text-align: right;">2.07</td>
 <td style="text-align: right;">1059.00</td>
 <td style="text-align: left;">▇▁▁▁▁</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">total_weight_purchased_kg</td>
-<td style="text-align: right;">7432</td>
-<td style="text-align: right;">0.52</td>
-<td style="text-align: right;">2.19</td>
-<td style="text-align: right;">18.66</td>
+<td style="text-align: right;">1152</td>
+<td style="text-align: right;">0.67</td>
+<td style="text-align: right;">2.18</td>
+<td style="text-align: right;">5.08</td>
 <td style="text-align: right;">0.00</td>
-<td style="text-align: right;">0.18</td>
-<td style="text-align: right;">0.59</td>
-<td style="text-align: right;">1.81</td>
-<td style="text-align: right;">1250.00</td>
+<td style="text-align: right;">3.60000e-01</td>
+<td style="text-align: right;">1.06</td>
+<td style="text-align: right;">2.49</td>
+<td style="text-align: right;">106.00</td>
 <td style="text-align: left;">▇▁▁▁▁</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">total_purchase_price</td>
-<td style="text-align: right;">1953</td>
+<td style="text-align: right;">460</td>
 <td style="text-align: right;">0.87</td>
-<td style="text-align: right;">5.53</td>
-<td style="text-align: right;">17.32</td>
-<td style="text-align: right;">0.02</td>
-<td style="text-align: right;">1.00</td>
-<td style="text-align: right;">2.31</td>
-<td style="text-align: right;">5.71</td>
-<td style="text-align: right;">1500.00</td>
+<td style="text-align: right;">6.53</td>
+<td style="text-align: right;">10.83</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">1.00000e+00</td>
+<td style="text-align: right;">2.86</td>
+<td style="text-align: right;">7.00</td>
+<td style="text-align: right;">250.00</td>
 <td style="text-align: left;">▇▁▁▁▁</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">total_purchase_price_usd</td>
-<td style="text-align: right;">1951</td>
+<td style="text-align: right;">460</td>
 <td style="text-align: right;">0.87</td>
-<td style="text-align: right;">5.53</td>
-<td style="text-align: right;">17.32</td>
-<td style="text-align: right;">-1.00</td>
-<td style="text-align: right;">1.00</td>
-<td style="text-align: right;">2.31</td>
-<td style="text-align: right;">5.71</td>
-<td style="text-align: right;">1500.00</td>
+<td style="text-align: right;">6.53</td>
+<td style="text-align: right;">10.83</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">1.00000e+00</td>
+<td style="text-align: right;">2.86</td>
+<td style="text-align: right;">7.00</td>
+<td style="text-align: right;">250.00</td>
 <td style="text-align: left;">▇▁▁▁▁</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">length_mature_cm</td>
-<td style="text-align: right;">114</td>
+<td style="text-align: right;">21</td>
 <td style="text-align: right;">0.99</td>
-<td style="text-align: right;">24.14</td>
-<td style="text-align: right;">13.44</td>
-<td style="text-align: right;">0.86</td>
-<td style="text-align: right;">16.43</td>
-<td style="text-align: right;">19.15</td>
-<td style="text-align: right;">30.05</td>
-<td style="text-align: right;">151.40</td>
-<td style="text-align: left;">▇▂▁▁▁</td>
+<td style="text-align: right;">26.11</td>
+<td style="text-align: right;">14.49</td>
+<td style="text-align: right;">1.80</td>
+<td style="text-align: right;">1.66700e+01</td>
+<td style="text-align: right;">20.11</td>
+<td style="text-align: right;">30.61</td>
+<td style="text-align: right;">101.72</td>
+<td style="text-align: left;">▇▅▂▁▁</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">mean_length_cm</td>
-<td style="text-align: right;">222</td>
+<td style="text-align: right;">28</td>
 <td style="text-align: right;">0.99</td>
-<td style="text-align: right;">23.34</td>
-<td style="text-align: right;">12.78</td>
-<td style="text-align: right;">0.90</td>
-<td style="text-align: right;">17.60</td>
-<td style="text-align: right;">20.90</td>
-<td style="text-align: right;">25.33</td>
-<td style="text-align: right;">342.20</td>
+<td style="text-align: right;">23.74</td>
+<td style="text-align: right;">11.90</td>
+<td style="text-align: right;">3.60</td>
+<td style="text-align: right;">1.81000e+01</td>
+<td style="text-align: right;">22.00</td>
+<td style="text-align: right;">25.80</td>
+<td style="text-align: right;">243.50</td>
 <td style="text-align: left;">▇▁▁▁▁</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">landings_id</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">428243184.16</td>
-<td style="text-align: right;">192425433.06</td>
-<td style="text-align: right;">148.00</td>
-<td style="text-align: right;">352870619.25</td>
-<td style="text-align: right;">528040093.00</td>
-<td style="text-align: right;">559540173.75</td>
-<td style="text-align: right;">603943723.00</td>
-<td style="text-align: left;">▂▁▁▁▇</td>
+<td style="text-align: right;">420185706.82</td>
+<td style="text-align: right;">181266460.90</td>
+<td style="text-align: right;">155572686.00</td>
+<td style="text-align: right;">1.71053e+08</td>
+<td style="text-align: right;">528039261.50</td>
+<td style="text-align: right;">564506592.25</td>
+<td style="text-align: right;">603943624.00</td>
+<td style="text-align: left;">▅▁▁▁▇</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">kobo_landings_id</td>
-<td style="text-align: right;">2115</td>
-<td style="text-align: right;">0.86</td>
-<td style="text-align: right;">313736.69</td>
-<td style="text-align: right;">205481.76</td>
-<td style="text-align: right;">6201.00</td>
-<td style="text-align: right;">142227.50</td>
-<td style="text-align: right;">339737.00</td>
-<td style="text-align: right;">468763.00</td>
-<td style="text-align: right;">712364.00</td>
-<td style="text-align: left;">▇▆▆▆▃</td>
+<td style="text-align: right;">553</td>
+<td style="text-align: right;">0.84</td>
+<td style="text-align: right;">306152.96</td>
+<td style="text-align: right;">209808.30</td>
+<td style="text-align: right;">78017.00</td>
+<td style="text-align: right;">8.66610e+04</td>
+<td style="text-align: right;">306014.00</td>
+<td style="text-align: right;">484796.00</td>
+<td style="text-align: right;">712268.00</td>
+<td style="text-align: left;">▇▂▂▃▂</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">profiling_kobo_id</td>
-<td style="text-align: right;">13415</td>
-<td style="text-align: right;">0.14</td>
-<td style="text-align: right;">40630.13</td>
-<td style="text-align: right;">31534.50</td>
-<td style="text-align: right;">1875.00</td>
-<td style="text-align: right;">2805.50</td>
-<td style="text-align: right;">37739.00</td>
-<td style="text-align: right;">62205.50</td>
+<td style="text-align: right;">2919</td>
+<td style="text-align: right;">0.16</td>
+<td style="text-align: right;">45764.56</td>
+<td style="text-align: right;">22909.20</td>
+<td style="text-align: right;">23701.00</td>
+<td style="text-align: right;">3.02520e+04</td>
+<td style="text-align: right;">30472.00</td>
+<td style="text-align: right;">62111.00</td>
 <td style="text-align: right;">152159.00</td>
-<td style="text-align: left;">▇▅▅▁▁</td>
+<td style="text-align: left;">▇▃▁▁▁</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">habitat_deepwater</td>
-<td style="text-align: right;">1783</td>
-<td style="text-align: right;">0.89</td>
+<td style="text-align: right;">426</td>
+<td style="text-align: right;">0.88</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">0.00</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00000e+00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
@@ -1672,12 +1592,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td style="text-align: left;">habitat_reef</td>
-<td style="text-align: right;">1493</td>
-<td style="text-align: right;">0.90</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">0.98</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">0.00</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00000e+00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
@@ -1685,12 +1605,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td style="text-align: left;">habitat_mangrove</td>
-<td style="text-align: right;">6947</td>
-<td style="text-align: right;">0.55</td>
+<td style="text-align: right;">1873</td>
+<td style="text-align: right;">0.46</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">0.00</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00000e+00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
@@ -1698,12 +1618,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td style="text-align: left;">habitat_seagrass</td>
-<td style="text-align: right;">3704</td>
-<td style="text-align: right;">0.76</td>
+<td style="text-align: right;">656</td>
+<td style="text-align: right;">0.81</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">0.00</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00000e+00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
@@ -1711,12 +1631,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td style="text-align: left;">habitat_mud</td>
-<td style="text-align: right;">10094</td>
-<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">2443</td>
+<td style="text-align: right;">0.30</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">0.00</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00000e+00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
@@ -1724,12 +1644,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td style="text-align: left;">habitat_sand</td>
-<td style="text-align: right;">6705</td>
-<td style="text-align: right;">0.57</td>
+<td style="text-align: right;">1614</td>
+<td style="text-align: right;">0.54</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">0.00</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00000e+00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
@@ -1737,12 +1657,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td style="text-align: left;">habitat_estuary</td>
-<td style="text-align: right;">5108</td>
-<td style="text-align: right;">0.67</td>
+<td style="text-align: right;">1351</td>
+<td style="text-align: right;">0.61</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">0.00</td>
 <td style="text-align: right;">1.00</td>
-<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00000e+00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
 <td style="text-align: right;">1.00</td>
@@ -1750,120 +1670,120 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td style="text-align: left;">trophic_level</td>
-<td style="text-align: right;">114</td>
+<td style="text-align: right;">21</td>
 <td style="text-align: right;">0.99</td>
-<td style="text-align: right;">3.26</td>
-<td style="text-align: right;">0.65</td>
+<td style="text-align: right;">3.29</td>
+<td style="text-align: right;">0.69</td>
 <td style="text-align: right;">2.00</td>
-<td style="text-align: right;">2.76</td>
-<td style="text-align: right;">3.48</td>
-<td style="text-align: right;">3.67</td>
-<td style="text-align: right;">4.50</td>
-<td style="text-align: left;">▅▁▅▇▂</td>
+<td style="text-align: right;">2.63000e+00</td>
+<td style="text-align: right;">3.55</td>
+<td style="text-align: right;">3.69</td>
+<td style="text-align: right;">4.44</td>
+<td style="text-align: left;">▅▂▃▇▃</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">calcium_mg</td>
-<td style="text-align: right;">284</td>
-<td style="text-align: right;">0.98</td>
-<td style="text-align: right;">67.17</td>
-<td style="text-align: right;">50.86</td>
-<td style="text-align: right;">4.56</td>
-<td style="text-align: right;">38.35</td>
-<td style="text-align: right;">44.47</td>
-<td style="text-align: right;">74.76</td>
-<td style="text-align: right;">485.19</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">60.20</td>
+<td style="text-align: right;">51.31</td>
+<td style="text-align: right;">9.80</td>
+<td style="text-align: right;">3.65300e+01</td>
+<td style="text-align: right;">43.49</td>
+<td style="text-align: right;">59.96</td>
+<td style="text-align: right;">344.47</td>
 <td style="text-align: left;">▇▁▁▁▁</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">iron_mg</td>
-<td style="text-align: right;">284</td>
-<td style="text-align: right;">0.98</td>
-<td style="text-align: right;">0.98</td>
-<td style="text-align: right;">0.83</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">0.85</td>
 <td style="text-align: right;">0.14</td>
-<td style="text-align: right;">0.62</td>
+<td style="text-align: right;">6.30000e-01</td>
 <td style="text-align: right;">0.75</td>
-<td style="text-align: right;">0.89</td>
+<td style="text-align: right;">0.86</td>
 <td style="text-align: right;">4.79</td>
 <td style="text-align: left;">▇▂▁▁▁</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">omega3_g</td>
-<td style="text-align: right;">284</td>
-<td style="text-align: right;">0.98</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">0.99</td>
 <td style="text-align: right;">0.18</td>
-<td style="text-align: right;">0.10</td>
-<td style="text-align: right;">0.05</td>
-<td style="text-align: right;">0.12</td>
-<td style="text-align: right;">0.15</td>
-<td style="text-align: right;">0.21</td>
+<td style="text-align: right;">0.09</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: right;">1.20000e-01</td>
+<td style="text-align: right;">0.14</td>
+<td style="text-align: right;">0.17</td>
 <td style="text-align: right;">0.60</td>
-<td style="text-align: left;">▇▃▂▁▁</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">protein_g</td>
-<td style="text-align: right;">284</td>
-<td style="text-align: right;">0.98</td>
-<td style="text-align: right;">19.01</td>
-<td style="text-align: right;">1.10</td>
-<td style="text-align: right;">14.05</td>
-<td style="text-align: right;">18.49</td>
-<td style="text-align: right;">18.80</td>
-<td style="text-align: right;">19.78</td>
-<td style="text-align: right;">23.06</td>
-<td style="text-align: left;">▁▁▇▃▁</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">selenium_ug</td>
-<td style="text-align: right;">284</td>
-<td style="text-align: right;">0.98</td>
-<td style="text-align: right;">38.46</td>
-<td style="text-align: right;">16.40</td>
-<td style="text-align: right;">8.35</td>
-<td style="text-align: right;">24.10</td>
-<td style="text-align: right;">33.56</td>
-<td style="text-align: right;">48.30</td>
-<td style="text-align: right;">279.16</td>
 <td style="text-align: left;">▇▁▁▁▁</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">protein_g</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">19.08</td>
+<td style="text-align: right;">1.18</td>
+<td style="text-align: right;">15.50</td>
+<td style="text-align: right;">1.85100e+01</td>
+<td style="text-align: right;">18.89</td>
+<td style="text-align: right;">20.18</td>
+<td style="text-align: right;">21.99</td>
+<td style="text-align: left;">▁▁▇▃▂</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">selenium_ug</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">37.93</td>
+<td style="text-align: right;">15.77</td>
+<td style="text-align: right;">8.35</td>
+<td style="text-align: right;">2.41000e+01</td>
+<td style="text-align: right;">33.56</td>
+<td style="text-align: right;">51.96</td>
+<td style="text-align: right;">103.65</td>
+<td style="text-align: left;">▆▇▃▂▁</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">vitamin_a_ug</td>
-<td style="text-align: right;">953</td>
-<td style="text-align: right;">0.94</td>
-<td style="text-align: right;">56.69</td>
-<td style="text-align: right;">43.00</td>
-<td style="text-align: right;">0.88</td>
-<td style="text-align: right;">29.08</td>
-<td style="text-align: right;">41.68</td>
-<td style="text-align: right;">80.04</td>
+<td style="text-align: right;">161</td>
+<td style="text-align: right;">0.95</td>
+<td style="text-align: right;">58.56</td>
+<td style="text-align: right;">40.65</td>
+<td style="text-align: right;">11.54</td>
+<td style="text-align: right;">3.08200e+01</td>
+<td style="text-align: right;">42.04</td>
+<td style="text-align: right;">85.75</td>
 <td style="text-align: right;">291.99</td>
 <td style="text-align: left;">▇▂▁▁▁</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">zinc_mg</td>
-<td style="text-align: right;">284</td>
-<td style="text-align: right;">0.98</td>
-<td style="text-align: right;">1.35</td>
-<td style="text-align: right;">0.61</td>
-<td style="text-align: right;">0.25</td>
-<td style="text-align: right;">0.92</td>
-<td style="text-align: right;">1.27</td>
-<td style="text-align: right;">1.79</td>
-<td style="text-align: right;">5.76</td>
-<td style="text-align: left;">▇▆▁▁▁</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">0.99</td>
+<td style="text-align: right;">1.40</td>
+<td style="text-align: right;">0.70</td>
+<td style="text-align: right;">0.37</td>
+<td style="text-align: right;">7.80000e-01</td>
+<td style="text-align: right;">1.33</td>
+<td style="text-align: right;">1.92</td>
+<td style="text-align: right;">3.34</td>
+<td style="text-align: left;">▆▇▆▁▁</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">total_nutrient_content</td>
-<td style="text-align: right;">113</td>
+<td style="text-align: right;">21</td>
 <td style="text-align: right;">0.99</td>
-<td style="text-align: right;">179.34</td>
-<td style="text-align: right;">64.74</td>
+<td style="text-align: right;">175.02</td>
+<td style="text-align: right;">65.87</td>
 <td style="text-align: right;">0.00</td>
-<td style="text-align: right;">132.22</td>
-<td style="text-align: right;">174.15</td>
-<td style="text-align: right;">222.85</td>
-<td style="text-align: right;">631.37</td>
-<td style="text-align: left;">▂▇▁▁▁</td>
+<td style="text-align: right;">1.26620e+02</td>
+<td style="text-align: right;">157.12</td>
+<td style="text-align: right;">206.34</td>
+<td style="text-align: right;">420.68</td>
+<td style="text-align: left;">▁▇▅▁▁</td>
 </tr>
 </tbody>
 </table>
@@ -1894,27 +1814,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">date_landed</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
-<td style="text-align: left;">2023-09-26 00:00:00</td>
+<td style="text-align: left;">2024-04-03 00:00:00</td>
 <td style="text-align: left;">2026-10-10 00:00:00</td>
-<td style="text-align: left;">2025-06-28 00:00:00</td>
-<td style="text-align: right;">672</td>
+<td style="text-align: left;">2025-03-13 00:00:00</td>
+<td style="text-align: right;">346</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">submission_date</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
-<td style="text-align: left;">2023-09-26 12:37:00</td>
-<td style="text-align: left;">2026-10-10 05:20:56</td>
-<td style="text-align: left;">2025-07-21 22:46:42</td>
-<td style="text-align: right;">5356</td>
+<td style="text-align: left;">2024-04-04 00:24:48</td>
+<td style="text-align: left;">2026-10-10 04:46:22</td>
+<td style="text-align: left;">2025-04-17 03:08:49</td>
+<td style="text-align: right;">1652</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">last_refresh_ts</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
-<td style="text-align: left;">2026-10-11 15:53:02</td>
-<td style="text-align: left;">2026-10-11 15:53:02</td>
-<td style="text-align: left;">2026-10-11 15:53:02</td>
+<td style="text-align: left;">2026-10-12 06:31:10</td>
+<td style="text-align: left;">2026-10-12 06:31:10</td>
+<td style="text-align: left;">2026-10-12 06:31:10</td>
 <td style="text-align: right;">1</td>
 </tr>
 </tbody>
@@ -1955,7 +1875,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div data-pagedtable="false">
   <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":["species_group"],"name":[1],"type":["chr"],"align":["left"]},{"label":["total_landings"],"name":[2],"type":["int"],"align":["right"]},{"label":["total_weight_kg"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["total_value_usd"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["mean_length_cm"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["price_per_kg_usd"],"name":[6],"type":["dbl"],"align":["right"]}],"data":[{"1":"finfish","2":"14437","3":"2.454304e+04","4":"70867.539512","5":"23.757013","6":"2.8874799"},{"1":"octopus","2":"323","3":"4.017008e+02","4":"1787.747878","5":"7.247059","6":"4.4504460"},{"1":"shark","2":"49","3":"2.101477e+02","4":"320.240425","5":"77.314286","6":"1.5238829"},{"1":"ray","2":"61","3":"1.979449e+02","4":"177.887570","5":"32.177966","6":"0.8986723"},{"1":"crab","2":"268","3":"1.956182e+02","4":"688.951367","5":"9.393208","6":"3.5219190"},{"1":"squid","2":"150","3":"1.099147e+02","4":"652.674822","5":"21.444966","6":"5.9380135"},{"1":"unknown","2":"113","3":"5.525994e+01","4":"179.463961","5":"NaN","6":"3.2476324"},{"1":"eel","2":"29","3":"4.619018e+01","4":"151.712808","5":"73.950000","6":"3.2845248"},{"1":"lobster","2":"72","3":"3.503204e+01","4":"194.579223","5":"6.192958","6":"5.5543216"},{"1":"bivalve","2":"15","3":"1.803560e+01","4":"49.594978","5":"6.628571","6":"2.7498374"},{"1":"cuttlefish","2":"6","3":"4.780551e+00","4":"14.538462","5":"13.883333","6":"3.0411684"},{"1":"NA","2":"1","3":"2.000000e+00","4":"0.000000","5":"32.800000","6":"0.0000000"},{"1":"gastropod","2":"1","3":"1.030000e+00","4":"0.000000","5":"18.300000","6":"0.0000000"},{"1":"shrimp","2":"5","3":"9.584944e-01","4":"2.730075","5":"49.040000","6":"2.8482955"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["species_group"],"name":[1],"type":["chr"],"align":["left"]},{"label":["total_landings"],"name":[2],"type":["int"],"align":["right"]},{"label":["total_weight_kg"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["total_value_usd"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["mean_length_cm"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["price_per_kg_usd"],"name":[6],"type":["dbl"],"align":["right"]}],"data":[{"1":"finfish","2":"3303","3":"8406.510766","4":"18914.385016","5":"24.156402","6":"2.249969"},{"1":"octopus","2":"96","3":"118.218118","4":"391.352461","5":"6.732292","6":"3.310427"},{"1":"squid","2":"24","3":"18.510695","4":"93.325420","5":"24.716667","6":"5.041703"},{"1":"bivalve","2":"1","3":"14.400000","4":"40.000000","5":"7.500000","6":"2.777778"},{"1":"lobster","2":"10","3":"13.328659","4":"92.463415","5":"6.600000","6":"6.937188"},{"1":"eel","2":"6","3":"9.039722","4":"85.543651","5":"78.600000","6":"9.463084"},{"1":"crab","2":"7","3":"8.270000","4":"43.000000","5":"12.871429","6":"5.199516"},{"1":"unknown","2":"21","3":"7.312073","4":"12.811316","5":"NaN","6":"1.752077"},{"1":"ray","2":"2","3":"1.086071","4":"2.285714","5":"21.650000","6":"2.104571"},{"1":"shrimp","2":"2","3":"0.440750","4":"0.200000","5":"110.850000","6":"0.453772"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 </div>
