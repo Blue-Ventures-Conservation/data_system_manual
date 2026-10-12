@@ -71,6 +71,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../pages/index/index_training.html" rel="next">
 <link href="../../pages/fisheries_dashboard/fisheries_dashboard_tet.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -789,8 +790,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Downloaded Data in R</span></span>
+      <div class="sidebar-item-container"> 
+            <a href="../../pages/index/index_guide.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Downloaded Data in R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/index/index_training.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Training Resources</span></a>
+  </div>
+</li>
+      </ul>
   </li>
     </ul>
     </div>
@@ -813,8 +827,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#length-distribution-across-species-groups" id="toc-length-distribution-across-species-groups" class="nav-link" data-scroll-target="#length-distribution-across-species-groups"><span class="header-section-number">6.2</span> Length Distribution across Species Groups</a></li>
   <li><a href="#catch-weight-vs.-price-per-landing-event" id="toc-catch-weight-vs.-price-per-landing-event" class="nav-link" data-scroll-target="#catch-weight-vs.-price-per-landing-event"><span class="header-section-number">6.3</span> Catch Weight vs.&nbsp;Price per Landing Event</a></li>
   </ul></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources"><span class="header-section-number">7</span> Resources</a></li>
-  <li><a href="#training" id="toc-training" class="nav-link" data-scroll-target="#training"><span class="header-section-number">8</span> Training</a></li>
   </ul>
 </nav>
     </div>
@@ -907,7 +919,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>We import landings monitoring data file after setting the working directory (wd). The working directory is the default folder on your computer where R looks for files to import (like our downloaded data) and saves files you export (like plots or manipulated data).</p>
 <p>For example, if your data file was located in ‘data’ folder of the project ’’ in your C: Drive, you would set your wd to the following and run the following code first before loading in your data file: setwd()</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set working directory set</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set working directory</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># setwd()</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load landings dataset</span></span>
@@ -1910,10 +1922,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>NOTE: The four core column types handle distinct data needs in R:</p>
-<p>1. character (<chr>) columns store text strings like names and IDs as literal, uncalculable text labels.</chr></p>
-<p>2. logical (<lgl>) columns hold binary TRUE/FALSE flags that evaluate conditional logic and convert mathematically to 1 or 0.</lgl></p>
-<p>3. numeric (<dbl>) columns process real numbers with or without decimals to support statistical calculations.</dbl></p>
-<p>4. POSIXct (<dttm>) stands for Portable Operating System Interface Calendar Time. This type stores exact dates and timestamps and is the recommended column type for date columns.</dttm></p>
+<ol type="1">
+<li><p>character (<chr>) columns store text strings like names and IDs as literal, uncalculable text labels.</chr></p></li>
+<li><p>logical (<lgl>) columns hold binary TRUE/FALSE flags that evaluate conditional logic and convert mathematically to 1 or 0.</lgl></p></li>
+<li><p>numeric (<dbl>) columns process real numbers with or without decimals to support statistical calculations.</dbl></p></li>
+<li><p>POSIXct (<dttm>) stands for Portable Operating System Interface Calendar Time. This type stores exact dates and timestamps and is the recommended column type for date columns.</dttm></p></li>
+</ol>
 </section>
 <section id="data-manipulation-with-tidyverse" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="data-manipulation-with-tidyverse"><span class="header-section-number">5</span> Data Manipulation with <code>tidyverse</code></h2>
@@ -2036,54 +2050,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="resources" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="resources"><span class="header-section-number">7</span> Resources</h2>
-<ul>
-<li><a href="https://r4ds.hadley.nz/">R for Data Science</a></li>
-</ul>
-</section>
-<section id="training" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="training"><span class="header-section-number">8</span> Training</h2>
-<ol type="1">
-<li><p><strong>Install &amp; Setup the software</strong></p>
-<ol type="1">
-<li><p>Follow the instructions at <a href="https://swirlstats.com/students.html" class="uri">https://swirlstats.com/students.html</a> to install R, RStudio, and the swirl() package in R</p></li>
-<li><p>Check-in meeting to review &amp; troubleshoot, if needed</p></li>
-</ol></li>
-<li><p><strong>Introduction to programming</strong></p>
-<ol type="1">
-<li><p>Using the swirl() package in R, complete the “R programming” lesson</p>
-<ol type="1">
-<li>All the chapters are helpful, but you can skip #10 (lapply/sapply), #11 (vapply/tapply), #13 (Simulation), and #15 (Base graphs)</li>
-</ol></li>
-<li><p>Complete <a href="https://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro.html">Introduction to R and RStudio</a> in the Data Carpentry course</p></li>
-<li><p>Complete <a href="https://swcarpentry.github.io/r-novice-gapminder/02-project-intro.html">Project Management with RStudio</a> in the Data Carpentry course</p></li>
-<li><p>Understanding troubleshooting &amp; how to get help:</p>
-<ol type="1">
-<li><p>Coding Club: <a href="https://ourcodingclub.github.io/tutorials/troubleshooting/">Troubleshooting and how to find help</a></p></li>
-<li><p>Data Carpentry Chapter 3: <a href="https://swcarpentry.github.io/r-novice-gapminder/03-seeking-help.html">Seeking Help</a></p></li>
-</ol></li>
-</ol></li>
-</ol>
-<p>The next two sections are interchangeable and could be done in either order.</p>
-<ol start="3" type="1">
-<li><p><strong>Data manipulation</strong> - focus on tidyverse packages</p>
-<ol type="1">
-<li><p>Background reading: <a href="https://openscapes.org/blog/2020-10-12-tidy-data/" class="uri">https://openscapes.org/blog/2020-10-12-tidy-data/</a>&nbsp;</p></li>
-<li><p>Swirl course: Getting and Cleaning data</p></li>
-<li><p>Coding Club: <a href="https://ourcodingclub.github.io/tutorials/data-manip-creative-dplyr/">Advanced Data Manipulation</a></p></li>
-<li><p>Data Carpentry chapters on <a href="https://swcarpentry.github.io/r-novice-gapminder/12-dplyr.html">dplyr</a>and <a href="https://swcarpentry.github.io/r-novice-gapminder/13-tidyr.html">tidyr</a></p></li>
-</ol></li>
-<li><p><strong>Data visualization</strong></p>
-<ol type="1">
-<li><p>Coding Club: <a href="https://ourcodingclub.github.io/tutorials/datavis/">Beautiful and informative data visualization</a> → recommend this one first because of it’s great explanation of plot layering</p></li>
-<li><p>Data carpentry chapter on <a href="https://swcarpentry.github.io/r-novice-gapminder/08-plot-ggplot2.html#layers">ggplot2</a></p></li>
-</ol></li>
-</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -2494,6 +2463,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../../pages/index/index_training.html" class="pagination-link" aria-label="Training Resources">
+        <span class="nav-page-text">Training Resources</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
