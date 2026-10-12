@@ -34,7 +34,7 @@ library(knitr)
 ```
 
 |  |  |  |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | **Package** | **Key Functions** | **Primary Purpose** |
 | **`readr` / `readxl`** | `read_csv()`, `read_excel()` | Efficient data import with automatic type inference |
 | **`janitor`** | `clean_names()`, `tabyl()`, `get_dupes()`, `remove_empty()` | Fast data cleaning, snake_case conversion, and frequency tables |
@@ -237,7 +237,7 @@ The next two sections are interchangeable and could be done in either order.
 
     3.  Coding Club: [Advanced Data Manipulation](https://ourcodingclub.github.io/tutorials/data-manip-creative-dplyr/)
 
-    4.  Data Carpentry chapters on [dplyr ](https://swcarpentry.github.io/r-novice-gapminder/12-dplyr.html)and [tidyr](https://swcarpentry.github.io/r-novice-gapminder/13-tidyr.html)
+    4.  Data Carpentry chapters on [dplyr](https://swcarpentry.github.io/r-novice-gapminder/12-dplyr.html)and [tidyr](https://swcarpentry.github.io/r-novice-gapminder/13-tidyr.html)
 
 4.  **Data visualization**
 
