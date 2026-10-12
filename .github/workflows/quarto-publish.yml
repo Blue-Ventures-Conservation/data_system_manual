@@ -30,6 +30,10 @@ jobs:
             any::knitr
             any::rmarkdown
             any::shiny.i18n
+            any::readxl
+            any::janitor
+            any::skimr
+            any::tidyverse
 
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2

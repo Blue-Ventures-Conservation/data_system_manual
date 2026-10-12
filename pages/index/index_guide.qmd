@@ -34,7 +34,7 @@ library(knitr)
 ```
 
 |  |  |  |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | **Package** | **Key Functions** | **Primary Purpose** |
 | **`readr` / `readxl`** | `read_csv()`, `read_excel()` | Efficient data import with automatic type inference |
 | **`janitor`** | `clean_names()`, `tabyl()`, `get_dupes()`, `remove_empty()` | Fast data cleaning, snake_case conversion, and frequency tables |

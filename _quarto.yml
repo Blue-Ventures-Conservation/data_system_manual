@@ -1,13 +1,11 @@
 project: 
   type: website
-  resources:
-    - pages/species_guides/*.html
   
 website: 
   page-navigation: true
   title: "Community Fisheries Data System Manual" 
-  site-url: "https://barefoot-ocean.github.io/Partner-Manual/" 
-  repo-url: https://github.com/Barefoot-Ocean/Partner-Manual
+  site-url: "https://blue-ventures-conservation.github.io/data_system_manual/" 
+  repo-url: https://github.com/Blue-Ventures-Conservation/data_system_manual
   
   page-footer:
     right: "This page is built with [Quarto](https://quarto.org/)."
