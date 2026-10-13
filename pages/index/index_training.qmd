@@ -1,5 +1,5 @@
 ---
-title: "Training Resources"
+title: "R Training Resources"
 
 ---
 
