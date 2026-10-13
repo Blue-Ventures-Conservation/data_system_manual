@@ -49,7 +49,7 @@ For example, if your data file was located in 'data' folder of the 'Project Fold
 
 ```{r data-import}
 # Set working directory
-# setwd(C:\Users\Public\Project Folder)
+# setwd("C:/Users/Public/Project Folder")
 
 # Load landings dataset
 landings_raw <- read_excel("data/data_request_20261012.xlsx")
