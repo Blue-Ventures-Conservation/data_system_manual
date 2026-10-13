@@ -1,7 +1,6 @@
 ---
 title: "Downloaded Data in R"
 subtitle: "Data Ingestion, Summarisation, Wrangling, and Visualisation in R"
-author: "Data Science"
 format:
   html:
     toc: true
@@ -15,11 +14,11 @@ execute:
   message: false
 ---
 
-## Executive Summary
+## Summary
 
 This report documents the workflow for importing, inspecting, cleaning, aggregating, and visualizing small-scale fisheries landings monitoring datasets. The workflow utilises the `readr`, `janitor`, `dplyr`, `tidyr`, and `ggplot2` packages.
 
-NOTE: If this is your first time using R or these packages, you'll need to install these packages. See 'Install Packages...' under 'Tools'.
+NOTE: If this is your first time using R or these packages, you'll need to install these packages. See 'Install Packages...' under 'Tools'. Install and download R and RStudio if not already done so.
 
 ## Environment Setup
 
@@ -44,13 +43,13 @@ library(knitr)
 
 ## Data Import
 
-We import landings monitoring data file after setting the working directory (wd). The working directory is the default folder on your computer where R looks for files to import (like our downloaded data) and saves files you export (like plots or manipulated data).
+We import (or read) the landings monitoring data file after setting the working directory (wd). The working directory is the default folder on your computer where R looks for files to import (like our downloaded data) and saves files you export (like plots or manipulated data).
 
-For example, if your data file was located in 'data' folder of the project '' in your C: Drive, you would set your wd to the following and run the following code first before loading in your data file: setwd()
+For example, if your data file was located in 'data' folder of the 'Project Folder' in your C: Drive, you would set your wd to the following and run the following code first before loading in your data file: setwd(C:\Users\Public\Project Folder)
 
 ```{r data-import}
 # Set working directory
-# setwd()
+# setwd(C:\Users\Public\Project Folder)
 
 # Load landings dataset
 landings_raw <- read_excel("data/data_request_20261012.xlsx")
@@ -67,10 +66,6 @@ Raw data sets often contain inconsistent capitalization, spaces, or duplicate re
 
 NOTE: Think of the pipe operator (%\>%) as translating to "and then" in plain English. Allows you to write and read code from left to right or top to bottom, matching the natural chronological workflow of data analysis.
 
-The 'skimr' package
-
-**`skim()`**:
-
 ```{r janitor-summary}
 # Clean column names
 landings <- landings_raw %>%
@@ -79,6 +74,13 @@ landings <- landings_raw %>%
 
 # Identify any duplicate rows
 # get_dupes(landings)
+
+```
+The 'skimr' package streamlines exploratory data analysis (EDA) by providing richer, more structured, and visually informative summary statistics.
+
+**`skim()`**: produces an organized summary that separates variables by data type, reports completeness metrics
+
+```{r skimr-summary}
 
 # Data summary using skimr
 skim(landings)
