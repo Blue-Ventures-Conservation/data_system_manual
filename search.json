@@ -87,7 +87,7 @@
     "href": "pages/index/index_guide.html#data-import",
     "title": "Downloaded Data in R",
     "section": "3 Data Import",
-    "text": "3 Data Import\nWe import (or read) the landings monitoring data file after setting the working directory (wd). The working directory is the default folder on your computer where R looks for files to import (like our downloaded data) and saves files you export (like plots or manipulated data).\nFor example, if your data file was located in ‘data’ folder of the ‘Project Folder’ in your C: Drive, you would set your wd to the following and run the following code first before loading in your data file: setwd(C:Folder)\n\n# Set working directory\n# setwd(C:\\Users\\Public\\Project Folder)\n\n# Load landings dataset\nlandings_raw &lt;- read_excel(\"data/data_request_20261012.xlsx\")",
+    "text": "3 Data Import\nWe import (or read) the landings monitoring data file after setting the working directory (wd). The working directory is the default folder on your computer where R looks for files to import (like our downloaded data) and saves files you export (like plots or manipulated data).\nFor example, if your data file was located in ‘data’ folder of the ‘Project Folder’ in your C: Drive, you would set your wd to the following and run the following code first before loading in your data file: setwd(C:Folder)\n\n# Set working directory\n# setwd(\"C:/Users/Public/Project Folder\")\n\n# Load landings dataset\nlandings_raw &lt;- read_excel(\"data/data_request_20261012.xlsx\")",
     "crumbs": [
       "Downloaded Data in R"
     ]
