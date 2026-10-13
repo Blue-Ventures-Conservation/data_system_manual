@@ -22,34 +22,34 @@
   {
     "objectID": "pages/index/index_training.html",
     "href": "pages/index/index_training.html",
-    "title": "Training Resources",
+    "title": "R Training Resources",
     "section": "",
     "text": "R for Data Science",
     "crumbs": [
       "Downloaded Data in R",
-      "Training Resources"
+      "R Training Resources"
     ]
   },
   {
     "objectID": "pages/index/index_training.html#resources",
     "href": "pages/index/index_training.html#resources",
-    "title": "Training Resources",
+    "title": "R Training Resources",
     "section": "",
     "text": "R for Data Science",
     "crumbs": [
       "Downloaded Data in R",
-      "Training Resources"
+      "R Training Resources"
     ]
   },
   {
     "objectID": "pages/index/index_training.html#training",
     "href": "pages/index/index_training.html#training",
-    "title": "Training Resources",
+    "title": "R Training Resources",
     "section": "Training",
     "text": "Training\n\nInstall & Setup the software\n\nFollow the instructions at https://swirlstats.com/students.html to install R, RStudio, and the swirl() package in R\nCheck-in meeting to review & troubleshoot, if needed\n\nIntroduction to programming\n\nUsing the swirl() package in R, complete the “R programming” lesson\n\nAll the chapters are helpful, but you can skip #10 (lapply/sapply), #11 (vapply/tapply), #13 (Simulation), and #15 (Base graphs)\n\nComplete Introduction to R and RStudio in the Data Carpentry course\nComplete Project Management with RStudio in the Data Carpentry course\nUnderstanding troubleshooting & how to get help:\n\nCoding Club: Troubleshooting and how to find help\nData Carpentry Chapter 3: Seeking Help\n\n\n\nThe next two sections are interchangeable and could be done in either order.\n\nData manipulation - focus on tidyverse packages\n\nBackground reading: https://openscapes.org/blog/2020-10-12-tidy-data/ \nSwirl course: Getting and Cleaning data\nCoding Club: Advanced Data Manipulation\nData Carpentry chapters on dplyrand tidyr\n\nData visualization\n\nCoding Club: Beautiful and informative data visualization → recommend this one first because of it’s great explanation of plot layering\nData carpentry chapter on ggplot2",
     "crumbs": [
       "Downloaded Data in R",
-      "Training Resources"
+      "R Training Resources"
     ]
   },
   {
